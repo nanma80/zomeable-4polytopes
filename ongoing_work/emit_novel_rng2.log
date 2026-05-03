@@ -1,4 +1,4 @@
-127 novel fp_hashes loaded.
+170 novel fp_hashes loaded.
   OK    55abe81889  A4 [0, 1, 0, 0] rectified 5-cell          balls=7
   OK    18db22bc8b  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
   OK    4fe32006bf  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
@@ -116,15 +116,58 @@
   OK    d78b84c72e  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
   OK    feebd08dde  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
   OK    0137580b4e  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    13e387db31  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    1a0d721320  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    1ae105e553  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    1dd1965c7d  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    1fc5749f9e  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    24655dcf09  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    2ff0da38f3  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
   OK    3b44cc41a2  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    3e43cba23f  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    416fbd8e39  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    49d3d59b0b  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    59350c907e  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    6237017ed4  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    633ba56c30  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    665d7f8ac3  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    669e04c0d9  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    731abc5dc0  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    76caf52230  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    77bc10c853  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    7af56c5f99  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    7c320f9d25  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    7c5d26836a  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    800f72c3ba  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    8b82a8d4fc  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    8f579c25f1  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    920f7d9874  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    92c3434528  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
   OK    93f8773f2a  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
   OK    9815da3055  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    98d0fae89b  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    9c22ea52b4  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    9d39cd0b03  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    a2c47bfa62  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    a4e5c7b80c  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    a5838ce67b  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    aa55b8a9d1  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b4f719ee37  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    b54e075a59  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b5a8ec0026  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b92076625c  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    c95674ff52  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    ca7e9a1234  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    cd4fbb2bef  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    d2bc1b0ca3  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    da41392ff5  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    e30149ab81  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    e45dd01d6e  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    e60e673cfd  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    e97405e509  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    f451c8c5fb  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    f7d1282c71  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    f85e2e96c7  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    fb0b1ebf05  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
 
-100 emitted, 27 failed.  Manifest: output\wythoff_sweep\manifest.json
+143 emitted, 27 failed.  Manifest: output\wythoff_sweep\manifest.json

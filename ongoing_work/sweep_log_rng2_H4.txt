@@ -1,0 +1,66 @@
+# run_wythoff_sweep --rng 2 --group H4
+# log: ongoing_work\sweep_log_rng2_H4.txt
+# shapes dump: ongoing_work\shapes_rng2.jsonl
+# 32 polytopes already done in prior logs; will skip those
+
+======================================================================
+Step 1: kernels of regular polytopes
+======================================================================
+  [H4] loaded 432 cached kernels from ongoing_work\kernels_H4_rng2.npy
+
+======================================================================
+Step 2: test each Wythoff combo against group kernels
+======================================================================
+# step-2 iteration order (sort-by-size):
+#   H4 (0, 0, 0, 1)  600-cell
+#   H4 (1, 0, 0, 0)  120-cell
+#   H4 (0, 0, 1, 0)  rectified 600-cell
+#   H4 (0, 1, 0, 0)  rectified 120-cell
+#   H4 (0, 0, 1, 1)  truncated 600-cell
+#   H4 (1, 1, 0, 0)  truncated 120-cell
+#   H4 (1, 0, 0, 1)  runcinated 120-cell
+#   H4 (1, 0, 1, 0)  cantellated 120-cell
+#   H4 (0, 1, 1, 0)  bitruncated 120-cell
+#   H4 (0, 1, 0, 1)  cantellated 600-cell
+#   H4 (1, 0, 1, 1)  runcitruncated 600-cell
+#   H4 (1, 1, 0, 1)  runcitruncated 120-cell
+#   H4 (1, 1, 1, 0)  cantitruncated 120-cell
+#   H4 (0, 1, 1, 1)  cantitruncated 600-cell
+#   H4 (1, 1, 1, 1)  omnitruncated 120-cell
+
+  H4 (0, 0, 0, 1)  600-cell                        V=  120 E=  720  hits= 432  shapes=1  (9.5s)
+  H4 (1, 0, 0, 0)  120-cell                        V=  600 E= 1200  hits= 432  shapes=1  (25.9s)
+  H4 (0, 0, 1, 0)  rectified 600-cell              V=  720 E= 3600  hits= 432  shapes=2  (162.2s)
+  H4 (0, 1, 0, 0)  rectified 120-cell              V= 1200 E= 3600  hits= 432  shapes=1  (185.7s)
+  H4 (0, 0, 1, 1)  truncated 600-cell              V= 1440 E= 4320  hits= 432  shapes=2  (266.8s)
+  H4 (1, 1, 0, 0)  truncated 120-cell              V= 2400 E= 4800  hits= 432  shapes=3  (379.0s)
+  H4 (1, 0, 0, 1)  runcinated 120-cell             V= 2400 E= 7200  hits= 432  shapes=4  (698.1s)
+  H4 (1, 0, 1, 0)  cantellated 120-cell            V= 3600 E=10800  hits= 432  shapes=5  (1446.2s)
+  H4 (0, 1, 1, 0)  bitruncated 120-cell            V= 3600 E= 7200  hits= 432  shapes=4  (825.5s)
+  H4 (0, 1, 0, 1)  cantellated 600-cell            V= 3600 E=10800  hits= 432  shapes=5  (1452.8s)
+  H4 (1, 0, 1, 1)  runcitruncated 600-cell         V= 7200 E=18000  hits= 432  shapes=11  (4101.8s)
+# run_wythoff_sweep --rng 2 --group H4
+# log: ongoing_work\sweep_log_rng2_H4.txt
+# 43 polytopes already done in prior logs; will skip those
+
+======================================================================
+Step 1: kernels of regular polytopes
+======================================================================
+  [H4] loaded 432 cached kernels from ongoing_work\kernels_H4_rng2.npy
+
+======================================================================
+Step 2: test each Wythoff combo against group kernels
+======================================================================
+# run_wythoff_sweep --rng 2 --group H4
+# log: ongoing_work\sweep_log_rng2_H4.txt
+# 43 polytopes already done in prior logs; will skip those
+
+======================================================================
+Step 1: kernels of regular polytopes
+======================================================================
+  [H4] loaded 432 cached kernels from ongoing_work\kernels_H4_rng2.npy
+
+======================================================================
+Step 2: test each Wythoff combo against group kernels
+======================================================================
+# no work item matches --bitmask 0000 in selected groups

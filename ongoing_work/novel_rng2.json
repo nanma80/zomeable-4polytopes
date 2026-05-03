@@ -285,6 +285,42 @@
       "_": 180
     }
   },
+  "13e387db31db699e": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          0.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 96,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 1,
+        "sig": {
+          "B": 4520,
+          "R": 7224,
+          "Y": 6016,
+          "_": 300
+        }
+      }
+    ],
+    "sig": {
+      "B": 4520,
+      "R": 7224,
+      "Y": 6016,
+      "_": 300
+    }
+  },
   "146e0f9552fd5bfd": {
     "n_balls": 1860,
     "occurrences": [
@@ -421,6 +457,78 @@
       "Y": 72
     }
   },
+  "1a0d721320c4f9a4": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          4.236068,
+          -0.0,
+          2.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 23,
+        "sig": {
+          "B": 3630,
+          "R": 5796,
+          "Y": 4842,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3630,
+      "R": 5796,
+      "Y": 4842,
+      "_": 240
+    }
+  },
+  "1ae105e55323f972": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          1.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 48,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 5,
+        "sig": {
+          "B": 3622,
+          "R": 5812,
+          "Y": 4842,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3622,
+      "R": 5812,
+      "Y": 4842,
+      "_": 244
+    }
+  },
   "1c278a1d7d573e01": {
     "n_balls": 20,
     "occurrences": [
@@ -489,6 +597,42 @@
       "Y": 9
     }
   },
+  "1dd1965c7d3eab6f": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          -1.0,
+          0.381966,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 16,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
+    }
+  },
   "1f76ff2f9476bd30": {
     "n_balls": 60,
     "occurrences": [
@@ -521,6 +665,78 @@
       "B": 36,
       "R": 72,
       "Y": 12
+    }
+  },
+  "1fc5749f9eb5111f": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          4.236068,
+          -2.618034,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 1,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 13,
+        "sig": {
+          "B": 3622,
+          "R": 5808,
+          "Y": 4835,
+          "_": 243
+        }
+      }
+    ],
+    "sig": {
+      "B": 3622,
+      "R": 5808,
+      "Y": 4835,
+      "_": 243
+    }
+  },
+  "24655dcf097cb753": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          1.0,
+          1.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 20,
+        "sig": {
+          "B": 3627,
+          "R": 5793,
+          "Y": 4844,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3627,
+      "R": 5793,
+      "Y": 4844,
+      "_": 244
     }
   },
   "24e9b2fd40d33c12": {
@@ -659,6 +875,42 @@
       "B": 48,
       "G": 48,
       "Y": 96
+    }
+  },
+  "2ff0da38f367d655": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -0.0,
+          1.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 54,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 3,
+        "sig": {
+          "B": 4520,
+          "R": 7224,
+          "Y": 6016,
+          "_": 300
+        }
+      }
+    ],
+    "sig": {
+      "B": 4520,
+      "R": 7224,
+      "Y": 6016,
+      "_": 300
     }
   },
   "30ce845d3f147147": {
@@ -939,6 +1191,42 @@
       "G": 96
     }
   },
+  "3e43cba23f267509": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          -0.0,
+          0.381966,
+          1.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 16,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 2,
+        "sig": {
+          "B": 3620,
+          "R": 5804,
+          "Y": 4854,
+          "_": 242
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5804,
+      "Y": 4854,
+      "_": 242
+    }
+  },
   "40be7cc1d7a2aae6": {
     "n_balls": 52,
     "occurrences": [
@@ -971,6 +1259,42 @@
       "B": 48,
       "Y": 128,
       "_": 16
+    }
+  },
+  "416fbd8e396057ac": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          0.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 96,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 1,
+        "sig": {
+          "B": 3646,
+          "R": 5788,
+          "Y": 4846,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3646,
+      "R": 5788,
+      "Y": 4846,
+      "_": 240
     }
   },
   "4507a6810f54bab2": {
@@ -1168,6 +1492,42 @@
       "R": 1440,
       "Y": 1200,
       "_": 60
+    }
+  },
+  "49d3d59b0be0af8f": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          1.618034,
+          -4.236068,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 1,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 25,
+        "sig": {
+          "B": 3626,
+          "R": 5807,
+          "Y": 4834,
+          "_": 241
+        }
+      }
+    ],
+    "sig": {
+      "B": 3626,
+      "R": 5807,
+      "Y": 4834,
+      "_": 241
     }
   },
   "4bd3daf2ff691601": {
@@ -1501,6 +1861,42 @@
       "_": 48
     }
   },
+  "59350c907e205e3a": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -1.618034,
+          0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 19,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
+    }
+  },
   "598a9495c4a6ee08": {
     "n_balls": 120,
     "occurrences": [
@@ -1718,6 +2114,78 @@
       "Y": 12
     }
   },
+  "6237017ed42b06c2": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.0,
+          -1.236068,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 42,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 9,
+        "sig": {
+          "B": 3628,
+          "R": 5790,
+          "Y": 4850,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3628,
+      "R": 5790,
+      "Y": 4850,
+      "_": 240
+    }
+  },
+  "633ba56c30a8db1e": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          -0.0,
+          1.0,
+          2.618034,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 9,
+        "sig": {
+          "B": 3620,
+          "R": 5804,
+          "Y": 4854,
+          "_": 242
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5804,
+      "Y": 4854,
+      "_": 242
+    }
+  },
   "663bee1002ea5ba9": {
     "n_balls": 32,
     "occurrences": [
@@ -1750,6 +2218,78 @@
       "B": 120,
       "G": 48,
       "_": 24
+    }
+  },
+  "665d7f8ac310071d": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -4.236068,
+          -1.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 22,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
+    }
+  },
+  "669e04c0d9f0e093": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -1.618034,
+          -0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 4,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 5,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
     }
   },
   "6a8e448e705fe862": {
@@ -1956,6 +2496,114 @@
       "Y": 15
     }
   },
+  "731abc5dc0bac389": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          3.236068,
+          -2.0,
+          -0.0,
+          -1.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 6,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 10,
+        "sig": {
+          "B": 3630,
+          "R": 5796,
+          "Y": 4842,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3630,
+      "R": 5796,
+      "Y": 4842,
+      "_": 240
+    }
+  },
+  "76caf5223054b76e": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          2.618034,
+          -0.0,
+          1.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 84,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 4,
+        "sig": {
+          "B": 3646,
+          "R": 5788,
+          "Y": 4846,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3646,
+      "R": 5788,
+      "Y": 4846,
+      "_": 240
+    }
+  },
+  "77bc10c853647913": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          0.381966,
+          1.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 48,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 2,
+        "sig": {
+          "B": 4508,
+          "R": 7230,
+          "Y": 6022,
+          "_": 300
+        }
+      }
+    ],
+    "sig": {
+      "B": 4508,
+      "R": 7230,
+      "Y": 6022,
+      "_": 300
+    }
+  },
   "79eb8c71bbe0c1d2": {
     "n_balls": 40,
     "occurrences": [
@@ -1990,6 +2638,78 @@
       "G": 16,
       "Y": 64,
       "_": 8
+    }
+  },
+  "7af56c5f9944ca44": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          0.381966,
+          -0.0,
+          -0.618034,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 4,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 10,
+        "sig": {
+          "B": 3622,
+          "R": 5820,
+          "Y": 4838,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3622,
+      "R": 5820,
+      "Y": 4838,
+      "_": 240
+    }
+  },
+  "7c320f9d25c35485": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          -0.0,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 144,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 0,
+        "sig": {
+          "B": 3624,
+          "R": 5828,
+          "Y": 4816,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3624,
+      "R": 5828,
+      "Y": 4816,
+      "_": 240
     }
   },
   "7c5d26836a772f89": {
@@ -2094,6 +2814,42 @@
       "B": 48,
       "G": 48,
       "Y": 32
+    }
+  },
+  "800f72c3baa479fe": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          1.618034,
+          2.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 7,
+        "sig": {
+          "B": 3627,
+          "R": 5793,
+          "Y": 4844,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3627,
+      "R": 5793,
+      "Y": 4844,
+      "_": 244
     }
   },
   "82123904b041cf96": {
@@ -2300,6 +3056,42 @@
       "_": 120
     }
   },
+  "8f579c25f1a3b738": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.381966,
+          -0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 24,
+        "sig": {
+          "B": 3635,
+          "R": 5808,
+          "Y": 4825,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3635,
+      "R": 5808,
+      "Y": 4825,
+      "_": 240
+    }
+  },
   "8fb8506b88904a84": {
     "n_balls": 60,
     "occurrences": [
@@ -2438,6 +3230,42 @@
       "_": 180
     }
   },
+  "92c34345287d3fbe": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          0.618034,
+          -0.0,
+          -1.0,
+          0.381966
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 25,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 3,
+        "sig": {
+          "B": 3648,
+          "R": 5796,
+          "Y": 4834,
+          "_": 242
+        }
+      }
+    ],
+    "sig": {
+      "B": 3648,
+      "R": 5796,
+      "Y": 4834,
+      "_": 242
+    }
+  },
   "93f8773f2a9f4ff6": {
     "n_balls": 3660,
     "occurrences": [
@@ -2540,6 +3368,42 @@
       "R": 7200,
       "Y": 6000,
       "_": 300
+    }
+  },
+  "98d0fae89b75adfc": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          2.618034,
+          4.236068,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 1,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 11,
+        "sig": {
+          "B": 3627,
+          "R": 5793,
+          "Y": 4844,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3627,
+      "R": 5793,
+      "Y": 4844,
+      "_": 244
     }
   },
   "98f06b019abad81d": {
@@ -2682,6 +3546,42 @@
       "R": 7200,
       "Y": 6000,
       "_": 300
+    }
+  },
+  "9d39cd0b0381aec2": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          3.236068,
+          -5.236068,
+          2.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 6,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 6,
+        "sig": {
+          "B": 3622,
+          "R": 5812,
+          "Y": 4842,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3622,
+      "R": 5812,
+      "Y": 4842,
+      "_": 244
     }
   },
   "9e2d21191f5bb5c9": {
@@ -2892,6 +3792,42 @@
       "_": 16
     }
   },
+  "a2c47bfa6218777a": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.0,
+          3.236068,
+          -5.236068,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 21,
+        "sig": {
+          "B": 3627,
+          "R": 5793,
+          "Y": 4844,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3627,
+      "R": 5793,
+      "Y": 4844,
+      "_": 244
+    }
+  },
   "a4032f7bbbf5c0db": {
     "n_balls": 48,
     "occurrences": [
@@ -2924,6 +3860,78 @@
       "B": 168,
       "G": 96,
       "_": 24
+    }
+  },
+  "a4e5c7b80c17d45d": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          -0.0,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 144,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 0,
+        "sig": {
+          "B": 4516,
+          "R": 7240,
+          "Y": 6004,
+          "_": 300
+        }
+      }
+    ],
+    "sig": {
+      "B": 4516,
+      "R": 7240,
+      "Y": 6004,
+      "_": 300
+    }
+  },
+  "a5838ce67b11ed4b": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          1.0,
+          -2.618034,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 42,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 4,
+        "sig": {
+          "B": 4508,
+          "R": 7230,
+          "Y": 6022,
+          "_": 300
+        }
+      }
+    ],
+    "sig": {
+      "B": 4508,
+      "R": 7230,
+      "Y": 6022,
+      "_": 300
     }
   },
   "a6537a898ef9f5f4": {
@@ -3064,6 +4072,42 @@
       "B": 45,
       "Y": 90,
       "_": 15
+    }
+  },
+  "aa55b8a9d1f83b71": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          0.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 36,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 1,
+        "sig": {
+          "B": 3623,
+          "R": 5807,
+          "Y": 4838,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3623,
+      "R": 5807,
+      "Y": 4838,
+      "_": 240
     }
   },
   "aabdf1c8acc26695": {
@@ -3261,6 +4305,42 @@
       "_": 96
     }
   },
+  "b4f719ee372c6ae6": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          1.618034,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 4,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 7,
+        "sig": {
+          "B": 3622,
+          "R": 5820,
+          "Y": 4838,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3622,
+      "R": 5820,
+      "Y": 4838,
+      "_": 240
+    }
+  },
   "b54c2aaed88eaa68": {
     "n_balls": 32,
     "occurrences": [
@@ -3291,6 +4371,78 @@
     "sig": {
       "B": 48,
       "G": 48
+    }
+  },
+  "b54e075a59987fbd": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          2.618034,
+          -0.0,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 7,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 14,
+        "sig": {
+          "B": 3644,
+          "R": 5782,
+          "Y": 4842,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3644,
+      "R": 5782,
+      "Y": 4842,
+      "_": 240
+    }
+  },
+  "b5a8ec00269113aa": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -2.618034,
+          -1.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 4,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 12,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
     }
   },
   "b7477fe6c010645e": {
@@ -3325,6 +4477,42 @@
       "B": 96,
       "R": 192,
       "Y": 96
+    }
+  },
+  "b92076625c902fdf": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          -0.0,
+          -1.0,
+          0.381966
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 35,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 3,
+        "sig": {
+          "B": 3627,
+          "R": 5793,
+          "Y": 4844,
+          "_": 244
+        }
+      }
+    ],
+    "sig": {
+      "B": 3627,
+      "R": 5793,
+      "Y": 4844,
+      "_": 244
     }
   },
   "bb5b56af5879ca97": {
@@ -3665,6 +4853,78 @@
       "_": 24
     }
   },
+  "c95674ff52925e31": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -1.618034,
+          -0.0,
+          4.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 17,
+        "sig": {
+          "B": 3628,
+          "R": 5790,
+          "Y": 4850,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3628,
+      "R": 5790,
+      "Y": 4850,
+      "_": 240
+    }
+  },
+  "ca7e9a12342693f6": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          0.381966,
+          1.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 9,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 2,
+        "sig": {
+          "B": 3626,
+          "R": 5807,
+          "Y": 4834,
+          "_": 241
+        }
+      }
+    ],
+    "sig": {
+      "B": 3626,
+      "R": 5807,
+      "Y": 4834,
+      "_": 241
+    }
+  },
   "cca712ec6eab236a": {
     "n_balls": 52,
     "occurrences": [
@@ -3827,6 +5087,42 @@
       "_": 24
     }
   },
+  "d2bc1b0ca38dccb6": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -4.236068,
+          -0.0,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 2,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 15,
+        "sig": {
+          "B": 3624,
+          "R": 5828,
+          "Y": 4816,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3624,
+      "R": 5828,
+      "Y": 4816,
+      "_": 240
+    }
+  },
   "d5e0a9df5db2763e": {
     "n_balls": 1860,
     "occurrences": [
@@ -3967,6 +5263,42 @@
       "B": 96,
       "R": 192,
       "Y": 96
+    }
+  },
+  "da41392ff51f8259": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.618034,
+          -1.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 4,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 18,
+        "sig": {
+          "B": 3635,
+          "R": 5808,
+          "Y": 4825,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3635,
+      "R": 5808,
+      "Y": 4825,
+      "_": 240
     }
   },
   "db7b74a33dd8f802": {
@@ -4141,6 +5473,78 @@
       "_": 72
     }
   },
+  "e30149ab81ce86ef": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          1.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 13,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 6,
+        "sig": {
+          "B": 3620,
+          "R": 5801,
+          "Y": 4840,
+          "_": 247
+        }
+      }
+    ],
+    "sig": {
+      "B": 3620,
+      "R": 5801,
+      "Y": 4840,
+      "_": 247
+    }
+  },
+  "e45dd01d6e5b46ba": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          -0.0,
+          -0.0,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 144,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 0,
+        "sig": {
+          "B": 3628,
+          "R": 5808,
+          "Y": 4832,
+          "_": 252
+        }
+      }
+    ],
+    "sig": {
+      "B": 3628,
+      "R": 5808,
+      "Y": 4832,
+      "_": 252
+    }
+  },
   "e4fb66f8e75ce530": {
     "n_balls": 120,
     "occurrences": [
@@ -4173,6 +5577,42 @@
       "B": 48,
       "R": 96,
       "Y": 96
+    }
+  },
+  "e60e673cfd483272": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -0.0,
+          1.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 88,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 4,
+        "sig": {
+          "B": 3623,
+          "R": 5807,
+          "Y": 4838,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3623,
+      "R": 5807,
+      "Y": 4838,
+      "_": 240
     }
   },
   "e631eef5931ff05a": {
@@ -4353,6 +5793,42 @@
       "_": 300
     }
   },
+  "f451c8c5fb3ae05d": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          1.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 48,
+        "name": "runcitruncated 120-cell",
+        "shape_idx": 5,
+        "sig": {
+          "B": 4514,
+          "R": 7216,
+          "Y": 6028,
+          "_": 302
+        }
+      }
+    ],
+    "sig": {
+      "B": 4514,
+      "R": 7216,
+      "Y": 6028,
+      "_": 302
+    }
+  },
   "f4883725e7e114ea": {
     "n_balls": 192,
     "occurrences": [
@@ -4444,6 +5920,78 @@
       "B": 192,
       "G": 192,
       "Y": 96
+    }
+  },
+  "f7d1282c7138cd4f": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "example_kernel": [
+          0.618034,
+          1.0,
+          -0.381966,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 3,
+        "name": "cantitruncated 120-cell",
+        "shape_idx": 8,
+        "sig": {
+          "B": 3646,
+          "R": 5788,
+          "Y": 4846,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3646,
+      "R": 5788,
+      "Y": 4846,
+      "_": 240
+    }
+  },
+  "f85e2e96c70d8cc4": {
+    "n_balls": 3660,
+    "occurrences": [
+      {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -0.0,
+          1.618034,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 3660,
+        "n_kernels": 17,
+        "name": "cantitruncated 600-cell",
+        "shape_idx": 8,
+        "sig": {
+          "B": 3623,
+          "R": 5807,
+          "Y": 4838,
+          "_": 240
+        }
+      }
+    ],
+    "sig": {
+      "B": 3623,
+      "R": 5807,
+      "Y": 4838,
+      "_": 240
     }
   },
   "fb0b1ebf05aef942": {
