@@ -53,7 +53,7 @@ kernels produce congruent 3D shapes).
 
 ## 3D Viewers
 
-<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'/>
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="5cell_4ball_Y6B3.vZome" >
