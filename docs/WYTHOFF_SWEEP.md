@@ -196,14 +196,16 @@ shapes successfully snapped to ZZ[φ]³ (the zometool-realisable subset):
 | H₄ | 37 | 37 | 100% |
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
-Their projections are abstractly zomeable in the sense that every
-edge lies on a default zometool axis, but the ball coordinates require
-larger denominators in the (a + bφ) lattice than emit_generic's
-default search range covers.  This is a known limitation already
-documented in [`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
-("3 of 5 rng=1 8-cell shapes snap").  All the icosahedral H₄ shapes
-snap because the icosahedral basis is naturally aligned with the
-golden-ratio integer lattice.
+The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
+projects to a 3D shape whose ball coordinates are `(±1, ±1, ±(1+√2))`
+— the silver ratio, in `ℤ[√2]³`, **not** `ℤ[φ]³`.  Every edge still
+lies on a default zometool axis (the (√2, 0, 0) edges line up with
+the Blue/X axis), so the projection passes the search-engine
+zomeability test, but vZome cannot represent ball positions outside
+`Q(φ) = Q(√5)` since `√2 ∉ Q(√5)`.  This is a structural feature of
+B₄/F₄ projections, not a search-precision artefact.  All the
+icosahedral H₄ shapes snap because the icosahedral basis is naturally
+aligned with the golden-ratio integer lattice.
 
 vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/);
 file names follow the pattern
