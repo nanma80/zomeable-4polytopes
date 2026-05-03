@@ -139,6 +139,10 @@ def main():
                     help="run only this Coxeter group (default: all four)")
     ap.add_argument("--no-cache", action="store_true",
                     help="don't read or write the step-1 kernel cache")
+    ap.add_argument("--sort-by-size", action="store_true",
+                    help="iterate step 2 by polytope vertex count ascending "
+                         "(useful for graceful degradation on H4 where the "
+                         "omnitruncated 120-cell is much larger than the rest)")
     ap.add_argument("--log", default=None,
                     help="output log path (default: "
                          "ongoing_work/sweep_log_rng<N>_<group>.txt)")
@@ -177,10 +181,31 @@ def main():
     print("=" * 70)
     print("Step 2: test each Wythoff combo against group kernels")
     print("=" * 70)
+
+    # Collect work items, optionally sorted by polytope V count.
+    work = [(g, b, n) for (g, b, n) in all_uniform_polytopes()
+            if g in groups_to_run]
+    if args.sort_by_size:
+        sized = []
+        for g, b, n in work:
+            if (g, b) in KNOWN_DUPLICATES or (g, b) in done_set:
+                # Place skips/dups at the front (cheap to handle).
+                sized.append((-1, g, b, n))
+                continue
+            try:
+                Vp, _ = build_polytope(g, b)
+                sized.append((len(Vp), g, b, n))
+            except Exception:
+                sized.append((10**9, g, b, n))
+        sized.sort(key=lambda t: t[0])
+        work = [(g, b, n) for (_, g, b, n) in sized]
+        print(f"# step-2 iteration order (sort-by-size):")
+        for g, b, n in work:
+            print(f"#   {g} {b}  {n}")
+        print()
+
     results = []
-    for group, b, name in all_uniform_polytopes():
-        if group not in groups_to_run:
-            continue
+    for group, b, name in work:
         if (group, b) in KNOWN_DUPLICATES:
             tgt = KNOWN_DUPLICATES[(group, b)]
             print(f"  {group} {b}  {name:30s}  [DUP of {tgt}]")
