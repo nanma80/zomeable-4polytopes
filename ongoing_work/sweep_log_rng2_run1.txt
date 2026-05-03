@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\nanma\Documents\vZome\zomeable-4polytopes\tools\run_wythoff_sweep.py", line 29, in <module>
+    from uniform_polytopes import all_uniform_polytopes, KNOWN_DUPLICATES
+  File "C:\Users\nanma\Documents\vZome\zomeable-4polytopes\tools\..\lib\uniform_polytopes.py", line 28, in <module>
+    from .wythoff import COXETER_MATRICES
+ImportError: attempted relative import with no known parent package
