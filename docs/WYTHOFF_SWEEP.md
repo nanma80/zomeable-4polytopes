@@ -135,46 +135,107 @@ support-2 automatic-zomeability and have only 1–3 shapes each.
 
 ### H₄ (120-cell / 600-cell family)
 
-_Results pending; sweep in progress as of this draft._
+11 of 15 polytopes complete; 4 in progress (parallel `--bitmask` runs
+on a 24-core box, expected to finish over the next few hours).
 
 | bitmask    | name                       | V     | E     | shapes |
 |------------|----------------------------|------:|------:|-------:|
-| (0,0,0,1)  | 600-cell                   | 120   | 720   | _TBD_  |
-| (1,0,0,0)  | 120-cell                   | 600   | 1200  | _TBD_  |
-| (0,0,1,0)  | rectified 600-cell         | 720   | 3600  | _TBD_  |
-| (0,1,0,0)  | rectified 120-cell         | 1200  | 3600  | _TBD_  |
-| (0,0,1,1)  | truncated 600-cell         | 1440  | 4320  | _TBD_  |
-| (1,1,0,0)  | truncated 120-cell         | 2400  | 4800  | _TBD_  |
-| (1,0,0,1)  | runcinated 120-cell        | 2400  | 7200  | _TBD_  |
-| (1,0,1,0)  | cantellated 120-cell       | 3600  | 10800 | _TBD_  |
-| (0,1,1,0)  | bitruncated 120-cell       | 3600  | 7200  | _TBD_  |
-| (0,1,0,1)  | cantellated 600-cell       | 3600  | 10800 | _TBD_  |
-| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14400 | _TBD_  |
-| (1,0,1,1)  | runcitruncated 600-cell    | 7200  | 18000 | _TBD_  |
-| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14400 | _TBD_  |
-| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18000 | _TBD_  |
-| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | _TBD_  |
+| (0,0,0,1)  | 600-cell                   | 120   | 720   | 1      |
+| (1,0,0,0)  | 120-cell                   | 600   | 1200  | 1      |
+| (0,0,1,0)  | rectified 600-cell         | 720   | 3600  | 2      |
+| (0,1,0,0)  | rectified 120-cell         | 1200  | 3600  | 1      |
+| (0,0,1,1)  | truncated 600-cell         | 1440  | 4320  | 2      |
+| (1,1,0,0)  | truncated 120-cell         | 2400  | 4800  | 3      |
+| (1,0,0,1)  | runcinated 120-cell        | 2400  | 7200  | 4      |
+| (1,0,1,0)  | cantellated 120-cell       | 3600  | 10800 | 5      |
+| (0,1,1,0)  | bitruncated 120-cell       | 3600  | 7200  | 4      |
+| (0,1,0,1)  | cantellated 600-cell       | 3600  | 10800 | 5      |
+| (1,0,1,1)  | runcitruncated 600-cell    | 7200  | 18000 | 11     |
+| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14400 | _running_  |
+| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14400 | _running_  |
+| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18000 | _running_  |
+| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | _running_  |
 
-## Novel-shape inventory
+The `runcitruncated 600-cell` count of **11** distinct shapes already
+exceeds every other H₄ polytope so far — most of the 4D shape diversity
+in the icosahedral group lives in the higher-V uniforms.
 
-_Pending H₄ completion; see `tools/analyze_sweep.py` and
-`ongoing_work/shapes_rng2.jsonl`._
+## Novel-shape inventory (rng = 2, partial: 43 of 45 polytope records)
 
-The cross-reference engine (`tools/analyze_sweep.py`) computes
-fingerprints of the 8 canonical polytopes' projections at the same rng
-and labels each sweep shape as `[KNOWN <polytope>]` or `[NOVEL]`.
+[`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep
+shape against the regular reference set built from the (1,0,0,0)/
+(0,0,0,1) records of every group (the 6 standard regular convex
+4-polytopes).  None of the descendant Wythoff shapes match any of the 6
+regular-polytope projections at rng=2 — descendants always have many
+more vertices than their regular, so their projection inventories are
+strictly disjoint at this kernel range.
+
+| group | shapes (excl. regular ref records) | distinct novel fp_hashes |
+|:-:|--:|--:|
+| A₄ | 43 | 43 |
+| B₄ | 34 | (subset of 127 distinct) |
+| F₄ | 20 | (subset of 127 distinct) |
+| H₄ | 37 | (subset of 127 distinct) |
+| **TOTAL** | **134 sweep-shape entries** | **127 distinct fp_hashes** |
+
+The seven near-duplicates are cases where two different Wythoff
+polytopes project to the same 3D shape under different kernels (the
+hash is identical because shape fingerprints are rotation- and
+uniform-scale-invariant).
+
+[`tools/emit_novel.py`](../tools/emit_novel.py) iterates the novel
+inventory and calls `lib.emit_generic.project_and_emit` to write a
+.vZome file per shape.  At rng=2 the result was **100 of 127** novel
+shapes successfully snapped to ZZ[φ]³ (the zometool-realisable subset):
+
+| group | novel shapes | snapped to vZome | snap rate |
+|:-:|--:|--:|--:|
+| A₄ | 43 | 43 | 100% |
+| B₄ | 34 | 13 | 38% |
+| F₄ | 13 | 7  | 54% |
+| H₄ | 37 | 37 | 100% |
+
+The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
+Their projections are abstractly zomeable in the sense that every
+edge lies on a default zometool axis, but the ball coordinates require
+larger denominators in the (a + bφ) lattice than emit_generic's
+default search range covers.  This is a known limitation already
+documented in [`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
+("3 of 5 rng=1 8-cell shapes snap").  All the icosahedral H₄ shapes
+snap because the icosahedral basis is naturally aligned with the
+golden-ratio integer lattice.
+
+vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/);
+file names follow the pattern
+`<group>_<bitmask>_<shape_idx>_<fp_hash[:10]>.vZome` and a JSON
+manifest at `output/wythoff_sweep/manifest.json` cross-references each
+file with its fp_hash, source polytope, kernel direction, and per-axis
+strut counts.
 
 ## Reproduction
 
 ```powershell
-# (One-time per group; H4 step 1 takes ~48 min, others under a minute.)
+# Per-group sweep.  H4 step 1 takes ~16 min vectorised (~48 min on the
+# pre-vectorisation engine); other groups finish in seconds.
 python tools/run_wythoff_sweep.py --group A4 --rng 2
 python tools/run_wythoff_sweep.py --group B4 --rng 2
 python tools/run_wythoff_sweep.py --group F4 --rng 2
 python tools/run_wythoff_sweep.py --group H4 --rng 2 --sort-by-size
 
-# Compute canonical fingerprints (one-time, cached) and label sweep shapes.
-python tools/analyze_sweep.py --rng 2
+# For the 4 large H4 polytopes (V=7200..14400) it is faster to drive
+# them in parallel via --bitmask, one process per polytope:
+python tools/run_wythoff_sweep.py --group H4 --rng 2 --bitmask 1101 `
+    --log ongoing_work/sweep_log_rng2_H4_1101.txt `
+    --shapes-jsonl ongoing_work/shapes_rng2_H4_1101.jsonl
+# (...repeat for 1110, 0111, 1111, then concatenate the per-job
+# JSONLs into ongoing_work/shapes_rng2.jsonl.)
+
+# Cross-reference sweep shapes against the regular polytopes.
+python tools/analyze_sweep.py --rng 2 `
+    --out-novel ongoing_work/novel_rng2.json
+
+# Emit .vZome files for every novel shape (output/wythoff_sweep/).
+python tools/emit_novel.py --rng 2
 ```
 
 ## Implementation notes / caveats
@@ -184,11 +245,19 @@ python tools/analyze_sweep.py --rng 2
   Procrustes-aligns it to the canonical embedding in `lib/polytopes.py`.
   Wythoff variants of the same group inherit that rotation, so step-1
   kernel directions transfer directly to step 2 with no further
-  alignment.
+  alignment.  However the Procrustes rotation in general is not an
+  axis-permutation of the canonical lattice basis, which means
+  `gen_dirs()` samples a *different* subset of the zomeable kernels for
+  the Wythoff embedding than for `lib/polytopes`'s embedding of the same
+  regular polytope.  For this reason `tools/analyze_sweep.py` builds
+  its reference set from the sweep's own (1,0,0,0)/(0,0,0,1) records
+  rather than re-running `lib/polytopes`-side searches.
 - **Search-engine sharing.** The sweep calls
-  `lib.search_engine.search` and `group_by_shape` unchanged; the only
-  refactoring is `tools/run_wythoff_sweep.py`'s outer loop and the
-  per-polytope JSONL dump.
+  `lib.search_engine.search` and `group_by_shape` unchanged.  Both
+  functions are now numpy-vectorised internally (`_check_cos_pairs` for
+  edge alignment, `cKDTree` + Gram-matrix pairwise distances for shape
+  fingerprints) — speedups of 39–42× on the H₄ 600/120-cell unlocked
+  the V=14400 omnitruncated 120-cell case for tractable analysis.
 - **Caches and resumability.**
   - Step-1 hits → `ongoing_work/kernels_<group>_rng<N>.npy`.
   - Per-polytope step-2 result lines → any
@@ -198,8 +267,16 @@ python tools/analyze_sweep.py --rng 2
     `ongoing_work/shapes_rng<N>.jsonl`. Pass `--force` to re-test
     polytopes already in prior logs (used to backfill the JSONL when
     the dump format was added retroactively).
+- **`--bitmask BMBMBMBM`** restricts a sweep to a single Wythoff variant
+  so large polytopes can be driven in parallel (one process per V≥7200
+  uniform).  The per-job dumps are independent JSONL files which can be
+  concatenated into the master `ongoing_work/shapes_rng2.jsonl` once
+  all jobs complete.
 - **`--sort-by-size`** sorts step-2 by polytope V count ascending so
   that, for H₄, the V=14400 omnitruncated 120-cell is processed last
   and the other 14 forms complete first if the run is time-bounded.
 - **B₄ tesseract 32 shapes** is *not* a search-engine over-match; it is
-  the rng=2 truncation of the infinite split-cuboid family.
+  the rng=2 truncation of the infinite split-cuboid family.  The 32
+  shapes split into 1 cell-first (`B': 24`) sporadic plus 31 generic
+  rectangular-cuboid kernels with `B': 32` signature, exactly as
+  enumerated in `output/8cell/CLASSIFICATION.md §3`.
