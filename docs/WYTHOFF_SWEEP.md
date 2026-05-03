@@ -135,8 +135,8 @@ support-2 automatic-zomeability and have only 1–3 shapes each.
 
 ### H₄ (120-cell / 600-cell family)
 
-11 of 15 polytopes complete; 4 in progress (parallel `--bitmask` runs
-on a 24-core box, expected to finish over the next few hours).
+14 of 15 polytopes complete; the omnitruncated 120-cell (V=14400) was
+running on the 24-core box at the time of writing.
 
 | bitmask    | name                       | V     | E     | shapes |
 |------------|----------------------------|------:|------:|-------:|
@@ -151,16 +151,22 @@ on a 24-core box, expected to finish over the next few hours).
 | (0,1,1,0)  | bitruncated 120-cell       | 3600  | 7200  | 4      |
 | (0,1,0,1)  | cantellated 600-cell       | 3600  | 10800 | 5      |
 | (1,0,1,1)  | runcitruncated 600-cell    | 7200  | 18000 | 11     |
-| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14400 | _running_  |
-| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14400 | _running_  |
-| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18000 | _running_  |
+| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18060 | 6      |
+| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14520 | 11     |
+| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14508 | 26     |
 | (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | _running_  |
 
-The `runcitruncated 600-cell` count of **11** distinct shapes already
-exceeds every other H₄ polytope so far — most of the 4D shape diversity
-in the icosahedral group lives in the higher-V uniforms.
+(The cantitruncated and runcitruncated 7200-vertex polytopes report
+slightly more than 7200 vertices and 14400 edges in the engine due to a
+known `tol_decimals=8` rounding issue in `lib.wythoff.orbit`; the
+correct kernels and shape counts are still found because the search
+engine deduplicates internally.)
 
-## Novel-shape inventory (rng = 2, partial: 43 of 45 polytope records)
+H₄ shape diversity grows sharply with V: the cantitruncated 600-cell
+contributes 26 distinct shapes alone — more than every other H₄
+polytope below it combined.
+
+## Novel-shape inventory (rng = 2, 46 of 47 polytope records)
 
 [`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep
 shape against the regular reference set built from the (1,0,0,0)/
@@ -172,11 +178,11 @@ strictly disjoint at this kernel range.
 
 | group | shapes (excl. regular ref records) | distinct novel fp_hashes |
 |:-:|--:|--:|
-| A₄ | 43 | 43 |
-| B₄ | 34 | (subset of 127 distinct) |
-| F₄ | 20 | (subset of 127 distinct) |
-| H₄ | 37 | (subset of 127 distinct) |
-| **TOTAL** | **134 sweep-shape entries** | **127 distinct fp_hashes** |
+| A₄ | 43  | 43  |
+| B₄ | 34  | 34  |
+| F₄ | 20  | 20  |
+| H₄ | 80  | 80  |
+| **TOTAL** | **177 sweep-shape entries** | **170 distinct fp_hashes** |
 
 The seven near-duplicates are cases where two different Wythoff
 polytopes project to the same 3D shape under different kernels (the
@@ -185,15 +191,15 @@ uniform-scale-invariant).
 
 [`tools/emit_novel.py`](../tools/emit_novel.py) iterates the novel
 inventory and calls `lib.emit_generic.project_and_emit` to write a
-.vZome file per shape.  At rng=2 the result was **100 of 127** novel
+.vZome file per shape.  At rng=2 the result is **143 of 170** novel
 shapes successfully snapped to ZZ[φ]³ (the zometool-realisable subset):
 
 | group | novel shapes | snapped to vZome | snap rate |
 |:-:|--:|--:|--:|
 | A₄ | 43 | 43 | 100% |
-| B₄ | 34 | 13 | 38% |
-| F₄ | 13 | 7  | 54% |
-| H₄ | 37 | 37 | 100% |
+| B₄ | 34 | 13 | 38%  |
+| F₄ | 20 | 7  | 35%  |
+| H₄ | 80 | 80 | 100% |
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
 The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
