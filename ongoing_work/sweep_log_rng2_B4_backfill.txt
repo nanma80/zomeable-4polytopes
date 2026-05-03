@@ -1,0 +1,51 @@
+# run_wythoff_sweep --rng 2 --group B4
+# log: ongoing_work\sweep_log_rng2_B4_backfill.txt
+# shapes dump: ongoing_work\shapes_rng2_B4.jsonl
+
+======================================================================
+Step 1: kernels of regular polytopes
+======================================================================
+  [B4] regular: |V|=16, |E|=32, trying 195312 dirs...
+  [B4] 2640 hits in 24.7s
+  [B4] cached to ongoing_work\kernels_B4_rng2.npy
+
+======================================================================
+Step 2: test each Wythoff combo against group kernels
+======================================================================
+  B4 (1, 0, 0, 0)  tesseract                       V=   16 E=   32  hits=2640  shapes=32  (14.3s)
+  B4 (0, 1, 0, 0)  rectified tesseract             V=   32 E=   96  hits= 288  shapes=3  (6.6s)
+  B4 (1, 1, 0, 0)  truncated tesseract             V=   64 E=  128  hits= 288  shapes=3  (3.8s)
+  B4 (0, 0, 1, 0)  24-cell                         V=   24 E=   96  hits= 288  shapes=2  (3.4s)
+  B4 (1, 0, 1, 0)  cantellated tesseract           V=   96 E=  288  hits= 288  shapes=3  (13.4s)
+  B4 (0, 1, 1, 0)  bitruncated tesseract           V=   96 E=  192  hits= 288  shapes=3  (5.4s)
+  B4 (1, 1, 1, 0)  cantitruncated tesseract        V=  192 E=  384  hits= 288  shapes=3  (13.1s)
+  B4 (0, 0, 0, 1)  16-cell                         V=    8 E=   24  hits= 288  shapes=3  (2.6s)
+  B4 (1, 0, 0, 1)  runcinated tesseract            V=   64 E=  192  hits= 288  shapes=3  (10.6s)
+  B4 (0, 1, 0, 1)  cantellated 16-cell             V=   96 E=  288  hits= 288  shapes=2  (9.4s)
+  B4 (1, 1, 0, 1)  runcitruncated tesseract        V=  192 E=  480  hits= 288  shapes=3  (17.4s)
+  B4 (0, 0, 1, 1)  truncated 16-cell               V=   48 E=  120  hits= 288  shapes=3  (3.8s)
+  B4 (1, 0, 1, 1)  runcitruncated 16-cell          V=  192 E=  480  hits= 288  shapes=3  (24.3s)
+  B4 (0, 1, 1, 1)  cantitruncated 16-cell          V=  192 E=  384  hits= 288  shapes=2  (11.8s)
+  B4 (1, 1, 1, 1)  omnitruncated tesseract         V=  384 E=  768  hits= 288  shapes=3  (43.5s)
+
+======================================================================
+Step 3: census (this run only)
+======================================================================
+group bitmask    name                               V     E  hits  shapes
+  B4 (1, 0, 0, 0) tesseract                         16    32  2640      32
+  B4 (0, 1, 0, 0) rectified tesseract               32    96   288       3
+  B4 (1, 1, 0, 0) truncated tesseract               64   128   288       3
+  B4 (0, 0, 1, 0) 24-cell                           24    96   288       2
+  B4 (1, 0, 1, 0) cantellated tesseract             96   288   288       3
+  B4 (0, 1, 1, 0) bitruncated tesseract             96   192   288       3
+  B4 (1, 1, 1, 0) cantitruncated tesseract         192   384   288       3
+  B4 (0, 0, 0, 1) 16-cell                            8    24   288       3
+  B4 (1, 0, 0, 1) runcinated tesseract              64   192   288       3
+  B4 (0, 1, 0, 1) cantellated 16-cell               96   288   288       2
+  B4 (1, 1, 0, 1) runcitruncated tesseract         192   480   288       3
+  B4 (0, 0, 1, 1) truncated 16-cell                 48   120   288       3
+  B4 (1, 0, 1, 1) runcitruncated 16-cell           192   480   288       3
+  B4 (0, 1, 1, 1) cantitruncated 16-cell           192   384   288       2
+  B4 (1, 1, 1, 1) omnitruncated tesseract          384   768   288       3
+
+Distinct shapes across this run: 71
