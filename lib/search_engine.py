@@ -269,7 +269,7 @@ def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True):
     return found
 
 
-def shape_fingerprint(V, edges, n, tol=1e-3):
+def shape_fingerprint(V, edges, n, tol=1e-3, large_n_balls=5000):
     """Rotation+scale-invariant fingerprint of the projected shape.
     Sorted tuple of normalized pairwise squared distances.
 
@@ -286,6 +286,18 @@ def shape_fingerprint(V, edges, n, tol=1e-3):
     Python double-loop), and the numpy Gram-matrix trick for O(M^2)
     pairwise distances on the M deduped balls (chunked when M is big
     enough that the M x M matrix wouldn't fit comfortably in memory).
+
+    For n_balls > large_n_balls the M^2 sorted distance tuple is too
+    bulky to materialise (M=14400 -> ~3 GB per call, accumulates across
+    ~30 unique shapes for the H4 omnitruncated 120-cell into >40 GB
+    even with proper Python-side dereferencing because of numpy arena
+    behaviour).  In that regime we instead build a multiset hash:
+    iterate chunks, accumulate (rounded normalised distance -> count)
+    into a Counter, and return ``(n_balls, ('multiset', sorted_items))``.
+    The multiset is order-independent (so the fingerprint stays a
+    function of the shape, not the ball ordering) and at most
+    ~few-thousand entries (one per distinct rounded distance value),
+    which keeps the per-call peak memory at O(chunk + |distinct|).
     """
     from scipy.spatial import cKDTree
     Q = projection_matrix(n)
@@ -307,9 +319,56 @@ def shape_fingerprint(V, edges, n, tol=1e-3):
     if n_balls < 2:
         return (n_balls, ())
 
-    # Vectorised pairwise squared distances.  For n_balls up to ~16000
-    # the n_balls^2 matrix is ~2 GB; chunk above a safe threshold.
     sq = (balls * balls).sum(axis=1)
+
+    # Memory-bounded path for very large polytopes.
+    if n_balls > large_n_balls:
+        chunk = 2048
+        # Pass 1: find smallest non-zero squared distance for normalisation.
+        s_min = float("inf")
+        for i in range(0, n_balls, chunk):
+            Bi = balls[i:i + chunk]
+            sqi = sq[i:i + chunk]
+            for j in range(i, n_balls, chunk):
+                Bj = balls[j:j + chunk]
+                sqj = sq[j:j + chunk]
+                D2 = sqi[:, None] + sqj[None, :] - 2.0 * (Bi @ Bj.T)
+                if i == j:
+                    iu = np.triu_indices(D2.shape[0], k=1)
+                    flat = D2[iu]
+                else:
+                    flat = D2.ravel()
+                pos = flat[flat > tol]
+                if pos.size:
+                    cmin = float(pos.min())
+                    if cmin < s_min:
+                        s_min = cmin
+        if s_min == float("inf"):
+            return (n_balls, ())
+        # Pass 2: accumulate Counter of normalised rounded distances.
+        from collections import Counter as _Counter
+        counter = _Counter()
+        inv = 1.0 / s_min
+        for i in range(0, n_balls, chunk):
+            Bi = balls[i:i + chunk]
+            sqi = sq[i:i + chunk]
+            for j in range(i, n_balls, chunk):
+                Bj = balls[j:j + chunk]
+                sqj = sq[j:j + chunk]
+                D2 = sqi[:, None] + sqj[None, :] - 2.0 * (Bi @ Bj.T)
+                if i == j:
+                    iu = np.triu_indices(D2.shape[0], k=1)
+                    flat = D2[iu]
+                else:
+                    flat = D2.ravel()
+                vals, counts = np.unique(np.round(flat * inv, 3),
+                                         return_counts=True)
+                for v, c in zip(vals.tolist(), counts.tolist()):
+                    counter[v] += c
+        items = tuple(sorted(counter.items()))
+        return (n_balls, ("multiset", items))
+
+    # Small / medium n_balls: original sorted-tuple path.
     if n_balls <= 8000:
         D2 = sq[:, None] + sq[None, :] - 2.0 * (balls @ balls.T)
         iu = np.triu_indices(n_balls, k=1)

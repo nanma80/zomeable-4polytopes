@@ -116,10 +116,31 @@ _MAX_DUMP_BALLS = 500
 
 
 def _hash_fingerprint(fp):
-    """Stable SHA-256 hex digest of a (n_balls, distance_tuple)
-    fingerprint, robust across Python's randomized hash()."""
+    """Stable SHA-256 hex digest of a fingerprint, robust across
+    Python's randomized hash().
+
+    The fingerprint can have two shapes (see lib/search_engine
+    .shape_fingerprint):
+      - ``(n_balls, sorted_distance_tuple)`` for the small/medium
+        polytopes (the original format).
+      - ``(n_balls, ('multiset', sorted_(value, count)_items))`` for
+        the very-large polytopes (V > ~5000) where the full sorted
+        distance tuple is too bulky to materialise.
+    Both formats are dispatched here so a single fp_hash field in the
+    JSONL records covers either case; collisions across formats are not
+    expected because the multiset path only ever fires for n_balls
+    above a threshold that no small-polytope record will reach.
+    """
     n_balls, dists = fp
-    payload = repr((int(n_balls), tuple(round(float(d), 6) for d in dists)))
+    if (isinstance(dists, tuple) and len(dists) == 2
+            and dists[0] == "multiset"):
+        items = dists[1]
+        payload = repr(("multiset", int(n_balls),
+                        tuple((round(float(v), 6), int(c))
+                              for v, c in items)))
+    else:
+        payload = repr((int(n_balls),
+                        tuple(round(float(d), 6) for d in dists)))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
@@ -138,7 +159,9 @@ def dump_shape_record(path, group, bitmask, name, V, E, n_hits,
             "example_sig": {k: int(v) for k, v in sig0.items()},
             "example_balls": int(balls0),
         }
-        if n_balls <= _MAX_DUMP_BALLS:
+        is_multiset = (isinstance(dists, tuple) and len(dists) == 2
+                       and dists[0] == "multiset")
+        if n_balls <= _MAX_DUMP_BALLS and not is_multiset:
             rec["distances"] = [float(d) for d in dists]
         shapes.append(rec)
     record = {
