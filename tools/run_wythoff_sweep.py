@@ -30,6 +30,8 @@ import os
 import re
 import time
 import glob
+import json
+import hashlib
 import argparse
 
 # Allow running as a module or directly
@@ -91,6 +93,53 @@ def test_polytope_against_kernels(group, bitmask, name, kernels):
     return V, E, hits, groups
 
 
+# Threshold above which a shape's full pairwise-distance tuple is too
+# bulky to dump (n_balls choose 2 floats per shape).  For shapes larger
+# than this we still dump n_balls + a stable hash of the fingerprint, so
+# the shape can be cross-referenced on inspection.
+_MAX_DUMP_BALLS = 500
+
+
+def _hash_fingerprint(fp):
+    """Stable SHA-256 hex digest of a (n_balls, distance_tuple)
+    fingerprint, robust across Python's randomized hash()."""
+    n_balls, dists = fp
+    payload = repr((int(n_balls), tuple(round(float(d), 6) for d in dists)))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def dump_shape_record(path, group, bitmask, name, V, E, n_hits,
+                      n_kernels_tested, shape_groups):
+    """Append a single JSON record describing this polytope's shapes."""
+    shapes = []
+    for fp, examples in shape_groups.items():
+        n_balls, dists = fp
+        n0, sig0, balls0 = examples[0]
+        rec = {
+            "n_balls": int(n_balls),
+            "fp_hash": _hash_fingerprint(fp),
+            "n_kernels": len(examples),
+            "example_kernel": [float(x) for x in n0],
+            "example_sig": {k: int(v) for k, v in sig0.items()},
+            "example_balls": int(balls0),
+        }
+        if n_balls <= _MAX_DUMP_BALLS:
+            rec["distances"] = [float(d) for d in dists]
+        shapes.append(rec)
+    record = {
+        "group": group,
+        "bitmask": list(bitmask),
+        "name": name,
+        "V": int(len(V)),
+        "E": int(len(E)),
+        "n_kernels_tested": int(n_kernels_tested),
+        "n_hits": int(n_hits),
+        "shapes": shapes,
+    }
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record) + "\n")
+
+
 # Match a successful step-2 result line, e.g.
 #   "  A4 (1, 0, 0, 0)  5-cell        V=    5 E=   10  hits= 324  shapes=4  (3.6s)"
 _DONE_RE = re.compile(
@@ -139,10 +188,20 @@ def main():
                     help="run only this Coxeter group (default: all four)")
     ap.add_argument("--no-cache", action="store_true",
                     help="don't read or write the step-1 kernel cache")
+    ap.add_argument("--force", action="store_true",
+                    help="ignore prior-log done_set and re-test every "
+                         "selected polytope (useful for backfilling the "
+                         "shapes JSONL after the sweep)")
     ap.add_argument("--sort-by-size", action="store_true",
                     help="iterate step 2 by polytope vertex count ascending "
                          "(useful for graceful degradation on H4 where the "
                          "omnitruncated 120-cell is much larger than the rest)")
+    ap.add_argument("--no-dump-shapes", action="store_true",
+                    help="don't append per-polytope shape records to the "
+                         "ongoing_work/shapes_rng<N>.jsonl shape dump")
+    ap.add_argument("--shapes-jsonl", default=None,
+                    help="path for the JSONL shape dump "
+                         "(default: ongoing_work/shapes_rng<N>.jsonl)")
     ap.add_argument("--log", default=None,
                     help="output log path (default: "
                          "ongoing_work/sweep_log_rng<N>_<group>.txt)")
@@ -152,16 +211,20 @@ def main():
     suffix = args.group if args.group else "all"
     log_path = args.log or os.path.join(
         ONGOING, f"sweep_log_rng{args.rng}_{suffix}.txt")
+    shapes_jsonl_path = (args.shapes_jsonl or
+                         os.path.join(ONGOING, f"shapes_rng{args.rng}.jsonl"))
     os.makedirs(ONGOING, exist_ok=True)
 
     # Detect already-completed polytopes from any prior log in ongoing_work/
     prior_logs = sorted(glob.glob(os.path.join(ONGOING, "sweep_log_*.txt")))
-    done_set = parse_done_set(prior_logs)
+    done_set = set() if args.force else parse_done_set(prior_logs)
 
     sys.stdout = _Tee(log_path, sys.__stdout__)
     print(f"# run_wythoff_sweep --rng {args.rng} "
           f"--group {args.group or 'all'}")
     print(f"# log: {os.path.relpath(log_path)}")
+    if not args.no_dump_shapes:
+        print(f"# shapes dump: {os.path.relpath(shapes_jsonl_path)}")
     if done_set:
         print(f"# {len(done_set)} polytopes already done in prior logs; "
               f"will skip those")
@@ -226,6 +289,12 @@ def main():
         dt = time.time() - t0
         print(f"  {group} {b}  {name:30s}  V={len(V):5d} E={len(E):5d}  "
               f"hits={len(hits):4d}  shapes={len(shape_groups)}  ({dt:.1f}s)")
+        if not args.no_dump_shapes:
+            try:
+                dump_shape_record(shapes_jsonl_path, group, b, name, V, E,
+                                  len(hits), len(kernels), shape_groups)
+            except Exception as e:
+                print(f"  WARN: shape dump failed for {group} {b}: {e}")
         results.append((group, b, name, len(V), len(E), len(hits),
                         shape_groups))
 
