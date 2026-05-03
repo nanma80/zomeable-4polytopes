@@ -1,7 +1,7 @@
 """Emit .vZome files for shapes flagged [NOVEL] by analyze_sweep.
 
-Reads ongoing_work/shapes_rng<N>.jsonl + the canonical-hashes cache
-produced by tools/analyze_sweep.py, picks one (group, bitmask,
+Reads ongoing_work/novel_rng<N>.json (produced by
+`tools/analyze_sweep.py --out-novel`), picks one (group, bitmask,
 example_kernel) representative per novel fp_hash, and runs
 lib.emit_generic.project_and_emit to produce a .vZome file.
 
@@ -22,7 +22,6 @@ import os
 import sys
 import json
 import argparse
-import traceback
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
 
@@ -38,57 +37,31 @@ OUT_DIR = os.path.normpath(
     os.path.join(os.path.dirname(__file__), "..", "output", "wythoff_sweep"))
 
 
-def load_canonical(rng):
-    path = os.path.join(ONGOING, f"canonical_hashes_rng{rng}.json")
-    if not os.path.exists(path):
+def load_novel(rng, path=None):
+    """Load the novel-shape inventory written by analyze_sweep --out-novel."""
+    p = path or os.path.join(ONGOING, f"novel_rng{rng}.json")
+    if not os.path.exists(p):
         raise FileNotFoundError(
-            f"{path} missing; run tools/analyze_sweep.py first to "
-            f"populate the canonical-hash cache.")
-    with open(path, "r", encoding="utf-8") as f:
+            f"{p} missing; run "
+            f"`python tools/analyze_sweep.py --rng {rng} "
+            f"--out-novel ongoing_work/novel_rng{rng}.json` first.")
+    with open(p, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_records(rng, jsonl=None):
-    path = jsonl or os.path.join(ONGOING, f"shapes_rng{rng}.jsonl")
-    if not os.path.exists(path):
-        raise FileNotFoundError(path)
-    out = []
-    with open(path, "r", encoding="utf-8") as f:
-        for line in f:
-            out.append(json.loads(line))
-    return out
-
-
-def collect_novel(records, canonical):
-    """Return dict fp_hash -> {group, bitmask, name, shape_idx, kernel,
-    n_balls}. Picks the smallest-V representative for each novel hash."""
-    novel = {}
-    for r in records:
-        for i, sh in enumerate(r["shapes"]):
-            h = sh["fp_hash"]
-            if h in canonical:
-                continue
-            cand = {
-                "group": r["group"],
-                "bitmask": tuple(r["bitmask"]),
-                "name": r["name"],
-                "shape_idx": i,
-                "n_balls": sh["n_balls"],
-                "kernel": tuple(sh["example_kernel"]),
-                "V": r["V"],
-                "E": r["E"],
-            }
-            prev = novel.get(h)
-            if prev is None or cand["V"] < prev["V"]:
-                novel[h] = cand
-    return novel
+def pick_representative(occurrences):
+    """Smallest n_balls (= simplest projection) wins; ties broken by
+    polytope name for stability."""
+    return min(occurrences,
+               key=lambda o: (o["n_balls"], o["group"], o["bitmask"],
+                              o["shape_idx"]))
 
 
 def emit_one(h, info, out_dir):
     g = info["group"]
-    bm = info["bitmask"]
+    bm = tuple(info["bitmask"])
     name = info["name"]
-    n = np.array(info["kernel"], dtype=float)
+    n = np.array(info["example_kernel"], dtype=float)
     fname = (f"{g}_{''.join(str(b) for b in bm)}_"
              f"{info['shape_idx']:02d}_{h[:10]}.vZome")
     path = os.path.join(out_dir, fname)
@@ -102,30 +75,35 @@ def emit_one(h, info, out_dir):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rng", type=int, default=2)
-    ap.add_argument("--shapes-jsonl", default=None)
+    ap.add_argument("--novel-json", default=None,
+                    help="(default: ongoing_work/novel_rng<N>.json)")
     ap.add_argument("--limit", type=int, default=None,
                     help="emit at most N novel shapes (smallest-V first)")
     args = ap.parse_args()
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    canonical = load_canonical(args.rng)
-    records = load_records(args.rng, args.shapes_jsonl)
-    print(f"{len(canonical)} canonical hashes, {len(records)} polytope "
-          f"records.")
+    novel_in = load_novel(args.rng, args.novel_json)
+    print(f"{len(novel_in)} novel fp_hashes loaded.")
 
-    novel = collect_novel(records, canonical)
-    print(f"{len(novel)} distinct novel fp_hashes")
+    # Pick smallest-balls representative for each novel hash.
+    representatives = {}
+    for h, entry in novel_in.items():
+        rep = pick_representative(entry["occurrences"])
+        representatives[h] = {
+            "n_balls": entry["n_balls"],
+            "sig": entry["sig"],
+            **rep,
+        }
+
+    items = sorted(representatives.items(),
+                   key=lambda kv: (kv[1]["n_balls"], kv[0]))
     if args.limit:
-        ranked = sorted(novel.items(),
-                        key=lambda kv: (kv[1]["n_balls"], kv[1]["V"]))
-        novel = dict(ranked[:args.limit])
-        print(f"  (limited to first {len(novel)})")
+        items = items[:args.limit]
+        print(f"  (limited to first {len(items)})")
 
     manifest = []
     n_ok = n_fail = 0
-    for h, info in sorted(novel.items(),
-                          key=lambda kv: (kv[1]["n_balls"],
-                                          kv[1]["V"])):
+    for h, info in items:
         rec = {
             "fp_hash": h,
             "group": info["group"],
@@ -133,7 +111,7 @@ def main():
             "source_polytope": info["name"],
             "shape_idx": info["shape_idx"],
             "n_balls": info["n_balls"],
-            "kernel": list(info["kernel"]),
+            "kernel": list(info["example_kernel"]),
         }
         try:
             path, counts = emit_one(h, info, OUT_DIR)
@@ -142,15 +120,24 @@ def main():
                                           os.path.dirname(OUT_DIR))
             rec["strut_counts"] = {k: int(v) for k, v in counts.items()}
             n_ok += 1
-            print(f"  OK    {h[:10]}  {info['group']} {info['bitmask']} "
-                  f"{info['name']:25s} balls={info['n_balls']}")
+            print(f"  OK    {h[:10]}  {info['group']} "
+                  f"{info['bitmask']} {info['name']:25s} "
+                  f"balls={info['n_balls']}")
         except Exception as e:
-            rec["status"] = "fail"
-            rec["error"] = str(e)
+            short = (str(e).splitlines() or [""])[0][:120]
+            if "snap" in short.lower():
+                rec["status"] = "snap_failed"
+            elif "alignable" in short.lower():
+                rec["status"] = "align_failed"
+            elif "edge classification" in short.lower():
+                rec["status"] = "classify_failed"
+            else:
+                rec["status"] = "fail"
+            rec["error"] = short
             n_fail += 1
-            short = (str(e).splitlines() or [""])[0][:80]
-            print(f"  FAIL  {h[:10]}  {info['group']} {info['bitmask']} "
-                  f"{info['name']:25s}  {short}")
+            print(f"  FAIL  {h[:10]}  {info['group']} "
+                  f"{info['bitmask']} {info['name']:25s}  "
+                  f"[{rec['status']}] {short}")
         manifest.append(rec)
 
     manifest_path = os.path.join(OUT_DIR, "manifest.json")
