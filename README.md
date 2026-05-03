@@ -13,16 +13,28 @@ rotation-and-uniform-scale-invariant fingerprint to count distinct 3D shapes.
 
 ## Results
 
-| Polytope                      | Verts | Edges | Distinct zomeable shapes              |
-|-------------------------------|-------|-------|---------------------------------------|
-| 5-cell `{3,3,3}`              | 5     | 10    | **4** (saturated rng=3)               |
-| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 2 sporadic** ¹  |
-| 16-cell `{3,3,4}`             | 8     | 24    | **6** (saturated rng=4)               |
-| 24-cell `{3,4,3}`             | 24    | 96    | **3** (saturated rng=3)               |
-| 120-cell `{5,3,3}`            | 600   | 1200  | **1** (saturated rng=4)               |
-| 600-cell `{3,3,5}`            | 120   | 720   | **1** (saturated rng=4)               |
-| Snub 24-cell                  | 96    | 432   | **2** (cell-first Tₕ, vertex-first D₃d) |
-| Grand antiprism               | 100   | 500   | **2** (vertex-first D₂ₕ, ring-first D₅d) |
+| Polytope                      | Verts | Edges | Distinct zomeable shapes |
+|-------------------------------|-------|-------|--------------------------|
+| 5-cell `{3,3,3}`              | 5     | 10    | **4** — vertex-first + 3 others |
+| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 2 sporadic** ¹ — cell-first, vertex-first, inf family of cuboids |
+| 16-cell `{3,3,4}`             | 8     | 24    | **6** — vertex-first, cell-first, edge-first, 3 triality |
+| 24-cell `{3,4,3}`             | 24    | 96    | **3** — cell-first, vertex-first, triality |
+| 120-cell `{5,3,3}`            | 600   | 1200  | **1** — cell-first |
+| 600-cell `{3,3,5}`            | 120   | 720   | **1** — vertex-first |
+| Snub 24-cell                  | 96    | 432   | **2** — cell-first, vertex-first |
+| Grand antiprism               | 100   | 500   | **2** — vertex-first, ring-first |
+
+vZome files for every shape above are in [`output/`](output/), one
+subfolder per polytope.
+
+**These counts are not formally proven complete.** Each was obtained by
+enumerating kernel directions `n ∈ ℤ[φ]⁴` over a bounded box of
+coefficients, and we report the count once enlarging the box no longer
+produces new shapes (*empirical saturation*). It remains possible that a
+kernel direction with very large coefficients yields a previously unseen
+zomeable projection. We have no formal upper bound on the coefficient
+size that suffices. See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for
+details.
 
 ¹ The 8-cell infinite family is parametrized by integer pairs `(a,b)`
 producing distinct rectangular cuboids. Two additional sporadic shapes
@@ -31,6 +43,53 @@ exist on zometool but are not vZome-embeddable. See
 
 Per-polytope writeups live in `output/<polytope>/RESULTS.md` (or
 `CLASSIFICATION.md` for 8-cell, `ZOMEABLE_PROJECTIONS.md` for 24-cell).
+
+## Prior work and novelty
+
+Standard "vertex-first / cell-first / edge-first" zome projections of
+the six convex regular 4-polytopes are folklore — easy to construct by
+hand and well-known to the zometool community. The shapes below have
+been published or built independently; our enumeration confirms them.
+
+- **5-cell** — Scott Vorthmann & David Richter, *Five-cell family*
+  (2007),
+  https://vorth.github.io/vzome-sharing/2007/04/24/five-cell-family.html
+  — all 4 shapes match ours exactly.
+- **16-cell triality** (the 3 square antiprisms) — *Zometriality*,
+  https://polytopologist.github.io/zome_pages/zometriality.htm
+  — the three antiprism shapes match ours; the page's observation
+  that truncating any one to its edge midpoints yields the same
+  24-cell zometool model is an independent consistency check with our
+  `24cell_triality.vZome`.
+- **Snub 24-cell, cell-first** — D. Richter, *The 24-Cell and its
+  Snub*,
+  https://polytopologist.github.io/zome_pages/24cellzome.htm
+  — photograph of the cell-first zome model (60 balls, icosahedral
+  outer hull).
+- **Grand antiprism, ring-first** — Scott Vorthmann, *Grand antiprism*
+  vZome model (2006),
+  https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html
+  — same projection as our `grand_antiprism_ring_first.vZome`,
+  verified equivalent ball-by-ball.
+
+To our knowledge, the following results are new:
+
+- **8-cell** — the infinite family of zometool-buildable cuboids, and
+  the 2 sporadic non-vZome-embeddable shapes
+  (see [`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md)).
+- **Snub 24-cell, vertex-first** — does not appear in Richter's page or
+  any source we could find.
+- **Grand antiprism, vertex-first** — not in Vorthmann (2006) or other
+  sources we could find.
+- **Completeness for each polytope** — empirical proofs that the listed
+  counts saturate (caveat above).
+
+## References
+
+- J. H. Conway and M. J. T. Guy, "Four-dimensional Archimedean
+  polytopes," Proc. Colloquium on Convexity, Copenhagen, 1965 (origin
+  of the grand antiprism).
+- Wikipedia, [Grand antiprism](https://en.wikipedia.org/wiki/Grand_antiprism).
 
 ## Layout
 
@@ -81,12 +140,10 @@ maintained with `tools/patch_origin.py` (idempotent).
 
 ## Acknowledgments
 
-- Independent prior work on the 5-cell by **Scott Vorthmann** and
-  **David Richter** (2007),
-  https://vorth.github.io/vzome-sharing/2007/04/24/five-cell-family.html
-- The **"Zometriality"** page at
-  https://polytopologist.github.io/zome_pages/zometriality.htm
-  for 16-cell antiprism shapes.
+The [zometool](https://www.zometool.com/) construction system and
+[vZome](https://vzome.com/) (Scott Vorthmann) made this work possible.
+See *Prior work and novelty* above for citations to specific shapes
+already known.
 
 ## License
 
