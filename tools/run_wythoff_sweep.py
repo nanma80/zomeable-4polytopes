@@ -220,6 +220,10 @@ def main():
     ap.add_argument("--log", default=None,
                     help="output log path (default: "
                          "ongoing_work/sweep_log_rng<N>_<group>.txt)")
+    ap.add_argument("--bitmask", default=None,
+                    help="restrict to a single Wythoff bitmask, e.g. "
+                         "--bitmask 1111 (used to launch per-polytope "
+                         "parallel jobs for the H4 endgame)")
     args = ap.parse_args()
 
     groups_to_run = [args.group] if args.group else list(GROUPS)
@@ -263,6 +267,13 @@ def main():
     # Collect work items, optionally sorted by polytope V count.
     work = [(g, b, n) for (g, b, n) in all_uniform_polytopes()
             if g in groups_to_run]
+    if args.bitmask is not None:
+        bm_filter = tuple(int(c) for c in args.bitmask)
+        work = [(g, b, n) for (g, b, n) in work if b == bm_filter]
+        if not work:
+            print(f"# no work item matches --bitmask {args.bitmask} "
+                  f"in selected groups")
+            return
     if args.sort_by_size:
         sized = []
         for g, b, n in work:
