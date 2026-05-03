@@ -1,6 +1,6 @@
 {
   "n_fail": 27,
-  "n_ok": 143,
+  "n_ok": 208,
   "rng": 2,
   "shapes": [
     {
@@ -10,7 +10,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_0100_03_55abe81889.vZome",
+      "file": "wythoff_sweep\\rectified_5-cell\\A4_0100_03_55abe81889.vZome",
       "fp_hash": "55abe818897aa7ff",
       "group": "A4",
       "kernel": [
@@ -35,7 +35,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_0100_00_18db22bc8b.vZome",
+      "file": "wythoff_sweep\\rectified_5-cell\\A4_0100_00_18db22bc8b.vZome",
       "fp_hash": "18db22bc8bc4f517",
       "group": "A4",
       "kernel": [
@@ -60,7 +60,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_0100_02_4fe32006bf.vZome",
+      "file": "wythoff_sweep\\rectified_5-cell\\A4_0100_02_4fe32006bf.vZome",
       "fp_hash": "4fe32006bff8c0d5",
       "group": "A4",
       "kernel": [
@@ -86,7 +86,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_0100_01_c2ff97e546.vZome",
+      "file": "wythoff_sweep\\rectified_5-cell\\A4_0100_01_c2ff97e546.vZome",
       "fp_hash": "c2ff97e54699246b",
       "group": "A4",
       "kernel": [
@@ -112,7 +112,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1001_03_6f67e6cb83.vZome",
+      "file": "wythoff_sweep\\runcinated_5-cell\\A4_1001_03_6f67e6cb83.vZome",
       "fp_hash": "6f67e6cb8345c5ef",
       "group": "A4",
       "kernel": [
@@ -137,7 +137,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_1100_03_cd65b76a7d.vZome",
+      "file": "wythoff_sweep\\truncated_5-cell\\A4_1100_03_cd65b76a7d.vZome",
       "fp_hash": "cd65b76a7d0641f4",
       "group": "A4",
       "kernel": [
@@ -162,7 +162,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_0110_03_be9338e636.vZome",
+      "file": "wythoff_sweep\\bitruncated_5-cell\\A4_0110_03_be9338e636.vZome",
       "fp_hash": "be9338e63608729a",
       "group": "A4",
       "kernel": [
@@ -187,7 +187,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1010_03_e7d00a6967.vZome",
+      "file": "wythoff_sweep\\cantellated_5-cell\\A4_1010_03_e7d00a6967.vZome",
       "fp_hash": "e7d00a6967b796c5",
       "group": "A4",
       "kernel": [
@@ -212,7 +212,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1001_02_1c278a1d7d.vZome",
+      "file": "wythoff_sweep\\runcinated_5-cell\\A4_1001_02_1c278a1d7d.vZome",
       "fp_hash": "1c278a1d7d573e01",
       "group": "A4",
       "kernel": [
@@ -238,7 +238,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\B4_0100_01_24e9b2fd40.vZome",
+      "file": "wythoff_sweep\\rectified_tesseract\\B4_0100_01_24e9b2fd40.vZome",
       "fp_hash": "24e9b2fd40d33c12",
       "group": "B4",
       "kernel": [
@@ -263,7 +263,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1001_01_4547c11713.vZome",
+      "file": "wythoff_sweep\\runcinated_5-cell\\A4_1001_01_4547c11713.vZome",
       "fp_hash": "4547c1171357ea3a",
       "group": "A4",
       "kernel": [
@@ -289,7 +289,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_1100_01_7df137dba4.vZome",
+      "file": "wythoff_sweep\\truncated_5-cell\\A4_1100_01_7df137dba4.vZome",
       "fp_hash": "7df137dba457dbe8",
       "group": "A4",
       "kernel": [
@@ -315,7 +315,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_1100_00_82123904b0.vZome",
+      "file": "wythoff_sweep\\truncated_5-cell\\A4_1100_00_82123904b0.vZome",
       "fp_hash": "82123904b041cf96",
       "group": "A4",
       "kernel": [
@@ -340,7 +340,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\B4_0100_00_86c7a043be.vZome",
+      "file": "wythoff_sweep\\rectified_tesseract\\B4_0100_00_86c7a043be.vZome",
       "fp_hash": "86c7a043be22d7e9",
       "group": "B4",
       "kernel": [
@@ -365,7 +365,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\A4_1100_02_9fee63fe24.vZome",
+      "file": "wythoff_sweep\\truncated_5-cell\\A4_1100_02_9fee63fe24.vZome",
       "fp_hash": "9fee63fe247ea33a",
       "group": "A4",
       "kernel": [
@@ -391,7 +391,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1001_00_aef3339065.vZome",
+      "file": "wythoff_sweep\\runcinated_5-cell\\A4_1001_00_aef3339065.vZome",
       "fp_hash": "aef3339065210c8c",
       "group": "A4",
       "kernel": [
@@ -416,7 +416,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\B4_0011_01_30ce845d3f.vZome",
+      "file": "wythoff_sweep\\truncated_16-cell\\B4_0011_01_30ce845d3f.vZome",
       "fp_hash": "30ce845d3f147147",
       "group": "B4",
       "kernel": [
@@ -441,7 +441,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_0110_01_190a7b1c71.vZome",
+      "file": "wythoff_sweep\\bitruncated_5-cell\\A4_0110_01_190a7b1c71.vZome",
       "fp_hash": "190a7b1c71a7cad4",
       "group": "A4",
       "kernel": [
@@ -467,7 +467,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1010_02_1c346b0e6a.vZome",
+      "file": "wythoff_sweep\\cantellated_5-cell\\A4_1010_02_1c346b0e6a.vZome",
       "fp_hash": "1c346b0e6a004968",
       "group": "A4",
       "kernel": [
@@ -493,7 +493,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_0110_00_467bb01461.vZome",
+      "file": "wythoff_sweep\\bitruncated_5-cell\\A4_0110_00_467bb01461.vZome",
       "fp_hash": "467bb01461b4a7fb",
       "group": "A4",
       "kernel": [
@@ -518,7 +518,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_0110_02_9e2d21191f.vZome",
+      "file": "wythoff_sweep\\bitruncated_5-cell\\A4_0110_02_9e2d21191f.vZome",
       "fp_hash": "9e2d21191f5bb5c9",
       "group": "A4",
       "kernel": [
@@ -544,7 +544,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1010_01_a6537a898e.vZome",
+      "file": "wythoff_sweep\\cantellated_5-cell\\A4_1010_01_a6537a898e.vZome",
       "fp_hash": "a6537a898ef9f5f4",
       "group": "A4",
       "kernel": [
@@ -570,7 +570,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1010_00_e1d5c7a081.vZome",
+      "file": "wythoff_sweep\\cantellated_5-cell\\A4_1010_00_e1d5c7a081.vZome",
       "fp_hash": "e1d5c7a0817918b3",
       "group": "A4",
       "kernel": [
@@ -637,7 +637,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\B4_0100_02_b54c2aaed8.vZome",
+      "file": "wythoff_sweep\\rectified_tesseract\\B4_0100_02_b54c2aaed8.vZome",
       "fp_hash": "b54c2aaed88eaa68",
       "group": "B4",
       "kernel": [
@@ -662,7 +662,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_04_a98cfbe1f2.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_04_a98cfbe1f2.vZome",
       "fp_hash": "a98cfbe1f2d3b740",
       "group": "A4",
       "kernel": [
@@ -687,7 +687,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_04_befb910d19.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_04_befb910d19.vZome",
       "fp_hash": "befb910d199e347a",
       "group": "A4",
       "kernel": [
@@ -712,7 +712,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\B4_0011_00_bb5b56af58.vZome",
+      "file": "wythoff_sweep\\truncated_16-cell\\B4_0011_00_bb5b56af58.vZome",
       "fp_hash": "bb5b56af5879ca97",
       "group": "B4",
       "kernel": [
@@ -800,7 +800,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\B4_0011_02_bebffceea5.vZome",
+      "file": "wythoff_sweep\\truncated_16-cell\\B4_0011_02_bebffceea5.vZome",
       "fp_hash": "bebffceea5593325",
       "group": "B4",
       "kernel": [
@@ -825,7 +825,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\B4_0110_01_40be7cc1d7.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\B4_0110_01_40be7cc1d7.vZome",
       "fp_hash": "40be7cc1d7a2aae6",
       "group": "B4",
       "kernel": [
@@ -850,7 +850,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\B4_0101_01_cca712ec6e.vZome",
+      "file": "wythoff_sweep\\cantellated_16-cell\\B4_0101_01_cca712ec6e.vZome",
       "fp_hash": "cca712ec6eab236a",
       "group": "B4",
       "kernel": [
@@ -896,7 +896,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_03_1f76ff2f94.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_03_1f76ff2f94.vZome",
       "fp_hash": "1f76ff2f9476bd30",
       "group": "A4",
       "kernel": [
@@ -922,7 +922,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_03_26f9c4de5c.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_03_26f9c4de5c.vZome",
       "fp_hash": "26f9c4de5c2f1294",
       "group": "A4",
       "kernel": [
@@ -948,7 +948,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_05_53a4d0700d.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_05_53a4d0700d.vZome",
       "fp_hash": "53a4d0700d7b99a8",
       "group": "A4",
       "kernel": [
@@ -974,7 +974,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\B4_0101_00_5452b20702.vZome",
+      "file": "wythoff_sweep\\cantellated_16-cell\\B4_0101_00_5452b20702.vZome",
       "fp_hash": "5452b207028c5f19",
       "group": "B4",
       "kernel": [
@@ -999,7 +999,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_02_6189be49ed.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_02_6189be49ed.vZome",
       "fp_hash": "6189be49ed3fd2c0",
       "group": "A4",
       "kernel": [
@@ -1025,7 +1025,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_00_6a8e448e70.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_00_6a8e448e70.vZome",
       "fp_hash": "6a8e448e705fe862",
       "group": "A4",
       "kernel": [
@@ -1050,7 +1050,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_05_70107e6dc6.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_05_70107e6dc6.vZome",
       "fp_hash": "70107e6dc613861a",
       "group": "A4",
       "kernel": [
@@ -1076,7 +1076,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_06_85a806f8ee.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_06_85a806f8ee.vZome",
       "fp_hash": "85a806f8eed36575",
       "group": "A4",
       "kernel": [
@@ -1102,7 +1102,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_00_8fb8506b88.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_00_8fb8506b88.vZome",
       "fp_hash": "8fb8506b88904a84",
       "group": "A4",
       "kernel": [
@@ -1127,7 +1127,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\B4_0110_00_aceab99c00.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\B4_0110_00_aceab99c00.vZome",
       "fp_hash": "aceab99c0074dfc2",
       "group": "B4",
       "kernel": [
@@ -1152,7 +1152,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\A4_1110_01_c1635833bd.vZome",
+      "file": "wythoff_sweep\\cantitruncated_5-cell\\A4_1110_01_c1635833bd.vZome",
       "fp_hash": "c1635833bdd4184a",
       "group": "A4",
       "kernel": [
@@ -1178,7 +1178,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_04_c94790ed91.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_04_c94790ed91.vZome",
       "fp_hash": "c94790ed916a5c87",
       "group": "A4",
       "kernel": [
@@ -1203,7 +1203,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_02_db7b74a33d.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_02_db7b74a33d.vZome",
       "fp_hash": "db7b74a33dd8f802",
       "group": "A4",
       "kernel": [
@@ -1229,7 +1229,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\A4_1101_01_e203af4fe0.vZome",
+      "file": "wythoff_sweep\\runcitruncated_5-cell\\A4_1101_01_e203af4fe0.vZome",
       "fp_hash": "e203af4fe04c2981",
       "group": "A4",
       "kernel": [
@@ -1318,7 +1318,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_0100_04_1915a4f1b2.vZome",
+      "file": "wythoff_sweep\\rectified_24-cell\\F4_0100_04_1915a4f1b2.vZome",
       "fp_hash": "1915a4f1b2800899",
       "group": "F4",
       "kernel": [
@@ -1344,7 +1344,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\B4_0110_02_3c7ea12f56.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\B4_0110_02_3c7ea12f56.vZome",
       "fp_hash": "3c7ea12f56255bad",
       "group": "B4",
       "kernel": [
@@ -1369,7 +1369,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_0100_03_56093e7cd7.vZome",
+      "file": "wythoff_sweep\\rectified_24-cell\\F4_0100_03_56093e7cd7.vZome",
       "fp_hash": "56093e7cd7e23ea3",
       "group": "F4",
       "kernel": [
@@ -1395,7 +1395,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_0100_02_56df31592c.vZome",
+      "file": "wythoff_sweep\\rectified_24-cell\\F4_0100_02_56df31592c.vZome",
       "fp_hash": "56df31592cbea90f",
       "group": "F4",
       "kernel": [
@@ -1442,7 +1442,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\B4_0111_01_5f5834c161.vZome",
+      "file": "wythoff_sweep\\cantitruncated_16-cell\\B4_0111_01_5f5834c161.vZome",
       "fp_hash": "5f5834c16179095e",
       "group": "B4",
       "kernel": [
@@ -1488,7 +1488,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_00_94c404ee6a.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_00_94c404ee6a.vZome",
       "fp_hash": "94c404ee6aa8fa97",
       "group": "A4",
       "kernel": [
@@ -1597,7 +1597,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_03_38f25a2cbb.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_03_38f25a2cbb.vZome",
       "fp_hash": "38f25a2cbb5d78e5",
       "group": "A4",
       "kernel": [
@@ -1623,7 +1623,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\B4_0111_00_598a9495c4.vZome",
+      "file": "wythoff_sweep\\cantitruncated_16-cell\\B4_0111_00_598a9495c4.vZome",
       "fp_hash": "598a9495c4a6ee08",
       "group": "B4",
       "kernel": [
@@ -1648,7 +1648,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_07_600bccb09e.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_07_600bccb09e.vZome",
       "fp_hash": "600bccb09ef0a800",
       "group": "A4",
       "kernel": [
@@ -1674,7 +1674,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_09_6d9784faf4.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_09_6d9784faf4.vZome",
       "fp_hash": "6d9784faf4fbe4b7",
       "group": "A4",
       "kernel": [
@@ -1700,7 +1700,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_08_9028dd62eb.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_08_9028dd62eb.vZome",
       "fp_hash": "9028dd62eb8e6a8a",
       "group": "A4",
       "kernel": [
@@ -1726,7 +1726,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_06_991048cd4e.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_06_991048cd4e.vZome",
       "fp_hash": "991048cd4e6f2d39",
       "group": "A4",
       "kernel": [
@@ -1752,7 +1752,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_02_9f354d53ae.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_02_9f354d53ae.vZome",
       "fp_hash": "9f354d53aebc1c3b",
       "group": "A4",
       "kernel": [
@@ -1778,7 +1778,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_01_9f73b85175.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_01_9f73b85175.vZome",
       "fp_hash": "9f73b85175ea12ad",
       "group": "A4",
       "kernel": [
@@ -1804,7 +1804,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\A4_1111_05_e4fb66f8e7.vZome",
+      "file": "wythoff_sweep\\omnitruncated_5-cell\\A4_1111_05_e4fb66f8e7.vZome",
       "fp_hash": "e4fb66f8e75ce530",
       "group": "A4",
       "kernel": [
@@ -1914,7 +1914,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_1100_03_6b7eadcbcf.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\F4_1100_03_6b7eadcbcf.vZome",
       "fp_hash": "6b7eadcbcfccf6a3",
       "group": "F4",
       "kernel": [
@@ -1961,7 +1961,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_1100_05_b7477fe6c0.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\F4_1100_05_b7477fe6c0.vZome",
       "fp_hash": "b7477fe6c010645e",
       "group": "F4",
       "kernel": [
@@ -2008,7 +2008,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_1100_02_c7db1d36fb.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\F4_1100_02_c7db1d36fb.vZome",
       "fp_hash": "c7db1d36fbcf2ba7",
       "group": "F4",
       "kernel": [
@@ -2034,7 +2034,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\F4_1100_04_d98b5f4add.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\F4_1100_04_d98b5f4add.vZome",
       "fp_hash": "d98b5f4addb5359b",
       "group": "F4",
       "kernel": [
@@ -2165,7 +2165,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0010_00_e631eef593.vZome",
+      "file": "wythoff_sweep\\rectified_600-cell\\H4_0010_00_e631eef593.vZome",
       "fp_hash": "e631eef5931ff05a",
       "group": "H4",
       "kernel": [
@@ -2191,7 +2191,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0010_01_e690959a51.vZome",
+      "file": "wythoff_sweep\\rectified_600-cell\\H4_0010_01_e690959a51.vZome",
       "fp_hash": "e690959a51597439",
       "group": "H4",
       "kernel": [
@@ -2238,7 +2238,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\H4_0100_00_49633284a3.vZome",
+      "file": "wythoff_sweep\\rectified_120-cell\\H4_0100_00_49633284a3.vZome",
       "fp_hash": "49633284a34e3399",
       "group": "H4",
       "kernel": [
@@ -2264,7 +2264,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0011_00_c2f8b43f1b.vZome",
+      "file": "wythoff_sweep\\truncated_600-cell\\H4_0011_00_c2f8b43f1b.vZome",
       "fp_hash": "c2f8b43f1b869711",
       "group": "H4",
       "kernel": [
@@ -2290,7 +2290,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0011_01_e7e32b6625.vZome",
+      "file": "wythoff_sweep\\truncated_600-cell\\H4_0011_01_e7e32b6625.vZome",
       "fp_hash": "e7e32b66250c1951",
       "group": "H4",
       "kernel": [
@@ -2316,7 +2316,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1001_00_0d13d8d35e.vZome",
+      "file": "wythoff_sweep\\runcinated_120-cell\\H4_1001_00_0d13d8d35e.vZome",
       "fp_hash": "0d13d8d35e2b29d4",
       "group": "H4",
       "kernel": [
@@ -2342,7 +2342,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\H4_1100_01_35859e5613.vZome",
+      "file": "wythoff_sweep\\truncated_120-cell\\H4_1100_01_35859e5613.vZome",
       "fp_hash": "35859e561367e8df",
       "group": "H4",
       "kernel": [
@@ -2368,7 +2368,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\H4_1100_00_37c52dd918.vZome",
+      "file": "wythoff_sweep\\truncated_120-cell\\H4_1100_00_37c52dd918.vZome",
       "fp_hash": "37c52dd9183db80b",
       "group": "H4",
       "kernel": [
@@ -2394,7 +2394,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\H4_1100_02_3b18c3dede.vZome",
+      "file": "wythoff_sweep\\truncated_120-cell\\H4_1100_02_3b18c3dede.vZome",
       "fp_hash": "3b18c3dede8d0fdc",
       "group": "H4",
       "kernel": [
@@ -2420,7 +2420,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1001_02_4bd3daf2ff.vZome",
+      "file": "wythoff_sweep\\runcinated_120-cell\\H4_1001_02_4bd3daf2ff.vZome",
       "fp_hash": "4bd3daf2ff691601",
       "group": "H4",
       "kernel": [
@@ -2446,7 +2446,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1001_01_8c1ae2542c.vZome",
+      "file": "wythoff_sweep\\runcinated_120-cell\\H4_1001_01_8c1ae2542c.vZome",
       "fp_hash": "8c1ae2542c39bd9b",
       "group": "H4",
       "kernel": [
@@ -2472,7 +2472,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1001_03_b26f233ca5.vZome",
+      "file": "wythoff_sweep\\runcinated_120-cell\\H4_1001_03_b26f233ca5.vZome",
       "fp_hash": "b26f233ca5d22a87",
       "group": "H4",
       "kernel": [
@@ -2498,7 +2498,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1010_02_04c056fa6f.vZome",
+      "file": "wythoff_sweep\\cantellated_120-cell\\H4_1010_02_04c056fa6f.vZome",
       "fp_hash": "04c056fa6fde11cd",
       "group": "H4",
       "kernel": [
@@ -2524,7 +2524,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0110_00_04cd47c59a.vZome",
+      "file": "wythoff_sweep\\bitruncated_120-cell\\H4_0110_00_04cd47c59a.vZome",
       "fp_hash": "04cd47c59a1d1576",
       "group": "H4",
       "kernel": [
@@ -2550,7 +2550,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1010_00_11927f5a0f.vZome",
+      "file": "wythoff_sweep\\cantellated_120-cell\\H4_1010_00_11927f5a0f.vZome",
       "fp_hash": "11927f5a0ff18e7d",
       "group": "H4",
       "kernel": [
@@ -2576,7 +2576,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_0101_03_146e0f9552.vZome",
+      "file": "wythoff_sweep\\cantellated_600-cell\\H4_0101_03_146e0f9552.vZome",
       "fp_hash": "146e0f9552fd5bfd",
       "group": "H4",
       "kernel": [
@@ -2602,7 +2602,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1010_01_51ac222d7b.vZome",
+      "file": "wythoff_sweep\\cantellated_120-cell\\H4_1010_01_51ac222d7b.vZome",
       "fp_hash": "51ac222d7b0be00b",
       "group": "H4",
       "kernel": [
@@ -2628,7 +2628,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0110_03_5f1d3ef650.vZome",
+      "file": "wythoff_sweep\\bitruncated_120-cell\\H4_0110_03_5f1d3ef650.vZome",
       "fp_hash": "5f1d3ef65066d4ff",
       "group": "H4",
       "kernel": [
@@ -2654,7 +2654,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0110_02_6f289fe95c.vZome",
+      "file": "wythoff_sweep\\bitruncated_120-cell\\H4_0110_02_6f289fe95c.vZome",
       "fp_hash": "6f289fe95c73e9d6",
       "group": "H4",
       "kernel": [
@@ -2680,7 +2680,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_0101_02_9269136b5b.vZome",
+      "file": "wythoff_sweep\\cantellated_600-cell\\H4_0101_02_9269136b5b.vZome",
       "fp_hash": "9269136b5bd10f4b",
       "group": "H4",
       "kernel": [
@@ -2706,7 +2706,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_0101_04_9972351909.vZome",
+      "file": "wythoff_sweep\\cantellated_600-cell\\H4_0101_04_9972351909.vZome",
       "fp_hash": "99723519096daf25",
       "group": "H4",
       "kernel": [
@@ -2732,7 +2732,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1010_04_a87be0db65.vZome",
+      "file": "wythoff_sweep\\cantellated_120-cell\\H4_1010_04_a87be0db65.vZome",
       "fp_hash": "a87be0db658d8b8e",
       "group": "H4",
       "kernel": [
@@ -2758,7 +2758,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_0110_01_d5e0a9df5d.vZome",
+      "file": "wythoff_sweep\\bitruncated_120-cell\\H4_0110_01_d5e0a9df5d.vZome",
       "fp_hash": "d5e0a9df5db2763e",
       "group": "H4",
       "kernel": [
@@ -2784,7 +2784,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_0101_00_d6adf55a40.vZome",
+      "file": "wythoff_sweep\\cantellated_600-cell\\H4_0101_00_d6adf55a40.vZome",
       "fp_hash": "d6adf55a401f2fd9",
       "group": "H4",
       "kernel": [
@@ -2810,7 +2810,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_0101_01_d78b84c72e.vZome",
+      "file": "wythoff_sweep\\cantellated_600-cell\\H4_0101_01_d78b84c72e.vZome",
       "fp_hash": "d78b84c72e45c08a",
       "group": "H4",
       "kernel": [
@@ -2836,7 +2836,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1010_03_feebd08dde.vZome",
+      "file": "wythoff_sweep\\cantellated_120-cell\\H4_1010_03_feebd08dde.vZome",
       "fp_hash": "feebd08ddebb8d64",
       "group": "H4",
       "kernel": [
@@ -2862,7 +2862,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_05_0137580b4e.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_05_0137580b4e.vZome",
       "fp_hash": "0137580b4ebb8a1b",
       "group": "H4",
       "kernel": [
@@ -2888,7 +2888,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_01_13e387db31.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_01_13e387db31.vZome",
       "fp_hash": "13e387db31db699e",
       "group": "H4",
       "kernel": [
@@ -2914,7 +2914,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_23_1a0d721320.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_23_1a0d721320.vZome",
       "fp_hash": "1a0d721320c4f9a4",
       "group": "H4",
       "kernel": [
@@ -2940,7 +2940,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_05_1ae105e553.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_05_1ae105e553.vZome",
       "fp_hash": "1ae105e55323f972",
       "group": "H4",
       "kernel": [
@@ -2966,7 +2966,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_16_1dd1965c7d.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_16_1dd1965c7d.vZome",
       "fp_hash": "1dd1965c7d3eab6f",
       "group": "H4",
       "kernel": [
@@ -2992,7 +2992,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_13_1fc5749f9e.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_13_1fc5749f9e.vZome",
       "fp_hash": "1fc5749f9eb5111f",
       "group": "H4",
       "kernel": [
@@ -3018,7 +3018,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_20_24655dcf09.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_20_24655dcf09.vZome",
       "fp_hash": "24655dcf097cb753",
       "group": "H4",
       "kernel": [
@@ -3044,7 +3044,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_03_2ff0da38f3.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_03_2ff0da38f3.vZome",
       "fp_hash": "2ff0da38f367d655",
       "group": "H4",
       "kernel": [
@@ -3070,7 +3070,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_08_3b44cc41a2.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_08_3b44cc41a2.vZome",
       "fp_hash": "3b44cc41a2697b03",
       "group": "H4",
       "kernel": [
@@ -3096,7 +3096,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_02_3e43cba23f.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_02_3e43cba23f.vZome",
       "fp_hash": "3e43cba23f267509",
       "group": "H4",
       "kernel": [
@@ -3122,7 +3122,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_01_416fbd8e39.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_01_416fbd8e39.vZome",
       "fp_hash": "416fbd8e396057ac",
       "group": "H4",
       "kernel": [
@@ -3148,7 +3148,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_25_49d3d59b0b.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_25_49d3d59b0b.vZome",
       "fp_hash": "49d3d59b0be0af8f",
       "group": "H4",
       "kernel": [
@@ -3174,7 +3174,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_19_59350c907e.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_19_59350c907e.vZome",
       "fp_hash": "59350c907e205e3a",
       "group": "H4",
       "kernel": [
@@ -3200,7 +3200,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_09_6237017ed4.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_09_6237017ed4.vZome",
       "fp_hash": "6237017ed42b06c2",
       "group": "H4",
       "kernel": [
@@ -3226,7 +3226,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_09_633ba56c30.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_09_633ba56c30.vZome",
       "fp_hash": "633ba56c30a8db1e",
       "group": "H4",
       "kernel": [
@@ -3252,7 +3252,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_22_665d7f8ac3.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_22_665d7f8ac3.vZome",
       "fp_hash": "665d7f8ac310071d",
       "group": "H4",
       "kernel": [
@@ -3278,7 +3278,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_05_669e04c0d9.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_05_669e04c0d9.vZome",
       "fp_hash": "669e04c0d9f0e093",
       "group": "H4",
       "kernel": [
@@ -3304,7 +3304,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_10_731abc5dc0.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_10_731abc5dc0.vZome",
       "fp_hash": "731abc5dc0bac389",
       "group": "H4",
       "kernel": [
@@ -3330,7 +3330,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_04_76caf52230.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_04_76caf52230.vZome",
       "fp_hash": "76caf5223054b76e",
       "group": "H4",
       "kernel": [
@@ -3356,7 +3356,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_02_77bc10c853.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_02_77bc10c853.vZome",
       "fp_hash": "77bc10c853647913",
       "group": "H4",
       "kernel": [
@@ -3382,7 +3382,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_10_7af56c5f99.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_10_7af56c5f99.vZome",
       "fp_hash": "7af56c5f9944ca44",
       "group": "H4",
       "kernel": [
@@ -3408,7 +3408,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_00_7c320f9d25.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_00_7c320f9d25.vZome",
       "fp_hash": "7c320f9d25c35485",
       "group": "H4",
       "kernel": [
@@ -3434,7 +3434,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_04_7c5d26836a.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_04_7c5d26836a.vZome",
       "fp_hash": "7c5d26836a772f89",
       "group": "H4",
       "kernel": [
@@ -3460,7 +3460,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_07_800f72c3ba.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_07_800f72c3ba.vZome",
       "fp_hash": "800f72c3baa479fe",
       "group": "H4",
       "kernel": [
@@ -3486,7 +3486,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_03_8b82a8d4fc.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_03_8b82a8d4fc.vZome",
       "fp_hash": "8b82a8d4fcf6f7ca",
       "group": "H4",
       "kernel": [
@@ -3512,7 +3512,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_24_8f579c25f1.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_24_8f579c25f1.vZome",
       "fp_hash": "8f579c25f1a3b738",
       "group": "H4",
       "kernel": [
@@ -3538,7 +3538,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_10_920f7d9874.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_10_920f7d9874.vZome",
       "fp_hash": "920f7d987456d258",
       "group": "H4",
       "kernel": [
@@ -3564,7 +3564,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_03_92c3434528.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_03_92c3434528.vZome",
       "fp_hash": "92c34345287d3fbe",
       "group": "H4",
       "kernel": [
@@ -3590,7 +3590,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_06_93f8773f2a.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_06_93f8773f2a.vZome",
       "fp_hash": "93f8773f2a9f4ff6",
       "group": "H4",
       "kernel": [
@@ -3616,7 +3616,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_02_9815da3055.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_02_9815da3055.vZome",
       "fp_hash": "9815da3055bce1b5",
       "group": "H4",
       "kernel": [
@@ -3642,7 +3642,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_11_98d0fae89b.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_11_98d0fae89b.vZome",
       "fp_hash": "98d0fae89b75adfc",
       "group": "H4",
       "kernel": [
@@ -3668,7 +3668,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_01_9c22ea52b4.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_01_9c22ea52b4.vZome",
       "fp_hash": "9c22ea52b419c364",
       "group": "H4",
       "kernel": [
@@ -3694,7 +3694,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_06_9d39cd0b03.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_06_9d39cd0b03.vZome",
       "fp_hash": "9d39cd0b0381aec2",
       "group": "H4",
       "kernel": [
@@ -3720,7 +3720,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_21_a2c47bfa62.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_21_a2c47bfa62.vZome",
       "fp_hash": "a2c47bfa6218777a",
       "group": "H4",
       "kernel": [
@@ -3746,7 +3746,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_00_a4e5c7b80c.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_00_a4e5c7b80c.vZome",
       "fp_hash": "a4e5c7b80c17d45d",
       "group": "H4",
       "kernel": [
@@ -3772,7 +3772,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_04_a5838ce67b.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_04_a5838ce67b.vZome",
       "fp_hash": "a5838ce67b11ed4b",
       "group": "H4",
       "kernel": [
@@ -3798,7 +3798,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_01_aa55b8a9d1.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_01_aa55b8a9d1.vZome",
       "fp_hash": "aa55b8a9d1f83b71",
       "group": "H4",
       "kernel": [
@@ -3824,7 +3824,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_07_b4f719ee37.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_07_b4f719ee37.vZome",
       "fp_hash": "b4f719ee372c6ae6",
       "group": "H4",
       "kernel": [
@@ -3850,7 +3850,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_14_b54e075a59.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_14_b54e075a59.vZome",
       "fp_hash": "b54e075a59987fbd",
       "group": "H4",
       "kernel": [
@@ -3876,7 +3876,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_12_b5a8ec0026.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_12_b5a8ec0026.vZome",
       "fp_hash": "b5a8ec00269113aa",
       "group": "H4",
       "kernel": [
@@ -3902,7 +3902,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_03_b92076625c.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_03_b92076625c.vZome",
       "fp_hash": "b92076625c902fdf",
       "group": "H4",
       "kernel": [
@@ -3928,7 +3928,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_17_c95674ff52.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_17_c95674ff52.vZome",
       "fp_hash": "c95674ff52925e31",
       "group": "H4",
       "kernel": [
@@ -3954,7 +3954,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_02_ca7e9a1234.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_02_ca7e9a1234.vZome",
       "fp_hash": "ca7e9a12342693f6",
       "group": "H4",
       "kernel": [
@@ -3980,7 +3980,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_00_cd4fbb2bef.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_00_cd4fbb2bef.vZome",
       "fp_hash": "cd4fbb2befb2bad6",
       "group": "H4",
       "kernel": [
@@ -4006,7 +4006,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_15_d2bc1b0ca3.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_15_d2bc1b0ca3.vZome",
       "fp_hash": "d2bc1b0ca38dccb6",
       "group": "H4",
       "kernel": [
@@ -4032,7 +4032,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_18_da41392ff5.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_18_da41392ff5.vZome",
       "fp_hash": "da41392ff51f8259",
       "group": "H4",
       "kernel": [
@@ -4058,7 +4058,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_06_e30149ab81.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_06_e30149ab81.vZome",
       "fp_hash": "e30149ab81ce86ef",
       "group": "H4",
       "kernel": [
@@ -4084,7 +4084,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_00_e45dd01d6e.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_00_e45dd01d6e.vZome",
       "fp_hash": "e45dd01d6e5b46ba",
       "group": "H4",
       "kernel": [
@@ -4110,7 +4110,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_04_e60e673cfd.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_04_e60e673cfd.vZome",
       "fp_hash": "e60e673cfd483272",
       "group": "H4",
       "kernel": [
@@ -4136,7 +4136,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_09_e97405e509.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_09_e97405e509.vZome",
       "fp_hash": "e97405e509ad3d81",
       "group": "H4",
       "kernel": [
@@ -4162,7 +4162,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\H4_1101_05_f451c8c5fb.vZome",
+      "file": "wythoff_sweep\\runcitruncated_120-cell\\H4_1101_05_f451c8c5fb.vZome",
       "fp_hash": "f451c8c5fb3ae05d",
       "group": "H4",
       "kernel": [
@@ -4188,7 +4188,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\H4_1110_08_f7d1282c71.vZome",
+      "file": "wythoff_sweep\\cantitruncated_120-cell\\H4_1110_08_f7d1282c71.vZome",
       "fp_hash": "f7d1282c7138cd4f",
       "group": "H4",
       "kernel": [
@@ -4214,7 +4214,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_0111_08_f85e2e96c7.vZome",
+      "file": "wythoff_sweep\\cantitruncated_600-cell\\H4_0111_08_f85e2e96c7.vZome",
       "fp_hash": "f85e2e96c70d8cc4",
       "group": "H4",
       "kernel": [
@@ -4240,7 +4240,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\H4_1011_07_fb0b1ebf05.vZome",
+      "file": "wythoff_sweep\\runcitruncated_600-cell\\H4_1011_07_fb0b1ebf05.vZome",
       "fp_hash": "fb0b1ebf05aef942",
       "group": "H4",
       "kernel": [
@@ -4257,6 +4257,1696 @@
         "B": 2280,
         "R": 3600,
         "Y": 3000
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_49_00512c47fe.vZome",
+      "fp_hash": "00512c47fede00d6",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        -0.381966,
+        -0.0,
+        1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 49,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_23_013cba0769.vZome",
+      "fp_hash": "013cba07694cd6f1",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -4.236068,
+        -0.0,
+        -2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 23,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_34_0201baf7a3.vZome",
+      "fp_hash": "0201baf7a39ee24d",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        0.618034,
+        -0.0,
+        -0.381966
+      ],
+      "n_balls": 7200,
+      "shape_idx": 34,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_05_05894248e7.vZome",
+      "fp_hash": "05894248e7a48bfc",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -1.618034,
+        -0.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 5,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_13_0a7dae4901.vZome",
+      "fp_hash": "0a7dae49015937e5",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        0.618034,
+        -0.381966,
+        1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 13,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_02_0b7e8bc85e.vZome",
+      "fp_hash": "0b7e8bc85eeb1763",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        0.381966,
+        1.0,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 2,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_15_0ecfe79e5e.vZome",
+      "fp_hash": "0ecfe79e5e324f50",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        -0.0,
+        -1.618034,
+        2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 15,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_57_0f6eecdb02.vZome",
+      "fp_hash": "0f6eecdb02a488fa",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        -4.236068,
+        1.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 57,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_55_17cdeb648d.vZome",
+      "fp_hash": "17cdeb648d871829",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        2.618034,
+        -4.236068,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 55,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_62_1870420905.vZome",
+      "fp_hash": "187042090517dc77",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -4.236068,
+        -0.0,
+        2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 62,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_58_1871656b77.vZome",
+      "fp_hash": "1871656b77368d13",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -1.0,
+        -0.0,
+        0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 58,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_54_1a5d8c0939.vZome",
+      "fp_hash": "1a5d8c0939c3cf99",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        -1.618034,
+        -2.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 54,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_04_1b3933ec22.vZome",
+      "fp_hash": "1b3933ec226101f9",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        -0.0,
+        1.0,
+        -1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 4,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_51_1d7039d2db.vZome",
+      "fp_hash": "1d7039d2db0567fb",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -0.0,
+        0.618034,
+        -1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 51,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_18_20e75f4939.vZome",
+      "fp_hash": "20e75f4939bbdaae",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        2.618034,
+        -1.618034,
+        -1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 18,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_28_24a8d9bc99.vZome",
+      "fp_hash": "24a8d9bc99f8ca9b",
+      "group": "H4",
+      "kernel": [
+        3.236068,
+        -5.236068,
+        2.0,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 28,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_61_27009422bf.vZome",
+      "fp_hash": "27009422bf0cc09b",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        -2.618034,
+        -0.0,
+        1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 61,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_06_281de9b856.vZome",
+      "fp_hash": "281de9b8566e0bd1",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        1.0,
+        -2.618034,
+        1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 6,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_33_29fe0c07e2.vZome",
+      "fp_hash": "29fe0c07e29119b5",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -1.0,
+        -0.0,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 33,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_12_2bfdf4b6ef.vZome",
+      "fp_hash": "2bfdf4b6ef7199cd",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        -0.0,
+        1.618034,
+        -2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 12,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_31_3309702dc5.vZome",
+      "fp_hash": "3309702dc5d60833",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        1.618034,
+        -0.0,
+        4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 31,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_17_3a7b00ed31.vZome",
+      "fp_hash": "3a7b00ed3158b92b",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        2.618034,
+        4.236068,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 17,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_22_3ff4ffcf2a.vZome",
+      "fp_hash": "3ff4ffcf2a78514f",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        1.0,
+        0.381966,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 22,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_35_4525a9d7e3.vZome",
+      "fp_hash": "4525a9d7e3a08640",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -0.0,
+        2.618034,
+        -4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 35,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_47_45ba58888b.vZome",
+      "fp_hash": "45ba58888beb9c81",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        4.236068,
+        -0.0,
+        2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 47,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_59_4604d6d605.vZome",
+      "fp_hash": "4604d6d605ee2e75",
+      "group": "H4",
+      "kernel": [
+        5.236068,
+        -3.236068,
+        -0.0,
+        -2.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 59,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_48_57be3803dc.vZome",
+      "fp_hash": "57be3803dce8fe0f",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.618034,
+        -0.0,
+        0.381966
+      ],
+      "n_balls": 7200,
+      "shape_idx": 48,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_45_599fed7617.vZome",
+      "fp_hash": "599fed7617aa6071",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        0.381966,
+        -0.0,
+        1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 45,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_42_5e88217dbf.vZome",
+      "fp_hash": "5e88217dbf68598f",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        1.0,
+        2.618034,
+        -1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 42,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_08_62b1504db7.vZome",
+      "fp_hash": "62b1504db795c214",
+      "group": "H4",
+      "kernel": [
+        1.236068,
+        -0.0,
+        -2.0,
+        3.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 8,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_00_6530022112.vZome",
+      "fp_hash": "6530022112b36de2",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        -0.0,
+        -0.0,
+        3.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 0,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_25_6c686781c2.vZome",
+      "fp_hash": "6c686781c268a7c0",
+      "group": "H4",
+      "kernel": [
+        3.236068,
+        5.236068,
+        -2.0,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 25,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_27_6dad26f8ce.vZome",
+      "fp_hash": "6dad26f8ce83e5b2",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        3.236068,
+        -2.0,
+        -1.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 27,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_39_7f30f14d84.vZome",
+      "fp_hash": "7f30f14d84843ed9",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.381966,
+        0.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 39,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_20_81f39e3a23.vZome",
+      "fp_hash": "81f39e3a23cf8543",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.0,
+        0.381966,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 20,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_46_82a087d896.vZome",
+      "fp_hash": "82a087d896e1f2c2",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        2.0,
+        1.236068,
+        3.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 46,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_24_8609c8d358.vZome",
+      "fp_hash": "8609c8d358845ac9",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        -1.618034,
+        -0.0,
+        1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 24,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_37_8698d8421a.vZome",
+      "fp_hash": "8698d8421ad252ef",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -0.0,
+        0.618034,
+        1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 37,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_19_87ba4b3994.vZome",
+      "fp_hash": "87ba4b3994fbde43",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -2.618034,
+        -1.0,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 19,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_52_910cfbbb72.vZome",
+      "fp_hash": "910cfbbb721b7ea3",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        -2.618034,
+        -0.0,
+        -1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 52,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_21_94f5c9c278.vZome",
+      "fp_hash": "94f5c9c2780f54d2",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        2.618034,
+        -0.0,
+        1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 21,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_43_964659815b.vZome",
+      "fp_hash": "964659815b75a104",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        1.0,
+        -1.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 43,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_36_971ff6c446.vZome",
+      "fp_hash": "971ff6c4466594b3",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -1.618034,
+        0.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 36,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_50_9e2e193e49.vZome",
+      "fp_hash": "9e2e193e4988b559",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        0.381966,
+        -1.0,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 50,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_56_a10a98bf75.vZome",
+      "fp_hash": "a10a98bf7537ef5a",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        0.381966,
+        -0.0,
+        -1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 56,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_16_a2398d5d4a.vZome",
+      "fp_hash": "a2398d5d4a671d91",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -2.618034,
+        -4.236068,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 16,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_14_a56086e064.vZome",
+      "fp_hash": "a56086e06425cd41",
+      "group": "H4",
+      "kernel": [
+        2.0,
+        -1.236068,
+        -0.0,
+        3.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 14,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_63_a8e2a61deb.vZome",
+      "fp_hash": "a8e2a61deb083868",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        1.618034,
+        -0.0,
+        -4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 63,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_26_af091d409b.vZome",
+      "fp_hash": "af091d409b4561c0",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        1.618034,
+        -1.0,
+        -2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 26,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_07_b193f93889.vZome",
+      "fp_hash": "b193f938890cb7c3",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        1.0,
+        -0.0,
+        2.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 7,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_01_b2f04de7df.vZome",
+      "fp_hash": "b2f04de7df353257",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -0.0,
+        0.618034,
+        -1.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 1,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_53_b449d80f39.vZome",
+      "fp_hash": "b449d80f390b33ad",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -0.618034,
+        -1.0,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 53,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_03_b4c2c2bed8.vZome",
+      "fp_hash": "b4c2c2bed844732e",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        -0.0,
+        -1.0,
+        0.381966
+      ],
+      "n_balls": 7200,
+      "shape_idx": 3,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_11_b8928db2e2.vZome",
+      "fp_hash": "b8928db2e2959c43",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        2.0,
+        -1.236068,
+        -3.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 11,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_40_b8aef3d92d.vZome",
+      "fp_hash": "b8aef3d92de67090",
+      "group": "H4",
+      "kernel": [
+        0.618034,
+        1.0,
+        -0.381966,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 40,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_44_c3a40f59b5.vZome",
+      "fp_hash": "c3a40f59b5011733",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.618034,
+        -0.0,
+        -0.381966
+      ],
+      "n_balls": 7200,
+      "shape_idx": 44,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_32_c9355e379c.vZome",
+      "fp_hash": "c9355e379cf5d9f7",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        1.0,
+        -0.0,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 32,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_64_d5f606a226.vZome",
+      "fp_hash": "d5f606a226c5442e",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.0,
+        -0.381966,
+        0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 64,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_09_d7d03f785d.vZome",
+      "fp_hash": "d7d03f785d18bdda",
+      "group": "H4",
+      "kernel": [
+        -0.0,
+        2.618034,
+        1.618034,
+        -4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 9,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_29_de6adacc80.vZome",
+      "fp_hash": "de6adacc80280cd8",
+      "group": "H4",
+      "kernel": [
+        2.618034,
+        -1.618034,
+        -0.0,
+        4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 29,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_38_e3b9993e75.vZome",
+      "fp_hash": "e3b9993e75ba8566",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        -0.0,
+        -0.381966,
+        -0.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 38,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_41_e4e29df04c.vZome",
+      "fp_hash": "e4e29df04cae9619",
+      "group": "H4",
+      "kernel": [
+        4.236068,
+        2.618034,
+        -0.0,
+        -1.618034
+      ],
+      "n_balls": 7200,
+      "shape_idx": 41,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_30_f1d39a397c.vZome",
+      "fp_hash": "f1d39a397cd4786f",
+      "group": "H4",
+      "kernel": [
+        1.618034,
+        -0.0,
+        -2.618034,
+        -4.236068
+      ],
+      "n_balls": 7200,
+      "shape_idx": 30,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_60_f4b0068c4e.vZome",
+      "fp_hash": "f4b0068c4ef8ba7e",
+      "group": "H4",
+      "kernel": [
+        0.381966,
+        -0.618034,
+        1.0,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 60,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
+      }
+    },
+    {
+      "bitmask": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\omnitruncated_120-cell\\H4_1111_10_fd1373d44b.vZome",
+      "fp_hash": "fd1373d44be0f754",
+      "group": "H4",
+      "kernel": [
+        1.0,
+        1.618034,
+        2.618034,
+        -0.0
+      ],
+      "n_balls": 7200,
+      "shape_idx": 10,
+      "source_polytope": "omnitruncated 120-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 3600,
+        "R": 5760,
+        "Y": 4800
       }
     }
   ]

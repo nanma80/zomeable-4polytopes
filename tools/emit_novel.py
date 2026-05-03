@@ -5,7 +5,7 @@ Reads ongoing_work/novel_rng<N>.json (produced by
 example_kernel) representative per novel fp_hash, and runs
 lib.emit_generic.project_and_emit to produce a .vZome file.
 
-Output: output/wythoff_sweep/<group>_<bitmask>_<short-hash>.vZome
+Output: output/wythoff_sweep/<common-name-slug>/<group>_<bitmask>_<idx>_<hash>.vZome
 together with a JSON manifest at output/wythoff_sweep/manifest.json
 mapping novel fp_hash -> source polytope, kernel, and emission status.
 
@@ -57,14 +57,23 @@ def pick_representative(occurrences):
                               o["shape_idx"]))
 
 
-def emit_one(h, info, out_dir):
+def _slug(name):
+    """Light slug for a polytope common name; preserves dashes/digits and
+    replaces whitespace with underscore.  E.g. 'omnitruncated 120-cell' ->
+    'omnitruncated_120-cell'."""
+    return "_".join(name.split())
+
+
+def emit_one(h, info, out_root):
     g = info["group"]
     bm = tuple(info["bitmask"])
     name = info["name"]
     n = np.array(info["example_kernel"], dtype=float)
+    subdir = os.path.join(out_root, _slug(name))
+    os.makedirs(subdir, exist_ok=True)
     fname = (f"{g}_{''.join(str(b) for b in bm)}_"
              f"{info['shape_idx']:02d}_{h[:10]}.vZome")
-    path = os.path.join(out_dir, fname)
+    path = os.path.join(subdir, fname)
     V4, E4 = build_polytope(g, bm)
     counts = project_and_emit(
         f"{g} {bm} {name} (shape {info['shape_idx']}, hash {h[:10]})",

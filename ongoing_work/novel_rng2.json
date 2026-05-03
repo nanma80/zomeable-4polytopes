@@ -1,4 +1,40 @@
 {
+  "00512c47fede00d6": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          -0.381966,
+          -0.0,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 49,
+        "sig": {
+          "B": 7354,
+          "R": 11804,
+          "Y": 9900,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7354,
+      "R": 11804,
+      "Y": 9900,
+      "_": 480
+    }
+  },
   "0137580b4ebb8a1b": {
     "n_balls": 3660,
     "occurrences": [
@@ -33,6 +69,78 @@
       "R": 7200,
       "Y": 6000,
       "_": 300
+    }
+  },
+  "013cba07694cd6f1": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -4.236068,
+          -0.0,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 23,
+        "sig": {
+          "B": 7316,
+          "R": 11856,
+          "Y": 9880,
+          "_": 486
+        }
+      }
+    ],
+    "sig": {
+      "B": 7316,
+      "R": 11856,
+      "Y": 9880,
+      "_": 486
+    }
+  },
+  "0201baf7a39ee24d": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          0.618034,
+          -0.0,
+          -0.381966
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 34,
+        "sig": {
+          "B": 7410,
+          "R": 11776,
+          "Y": 9872,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7410,
+      "R": 11776,
+      "Y": 9872,
+      "_": 480
     }
   },
   "03a05d79eea50050": {
@@ -143,6 +251,78 @@
       "_": 120
     }
   },
+  "05894248e7a48bfc": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -1.618034,
+          -0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 10,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 5,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
+    }
+  },
+  "0a7dae49015937e5": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          0.618034,
+          -0.381966,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 13,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
+    }
+  },
   "0b68d395ef150c40": {
     "n_balls": 32,
     "occurrences": [
@@ -175,6 +355,42 @@
       "B": 72,
       "G": 48,
       "_": 8
+    }
+  },
+  "0b7e8bc85eeb1763": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          0.381966,
+          1.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 5,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 2,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
     }
   },
   "0d13d8d35e2b29d4": {
@@ -213,6 +429,42 @@
       "_": 120
     }
   },
+  "0ecfe79e5e324f50": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -0.0,
+          -1.618034,
+          2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 15,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "0f19c9a9d87693ce": {
     "n_balls": 104,
     "occurrences": [
@@ -247,6 +499,42 @@
       "G": 48,
       "Y": 192,
       "_": 24
+    }
+  },
+  "0f6eecdb02a488fa": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -4.236068,
+          1.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 57,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "11927f5a0ff18e7d": {
@@ -355,6 +643,114 @@
       "R": 4320,
       "Y": 3600,
       "_": 180
+    }
+  },
+  "17cdeb648d871829": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          2.618034,
+          -4.236068,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 55,
+        "sig": {
+          "B": 7370,
+          "R": 11834,
+          "Y": 9846,
+          "_": 488
+        }
+      }
+    ],
+    "sig": {
+      "B": 7370,
+      "R": 11834,
+      "Y": 9846,
+      "_": 488
+    }
+  },
+  "187042090517dc77": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -4.236068,
+          -0.0,
+          2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 62,
+        "sig": {
+          "B": 7316,
+          "R": 11856,
+          "Y": 9880,
+          "_": 486
+        }
+      }
+    ],
+    "sig": {
+      "B": 7316,
+      "R": 11856,
+      "Y": 9880,
+      "_": 486
+    }
+  },
+  "1871656b77368d13": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -1.0,
+          -0.0,
+          0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 58,
+        "sig": {
+          "B": 7316,
+          "R": 11856,
+          "Y": 9880,
+          "_": 486
+        }
+      }
+    ],
+    "sig": {
+      "B": 7316,
+      "R": 11856,
+      "Y": 9880,
+      "_": 486
     }
   },
   "18db22bc8bc4f517": {
@@ -493,6 +889,42 @@
       "_": 240
     }
   },
+  "1a5d8c0939c3cf99": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -1.618034,
+          -2.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 54,
+        "sig": {
+          "B": 7430,
+          "R": 11782,
+          "Y": 9826,
+          "_": 500
+        }
+      }
+    ],
+    "sig": {
+      "B": 7430,
+      "R": 11782,
+      "Y": 9826,
+      "_": 500
+    }
+  },
   "1ae105e55323f972": {
     "n_balls": 3660,
     "occurrences": [
@@ -527,6 +959,42 @@
       "R": 5812,
       "Y": 4842,
       "_": 244
+    }
+  },
+  "1b3933ec226101f9": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -0.0,
+          1.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 22,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 4,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
     }
   },
   "1c278a1d7d573e01": {
@@ -595,6 +1063,42 @@
       "B": 27,
       "R": 54,
       "Y": 9
+    }
+  },
+  "1d7039d2db0567fb": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -0.0,
+          0.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 51,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
     }
   },
   "1dd1965c7d3eab6f": {
@@ -703,6 +1207,42 @@
       "_": 243
     }
   },
+  "20e75f4939bbdaae": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          -1.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 4,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 18,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
+    }
+  },
   "24655dcf097cb753": {
     "n_balls": 3660,
     "occurrences": [
@@ -737,6 +1277,42 @@
       "R": 5793,
       "Y": 4844,
       "_": 244
+    }
+  },
+  "24a8d9bc99f8ca9b": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          3.236068,
+          -5.236068,
+          2.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 28,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "24e9b2fd40d33c12": {
@@ -843,6 +1419,114 @@
       "Y": 15
     }
   },
+  "27009422bf0cc09b": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -2.618034,
+          -0.0,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 61,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
+  "281de9b8566e0bd1": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          1.0,
+          -2.618034,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 18,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 6,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
+    }
+  },
+  "29fe0c07e29119b5": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -1.0,
+          -0.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 33,
+        "sig": {
+          "B": 7316,
+          "R": 11856,
+          "Y": 9880,
+          "_": 486
+        }
+      }
+    ],
+    "sig": {
+      "B": 7316,
+      "R": 11856,
+      "Y": 9880,
+      "_": 486
+    }
+  },
   "2a0440c4d143aa59": {
     "n_balls": 64,
     "occurrences": [
@@ -875,6 +1559,42 @@
       "B": 48,
       "G": 48,
       "Y": 96
+    }
+  },
+  "2bfdf4b6ef7199cd": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -0.0,
+          1.618034,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 8,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 12,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
     }
   },
   "2ff0da38f367d655": {
@@ -981,6 +1701,42 @@
       "Y": 96
     }
   },
+  "3309702dc5d60833": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          1.618034,
+          -0.0,
+          4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 31,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
   "35859e561367e8df": {
     "n_balls": 1260,
     "occurrences": [
@@ -1085,6 +1841,42 @@
       "B": 72,
       "R": 144,
       "Y": 24
+    }
+  },
+  "3a7b00ed3158b92b": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          2.618034,
+          4.236068,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 3,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 17,
+        "sig": {
+          "B": 7370,
+          "R": 11834,
+          "Y": 9846,
+          "_": 488
+        }
+      }
+    ],
+    "sig": {
+      "B": 7370,
+      "R": 11834,
+      "Y": 9846,
+      "_": 488
     }
   },
   "3b18c3dede8d0fdc": {
@@ -1227,6 +2019,42 @@
       "_": 242
     }
   },
+  "3ff4ffcf2a78514f": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          1.0,
+          0.381966,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 22,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "40be7cc1d7a2aae6": {
     "n_balls": 52,
     "occurrences": [
@@ -1356,6 +2184,42 @@
       "Y": 96
     }
   },
+  "4525a9d7e3a08640": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          2.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 35,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
+    }
+  },
   "4547c1171357ea3a": {
     "n_balls": 20,
     "occurrences": [
@@ -1388,6 +2252,78 @@
       "B": 12,
       "R": 24,
       "Y": 24
+    }
+  },
+  "45ba58888beb9c81": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          4.236068,
+          -0.0,
+          2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 47,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
+  "4604d6d605ee2e75": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          5.236068,
+          -3.236068,
+          -0.0,
+          -2.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 59,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
     }
   },
   "467bb01461b4a7fb": {
@@ -1861,6 +2797,42 @@
       "_": 48
     }
   },
+  "57be3803dce8fe0f": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.618034,
+          -0.0,
+          0.381966
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 48,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
   "59350c907e205e3a": {
     "n_balls": 3660,
     "occurrences": [
@@ -1950,6 +2922,78 @@
     "sig": {
       "B": 192,
       "G": 192
+    }
+  },
+  "599fed7617aa6071": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          0.381966,
+          -0.0,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 45,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
+  "5e88217dbf68598f": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          1.0,
+          2.618034,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 8,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 42,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
     }
   },
   "5f1d3ef65066d4ff": {
@@ -2150,6 +3194,42 @@
       "_": 240
     }
   },
+  "62b1504db795c214": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.236068,
+          -0.0,
+          -2.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 14,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 8,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
+    }
+  },
   "633ba56c30a8db1e": {
     "n_balls": 3660,
     "occurrences": [
@@ -2184,6 +3264,42 @@
       "R": 5804,
       "Y": 4854,
       "_": 242
+    }
+  },
+  "6530022112b36de2": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          -0.0,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 144,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 0,
+        "sig": {
+          "B": 7316,
+          "R": 11856,
+          "Y": 9880,
+          "_": 486
+        }
+      }
+    ],
+    "sig": {
+      "B": 7316,
+      "R": 11856,
+      "Y": 9880,
+      "_": 486
     }
   },
   "663bee1002ea5ba9": {
@@ -2358,6 +3474,42 @@
       "Y": 96
     }
   },
+  "6c686781c268a7c0": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          3.236068,
+          5.236068,
+          -2.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 25,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "6d9784faf4fbe4b7": {
     "n_balls": 120,
     "occurrences": [
@@ -2390,6 +3542,42 @@
       "B": 72,
       "R": 144,
       "Y": 24
+    }
+  },
+  "6dad26f8ce83e5b2": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          3.236068,
+          -2.0,
+          -1.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 27,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
     }
   },
   "6f289fe95c73e9d6": {
@@ -2816,6 +4004,42 @@
       "Y": 32
     }
   },
+  "7f30f14d84843ed9": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.381966,
+          0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 4,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 39,
+        "sig": {
+          "B": 7430,
+          "R": 11782,
+          "Y": 9826,
+          "_": 500
+        }
+      }
+    ],
+    "sig": {
+      "B": 7430,
+      "R": 11782,
+      "Y": 9826,
+      "_": 500
+    }
+  },
   "800f72c3baa479fe": {
     "n_balls": 3660,
     "occurrences": [
@@ -2852,6 +4076,42 @@
       "_": 244
     }
   },
+  "81f39e3a23cf8543": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.0,
+          0.381966,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 20,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "82123904b041cf96": {
     "n_balls": 20,
     "occurrences": [
@@ -2882,6 +4142,42 @@
     "sig": {
       "G": 24,
       "Y": 16
+    }
+  },
+  "82a087d896e1f2c2": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.0,
+          1.236068,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 46,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "85a806f8eed36575": {
@@ -2918,6 +4214,78 @@
       "Y": 12
     }
   },
+  "8609c8d358845ac9": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -1.618034,
+          -0.0,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 24,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
+  "8698d8421ad252ef": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -0.0,
+          0.618034,
+          1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 37,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
+    }
+  },
   "86c7a043be22d7e9": {
     "n_balls": 20,
     "occurrences": [
@@ -2948,6 +4316,42 @@
     "sig": {
       "B": 48,
       "G": 48
+    }
+  },
+  "87ba4b3994fbde43": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -2.618034,
+          -1.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 4,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 19,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "8b13523ca7f8c2fd": {
@@ -3158,6 +4562,42 @@
       "Y": 24
     }
   },
+  "910cfbbb721b7ea3": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          -2.618034,
+          -0.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 52,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
   "920f7d987456d258": {
     "n_balls": 3660,
     "occurrences": [
@@ -3332,6 +4772,114 @@
     "sig": {
       "G": 144,
       "Y": 96
+    }
+  },
+  "94f5c9c2780f54d2": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          2.618034,
+          -0.0,
+          1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 21,
+        "sig": {
+          "B": 7410,
+          "R": 11776,
+          "Y": 9872,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7410,
+      "R": 11776,
+      "Y": 9872,
+      "_": 480
+    }
+  },
+  "964659815b75a104": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          1.0,
+          -1.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 43,
+        "sig": {
+          "B": 7370,
+          "R": 11834,
+          "Y": 9846,
+          "_": 488
+        }
+      }
+    ],
+    "sig": {
+      "B": 7370,
+      "R": 11834,
+      "Y": 9846,
+      "_": 488
+    }
+  },
+  "971ff6c4466594b3": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -1.618034,
+          0.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 36,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "9815da3055bce1b5": {
@@ -3618,6 +5166,42 @@
       "Y": 6
     }
   },
+  "9e2e193e4988b559": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          0.381966,
+          -1.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 50,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
+    }
+  },
   "9f354d53aebc1c3b": {
     "n_balls": 120,
     "occurrences": [
@@ -3792,6 +5376,78 @@
       "_": 16
     }
   },
+  "a10a98bf7537ef5a": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          0.381966,
+          -0.0,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 56,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
+  "a2398d5d4a671d91": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -2.618034,
+          -4.236068,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 3,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 16,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
+    }
+  },
   "a2c47bfa6218777a": {
     "n_balls": 3660,
     "occurrences": [
@@ -3898,6 +5554,42 @@
       "_": 300
     }
   },
+  "a56086e06425cd41": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.0,
+          -1.236068,
+          -0.0,
+          3.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 34,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 14,
+        "sig": {
+          "B": 7354,
+          "R": 11804,
+          "Y": 9900,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7354,
+      "R": 11804,
+      "Y": 9900,
+      "_": 480
+    }
+  },
   "a5838ce67b11ed4b": {
     "n_balls": 3660,
     "occurrences": [
@@ -4002,6 +5694,42 @@
       "R": 4320,
       "Y": 3600,
       "_": 180
+    }
+  },
+  "a8e2a61deb083868": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          1.618034,
+          -0.0,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 63,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
     }
   },
   "a96b0a716a7b3e2c": {
@@ -4233,6 +5961,78 @@
       "Y": 24
     }
   },
+  "af091d409b4561c0": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          1.618034,
+          -1.0,
+          -2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 10,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 26,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
+    }
+  },
+  "b193f938890cb7c3": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          1.0,
+          -0.0,
+          2.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 8,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 7,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
   "b26f233ca5d22a87": {
     "n_balls": 1260,
     "occurrences": [
@@ -4269,6 +6069,42 @@
       "_": 120
     }
   },
+  "b2f04de7df353257": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          0.618034,
+          -1.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 20,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 1,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "b3cddc04daccf860": {
     "n_balls": 576,
     "occurrences": [
@@ -4303,6 +6139,78 @@
       "G": 576,
       "Y": 768,
       "_": 96
+    }
+  },
+  "b449d80f390b33ad": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -0.618034,
+          -1.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 53,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
+    }
+  },
+  "b4c2c2bed844732e": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          -0.0,
+          -1.0,
+          0.381966
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 3,
+        "sig": {
+          "B": 7370,
+          "R": 11834,
+          "Y": 9846,
+          "_": 488
+        }
+      }
+    ],
+    "sig": {
+      "B": 7370,
+      "R": 11834,
+      "Y": 9846,
+      "_": 488
     }
   },
   "b4f719ee372c6ae6": {
@@ -4477,6 +6385,78 @@
       "B": 96,
       "R": 192,
       "Y": 96
+    }
+  },
+  "b8928db2e2959c43": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.0,
+          -1.236068,
+          -3.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 11,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
+    }
+  },
+  "b8aef3d92de67090": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.618034,
+          1.0,
+          -0.381966,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 5,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 40,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
     }
   },
   "b92076625c902fdf": {
@@ -4751,6 +6731,42 @@
       "Y": 12
     }
   },
+  "c3a40f59b5011733": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.618034,
+          -0.0,
+          -0.381966
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 44,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
+    }
+  },
   "c5a2631677eb4b33": {
     "n_balls": 192,
     "occurrences": [
@@ -4817,6 +6833,42 @@
       "B": 96,
       "R": 192,
       "Y": 96
+    }
+  },
+  "c9355e379cf5d9f7": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          1.0,
+          -0.0,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 2,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 32,
+        "sig": {
+          "B": 7390,
+          "R": 11812,
+          "Y": 9844,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11812,
+      "Y": 9844,
+      "_": 492
     }
   },
   "c94790ed916a5c87": {
@@ -5159,6 +7211,42 @@
       "_": 120
     }
   },
+  "d5f606a226c5442e": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.0,
+          -0.381966,
+          0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 64,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "d6adf55a401f2fd9": {
     "n_balls": 1860,
     "occurrences": [
@@ -5229,6 +7317,42 @@
       "R": 4320,
       "Y": 3600,
       "_": 180
+    }
+  },
+  "d7d03f785d18bdda": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          -0.0,
+          2.618034,
+          1.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 9,
+        "sig": {
+          "B": 7368,
+          "R": 11844,
+          "Y": 9832,
+          "_": 494
+        }
+      }
+    ],
+    "sig": {
+      "B": 7368,
+      "R": 11844,
+      "Y": 9832,
+      "_": 494
     }
   },
   "d98b5f4addb5359b": {
@@ -5333,6 +7457,42 @@
       "B": 45,
       "R": 90,
       "Y": 15
+    }
+  },
+  "de6adacc80280cd8": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          2.618034,
+          -1.618034,
+          -0.0,
+          4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 29,
+        "sig": {
+          "B": 7354,
+          "R": 11804,
+          "Y": 9900,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7354,
+      "R": 11804,
+      "Y": 9900,
+      "_": 480
     }
   },
   "e1d5c7a0817918b3": {
@@ -5509,6 +7669,42 @@
       "_": 247
     }
   },
+  "e3b9993e75ba8566": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          -0.0,
+          -0.381966,
+          -0.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 38,
+        "sig": {
+          "B": 7402,
+          "R": 11824,
+          "Y": 9828,
+          "_": 484
+        }
+      }
+    ],
+    "sig": {
+      "B": 7402,
+      "R": 11824,
+      "Y": 9828,
+      "_": 484
+    }
+  },
   "e45dd01d6e5b46ba": {
     "n_balls": 3660,
     "occurrences": [
@@ -5543,6 +7739,42 @@
       "R": 5808,
       "Y": 4832,
       "_": 252
+    }
+  },
+  "e4e29df04cae9619": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          4.236068,
+          2.618034,
+          -0.0,
+          -1.618034
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 41,
+        "sig": {
+          "B": 7410,
+          "R": 11776,
+          "Y": 9872,
+          "_": 480
+        }
+      }
+    ],
+    "sig": {
+      "B": 7410,
+      "R": 11776,
+      "Y": 9872,
+      "_": 480
     }
   },
   "e4fb66f8e75ce530": {
@@ -5793,6 +8025,42 @@
       "_": 300
     }
   },
+  "f1d39a397cd4786f": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.618034,
+          -0.0,
+          -2.618034,
+          -4.236068
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 8,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 30,
+        "sig": {
+          "B": 7381,
+          "R": 11810,
+          "Y": 9842,
+          "_": 505
+        }
+      }
+    ],
+    "sig": {
+      "B": 7381,
+      "R": 11810,
+      "Y": 9842,
+      "_": 505
+    }
+  },
   "f451c8c5fb3ae05d": {
     "n_balls": 3660,
     "occurrences": [
@@ -5861,6 +8129,42 @@
       "B": 144,
       "G": 144,
       "Y": 192
+    }
+  },
+  "f4b0068c4ef8ba7e": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          0.381966,
+          -0.618034,
+          1.0,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 1,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 60,
+        "sig": {
+          "B": 7390,
+          "R": 11842,
+          "Y": 9814,
+          "_": 492
+        }
+      }
+    ],
+    "sig": {
+      "B": 7390,
+      "R": 11842,
+      "Y": 9814,
+      "_": 492
     }
   },
   "f79e915e332666e1": {
@@ -6064,6 +8368,42 @@
       "G": 48,
       "Y": 64,
       "_": 8
+    }
+  },
+  "fd1373d44be0f754": {
+    "n_balls": 7200,
+    "occurrences": [
+      {
+        "bitmask": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "example_kernel": [
+          1.0,
+          1.618034,
+          2.618034,
+          -0.0
+        ],
+        "group": "H4",
+        "n_balls": 7200,
+        "n_kernels": 6,
+        "name": "omnitruncated 120-cell",
+        "shape_idx": 10,
+        "sig": {
+          "B": 7370,
+          "R": 11834,
+          "Y": 9846,
+          "_": 488
+        }
+      }
+    ],
+    "sig": {
+      "B": 7370,
+      "R": 11834,
+      "Y": 9846,
+      "_": 488
     }
   },
   "feebd08ddebb8d64": {

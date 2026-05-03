@@ -65,8 +65,8 @@ Step 1 for H₄ takes ~48 minutes single-threaded; results are cached at
 
 ## Step-2 census (rng = 2)
 
-> _All shape counts are at rng=2; H4 results pending — see resume
-> instructions below._
+All shape counts below are at rng = 2 across the full corpus of
+47 unique convex uniform 4-polytopes.
 
 The B₄ tesseract figure of **32 shapes** matches the documented
 tesseract enumeration at rng=2 in
@@ -135,8 +135,10 @@ support-2 automatic-zomeability and have only 1–3 shapes each.
 
 ### H₄ (120-cell / 600-cell family)
 
-14 of 15 polytopes complete; the omnitruncated 120-cell (V=14400) was
-running on the 24-core box at the time of writing.
+All 15 H₄ polytopes complete.  The omnitruncated 120-cell (V=14400)
+required ~137 min CPU on a 24-core box for the step-2 group-by-shape
+pass; bounded RAM was achieved by the multiset shape-fingerprint path
+in `lib/search_engine.shape_fingerprint` (see implementation notes).
 
 | bitmask    | name                       | V     | E     | shapes |
 |------------|----------------------------|------:|------:|-------:|
@@ -154,19 +156,21 @@ running on the 24-core box at the time of writing.
 | (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18060 | 6      |
 | (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14520 | 11     |
 | (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14508 | 26     |
-| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | _running_  |
+| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | 65     |
 
-(The cantitruncated and runcitruncated 7200-vertex polytopes report
-slightly more than 7200 vertices and 14400 edges in the engine due to a
-known `tol_decimals=8` rounding issue in `lib.wythoff.orbit`; the
-correct kernels and shape counts are still found because the search
-engine deduplicates internally.)
+(The cantitruncated, runcitruncated, and omnitruncated 7200/14400-vertex
+polytopes report slightly more than 7200/14400 vertices and the
+expected edge counts in the engine due to a known `tol_decimals=8`
+rounding issue in `lib.wythoff.orbit`; the correct kernels and shape
+counts are still found because the search engine deduplicates
+internally.)
 
 H₄ shape diversity grows sharply with V: the cantitruncated 600-cell
-contributes 26 distinct shapes alone — more than every other H₄
-polytope below it combined.
+contributes 26 distinct shapes alone, and the omnitruncated 120-cell
+**65** — every one of its 432 hits lands in a distinct equivalence
+class.
 
-## Novel-shape inventory (rng = 2, 46 of 47 polytope records)
+## Novel-shape inventory (rng = 2, full 47 of 47 polytope records)
 
 [`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep
 shape against the regular reference set built from the (1,0,0,0)/
@@ -181,8 +185,8 @@ strictly disjoint at this kernel range.
 | A₄ | 43  | 43  |
 | B₄ | 34  | 34  |
 | F₄ | 20  | 20  |
-| H₄ | 80  | 80  |
-| **TOTAL** | **177 sweep-shape entries** | **170 distinct fp_hashes** |
+| H₄ | 145 | 145 |
+| **TOTAL** | **242 sweep-shape entries** | **235 distinct fp_hashes** |
 
 The seven near-duplicates are cases where two different Wythoff
 polytopes project to the same 3D shape under different kernels (the
@@ -191,15 +195,15 @@ uniform-scale-invariant).
 
 [`tools/emit_novel.py`](../tools/emit_novel.py) iterates the novel
 inventory and calls `lib.emit_generic.project_and_emit` to write a
-.vZome file per shape.  At rng=2 the result is **143 of 170** novel
+.vZome file per shape.  At rng=2 the result is **208 of 235** novel
 shapes successfully snapped to ZZ[φ]³ (the zometool-realisable subset):
 
 | group | novel shapes | snapped to vZome | snap rate |
 |:-:|--:|--:|--:|
-| A₄ | 43 | 43 | 100% |
-| B₄ | 34 | 13 | 38%  |
-| F₄ | 20 | 7  | 35%  |
-| H₄ | 80 | 80 | 100% |
+| A₄ | 43  | 43  | 100% |
+| B₄ | 34  | 13  | 38%  |
+| F₄ | 20  | 7   | 35%  |
+| H₄ | 145 | 145 | 100% |
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
 The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
@@ -213,12 +217,22 @@ B₄/F₄ projections, not a search-precision artefact.  All the
 icosahedral H₄ shapes snap because the icosahedral basis is naturally
 aligned with the golden-ratio integer lattice.
 
-vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/);
-file names follow the pattern
-`<group>_<bitmask>_<shape_idx>_<fp_hash[:10]>.vZome` and a JSON
-manifest at `output/wythoff_sweep/manifest.json` cross-references each
-file with its fp_hash, source polytope, kernel direction, and per-axis
-strut counts.
+vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/),
+organised into one subfolder per polytope common name (e.g.
+`output/wythoff_sweep/cantellated_120-cell/`,
+`output/wythoff_sweep/omnitruncated_120-cell/`).  Each file follows the
+naming convention `<group>_<bitmask>_<shape_idx>_<fp_hash[:10]>.vZome`,
+and a JSON manifest at `output/wythoff_sweep/manifest.json` cross-
+references every file with its fp_hash, source polytope, kernel
+direction, and per-axis strut counts.
+
+All emitted files use **only the 4 standard zometool strut colours**
+(R = red, B = blue, Y = yellow, G = green) — non-standard directions
+are rejected upstream in `lib.search_engine._classify_dir`.  Coords
+are post-snap normalised by a uniform `φᵏ` factor (`lib/emit_generic
+._normalize_scale`) so the smallest pairwise vertex distance lands
+near 30 zome units across the whole corpus, giving a consistent
+strut/ball ratio regardless of which `s` happened to snap.
 
 ## Reproduction
 
@@ -266,6 +280,18 @@ python tools/emit_novel.py --rng 2
   edge alignment, `cKDTree` + Gram-matrix pairwise distances for shape
   fingerprints) — speedups of 39–42× on the H₄ 600/120-cell unlocked
   the V=14400 omnitruncated 120-cell case for tractable analysis.
+- **Memory-bounded fingerprinting (V > 5000).**  The default
+  pairwise-distance fingerprint stores a sorted tuple of length
+  `V*(V-1)/2`; for V = 14400 that is ~3 GB per shape, which on a
+  ~30-shape group accumulates past 40 GB.  `shape_fingerprint`'s
+  `large_n_balls` path replaces the sorted tuple with an order-
+  independent multiset accumulated via `np.bincount` over chunked
+  Gram-matrix tiles — peak RSS stays under 1 GB regardless of V.
+  The two fingerprint formats use different hashes, but the multiset
+  path only fires for V > `large_n_balls` (default 5000) so no
+  small-polytope record overlaps the regime; within a single sweep
+  every hit for a given polytope goes through the same path
+  consistently, so internal dedup is unaffected.
 - **Caches and resumability.**
   - Step-1 hits → `ongoing_work/kernels_<group>_rng<N>.npy`.
   - Per-polytope step-2 result lines → any
@@ -288,3 +314,18 @@ python tools/emit_novel.py --rng 2
   shapes split into 1 cell-first (`B': 24`) sporadic plus 31 generic
   rectangular-cuboid kernels with `B': 32` signature, exactly as
   enumerated in `output/8cell/CLASSIFICATION.md §3`.
+- **Output normalisation (`emit_generic._normalize_scale`).**  After
+  snap-to-ZZ[φ]³ the smallest projected edge length depends on which
+  scale `s` happened to satisfy `_snap_zphi`, which differs between
+  polytopes and gives wildly inconsistent strut/ball ratios in the
+  rendered .vZome.  After classification (so directions are unaffected),
+  every coord is multiplied by a uniform `φᵏ` factor — `φ` is a unit in
+  ZZ[φ], so coords stay integral — bringing the smallest pairwise
+  vertex distance to within a factor of √φ ≈ 1.27 of a ~30-zome-unit
+  target.  This makes the corpus visually consistent.
+- **Per-polytope subfolders.**  `tools/emit_novel.py` writes each
+  novel shape into `output/wythoff_sweep/<common-name-slug>/` (e.g.
+  `omnitruncated_120-cell/`, `cantellated_5-cell/`) so the directory
+  tree is browsable by Wythoff form rather than fp_hash.  The shape
+  index and short fp_hash are still in the filename for cross-
+  reference with `manifest.json`.

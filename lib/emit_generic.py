@@ -14,12 +14,75 @@ Snap tolerance is 1e-6 in floating-point distance to a + b*phi (a, b ∈ Z, |a|,
 import sys, os
 sys.path.insert(0, os.path.dirname(__file__))
 
+import math
 import numpy as np
 from fractions import Fraction
-from emit_vzome import GF, emit_vzome_directional, classify_direction
+from emit_vzome import GF, emit_vzome_directional, classify_direction, phi_pow
 from search_engine import projection_matrix, _try_align
 
 PHI_F = (1.0 + 5.0 ** 0.5) / 2.0
+
+
+def _normalize_scale(coords_gf, target_min_dist=30.0, tol=1e-6):
+    """Apply uniform phi^k scaling so the smallest non-zero pairwise
+    vertex distance lands close to ``target_min_dist``.
+
+    Different polytopes pick different snap scales `s` in
+    ``_snap_coords``, so without normalisation the visible strut/ball
+    ratio varies wildly across the corpus (some figures are tiny, some
+    are huge).  Multiplying every coord by phi^k for an integer k
+    brings the smallest distance to within
+    [target/sqrt(phi), target*sqrt(phi)] of ``target_min_dist`` --
+    i.e. a factor of ~1.27 in either direction -- which is the best
+    a phi^k unit can do.
+
+    phi is a unit in Z[phi] (phi*(phi-1) = 1), so phi^k * Z[phi] = Z[phi]
+    exactly; this keeps the snapped integrality intact.
+    """
+    if len(coords_gf) < 2:
+        return coords_gf
+    flt = np.array(
+        [(float(c[0].a + c[0].b * PHI_F),
+          float(c[1].a + c[1].b * PHI_F),
+          float(c[2].a + c[2].b * PHI_F)) for c in coords_gf])
+    try:
+        from scipy.spatial import cKDTree
+        tree = cKDTree(flt)
+        d, _ = tree.query(flt, k=min(2, len(flt)))
+        if d.ndim == 1:
+            return coords_gf
+        nearest = d[:, 1]
+        nearest = nearest[nearest > tol]
+        if nearest.size == 0:
+            return coords_gf
+        min_d = float(nearest.min())
+    except Exception:
+        sq = (flt * flt).sum(axis=1)
+        n = len(flt)
+        min_d2 = float("inf")
+        chunk = 2048
+        for i in range(0, n, chunk):
+            for j in range(i, n, chunk):
+                D2 = (sq[i:i + chunk, None] + sq[None, j:j + chunk]
+                      - 2.0 * (flt[i:i + chunk] @ flt[j:j + chunk].T))
+                if i == j:
+                    np.fill_diagonal(D2, np.inf)
+                pos = D2[D2 > tol * tol]
+                if pos.size:
+                    m = float(pos.min())
+                    if m < min_d2:
+                        min_d2 = m
+        if min_d2 == float("inf"):
+            return coords_gf
+        min_d = min_d2 ** 0.5
+    if min_d <= 0:
+        return coords_gf
+    k = int(round(math.log(target_min_dist / min_d) / math.log(PHI_F)))
+    if k == 0:
+        return coords_gf
+    factor = phi_pow(k)
+    return [(c[0] * factor, c[1] * factor, c[2] * factor)
+            for c in coords_gf]
 
 
 def _snap_zphi(x, tol=1e-6, N=80):
@@ -84,6 +147,7 @@ def _dedup_balls(balls):
 def project_and_emit(name, V4, E4, n, out_path,
                      extra_scale=GF(2, 2),
                      scales_to_try=None,
+                     target_min_dist=30.0,
                      verbose=True):
     """Project V4 (Nx4) along kernel n, snap, emit .vZome.
 
@@ -91,6 +155,10 @@ def project_and_emit(name, V4, E4, n, out_path,
         strut sizes (default 2 + 2*phi = phi^2 * 2, matches 24-cell convention).
     scales_to_try: list of float scales s; we try s * coords.snap → ZZ[phi].
         Defaults to a useful set covering common irrationals.
+    target_min_dist: target for the smallest pairwise vertex distance after
+        post-snap phi^k normalisation.  ~30 zome units gives a strut/ball
+        ratio comparable to the regular-polytope reference outputs.  Pass
+        None to disable post-normalisation.
     """
     V4 = np.asarray(V4, dtype=float)
     n = np.asarray(n, dtype=float)
@@ -163,6 +231,14 @@ def project_and_emit(name, V4, E4, n, out_path,
                 print(f"    {uniq[i]} -> {uniq[j]}")
     if not all_ok:
         raise RuntimeError(f"{name}: edge classification failed")
+
+    # Post-snap scale normalisation: phi^k uniform multiplication so the
+    # smallest pairwise vertex distance is closest to target_min_dist.
+    # This makes strut/ball ratios visually comparable across the corpus
+    # regardless of which `s` happened to snap.  phi is a unit in Z[phi]
+    # so coords stay in Z[phi].
+    if target_min_dist is not None:
+        uniq = _normalize_scale(uniq, target_min_dist=target_min_dist)
 
     if verbose:
         print(f"  {len(uniq)} balls, {len(edges3)} 3D edges")

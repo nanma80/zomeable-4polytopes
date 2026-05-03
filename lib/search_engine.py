@@ -345,10 +345,13 @@ def shape_fingerprint(V, edges, n, tol=1e-3, large_n_balls=5000):
                         s_min = cmin
         if s_min == float("inf"):
             return (n_balls, ())
-        # Pass 2: accumulate Counter of normalised rounded distances.
-        from collections import Counter as _Counter
-        counter = _Counter()
-        inv = 1.0 / s_min
+        # Pass 2: build a bincount of the quantised normalised distances
+        # (round((d / s_min), 3) * 1000 -> non-negative int).  Using
+        # numpy's bincount keeps the per-chunk update O(chunk_size) and
+        # vectorised; the accumulator grows lazily as larger normalised
+        # distances are seen.
+        inv_scaled = 1000.0 / s_min
+        bins = np.zeros(0, dtype=np.int64)
         for i in range(0, n_balls, chunk):
             Bi = balls[i:i + chunk]
             sqi = sq[i:i + chunk]
@@ -361,11 +364,20 @@ def shape_fingerprint(V, edges, n, tol=1e-3, large_n_balls=5000):
                     flat = D2[iu]
                 else:
                     flat = D2.ravel()
-                vals, counts = np.unique(np.round(flat * inv, 3),
-                                         return_counts=True)
-                for v, c in zip(vals.tolist(), counts.tolist()):
-                    counter[v] += c
-        items = tuple(sorted(counter.items()))
+                # Floating-point arithmetic can make the smallest distance
+                # come out a hair below s_min on a different chunk; clamp
+                # to >= 0 before integer rounding to avoid bogus negative
+                # bin indices.
+                q = np.maximum(np.round(flat * inv_scaled), 0.0).astype(np.int64)
+                bc = np.bincount(q)
+                if bc.size > bins.size:
+                    new_bins = np.zeros(bc.size, dtype=np.int64)
+                    new_bins[:bins.size] = bins
+                    bins = new_bins
+                bins[:bc.size] += bc
+        nz = np.flatnonzero(bins)
+        items = tuple((round(int(k) / 1000.0, 3), int(bins[k]))
+                      for k in nz.tolist())
         return (n_balls, ("multiset", items))
 
     # Small / medium n_balls: original sorted-tuple path.

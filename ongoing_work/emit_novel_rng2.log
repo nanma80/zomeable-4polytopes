@@ -1,4 +1,4 @@
-170 novel fp_hashes loaded.
+235 novel fp_hashes loaded.
   OK    55abe81889  A4 [0, 1, 0, 0] rectified 5-cell          balls=7
   OK    18db22bc8b  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
   OK    4fe32006bf  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
@@ -169,5 +169,70 @@
   OK    f7d1282c71  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
   OK    f85e2e96c7  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
   OK    fb0b1ebf05  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    00512c47fe  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    013cba0769  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0201baf7a3  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    05894248e7  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0a7dae4901  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0b7e8bc85e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0ecfe79e5e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0f6eecdb02  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    17cdeb648d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1870420905  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1871656b77  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1a5d8c0939  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1b3933ec22  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1d7039d2db  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    20e75f4939  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    24a8d9bc99  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    27009422bf  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    281de9b856  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    29fe0c07e2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    2bfdf4b6ef  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3309702dc5  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3a7b00ed31  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3ff4ffcf2a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    4525a9d7e3  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    45ba58888b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    4604d6d605  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    57be3803dc  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    599fed7617  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    5e88217dbf  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    62b1504db7  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6530022112  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6c686781c2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6dad26f8ce  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    7f30f14d84  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    81f39e3a23  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    82a087d896  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    8609c8d358  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    8698d8421a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    87ba4b3994  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    910cfbbb72  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    94f5c9c278  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    964659815b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    971ff6c446  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    9e2e193e49  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a10a98bf75  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a2398d5d4a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a56086e064  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a8e2a61deb  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    af091d409b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b193f93889  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b2f04de7df  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b449d80f39  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b4c2c2bed8  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b8928db2e2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b8aef3d92d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    c3a40f59b5  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    c9355e379c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    d5f606a226  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    d7d03f785d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    de6adacc80  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    e3b9993e75  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    e4e29df04c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    f1d39a397c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    f4b0068c4e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    fd1373d44b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
 
-143 emitted, 27 failed.  Manifest: output\wythoff_sweep\manifest.json
+208 emitted, 27 failed.  Manifest: output\wythoff_sweep\manifest.json

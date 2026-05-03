@@ -1,4 +1,4 @@
-48 polytope records in ongoing_work\shapes_rng2.jsonl
+49 polytope records in ongoing_work\shapes_rng2.jsonl
 
 Building reference set from sweep regular records:
   reference A4 (1, 0, 0, 0)  5-cell    V=5 E=10  shapes=4
@@ -341,6 +341,73 @@ H4 (0, 1, 1, 1)  cantitruncated 600-cell
     shape 24: balls=3660  sig={'R': 5808, 'B': 3635, 'Y': 4825, '_': 240}  kernels=   2  [NOVEL]
     shape 25: balls=3660  sig={'_': 241, 'Y': 4834, 'B': 3626, 'R': 5807}  kernels=   1  [NOVEL]
 
+H4 (1, 1, 1, 1)  omnitruncated 120-cell
+    shape 0: balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  kernels= 144  [NOVEL]
+    shape 1: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=  20  [NOVEL]
+    shape 2: balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  kernels=   5  [NOVEL]
+    shape 3: balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  kernels=   2  [NOVEL]
+    shape 4: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=  22  [NOVEL]
+    shape 5: balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  kernels=  10  [NOVEL]
+    shape 6: balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  kernels=  18  [NOVEL]
+    shape 7: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   8  [NOVEL]
+    shape 8: balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  kernels=  14  [NOVEL]
+    shape 9: balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  kernels=   6  [NOVEL]
+    shape 10: balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  kernels=   6  [NOVEL]
+    shape 11: balls=7200  sig={'R': 11844, 'B': 7368, '_': 494, 'Y': 9832}  kernels=   6  [NOVEL]
+    shape 12: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=   8  [NOVEL]
+    shape 13: balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  kernels=   6  [NOVEL]
+    shape 14: balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  kernels=  34  [NOVEL]
+    shape 15: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=   6  [NOVEL]
+    shape 16: balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  kernels=   3  [NOVEL]
+    shape 17: balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  kernels=   3  [NOVEL]
+    shape 18: balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  kernels=   4  [NOVEL]
+    shape 19: balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  kernels=   4  [NOVEL]
+    shape 20: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=   1  [NOVEL]
+    shape 21: balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  kernels=   1  [NOVEL]
+    shape 22: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=   6  [NOVEL]
+    shape 23: balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  kernels=   1  [NOVEL]
+    shape 24: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   2  [NOVEL]
+    shape 25: balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  kernels=   6  [NOVEL]
+    shape 26: balls=7200  sig={'R': 11844, 'B': 7368, '_': 494, 'Y': 9832}  kernels=  10  [NOVEL]
+    shape 27: balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  kernels=   6  [NOVEL]
+    shape 28: balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  kernels=   6  [NOVEL]
+    shape 29: balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  kernels=   1  [NOVEL]
+    shape 30: balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  kernels=   8  [NOVEL]
+    shape 31: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   1  [NOVEL]
+    shape 32: balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  kernels=   2  [NOVEL]
+    shape 33: balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  kernels=   1  [NOVEL]
+    shape 34: balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  kernels=   2  [NOVEL]
+    shape 35: balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  kernels=   1  [NOVEL]
+    shape 36: balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  kernels=   2  [NOVEL]
+    shape 37: balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  kernels=   1  [NOVEL]
+    shape 38: balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  kernels=   1  [NOVEL]
+    shape 39: balls=7200  sig={'Y': 9826, 'B': 7430, 'R': 11782, '_': 500}  kernels=   4  [NOVEL]
+    shape 40: balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  kernels=   5  [NOVEL]
+    shape 41: balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  kernels=   1  [NOVEL]
+    shape 42: balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  kernels=   8  [NOVEL]
+    shape 43: balls=7200  sig={'R': 11834, 'B': 7370, 'Y': 9846, '_': 488}  kernels=   2  [NOVEL]
+    shape 44: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   2  [NOVEL]
+    shape 45: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   1  [NOVEL]
+    shape 46: balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  kernels=   2  [NOVEL]
+    shape 47: balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  kernels=   1  [NOVEL]
+    shape 48: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   1  [NOVEL]
+    shape 49: balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  kernels=   1  [NOVEL]
+    shape 50: balls=7200  sig={'R': 11842, '_': 492, 'Y': 9814, 'B': 7390}  kernels=   1  [NOVEL]
+    shape 51: balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  kernels=   1  [NOVEL]
+    shape 52: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   1  [NOVEL]
+    shape 53: balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  kernels=   1  [NOVEL]
+    shape 54: balls=7200  sig={'Y': 9826, 'R': 11782, 'B': 7430, '_': 500}  kernels=   1  [NOVEL]
+    shape 55: balls=7200  sig={'R': 11834, 'B': 7370, 'Y': 9846, '_': 488}  kernels=   1  [NOVEL]
+    shape 56: balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  kernels=   1  [NOVEL]
+    shape 57: balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  kernels=   1  [NOVEL]
+    shape 58: balls=7200  sig={'B': 7316, 'Y': 9880, 'R': 11856, '_': 486}  kernels=   1  [NOVEL]
+    shape 59: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   2  [NOVEL]
+    shape 60: balls=7200  sig={'R': 11842, 'B': 7390, 'Y': 9814, '_': 492}  kernels=   1  [NOVEL]
+    shape 61: balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  kernels=   1  [NOVEL]
+    shape 62: balls=7200  sig={'B': 7316, 'Y': 9880, 'R': 11856, '_': 486}  kernels=   1  [NOVEL]
+    shape 63: balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  kernels=   1  [NOVEL]
+    shape 64: balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  kernels=   1  [NOVEL]
+
 ============================================================================
 Summary (excluding regular reference records)
 ============================================================================
@@ -348,14 +415,14 @@ group   shapes   novel
   A4         43      43
   B4         34      34
   F4         20      20
-  H4         80      80
-  TOT       177     177
+  H4        145     145
+  TOT       242     242
 
-Distinct novel fp_hashes: 170
+Distinct novel fp_hashes: 235
 Known-shape matches by reference polytope:
 
 ============================================================================
-Novel shapes (170 distinct fp_hashes)
+Novel shapes (235 distinct fp_hashes)
 ============================================================================
   4507a6810f54bab2  balls=  84  sig={'Y': 96, 'G': 96, 'B': 96}  (2 occurrence(s))
     B4 (1, 0, 1, 0) cantellated tesseract          shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
@@ -378,26 +445,48 @@ Novel shapes (170 distinct fp_hashes)
   f79e915e332666e1  balls= 156  sig={'Y': 96, 'B': 192, 'G': 192}  (2 occurrence(s))
     B4 (1, 1, 0, 1) runcitruncated tesseract       shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
     F4 (1, 0, 1, 0) cantellated 24-cell            shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
+  00512c47fede00d6  balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #49  kernels=   1  n=[0.618034, -0.381966, -0.0, 1.0]
   0137580b4ebb8a1b  balls=3660  sig={'R': 7200, 'B': 4500, 'Y': 6000, '_': 300}  (1 occurrence(s))
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #5  kernels=   2  n=[3.236068, 5.236068, -2.0, -0.0]
+  013cba07694cd6f1  balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #23  kernels=   1  n=[1.618034, -4.236068, -0.0, -2.618034]
+  0201baf7a39ee24d  balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #34  kernels=   2  n=[1.0, 0.618034, -0.0, -0.381966]
   03a05d79eea50050  balls= 312  sig={'G': 288, 'B': 432, 'Y': 384, '_': 48}  (1 occurrence(s))
     F4 (1, 1, 1, 0) cantitruncated 24-cell         shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
   04c056fa6fde11cd  balls=1860  sig={'R': 4320, 'Y': 3600, 'B': 2700, '_': 180}  (1 occurrence(s))
     H4 (1, 0, 1, 0) cantellated 120-cell           shape #2  kernels=  48  n=[-0.0, 0.381966, 1.0, -0.618034]
   04cd47c59a1d1576  balls=1860  sig={'Y': 2400, '_': 120, 'R': 2880, 'B': 1800}  (1 occurrence(s))
     H4 (0, 1, 1, 0) bitruncated 120-cell           shape #0  kernels= 192  n=[-0.0, -0.0, -0.0, 3.236068]
+  05894248e7a48bfc  balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #5  kernels=  10  n=[1.0, -1.618034, -0.618034, -0.0]
+  0a7dae49015937e5  balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #13  kernels=   6  n=[-0.0, 0.618034, -0.381966, 1.0]
   0b68d395ef150c40  balls=  32  sig={'_': 8, 'B': 72, 'G': 48}  (1 occurrence(s))
     B4 (1, 1, 0, 0) truncated tesseract            shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
+  0b7e8bc85eeb1763  balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #2  kernels=   5  n=[-0.0, 0.381966, 1.0, -0.618034]
   0d13d8d35e2b29d4  balls=1260  sig={'B': 1800, 'Y': 2400, 'R': 2880, '_': 120}  (1 occurrence(s))
     H4 (1, 0, 0, 1) runcinated 120-cell            shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
+  0ecfe79e5e324f50  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #15  kernels=   6  n=[4.236068, -0.0, -1.618034, 2.618034]
   0f19c9a9d87693ce  balls= 104  sig={'B': 120, '_': 24, 'Y': 192, 'G': 48}  (1 occurrence(s))
     B4 (1, 1, 1, 0) cantitruncated tesseract       shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
+  0f6eecdb02a488fa  balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #57  kernels=   1  n=[2.618034, -4.236068, 1.618034, -0.0]
   11927f5a0ff18e7d  balls=1860  sig={'B': 2700, '_': 180, 'R': 4320, 'Y': 3600}  (1 occurrence(s))
     H4 (1, 0, 1, 0) cantellated 120-cell           shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
   13e387db31db699e  balls=3660  sig={'R': 7224, 'B': 4520, 'Y': 6016, '_': 300}  (1 occurrence(s))
     H4 (1, 1, 0, 1) runcitruncated 120-cell        shape #1  kernels=  96  n=[1.618034, -0.0, 0.618034, -1.0]
   146e0f9552fd5bfd  balls=1860  sig={'B': 2700, 'Y': 3600, 'R': 4320, '_': 180}  (1 occurrence(s))
     H4 (0, 1, 0, 1) cantellated 600-cell           shape #3  kernels=  96  n=[2.618034, -0.0, 1.0, -1.618034]
+  17cdeb648d871829  balls=7200  sig={'R': 11834, 'B': 7370, 'Y': 9846, '_': 488}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #55  kernels=   1  n=[1.618034, 2.618034, -4.236068, -0.0]
+  187042090517dc77  balls=7200  sig={'B': 7316, 'Y': 9880, 'R': 11856, '_': 486}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #62  kernels=   1  n=[1.618034, -4.236068, -0.0, 2.618034]
+  1871656b77368d13  balls=7200  sig={'B': 7316, 'Y': 9880, 'R': 11856, '_': 486}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #58  kernels=   1  n=[0.381966, -1.0, -0.0, 0.618034]
   18db22bc8bc4f517  balls=  10  sig={'G': 18, 'Y': 12}  (1 occurrence(s))
     A4 (0, 1, 0, 0) rectified 5-cell               shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
   190a7b1c71a7cad4  balls=  30  sig={'B': 12, 'R': 24, 'Y': 24}  (1 occurrence(s))
@@ -406,40 +495,62 @@ Novel shapes (170 distinct fp_hashes)
     F4 (0, 1, 0, 0) rectified 24-cell              shape #4  kernels= 128  n=[1.0, 1.0, -2.236068, 1.0]
   1a0d721320c4f9a4  balls=3660  sig={'B': 3630, 'Y': 4842, 'R': 5796, '_': 240}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #23  kernels=   2  n=[1.618034, 4.236068, -0.0, 2.618034]
+  1a5d8c0939c3cf99  balls=7200  sig={'Y': 9826, 'R': 11782, 'B': 7430, '_': 500}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #54  kernels=   1  n=[4.236068, -1.618034, -2.618034, -0.0]
   1ae105e55323f972  balls=3660  sig={'R': 5812, 'Y': 4842, 'B': 3622, '_': 244}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #5  kernels=  48  n=[-0.0, 2.618034, 1.618034, -4.236068]
+  1b3933ec226101f9  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #4  kernels=  22  n=[2.618034, -0.0, 1.0, -1.618034]
   1c278a1d7d573e01  balls=  20  sig={'B': 18, 'Y': 6, 'R': 36}  (1 occurrence(s))
     A4 (1, 0, 0, 1) runcinated 5-cell              shape #2  kernels=  56  n=[0.381966, 0.381966, -0.381966, -1.618034]
   1c346b0e6a004968  balls=  30  sig={'B': 27, 'R': 54, 'Y': 9}  (1 occurrence(s))
     A4 (1, 0, 1, 0) cantellated 5-cell             shape #2  kernels=  56  n=[0.381966, 0.381966, -0.381966, -1.618034]
+  1d7039d2db0567fb  balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #51  kernels=   1  n=[0.381966, -0.0, 0.618034, -1.0]
   1dd1965c7d3eab6f  balls=3660  sig={'Y': 4840, 'B': 3620, 'R': 5801, '_': 247}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #16  kernels=   2  n=[0.618034, -1.0, 0.381966, -0.0]
   1f76ff2f9476bd30  balls=  60  sig={'R': 72, 'B': 36, 'Y': 12}  (1 occurrence(s))
     A4 (1, 1, 1, 0) cantitruncated 5-cell          shape #3  kernels=  40  n=[1.0, 1.0, -2.236068, 1.0]
   1fc5749f9eb5111f  balls=3660  sig={'Y': 4835, 'R': 5808, 'B': 3622, '_': 243}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #13  kernels=   1  n=[-0.0, 4.236068, -2.618034, 1.618034]
+  20e75f4939bbdaae  balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #18  kernels=   4  n=[-0.0, 2.618034, -1.618034, -1.0]
   24655dcf097cb753  balls=3660  sig={'Y': 4844, 'B': 3627, 'R': 5793, '_': 244}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #20  kernels=   2  n=[0.618034, 1.0, 1.618034, -0.0]
+  24a8d9bc99f8ca9b  balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #28  kernels=   6  n=[3.236068, -5.236068, 2.0, -0.0]
   24e9b2fd40d33c12  balls=  20  sig={'_': 8, 'B': 24, 'Y': 64}  (1 occurrence(s))
     B4 (0, 1, 0, 0) rectified tesseract            shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
   2542c973f7385379  balls= 156  sig={'G': 144, 'Y': 384, 'B': 288, '_': 48}  (1 occurrence(s))
     F4 (1, 0, 1, 0) cantellated 24-cell            shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
   26f9c4de5c2f1294  balls=  60  sig={'R': 90, 'B': 45, 'Y': 15}  (1 occurrence(s))
     A4 (1, 1, 0, 1) runcitruncated 5-cell          shape #3  kernels=  48  n=[1.0, 1.0, -2.236068, 1.0]
+  27009422bf0cc09b  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #61  kernels=   1  n=[4.236068, -2.618034, -0.0, 1.618034]
+  281de9b8566e0bd1  balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #6  kernels=  18  n=[-0.0, 1.0, -2.618034, 1.618034]
+  29fe0c07e29119b5  balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #33  kernels=   1  n=[0.381966, -1.0, -0.0, -0.618034]
   2a0440c4d143aa59  balls=  64  sig={'Y': 96, 'B': 48, 'G': 48}  (1 occurrence(s))
     B4 (1, 0, 0, 1) runcinated tesseract           shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
+  2bfdf4b6ef7199cd  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #12  kernels=   8  n=[4.236068, -0.0, 1.618034, -2.618034]
   2ff0da38f367d655  balls=3660  sig={'R': 7224, 'B': 4520, 'Y': 6016, '_': 300}  (1 occurrence(s))
     H4 (1, 1, 0, 1) runcitruncated 120-cell        shape #3  kernels=  54  n=[2.618034, -0.0, 1.0, -1.618034]
   30ce845d3f147147  balls=  28  sig={'Y': 80, 'B': 30, '_': 10}  (1 occurrence(s))
     B4 (0, 0, 1, 1) truncated 16-cell              shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
   3123f1e60a95ec26  balls= 192  sig={'Y': 96, 'B': 144, 'G': 144}  (1 occurrence(s))
     B4 (1, 1, 1, 0) cantitruncated tesseract       shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
+  3309702dc5d60833  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #31  kernels=   1  n=[2.618034, 1.618034, -0.0, 4.236068]
   35859e561367e8df  balls=1260  sig={'R': 1920, 'B': 1200, 'Y': 1600, '_': 80}  (1 occurrence(s))
     H4 (1, 1, 0, 0) truncated 120-cell             shape #1  kernels=  96  n=[1.618034, -0.0, 0.618034, -1.0]
   37c52dd9183db80b  balls=1260  sig={'B': 1200, 'Y': 1600, 'R': 1920, '_': 80}  (1 occurrence(s))
     H4 (1, 1, 0, 0) truncated 120-cell             shape #0  kernels= 288  n=[-0.0, -0.0, -0.0, 3.236068]
   38f25a2cbb5d78e5  balls= 120  sig={'R': 144, 'B': 72, 'Y': 24}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #3  kernels=  40  n=[1.0, 1.0, -2.236068, 1.0]
+  3a7b00ed3158b92b  balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #17  kernels=   3  n=[1.618034, 2.618034, 4.236068, -0.0]
   3b18c3dede8d0fdc  balls=1260  sig={'R': 1920, '_': 80, 'Y': 1600, 'B': 1200}  (1 occurrence(s))
     H4 (1, 1, 0, 0) truncated 120-cell             shape #2  kernels=  48  n=[-0.0, 0.381966, 1.0, -0.618034]
   3b44cc41a2697b03  balls=3660  sig={'R': 7200, 'B': 4500, 'Y': 6000, '_': 300}  (1 occurrence(s))
@@ -448,12 +559,20 @@ Novel shapes (170 distinct fp_hashes)
     B4 (0, 1, 1, 0) bitruncated tesseract          shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
   3e43cba23f267509  balls=3660  sig={'R': 5804, 'Y': 4854, '_': 242, 'B': 3620}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #2  kernels=  16  n=[-0.0, 0.381966, 1.0, -0.618034]
+  3ff4ffcf2a78514f  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #22  kernels=   6  n=[0.618034, 1.0, 0.381966, -0.0]
   40be7cc1d7a2aae6  balls=  52  sig={'_': 16, 'Y': 128, 'B': 48}  (1 occurrence(s))
     B4 (0, 1, 1, 0) bitruncated tesseract          shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
   416fbd8e396057ac  balls=3660  sig={'R': 5788, 'B': 3646, 'Y': 4846, '_': 240}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #1  kernels=  96  n=[1.618034, -0.0, 0.618034, -1.0]
+  4525a9d7e3a08640  balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #35  kernels=   1  n=[1.618034, -0.0, 2.618034, -4.236068]
   4547c1171357ea3a  balls=  20  sig={'Y': 24, 'R': 24, 'B': 12}  (1 occurrence(s))
     A4 (1, 0, 0, 1) runcinated 5-cell              shape #1  kernels= 168  n=[-0.0, -0.0, 0.381966, -0.381966]
+  45ba58888beb9c81  balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #47  kernels=   1  n=[1.618034, 4.236068, -0.0, 2.618034]
+  4604d6d605ee2e75  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #59  kernels=   2  n=[5.236068, -3.236068, -0.0, -2.0]
   467bb01461b4a7fb  balls=  30  sig={'G': 36, 'Y': 24}  (1 occurrence(s))
     A4 (0, 1, 1, 0) bitruncated 5-cell             shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
   472ead9bc8957d86  balls= 156  sig={'B': 216, 'Y': 192, '_': 24, 'G': 144}  (1 occurrence(s))
@@ -478,8 +597,14 @@ Novel shapes (170 distinct fp_hashes)
     F4 (0, 1, 0, 0) rectified 24-cell              shape #2  kernels= 160  n=[5.236068, 1.236068, -5.236068, -5.236068]
   5716e0a9db0120d5  balls=  96  sig={'_': 48, 'G': 144, 'B': 288}  (1 occurrence(s))
     B4 (1, 0, 1, 1) runcitruncated 16-cell         shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
+  57be3803dce8fe0f  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #48  kernels=   1  n=[1.0, -0.618034, -0.0, 0.381966]
   59350c907e205e3a  balls=3660  sig={'Y': 4840, 'B': 3620, 'R': 5801, '_': 247}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #19  kernels=   2  n=[1.0, -1.618034, 0.618034, -0.0]
+  599fed7617aa6071  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #45  kernels=   1  n=[0.618034, 0.381966, -0.0, 1.0]
+  5e88217dbf68598f  balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #42  kernels=   8  n=[-0.0, 1.0, 2.618034, -1.618034]
   5f1d3ef65066d4ff  balls=1860  sig={'B': 1800, 'Y': 2400, 'R': 2880, '_': 120}  (1 occurrence(s))
     H4 (0, 1, 1, 0) bitruncated 120-cell           shape #3  kernels=  96  n=[2.618034, -0.0, 1.0, -1.618034]
   600bccb09ef0a800  balls= 120  sig={'R': 96, 'Y': 96, 'B': 48}  (1 occurrence(s))
@@ -488,8 +613,12 @@ Novel shapes (170 distinct fp_hashes)
     A4 (1, 1, 1, 0) cantitruncated 5-cell          shape #2  kernels=   4  n=[0.381966, 0.381966, -0.381966, -1.618034]
   6237017ed42b06c2  balls=3660  sig={'Y': 4850, 'R': 5790, 'B': 3628, '_': 240}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #9  kernels=  42  n=[2.0, -1.236068, -0.0, 3.236068]
+  62b1504db795c214  balls=7200  sig={'Y': 9842, 'B': 7381, 'R': 11810, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #8  kernels=  14  n=[1.236068, -0.0, -2.0, 3.236068]
   633ba56c30a8db1e  balls=3660  sig={'R': 5804, 'Y': 4854, '_': 242, 'B': 3620}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #9  kernels=   2  n=[-0.0, 1.0, 2.618034, -1.618034]
+  6530022112b36de2  balls=7200  sig={'B': 7316, 'Y': 9880, '_': 486, 'R': 11856}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
   663bee1002ea5ba9  balls=  32  sig={'_': 24, 'G': 48, 'B': 120}  (1 occurrence(s))
     B4 (1, 0, 0, 1) runcinated tesseract           shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
   665d7f8ac310071d  balls=3660  sig={'B': 3620, 'R': 5801, 'Y': 4840, '_': 247}  (1 occurrence(s))
@@ -500,8 +629,12 @@ Novel shapes (170 distinct fp_hashes)
     A4 (1, 1, 1, 0) cantitruncated 5-cell          shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
   6b7eadcbcfccf6a3  balls= 192  sig={'R': 192, 'Y': 96, 'B': 96}  (1 occurrence(s))
     F4 (1, 1, 0, 0) truncated 24-cell              shape #3  kernels=  32  n=[0.381966, 0.381966, -0.381966, -1.618034]
+  6c686781c268a7c0  balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #25  kernels=   6  n=[3.236068, 5.236068, -2.0, -0.0]
   6d9784faf4fbe4b7  balls= 120  sig={'B': 72, 'R': 144, 'Y': 24}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #9  kernels=   4  n=[1.618034, -1.618034, 1.618034, -0.381966]
+  6dad26f8ce83e5b2  balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #27  kernels=   6  n=[-0.0, 3.236068, -2.0, -1.236068]
   6f289fe95c73e9d6  balls=1860  sig={'R': 2880, 'Y': 2400, '_': 120, 'B': 1800}  (1 occurrence(s))
     H4 (0, 1, 1, 0) bitruncated 120-cell           shape #2  kernels=  48  n=[-0.0, 0.381966, 1.0, -0.618034]
   6f67e6cb8345c5ef  balls=  13  sig={'Y': 36, 'B': 18, '_': 6}  (1 occurrence(s))
@@ -526,14 +659,26 @@ Novel shapes (170 distinct fp_hashes)
     A4 (1, 1, 0, 0) truncated 5-cell               shape #1  kernels= 168  n=[-0.0, -0.0, 0.381966, -0.381966]
   7f25ac0beaf2308a  balls=  64  sig={'Y': 32, 'B': 48, 'G': 48}  (1 occurrence(s))
     B4 (1, 1, 0, 0) truncated tesseract            shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
+  7f30f14d84843ed9  balls=7200  sig={'Y': 9826, 'B': 7430, 'R': 11782, '_': 500}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #39  kernels=   4  n=[1.0, -0.381966, 0.618034, -0.0]
   800f72c3baa479fe  balls=3660  sig={'Y': 4844, 'B': 3627, 'R': 5793, '_': 244}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #7  kernels=   2  n=[1.0, 1.618034, 2.618034, -0.0]
+  81f39e3a23cf8543  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #20  kernels=   1  n=[1.0, -0.0, 0.381966, -0.618034]
   82123904b041cf96  balls=  20  sig={'G': 24, 'Y': 16}  (1 occurrence(s))
     A4 (1, 1, 0, 0) truncated 5-cell               shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
+  82a087d896e1f2c2  balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #46  kernels=   2  n=[-0.0, 2.0, 1.236068, 3.236068]
   85a806f8eed36575  balls=  60  sig={'B': 36, 'R': 72, 'Y': 12}  (1 occurrence(s))
     A4 (1, 1, 1, 0) cantitruncated 5-cell          shape #6  kernels=   4  n=[1.618034, -1.618034, 1.618034, -0.381966]
+  8609c8d358845ac9  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #24  kernels=   2  n=[2.618034, -1.618034, -0.0, 1.0]
+  8698d8421ad252ef  balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #37  kernels=   1  n=[0.381966, -0.0, 0.618034, 1.0]
   86c7a043be22d7e9  balls=  20  sig={'B': 48, 'G': 48}  (1 occurrence(s))
     B4 (0, 1, 0, 0) rectified tesseract            shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
+  87ba4b3994fbde43  balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #19  kernels=   4  n=[1.618034, -2.618034, -1.0, -0.0]
   8b13523ca7f8c2fd  balls=  96  sig={'_': 24, 'B': 216, 'G': 144}  (1 occurrence(s))
     B4 (1, 1, 1, 0) cantitruncated tesseract       shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
   8b82a8d4fcf6f7ca  balls=3660  sig={'R': 7200, 'Y': 6000, 'B': 4500, '_': 300}  (1 occurrence(s))
@@ -546,6 +691,8 @@ Novel shapes (170 distinct fp_hashes)
     A4 (1, 1, 0, 1) runcitruncated 5-cell          shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
   9028dd62eb8e6a8a  balls= 120  sig={'R': 144, 'B': 72, 'Y': 24}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #8  kernels=   8  n=[0.618034, 0.618034, 0.618034, 2.618034]
+  910cfbbb721b7ea3  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #52  kernels=   1  n=[4.236068, -2.618034, -0.0, -1.618034]
   920f7d987456d258  balls=3660  sig={'Y': 6000, 'R': 7200, 'B': 4500, '_': 300}  (1 occurrence(s))
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #10  kernels=   2  n=[1.0, -0.0, -1.618034, -2.618034]
   9269136b5bd10f4b  balls=1860  sig={'R': 4320, 'B': 2700, '_': 180, 'Y': 3600}  (1 occurrence(s))
@@ -556,6 +703,12 @@ Novel shapes (170 distinct fp_hashes)
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #6  kernels=  18  n=[-0.0, 1.618034, -1.0, -2.618034]
   94c404ee6aa8fa97  balls=  96  sig={'G': 144, 'Y': 96}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
+  94f5c9c2780f54d2  balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #21  kernels=   1  n=[4.236068, 2.618034, -0.0, 1.618034]
+  964659815b75a104  balls=7200  sig={'R': 11834, 'B': 7370, 'Y': 9846, '_': 488}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #43  kernels=   2  n=[0.618034, 1.0, -1.618034, -0.0]
+  971ff6c4466594b3  balls=7200  sig={'R': 11844, 'Y': 9832, 'B': 7368, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #36  kernels=   2  n=[1.0, -1.618034, 0.618034, -0.0]
   9815da3055bce1b5  balls=3660  sig={'R': 7200, 'Y': 6000, 'B': 4500, '_': 300}  (1 occurrence(s))
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #2  kernels=  48  n=[-0.0, 0.381966, 1.0, -0.618034]
   98d0fae89b75adfc  balls=3660  sig={'Y': 4844, 'B': 3627, 'R': 5793, '_': 244}  (1 occurrence(s))
@@ -572,6 +725,8 @@ Novel shapes (170 distinct fp_hashes)
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #6  kernels=   6  n=[3.236068, -5.236068, 2.0, -0.0]
   9e2d21191f5bb5c9  balls=  30  sig={'B': 18, 'R': 36, 'Y': 6}  (1 occurrence(s))
     A4 (0, 1, 1, 0) bitruncated 5-cell             shape #2  kernels=  56  n=[0.381966, 0.381966, -0.381966, -1.618034]
+  9e2e193e4988b559  balls=7200  sig={'R': 11842, '_': 492, 'Y': 9814, 'B': 7390}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #50  kernels=   1  n=[-0.0, 0.381966, -1.0, -0.618034]
   9f354d53aebc1c3b  balls= 120  sig={'B': 72, 'R': 144, 'Y': 24}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #2  kernels=   4  n=[0.381966, 0.381966, -0.381966, -1.618034]
   9f73b85175ea12ad  balls= 120  sig={'Y': 96, 'B': 48, 'R': 96}  (1 occurrence(s))
@@ -582,18 +737,26 @@ Novel shapes (170 distinct fp_hashes)
     A4 (1, 1, 0, 0) truncated 5-cell               shape #2  kernels=  56  n=[0.381966, 0.381966, -0.381966, -1.618034]
   a0b1cc08ef37a2b3  balls=  56  sig={'B': 96, 'Y': 128, '_': 16, 'G': 48}  (1 occurrence(s))
     B4 (1, 0, 1, 0) cantellated tesseract          shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
+  a10a98bf7537ef5a  balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #56  kernels=   1  n=[0.618034, 0.381966, -0.0, -1.0]
+  a2398d5d4a671d91  balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #16  kernels=   3  n=[1.618034, -2.618034, -4.236068, -0.0]
   a2c47bfa6218777a  balls=3660  sig={'R': 5793, 'B': 3627, 'Y': 4844, '_': 244}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #21  kernels=   2  n=[2.0, 3.236068, -5.236068, -0.0]
   a4032f7bbbf5c0db  balls=  48  sig={'_': 24, 'G': 96, 'B': 168}  (1 occurrence(s))
     B4 (1, 0, 1, 0) cantellated tesseract          shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
   a4e5c7b80c17d45d  balls=3660  sig={'B': 4516, 'Y': 6004, 'R': 7240, '_': 300}  (1 occurrence(s))
     H4 (1, 1, 0, 1) runcitruncated 120-cell        shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
+  a56086e06425cd41  balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #14  kernels=  34  n=[2.0, -1.236068, -0.0, 3.236068]
   a5838ce67b11ed4b  balls=3660  sig={'R': 7230, 'Y': 6022, '_': 300, 'B': 4508}  (1 occurrence(s))
     H4 (1, 1, 0, 1) runcitruncated 120-cell        shape #4  kernels=  42  n=[-0.0, 1.0, -2.618034, 1.618034]
   a6537a898ef9f5f4  balls=  30  sig={'Y': 36, 'R': 36, 'B': 18}  (1 occurrence(s))
     A4 (1, 0, 1, 0) cantellated 5-cell             shape #1  kernels= 168  n=[-0.0, -0.0, 0.381966, -0.381966]
   a87be0db658d8b8e  balls=1860  sig={'R': 4320, 'Y': 3600, '_': 180, 'B': 2700}  (1 occurrence(s))
     H4 (1, 0, 1, 0) cantellated 120-cell           shape #4  kernels=  48  n=[-0.0, 2.618034, 1.618034, -4.236068]
+  a8e2a61deb083868  balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #63  kernels=   1  n=[2.618034, 1.618034, -0.0, -4.236068]
   a96b0a716a7b3e2c  balls= 104  sig={'B': 144, '_': 32, 'Y': 256, 'G': 48}  (1 occurrence(s))
     B4 (1, 1, 0, 1) runcitruncated tesseract       shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
   a98cfbe1f2d3b740  balls=  33  sig={'Y': 90, 'B': 45, '_': 15}  (1 occurrence(s))
@@ -604,10 +767,20 @@ Novel shapes (170 distinct fp_hashes)
     B4 (0, 1, 1, 0) bitruncated tesseract          shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
   aef3339065210c8c  balls=  20  sig={'G': 36, 'Y': 24}  (1 occurrence(s))
     A4 (1, 0, 0, 1) runcinated 5-cell              shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
+  af091d409b4561c0  balls=7200  sig={'R': 11844, 'B': 7368, '_': 494, 'Y': 9832}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #26  kernels=  10  n=[-0.0, 1.618034, -1.0, -2.618034]
+  b193f938890cb7c3  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #7  kernels=   8  n=[1.618034, 1.0, -0.0, 2.618034]
   b26f233ca5d22a87  balls=1260  sig={'R': 2880, 'Y': 2400, 'B': 1800, '_': 120}  (1 occurrence(s))
     H4 (1, 0, 0, 1) runcinated 120-cell            shape #3  kernels= 144  n=[2.618034, -0.0, 1.0, -1.618034]
+  b2f04de7df353257  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #1  kernels=  20  n=[1.618034, -0.0, 0.618034, -1.0]
   b3cddc04daccf860  balls= 576  sig={'G': 576, 'B': 864, 'Y': 768, '_': 96}  (1 occurrence(s))
     F4 (1, 1, 1, 1) omnitruncated 24-cell          shape #0  kernels= 288  n=[-0.0, -0.0, -0.0, 3.236068]
+  b449d80f390b33ad  balls=7200  sig={'R': 11842, 'Y': 9814, 'B': 7390, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #53  kernels=   1  n=[0.381966, -0.618034, -1.0, -0.0]
+  b4c2c2bed844732e  balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #3  kernels=   2  n=[0.618034, -0.0, -1.0, 0.381966]
   b4f719ee372c6ae6  balls=3660  sig={'Y': 4838, 'R': 5820, 'B': 3622, '_': 240}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #7  kernels=   4  n=[-0.0, 2.618034, 1.618034, 1.0]
   b54c2aaed88eaa68  balls=  32  sig={'B': 48, 'G': 48}  (1 occurrence(s))
@@ -618,6 +791,10 @@ Novel shapes (170 distinct fp_hashes)
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #12  kernels=   4  n=[1.618034, -2.618034, -1.0, -0.0]
   b7477fe6c010645e  balls= 192  sig={'R': 192, 'B': 96, 'Y': 96}  (1 occurrence(s))
     F4 (1, 1, 0, 0) truncated 24-cell              shape #5  kernels=  32  n=[1.0, 4.236068, -4.236068, 4.236068]
+  b8928db2e2959c43  balls=7200  sig={'R': 11844, 'B': 7368, '_': 494, 'Y': 9832}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #11  kernels=   6  n=[-0.0, 2.0, -1.236068, -3.236068]
+  b8aef3d92de67090  balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #40  kernels=   5  n=[0.618034, 1.0, -0.381966, -0.0]
   b92076625c902fdf  balls=3660  sig={'Y': 4844, 'R': 5793, 'B': 3627, '_': 244}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #3  kernels=  35  n=[0.618034, -0.0, -1.0, 0.381966]
   bb5b56af5879ca97  balls=  36  sig={'G': 60, 'B': 60}  (1 occurrence(s))
@@ -634,10 +811,14 @@ Novel shapes (170 distinct fp_hashes)
     H4 (0, 0, 1, 1) truncated 600-cell             shape #0  kernels= 384  n=[-0.0, -0.0, -0.0, 3.236068]
   c2ff97e54699246b  balls=  10  sig={'B': 6, 'Y': 12, 'R': 12}  (1 occurrence(s))
     A4 (0, 1, 0, 0) rectified 5-cell               shape #1  kernels= 168  n=[-0.0, -0.0, 0.381966, -0.381966]
+  c3a40f59b5011733  balls=7200  sig={'B': 7390, 'R': 11812, 'Y': 9844, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #44  kernels=   2  n=[1.0, -0.618034, -0.0, -0.381966]
   c5a2631677eb4b33  balls= 192  sig={'_': 48, 'B': 432, 'G': 288}  (1 occurrence(s))
     B4 (1, 1, 1, 1) omnitruncated tesseract        shape #0  kernels=  48  n=[-0.0, -0.0, -0.0, 3.236068]
   c7db1d36fbcf2ba7  balls= 192  sig={'Y': 96, 'B': 96, 'R': 192}  (1 occurrence(s))
     F4 (1, 1, 0, 0) truncated 24-cell              shape #2  kernels= 128  n=[5.236068, 1.236068, -5.236068, -5.236068]
+  c9355e379cf5d9f7  balls=7200  sig={'B': 7390, 'Y': 9844, 'R': 11812, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #32  kernels=   2  n=[0.381966, 1.0, -0.0, -0.618034]
   c94790ed916a5c87  balls=  60  sig={'Y': 144, 'B': 72, '_': 24}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #4  kernels=  80  n=[3.618034, -0.0, 3.618034, -0.0]
   c95674ff52925e31  balls=3660  sig={'Y': 4850, 'R': 5790, 'B': 3628, '_': 240}  (1 occurrence(s))
@@ -654,16 +835,22 @@ Novel shapes (170 distinct fp_hashes)
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #15  kernels=   2  n=[1.618034, -4.236068, -0.0, -2.618034]
   d5e0a9df5db2763e  balls=1860  sig={'B': 1800, 'Y': 2400, 'R': 2880, '_': 120}  (1 occurrence(s))
     H4 (0, 1, 1, 0) bitruncated 120-cell           shape #1  kernels=  96  n=[1.618034, -0.0, 0.618034, -1.0]
+  d5f606a226c5442e  balls=7200  sig={'R': 11824, 'B': 7402, 'Y': 9828, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #64  kernels=   1  n=[1.0, -0.0, -0.381966, 0.618034]
   d6adf55a401f2fd9  balls=1860  sig={'Y': 3600, '_': 180, 'R': 4320, 'B': 2700}  (1 occurrence(s))
     H4 (0, 1, 0, 1) cantellated 600-cell           shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
   d78b84c72e45c08a  balls=1860  sig={'B': 2700, 'Y': 3600, 'R': 4320, '_': 180}  (1 occurrence(s))
     H4 (0, 1, 0, 1) cantellated 600-cell           shape #1  kernels=  96  n=[1.618034, -0.0, 0.618034, -1.0]
+  d7d03f785d18bdda  balls=7200  sig={'R': 11844, 'B': 7368, 'Y': 9832, '_': 494}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #9  kernels=   6  n=[-0.0, 2.618034, 1.618034, -4.236068]
   d98b5f4addb5359b  balls= 192  sig={'R': 192, 'B': 96, 'Y': 96}  (1 occurrence(s))
     F4 (1, 1, 0, 0) truncated 24-cell              shape #4  kernels= 128  n=[1.0, 1.0, -2.236068, 1.0]
   da41392ff51f8259  balls=3660  sig={'R': 5808, 'B': 3635, 'Y': 4825, '_': 240}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #18  kernels=   4  n=[1.618034, -0.618034, -1.0, -0.0]
   db7b74a33dd8f802  balls=  60  sig={'B': 45, 'Y': 15, 'R': 90}  (1 occurrence(s))
     A4 (1, 1, 0, 1) runcitruncated 5-cell          shape #2  kernels=   4  n=[0.381966, 0.381966, -0.381966, -1.618034]
+  de6adacc80280cd8  balls=7200  sig={'B': 7354, 'Y': 9900, 'R': 11804, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #29  kernels=   1  n=[2.618034, -1.618034, -0.0, 4.236068]
   e1d5c7a0817918b3  balls=  30  sig={'G': 54, 'Y': 36}  (1 occurrence(s))
     A4 (1, 0, 1, 0) cantellated 5-cell             shape #0  kernels=  20  n=[-0.0, -0.0, -0.0, 3.236068]
   e2027f8484a99878  balls= 288  sig={'Y': 384, '_': 48, 'B': 432, 'G': 288}  (1 occurrence(s))
@@ -674,8 +861,12 @@ Novel shapes (170 distinct fp_hashes)
     F4 (1, 1, 0, 1) runcitruncated 24-cell         shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
   e30149ab81ce86ef  balls=3660  sig={'R': 5801, 'B': 3620, 'Y': 4840, '_': 247}  (1 occurrence(s))
     H4 (0, 1, 1, 1) cantitruncated 600-cell        shape #6  kernels=  13  n=[-0.0, 2.618034, 1.618034, -4.236068]
+  e3b9993e75ba8566  balls=7200  sig={'R': 11824, 'Y': 9828, 'B': 7402, '_': 484}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #38  kernels=   1  n=[1.0, -0.0, -0.381966, -0.618034]
   e45dd01d6e5b46ba  balls=3660  sig={'B': 3628, 'Y': 4832, '_': 252, 'R': 5808}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #0  kernels= 144  n=[-0.0, -0.0, -0.0, 3.236068]
+  e4e29df04cae9619  balls=7200  sig={'B': 7410, 'R': 11776, 'Y': 9872, '_': 480}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #41  kernels=   1  n=[4.236068, 2.618034, -0.0, -1.618034]
   e4fb66f8e75ce530  balls= 120  sig={'R': 96, 'Y': 96, 'B': 48}  (1 occurrence(s))
     A4 (1, 1, 1, 1) omnitruncated 5-cell           shape #5  kernels=  24  n=[1.236068, -5.236068, -1.236068, 1.236068]
   e60e673cfd483272  balls=3660  sig={'B': 3623, 'Y': 4838, 'R': 5807, '_': 240}  (1 occurrence(s))
@@ -690,10 +881,14 @@ Novel shapes (170 distinct fp_hashes)
     H4 (0, 0, 1, 1) truncated 600-cell             shape #1  kernels=  48  n=[-0.0, 0.381966, 1.0, -0.618034]
   e97405e509ad3d81  balls=3660  sig={'Y': 6000, 'R': 7200, 'B': 4500, '_': 300}  (1 occurrence(s))
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #9  kernels=   2  n=[1.0, -0.0, -1.618034, 2.618034]
+  f1d39a397cd4786f  balls=7200  sig={'Y': 9842, 'R': 11810, 'B': 7381, '_': 505}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #30  kernels=   8  n=[1.618034, -0.0, -2.618034, -4.236068]
   f451c8c5fb3ae05d  balls=3660  sig={'R': 7216, 'B': 4514, 'Y': 6028, '_': 302}  (1 occurrence(s))
     H4 (1, 1, 0, 1) runcitruncated 120-cell        shape #5  kernels=  48  n=[-0.0, 2.618034, 1.618034, -4.236068]
   f4883725e7e114ea  balls= 192  sig={'Y': 192, 'G': 144, 'B': 144}  (1 occurrence(s))
     B4 (1, 0, 1, 1) runcitruncated 16-cell         shape #2  kernels=  96  n=[2.236068, -2.236068, -2.236068, 2.236068]
+  f4b0068c4ef8ba7e  balls=7200  sig={'R': 11842, 'B': 7390, 'Y': 9814, '_': 492}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #60  kernels=   1  n=[0.381966, -0.618034, 1.0, -0.0]
   f7d1282c7138cd4f  balls=3660  sig={'R': 5788, 'Y': 4846, 'B': 3646, '_': 240}  (1 occurrence(s))
     H4 (1, 1, 1, 0) cantitruncated 120-cell        shape #8  kernels=   3  n=[0.618034, 1.0, -0.381966, -0.0]
   f85e2e96c70d8cc4  balls=3660  sig={'B': 3623, 'Y': 4838, 'R': 5807, '_': 240}  (1 occurrence(s))
@@ -702,6 +897,8 @@ Novel shapes (170 distinct fp_hashes)
     H4 (1, 0, 1, 1) runcitruncated 600-cell        shape #7  kernels=   4  n=[3.236068, -0.0, 5.236068, -2.0]
   fc04dc943b6733f9  balls=  40  sig={'B': 72, 'Y': 64, 'G': 48, '_': 8}  (1 occurrence(s))
     B4 (1, 0, 0, 1) runcinated tesseract           shape #1  kernels= 144  n=[-0.0, -0.0, 0.381966, -0.381966]
+  fd1373d44be0f754  balls=7200  sig={'R': 11834, 'Y': 9846, 'B': 7370, '_': 488}  (1 occurrence(s))
+    H4 (1, 1, 1, 1) omnitruncated 120-cell         shape #10  kernels=   6  n=[1.0, 1.618034, 2.618034, -0.0]
   feebd08ddebb8d64  balls=1860  sig={'R': 4320, 'Y': 3600, 'B': 2700, '_': 180}  (1 occurrence(s))
     H4 (1, 0, 1, 0) cantellated 120-cell           shape #3  kernels=  96  n=[2.618034, -0.0, 1.0, -1.618034]
 
