@@ -6,24 +6,36 @@ Strategy (rep-theoretic shortcut):
   regular G-polytope (the bitmask 1000 form), as shown empirically for
   the regular cases.  So we:
 
-  1. Find the working kernels for each regular polytope at moderate
-     range (rng=3).
+  1. Find the working kernels for each regular polytope at the chosen
+     coefficient range.
   2. For every (group, bitmask), test only those kernels against the
      polytope's vertex/edge data.
   3. Group hits by shape fingerprint.
   4. Print the census.
 
 Usage:
-    python -m tools.run_wythoff_sweep [--rng N]
+    python tools/run_wythoff_sweep.py [--rng N] [--group A4|B4|F4|H4]
+
+Resuming:
+  Step-1 kernels are cached at ongoing_work/kernels_<group>_rng<N>.npy
+  (delete the .npy file to force recomputation, e.g. after lib changes).
+  Step-2 entries are read from any ongoing_work/sweep_log_*.txt file
+  in the repo and skipped on re-run.
+
+  Output for this run is written to
+  ongoing_work/sweep_log_rng<N>_<group>.txt (or _all.txt if no --group).
 """
 import sys
 import os
+import re
 import time
+import glob
 import argparse
-from collections import defaultdict
 
 # Allow running as a module or directly
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
+
+import numpy as np
 
 from wythoff import build_polytope
 from uniform_polytopes import all_uniform_polytopes, KNOWN_DUPLICATES
@@ -33,54 +45,149 @@ from search_engine import gen_dirs, search, group_by_shape
 GROUPS = ("A4", "B4", "F4", "H4")
 REGULAR_BITMASK = (1, 0, 0, 0)
 
+# ongoing_work/ relative to repo root (parent of tools/)
+ONGOING = os.path.normpath(
+    os.path.join(os.path.dirname(__file__), "..", "ongoing_work"))
 
-def find_group_kernels(group, rng):
-    """Find the kernel directions that yield zomeable projections for
-    the regular polytope of `group`.  Returns a list of tuples (n, V, E)."""
+
+def kernel_cache_path(group, rng):
+    return os.path.join(ONGOING, f"kernels_{group}_rng{rng}.npy")
+
+
+def find_group_kernels(group, rng, cache=True):
+    """Return a list of kernel ndarrays for the regular polytope of
+    `group` at coefficient range `rng`.
+
+    Reads from ongoing_work/kernels_<group>_rng<N>.npy if present;
+    otherwise runs the search and writes the cache."""
+    path = kernel_cache_path(group, rng)
+    if cache and os.path.exists(path):
+        arr = np.load(path)
+        rel = os.path.relpath(path)
+        print(f"  [{group}] loaded {len(arr)} cached kernels from {rel}")
+        return [arr[i] for i in range(len(arr))]
     V, E = build_polytope(group, REGULAR_BITMASK)
     dirs = gen_dirs(rng=rng, integer_only=False, permute_dedup=False)
     print(f"  [{group}] regular: |V|={len(V)}, |E|={len(E)}, "
           f"trying {len(dirs)} dirs...")
     t0 = time.time()
-    import numpy as np
     hits = search(group + "_regular", V, E, dirs, verbose=False)
-    print(f"  [{group}] {len(hits)} hits in {time.time()-t0:.1f}s")
-    return [np.array(n) for (n, sig, balls) in hits]
+    kernels = [np.array(n) for (n, sig, balls) in hits]
+    print(f"  [{group}] {len(kernels)} hits in {time.time()-t0:.1f}s")
+    if cache and kernels:
+        os.makedirs(ONGOING, exist_ok=True)
+        np.save(path, np.array(kernels))
+        print(f"  [{group}] cached to {os.path.relpath(path)}")
+    return kernels
 
 
 def test_polytope_against_kernels(group, bitmask, name, kernels):
-    """For each kernel direction in `kernels`, test whether projecting
-    `(group, bitmask)` produces a zomeable image.  Returns hit list."""
+    """For each kernel in `kernels`, test whether projecting
+    `(group, bitmask)` produces a zomeable image.  Returns
+    (V, E, hits, shape_groups)."""
     V, E = build_polytope(group, bitmask)
-    # Re-run the search machinery on these kernels only.
     hits = search(name, V, E, kernels, verbose=False)
     groups = group_by_shape(hits, V, E)
     return V, E, hits, groups
+
+
+# Match a successful step-2 result line, e.g.
+#   "  A4 (1, 0, 0, 0)  5-cell        V=    5 E=   10  hits= 324  shapes=4  (3.6s)"
+_DONE_RE = re.compile(
+    r"^\s+(A4|B4|F4|H4)\s+\((\d),\s*(\d),\s*(\d),\s*(\d)\)\s+.*"
+    r"shapes=\d+\s+\([\d.]+s\)\s*$"
+)
+
+
+def parse_done_set(log_paths):
+    """Scan `log_paths` (list of file paths) and return a set of
+    (group, bitmask) for step-2 entries that completed successfully."""
+    done = set()
+    for path in log_paths:
+        if not os.path.isfile(path):
+            continue
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                m = _DONE_RE.match(line.rstrip("\n"))
+                if m:
+                    g = m.group(1)
+                    b = tuple(int(m.group(i)) for i in (2, 3, 4, 5))
+                    done.add((g, b))
+    return done
+
+
+class _Tee:
+    """Mirror writes to a file and the original stdout."""
+    def __init__(self, path, original):
+        self.f = open(path, "a", encoding="utf-8", buffering=1)
+        self.orig = original
+
+    def write(self, s):
+        self.f.write(s)
+        self.orig.write(s)
+
+    def flush(self):
+        self.f.flush()
+        self.orig.flush()
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rng", type=int, default=3,
                     help="kernel-direction range for the regular-polytope search")
+    ap.add_argument("--group", choices=GROUPS, default=None,
+                    help="run only this Coxeter group (default: all four)")
+    ap.add_argument("--no-cache", action="store_true",
+                    help="don't read or write the step-1 kernel cache")
+    ap.add_argument("--log", default=None,
+                    help="output log path (default: "
+                         "ongoing_work/sweep_log_rng<N>_<group>.txt)")
     args = ap.parse_args()
 
-    # 1. Find kernels for each regular
+    groups_to_run = [args.group] if args.group else list(GROUPS)
+    suffix = args.group if args.group else "all"
+    log_path = args.log or os.path.join(
+        ONGOING, f"sweep_log_rng{args.rng}_{suffix}.txt")
+    os.makedirs(ONGOING, exist_ok=True)
+
+    # Detect already-completed polytopes from any prior log in ongoing_work/
+    prior_logs = sorted(glob.glob(os.path.join(ONGOING, "sweep_log_*.txt")))
+    done_set = parse_done_set(prior_logs)
+
+    sys.stdout = _Tee(log_path, sys.__stdout__)
+    print(f"# run_wythoff_sweep --rng {args.rng} "
+          f"--group {args.group or 'all'}")
+    print(f"# log: {os.path.relpath(log_path)}")
+    if done_set:
+        print(f"# {len(done_set)} polytopes already done in prior logs; "
+              f"will skip those")
+    print()
+
+    # 1. Find kernels for each regular polytope (cached).
     print("=" * 70)
     print("Step 1: kernels of regular polytopes")
     print("=" * 70)
     group_kernels = {}
-    for g in GROUPS:
-        group_kernels[g] = find_group_kernels(g, args.rng)
+    for g in groups_to_run:
+        group_kernels[g] = find_group_kernels(
+            g, args.rng, cache=not args.no_cache)
     print()
 
-    # 2. Test all Wythoff combos
+    # 2. Test all Wythoff combos for the selected groups.
     print("=" * 70)
     print("Step 2: test each Wythoff combo against group kernels")
     print("=" * 70)
     results = []
     for group, b, name in all_uniform_polytopes():
+        if group not in groups_to_run:
+            continue
         if (group, b) in KNOWN_DUPLICATES:
+            tgt = KNOWN_DUPLICATES[(group, b)]
+            print(f"  {group} {b}  {name:30s}  [DUP of {tgt}]")
             results.append((group, b, name, "DUP", None, None, None))
+            continue
+        if (group, b) in done_set:
+            print(f"  {group} {b}  {name:30s}  [SKIP: in prior log]")
             continue
         kernels = group_kernels[group]
         t0 = time.time()
@@ -88,6 +195,7 @@ def main():
             V, E, hits, shape_groups = test_polytope_against_kernels(
                 group, b, name, kernels)
         except RuntimeError as e:
+            print(f"  {group} {b}  {name:30s}  ERR: {e}")
             results.append((group, b, name, f"ERR: {e}", None, None, None))
             continue
         dt = time.time() - t0
@@ -96,10 +204,11 @@ def main():
         results.append((group, b, name, len(V), len(E), len(hits),
                         shape_groups))
 
-    # 3. Census
+    # 3. Census of *this run* (use parse_done_set across all logs for
+    #    a global census).
     print()
     print("=" * 70)
-    print("Step 3: census")
+    print("Step 3: census (this run only)")
     print("=" * 70)
     print(f"{'group':4s} {'bitmask':10s} {'name':30s} {'V':>5s} {'E':>5s} "
           f"{'hits':>5s} {'shapes':>7s}")
@@ -117,8 +226,7 @@ def main():
               f"{hit_n:5d} {len(sg):7d}")
         total_shapes += len(sg)
     print()
-    print(f"Total distinct shapes across all 47 unique Wythoff forms: "
-          f"{total_shapes}")
+    print(f"Distinct shapes across this run: {total_shapes}")
 
 
 if __name__ == "__main__":
