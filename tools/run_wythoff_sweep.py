@@ -39,9 +39,24 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
 
 import numpy as np
 
-from wythoff import build_polytope
+from wythoff import build_polytope, simple_roots, wythoff_seed, orbit
 from uniform_polytopes import all_uniform_polytopes, KNOWN_DUPLICATES
 from search_engine import gen_dirs, search, group_by_shape
+
+
+def _vertex_count(group, bitmask):
+    """Cheap vertex count: orbit only, skip the O(V^2) edge build.
+
+    Used by --sort-by-size where we only need |V| to order the work
+    queue.  For the omnitruncated 120-cell (V=14400) the full
+    build_polytope() spends ~tens of minutes computing edges; this
+    avoids that wasted work for polytopes that may not yet be
+    processed."""
+    if sum(bitmask) == 0:
+        return 0
+    roots = simple_roots(group)
+    seed = wythoff_seed(roots, bitmask)
+    return len(orbit(seed, roots))
 
 
 GROUPS = ("A4", "B4", "F4", "H4")
@@ -256,8 +271,8 @@ def main():
                 sized.append((-1, g, b, n))
                 continue
             try:
-                Vp, _ = build_polytope(g, b)
-                sized.append((len(Vp), g, b, n))
+                Vn = _vertex_count(g, b)
+                sized.append((Vn, g, b, n))
             except Exception:
                 sized.append((10**9, g, b, n))
         sized.sort(key=lambda t: t[0])

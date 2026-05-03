@@ -93,6 +93,42 @@ def _classify_dir(u, tol=1e-5):
     return None
 
 
+def _check_cos_pairs(U, tol=1e-5):
+    """Vectorised: are all pairwise |cos| in `_ALLOWED_COS` (within `tol`)?
+
+    U: 3 x K, each column unit-length.
+
+    Returns True iff every (i, j) with i < j has |U[:, i] . U[:, j]|
+    within `tol` of some entry of `_ALLOWED_COS`.  Chunked along the
+    rows so that for large K (e.g. 28800 edges of the omnitruncated
+    120-cell) the K x K Gram matrix is never fully materialised.
+    """
+    K = U.shape[1]
+    chunk = 512
+    allowed = _ALLOWED_COS
+    n_allowed = len(allowed)
+    for i in range(0, K, chunk):
+        Ub = U[:, i:i + chunk]
+        Cb = np.abs(Ub.T @ U)  # b x K
+        b = Ub.shape[1]
+        # Restrict to strictly upper triangle in the global K x K sense.
+        j_idx = np.arange(K)
+        i_idx = np.arange(i, i + b)[:, None]
+        keep = j_idx[None, :] > i_idx
+        cos_use = Cb[keep]
+        if cos_use.size == 0:
+            continue
+        idx = np.searchsorted(allowed, cos_use)
+        idx_clip = np.clip(idx, 1, n_allowed - 1)
+        diff = np.minimum(np.abs(allowed[idx_clip - 1] - cos_use),
+                          np.abs(allowed[idx_clip] - cos_use))
+        # Edge case: when cos_use == allowed[0] exactly,
+        # idx_clip-1 == 0 still gives the right answer.
+        if np.any(diff > tol):
+            return False
+    return True
+
+
 def _try_align(P3, tol=1e-5):
     """Given a 3xK array of edge displacements in 3D, attempt to find an
     O(3) rotation R such that every nonzero R @ P3[:,k] lies on a default
@@ -103,12 +139,8 @@ def _try_align(P3, tol=1e-5):
     if len(nz) < 2:
         return None
     U = P3[:, nz] / norms[nz]
-    Ur = U.T
-    for i in range(len(nz)):
-        for j in range(i + 1, len(nz)):
-            c = abs(Ur[i] @ Ur[j])
-            if not _is_allowed_cos(c, tol):
-                return None
+    if not _check_cos_pairs(U, tol=tol):
+        return None
     pa = U[:, 0]
     b = None
     for k in range(1, U.shape[1]):
@@ -247,30 +279,62 @@ def shape_fingerprint(V, edges, n, tol=1e-3):
     orthonormal bases for n^perp depending on |n|; scaled-equivalent
     directions then yield rotation-equivalent but coordinate-different
     Vp arrays whose pointwise dedup at very-tight tolerance is
-    inconsistent)."""
+    inconsistent).
+
+    Vectorised: uses scipy.spatial.cKDTree for O(N log N) greedy first-
+    encounter ball dedup (semantics-equivalent to the previous O(N^2)
+    Python double-loop), and the numpy Gram-matrix trick for O(M^2)
+    pairwise distances on the M deduped balls (chunked when M is big
+    enough that the M x M matrix wouldn't fit comfortably in memory).
+    """
+    from scipy.spatial import cKDTree
     Q = projection_matrix(n)
     Vp = (Q @ V.T).T
-    # dedup balls with generous tol
-    balls = []
-    for p in Vp:
-        for q in balls:
-            if np.linalg.norm(p - q) < tol:
-                break
-        else:
-            balls.append(p)
-    balls = np.array(balls)
+    # Greedy first-encounter dedup via KDTree.  Preserves the original
+    # behaviour where each cluster's representative is the first point
+    # of V to land in that cluster.
+    tree = cKDTree(Vp)
+    seen = np.zeros(len(Vp), dtype=bool)
+    balls_idx = []
+    for i in range(len(Vp)):
+        if seen[i]:
+            continue
+        balls_idx.append(i)
+        nbrs = tree.query_ball_point(Vp[i], tol)
+        seen[nbrs] = True
+    balls = Vp[balls_idx]
     n_balls = len(balls)
     if n_balls < 2:
         return (n_balls, ())
-    d2 = []
-    for i in range(n_balls):
-        for j in range(i + 1, n_balls):
-            d2.append(float(np.linalg.norm(balls[i] - balls[j]) ** 2))
-    d2 = sorted(d2)
-    s = d2[0]
+
+    # Vectorised pairwise squared distances.  For n_balls up to ~16000
+    # the n_balls^2 matrix is ~2 GB; chunk above a safe threshold.
+    sq = (balls * balls).sum(axis=1)
+    if n_balls <= 8000:
+        D2 = sq[:, None] + sq[None, :] - 2.0 * (balls @ balls.T)
+        iu = np.triu_indices(n_balls, k=1)
+        d2 = np.sort(D2[iu])
+    else:
+        chunk = 2048
+        out = []
+        for i in range(0, n_balls, chunk):
+            Bi = balls[i:i + chunk]
+            sqi = sq[i:i + chunk]
+            for j in range(i, n_balls, chunk):
+                Bj = balls[j:j + chunk]
+                sqj = sq[j:j + chunk]
+                D2 = sqi[:, None] + sqj[None, :] - 2.0 * (Bi @ Bj.T)
+                if i == j:
+                    iu = np.triu_indices(D2.shape[0], k=1)
+                    out.append(D2[iu])
+                else:
+                    out.append(D2.ravel())
+        d2 = np.sort(np.concatenate(out))
+
+    s = float(d2[0])
     if s < tol:
-        return (n_balls, tuple(round(x, 3) for x in d2))
-    return (n_balls, tuple(round(x / s, 3) for x in d2))
+        return (n_balls, tuple(round(float(x), 3) for x in d2))
+    return (n_balls, tuple(round(float(x / s), 3) for x in d2))
 
 
 def group_by_shape(hits, V, edges, tol=1e-3):

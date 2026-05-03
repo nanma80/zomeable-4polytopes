@@ -232,6 +232,15 @@ def build_polytope(group: str, bitmask, canonicalize: bool = True,
     keys = {tuple(np.round(v, 8)): idx for idx, v in enumerate(V)}
     edge_set = set()
     seed_idx = keys[tuple(np.round(seed, 8))]
+
+    # Pairwise squared-distance matrix via the Gram trick:
+    #   D2[p,q] = ||V_p||^2 + ||V_q||^2 - 2 V_p . V_q
+    # This is O(n^2) memory but is ~100x faster in NumPy than the
+    # equivalent Python double-loop, which matters for H4 polytopes
+    # (n up to 14400 for the omnitruncated 120-cell).
+    sq_norms = (V * V).sum(axis=1)
+    D2 = sq_norms[:, None] + sq_norms[None, :] - 2.0 * (V @ V.T)
+
     for i, b in enumerate(bitmask):
         if b == 0:
             continue
@@ -239,11 +248,11 @@ def build_polytope(group: str, bitmask, canonicalize: bool = True,
         other_idx = keys[tuple(np.round(v_other, 8))]
         d = V[seed_idx] - V[other_idx]
         d2 = float(d @ d)
-        for p in range(n):
-            for q in range(p + 1, n):
-                dd = V[p] - V[q]
-                if abs(dd @ dd - d2) < tol:
-                    edge_set.add((p, q))
+        # take only upper triangle to avoid (p, p) and (q, p) duplicates
+        mask = np.abs(D2 - d2) < tol
+        ps, qs = np.where(np.triu(mask, k=1))
+        for p, q in zip(ps.tolist(), qs.tolist()):
+            edge_set.add((p, q))
 
     if canonicalize:
         R, scale = _get_calibration(group)
