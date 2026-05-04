@@ -23,7 +23,8 @@ from search_engine import projection_matrix, _try_align
 PHI_F = (1.0 + 5.0 ** 0.5) / 2.0
 
 
-def _normalize_scale(coords_gf, target_min_dist=30.0, tol=1e-6):
+def _normalize_scale(coords_gf, target_min_dist=30.0 / (PHI_F * PHI_F),
+                     tol=1e-6):
     """Apply uniform phi^k scaling so the smallest non-zero pairwise
     vertex distance lands close to ``target_min_dist``.
 
@@ -38,6 +39,10 @@ def _normalize_scale(coords_gf, target_min_dist=30.0, tol=1e-6):
 
     phi is a unit in Z[phi] (phi*(phi-1) = 1), so phi^k * Z[phi] = Z[phi]
     exactly; this keeps the snapped integrality intact.
+
+    The default target ~= 11.46 zome units (= 30/phi^2) is
+    visually compact: small enough that strut/ball ratios stay
+    pleasant for densely-vertexed Wythoff descendants.
     """
     if len(coords_gf) < 2:
         return coords_gf
@@ -147,7 +152,7 @@ def _dedup_balls(balls):
 def project_and_emit(name, V4, E4, n, out_path,
                      extra_scale=GF(2, 2),
                      scales_to_try=None,
-                     target_min_dist=30.0,
+                     target_min_dist=30.0 / (PHI_F * PHI_F),
                      verbose=True):
     """Project V4 (Nx4) along kernel n, snap, emit .vZome.
 
@@ -156,9 +161,9 @@ def project_and_emit(name, V4, E4, n, out_path,
     scales_to_try: list of float scales s; we try s * coords.snap → ZZ[phi].
         Defaults to a useful set covering common irrationals.
     target_min_dist: target for the smallest pairwise vertex distance after
-        post-snap phi^k normalisation.  ~30 zome units gives a strut/ball
-        ratio comparable to the regular-polytope reference outputs.  Pass
-        None to disable post-normalisation.
+        post-snap phi^k normalisation.  Default ~= 11.46 zome units
+        (= 30 / phi^2) gives a compact strut/ball ratio across the
+        Wythoff corpus.  Pass None to disable post-normalisation.
     """
     V4 = np.asarray(V4, dtype=float)
     n = np.asarray(n, dtype=float)

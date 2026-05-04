@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
   <EditHistory editNumber="62" lastStickyEdit="-1">
-    <ShowPoint point="0 -20 -24 -12 24 12"/>
-    <ShowPoint point="0 20 -24 -12 24 12"/>
-    <ShowPoint point="0 -40 -4 8 4 12"/>
-    <ShowPoint point="0 -20 16 28 -16 12"/>
-    <ShowPoint point="0 40 -4 8 4 12"/>
-    <ShowPoint point="0 -40 -4 -12 24 12"/>
-    <ShowPoint point="0 20 16 28 -16 12"/>
-    <ShowPoint point="0 -20 16 -12 24 12"/>
-    <ShowPoint point="0 40 -4 -12 24 12"/>
-    <ShowPoint point="0 -40 -24 -12 4 -8"/>
-    <ShowPoint point="0 20 16 -12 24 12"/>
-    <ShowPoint point="0 -20 -24 -12 -16 -28"/>
-    <ShowPoint point="0 0 36 28 -16 12"/>
-    <ShowPoint point="0 40 -24 -12 4 -8"/>
-    <ShowPoint point="0 0 36 8 4 12"/>
-    <ShowPoint point="0 20 -24 -12 -16 -28"/>
-    <ShowPoint point="0 0 16 28 -36 -8"/>
-    <ShowPoint point="0 0 -4 8 -36 -28"/>
-    <ShowPoint point="0 0 16 -12 4 -8"/>
-    <ShowPoint point="0 0 -4 -12 -16 -28"/>
-    <JoinPointPair start="0 -20 -24 -12 24 12" end="0 20 -24 -12 24 12"/>
-    <JoinPointPair start="0 -20 -24 -12 24 12" end="0 -40 -4 8 4 12"/>
-    <JoinPointPair start="0 -20 -24 -12 24 12" end="0 -40 -4 -12 24 12"/>
-    <JoinPointPair start="0 -20 -24 -12 24 12" end="0 -40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 20 -24 -12 24 12" end="0 40 -4 8 4 12"/>
-    <JoinPointPair start="0 20 -24 -12 24 12" end="0 40 -4 -12 24 12"/>
-    <JoinPointPair start="0 20 -24 -12 24 12" end="0 40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 -40 -4 8 4 12" end="0 -20 16 28 -16 12"/>
-    <JoinPointPair start="0 -40 -4 8 4 12" end="0 -40 -4 -12 24 12"/>
-    <JoinPointPair start="0 -40 -4 8 4 12" end="0 -40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 -20 16 28 -16 12" end="0 20 16 28 -16 12"/>
-    <JoinPointPair start="0 -20 16 28 -16 12" end="0 0 36 28 -16 12"/>
-    <JoinPointPair start="0 -20 16 28 -16 12" end="0 0 16 28 -36 -8"/>
-    <JoinPointPair start="0 40 -4 8 4 12" end="0 20 16 28 -16 12"/>
-    <JoinPointPair start="0 40 -4 8 4 12" end="0 40 -4 -12 24 12"/>
-    <JoinPointPair start="0 40 -4 8 4 12" end="0 40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 -40 -4 -12 24 12" end="0 -20 16 -12 24 12"/>
-    <JoinPointPair start="0 -40 -4 -12 24 12" end="0 -40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 20 16 28 -16 12" end="0 0 36 28 -16 12"/>
-    <JoinPointPair start="0 20 16 28 -16 12" end="0 0 16 28 -36 -8"/>
-    <JoinPointPair start="0 -20 16 -12 24 12" end="0 20 16 -12 24 12"/>
-    <JoinPointPair start="0 -20 16 -12 24 12" end="0 0 36 8 4 12"/>
-    <JoinPointPair start="0 -20 16 -12 24 12" end="0 0 16 -12 4 -8"/>
-    <JoinPointPair start="0 40 -4 -12 24 12" end="0 20 16 -12 24 12"/>
-    <JoinPointPair start="0 40 -4 -12 24 12" end="0 40 -24 -12 4 -8"/>
-    <JoinPointPair start="0 -40 -24 -12 4 -8" end="0 -20 -24 -12 -16 -28"/>
-    <JoinPointPair start="0 20 16 -12 24 12" end="0 0 36 8 4 12"/>
-    <JoinPointPair start="0 20 16 -12 24 12" end="0 0 16 -12 4 -8"/>
-    <JoinPointPair start="0 -20 -24 -12 -16 -28" end="0 20 -24 -12 -16 -28"/>
-    <JoinPointPair start="0 -20 -24 -12 -16 -28" end="0 0 -4 8 -36 -28"/>
-    <JoinPointPair start="0 -20 -24 -12 -16 -28" end="0 0 -4 -12 -16 -28"/>
-    <JoinPointPair start="0 0 36 28 -16 12" end="0 0 36 8 4 12"/>
-    <JoinPointPair start="0 0 36 28 -16 12" end="0 0 16 28 -36 -8"/>
-    <JoinPointPair start="0 40 -24 -12 4 -8" end="0 20 -24 -12 -16 -28"/>
-    <JoinPointPair start="0 0 36 8 4 12" end="0 0 16 -12 4 -8"/>
-    <JoinPointPair start="0 20 -24 -12 -16 -28" end="0 0 -4 8 -36 -28"/>
-    <JoinPointPair start="0 20 -24 -12 -16 -28" end="0 0 -4 -12 -16 -28"/>
-    <JoinPointPair start="0 0 16 28 -36 -8" end="0 0 -4 8 -36 -28"/>
-    <JoinPointPair start="0 0 -4 8 -36 -28" end="0 0 -4 -12 -16 -28"/>
-    <JoinPointPair start="0 0 16 -12 4 -8" end="0 0 -4 -12 -16 -28"/>
+    <ShowPoint point="20 -20 -36 12 36 -12"/>
+    <ShowPoint point="-20 20 -36 12 36 -12"/>
+    <ShowPoint point="40 -40 -16 12 -4 8"/>
+    <ShowPoint point="20 -20 4 12 -44 28"/>
+    <ShowPoint point="-40 40 -16 12 -4 8"/>
+    <ShowPoint point="40 -40 4 -8 36 -12"/>
+    <ShowPoint point="-20 20 4 12 -44 28"/>
+    <ShowPoint point="20 -20 44 -28 36 -12"/>
+    <ShowPoint point="-40 40 4 -8 36 -12"/>
+    <ShowPoint point="40 -40 -36 12 16 -12"/>
+    <ShowPoint point="-20 20 44 -28 36 -12"/>
+    <ShowPoint point="20 -20 -36 12 -4 -12"/>
+    <ShowPoint point="0 0 44 -8 -44 28"/>
+    <ShowPoint point="-40 40 -36 12 16 -12"/>
+    <ShowPoint point="0 0 64 -28 -4 8"/>
+    <ShowPoint point="-20 20 -36 12 -4 -12"/>
+    <ShowPoint point="0 0 4 12 -64 28"/>
+    <ShowPoint point="0 0 -16 12 -44 8"/>
+    <ShowPoint point="0 0 44 -28 16 -12"/>
+    <ShowPoint point="0 0 4 -8 -4 -12"/>
+    <JoinPointPair start="20 -20 -36 12 36 -12" end="-20 20 -36 12 36 -12"/>
+    <JoinPointPair start="20 -20 -36 12 36 -12" end="40 -40 -16 12 -4 8"/>
+    <JoinPointPair start="20 -20 -36 12 36 -12" end="40 -40 4 -8 36 -12"/>
+    <JoinPointPair start="20 -20 -36 12 36 -12" end="40 -40 -36 12 16 -12"/>
+    <JoinPointPair start="-20 20 -36 12 36 -12" end="-40 40 -16 12 -4 8"/>
+    <JoinPointPair start="-20 20 -36 12 36 -12" end="-40 40 4 -8 36 -12"/>
+    <JoinPointPair start="-20 20 -36 12 36 -12" end="-40 40 -36 12 16 -12"/>
+    <JoinPointPair start="40 -40 -16 12 -4 8" end="20 -20 4 12 -44 28"/>
+    <JoinPointPair start="40 -40 -16 12 -4 8" end="40 -40 4 -8 36 -12"/>
+    <JoinPointPair start="40 -40 -16 12 -4 8" end="40 -40 -36 12 16 -12"/>
+    <JoinPointPair start="20 -20 4 12 -44 28" end="-20 20 4 12 -44 28"/>
+    <JoinPointPair start="20 -20 4 12 -44 28" end="0 0 44 -8 -44 28"/>
+    <JoinPointPair start="20 -20 4 12 -44 28" end="0 0 4 12 -64 28"/>
+    <JoinPointPair start="-40 40 -16 12 -4 8" end="-20 20 4 12 -44 28"/>
+    <JoinPointPair start="-40 40 -16 12 -4 8" end="-40 40 4 -8 36 -12"/>
+    <JoinPointPair start="-40 40 -16 12 -4 8" end="-40 40 -36 12 16 -12"/>
+    <JoinPointPair start="40 -40 4 -8 36 -12" end="20 -20 44 -28 36 -12"/>
+    <JoinPointPair start="40 -40 4 -8 36 -12" end="40 -40 -36 12 16 -12"/>
+    <JoinPointPair start="-20 20 4 12 -44 28" end="0 0 44 -8 -44 28"/>
+    <JoinPointPair start="-20 20 4 12 -44 28" end="0 0 4 12 -64 28"/>
+    <JoinPointPair start="20 -20 44 -28 36 -12" end="-20 20 44 -28 36 -12"/>
+    <JoinPointPair start="20 -20 44 -28 36 -12" end="0 0 64 -28 -4 8"/>
+    <JoinPointPair start="20 -20 44 -28 36 -12" end="0 0 44 -28 16 -12"/>
+    <JoinPointPair start="-40 40 4 -8 36 -12" end="-20 20 44 -28 36 -12"/>
+    <JoinPointPair start="-40 40 4 -8 36 -12" end="-40 40 -36 12 16 -12"/>
+    <JoinPointPair start="40 -40 -36 12 16 -12" end="20 -20 -36 12 -4 -12"/>
+    <JoinPointPair start="-20 20 44 -28 36 -12" end="0 0 64 -28 -4 8"/>
+    <JoinPointPair start="-20 20 44 -28 36 -12" end="0 0 44 -28 16 -12"/>
+    <JoinPointPair start="20 -20 -36 12 -4 -12" end="-20 20 -36 12 -4 -12"/>
+    <JoinPointPair start="20 -20 -36 12 -4 -12" end="0 0 -16 12 -44 8"/>
+    <JoinPointPair start="20 -20 -36 12 -4 -12" end="0 0 4 -8 -4 -12"/>
+    <JoinPointPair start="0 0 44 -8 -44 28" end="0 0 64 -28 -4 8"/>
+    <JoinPointPair start="0 0 44 -8 -44 28" end="0 0 4 12 -64 28"/>
+    <JoinPointPair start="-40 40 -36 12 16 -12" end="-20 20 -36 12 -4 -12"/>
+    <JoinPointPair start="0 0 64 -28 -4 8" end="0 0 44 -28 16 -12"/>
+    <JoinPointPair start="-20 20 -36 12 -4 -12" end="0 0 -16 12 -44 8"/>
+    <JoinPointPair start="-20 20 -36 12 -4 -12" end="0 0 4 -8 -4 -12"/>
+    <JoinPointPair start="0 0 4 12 -64 28" end="0 0 -16 12 -44 8"/>
+    <JoinPointPair start="0 0 -16 12 -44 8" end="0 0 4 -8 -4 -12"/>
+    <JoinPointPair start="0 0 44 -28 16 -12" end="0 0 4 -8 -4 -12"/>
     <SelectManifestation point="0 0 0 0 0 0"/>
     <Delete/>
   </EditHistory>
