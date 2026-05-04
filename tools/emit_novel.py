@@ -5,9 +5,30 @@ Reads ongoing_work/novel_rng<N>.json (produced by
 example_kernel) representative per novel fp_hash, and runs
 lib.emit_generic.project_and_emit to produce a .vZome file.
 
-Output: output/wythoff_sweep/<common-name-slug>/<group>_<bitmask>_<idx>_<hash>.vZome
-together with a JSON manifest at output/wythoff_sweep/manifest.json
-mapping novel fp_hash -> source polytope, kernel, and emission status.
+Output: output/wythoff_sweep/<common-name-slug>/<label>[_<idx>]_<hash>.vZome
+where <label> is the kernel-direction classification produced by
+``lib.polytope_features.classify_kernel``:
+
+    vertex_first
+    cell_first[_<celltype>]    (e.g. cell_first_truncated_octahedron)
+    face_first[_<polygon>]      (e.g. face_first_hexagon)
+    edge_first
+    oblique
+
+``_<idx>`` is appended only when multiple shapes within the same
+polytope classify identically.
+
+The driver also collapses representatives that are positive scalar
+multiples of one another to a single canonical entry: such kernels
+project to identical 3D shapes but ``shape_fingerprint`` produces
+slightly different hashes for them due to SVD basis ambiguity in
+``projection_matrix`` -- that ambiguity over-reports distinct novel
+shapes.  Within each polytope we keep the smallest-|kernel| direction
+as the canonical representative.
+
+A JSON manifest at output/wythoff_sweep/manifest.json records each
+emitted shape's source polytope, kernel, label, alias hashes, and
+emission status.
 
 Usage:
     python tools/emit_novel.py [--rng 2] [--limit N]
@@ -22,6 +43,7 @@ import os
 import sys
 import json
 import argparse
+from collections import defaultdict
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
 
@@ -29,6 +51,9 @@ import numpy as np
 
 from wythoff import build_polytope
 from emit_generic import project_and_emit
+from polytope_features import (
+    classify_kernel, extract_features, label_basename,
+)
 
 
 ONGOING = os.path.normpath(
@@ -64,15 +89,94 @@ def _slug(name):
     return "_".join(name.split())
 
 
-def emit_one(h, info, out_root):
+def _dedup_by_direction(reps, cos_tol=1e-6):
+    """Collapse representatives whose kernels are positive scalar multiples
+    of each other.  Keeps the smallest-|kernel| representative per
+    direction-class; returns a (kept_reps_dict, aliases) pair where
+    ``aliases[h]`` is a sorted list of fp_hashes that were absorbed
+    into the canonical entry ``h``.
+
+    Grouping is *per polytope* (group, bitmask) -- different polytopes
+    legitimately share kernel directions.
+    """
+    by_poly = defaultdict(list)
+    for h, info in reps.items():
+        key = (info["group"], tuple(info["bitmask"]))
+        by_poly[key].append(h)
+
+    aliases = defaultdict(list)
+    kept = {}
+    for key, hashes in by_poly.items():
+        if len(hashes) == 1:
+            kept[hashes[0]] = reps[hashes[0]]
+            continue
+        K = np.asarray([reps[h]["example_kernel"] for h in hashes],
+                       dtype=float)
+        norms = np.linalg.norm(K, axis=1)
+        Ku = K / np.maximum(norms, 1e-12)[:, None]
+        seen = np.zeros(len(hashes), dtype=bool)
+        for i in range(len(hashes)):
+            if seen[i]:
+                continue
+            sim = np.where((Ku @ Ku[i]) > 1 - cos_tol)[0]
+            seen[sim] = True
+            grp = [hashes[j] for j in sim]
+            canon = grp[int(np.argmin([norms[j] for j in sim]))]
+            kept[canon] = reps[canon]
+            for h in grp:
+                if h != canon:
+                    aliases[canon].append(h)
+    for h in aliases:
+        aliases[h].sort()
+    return kept, dict(aliases)
+
+
+def _build_basenames(items, feat_cache):
+    """Classify each item's kernel and assign ``label[_<idx>]`` basenames.
+
+    Returns parallel lists ``basenames``, ``labels``, ``subtypes`` keyed
+    on the order of ``items``.  ``feat_cache`` is filled in-place.
+    """
+    keys = [(info["group"], tuple(info["bitmask"]))
+            for _, info in items]
+    classifications = [None] * len(items)
+    grouped = defaultdict(list)
+
+    for idx, ((h, info), key) in enumerate(zip(items, keys)):
+        if key not in feat_cache:
+            print(f"    building features for {key[0]} {key[1]} "
+                  f"({info['name']})...")
+            V, E = build_polytope(*key)
+            feat_cache[key] = extract_features(np.asarray(V, dtype=float), E)
+        feats = feat_cache[key]
+        kernel = np.asarray(info["example_kernel"], dtype=float)
+        label, subtype = classify_kernel(kernel, feats)
+        classifications[idx] = (label, subtype)
+        grouped[(*key, label, subtype)].append(idx)
+
+    basenames = [""] * len(items)
+    for gkey, idxs in grouped.items():
+        if len(idxs) == 1:
+            i = idxs[0]
+            label, subtype = classifications[i]
+            basenames[i] = label_basename(label, subtype, index=None)
+        else:
+            for n, i in enumerate(idxs):
+                label, subtype = classifications[i]
+                basenames[i] = label_basename(label, subtype, index=n)
+    labels = [c[0] for c in classifications]
+    subtypes = [c[1] for c in classifications]
+    return basenames, labels, subtypes
+
+
+def emit_one(h, info, out_root, basename):
     g = info["group"]
     bm = tuple(info["bitmask"])
     name = info["name"]
     n = np.array(info["example_kernel"], dtype=float)
     subdir = os.path.join(out_root, _slug(name))
     os.makedirs(subdir, exist_ok=True)
-    fname = (f"{g}_{''.join(str(b) for b in bm)}_"
-             f"{info['shape_idx']:02d}_{h[:10]}.vZome")
+    fname = f"{basename}_{h[:10]}.vZome"
     path = os.path.join(subdir, fname)
     V4, E4 = build_polytope(g, bm)
     counts = project_and_emit(
@@ -88,13 +192,15 @@ def main():
                     help="(default: ongoing_work/novel_rng<N>.json)")
     ap.add_argument("--limit", type=int, default=None,
                     help="emit at most N novel shapes (smallest-V first)")
+    ap.add_argument("--no-dedup-direction", action="store_true",
+                    help="skip per-polytope direction-deduplication "
+                         "(for debugging the spurious-fp_hash bug).")
     args = ap.parse_args()
 
     os.makedirs(OUT_DIR, exist_ok=True)
     novel_in = load_novel(args.rng, args.novel_json)
     print(f"{len(novel_in)} novel fp_hashes loaded.")
 
-    # Pick smallest-balls representative for each novel hash.
     representatives = {}
     for h, entry in novel_in.items():
         rep = pick_representative(entry["occurrences"])
@@ -104,15 +210,30 @@ def main():
             **rep,
         }
 
+    if args.no_dedup_direction:
+        aliases_for: dict[str, list[str]] = {}
+    else:
+        before = len(representatives)
+        representatives, aliases_for = _dedup_by_direction(representatives)
+        after = len(representatives)
+        n_aliases = sum(len(v) for v in aliases_for.values())
+        print(f"direction-dedup: {before} -> {after} canonical entries "
+              f"({n_aliases} aliases collapsed)")
+
     items = sorted(representatives.items(),
                    key=lambda kv: (kv[1]["n_balls"], kv[0]))
     if args.limit:
         items = items[:args.limit]
         print(f"  (limited to first {len(items)})")
 
+    print("classifying kernels and building filenames...")
+    feat_cache = {}
+    basenames, labels, subtypes = _build_basenames(items, feat_cache)
+
     manifest = []
     n_ok = n_fail = 0
-    for h, info in items:
+    for (h, info), basename, label, subtype in zip(
+            items, basenames, labels, subtypes):
         rec = {
             "fp_hash": h,
             "group": info["group"],
@@ -121,9 +242,14 @@ def main():
             "shape_idx": info["shape_idx"],
             "n_balls": info["n_balls"],
             "kernel": list(info["example_kernel"]),
+            "label": label,
+            "label_subtype": subtype,
         }
+        if h in aliases_for:
+            rec["aliases"] = aliases_for[h]
+            rec["alias_count"] = len(aliases_for[h])
         try:
-            path, counts = emit_one(h, info, OUT_DIR)
+            path, counts = emit_one(h, info, OUT_DIR, basename)
             rec["status"] = "ok"
             rec["file"] = os.path.relpath(path,
                                           os.path.dirname(OUT_DIR))
@@ -131,7 +257,7 @@ def main():
             n_ok += 1
             print(f"  OK    {h[:10]}  {info['group']} "
                   f"{info['bitmask']} {info['name']:25s} "
-                  f"balls={info['n_balls']}")
+                  f"balls={info['n_balls']}  -> {basename}")
         except Exception as e:
             short = (str(e).splitlines() or [""])[0][:120]
             if "snap" in short.lower():

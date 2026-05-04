@@ -220,19 +220,38 @@ aligned with the golden-ratio integer lattice.
 vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/),
 organised into one subfolder per polytope common name (e.g.
 `output/wythoff_sweep/cantellated_120-cell/`,
-`output/wythoff_sweep/omnitruncated_120-cell/`).  Each file follows the
-naming convention `<group>_<bitmask>_<shape_idx>_<fp_hash[:10]>.vZome`,
-and a JSON manifest at `output/wythoff_sweep/manifest.json` cross-
+`output/wythoff_sweep/omnitruncated_120-cell/`).  Each file is named
+after the kernel direction's classification against that polytope's
+features:
+
+| basename pattern                       | meaning                                          |
+| -------------------------------------- | ------------------------------------------------ |
+| `vertex_first_<hash>.vZome`            | kernel parallel to a vertex direction            |
+| `cell_first_<celltype>[_<idx>]_<hash>` | kernel through a 3-cell centroid (e.g. `cell_first_truncated_octahedron_03_…`)  |
+| `face_first_<polygon>[_<idx>]_<hash>`  | kernel through a 2-face centroid (e.g. `face_first_hexagon_…`)                  |
+| `edge_first[_<idx>]_<hash>.vZome`      | kernel through an edge midpoint                  |
+| `oblique[_<idx>]_<hash>.vZome`         | none of the above                                |
+
+`<idx>` is appended only when multiple shapes within the same source
+polytope classify identically (assigned alphabetically by `<hash>` for
+stability).  `<hash>` is the first 10 hex digits of the shape's
+fp_hash.  The classifier lives in `lib/polytope_features.py`; it
+extracts cell/face features via two nested `scipy.spatial.ConvexHull`
+calls and returns the highest-priority match (`vertex_first` >
+`cell_first` > `face_first` > `edge_first` > `oblique`).
+
+A JSON manifest at `output/wythoff_sweep/manifest.json` cross-
 references every file with its fp_hash, source polytope, kernel
-direction, and per-axis strut counts.
+direction, label, label-subtype, alias hashes (see "Direction-dedup"
+below), and per-axis strut counts.
 
 All emitted files use **only the 4 standard zometool strut colours**
 (R = red, B = blue, Y = yellow, G = green) — non-standard directions
 are rejected upstream in `lib.search_engine._classify_dir`.  Coords
 are post-snap normalised by a uniform `φᵏ` factor (`lib/emit_generic
 ._normalize_scale`) so the smallest pairwise vertex distance lands
-near 30 zome units across the whole corpus, giving a consistent
-strut/ball ratio regardless of which `s` happened to snap.
+near `30/φ²` zome units (~11.5) across the whole corpus, giving a
+consistent strut/ball ratio regardless of which `s` happened to snap.
 
 ## Reproduction
 
@@ -292,8 +311,36 @@ python tools/emit_novel.py --rng 2
   small-polytope record overlaps the regime; within a single sweep
   every hit for a given polytope goes through the same path
   consistently, so internal dedup is unaffected.
+- **Direction-dedup of kernels and shapes.**  `shape_fingerprint`'s
+  basis comes from `np.linalg.svd(I − n̂ n̂ᵀ)`, which has a degenerate
+  eigenvalue 1.0 with multiplicity 3 — its 3D output basis depends on
+  small floating-point differences in `n̂`.  In practice this means
+  kernels that are *positive scalar multiples* of one another (e.g.
+  `k` and `φ²·k`) round to slightly different unit vectors after the
+  manifest's 4-decimal float storage, and their fingerprints differ in
+  the last bin of the quantised distance multiset.  These spurious
+  duplicates manifest as ~5–7× over-counting in the step-1 hit list
+  for highly-symmetric regulars (e.g. the H₄ 120-cell yields 432 raw
+  hits → 60 distinct directions) and as smaller (~20%) over-counting
+  in step-2 manifests where most aliases happen to collapse under the
+  same fp_hash.  Two layers of deduplication absorb this:
+  1. `tools/run_wythoff_sweep.find_group_kernels` collapses scalar-
+     equivalent kernels to one canonical (smallest-|k|) representative
+     before step 2 begins.  This applies even to old caches.
+  2. `tools/emit_novel._dedup_by_direction` collapses any remaining
+     scalar-equivalent representatives that survived step 2, per
+     polytope, before emission.  Aliased fp_hashes are recorded in
+     each manifest entry's `aliases` field for forward traceability.
+
+  The corresponding repair on a pre-fix manifest is
+  `tools/dedup_corpus_by_direction.py`, which deletes the spurious
+  vZome files in place and adds an `aliases` list to the canonical
+  entries.  It was used to collapse 208→164 entries in the rng=2
+  manifest produced before this dedup pass existed.
 - **Caches and resumability.**
-  - Step-1 hits → `ongoing_work/kernels_<group>_rng<N>.npy`.
+  - Step-1 hits → `ongoing_work/kernels_<group>_rng<N>.npy`.  Loaded
+    caches are run through the direction-dedup step, so old caches do
+    not need to be regenerated.
   - Per-polytope step-2 result lines → any
     `ongoing_work/sweep_log_*.txt`; on rerun, completed (group, bitmask)
     pairs are skipped.
@@ -309,11 +356,14 @@ python tools/emit_novel.py --rng 2
 - **`--sort-by-size`** sorts step-2 by polytope V count ascending so
   that, for H₄, the V=14400 omnitruncated 120-cell is processed last
   and the other 14 forms complete first if the run is time-bounded.
-- **B₄ tesseract 32 shapes** is *not* a search-engine over-match; it is
-  the rng=2 truncation of the infinite split-cuboid family.  The 32
-  shapes split into 1 cell-first (`B': 24`) sporadic plus 31 generic
-  rectangular-cuboid kernels with `B': 32` signature, exactly as
-  enumerated in `output/8cell/CLASSIFICATION.md §3`.
+- **B₄ tesseract 32 shapes** is *almost* not a search-engine over-match
+  but partly is: it's the rng=2 truncation of the infinite split-cuboid
+  family, *plus* one spurious duplicate from the SVD-basis fp_hash bug
+  described above.  After direction-dedup the count is 31 shapes
+  (1 cell-first `B': 24` sporadic plus 30 generic rectangular-cuboid
+  kernels with `B': 32` signature) — see `output/8cell/CLASSIFICATION.md
+  §3` for the structural enumeration; the previous "32" tally double-
+  counted one cuboid direction.
 - **Output normalisation (`emit_generic._normalize_scale`).**  After
   snap-to-ZZ[φ]³ the smallest projected edge length depends on which
   scale `s` happened to satisfy `_snap_zphi`, which differs between

@@ -71,30 +71,72 @@ def kernel_cache_path(group, rng):
     return os.path.join(ONGOING, f"kernels_{group}_rng{rng}.npy")
 
 
+def _dedup_kernels_by_direction(kernels, cos_tol=1e-6):
+    """Collapse a list of kernel arrays to one canonical kernel per
+    positive direction.
+
+    ``shape_fingerprint`` returns slightly different hashes for kernels
+    that are positive scalar multiples of each other (degenerate SVD
+    basis in projection_matrix is sensitive to FP noise in the
+    normalised input).  Rather than ask the fingerprint to be more
+    robust, we dedupe at source: scaled-equivalent kernels project to
+    identical 3D shapes by definition, so testing only the smallest
+    representative per direction class is sufficient.
+
+    Returns the deduplicated list.  Order is preserved relative to the
+    first appearance of each direction class.
+    """
+    if len(kernels) <= 1:
+        return list(kernels)
+    K = np.asarray(kernels, dtype=float)
+    norms = np.linalg.norm(K, axis=1)
+    Ku = K / np.maximum(norms, 1e-12)[:, None]
+    seen = np.zeros(len(K), dtype=bool)
+    keep_idx = []
+    for i in range(len(K)):
+        if seen[i]:
+            continue
+        sim = np.where((Ku @ Ku[i]) > 1 - cos_tol)[0]
+        seen[sim] = True
+        # smallest |kernel| representative
+        canon = sim[int(np.argmin(norms[sim]))]
+        keep_idx.append(int(canon))
+    keep_idx.sort()
+    return [kernels[i] for i in keep_idx]
+
+
 def find_group_kernels(group, rng, cache=True):
     """Return a list of kernel ndarrays for the regular polytope of
     `group` at coefficient range `rng`.
 
     Reads from ongoing_work/kernels_<group>_rng<N>.npy if present;
-    otherwise runs the search and writes the cache."""
+    otherwise runs the search and writes the cache.  The result is
+    deduplicated by direction (positive scalar multiples collapsed),
+    even when loaded from a cache that pre-dates the dedup pass."""
     path = kernel_cache_path(group, rng)
     if cache and os.path.exists(path):
         arr = np.load(path)
         rel = os.path.relpath(path)
         print(f"  [{group}] loaded {len(arr)} cached kernels from {rel}")
-        return [arr[i] for i in range(len(arr))]
-    V, E = build_polytope(group, REGULAR_BITMASK)
-    dirs = gen_dirs(rng=rng, integer_only=False, permute_dedup=False)
-    print(f"  [{group}] regular: |V|={len(V)}, |E|={len(E)}, "
-          f"trying {len(dirs)} dirs...")
-    t0 = time.time()
-    hits = search(group + "_regular", V, E, dirs, verbose=False)
-    kernels = [np.array(n) for (n, sig, balls) in hits]
-    print(f"  [{group}] {len(kernels)} hits in {time.time()-t0:.1f}s")
-    if cache and kernels:
-        os.makedirs(ONGOING, exist_ok=True)
-        np.save(path, np.array(kernels))
-        print(f"  [{group}] cached to {os.path.relpath(path)}")
+        kernels = [arr[i] for i in range(len(arr))]
+    else:
+        V, E = build_polytope(group, REGULAR_BITMASK)
+        dirs = gen_dirs(rng=rng, integer_only=False, permute_dedup=False)
+        print(f"  [{group}] regular: |V|={len(V)}, |E|={len(E)}, "
+              f"trying {len(dirs)} dirs...")
+        t0 = time.time()
+        hits = search(group + "_regular", V, E, dirs, verbose=False)
+        kernels = [np.array(n) for (n, sig, balls) in hits]
+        print(f"  [{group}] {len(kernels)} hits in {time.time()-t0:.1f}s")
+        if cache and kernels:
+            os.makedirs(ONGOING, exist_ok=True)
+            np.save(path, np.array(kernels))
+            print(f"  [{group}] cached to {os.path.relpath(path)}")
+    n_before = len(kernels)
+    kernels = _dedup_kernels_by_direction(kernels)
+    if len(kernels) < n_before:
+        print(f"  [{group}] direction-dedup: "
+              f"{n_before} -> {len(kernels)} kernels")
     return kernels
 
 
