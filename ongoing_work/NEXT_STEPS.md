@@ -9,10 +9,11 @@
   - A4: 9/9, B4: 15/15, F4: 8/8 (24-cell ≡ B4 (0,0,1,0)), H4: 15/15
 - Aggregate JSONL: `ongoing_work/shapes_rng2.jsonl` (49 records)
 - Novel inventory: `ongoing_work/novel_rng2.json` — 235 distinct novel
-  fp_hashes (raw); 164 after direction-dedup
-- vZome output: `output/wythoff_sweep/` — 164 .vZome files in
+  fp_hashes (raw); 164 after Stage A (kernel-direction dedup); **60
+  distinct after Stage B (3D shape-congruence dedup)**
+- vZome output: `output/wythoff_sweep/` — 60 .vZome files in
   per-polytope subfolders + manifest.json
-  (snap rates: A4 100%, B4 38%, F4 35%, H4 100%)
+  (per-group distinct after dedup: A4 32, B4 13, F4 2, H4 13)
 - Census documented in `docs/WYTHOFF_SWEEP.md`.
 
 ## Resolved caveats
@@ -50,25 +51,43 @@
   via face-signature lookup).  Applied corpus-wide via
   `tools/rename_corpus.py`; wired into `tools/emit_novel.py` for future
   emits.
-- **Spurious-fp_hash bug discovered**: `shape_fingerprint`'s SVD basis
-  in `projection_matrix(n)` has a degenerate eigenvalue 1.0 (mult. 3),
-  so its 3D output basis is sensitive to small FP noise in `n̂`.
-  Kernels that are positive scalar multiples of one another (e.g. `k`
-  and `φ²·k`) round to slightly different unit vectors after low-
-  precision storage and produce slightly different fp_hashes despite
-  projecting to the SAME 3D shape.  Effects:
-    - Step-1 hit lists are 3.5–7× over-counted (raw vs. distinct
-      directions: A4 324→65, B4 2640→760, F4 608→120, H4 432→60).
-    - Step-2 manifest has ~21% spurious duplicates (208→164 ok shapes
-      after direction-dedup; the rest collapse under the same fp_hash
-      anyway).
-    - The B4 tesseract "32 shapes" is really 31 distinct (1 sporadic
-      `B':24` + 30 cuboid `B':32`).
-  Fixes:
-    1. `tools/run_wythoff_sweep.find_group_kernels` direction-dedupes
-       loaded kernels before step 2, so future re-runs are clean.
-    2. `tools/emit_novel._dedup_by_direction` collapses any survivors
-       per polytope.  Aliased fp_hashes recorded in manifest entries.
-    3. `tools/dedup_corpus_by_direction.py` repaired the existing
-       corpus in place (manifest.json.predup.bak preserved).
+- **Spurious-fp_hash bug** has *two* failure modes; both now handled.
+  `shape_fingerprint`'s SVD basis in `projection_matrix(n)` has a
+  degenerate eigenvalue 1.0 (mult. 3), so its 3D output basis is
+  sensitive to small FP noise in `n̂`.
+
+  *Stage A — scalar-multiple kernels.*  Kernels that are positive
+  scalar multiples of one another (e.g. `k` and `φ²·k`) round to
+  slightly different unit vectors after low-precision storage and
+  produce slightly different fp_hashes despite projecting to the SAME
+  3D shape.  Effects: step-1 hit lists 3.5–7× over-counted (raw vs.
+  distinct directions: A4 324→65, B4 2640→760, F4 608→120, H4 432→60);
+  step-2 manifest had ~21% spurious duplicates (208→164 ok shapes).
+  Fixes: direction-dedup in `find_group_kernels`,
+  `emit_novel._dedup_by_direction`, repair via
+  `tools/dedup_corpus_by_direction.py`.
+
+  *Stage B — H4-orbit-equivalent kernels.*  Kernels that are *not*
+  scalar multiples but lie in the same symmetry-group orbit produce
+  rotation-related (rigid-motion equivalent) 3D shapes; their
+  pairwise-distance multisets agree to FP precision but
+  `shape_fingerprint`'s 3-decimal binning shifts on boundary values,
+  yielding distinct fp_hashes.  This was the bigger bug: **104 of 164
+  ok shapes were rigid-motion duplicates**, including 38→1 for the
+  H₄ omnitruncated 120-cell.  Fixes:
+    1. `tools/dedup_corpus_by_shape.py` reads each emitted .vZome,
+       computes a robust geometric signature (sorted normalised
+       pairwise-distance multiset + edge-length multiset), groups by
+       (group, bitmask, signature), keeps the smallest-|kernel|
+       canonical entry, deletes the rest, updates the manifest.
+       Repaired the existing corpus in place; backup preserved at
+       `manifest.json.preshapededup.bak`.  Idempotent.
+    2. `tools/emit_novel.py` now invokes `dedup_manifest_by_shape`
+       as a final post-emission pass, so future runs cannot leak
+       orbit-equivalent duplicates into the corpus.
+    3. `tools/audit_shape_duplicates.py` is the inspection-only
+       counterpart (reports without deleting).
+
+  The B4 tesseract "32 shapes" was actually 1 distinct shape after
+  Stage B (all 32 raw fp_hashes were rigid-motion duplicates).
 

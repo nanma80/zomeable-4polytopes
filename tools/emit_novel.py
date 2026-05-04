@@ -44,8 +44,10 @@ import sys
 import json
 import argparse
 from collections import defaultdict
+from pathlib import Path
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
+sys.path.insert(0, os.path.dirname(__file__))
 
 import numpy as np
 
@@ -54,6 +56,7 @@ from emit_generic import project_and_emit
 from polytope_features import (
     classify_kernel, extract_features, label_basename,
 )
+from dedup_corpus_by_shape import dedup_manifest_by_shape
 
 
 ONGOING = os.path.normpath(
@@ -195,6 +198,8 @@ def main():
     ap.add_argument("--no-dedup-direction", action="store_true",
                     help="skip per-polytope direction-deduplication "
                          "(for debugging the spurious-fp_hash bug).")
+    ap.add_argument("--no-dedup-shape", action="store_true",
+                    help="skip post-emission 3D shape-congruence dedup.")
     args = ap.parse_args()
 
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -276,11 +281,24 @@ def main():
         manifest.append(rec)
 
     manifest_path = os.path.join(OUT_DIR, "manifest.json")
+    full_manifest = {"rng": args.rng, "n_ok": n_ok, "n_fail": n_fail,
+                     "shapes": manifest}
     with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump({"rng": args.rng, "n_ok": n_ok, "n_fail": n_fail,
-                   "shapes": manifest}, f, indent=2, sort_keys=True)
+        json.dump(full_manifest, f, indent=2, sort_keys=True)
     print(f"\n{n_ok} emitted, {n_fail} failed.  Manifest: "
           f"{os.path.relpath(manifest_path)}")
+
+    if not args.no_dedup_shape and n_ok > 1:
+        print("\nrunning 3D shape-congruence dedup pass...")
+        corpus_root = Path(OUT_DIR).parent  # output/
+        stats = dedup_manifest_by_shape(full_manifest, corpus_root)
+        print(f"  shape-dedup: {stats['before']} -> {stats['after']} "
+              f"({stats['removed']} duplicates removed; "
+              f"{stats['deleted']} files deleted)")
+        full_manifest["n_ok"] = sum(
+            1 for s in full_manifest["shapes"] if s.get("status") == "ok")
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            json.dump(full_manifest, f, indent=2, sort_keys=True)
 
 
 if __name__ == "__main__":

@@ -195,15 +195,18 @@ uniform-scale-invariant).
 
 [`tools/emit_novel.py`](../tools/emit_novel.py) iterates the novel
 inventory and calls `lib.emit_generic.project_and_emit` to write a
-.vZome file per shape.  At rng=2 the result is **208 of 235** novel
-shapes successfully snapped to ZZ[φ]³ (the zometool-realisable subset):
+.vZome file per shape, then runs a 3D shape-congruence dedup pass to
+collapse any congruent shapes the search engine reported as distinct.
+At rng=2 the result is **60 of 235** distinct novel shapes
+successfully snapped to ZZ[φ]³ and confirmed pairwise non-congruent
+(the zometool-realisable subset):
 
-| group | novel shapes | snapped to vZome | snap rate |
+| group | novel shapes | snapped to vZome | distinct after shape-dedup |
 |:-:|--:|--:|--:|
-| A₄ | 43  | 43  | 100% |
-| B₄ | 34  | 13  | 38%  |
-| F₄ | 20  | 7   | 35%  |
-| H₄ | 145 | 145 | 100% |
+| A₄ | 43  | 43  | 32 |
+| B₄ | 34  | 13  | 13 |
+| F₄ | 20  | 7   | 2  |
+| H₄ | 145 | 145 | 13 |
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
 The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
@@ -311,19 +314,18 @@ python tools/emit_novel.py --rng 2
   small-polytope record overlaps the regime; within a single sweep
   every hit for a given polytope goes through the same path
   consistently, so internal dedup is unaffected.
-- **Direction-dedup of kernels and shapes.**  `shape_fingerprint`'s
-  basis comes from `np.linalg.svd(I − n̂ n̂ᵀ)`, which has a degenerate
-  eigenvalue 1.0 with multiplicity 3 — its 3D output basis depends on
-  small floating-point differences in `n̂`.  In practice this means
-  kernels that are *positive scalar multiples* of one another (e.g.
-  `k` and `φ²·k`) round to slightly different unit vectors after the
-  manifest's 4-decimal float storage, and their fingerprints differ in
-  the last bin of the quantised distance multiset.  These spurious
-  duplicates manifest as ~5–7× over-counting in the step-1 hit list
-  for highly-symmetric regulars (e.g. the H₄ 120-cell yields 432 raw
-  hits → 60 distinct directions) and as smaller (~20%) over-counting
-  in step-2 manifests where most aliases happen to collapse under the
-  same fp_hash.  Two layers of deduplication absorb this:
+- **Two-stage shape-equivalence dedup of kernels and shapes.**
+  `shape_fingerprint`'s basis comes from `np.linalg.svd(I − n̂ n̂ᵀ)`,
+  which has a degenerate eigenvalue 1.0 with multiplicity 3 — its 3D
+  output basis depends on small floating-point differences in `n̂`.
+  Two failure modes follow:
+
+  *Stage A — scalar-multiple kernels.*  Kernels that are *positive
+  scalar multiples* of one another (e.g. `k` and `φ²·k`) round to
+  slightly different unit vectors after the manifest's 4-decimal float
+  storage, and their fingerprints differ in the last bin of the
+  quantised distance multiset.  Direction-equivalence dedup catches
+  this:
   1. `tools/run_wythoff_sweep.find_group_kernels` collapses scalar-
      equivalent kernels to one canonical (smallest-|k|) representative
      before step 2 begins.  This applies even to old caches.
@@ -332,11 +334,40 @@ python tools/emit_novel.py --rng 2
      polytope, before emission.  Aliased fp_hashes are recorded in
      each manifest entry's `aliases` field for forward traceability.
 
+  *Stage B — H4-orbit-equivalent kernels.*  The deeper failure: kernels
+  that are *not* scalar multiples of each other — but lie in the same
+  orbit of the source polytope's symmetry group — produce 3D shapes
+  that are rigid-motion equivalent (rotation + reflection + scale).
+  For example, the bitruncated 120-cell has 120 truncated-icosahedron
+  cells in a single H₄ orbit; their cell-centroid directions occupy
+  ~60 distinct lines through the origin.  Each line is its own
+  direction class (Stage A doesn't merge them), but every projection
+  along an orbit-equivalent kernel produces the same 3D shape up to
+  rotation.  After projection these shapes have an *identical* sorted
+  pairwise-distance multiset to FP precision, but
+  `shape_fingerprint`'s 3-decimal binning shifts on values sitting on
+  a rounding boundary, yielding different fp_hashes for what is
+  geometrically a single shape.  Stage B catches this by reading each
+  emitted .vZome file and grouping by an exact geometric signature:
+  the sorted pairwise-distance multiset (rotation/reflection/scale
+  invariant) plus the edge-length multiset.  Implemented in
+  `tools/dedup_corpus_by_shape.dedup_manifest_by_shape`, called
+  automatically as a post-emission pass in `emit_novel.py` and
+  available as a standalone CLI:
+
+  ```
+  python tools/dedup_corpus_by_shape.py
+  ```
+
   The corresponding repair on a pre-fix manifest is
-  `tools/dedup_corpus_by_direction.py`, which deletes the spurious
-  vZome files in place and adds an `aliases` list to the canonical
-  entries.  It was used to collapse 208→164 entries in the rng=2
-  manifest produced before this dedup pass existed.
+  `tools/dedup_corpus_by_direction.py` (Stage A only) and
+  `tools/dedup_corpus_by_shape.py` (Stage B; supersedes the former).
+  At rng=2 these two passes collapsed 235 → 208 → 164 → 60 entries
+  (raw fp_hashes → after Stage A on the search records → after Stage A
+  on the manifest → after Stage B on the emitted corpus); the H₄
+  omnitruncated 120-cell alone went from 38 → 1.  Stage B is also
+  available as `tools/audit_shape_duplicates.py` for inspection
+  without deletion.
 - **Caches and resumability.**
   - Step-1 hits → `ongoing_work/kernels_<group>_rng<N>.npy`.  Loaded
     caches are run through the direction-dedup step, so old caches do
