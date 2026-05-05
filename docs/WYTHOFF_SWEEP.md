@@ -404,32 +404,38 @@ The reproducibility script is preserved as
 
 The default sweep uses `rng = 2`, generating 195 312 candidate kernel
 directions per Step-1 search and ~3 × that per Step-2 zomeable-check.
-A targeted probe at `rng = 3` (2 882 400 directions, ~15 × the rng = 2
-candidates) was run on representative cases.
+Targeted probes at `rng = 3` (2 882 400 directions, ~15 × the rng = 2
+candidates) and `rng = 4` (21 523 360 directions, ~110 × rng = 2)
+were run on representative cases.
 
-Among the **regulars** all rng = 3 counts equal master's hand-curated
-counts (within the search engine's Stage-A fingerprint dedup):
+Among the **regulars**, every rng = 3 and rng = 4 count matches
+master's hand-curated count exactly after the full snap+dedup
+pipeline:
 
-| polytope | rng = 2 raw | rng = 3 raw | master |
-|----------|------------:|------------:|-------:|
-| 5-cell        | 4   | 4   | 4 |
-| 16-cell       | 6 ⁵ | 6   | 6 |
-| 24-cell       | 3   | 3   | 3 |
-| tesseract     | 32 ⁶| 129 | 9 ⁶ |
+| polytope | V    | rng = 2 raw | rng = 3 raw | rng = 4 raw | rng = 4 snap | rng = 4 unique | master |
+|----------|-----:|------------:|------------:|------------:|-------------:|---------------:|-------:|
+| 5-cell        |   5 | 4   | 4   |   4 |  4 |  4 | 4 |
+| 16-cell       |   8 | 6 ⁵ | 6   |   6 |  6 |  6 | 6 |
+| 24-cell       |  24 | 3   | 3   |   3 |  3 |  3 | 3 |
+| tesseract     |  16 | 32 ⁶| 129 | 344 | 11 |  8 | 9 ⁶ |
 
 ⁵ At rng = 2 the *full-search* count is 6, matching master.  The
 pipeline restricts to regular-only kernels and finds 3 (see kernel-
 completeness audit above).
 
 ⁶ The tesseract is an outlier with a documented infinite-family
-behaviour: its rng = 1, 2, 3 raw fingerprint counts are 8, 32, 129,
-matching the
+behaviour: its rng = 1, 2, 3 raw fingerprint counts are 8, 32, 129
+(matching the
 [`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
-master theorem exactly.  Master's 9 hand-curated tesseract files are
-a curated subset chosen for graphic distinctness; the full count at
-any rng is `≈ 8·rng² + O(rng)` due to the cube-within-cube parametric
-family.  This is a *property of the tesseract only* — no other 4-
-polytope shows kernel-count growth at rng = 3.
+master theorem exactly), and at rng = 4 raw fingerprints jump to
+344.  But of those 344 only **11 snap to ℤ[φ]³** — the cuboid family
+is parametrised by `(a, b) ∈ ℤ[φ]²` with `a² + b² ∈ ℤ[φ]` (silver-
+ratio coordinates rapidly fall out of `ℚ(φ)`).  After Stage-B dedup
+8 distinct vZome shapes remain.  Master's hand-curated 9 reflect a
+stable subset chosen for graphic distinctness; the rng = 4 search
+finds 8 of them in this single run, validating the search engine's
+behaviour on the most numerically demanding regular.  No 5-cell /
+16-cell / 24-cell shape was missed at any rng tested.
 
 Among the **descendants** the picture is more nuanced: V ≥ 60
 polytopes pick up additional Stage-A fingerprint groups at rng = 3
@@ -461,19 +467,22 @@ binning in `shape_fingerprint`.  No new `.vZome` files emerged.  The
 full rng = 3 snap-test data is preserved at
 [`ongoing_work/rng3_snaptest_summary.json`](../ongoing_work/rng3_snaptest_summary.json)
 and
-[`ongoing_work/rng3_dedup_summary.json`](../ongoing_work/rng3_dedup_summary.json)
+[`ongoing_work/rng3_dedup_summary.json`](../ongoing_work/rng3_dedup_summary.json),
+the rng = 4 data at
+[`ongoing_work/rng4_snaptest_summary.json`](../ongoing_work/rng4_snaptest_summary.json)
 (probe scripts in [`ongoing_work/probes/`](../ongoing_work/probes/)).
 
-The current corpus is therefore **stable under rng = 3** for every
-polytope where a snap+dedup test was feasible (5-cell V = 5,
-16-cell V = 8, 24-cell V = 24, cantitruncated/runcitruncated/
-omnitruncated 5-cell V = 60–120, cantellated 16-cell V = 96 —
-representative across A₄, B₄, F₄ at low to moderate V).  The H₄
-descendants (V ≥ 720, ~3600 edges each) make rng = 3 search
-infeasible per case at ~hours of compute each on the present
-implementation; the 600-cell and 120-cell families' single-shape
-claim at rng = 2 is consistent with their high symmetry but has not
-been independently re-verified at rng ≥ 3.
+The current corpus is therefore **stable under rng = 3 (and the
+regulars under rng = 4)** for every polytope where the snap+dedup
+test was feasible (5-cell V = 5, 16-cell V = 8, 24-cell V = 24,
+tesseract V = 16, cantitruncated/runcitruncated/omnitruncated 5-cell
+V = 60–120, cantellated 16-cell V = 96 — representative across A₄,
+B₄, F₄ at low to moderate V).  The H₄ descendants (V ≥ 720, ~3600
+edges each) make rng ≥ 3 search infeasible per case at ~hours of
+compute each on the present implementation; the 600-cell and
+120-cell families' single-shape claim at rng = 2 is consistent with
+their high symmetry but has not been independently re-verified at
+rng ≥ 3.
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
