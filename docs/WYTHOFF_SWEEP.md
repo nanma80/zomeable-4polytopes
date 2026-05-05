@@ -519,52 +519,55 @@ with the rng = 3 / rng = 4 stability proven above for the regulars
 and the small Wythoff descendants, and adds two non-Wythoffian
 calibration points to that picture.
 
-### B₄ rng = 4 finding: rectified tesseract grows by 3 shapes
+### B₄ rng = 4 finding: gap-bearing B₄ descendants grow by 3 shapes each
 
 The rng = 3 / rng = 4 snap+dedup probes above were focused on
 A₄ descendants and the regulars.  Re-running the rng = 4 snap+dedup
-test on a small sample of B₄ Wythoff descendants surfaces a new
-result: at rng = 4 the **rectified tesseract gains 3 zomeable shapes
-that the rng = 2 sweep does not find**.  The kernel-completeness
-audit (preceding subsection) had already noted a "gap 4" between the
-production pipeline (3 vZome files) and the full rng = 2 search
-(7 raw fingerprints) for this polytope; what was unknown until now
-is whether those extra fingerprints could *snap to ℤ[φ]³* under any
-zomeable kernel direction.  At rng = 4 they can:
+test on B₄ Wythoff descendants whose kernel-completeness audit shows
+a non-zero gap surfaces a new result: at rng = 4 these polytopes
+**each gain 3 zomeable shapes that the rng = 2 sweep does not find**.
+The kernel-completeness audit (preceding subsection) had already noted
+"gap 4" rows for these polytopes (3 vZome files in production vs. 7
+raw fingerprints in the full rng = 2 search); what was unknown until
+now is whether those extra fingerprints could *snap to ℤ[φ]³* under
+any zomeable kernel direction.  At rng = 4 they can:
 
-| polytope            |  V |   E | corpus (rng = 2) | rng = 4 raw fp | snapped | Stage-B unique | in corpus | new |
-|:--------------------|---:|----:|-----------------:|---------------:|--------:|---------------:|----------:|----:|
-| rectified tesseract | 32 |  96 |                3 |              7 |       7 |              6 |         3 |   3 |
+| polytope             |   V |    E | corpus (rng = 2) | rng = 4 raw fp | snapped | Stage-B unique | in corpus | new |
+|:---------------------|----:|-----:|-----------------:|---------------:|--------:|---------------:|----------:|----:|
+| rectified tesseract  |  32 |   96 |                3 |              7 |       7 |              6 |         3 |   3 |
+| truncated 16-cell    |  48 |  120 |                3 |              7 |       7 |              6 |         3 |   3 |
 
-All 3 new shapes have V = 32, E = 96, a 4-edge-length signature
-((1.0, 24), (1.47337, 24), (1.61803, 24), (1.7013, 24)), and use only
-the 4 standard zometool strut colours.  Their snapped 4-D kernel
-directions all involve coordinates of size 4φ + 2 ≈ 8.47 (i.e.,
-ℤ[φ]-integers that lie outside the rng = 2 candidate set), which
-explains why the rng = 2 sweep cannot reach them: the relevant
-kernel directions simply don't exist among rng = 2 candidates.  The
-existing rng = 2 corpus (V = 20 face-first square, V = 20 cell-first
-cuboctahedron, V = 32 cell-first tetrahedron) is recovered identically.
+In both cases the same Stage-A → Stage-B collapse pattern holds: 7 raw
+fingerprints reduce to 6 unique shape signatures (one fingerprint pair
+collides on the same canonical shape), and the 3 existing rng = 2
+shapes are recovered identically.  All new shapes use only the 4
+standard zometool strut colours and share the same 4-edge-length
+signature shape `((1.0, k), (1.47337, k), (1.61803, k), (1.7013, k))`
+where `k = 24` for the rectified tesseract (V = 32) and `k = 30` for
+the truncated 16-cell (V = 48).  Their snapped 4-D kernel directions
+all involve coordinates of size 4φ + 2 ≈ 8.47 or 9φ + 2 ≈ 9.47
+(ℤ[φ]-integers that lie outside the rng = 2 candidate set), which
+explains why the rng = 2 sweep cannot reach them: the relevant kernel
+directions simply don't exist among rng = 2 candidates.
 
-The 3 new shapes and the per-fingerprint kernel-direction data are
+The new shapes and the per-fingerprint kernel-direction data are
 preserved at
-[`ongoing_work/rectified_tesseract_rng4/`](../ongoing_work/rectified_tesseract_rng4/)
-and
-[`ongoing_work/rectified_tesseract_rng4.json`](../ongoing_work/rectified_tesseract_rng4.json).
-The probe script is
-[`ongoing_work/probes/rect_tess_rng4_focused.py`](../ongoing_work/probes/rect_tess_rng4_focused.py).
+[`ongoing_work/rectified_tesseract_rng4/`](../ongoing_work/rectified_tesseract_rng4/),
+[`ongoing_work/truncated_16cell_rng4/`](../ongoing_work/truncated_16cell_rng4/),
+and the matching `*.json` files.  The probe scripts are in
+[`ongoing_work/probes/`](../ongoing_work/probes/).
 
 This contradicts the earlier "corpus is stable at rng = 4"
 shorthand: the regulars (5-cell, 16-cell, 24-cell) are stable at
 rng = 4, the tesseract follows its known infinite cuboid family,
 A₄ Wythoff descendants are stable at rng = 3, but the B₄ Wythoff
 descendants whose kernel-completeness audit shows a non-zero gap
-appear to gain real zomeable shapes at higher rng.  The
-**rectified tesseract pattern (gap 4 at rng = 2 → 3 unique new
-shapes at rng = 4) is therefore expected to repeat across the other
-five gap-bearing B₄ descendants** (16-cell, 24-cell-as-B₄,
-truncated 16-cell, cantellated 16-cell, cantitruncated 16-cell);
-this is the natural next direction for extending the corpus.
+gain real zomeable shapes at higher rng.  The
+**3-new-shapes-per-polytope pattern is now confirmed on two of the
+six gap-bearing B₄ descendants** (rectified tesseract and truncated
+16-cell); the four remaining cases (16-cell, 24-cell-as-B₄,
+cantellated 16-cell, cantitruncated 16-cell) are the natural next
+extension targets.
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
