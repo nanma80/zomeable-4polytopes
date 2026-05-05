@@ -434,27 +434,46 @@ polytope shows kernel-count growth at rng = 3.
 Among the **descendants** the picture is more nuanced: V ≥ 60
 polytopes pick up additional Stage-A fingerprint groups at rng = 3
 (omnitruncated 5-cell goes 10 → 14, cantellated 16-cell ≡ rectified
-24-cell goes 5 → 7, etc.).  These extra fingerprints have not been
-run through the Stage-B geometric-signature dedup or the snap-to-
-ℤ[φ]³ filter, so it is not yet known how many — if any — would
-emerge as new `.vZome` files.  Based on the rng = 2 evidence (B₄/F₄
-snap-failures dominate at large V), the most likely outcome is **no
-new files**, but this is not a proof.  The full rng = 3 descendant
-probe is preserved at
-[`ongoing_work/rng3_probe_partial.json`](../ongoing_work/rng3_probe_partial.json)
-and [`ongoing_work/rng3_descendants.json`](../ongoing_work/rng3_descendants.json)
+24-cell goes 5 → 7, etc.).  A targeted snap-test on four of these
+cases — cantitruncated 5-cell, runcitruncated 5-cell, omnitruncated
+5-cell, and cantellated 16-cell — fed each rng = 3 Stage-A
+fingerprint through `lib.emit_generic.project_and_emit` and then
+through the same Stage-B 3D-shape-congruence dedup
+(`tools/dedup_corpus_by_shape.shape_signature`) used by the
+production pipeline:
+
+| polytope | rng = 2 corpus files | rng = 3 raw fp | rng = 3 snap pass | rng = 3 unique after Stage B | new vs corpus |
+|----------|---------------------:|---------------:|------------------:|-----------------------------:|--------------:|
+| cantitruncated 5-cell  | 4 | 10 | 10 | 4 | **0** |
+| runcitruncated 5-cell  | 4 |  9 |  9 | 4 | **0** |
+| omnitruncated 5-cell   | 4 | 14 | 14 | 4 | **0** |
+| cantellated 16-cell ⁵⁄ | 3 |  7 |  7 | 3 | **0** |
+
+⁵⁄ Aliased to F₄ rectified 24-cell — the same uniform polytope, see
+the [Equivalences](#equivalences-b4f4-overlap) table.
+
+**Every additional rng = 3 Stage-A fingerprint snapped to ℤ[φ]³ but
+collapsed onto an existing rng = 2 shape under Stage-B dedup.**  The
+extras are orbit-equivalent kernel directions (the polytope's own
+symmetry group) whose 3D projections are rigid-motion equivalent;
+their fingerprints differ only because of the floating-point-precision
+binning in `shape_fingerprint`.  No new `.vZome` files emerged.  The
+full rng = 3 snap-test data is preserved at
+[`ongoing_work/rng3_snaptest_summary.json`](../ongoing_work/rng3_snaptest_summary.json)
+and
+[`ongoing_work/rng3_dedup_summary.json`](../ongoing_work/rng3_dedup_summary.json)
 (probe scripts in [`ongoing_work/probes/`](../ongoing_work/probes/)).
 
-The current corpus is therefore stable under `rng = 3` for the
-regulars (5-cell, 16-cell, 24-cell, 600-cell tested explicitly — see
-[`ongoing_work/rng3_probe_partial.json`](../ongoing_work/rng3_probe_partial.json)).
-The descendants need a full snap pass to verify no new `.vZome` files
-emerge from their extra Stage-A fingerprints.  H₄ descendants
-(V ≥ 720, ~3600 edges each) make rng = 3 search infeasible per case
-at ~hours of compute each on the present implementation; the 600-cell
-and 120-cell families' single-shape claim at rng = 2 is consistent
-with their high symmetry but has not been independently re-verified
-at rng ≥ 3.
+The current corpus is therefore **stable under rng = 3** for every
+polytope where a snap+dedup test was feasible (5-cell V = 5,
+16-cell V = 8, 24-cell V = 24, cantitruncated/runcitruncated/
+omnitruncated 5-cell V = 60–120, cantellated 16-cell V = 96 —
+representative across A₄, B₄, F₄ at low to moderate V).  The H₄
+descendants (V ≥ 720, ~3600 edges each) make rng = 3 search
+infeasible per case at ~hours of compute each on the present
+implementation; the 600-cell and 120-cell families' single-shape
+claim at rng = 2 is consistent with their high symmetry but has not
+been independently re-verified at rng ≥ 3.
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 

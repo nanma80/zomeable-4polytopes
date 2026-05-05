@@ -1,0 +1,20 @@
+{
+  "_note": "rng=3 Stage-A fingerprint counts on Wythoff descendants. The probe was stopped before completing cantitruncated 16-cell, truncated 16-cell, rectified 24-cell, bitruncated 24-cell.",
+  "_methodology": "Independent rng=3 search on each polytope (no regular-only seed restriction). Counts are post-Stage-A fingerprint dedup. Snap-to-Z[phi]^3 status NOT tested in this probe; see rng3_snaptest_*.json for that.",
+  "results": [
+    {"group": "A4", "bitmask": [1,1,0,0], "name": "truncated 5-cell",      "V": 20,  "E": 40,  "rng2_full": null, "rng3": 4,  "time_seconds": 208.8, "manifest_files": 4, "delta_vs_manifest": 0},
+    {"group": "A4", "bitmask": [1,0,0,1], "name": "runcinated 5-cell",     "V": 20,  "E": 60,  "rng2_full": null, "rng3": 4,  "time_seconds": 299.7, "manifest_files": 4, "delta_vs_manifest": 0},
+    {"group": "A4", "bitmask": [1,1,1,0], "name": "cantitruncated 5-cell", "V": 60,  "E": 120, "rng2_raw": 7,    "rng3": 10, "time_seconds": 645.0, "manifest_files": 4, "delta_vs_rng2_raw": 3},
+    {"group": "A4", "bitmask": [1,1,0,1], "name": "runcitruncated 5-cell", "V": 60,  "E": 150, "rng2_raw": 6,    "rng3": 9,  "time_seconds": 893.3, "manifest_files": 4, "delta_vs_rng2_raw": 3},
+    {"group": "A4", "bitmask": [1,1,1,1], "name": "omnitruncated 5-cell",  "V": 120, "E": 240, "rng2_raw": 10,   "rng3": 14, "time_seconds": 1959.4,"manifest_files": 4, "delta_vs_rng2_raw": 4},
+    {"group": "B4", "bitmask": [0,1,0,0], "name": "rectified tesseract",   "V": 32,  "E": 96,  "rng2_full": 7,   "rng3": 7,  "time_seconds": 537.0, "manifest_files": 3, "delta_vs_rng2_full": 0},
+    {"group": "B4", "bitmask": [0,0,1,0], "name": "24-cell-as-B4",         "V": 24,  "E": 96,  "rng2_full": 3,   "rng3": 3,  "time_seconds": 528.1, "manifest_files": 3, "_note": "alias of F4 (1,0,0,0)", "delta_vs_rng2_full": 0},
+    {"group": "B4", "bitmask": [0,1,0,1], "name": "cantellated 16-cell",   "V": 96,  "E": 288, "rng2_full": 5,   "rng3": 7,  "time_seconds": 3146.1,"manifest_files": 3, "_note": "alias of F4 rectified 24-cell", "delta_vs_rng2_full": 2}
+  ],
+  "_skipped_due_to_runtime": [
+    {"group": "B4", "bitmask": [0,1,1,1], "name": "cantitruncated 16-cell", "V": 192, "E": 384, "_note": "killed mid-search; estimated ~150 min runtime"},
+    {"group": "B4", "bitmask": [0,0,1,1], "name": "truncated 16-cell",      "V": 48,  "E": 120, "_note": "not started"},
+    {"group": "F4", "bitmask": [0,1,0,0], "name": "rectified 24-cell",      "V": 96,  "E": 288, "_note": "not started; would equal cantellated 16-cell since they are aliases"},
+    {"group": "F4", "bitmask": [0,1,1,0], "name": "bitruncated 24-cell",    "V": 288, "E": 576, "_note": "not started; estimated ~5h runtime"}
+  ]
+}
