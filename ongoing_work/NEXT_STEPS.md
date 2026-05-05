@@ -1,5 +1,16 @@
 # Wythoff sweep status — resume notes
 
+## Terminology pointer
+The codebase identifier `novel` (e.g. `tools/emit_novel.py`,
+`novel_rng2.json`, the `[NOVEL]` tag in `analyze_sweep.py`) means
+*"Wythoff projection whose 3D shape is not congruent to any of the 6
+regulars' own projections"* — a redundancy filter only.  Under the
+stronger structural definition ("a shape NOT obtainable by projecting
+some Wythoff variant under a kernel inherited from a regular"), the set
+is **provably empty by Lemma A**, so all 60 corpus shapes are
+**natural Wythoff extensions** of regular polytope projections.  See
+`docs/WYTHOFF_SWEEP.md#terminology-natural-vs-novel`.
+
 ## State (current)
 - Branch: `wip/wythoff-sweep` — fully pushed
 - Step 1 (regular-polytope kernels at rng=2): complete for all four
@@ -8,20 +19,26 @@
 - Step 2 (Wythoff variants vs group kernels): **47 of 47** complete
   - A4: 9/9, B4: 15/15, F4: 8/8 (24-cell ≡ B4 (0,0,1,0)), H4: 15/15
 - Aggregate JSONL: `ongoing_work/shapes_rng2.jsonl` (49 records)
-- Novel inventory: `ongoing_work/novel_rng2.json` — 235 distinct novel
-  fp_hashes (raw); 164 after Stage A (kernel-direction dedup); **60
-  distinct after Stage B (3D shape-congruence dedup)**
+- Natural-extension inventory (legacy filename
+  `ongoing_work/novel_rng2.json`): 235 distinct fp_hashes (raw); 164
+  after Stage A (kernel-direction dedup); **60 distinct after Stage B
+  (3D shape-congruence dedup)**
 - vZome output: `output/wythoff_sweep/` — 60 .vZome files in
   per-polytope subfolders + manifest.json
   (per-group distinct after dedup: A4 32, B4 13, F4 2, H4 13)
 - Census documented in `docs/WYTHOFF_SWEEP.md`.
 
 ## Resolved caveats
-- **B4 tesseract 32 shapes**: previously documented as a structural
-  truncation of an infinite split-cuboid family.  Re-investigated with
-  the new direction-dedup tool: of the 32, one is a spurious duplicate
-  from the SVD-basis fp_hash bug (see "Spurious-fp_hash bug" below);
-  the genuine count is 31 (1 sporadic + 30 cuboid).
+- **B4 tesseract 32 shapes** (regular tesseract analysis at
+  `output/8cell/CLASSIFICATION.md`, separate from the Wythoff sweep):
+  previously documented as a structural truncation of an infinite
+  split-cuboid family.  Re-investigated with the new direction-dedup
+  tool: of the 32, one is a spurious duplicate from Stage A of the
+  fp_hash bug (see below); the post-Stage-A count is 31 (1 sporadic
+  + 30 cuboid).  Stage B (3D shape-congruence) has *not* been re-run
+  on this regular-tesseract catalogue; if applied it would likely
+  collapse further (most of the 30 cuboid kernels are H4-orbit-
+  equivalent).
 - **B4/F4 snap_failed cases**: structural, not tunable.  These
   projections place balls in `ℤ[√2]³` (silver ratio); `√2 ∉ Q(φ)` so
   vZome cannot represent them at any rational scale.
@@ -40,9 +57,9 @@
   whole corpus needs to be uniformly rescaled (the user requested an
   additional φ⁻² scale-down for visual aesthetics; commit e6133dd).
 - **Output organisation**: `tools/emit_novel.py` now writes each
-  novel shape into a subfolder named for the polytope's common name
-  (e.g. `omnitruncated_120-cell/`), making the output tree browsable
-  by Wythoff form.
+  natural-extension shape into a subfolder named for the polytope's
+  common name (e.g. `omnitruncated_120-cell/`), making the output tree
+  browsable by Wythoff form.
 - **Filenames**: `<label>[_<idx>]_<hash>.vZome`, where `label` is the
   kernel-direction classification (`vertex_first`, `cell_first_<celltype>`,
   `face_first_<polygon>`, `edge_first`, `oblique`).  Computed by
@@ -88,6 +105,7 @@
     3. `tools/audit_shape_duplicates.py` is the inspection-only
        counterpart (reports without deleting).
 
-  The B4 tesseract "32 shapes" was actually 1 distinct shape after
-  Stage B (all 32 raw fp_hashes were rigid-motion duplicates).
+  The B4 tesseract "32 shapes" remark above belongs to the regular-
+  tesseract catalogue and is *not* in the Wythoff sweep manifest;
+  Stage B has not been applied there yet.
 

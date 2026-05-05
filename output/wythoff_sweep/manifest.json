@@ -1079,7 +1079,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\cantellated_16-cell\\cell_first_cuboctahedron_5452b20702.vZome",
+      "file": "wythoff_sweep\\rectified_24-cell\\cell_first_cuboctahedron_5452b20702.vZome",
       "fp_hash": "5452b207028c5f19",
       "group": "B4",
       "kernel": [
@@ -1092,11 +1092,21 @@
       "label_subtype": "cuboctahedron",
       "n_balls": 60,
       "shape_idx": 0,
-      "source_polytope": "cantellated 16-cell",
+      "source_polytope": "rectified 24-cell",
       "status": "ok",
       "strut_counts": {
         "B": 72,
         "G": 84
+      },
+      "alias_of": {
+        "source_polytope": "cantellated 16-cell",
+        "group": "B4",
+        "bitmask": [
+          0,
+          1,
+          0,
+          1
+        ]
       }
     },
     {
@@ -1106,7 +1116,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\cantellated_16-cell\\cell_first_cube_cca712ec6e.vZome",
+      "file": "wythoff_sweep\\rectified_24-cell\\cell_first_cube_cca712ec6e.vZome",
       "fp_hash": "cca712ec6eab236a",
       "group": "B4",
       "kernel": [
@@ -1119,11 +1129,21 @@
       "label_subtype": "cube",
       "n_balls": 52,
       "shape_idx": 1,
-      "source_polytope": "cantellated 16-cell",
+      "source_polytope": "rectified 24-cell",
       "status": "ok",
       "strut_counts": {
         "B": 36,
         "Y": 96
+      },
+      "alias_of": {
+        "source_polytope": "cantellated 16-cell",
+        "group": "B4",
+        "bitmask": [
+          0,
+          1,
+          0,
+          1
+        ]
       }
     },
     {
@@ -1214,7 +1234,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\cantitruncated_16-cell\\cell_first_truncated_octahedron_598a9495c4.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\cell_first_truncated_octahedron_598a9495c4.vZome",
       "fp_hash": "598a9495c4a6ee08",
       "group": "B4",
       "kernel": [
@@ -1227,11 +1247,21 @@
       "label_subtype": "truncated_octahedron",
       "n_balls": 120,
       "shape_idx": 0,
-      "source_polytope": "cantitruncated 16-cell",
+      "source_polytope": "truncated 24-cell",
       "status": "ok",
       "strut_counts": {
         "B": 96,
         "G": 120
+      },
+      "alias_of": {
+        "source_polytope": "cantitruncated 16-cell",
+        "group": "B4",
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ]
       }
     },
     {
@@ -1241,7 +1271,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\cantitruncated_16-cell\\cell_first_cube_5f5834c161.vZome",
+      "file": "wythoff_sweep\\truncated_24-cell\\cell_first_cube_5f5834c161.vZome",
       "fp_hash": "5f5834c16179095e",
       "group": "B4",
       "kernel": [
@@ -1254,11 +1284,21 @@
       "label_subtype": "cube",
       "n_balls": 96,
       "shape_idx": 1,
-      "source_polytope": "cantitruncated 16-cell",
+      "source_polytope": "truncated 24-cell",
       "status": "ok",
       "strut_counts": {
         "B": 48,
         "Y": 128
+      },
+      "alias_of": {
+        "source_polytope": "cantitruncated 16-cell",
+        "group": "B4",
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ]
       }
     },
     {

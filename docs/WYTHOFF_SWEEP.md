@@ -24,7 +24,51 @@ gives the well-known total of 47 + 2 ≡ 49 — but the snub 24-cell is
 and is already enumerated in `output/snub24cell/`. Likewise the grand
 antiprism is in `output/grand_antiprism/`.
 
+## Terminology: "natural" vs "novel"
+
+Throughout this repository — including filenames like
+`tools/emit_novel.py`, `ongoing_work/novel_rng<N>.json`, and the
+`[NOVEL]` tag in `tools/analyze_sweep.py` — the word **"novel"** is
+used in a *narrow, deduplication* sense:
+
+> **codebase "novel"** = a Wythoff projection's 3D shape that is not
+> congruent to any of the 6 regular polytopes' own zomeable
+> projections.
+
+This is a redundancy filter, not a structural-novelty claim.  The
+regular polytopes' projections are catalogued separately in
+`output/{5cell,8cell,16cell,24cell,120cell,600cell}/`; the codebase's
+"novel" tag just keeps the Wythoff-sweep output from re-emitting any
+Wythoff projection that happens to coincide with one of those.
+Empirically at rng=2 the filter caught **0** cases (descendant
+polytopes have strictly more vertices than their regular, so their
+projections cannot coincide).
+
+This is **distinct from**, and weaker than, the more intuitive meaning
+of "genuinely new":
+
+> **structurally novel** = a 3D shape that is *not* obtainable by
+> projecting some Wythoff polytope along a kernel direction that
+> already worked for one of the 6 regulars.
+
+Under the structurally-novel definition, **the set is provably empty**
+at every kernel range, by *Lemma A* (the representation-theoretic
+shortcut on which the whole sweep is built — see [§Method](#method)
+below): every zomeable kernel of any Wythoff variant `P_G(b)` is also
+a zomeable kernel of the regular `P_G((1,0,0,0))` of the same group.
+So every Wythoff zomeable shape this sweep produces is a **"natural
+Wythoff extension"** of a regular's projection — applying the
+truncation/cantellation/etc. operation in 4D and projecting under a
+kernel direction the regular already provides.
+
+The 60 .vZome files in `output/wythoff_sweep/` are therefore best
+understood as **"every distinct natural Wythoff extension of the 6
+regulars' projections at rng=2, modulo 3D-shape congruence and
+modulo coincidence with a regular's own projection"**.  There are no
+"surprise" shapes outside this scope.
+
 ## Method
+
 
 We re-use the search engine from `lib/search_engine.py` (the same engine
 used for the 8 canonical polytopes) but exploit the following
@@ -68,6 +112,20 @@ Step 1 for H₄ takes ~48 minutes single-threaded; results are cached at
 All shape counts below are at rng = 2 across the full corpus of
 47 unique convex uniform 4-polytopes.
 
+Each table reports two columns:
+
+- **raw fp²** — the number of distinct `lib.search_engine.shape_fingerprint`
+  hashes produced by step-2 of the search (the *pre-dedup, pre-emit*
+  count).
+- **files²** — the number of `.vZome` files that actually survive in
+  `output/wythoff_sweep/<polytope>/` (the *post-dedup, post-emit* count).
+  This is the user-visible corpus.  For the 6 regulars (5-cell,
+  tesseract, 16-cell, 24-cell, 600-cell, 120-cell) the corresponding
+  models live in their own dedicated folders (`output/5cell/`,
+  `output/8cell/`, `output/16cell/`, `output/24cell/`,
+  `output/600cell/`, `output/120cell/`) and are noted as `→ <folder>` in
+  the **files** column rather than counted here.
+
 The B₄ tesseract figure of **32 shapes** matches the documented
 tesseract enumeration at rng=2 in
 [`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md):
@@ -77,39 +135,78 @@ without bound)". The growth comes from the infinite split-cuboid family
 forms have only 1–3 shapes each because their edge directions break the
 support-2 kernel automatic-zomeability argument.
 
+² The **raw fp** column is the original step-2 census, kept here as a
+reference because some figures (notably the omnitruncated 120-cell's
+65 distinct fingerprints, and the cantitruncated 600-cell's 26) are
+of independent interest as sweep-engine load metrics.  The **files**
+column is what is shipped on disk after three downstream filters are
+applied to that raw census:
+
+  1. **Stage A direction dedup** (`tools/dedup_corpus_by_direction.py`):
+     collapses orbit-equivalent kernels at φᵏ scale that
+     `shape_fingerprint`'s 3-decimal binning had over-counted.
+  2. **Snap-to-ℤ[φ]³ rejection**: candidate shapes whose snapped
+     vertices fall outside ℤ[φ]³ are flagged `status=snap_failed` in the
+     manifest and *no `.vZome` file is emitted*.  This is why several
+     B₄/F₄ rows show **files = 0** despite a non-zero raw-fp count
+     (e.g. truncated tesseract: 3 raw fp, all 3 snap-fail → 0 files).
+  3. **Stage B 3D shape-congruence dedup**
+     (`tools/dedup_corpus_by_shape.py`): the rotation/reflection/scale-
+     invariant pairwise-distance multiset, computed directly on the
+     emitted `.vZome` ℤ[φ] coordinates, finds orbit-equivalent kernels
+     at cos = ±½ that Stage A missed.  This is the dominant collapse
+     for high-V H₄ polytopes (omnitruncated 120-cell: 38 ok → 1 file).
+
+The omnitruncated 120-cell row is the most extreme example:
+**65 raw fp → 38 ok manifest entries (Stage A) → 1 file (Stage B)**.
+
 ### A₄ (5-cell family)
 
-| bitmask    | name                       | V    | E    | shapes |
-|------------|----------------------------|-----:|-----:|-------:|
-| (1,0,0,0)  | 5-cell                     | 5    | 10   | 4      |
-| (0,1,0,0)  | rectified 5-cell           | 10   | 30   | 4      |
-| (1,1,0,0)  | truncated 5-cell           | 20   | 40   | 4      |
-| (1,0,1,0)  | cantellated 5-cell         | 30   | 90   | 4      |
-| (0,1,1,0)  | bitruncated 5-cell         | 30   | 60   | 4      |
-| (1,1,1,0)  | cantitruncated 5-cell      | 60   | 120  | 7      |
-| (1,0,0,1)  | runcinated 5-cell          | 20   | 60   | 4      |
-| (1,1,0,1)  | runcitruncated 5-cell      | 60   | 150  | 6      |
-| (1,1,1,1)  | omnitruncated 5-cell       | 120  | 240  | 10     |
+| bitmask    | name                       | V    | E    | raw fp² | files² |
+|------------|----------------------------|-----:|-----:|--------:|-------:|
+| (1,0,0,0)  | 5-cell                     | 5    | 10   | 4       | → `output/5cell/` |
+| (0,1,0,0)  | rectified 5-cell           | 10   | 30   | 4       | 4 |
+| (1,1,0,0)  | truncated 5-cell           | 20   | 40   | 4       | 4 |
+| (1,0,1,0)  | cantellated 5-cell         | 30   | 90   | 4       | 4 |
+| (0,1,1,0)  | bitruncated 5-cell         | 30   | 60   | 4       | 4 |
+| (1,1,1,0)  | cantitruncated 5-cell      | 60   | 120  | 7       | 4 |
+| (1,0,0,1)  | runcinated 5-cell          | 20   | 60   | 4       | 4 |
+| (1,1,0,1)  | runcitruncated 5-cell      | 60   | 150  | 6       | 4 |
+| (1,1,1,1)  | omnitruncated 5-cell       | 120  | 240  | 10      | 4 |
+
+A₄ subtotal: 32 files.
 
 ### B₄ (tesseract / 16-cell family)
 
-| bitmask    | name                       | V    | E    | shapes |
-|------------|----------------------------|-----:|-----:|-------:|
-| (1,0,0,0)  | tesseract                  | 16   | 32   | 32 ¹   |
-| (0,1,0,0)  | rectified tesseract        | 32   | 96   | 3      |
-| (1,1,0,0)  | truncated tesseract        | 64   | 128  | 3      |
-| (0,0,1,0)  | 24-cell                    | 24   | 96   | 2      |
-| (1,0,1,0)  | cantellated tesseract      | 96   | 288  | 3      |
-| (0,1,1,0)  | bitruncated tesseract      | 96   | 192  | 3      |
-| (1,1,1,0)  | cantitruncated tesseract   | 192  | 384  | 3      |
-| (0,0,0,1)  | 16-cell                    | 8    | 24   | 3      |
-| (1,0,0,1)  | runcinated tesseract       | 64   | 192  | 3      |
-| (0,1,0,1)  | cantellated 16-cell        | 96   | 288  | 2      |
-| (1,1,0,1)  | runcitruncated tesseract   | 192  | 480  | 3      |
-| (0,0,1,1)  | truncated 16-cell          | 48   | 120  | 3      |
-| (1,0,1,1)  | runcitruncated 16-cell     | 192  | 480  | 3      |
-| (0,1,1,1)  | cantitruncated 16-cell     | 192  | 384  | 2      |
-| (1,1,1,1)  | omnitruncated tesseract    | 384  | 768  | 3      |
+| bitmask    | name                       | V    | E    | raw fp² | files² |
+|------------|----------------------------|-----:|-----:|--------:|-------:|
+| (1,0,0,0)  | tesseract                  | 16   | 32   | 32 ¹    | → `output/8cell/` |
+| (0,1,0,0)  | rectified tesseract        | 32   | 96   | 3       | 3 |
+| (1,1,0,0)  | truncated tesseract        | 64   | 128  | 3       | 0 (snap-fail) |
+| (0,0,1,0)  | 24-cell                    | 24   | 96   | 2       | → `output/24cell/` |
+| (1,0,1,0)  | cantellated tesseract      | 96   | 288  | 3       | 0 (snap-fail) |
+| (0,1,1,0)  | bitruncated tesseract      | 96   | 192  | 3       | 3 |
+| (1,1,1,0)  | cantitruncated tesseract   | 192  | 384  | 3       | 0 (snap-fail) |
+| (0,0,0,1)  | 16-cell                    | 8    | 24   | 3       | → `output/16cell/` |
+| (1,0,0,1)  | runcinated tesseract       | 64   | 192  | 3       | 0 (snap-fail) |
+| (0,1,0,1)  | cantellated 16-cell ³      | 96   | 288  | 2       | → `rectified_24-cell/` |
+| (1,1,0,1)  | runcitruncated tesseract   | 192  | 480  | 3       | 0 (snap-fail) |
+| (0,0,1,1)  | truncated 16-cell          | 48   | 120  | 3       | 3 |
+| (1,0,1,1)  | runcitruncated 16-cell     | 192  | 480  | 3       | 0 (snap-fail) |
+| (0,1,1,1)  | cantitruncated 16-cell ³   | 192  | 384  | 2       | → `truncated_24-cell/` |
+| (1,1,1,1)  | omnitruncated tesseract    | 384  | 768  | 3       | 0 (snap-fail) |
+
+B₄ subtotal: 9 files.  Five `0 (snap-fail)` rows have raw fp > 0
+but every candidate shape failed the snap-to-ℤ[φ]³ step required for
+vZome export — see the
+[snap-failure analysis](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records)
+below for why this happens (e.g. the truncated tesseract has shapes
+in ℤ[√2]³ but not ℤ[φ]³).
+
+³ The cantellated 16-cell is *the same uniform 4-polytope* as the
+rectified 24-cell, and the cantitruncated 16-cell is the same as the
+truncated 24-cell (see the [Equivalences](#equivalences-b4f4-overlap)
+section below).  Their .vZome files live under the canonical F₄ folder.
 
 ¹ The 32 tesseract shapes at rng=2 are the *finite truncation* of an
 infinite cuboid family. See
@@ -121,17 +218,26 @@ support-2 automatic-zomeability and have only 1–3 shapes each.
 
 ### F₄ (24-cell family)
 
-| bitmask    | name                       | V    | E    | shapes |
-|------------|----------------------------|-----:|-----:|-------:|
-| (1,0,0,0)  | 24-cell                    | (≡ B₄ (0,0,1,0)) | | (DUP) |
-| (0,1,0,0)  | rectified 24-cell          | 96   | 288  | 5      |
-| (1,1,0,0)  | truncated 24-cell          | 192  | 384  | 6      |
-| (1,0,1,0)  | cantellated 24-cell        | 288  | 864  | 2      |
-| (0,1,1,0)  | bitruncated 24-cell        | 288  | 576  | 1      |
-| (1,1,1,0)  | cantitruncated 24-cell     | 576  | 1152 | 2      |
-| (1,0,0,1)  | runcinated 24-cell         | 144  | 576  | 1      |
-| (1,1,0,1)  | runcitruncated 24-cell     | 576  | 1440 | 2      |
-| (1,1,1,1)  | omnitruncated 24-cell      | 1152 | 2304 | 1      |
+| bitmask    | name                       | V    | E    | raw fp² | files² |
+|------------|----------------------------|-----:|-----:|--------:|-------:|
+| (1,0,0,0)  | 24-cell ³                  | 24   | 96   | (≡ B₄ (0,0,1,0)) | → `output/24cell/` |
+| (0,1,0,0)  | rectified 24-cell ³        | 96   | 288  | 5       | 3 |
+| (1,1,0,0)  | truncated 24-cell ³        | 192  | 384  | 6       | 3 |
+| (1,0,1,0)  | cantellated 24-cell        | 288  | 864  | 2       | 0 (snap-fail) |
+| (0,1,1,0)  | bitruncated 24-cell        | 288  | 576  | 1       | 0 (snap-fail) |
+| (1,1,1,0)  | cantitruncated 24-cell     | 576  | 1152 | 2       | 0 (snap-fail) |
+| (1,0,0,1)  | runcinated 24-cell         | 144  | 576  | 1       | 0 (snap-fail) |
+| (1,1,0,1)  | runcitruncated 24-cell     | 576  | 1440 | 2       | 0 (snap-fail) |
+| (1,1,1,1)  | omnitruncated 24-cell      | 1152 | 2304 | 1       | 0 (snap-fail) |
+
+F₄ subtotal: 6 files (3 rectified + 3 truncated 24-cell).  The
+rectified- and truncated-24-cell counts include shapes originally
+discovered under the equivalent B₄ Wythoff names (see footnote ³ on the
+B₄ table and the [Equivalences](#equivalences-b4f4-overlap) section
+below).  Six F₄ forms snap-fail because their ball-coordinate fields
+contain √2; see the
+[snap-failure analysis](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records)
+below.
 
 ### H₄ (120-cell / 600-cell family)
 
@@ -140,23 +246,26 @@ required ~137 min CPU on a 24-core box for the step-2 group-by-shape
 pass; bounded RAM was achieved by the multiset shape-fingerprint path
 in `lib/search_engine.shape_fingerprint` (see implementation notes).
 
-| bitmask    | name                       | V     | E     | shapes |
-|------------|----------------------------|------:|------:|-------:|
-| (0,0,0,1)  | 600-cell                   | 120   | 720   | 1      |
-| (1,0,0,0)  | 120-cell                   | 600   | 1200  | 1      |
-| (0,0,1,0)  | rectified 600-cell         | 720   | 3600  | 2      |
-| (0,1,0,0)  | rectified 120-cell         | 1200  | 3600  | 1      |
-| (0,0,1,1)  | truncated 600-cell         | 1440  | 4320  | 2      |
-| (1,1,0,0)  | truncated 120-cell         | 2400  | 4800  | 3      |
-| (1,0,0,1)  | runcinated 120-cell        | 2400  | 7200  | 4      |
-| (1,0,1,0)  | cantellated 120-cell       | 3600  | 10800 | 5      |
-| (0,1,1,0)  | bitruncated 120-cell       | 3600  | 7200  | 4      |
-| (0,1,0,1)  | cantellated 600-cell       | 3600  | 10800 | 5      |
-| (1,0,1,1)  | runcitruncated 600-cell    | 7200  | 18000 | 11     |
-| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18060 | 6      |
-| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14520 | 11     |
-| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14508 | 26     |
-| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | 65     |
+| bitmask    | name                       | V     | E     | raw fp² | files² |
+|------------|----------------------------|------:|------:|--------:|-------:|
+| (0,0,0,1)  | 600-cell                   | 120   | 720   | 1       | → `output/600cell/` |
+| (1,0,0,0)  | 120-cell                   | 600   | 1200  | 1       | → `output/120cell/` |
+| (0,0,1,0)  | rectified 600-cell         | 720   | 3600  | 2       | 1 |
+| (0,1,0,0)  | rectified 120-cell         | 1200  | 3600  | 1       | 1 |
+| (0,0,1,1)  | truncated 600-cell         | 1440  | 4320  | 2       | 1 |
+| (1,1,0,0)  | truncated 120-cell         | 2400  | 4800  | 3       | 1 |
+| (1,0,0,1)  | runcinated 120-cell        | 2400  | 7200  | 4       | 1 |
+| (1,0,1,0)  | cantellated 120-cell       | 3600  | 10800 | 5       | 1 |
+| (0,1,1,0)  | bitruncated 120-cell       | 3600  | 7200  | 4       | 1 |
+| (0,1,0,1)  | cantellated 600-cell       | 3600  | 10800 | 5       | 1 |
+| (1,0,1,1)  | runcitruncated 600-cell    | 7200  | 18000 | 11      | 1 |
+| (1,1,0,1)  | runcitruncated 120-cell    | 7200  | 18060 | 6       | 1 |
+| (1,1,1,0)  | cantitruncated 120-cell    | 7200  | 14520 | 11      | 1 |
+| (0,1,1,1)  | cantitruncated 600-cell    | 7200  | 14508 | 26      | 1 |
+| (1,1,1,1)  | omnitruncated 120-cell     | 14400 | 28800 | 65      | 1 |
+
+H₄ subtotal: 13 files.  Every H₄ Wythoff descendant collapses to a
+single 3D shape after Stages A + B.
 
 (The cantitruncated, runcitruncated, and omnitruncated 7200/14400-vertex
 polytopes report slightly more than 7200/14400 vertices and the
@@ -165,22 +274,91 @@ rounding issue in `lib.wythoff.orbit`; the correct kernels and shape
 counts are still found because the search engine deduplicates
 internally.)
 
-H₄ shape diversity grows sharply with V: the cantitruncated 600-cell
-contributes 26 distinct shapes alone, and the omnitruncated 120-cell
-**65** — every one of its 432 hits lands in a distinct equivalence
-class.
+H₄ raw-fp diversity grows sharply with V: the cantitruncated 600-cell
+contributes 26 distinct fingerprints alone, and the omnitruncated
+120-cell **65** — every one of its 432 step-2 hits lands in a distinct
+fingerprint equivalence class.  After Stages A + B all 65 collapse to
+the same 3D shape (cell-first truncated icosidodecahedron).
 
-## Novel-shape inventory (rng = 2, full 47 of 47 polytope records)
+### Corpus totals
+
+| group | files | running total |
+|-------|------:|--------------:|
+| A₄    | 32    | 32 |
+| B₄    | 9     | 41 |
+| F₄    | 6     | 47 |
+| H₄    | 13    | **60** |
+
+The **60** total matches the count of `.vZome` files in
+`output/wythoff_sweep/` and the count of `status=ok` entries in
+`output/wythoff_sweep/manifest.json`.
+
+### Equivalences (B₄/F₄ overlap)
+
+Three of the 16 nominal B₄ Wythoff bitmasks describe the **same
+uniform 4-polytope** as a smaller-bitmask F₄ Wythoff form (because the
+24-cell ≡ rectified 16-cell is built into the embedding of F₄ inside
+B₄).  We file every shape under the F₄ canonical name and use only one
+folder per polytope; the B₄ rows in the table above point to the F₄
+folder via `→ <folder>/` and have no folder of their own.
+
+| F₄ canonical name | F₄ bitmask | ≡ B₄ name              | B₄ bitmask | folder |
+|-------------------|------------|------------------------|------------|--------|
+| 24-cell           | (1,0,0,0)  | rectified 16-cell      | (0,0,1,0)  | `output/24cell/` |
+| rectified 24-cell | (0,1,0,0)  | cantellated 16-cell    | (0,1,0,1)  | `output/wythoff_sweep/rectified_24-cell/` |
+| truncated 24-cell | (1,1,0,0)  | cantitruncated 16-cell | (0,1,1,1)  | `output/wythoff_sweep/truncated_24-cell/` |
+
+The qfbox.info reference lists these three coincidences explicitly:
+*"Rectified 16-cell: identical to the 24-cell"*,
+*"Cantellated 16-cell: identical to the rectified 24-cell"*,
+*"Cantitruncated 16-cell: identical to the truncated 24-cell; a
+uniform polychoron bounded by 24 truncated octahedra and 24 cubes"*
+([qfbox.info/4d/uniform](https://www.qfbox.info/4d/uniform)).
+
+In the manifest, every entry that was originally found under the B₄
+bitmask carries an `alias_of` field recording the original
+`(group, bitmask, source_polytope)` triple, so the search-engine
+provenance is preserved while the surface organization stays clean.
+
+### Coverage vs. qfbox.info reference
+
+[qfbox.info/4d/uniform](https://www.qfbox.info/4d/uniform) lists 47
+non-prismatic convex uniform 4-polytopes, plus the snub 24-cell and
+grand antiprism (49 non-prismatic uniforms in total).  After
+deduplication via the [Equivalences](#equivalences-b4f4-overlap) table,
+this corpus contributes **34 of those 47** as `.vZome` files.  The
+**13 missing** are all in B₄ / F₄ and all snap-fail at rng=2 because
+their projections live in `ℤ[√2]³` rather than `ℤ[φ]³`:
+
+| family            | missing polytopes                                                                                                   |
+|-------------------|---------------------------------------------------------------------------------------------------------------------|
+| tesseract / 16-cell (7) | truncated tesseract, cantellated tesseract, runcinated tesseract, runcitruncated tesseract, cantitruncated tesseract, omnitruncated tesseract, runcitruncated 16-cell |
+| 24-cell (6)             | bitruncated 24-cell, cantellated 24-cell, runcinated 24-cell, cantitruncated 24-cell, runcitruncated 24-cell, omnitruncated 24-cell |
+
+Increasing `rng` will not rescue these — the field mismatch is a
+structural feature of B₄/F₄ vertex coordinates, not a search-precision
+artefact (see the
+[snap-failure analysis](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records)
+below).  The two non-Wythoffian uniforms (snub 24-cell, grand
+antiprism) are out of scope for this Wythoff-only sweep but have
+hand-curated projections at `output/snub24cell/` and
+`output/grand_antiprism/`.
+
+## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
 [`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep
 shape against the regular reference set built from the (1,0,0,0)/
 (0,0,0,1) records of every group (the 6 standard regular convex
-4-polytopes).  None of the descendant Wythoff shapes match any of the 6
-regular-polytope projections at rng=2 — descendants always have many
-more vertices than their regular, so their projection inventories are
-strictly disjoint at this kernel range.
+4-polytopes).  At rng=2 **none of the 47 descendant Wythoff polytopes
+project to a 3D shape that coincides with any of the 6 regulars' own
+projections** — descendants always have many more vertices than their
+regular, so their projection inventories are strictly disjoint at this
+kernel range.  In codebase terms, every sweep shape is "novel"; in the
+[stronger structural sense](#terminology-natural-vs-novel) every sweep
+shape is still a *natural Wythoff extension* of a regular's projection
+(Lemma A).
 
-| group | shapes (excl. regular ref records) | distinct novel fp_hashes |
+| group | natural-extension shape entries | distinct fp_hashes |
 |:-:|--:|--:|
 | A₄ | 43  | 43  |
 | B₄ | 34  | 34  |
@@ -193,15 +371,16 @@ polytopes project to the same 3D shape under different kernels (the
 hash is identical because shape fingerprints are rotation- and
 uniform-scale-invariant).
 
-[`tools/emit_novel.py`](../tools/emit_novel.py) iterates the novel
-inventory and calls `lib.emit_generic.project_and_emit` to write a
-.vZome file per shape, then runs a 3D shape-congruence dedup pass to
-collapse any congruent shapes the search engine reported as distinct.
-At rng=2 the result is **60 of 235** distinct novel shapes
+[`tools/emit_novel.py`](../tools/emit_novel.py) iterates the
+natural-extension inventory (legacy filename: `novel_rng<N>.json`) and
+calls `lib.emit_generic.project_and_emit` to write a .vZome file per
+shape, then runs a 3D shape-congruence dedup pass to collapse any
+congruent shapes the search engine reported as distinct.  At rng=2 the
+result is **60 of 235** distinct natural-extension shapes
 successfully snapped to ZZ[φ]³ and confirmed pairwise non-congruent
 (the zometool-realisable subset):
 
-| group | novel shapes | snapped to vZome | distinct after shape-dedup |
+| group | sweep entries | snapped to vZome | distinct after shape-dedup |
 |:-:|--:|--:|--:|
 | A₄ | 43  | 43  | 32 |
 | B₄ | 34  | 13  | 13 |
@@ -275,10 +454,15 @@ python tools/run_wythoff_sweep.py --group H4 --rng 2 --bitmask 1101 `
 # JSONLs into ongoing_work/shapes_rng2.jsonl.)
 
 # Cross-reference sweep shapes against the regular polytopes.
+# (Filters out any Wythoff projection that happens to be 3D-congruent
+# to a regular's projection -- empirically zero hits at rng=2.  The
+# legacy filename `novel_rng<N>.json` reflects the codebase's narrow
+# definition of "novel"; see Terminology section above.)
 python tools/analyze_sweep.py --rng 2 `
     --out-novel ongoing_work/novel_rng2.json
 
-# Emit .vZome files for every novel shape (output/wythoff_sweep/).
+# Emit .vZome files for every Wythoff-extension shape that survived
+# the regular-coincidence filter (output/wythoff_sweep/).
 python tools/emit_novel.py --rng 2
 ```
 
@@ -405,7 +589,8 @@ python tools/emit_novel.py --rng 2
   vertex distance to within a factor of √φ ≈ 1.27 of a ~30-zome-unit
   target.  This makes the corpus visually consistent.
 - **Per-polytope subfolders.**  `tools/emit_novel.py` writes each
-  novel shape into `output/wythoff_sweep/<common-name-slug>/` (e.g.
+  natural-extension shape (legacy code-name "novel") into
+  `output/wythoff_sweep/<common-name-slug>/` (e.g.
   `omnitruncated_120-cell/`, `cantellated_5-cell/`) so the directory
   tree is browsable by Wythoff form rather than fp_hash.  The shape
   index and short fp_hash are still in the filename for cross-
