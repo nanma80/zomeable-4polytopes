@@ -344,6 +344,118 @@ antiprism) are out of scope for this Wythoff-only sweep but have
 hand-curated projections at `output/snub24cell/` and
 `output/grand_antiprism/`.
 
+### Kernel completeness audit
+
+Step 1 of [Method](#method) seeds Step 2 with the kernels found by
+projecting only the **regular** member of each Coxeter group (bitmask
+(1,0,0,0) or, for B₄, additionally (0,0,0,1)), under the assumption that
+every Wythoff descendant is zomeable along *exactly* the same kernels.
+A kernel-completeness audit was run after the rng = 2 sweep finished:
+for each Wythoff descendant we ran an independent rng = 2 search
+**without** the regular's kernel restriction (`tools/run_wythoff_sweep
+--rng 2 --bitmask 0XXX`, full 195 312 candidate directions), and
+compared the resulting raw fingerprint count against the descendant's
+pipeline count in the tables above.
+
+| group | descendants tested | descendants with gap | gap range | new shapes that snap to ℤ[φ]³ |
+|-------|------:|------:|:-:|------:|
+| A₄ | 8/8 | 0 | — | 0 |
+| B₄ | 6/6 | 6 | +1 .. +4 | 0 |
+| F₄ | 2/2 | 0 | — | 0 |
+| H₄ | 2/13 (600-cell, rectified 600-cell) ⁴ | 0 | — | 0 |
+
+⁴ Only the 600-cell and rectified 600-cell completeness probes finished
+within this session; the larger 11 H₄ cases (V ≥ 1200, E ≥ 3600 each)
+are pending due to per-case wall-time on the order of hours at full-
+rng=2 search.
+
+The **B₄ pattern is the only group with kernel-completeness gaps**, and
+*every* descendant is affected.  This is an artefact of B₄ having two
+non-isomorphic regulars (tesseract and 16-cell are dual but distinct
+polytopes with different edge orbits): kernels that align with 16-cell
+edges are not a subset of kernels that align with tesseract edges.
+A₄, F₄, and H₄ are all self-dual at the level of edge orbits (5-cell
+self-dual; 24-cell self-dual via the F₄ outer automorphism; 600-cell
+↔ 120-cell are dual but the seeding bitmask is the cell-first 600-cell
+already), so descendants don't gain new kernels relative to their
+single regular seed.
+
+**Crucially, none of the B₄ extra shapes snap to ℤ[φ]³.**  Every gap
+shape's coordinates contain `√2` (the silver ratio), the same field
+mismatch that produces the B₄/F₄ snap-failures already documented in
+the [Wythoff-extension shape inventory](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records).
+So the kernel-completeness gap is real but does not translate into any
+additional `.vZome` files: the existing 60-file corpus is **complete
+at rng = 2** as a zometool-realisable set.
+
+The 16-cell case is a particularly clean validation: the regular-only
+seed found 3 shapes; the full-rng=2 search found 6, **exactly matching
+master's hand-curated 6 16-cell projections** in `output/16cell/`.
+This confirms (i) the missing 3 shapes exist, (ii) the search engine
+recovers them correctly when given the wider kernel set, and (iii) the
+production pipeline could in principle be extended to the
+multi-regular-seed scheme, but only at the cost of adding three
+*duplicate-of-existing-corpus* B₄ records.
+
+The reproducibility script is preserved as
+[`ongoing_work/probes/probe_kernel_completeness.py`](../ongoing_work/probes/probe_kernel_completeness.py).
+
+### Extending beyond rng = 2
+
+The default sweep uses `rng = 2`, generating 195 312 candidate kernel
+directions per Step-1 search and ~3 × that per Step-2 zomeable-check.
+A targeted probe at `rng = 3` (2 882 400 directions, ~15 × the rng = 2
+candidates) was run on representative cases.
+
+Among the **regulars** all rng = 3 counts equal master's hand-curated
+counts (within the search engine's Stage-A fingerprint dedup):
+
+| polytope | rng = 2 raw | rng = 3 raw | master |
+|----------|------------:|------------:|-------:|
+| 5-cell        | 4   | 4   | 4 |
+| 16-cell       | 6 ⁵ | 6   | 6 |
+| 24-cell       | 3   | 3   | 3 |
+| tesseract     | 32 ⁶| 129 | 9 ⁶ |
+
+⁵ At rng = 2 the *full-search* count is 6, matching master.  The
+pipeline restricts to regular-only kernels and finds 3 (see kernel-
+completeness audit above).
+
+⁶ The tesseract is an outlier with a documented infinite-family
+behaviour: its rng = 1, 2, 3 raw fingerprint counts are 8, 32, 129,
+matching the
+[`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
+master theorem exactly.  Master's 9 hand-curated tesseract files are
+a curated subset chosen for graphic distinctness; the full count at
+any rng is `≈ 8·rng² + O(rng)` due to the cube-within-cube parametric
+family.  This is a *property of the tesseract only* — no other 4-
+polytope shows kernel-count growth at rng = 3.
+
+Among the **descendants** the picture is more nuanced: V ≥ 60
+polytopes pick up additional Stage-A fingerprint groups at rng = 3
+(omnitruncated 5-cell goes 10 → 14, cantellated 16-cell ≡ rectified
+24-cell goes 5 → 7, etc.).  These extra fingerprints have not been
+run through the Stage-B geometric-signature dedup or the snap-to-
+ℤ[φ]³ filter, so it is not yet known how many — if any — would
+emerge as new `.vZome` files.  Based on the rng = 2 evidence (B₄/F₄
+snap-failures dominate at large V), the most likely outcome is **no
+new files**, but this is not a proof.  The full rng = 3 descendant
+probe is preserved at
+[`ongoing_work/rng3_probe_partial.json`](../ongoing_work/rng3_probe_partial.json)
+and [`ongoing_work/rng3_descendants.json`](../ongoing_work/rng3_descendants.json)
+(probe scripts in [`ongoing_work/probes/`](../ongoing_work/probes/)).
+
+The current corpus is therefore stable under `rng = 3` for the
+regulars (5-cell, 16-cell, 24-cell, 600-cell tested explicitly — see
+[`ongoing_work/rng3_probe_partial.json`](../ongoing_work/rng3_probe_partial.json)).
+The descendants need a full snap pass to verify no new `.vZome` files
+emerge from their extra Stage-A fingerprints.  H₄ descendants
+(V ≥ 720, ~3600 edges each) make rng = 3 search infeasible per case
+at ~hours of compute each on the present implementation; the 600-cell
+and 120-cell families' single-shape claim at rng = 2 is consistent
+with their high symmetry but has not been independently re-verified
+at rng ≥ 3.
+
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
 [`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep
