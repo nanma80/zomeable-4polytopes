@@ -484,6 +484,41 @@ compute each on the present implementation; the 600-cell and
 their high symmetry but has not been independently re-verified at
 rng ≥ 3.
 
+### End-to-end sanity check: snub 24-cell and grand antiprism
+
+The snub 24-cell and grand antiprism are *non-Wythoffian* uniform
+4-polytopes (no Coxeter–Dynkin bitmask generates them — the snub-24
+has D₄ symmetry of index 6 in F₄, and the grand antiprism has the
+ionic-diminished H₄ subgroup of order 400).  This means
+`build_polytope(group, bitmask)` cannot construct them, so they sit
+outside the Wythoff sweep.  But their vertex/edge data is available
+via [`lib/polytopes.py`](../lib/polytopes.py) (`snub_24cell`,
+`grand_antiprism`), and they share the rest of the pipeline (the
+rng = 2 search engine, the snap, and the Stage A / Stage B dedup) with
+the Wythoff sweep.  Master maintains a hand-curated set of 4 zomeable
+projections for them (`output/snub24cell/*.vZome` and
+`output/grand_antiprism/*.vZome`, two per polytope) which have been
+studied by zometool/4D enthusiasts for years; recovering this set
+end-to-end through the same pipeline is therefore a meaningful
+sanity check on the search engine and snap+dedup steps:
+
+| polytope          |   V |    E | master shapes | rng = 2 raw fp | snapped | Stage-B unique | recovered | extra |
+|:------------------|----:|-----:|--------------:|---------------:|--------:|---------------:|----------:|------:|
+| snub 24-cell      |  96 |  432 |             2 |              2 |       2 |              2 |     2 / 2 |     0 |
+| grand antiprism   | 100 |  500 |             2 |              2 |       2 |              2 |     2 / 2 |     0 |
+
+The probe is reproducible via
+[`ongoing_work/probes/non_wythoff_sanity.py`](../ongoing_work/probes/non_wythoff_sanity.py)
+and its results are preserved at
+[`ongoing_work/non_wythoff_sanity_summary.json`](../ongoing_work/non_wythoff_sanity_summary.json).
+The exact recovery confirms that for these two non-Wythoffian
+exemplars the shape census *is not undercounted* at rng = 2 — every
+master shape is found, no master shape is missed, and no extra
+zomeable shape exists in the rng = 2 search range.  This is consistent
+with the rng = 3 / rng = 4 stability proven above for the regulars
+and the small Wythoff descendants, and adds two non-Wythoffian
+calibration points to that picture.
+
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
 [`tools/analyze_sweep.py`](../tools/analyze_sweep.py) labels each sweep

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "snub_24cell",
+    "V": 96,
+    "E": 432,
+    "rng2_raw_fp": 2,
+    "rng2_snapped": 2,
+    "rng2_unique_after_stage_b": 2,
+    "master_files": 2,
+    "master_shapes_recovered": 2,
+    "missing_from_probe": 0,
+    "extra_not_in_master": 0
+  },
+  {
+    "name": "grand_antiprism",
+    "V": 100,
+    "E": 500,
+    "rng2_raw_fp": 2,
+    "rng2_snapped": 2,
+    "rng2_unique_after_stage_b": 2,
+    "master_files": 2,
+    "master_shapes_recovered": 2,
+    "missing_from_probe": 0,
+    "extra_not_in_master": 0
+  }
+]
