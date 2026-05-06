@@ -360,14 +360,21 @@ pipeline count in the tables above.
 | group | descendants tested | descendants with gap | gap range | new shapes that snap to ℤ[φ]³ |
 |-------|------:|------:|:-:|------:|
 | A₄ | 8/8 | 0 | — | 0 |
-| B₄ | 6/6 | 6 | +1 .. +4 | 0 |
+| B₄ | 6/6 | 6 | +1 .. +4 | **6 (at rng = 4)** ⁵ |
 | F₄ | 2/2 | 0 | — | 0 |
-| H₄ | 2/13 (600-cell, rectified 600-cell) ⁴ | 0 | — | 0 |
+| H₄ | 4/13 (600-cell, rectified 600-cell, rectified 120-cell, cantellated 600-cell) ⁴ | 0 | — | 0 |
 
-⁴ Only the 600-cell and rectified 600-cell completeness probes finished
-within this session; the larger 11 H₄ cases (V ≥ 1200, E ≥ 3600 each)
-are pending due to per-case wall-time on the order of hours at full-
-rng=2 search.
+⁴ Only four H₄ completeness probes finished within session-feasible
+wall time; the remaining nine H₄ cases (V ≥ 1200, E ≥ 3600 each) are
+pending — see the [Coverage status](#coverage-status-what-is-and-isnt-checked)
+subsection below.
+
+⁵ At **rng = 2** none of the B₄ gap-shapes snap to ℤ[φ]³.  At
+**rng = 4** the rectified tesseract and the truncated 16-cell each
+gain 3 new shapes that *do* snap and use only standard zometool
+struts — see [B₄ rng = 4 finding](#b₄-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled)
+below.  The other four B₄ gap-bearing descendants reconcile to zero
+new shapes once master regulars and B₄ ↔ F₄ aliases are indexed.
 
 The **B₄ pattern is the only group with kernel-completeness gaps**, and
 *every* descendant is affected.  This is an artefact of B₄ having two
@@ -380,13 +387,19 @@ self-dual; 24-cell self-dual via the F₄ outer automorphism; 600-cell
 already), so descendants don't gain new kernels relative to their
 single regular seed.
 
-**Crucially, none of the B₄ extra shapes snap to ℤ[φ]³.**  Every gap
-shape's coordinates contain `√2` (the silver ratio), the same field
-mismatch that produces the B₄/F₄ snap-failures already documented in
-the [Wythoff-extension shape inventory](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records).
-So the kernel-completeness gap is real but does not translate into any
-additional `.vZome` files: the existing 60-file corpus is **complete
-at rng = 2** as a zometool-realisable set.
+**At rng = 2, none of the B₄ extra shapes snap to ℤ[φ]³.**  Every
+gap shape's coordinates contain `√2` (the silver ratio), the same
+field mismatch that produces the B₄/F₄ snap-failures already
+documented in the
+[Wythoff-extension shape inventory](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records).
+So at rng = 2 the kernel-completeness gap is real but does not
+translate into any additional `.vZome` files: the existing 60-file
+corpus is complete at rng = 2 as a zometool-realisable set.
+**However, this is not the final word — at rng = 4 (i.e., when the
+zomeable-direction generator is allowed to use larger ℤ[φ]-integer
+coefficients) the rectified tesseract and truncated 16-cell each
+gain 3 new zomeable shapes**, see
+[B₄ rng = 4 finding](#b₄-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled).
 
 The 16-cell case is a particularly clean validation: the regular-only
 seed found 3 shapes; the full-rng=2 search found 6, **exactly matching
@@ -584,6 +597,98 @@ tesseract and truncated 16-cell each gain 3 zomeable shapes at
 rng = 4.  Of the six audit-flagged B₄ descendants, the **3-new-
 shapes-per-polytope pattern is therefore confirmed on 2 polytopes**,
 ruled out on 3 others, and pending for the cantitruncated 16-cell.
+
+### Coverage status: what is and isn't checked
+
+This subsection inventories which Wythoff descendants have been
+audited at which `rng`, so it is explicit which corners of the
+search space are **proven complete** vs. **probable but unverified**
+vs. **completely untouched**.  The verdict for each cell of the
+table is one of:
+
+- **rng = 2 done**: the rng = 2 search has run and the resulting
+  fingerprints have been snap-checked against ℤ[φ]³ (production
+  pipeline has emitted the corresponding `.vZome` files).
+- **rng = 2 audit done**: a kernel-completeness audit (full 195 312
+  candidate directions, regular-only seed dropped) has run in
+  addition to the production sweep, and any gap shapes have been
+  classified as "snap" or "no-snap".
+- **rng = 4 done**: a focused rng = 4 snap+dedup probe has run on
+  this polytope, with all unique shapes either matched against
+  the existing corpus or saved to `ongoing_work/` as new.
+- **untested / infeasible**: see notes per row.
+
+| group | polytope (bitmask)               |   V |    E | rng = 2 sweep | rng = 2 audit | rng = 4 probe | new shapes | notes |
+|:------|:---------------------------------|----:|-----:|:-------------:|:-------------:|:-------------:|----------:|:------|
+| A₄    | 5-cell (1,0,0,0)                 |   5 |  10 | done          | done          | done          | 0         | regular |
+| A₄    | rectified 5-cell (0,1,0,0)       |  10 |  30 | done          | done          | rng = 3 done  | 0         | A₄ self-dual |
+| A₄    | truncated 5-cell (1,1,0,0)       |  20 |  40 | done          | done          | done          | 0         |       |
+| A₄    | bitruncated 5-cell (0,1,1,0)     |  30 |  60 | done          | done          | rng = 3 done  | 0         |       |
+| A₄    | cantellated 5-cell (1,0,1,0)     |  30 |  60 | done          | done          | rng = 3 done  | 0         |       |
+| A₄    | cantitruncated 5-cell (1,1,1,0)  |  60 | 120 | done          | done          | done          | 0         |       |
+| A₄    | runcinated 5-cell (1,0,0,1)      |  20 |  60 | done          | done          | done          | 0         |       |
+| A₄    | runcitruncated 5-cell (1,1,0,1)  |  60 | 150 | done          | done          | done          | 0         |       |
+| A₄    | omnitruncated 5-cell (1,1,1,1)   | 120 | 240 | done          | done          | rng = 3 done  | 0         |       |
+| B₄    | 16-cell (0,0,0,1)                |   8 |  24 | done          | done          | done          | 0         | regular |
+| B₄    | tesseract (1,0,0,0)              |  16 |  32 | done          | done          | done          | infinite  | follows known cuboid family |
+| B₄    | rectified tesseract (0,1,0,0)    |  32 |  96 | done          | done          | done          | **+3**    | new V=32 shapes (Milestone 6) |
+| B₄    | 24-cell-as-B₄ (0,0,1,0)          |  24 |  96 | done          | done          | done          | 0         | regular (24-cell sits here too) |
+| B₄    | truncated 16-cell (0,0,1,1)      |  48 | 120 | done          | done          | done          | **+3**    | new V=48 shapes (Milestone 7) |
+| B₄    | cantellated 16-cell (0,1,0,1)    |  96 | 288 | done          | done          | done          | 0         | F₄ alias of rectified 24-cell |
+| B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | running       | (in progress) | F₄ alias of truncated 24-cell |
+| B₄    | other tesseract / 16-cell records (truncated tesseract, bitruncated tesseract, runcinated tesseract, omnitruncated tesseract, runcitruncated 16-cell, runcitruncated tesseract, omnitruncated tesseract, …) | 64 .. 384 | 128 .. 768 | done | not yet | not yet | (likely 0) | not on the audit case list, since each is either an F₄ alias or a tesseract record covered by the cuboid-family argument |
+| F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | done          | 0         | regular |
+| F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell |
+| F₄    | other F₄ Wythoff records         |   – |   – | done          | done          | partly        | 0         | most are B₄ aliases; remaining F₄ rng=4 probes covered transitively |
+| H₄    | 600-cell (0,0,0,1)               | 120 |  720 | done          | done          | not yet       | 0 (rng=2) | tractable at rng = 4 (~19 h wall) |
+| H₄    | rectified 600-cell (0,0,1,0)     | 720 | 3600 | done          | done          | infeasible    | 0 (rng=2) | rectified-600-cell ≡ rectified-120-cell up to H₄ outer auto |
+| H₄    | rectified 120-cell (0,1,0,0)     |1200 | 3600 | done          | done          | infeasible    | 0 (rng=2) |       |
+| H₄    | cantellated 600-cell (0,1,0,1)   |3600 |10800 | done          | done          | infeasible    | 0 (rng=2) |       |
+| H₄    | 120-cell (1,0,0,0)               | 600 | 1200 | done          | not yet       | infeasible    | unknown   | dual of 600-cell — expected gap = 0 by symmetry, not verified |
+| H₄    | other 9 H₄ Wythoff records (truncated 600-cell, truncated 120-cell, cantellated 120-cell, bitruncated 120-cell, cantitruncated 600-cell, cantitruncated 120-cell, runcinated 120-cell, runcitruncated 600-cell / 120-cell, omnitruncated 120-cell) | 1440 .. 14400 | 4320 .. 28800 | done | **untested** | infeasible | unknown | rng = 2 audit estimated >24 h CPU per case at the present `lib/search_engine` speed |
+
+Summary of unfinished territory:
+
+- **B₄ rng = 4** — 6 of B₄'s ~12 Wythoff records have an explicit
+  rng = 4 probe (the 6 audit-flagged ones plus the regulars).  The
+  remaining B₄ records (truncated tesseract, bitruncated tesseract,
+  runcinated tesseract, runcitruncated 16-cell, runcitruncated
+  tesseract, omnitruncated tesseract, etc.) were not audit-flagged
+  because each is either an F₄ alias (already tested under its F₄
+  name) or a tesseract record covered by the cuboid-family
+  argument.  No rng = 4 probe has been run on them; they are
+  *expected* to add 0 new shapes at rng = 4 by alias / cuboid
+  reasoning, but this is not empirically verified.
+- **H₄ rng = 2 audit** — 4 of 13 H₄ Wythoff records have a
+  kernel-completeness audit; the other 9 require >24 h CPU each
+  for a single rng = 2 audit pass.  These are pending an algorithmic
+  improvement to `lib/search_engine.search` (precomputing per-
+  direction strut hits is expected to give a 5-10× speedup) and/or
+  a duality argument that halves the audit table.  All 4 audited
+  H₄ cases show 0 gap, and H₄'s self-dual structure (analogous to
+  A₄'s) suggests the remaining 9 will also have 0 gap, but this is
+  not empirically verified.
+- **H₄ rng = 4** — only the 600-cell (V = 120) is tractable at
+  rng = 4 in the current implementation (~19 h wall); every other
+  H₄ Wythoff record has V × E so large that a single rng = 4 probe
+  would take days to months of wall time.  No rng = 4 probe has
+  been run on any H₄ polytope, so even the H₄ 600-cell rng = 4
+  cell of the table reads "not yet" rather than "done".
+- **Snub 24-cell and grand antiprism** — both are non-Wythoffian
+  and were tested at rng = 2 only (they pass end-to-end sanity
+  with 4/4 perfect recovery, see preceding subsection).  Neither
+  is constructed by `wythoff.build_polytope`, so extending them to
+  rng = 4 requires a separate explicit V/E loader.  Not done.
+- **Custom field extensions** (`field = sqrt2`, etc.) — outside
+  scope.  The B₄ silver-ratio shapes that fail to snap in ℤ[φ]³
+  could in principle live in a vZome `field = sqrt2` model, but
+  the project explicitly declined this direction.
+
+The "infeasible" labels in the H₄ rows are not fundamental
+limitations — they are limitations of the present search-engine
+implementation.  A vectorised per-direction strut-hit cache or
+a GPU port would unlock several H₄ rows at rng = 2 and possibly
+the smaller H₄ rows at rng = 4.
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
