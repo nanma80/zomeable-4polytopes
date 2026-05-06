@@ -1,0 +1,191 @@
+[
+  {
+    "name": "16-cell",
+    "group": "B4",
+    "bm": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "audit_gap": 3,
+    "rng4_raw_fp": 6,
+    "rng4_snapped": 6,
+    "stage_b_unique": 6,
+    "in_corpus": 6,
+    "new_not_in_corpus": 0,
+    "records": [
+      {
+        "fp_idx": 0,
+        "kernel": [
+          8.472136,
+          2.0,
+          -8.472136,
+          8.472136
+        ],
+        "snap": true,
+        "sig_V": 8,
+        "sig_E": 24,
+        "sig_hash": "86ae516f6a15242b",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_antiprism_B6R12Y6.vZome"
+        ]
+      },
+      {
+        "fp_idx": 1,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 6,
+        "sig_E": 13,
+        "sig_hash": "306a0492e14db4f1",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_edge_first_squashed_octahedron.vZome"
+        ]
+      },
+      {
+        "fp_idx": 2,
+        "kernel": [
+          0.381966,
+          0.854102,
+          -0.381966,
+          0.381966
+        ],
+        "snap": true,
+        "sig_V": 8,
+        "sig_E": 24,
+        "sig_hash": "1adf533595970344",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_antiprism_R12B6Y6.vZome"
+        ]
+      },
+      {
+        "fp_idx": 3,
+        "kernel": [
+          2.236068,
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 7,
+        "sig_E": 18,
+        "sig_hash": "66973245e5b09aee",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_vertex_first_octahedron.vZome"
+        ]
+      },
+      {
+        "fp_idx": 4,
+        "kernel": [
+          9.472136,
+          2.236068,
+          2.236068,
+          -2.236068
+        ],
+        "snap": true,
+        "sig_V": 8,
+        "sig_E": 24,
+        "sig_hash": "d3a7efe163202ae6",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_antiprism_Y6R12B6.vZome"
+        ]
+      },
+      {
+        "fp_idx": 5,
+        "kernel": [
+          9.472136,
+          9.472136,
+          -9.472136,
+          9.472136
+        ],
+        "snap": true,
+        "sig_V": 8,
+        "sig_E": 24,
+        "sig_hash": "a39e6d81f909a25b",
+        "in_corpus": true,
+        "matched": [
+          "output\\16cell\\16cell_cell_first_cube.vZome"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "24-cell",
+    "group": "B4",
+    "bm": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "audit_gap": 1,
+    "rng4_raw_fp": 3,
+    "rng4_snapped": 3,
+    "stage_b_unique": 3,
+    "in_corpus": 3,
+    "new_not_in_corpus": 0,
+    "records": [
+      {
+        "fp_idx": 0,
+        "kernel": [
+          8.472136,
+          2.0,
+          -8.472136,
+          8.472136
+        ],
+        "snap": true,
+        "sig_V": 24,
+        "sig_E": 96,
+        "sig_hash": "3476750ab51e80fc",
+        "in_corpus": true,
+        "matched": [
+          "output\\24cell\\24cell_triality.vZome"
+        ]
+      },
+      {
+        "fp_idx": 1,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 15,
+        "sig_E": 44,
+        "sig_hash": "d6b0c39fff08a0cf",
+        "in_corpus": true,
+        "matched": [
+          "output\\24cell\\24cell_long_root_rhombic_dodecahedron.vZome"
+        ]
+      },
+      {
+        "fp_idx": 2,
+        "kernel": [
+          2.236068,
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 18,
+        "sig_E": 60,
+        "sig_hash": "8a30e95572fca92e",
+        "in_corpus": true,
+        "matched": [
+          "output\\24cell\\24cell_short_root_cuboctahedron.vZome"
+        ]
+      }
+    ]
+  }
+]
