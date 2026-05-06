@@ -575,7 +575,7 @@ the gaps as follows:
 | 24-cell (B₄)           |  24 |   96 |         1 |              3 |       3 |              3 |         3 |   0 | audit miss-counted (master regulars not indexed) |
 | truncated 16-cell      |  48 |  120 |         4 |              7 |       7 |              6 |         3 | **3** | **real new shapes** |
 | cantellated 16-cell    |  96 |  288 |         3 |              8 |       8 |              3 |         3 |   0 | alias of rectified 24-cell (shapes already in F₄ folder) |
-| cantitruncated 16-cell | 192 |  384 |         4 |             — |      — |              — |         — |   — | (probe pending; alias of truncated 24-cell, expected 0 new) |
+| cantitruncated 16-cell | 192 |  384 |         4 |             12 |      12 |              3 |         3 |   0 | alias of truncated 24-cell (shapes already in F₄ folder) |
 
 **Two polytopes grow.**  The rectified tesseract and the truncated
 16-cell each gain 3 zomeable shapes that the rng = 2 sweep does not
@@ -602,7 +602,11 @@ and the cross-group alias folders (cantellated 16-cell ≡ rectified
 24-cell, cantitruncated 16-cell ≡ truncated 24-cell, see
 [B₄ ↔ F₄ aliases](#equivalences-b4f4-overlap)).  Once those
 locations are added to the corpus index, every snapped rng = 4 fp
-matches an existing shape; the gap collapses to zero.
+matches an existing shape; the gap collapses to zero.  The
+cantitruncated 16-cell rng = 4 probe (V = 192, E = 384) ran in
+~24 h wall on this machine and confirmed the alias prediction
+exactly: 12 raw fp → 3 Stage-B unique shapes, all already present
+in the truncated 24-cell folder.
 
 The new shapes and per-fingerprint kernel-direction data are
 preserved at
@@ -610,7 +614,8 @@ preserved at
 [`ongoing_work/truncated_16cell_rng4/`](../ongoing_work/truncated_16cell_rng4/),
 and the matching `*.json` files.  The reconciliation evidence for
 the four clean cases lives at
-[`ongoing_work/cantellated_16cell_rng4.json`](../ongoing_work/cantellated_16cell_rng4.json)
+[`ongoing_work/cantellated_16cell_rng4.json`](../ongoing_work/cantellated_16cell_rng4.json),
+[`ongoing_work/cantitruncated_16cell_rng4.json`](../ongoing_work/cantitruncated_16cell_rng4.json),
 and
 [`ongoing_work/b4_small_rng4_verify.json`](../ongoing_work/b4_small_rng4_verify.json).
 The probe scripts are in
@@ -622,8 +627,11 @@ rng = 4, the tesseract follows its known infinite cuboid family,
 A₄ Wythoff descendants are stable at rng = 3, but the rectified
 tesseract and truncated 16-cell each gain 3 zomeable shapes at
 rng = 4.  Of the six audit-flagged B₄ descendants, the **3-new-
-shapes-per-polytope pattern is therefore confirmed on 2 polytopes**,
-ruled out on 3 others, and pending for the cantitruncated 16-cell.
+shapes-per-polytope pattern is confirmed on 2 polytopes**
+and ruled out on the other 4 (now including the cantitruncated
+16-cell).  All B₄ Wythoff descendants are therefore audited at
+rng = 4, with a final +6 zomeable shapes attributable to the
+B₄-without-master-indexing audit gap.
 
 ### Coverage status: what is and isn't checked
 
@@ -662,7 +670,7 @@ table is one of:
 | B₄    | 24-cell-as-B₄ (0,0,1,0)          |  24 |  96 | done          | done          | done          | 0         | regular (24-cell sits here too) |
 | B₄    | truncated 16-cell (0,0,1,1)      |  48 | 120 | done          | done          | done          | **+3**    | new V=48 shapes (Milestone 7) |
 | B₄    | cantellated 16-cell (0,1,0,1)    |  96 | 288 | done          | done          | done          | 0         | F₄ alias of rectified 24-cell |
-| B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | running       | (in progress) | F₄ alias of truncated 24-cell |
+| B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | done          | 0             | F₄ alias of truncated 24-cell; 12 raw fp → 3 unique, all in corpus |
 | B₄    | other tesseract / 16-cell records (truncated tesseract, bitruncated tesseract, runcinated tesseract, omnitruncated tesseract, runcitruncated 16-cell, runcitruncated tesseract, omnitruncated tesseract, …) | 64 .. 384 | 128 .. 768 | done | not yet | not yet | (likely 0) | not on the audit case list, since each is either an F₄ alias or a tesseract record covered by the cuboid-family argument |
 | F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | done          | 0         | regular |
 | F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell |
@@ -691,7 +699,7 @@ Summary of unfinished territory:
   for a single rng = 2 audit pass.  These are pending an algorithmic
   improvement to `lib/search_engine.search` (precomputing per-
   direction strut hits is expected to give a 5-10× speedup) and/or
-  a duality argument that halves the audit table.  All 4 audited
+  a duality argument that halves the audit table.  All 5 audited
   H₄ cases show 0 gap, and H₄'s self-dual structure (analogous to
   A₄'s) suggests the remaining 8 will also have 0 gap, but this is
   not empirically verified.
