@@ -1,0 +1,393 @@
+[
+  {
+    "name": "cantitruncated 5-cell",
+    "group": "A4",
+    "bm": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "rng4_raw_fp": 11,
+    "rng4_snapped": 11,
+    "stage_b_unique": 4,
+    "in_corpus": 4,
+    "new_not_in_corpus": 0,
+    "records": [
+      {
+        "fp_idx": 0,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 33,
+        "sig_E": 57,
+        "sig_hash": "1a642ffa91acd8e1",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_01_befb910d19.vZome"
+        ]
+      },
+      {
+        "fp_idx": 1,
+        "kernel": [
+          0.381966,
+          0.854102,
+          -0.381966,
+          0.381966
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 2,
+        "kernel": [
+          5.236068,
+          -1.236068,
+          -5.236068,
+          5.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "b798507a7befa750",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_02_c1635833bd.vZome"
+        ]
+      },
+      {
+        "fp_idx": 3,
+        "kernel": [
+          6.854102,
+          6.854102,
+          6.854102,
+          1.618034
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 4,
+        "kernel": [
+          2.236068,
+          -2.236068,
+          -2.236068,
+          -1.0
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "f3a662acbb17dad6",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\cell_first_truncated_tetrahedron_6a8e448e70.vZome"
+        ]
+      },
+      {
+        "fp_idx": 5,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          0.236068,
+          -1.0
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 6,
+        "kernel": [
+          0.618034,
+          -0.618034,
+          -1.381966,
+          -0.618034
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 7,
+        "kernel": [
+          1.618034,
+          1.618034,
+          1.618034,
+          0.381966
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 8,
+        "kernel": [
+          1.0,
+          0.236068,
+          -1.0,
+          -1.0
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "b798507a7befa750",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_02_c1635833bd.vZome"
+        ]
+      },
+      {
+        "fp_idx": 9,
+        "kernel": [
+          1.236068,
+          -1.236068,
+          -1.236068,
+          5.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      },
+      {
+        "fp_idx": 10,
+        "kernel": [
+          1.0,
+          -1.0,
+          1.0,
+          -0.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 120,
+        "sig_hash": "64527b68cfbdc6c7",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "runcitruncated 5-cell",
+    "group": "A4",
+    "bm": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "rng4_raw_fp": 10,
+    "rng4_snapped": 10,
+    "stage_b_unique": 4,
+    "in_corpus": 4,
+    "new_not_in_corpus": 0,
+    "records": [
+      {
+        "fp_idx": 0,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          -0.0,
+          -0.0
+        ],
+        "snap": true,
+        "sig_V": 33,
+        "sig_E": 69,
+        "sig_hash": "625f330207d2d1b6",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\face_first_triangle_a98cfbe1f2.vZome"
+        ]
+      },
+      {
+        "fp_idx": 1,
+        "kernel": [
+          0.381966,
+          0.854102,
+          -0.381966,
+          0.381966
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      },
+      {
+        "fp_idx": 2,
+        "kernel": [
+          5.236068,
+          -1.236068,
+          -5.236068,
+          5.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "69266f379bc555ba",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\edge_first_e203af4fe0.vZome"
+        ]
+      },
+      {
+        "fp_idx": 3,
+        "kernel": [
+          6.854102,
+          6.854102,
+          6.854102,
+          1.618034
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      },
+      {
+        "fp_idx": 4,
+        "kernel": [
+          2.236068,
+          -2.236068,
+          -2.236068,
+          -1.0
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "355af16955ef4e16",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\cell_first_cuboctahedron_8fb8506b88.vZome"
+        ]
+      },
+      {
+        "fp_idx": 5,
+        "kernel": [
+          0.236068,
+          -0.236068,
+          0.236068,
+          -1.0
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      },
+      {
+        "fp_idx": 6,
+        "kernel": [
+          0.618034,
+          -0.618034,
+          -1.381966,
+          -0.618034
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      },
+      {
+        "fp_idx": 7,
+        "kernel": [
+          1.618034,
+          1.618034,
+          1.618034,
+          0.381966
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      },
+      {
+        "fp_idx": 8,
+        "kernel": [
+          0.236068,
+          0.236068,
+          1.0,
+          0.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "69266f379bc555ba",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\edge_first_e203af4fe0.vZome"
+        ]
+      },
+      {
+        "fp_idx": 9,
+        "kernel": [
+          1.0,
+          -1.0,
+          1.0,
+          -0.236068
+        ],
+        "snap": true,
+        "sig_V": 60,
+        "sig_E": 150,
+        "sig_hash": "35e86247b57e3201",
+        "in_corpus": true,
+        "matched": [
+          "output\\wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome"
+        ]
+      }
+    ]
+  }
+]
