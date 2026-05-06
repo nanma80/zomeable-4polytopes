@@ -362,10 +362,10 @@ pipeline count in the tables above.
 | A₄ | 8/8 | 0 | — | 0 |
 | B₄ | 6/6 | 6 | +1 .. +4 | **6 (at rng = 4)** ⁵ |
 | F₄ | 2/2 | 0 | — | 0 |
-| H₄ | 4/13 (600-cell, rectified 600-cell, rectified 120-cell, cantellated 600-cell) ⁴ | 0 | — | 0 |
+| H₄ | 5/13 (600-cell, 120-cell, rectified 600-cell, rectified 120-cell, cantellated 600-cell) ⁴ | 0 | — | 0 |
 
-⁴ Only four H₄ completeness probes finished within session-feasible
-wall time; the remaining nine H₄ cases (V ≥ 1200, E ≥ 3600 each) are
+⁴ Only five H₄ completeness probes finished within session-feasible
+wall time; the remaining eight H₄ cases (V ≥ 1200, E ≥ 3600 each) are
 pending — see the [Coverage status](#coverage-status-what-is-and-isnt-checked)
 subsection below.
 
@@ -497,7 +497,46 @@ compute each on the present implementation; the 600-cell and
 their high symmetry but has not been independently re-verified at
 rng ≥ 3.
 
-### End-to-end sanity check: snub 24-cell and grand antiprism
+### End-to-end sanity check: regular polytopes and non-Wythoffian shapes
+
+**The 6 regular convex 4-polytopes plus the 2 non-Wythoffian
+exemplars all show full master-shape recovery through the production
+pipeline.**  This is the strongest end-to-end calibration of the
+search + snap + dedup chain available, since these 8 polytopes have
+been studied by zometool/4D enthusiasts for many years and their
+projection inventories in `output/<polytope>/` are independently
+curated reference data.
+
+| polytope           |   V |    E | master shapes | search depth that confirmed full recovery | unique snapped | recovered | extra |
+|:-------------------|----:|-----:|--------------:|:------------------------------------------|---------------:|----------:|------:|
+| 5-cell (A₄)        |   5 |   10 |             4 | rng = 4 (Milestone 4)                     |              4 |     4 / 4 |     0 |
+| tesseract (B₄)     |  16 |   32 | 2 + ∞ inf-family | rng = 4 (Milestone 4)                  |              8 | family ✓   |     0 |
+| 16-cell (B₄)       |   8 |   24 |             6 | rng = 4 (Milestone 8)                     |              6 |     6 / 6 |     0 |
+| 24-cell (F₄)       |  24 |   96 |             3 | rng = 4 (Milestone 8)                     |              3 |     3 / 3 |     0 |
+| 600-cell (H₄)      | 120 |  720 |             1 | rng = 2 audit (gap = 0)                   |              1 |     1 / 1 |     0 |
+| 120-cell (H₄)      | 600 | 1200 |             1 | rng = 2 audit (gap = 0, this milestone)   |              1 |     1 / 1 |     0 |
+| snub 24-cell       |  96 |  432 |             2 | rng = 2 (Milestone 5)                     |              2 |     2 / 2 |     0 |
+| grand antiprism    | 100 |  500 |             2 | rng = 2 (Milestone 5)                     |              2 |     2 / 2 |     0 |
+
+The infinite cuboid family in the tesseract row is parameterised
+(`output/8cell/*inf_family*.vZome`); the search engine generates
+the family correctly (8 unique snapped shapes at rng = 4 cover all
+generic-cuboid projections), but the inf-family `.vZome` files
+themselves use fractional coordinates that the
+[`tools/dedup_corpus_by_shape.parse_vzome`](../tools/dedup_corpus_by_shape.py)
+re-loader does not currently parse, so they don't participate in
+the corpus index for direct hash matching — the family check is
+"the search produced ≥ master count of generic cuboids", not a
+per-file hash match.  All other rows are exact 1-to-1 hash matches.
+
+The probe scripts and per-fingerprint records are preserved at
+[`ongoing_work/probes/`](../ongoing_work/probes/) and the
+corresponding `*.json` summaries (e.g.,
+[`ongoing_work/h4_120cell_rng2_audit.json`](../ongoing_work/h4_120cell_rng2_audit.json)
+for the 120-cell, [`ongoing_work/non_wythoff_sanity_summary.json`](../ongoing_work/non_wythoff_sanity_summary.json)
+for snub-24 / grand antiprism).
+
+#### Earlier sanity-check details
 
 The snub 24-cell and grand antiprism are *non-Wythoffian* uniform
 4-polytopes (no Coxeter–Dynkin bitmask generates them — the snub-24
@@ -512,25 +551,13 @@ the Wythoff sweep.  Master maintains a hand-curated set of 4 zomeable
 projections for them (`output/snub24cell/*.vZome` and
 `output/grand_antiprism/*.vZome`, two per polytope) which have been
 studied by zometool/4D enthusiasts for years; recovering this set
-end-to-end through the same pipeline is therefore a meaningful
-sanity check on the search engine and snap+dedup steps:
-
-| polytope          |   V |    E | master shapes | rng = 2 raw fp | snapped | Stage-B unique | recovered | extra |
-|:------------------|----:|-----:|--------------:|---------------:|--------:|---------------:|----------:|------:|
-| snub 24-cell      |  96 |  432 |             2 |              2 |       2 |              2 |     2 / 2 |     0 |
-| grand antiprism   | 100 |  500 |             2 |              2 |       2 |              2 |     2 / 2 |     0 |
-
-The probe is reproducible via
-[`ongoing_work/probes/non_wythoff_sanity.py`](../ongoing_work/probes/non_wythoff_sanity.py)
-and its results are preserved at
-[`ongoing_work/non_wythoff_sanity_summary.json`](../ongoing_work/non_wythoff_sanity_summary.json).
-The exact recovery confirms that for these two non-Wythoffian
-exemplars the shape census *is not undercounted* at rng = 2 — every
-master shape is found, no master shape is missed, and no extra
-zomeable shape exists in the rng = 2 search range.  This is consistent
-with the rng = 3 / rng = 4 stability proven above for the regulars
-and the small Wythoff descendants, and adds two non-Wythoffian
-calibration points to that picture.
+end-to-end through the same pipeline is the calibration captured
+above.  The exact recovery confirms that for these two non-
+Wythoffian exemplars the shape census *is not undercounted* at
+rng = 2 — every master shape is found, no master shape is missed,
+and no extra zomeable shape exists in the rng = 2 search range.
+This is consistent with the rng = 3 / rng = 4 stability proven
+above for the regulars and the small Wythoff descendants.
 
 ### B₄ rng = 4 finding: 2 polytopes grow, 4 are clean (audit gaps reconciled)
 
@@ -644,8 +671,8 @@ table is one of:
 | H₄    | rectified 600-cell (0,0,1,0)     | 720 | 3600 | done          | done          | infeasible    | 0 (rng=2) | rectified-600-cell ≡ rectified-120-cell up to H₄ outer auto |
 | H₄    | rectified 120-cell (0,1,0,0)     |1200 | 3600 | done          | done          | infeasible    | 0 (rng=2) |       |
 | H₄    | cantellated 600-cell (0,1,0,1)   |3600 |10800 | done          | done          | infeasible    | 0 (rng=2) |       |
-| H₄    | 120-cell (1,0,0,0)               | 600 | 1200 | done          | not yet       | infeasible    | unknown   | dual of 600-cell — expected gap = 0 by symmetry, not verified |
-| H₄    | other 9 H₄ Wythoff records (truncated 600-cell, truncated 120-cell, cantellated 120-cell, bitruncated 120-cell, cantitruncated 600-cell, cantitruncated 120-cell, runcinated 120-cell, runcitruncated 600-cell / 120-cell, omnitruncated 120-cell) | 1440 .. 14400 | 4320 .. 28800 | done | **untested** | infeasible | unknown | rng = 2 audit estimated >24 h CPU per case at the present `lib/search_engine` speed |
+| H₄    | 120-cell (1,0,0,0)               | 600 | 1200 | done          | done          | infeasible    | 0 (rng=2) | full audit run; 1 raw fp = 1 unique shape = 1 master shape (`120cell_H4_to_H3.vZome`); rng=4 infeasible |
+| H₄    | other 8 H₄ Wythoff records (truncated 600-cell, truncated 120-cell, cantellated 120-cell, bitruncated 120-cell, cantitruncated 600-cell, cantitruncated 120-cell, runcinated 120-cell, runcitruncated 600-cell / 120-cell, omnitruncated 120-cell) | 1440 .. 14400 | 4320 .. 28800 | done | **untested** | infeasible | unknown | rng = 2 audit estimated >24 h CPU per case at the present `lib/search_engine` speed |
 
 Summary of unfinished territory:
 
@@ -659,14 +686,14 @@ Summary of unfinished territory:
   argument.  No rng = 4 probe has been run on them; they are
   *expected* to add 0 new shapes at rng = 4 by alias / cuboid
   reasoning, but this is not empirically verified.
-- **H₄ rng = 2 audit** — 4 of 13 H₄ Wythoff records have a
-  kernel-completeness audit; the other 9 require >24 h CPU each
+- **H₄ rng = 2 audit** — 5 of 13 H₄ Wythoff records have a
+  kernel-completeness audit; the other 8 require >24 h CPU each
   for a single rng = 2 audit pass.  These are pending an algorithmic
   improvement to `lib/search_engine.search` (precomputing per-
   direction strut hits is expected to give a 5-10× speedup) and/or
   a duality argument that halves the audit table.  All 4 audited
   H₄ cases show 0 gap, and H₄'s self-dual structure (analogous to
-  A₄'s) suggests the remaining 9 will also have 0 gap, but this is
+  A₄'s) suggests the remaining 8 will also have 0 gap, but this is
   not empirically verified.
 - **H₄ rng = 4** — only the 600-cell (V = 120) is tractable at
   rng = 4 in the current implementation (~19 h wall); every other
