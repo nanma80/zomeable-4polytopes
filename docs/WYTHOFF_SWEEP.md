@@ -843,6 +843,92 @@ are post-snap normalised by a uniform `φᵏ` factor (`lib/emit_generic
 near `30/φ²` zome units (~11.5) across the whole corpus, giving a
 consistent strut/ball ratio regardless of which `s` happened to snap.
 
+## Oblique-kernel inheritance: every `oblique_*.vZome` is a parent's master projection
+
+The 25 `oblique_*.vZome` files in `output/wythoff_sweep/` come from
+only **7 distinct kernel directions across the 4 groups**, and each
+of those 7 directions is *exactly* the kernel of one of the
+hand-curated parent-regular master projection files in
+`output/{5cell,16cell,24cell}/`.
+
+Verified empirically by `ongoing_work/probes/_verify_obliques_inherited.py`:
+for each unique oblique kernel `n` in the manifest, project the
+parent regular along `n` via `lib.emit_generic.project_and_emit` and
+compute the Stage-B fingerprint (rotation+uniform-scale invariant,
+so basis differences between `lib/emit_vzome.py` and `lib/emit_generic.py`
+do not interfere); the result matches a master file's Stage-B
+fingerprint in every case.
+
+### A4 — 3 master kernels (parent: 5-cell), 17 descendant files
+
+| kernel `n` (4D, sweep basis)                          | parent master file                                   | descendant `oblique_*.vZome` files                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/5cell/5cell_5ball_R6Y1B3.vZome` (V=5)        | `bitruncated_5-cell/oblique_01_9e2d21191f`, `cantellated_5-cell/oblique_00_1c346b0e6a`, `cantitruncated_5-cell/oblique_00_6189be49ed`, `omnitruncated_5-cell/oblique_9f354d53ae`, `rectified_5-cell/oblique_00_4fe32006bf`, `runcinated_5-cell/oblique_00_1c278a1d7d`, `runcitruncated_5-cell/oblique_db7b74a33d`, `truncated_5-cell/oblique_01_9fee63fe24` (8 files) |
+| `[φ³−1, 0, φ³−1, 0]` = `[3.618, 0, 3.618, 0]`         | `output/5cell/5cell_4ball_Y6B3.vZome` (V=4, edge-collapses) | `cantellated_5-cell/oblique_01_e7d00a6967`, `cantitruncated_5-cell/oblique_01_befb910d19`, `rectified_5-cell/oblique_01_55abe81889`, `truncated_5-cell/oblique_02_cd65b76a7d` (4 files)                                                                                                                                                                          |
+| `[0, 0, 1/φ², −1/φ²]` = `[0, 0, 0.382, −0.382]`       | `output/5cell/5cell_5ball_Y4B2R4.vZome` (V=5)        | `bitruncated_5-cell/oblique_00_190a7b1c71`, `cantitruncated_5-cell/oblique_02_c1635833bd`, `rectified_5-cell/oblique_02_c2ff97e546`, `runcinated_5-cell/oblique_01_4547c11713`, `truncated_5-cell/oblique_00_7df137dba4` (5 files)                                                                                                                                |
+
+The 4th master file `5cell_vertex_first_tet_plus_center.vZome` is
+*not* an oblique direction (its kernel `(1−2φ, 1−2φ, 1−2φ, 1) = (−√5, −√5, −√5, 1)`
+points to a 5-cell vertex), so it has no descendant `oblique_*.vZome`
+counterpart; instead it shows up under the descendants' `vertex_first_*` /
+`cell_first_*` labels.
+
+### B4 — 3 master kernels (parent: 16-cell, *not* tesseract), 6 descendant files
+
+These 3 kernels are reachable only at **rng = 4** (the 6 descendant
+files were promoted in milestones 13–14 from the rng=4 audit).
+Crucially, projecting the *tesseract* along any of these 3 kernels
+**snap-fails** — they are 16-cell-aligned only.
+
+| kernel `n` (4D, sweep basis)                                  | parent master file                                | descendant `oblique_*.vZome` files                                                                                                                                  |
+|---------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `[8.472, 2, −8.472, 8.472]`                                   | `output/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806` (2 files)                                                                    |
+| `[0.382, 0.854, −0.382, 0.382]` (note `0.854 ≈ √φ/φ`)         | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9` (2 files)                                                                    |
+| `[9.472, 2.236, 2.236, −2.236]` = `[…, √5, √5, −√5]`          | `output/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8` (2 files)                                                                    |
+
+The three antiprism master projections form the well-known **D₄
+triality orbit** of the 16-cell (see `output/16cell/RESULTS.md`).
+Empirically all three triality directions propagate identically to
+both `rectified_tesseract` and `truncated_16-cell` — these two
+descendants share the same oblique-projection structure even though
+their full descendant-vertex sets differ.
+
+### F4 — 1 master kernel (parent: 24-cell), 2 descendant files
+
+| kernel `n` (4D, sweep basis)                          | parent master file                          | descendant `oblique_*.vZome` files                                                          |
+|-------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
+| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/24cell/24cell_triality.vZome` (V=24) | `rectified_24-cell/oblique_56093e7cd7`, `truncated_24-cell/oblique_6b7eadcbcf` (2 files)    |
+
+**The same 4D vector is simultaneously the master oblique kernel for
+A4 and F4.**  The 5-cell embeds in the 24-cell along this direction;
+the projection produces the 5cell `5ball_R6Y1B3` shape when applied
+to the 5-cell vertices, and the much larger triality shape when
+applied to the 24 24-cell vertices.
+
+### H4 — 0 oblique kernels at rng ≤ 4
+
+No `oblique_*.vZome` entries exist for any H4 descendant.  The two
+hand-built H4 master files (`120cell_H4_to_H3.vZome`,
+`600cell_H4_to_H3.vZome`) classify under `vertex_first` / similar
+icosahedral-axis labels in their respective descendant trees, not
+under `oblique`.
+
+### Implication
+
+The wythoff sweep does **not** discover any *new* oblique projection
+directions beyond what the parent-regular master files already
+exhibit.  Every "obscure" oblique projection of every Wythoff
+descendant is just the descendant's vertex set viewed through one of
+the parent regular's documented oblique axes.  This is consistent
+with the way the sweep is architected (Step 1 finds kernels for the
+parent regular only; Step 2 reuses the same kernel set for every
+descendant), but it is a theoretical observation that holds even
+across re-runs at higher rng.
+
+The 7 master kernels above account for **25 of 25** `oblique_*.vZome`
+files in `output/wythoff_sweep/` — full coverage.  Reproducer:
+`python ongoing_work/probes/_verify_obliques_inherited.py`.
+
 ## Reproduction
 
 ```powershell
