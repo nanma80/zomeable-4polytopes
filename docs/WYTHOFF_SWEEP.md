@@ -853,44 +853,55 @@ as **exceptions** to the [oblique-kernel inheritance pattern](#oblique-kernel-in
 that earlier milestones described, because their kernels are not
 inherited from any *tesseract* master projection (the parent
 tesseract's edge set fails to snap along these directions).  A
-follow-up inheritance probe (`ongoing_work/probes/m17_inheritance_full.py`)
-revisited the question by also testing the **16-cell** and the
-**24-cell-as-B₄** as parent regulars — both are first-class B₄
-parents (they share the B₄ root system with the tesseract; the
-24-cell is the rectified 16-cell), so the inheritance lemma should
-admit any of them as the "parent master".  The outcome:
+follow-up inheritance probe (`ongoing_work/probes/test_antiprism_hypothesis.py`)
+**resolved this completely**: all 3 M17 bitr_tesseract shapes are
+projections of the bitr_tesseract along the 3 documented **16-cell
+antiprism master kernels** (B6R12Y6, R12B6Y6, Y6R12B6), and each
+also coincides with the 24-cell triality master projection:
 
-| M17 kernel (B₄ axis-aligned basis)            | tesseract | 16-cell                                | 24-cell-as-B₄                  |
-|-----------------------------------------------|:---------:|:---------------------------------------|:--------------------------------|
-| `oblique_00` = `[1/φ², 1/φ², −1/φ², −φ]`      | ❌ FAIL   | ✅ → `16cell_antiprism_Y6R12B6.vZome` | ✅ → `24cell_triality.vZome`   |
-| `oblique_01` = `[1/φ², −φ, φ, φ]`             | ❌ FAIL   | ✅ → `16cell_antiprism_B6R12Y6.vZome` | ✅ → `24cell_triality.vZome`   |
-| `face_first_hexagon` = `[φ³, −φ, φ, φ]`       | ❌ FAIL   | ❌ FAIL                                | ❌ FAIL                         |
+| 16-cell antiprism master kernel (axis-aligned B4 basis)              | 16-cell V=8 image                            | 24-cell V=24 image            | bitr_tesseract V=96 image (M17 file)         |
+|----------------------------------------------------------------------|:---------------------------------------------|:------------------------------|:---------------------------------------------|
+| `[2φ³, 2, −2φ³, 2φ³]` (B6R12Y6_master_A)                             | `16cell_antiprism_B6R12Y6.vZome`             | `24cell_triality.vZome`       | `oblique_01_26f0b7c6e6.vZome`                |
+| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (R12B6Y6_master_B; `3φ−4 ≈ 0.854`)       | `16cell_antiprism_R12B6Y6.vZome`             | `24cell_triality.vZome`       | `face_first_hexagon_df821cc628.vZome`        |
+| `[1+2φ³, √5, √5, −√5]` (Y6R12B6_master_C)                            | `16cell_antiprism_Y6R12B6.vZome`             | `24cell_triality.vZome`       | `oblique_00_80a961d9da.vZome`                |
 
-So **only 1 of the 3** is a genuinely descendant-only kernel: the
-`face_first_hexagon` shape (`bitruncated_tesseract/face_first_hexagon_df821cc628.vZome`),
-whose kernel snap-fails on every B₄ parent regular.  This is the first
-true counter-example to the inheritance pattern in the rng = 2 + rng = 4
-audit at present, and it demonstrates that the inheritance lemma is a
-*frequency observation* rather than a structural theorem — most
-descendant obliques inherit, but at least one bitruncated tesseract
-oblique does not.
+So the corpus has **0 documented exceptions** to the inheritance
+pattern — all 28 `oblique_*.vZome` files in `output/wythoff_sweep/`,
+including the 3 M17 additions, project from a parent regular master
+kernel.
 
-The other 2 (`oblique_00`, `oblique_01`) are **rng = 2 kernel-orbit
-representatives** of the same 16-cell antiprism / 24-cell triality
-directions that the doc previously catalogued only at rng = 4
-(`[8.472, 2, −8.472, 8.472]` and friends, see
-[oblique kernel inheritance](#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
-table for B₄).  They were missed by Step 1 because Step 1
-parent-filters against the (1, 0, 0, 0) tesseract only — the 16-cell
-and 24-cell would have admitted them, but the production sweep only
-asks the tesseract.  Bonus connection: the `oblique_00` 4-tuple
+The reason the M17 audit reported a 3rd "descendant-only" kernel
+`[φ³, −φ, φ, φ]` (the kernel originally assigned to
+`face_first_hexagon_df821cc628.vZome`) is subtler: that kernel and
+the R12B6Y6 antiprism master kernel `[1/φ², 3φ−4, −1/φ², 1/φ²]`
+project the bitr_tesseract to **the same 3D V=96 shape** (Stage-B
+sig `df821cc628…`) even though they are *not* B4-Weyl-equivalent
+4-vectors (different magnitude multisets, so no permutation +
+sign-flip can relate them).  The bitr_tesseract has more symmetry
+than its B4 Weyl group: its Coxeter symbol `0–1–1–0` is palindromic
+under the B4 outer Z/2 automorphism (the duality flip that swaps
+the bitmask `(1,0,0,0)` ≡ tesseract orbit with `(0,0,0,1)` ≡
+16-cell orbit), so the bitr_tesseract is invariant under B4 × Z/2.
+The Z/2 factor maps `[φ³, −φ, φ, φ]` to a 4-vector parallel to the
+R12B6Y6 antiprism kernel, giving the same 3D image — but the
+16-cell (only B4-invariant) sees only one of the two pre-images,
+which is why the `[φ³, −φ, φ, φ]` kernel snap-fails on the 16-cell
+while its Z/2-image snap-OK's.
+
+For the other two M17 kernels (`oblique_00` `[1/φ², 1/φ², −1/φ², −φ]`
+and `oblique_01` `[1/φ², −φ, φ, φ]`), both the M17 kernel AND the
+corresponding antiprism master kernel make the 16-cell zomeable
+(and they project to the same V=8 antiprism shape), so the
+inheritance is direct via plain B4-Weyl orbit equivalence.
+
+Bonus connection: the `oblique_00` 4-tuple
 `[1/φ², 1/φ², −1/φ², −φ]` is, under our convention disclaimer,
-**simultaneously** the A₄ 5-ball master kernel (vertex-first 5-cell
-basis), the F₄ triality master kernel (D₄ long-root 24-cell basis),
-the B₄ 16-cell antiprism Y6R12B6 direction (B₄ axis-aligned basis),
-*and* the B₄ 24-cell triality direction — the same 4 numbers reading
-as four different geometric meanings across the four groups'
-conventions.
+**simultaneously** the A4 5-ball master kernel (vertex-first 5-cell
+basis), the F4 triality master kernel (D₄ long-root 24-cell basis),
+the B4 16-cell antiprism Y6R12B6 direction (B4 axis-aligned basis),
+*and* the B4 24-cell triality direction — the same 4 numbers
+reading as four different geometric meanings across the four
+groups' conventions.
 
 Reproducer:
 
@@ -1090,9 +1101,9 @@ Crucially, projecting the *tesseract* along any of these 3 kernels
 
 | kernel `n` (4D, sweep basis)                                  | parent master file                                | descendant `oblique_*.vZome` files                                                                                                                                  |
 |---------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `[8.472, 2, −8.472, 8.472]`                                   | `output/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806` (2 files)                                                                    |
-| `[0.382, 0.854, −0.382, 0.382]` (note `0.854 ≈ √φ/φ`)         | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9` (2 files)                                                                    |
-| `[9.472, 2.236, 2.236, −2.236]` = `[…, √5, √5, −√5]`          | `output/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8` (2 files)                                                                    |
+| `[8.472, 2, −8.472, 8.472]`                                   | `output/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806`, `bitruncated_tesseract/oblique_01_26f0b7c6e6` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², −φ, φ, φ]`) |
+| `[0.382, 0.854, −0.382, 0.382]` (`0.854 = 3φ−4 ∈ ℤ[φ]`)       | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9`, `bitruncated_tesseract/face_first_hexagon_df821cc628` (3 files; the M17 bitr-tesseract inherits via the bitr-tesseract's B4 × Z/2 outer aut, see [M17 audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)) |
+| `[9.472, 2.236, 2.236, −2.236]` = `[1+2φ³, √5, √5, −√5]`      | `output/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8`, `bitruncated_tesseract/oblique_00_80a961d9da` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², 1/φ², −1/φ², −φ]`) |
 
 The three antiprism master projections form the well-known **D₄
 triality orbit** of the 16-cell (see `output/16cell/RESULTS.md`).
@@ -1155,35 +1166,32 @@ set*, not a property of the descendant polytopes.
 The
 [Step-1 blind-spot audit (Milestone 17)](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)
 ran the rng = 2 search directly against each descendant's edge set
-and added 3 new shapes from B₄ bitruncated tesseract.  A follow-up
-inheritance check (`ongoing_work/probes/m17_inheritance_full.py`)
-showed that **2 of those 3 are still inherited** from existing 16-cell
-antiprism / 24-cell triality masters at rng-2 kernel-orbit
-representatives the doc previously listed only at rng = 4:
+and added 3 new V=96 shapes from B₄ bitruncated tesseract.  A
+follow-up inheritance check
+(`ongoing_work/probes/test_antiprism_hypothesis.py`) showed that
+**all 3 of these new shapes are still inherited** — they are the
+bitr_tesseract images of the 3 documented 16-cell antiprism master
+kernels (B6R12Y6, R12B6Y6, Y6R12B6), and equivalently the
+bitr_tesseract images of the 24-cell triality master kernel under
+B₄ Weyl orbit equivalence:
 
-| M17 kernel (B4 axis-aligned basis)            | tesseract | 16-cell                                  | 24-cell                          |
-|-----------------------------------------------|:---------:|:-----------------------------------------|:---------------------------------|
-| `oblique_00` = `[1/φ², 1/φ², −1/φ², −φ]`      | ❌ FAIL   | ✅ → `16cell_antiprism_Y6R12B6.vZome`   | ✅ → `24cell_triality.vZome`    |
-| `oblique_01` = `[1/φ², −φ, φ, φ]`             | ❌ FAIL   | ✅ → `16cell_antiprism_B6R12Y6.vZome`   | ✅ → `24cell_triality.vZome`    |
-| `face_first_hexagon` = `[φ³, −φ, φ, φ]`       | ❌ FAIL   | ❌ FAIL                                  | ❌ FAIL                          |
+| 16-cell antiprism master kernel                          | 16-cell V=8 image               | 24-cell V=24 image      | bitr_tesseract V=96 (M17) image       |
+|----------------------------------------------------------|:--------------------------------|:------------------------|:--------------------------------------|
+| `[2φ³, 2, −2φ³, 2φ³]`                                    | `16cell_antiprism_B6R12Y6.vZome`| `24cell_triality.vZome` | `oblique_01_26f0b7c6e6.vZome`         |
+| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (`3φ−4 ≈ 0.854`)             | `16cell_antiprism_R12B6Y6.vZome`| `24cell_triality.vZome` | `face_first_hexagon_df821cc628.vZome` |
+| `[1+2φ³, √5, √5, −√5]`                                   | `16cell_antiprism_Y6R12B6.vZome`| `24cell_triality.vZome` | `oblique_00_80a961d9da.vZome`         |
 
-So the corpus has exactly **1 documented exception** to the
-inheritance pattern: `bitruncated_tesseract/face_first_hexagon_df821cc628.vZome`,
-whose kernel snap-fails on every B₄ parent regular (tesseract, 16-cell,
-and 24-cell-as-B₄).  This single shape is genuinely descendant-only
-— the bitruncated tesseract has at least one zomeable oblique
-direction that none of its parents possess.  The other 2 M17
-shapes are rng=2 inheritances of existing antiprism and triality
-masters and arguably belong on the per-group inheritance table below
-as additional kernel-orbit reps; they're listed here separately to
-make the chronology of their discovery clear.
-
-The 7 master kernels above + the 2 newly-discovered rng = 2
-reps account for **27 of 28** `oblique_*.vZome` files in
-`output/wythoff_sweep/`; the remaining 1 (the `face_first_hexagon`
-Milestone 17 addition) is the descendant-only exception.
-Reproducer: `python ongoing_work/probes/_verify_obliques_inherited.py`
-plus `python ongoing_work/probes/m17_inheritance_full.py`.
+So the corpus has **0 documented exceptions** to the inheritance
+pattern.  All 28 `oblique_*.vZome` files in `output/wythoff_sweep/`
+are inherited from a parent regular master kernel.  The 7 master
+kernels listed in the [oblique kernel inheritance table below](#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
+account for **25 of 28** files; the remaining 3 (the M17
+bitr_tesseract additions) are inherited from the same 3 16-cell
+antiprism master kernels but at the V=96 bitr_tesseract scale,
+extending each antiprism row in the table to 3 inheriting files
+instead of 2.  Reproducer:
+`python ongoing_work/probes/_verify_obliques_inherited.py` plus
+`python ongoing_work/probes/test_antiprism_hypothesis.py`.
 
 ## Reproduction
 
