@@ -35,7 +35,7 @@ ANTIPRISM = {
 M17 = {
     "M17_oblique_00":         [1 / PHI ** 2, 1 / PHI ** 2, -1 / PHI ** 2, -PHI],
     "M17_oblique_01":         [1 / PHI ** 2, -PHI, PHI, PHI],
-    "M17_face_first_hexagon": [PHI ** 3, -PHI, PHI, PHI],   # NB: file renamed to oblique_02_df821cc628.vZome in M17b
+    "M17_face_first_hexagon": [PHI ** 3, -PHI, PHI, PHI],   # NB: file renamed to oblique_01_df821cc628.vZome (M17b rename + M17c renumber)
 }
 
 # Index existing master regulars by Stage-B sig

@@ -33,17 +33,17 @@ groups = {
     "B6R12Y6": [
         ("output/wythoff_sweep/rectified_tesseract/oblique_00_e2b79a96f7.vZome",  "rect_tess oblique_00"),
         ("output/wythoff_sweep/truncated_16-cell/oblique_00_9d18eb2806.vZome",     "trunc_16  oblique_00"),
-        ("output/wythoff_sweep/bitruncated_tesseract/oblique_01_26f0b7c6e6.vZome", "bitr_tess oblique_01"),
+        ("output/wythoff_sweep/bitruncated_tesseract/oblique_00_26f0b7c6e6.vZome", "bitr_tess oblique_00"),
     ],
     "R12B6Y6": [
         ("output/wythoff_sweep/rectified_tesseract/oblique_01_b35b865a54.vZome",          "rect_tess oblique_01"),
         ("output/wythoff_sweep/truncated_16-cell/oblique_01_ccdfd208c9.vZome",            "trunc_16  oblique_01"),
-        ("output/wythoff_sweep/bitruncated_tesseract/oblique_02_df821cc628.vZome","bitr_tess oblique_02"),
+        ("output/wythoff_sweep/bitruncated_tesseract/oblique_01_df821cc628.vZome","bitr_tess oblique_01"),
     ],
     "Y6R12B6": [
         ("output/wythoff_sweep/rectified_tesseract/oblique_02_2be6954c03.vZome",  "rect_tess oblique_02"),
         ("output/wythoff_sweep/truncated_16-cell/oblique_02_2c50f047a8.vZome",     "trunc_16  oblique_02"),
-        ("output/wythoff_sweep/bitruncated_tesseract/oblique_00_80a961d9da.vZome", "bitr_tess oblique_00"),
+        ("output/wythoff_sweep/bitruncated_tesseract/oblique_02_80a961d9da.vZome", "bitr_tess oblique_02"),
     ],
 }
 

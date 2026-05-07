@@ -6,7 +6,8 @@
     "deduplicated by 3D shape congruence (dist_decimals=5, edge_decimals=5): 104 aliases collapsed into 18 canonical entries",
     "B4 rng=4 audit (Milestones 6/7): added 6 new shapes (3 from rectified tesseract, 3 from truncated 16-cell) found at rng=4 that the rng=2 sweep cannot reach.  Each new entry carries rng=4.",
     "Milestone 17 blind-spot audit (rng=2 descendant-direct): added 3 new shape(s) from bitruncated tesseract.  Found by ongoing_work/probes/blind_spot_audit.py running search() directly against descendant edge sets, bypassing the parent-regular Step-1 filter in tools/run_wythoff_sweep.py.  Each entry carries rng=2.",
-    "Milestone 17b: rescaled the 3 M17 bitruncated_tesseract V=96 oblique files to canonical antiprism scale (min_edge=12.31073) by /phi^k for k=0,1,2 respectively, and renamed face_first_hexagon_df821cc628 to oblique_02_df821cc628 (it is a bitr_tesseract image of the 16-cell antiprism R12B6Y6 master kernel, not a face-first hexagonal projection)."
+    "Milestone 17b: rescaled the 3 M17 bitruncated_tesseract V=96 oblique files to canonical antiprism scale (min_edge=12.31073) by /phi^k for k=0,1,2 respectively, and renamed face_first_hexagon_df821cc628 to oblique_02_df821cc628 (it is a bitr_tesseract image of the 16-cell antiprism R12B6Y6 master kernel, not a face-first hexagonal projection).",
+    "Milestone 17c: renumbered the 3 M17 bitruncated_tesseract obliques so the index suffix (oblique_00/01/02) aligns row-for-row with the antiprism inheritance table in docs/WYTHOFF_SWEEP.md (B6R12Y6 master -> 00, R12B6Y6 master -> 01, Y6R12B6 master -> 02).  After M17c: oblique_00_26f0b7c6e6 (was oblique_01), oblique_01_df821cc628 (was oblique_02 / originally face_first_hexagon), oblique_02_80a961d9da (was oblique_00).  Hash suffixes are sig-derived and unchanged.  Also normalised label_subtype to null on all 3 entries (entry df821cc628 had a stale '00' from the M17b rename)."
   ],
   "rng": "mixed (2 baseline; 4 for B4 rng=4 audit-flagged additions)",
   "shapes": [
@@ -2623,7 +2624,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_00_80a961d9da.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_02_80a961d9da.vZome",
       "fp_hash": "80a961d9da91d5a4",
       "group": "B4",
       "kernel": [
@@ -2635,7 +2636,7 @@
       "label": "oblique",
       "label_subtype": null,
       "n_balls": 96,
-      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Rescaled in M17b by /phi^0 to match antiprism canonical scale 12.31073.",
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Rescaled in M17b by /phi^0 to match antiprism canonical scale 12.31073.  Renumbered in M17c from oblique_00 to oblique_02 to align with rectified_tesseract/truncated_16-cell antiprism inheritance row order (this file is the bitr_tesseract image of the 16-cell antiprism Y6R12B6 master kernel).",
       "rng": 2,
       "shape_idx": null,
       "source_polytope": "bitruncated tesseract",
@@ -2654,7 +2655,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_01_26f0b7c6e6.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_00_26f0b7c6e6.vZome",
       "fp_hash": "26f0b7c6e6bc0a7b",
       "group": "B4",
       "kernel": [
@@ -2666,7 +2667,7 @@
       "label": "oblique",
       "label_subtype": null,
       "n_balls": 96,
-      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Rescaled in M17b by /phi^1 to match antiprism canonical scale 12.31073.",
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Rescaled in M17b by /phi^1 to match antiprism canonical scale 12.31073.  Renumbered in M17c from oblique_01 to oblique_00 to align with rectified_tesseract/truncated_16-cell antiprism inheritance row order (this file is the bitr_tesseract image of the 16-cell antiprism B6R12Y6 master kernel).",
       "rng": 2,
       "shape_idx": null,
       "source_polytope": "bitruncated tesseract",
@@ -2685,7 +2686,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_02_df821cc628.vZome",
+      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_01_df821cc628.vZome",
       "fp_hash": "df821cc628a5d5a1",
       "group": "B4",
       "kernel": [
@@ -2695,9 +2696,9 @@
         1.618034
       ],
       "label": "oblique",
-      "label_subtype": "00",
+      "label_subtype": null,
       "n_balls": 96,
-      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Renamed in M17b: was misclassified as face_first_hexagon; correctly an oblique projection (the two hexagons near the projection center are off-center, and the kernel is the bitr_tesseract image of the 16-cell antiprism R12B6Y6 master direction).",
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.  Renamed in M17b: was misclassified as face_first_hexagon; correctly an oblique projection (the two hexagons near the projection center are off-center, and the kernel is the bitr_tesseract image of the 16-cell antiprism R12B6Y6 master direction).  Renumbered in M17c from oblique_02 to oblique_01 to align with rectified_tesseract/truncated_16-cell antiprism inheritance row order (R12B6Y6 master is the 2nd master in row order).",
       "rng": 2,
       "shape_idx": null,
       "source_polytope": "bitruncated tesseract",
