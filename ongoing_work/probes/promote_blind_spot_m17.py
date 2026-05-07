@@ -208,48 +208,83 @@ def _min_edge_length(path):
     return float(L.min())
 
 
+def _label_of_existing(path, manifest):
+    """Look up (label, V) for an existing file in the manifest; return
+    (label, V) or (None, None) if not found."""
+    rel_target = path.relative_to(ROOT).as_posix().replace("/", os.sep)
+    for s in manifest.get("shapes", []):
+        if s.get("file") == rel_target:
+            P, E = parse_vzome(path)
+            return s.get("label"), len(P)
+    return None, None
+
+
 print()
 print("=" * 80)
 print("Stage 5b: Normalise physical scale within each polytope (* phi^-k)")
+print("Pools files by (V, label) so that distinct projection classes")
+print("(e.g. cell_first vs oblique) don't pollute one another's scale "
+      "reference.  See M17b: the original logic pooled the entire slug "
+      "folder, allowing face_first_square (V=52, min_edge=9.07) to set "
+      "the target for V=96 oblique entries that should match the antiprism "
+      "canonical scale 12.31.")
 print("=" * 80)
 slug_to_paths = defaultdict(list)
 for c, dst in zip(candidates, dst_paths):
     slug_to_paths[c["slug"]].append(dst)
 
 for slug, paths in slug_to_paths.items():
-    # Include existing files in this slug folder so the new ones share scale
-    # with the already-canonical ones.
     folder = OUT_DIR / slug
     existing_existing_paths = [p for p in folder.glob("*.vZome") if p not in paths]
-    all_paths = paths + existing_existing_paths
-    edges = {p: _min_edge_length(p) for p in all_paths}
-    target = min(edges.values())
-    print(f"  {slug}: canonical target min_edge = {target:.5f} "
-          f"({len(existing_existing_paths)} existing + {len(paths)} new)")
+
+    # Build (V, label) buckets across new + existing.
+    pool = defaultdict(list)
     for p in paths:
-        m = edges[p]
-        ratio = m / target
-        if ratio < 1.001:
-            print(f"    {p.name}: already at target ({m:.5f})")
+        # New entry: look up (label, V) from the in-memory candidates.
+        for c, d, fname, (lab, _sub) in zip(
+                candidates, dst_paths, filenames, classifications):
+            if d == p:
+                P, _ = parse_vzome(p)
+                pool[(len(P), lab)].append(p)
+                break
+    for p in existing_existing_paths:
+        lab, V = _label_of_existing(p, manifest)
+        if lab is None:
             continue
-        k = int(round(math.log(ratio, PHI)))
-        if k <= 0 or abs(ratio - PHI ** k) > 0.01 * (PHI ** k):
-            print(f"    {p.name}: WARNING ratio={ratio:.4f} not a clean "
-                  f"power of phi -- LEAVING AS-IS")
+        pool[(V, lab)].append(p)
+
+    for (V, label), pool_paths in pool.items():
+        edges = {p: _min_edge_length(p) for p in pool_paths}
+        target = min(edges.values())
+        new_in_pool = [p for p in pool_paths if p in paths]
+        if not new_in_pool:
             continue
-        text = p.read_text(encoding="utf-8")
-        for _ in range(k):
-            text = _inv_phi_transform_text(text)
-        p.write_text(text, encoding="utf-8")
-        new_min = _min_edge_length(p)
-        print(f"    {p.name}: was {m:.5f}, /phi^{k} -> {new_min:.5f}")
-        P_new, E_new = parse_vzome(p)
-        sig_new = shape_signature(P_new, E_new)
-        for c, d in zip(candidates, dst_paths):
-            if d == p and sig_new[2] != c["sig"][2]:
-                print(f"      FATAL: hash changed during rescale "
-                      f"({c['sig'][2]} -> {sig_new[2]})")
-                sys.exit(1)
+        print(f"  {slug} pool (V={V}, label={label!r}): target min_edge={target:.5f} "
+              f"({len(pool_paths) - len(new_in_pool)} existing + {len(new_in_pool)} new)")
+        for p in new_in_pool:
+            m = edges[p]
+            ratio = m / target
+            if ratio < 1.001:
+                print(f"    {p.name}: already at target ({m:.5f})")
+                continue
+            k = int(round(math.log(ratio, PHI)))
+            if k <= 0 or abs(ratio - PHI ** k) > 0.01 * (PHI ** k):
+                print(f"    {p.name}: WARNING ratio={ratio:.4f} not a clean "
+                      f"power of phi -- LEAVING AS-IS")
+                continue
+            text = p.read_text(encoding="utf-8")
+            for _ in range(k):
+                text = _inv_phi_transform_text(text)
+            p.write_text(text, encoding="utf-8")
+            new_min = _min_edge_length(p)
+            print(f"    {p.name}: was {m:.5f}, /phi^{k} -> {new_min:.5f}")
+            P_new, E_new = parse_vzome(p)
+            sig_new = shape_signature(P_new, E_new)
+            for c, d in zip(candidates, dst_paths):
+                if d == p and sig_new[2] != c["sig"][2]:
+                    print(f"      FATAL: hash changed during rescale "
+                          f"({c['sig'][2]} -> {sig_new[2]})")
+                    sys.exit(1)
 
 print()
 print("=" * 80)

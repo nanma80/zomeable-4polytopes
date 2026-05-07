@@ -706,7 +706,7 @@ table is one of:
 | B₄    | truncated 16-cell (0,0,1,1)      |  48 | 120 | done          | done          | done          | done          | **+3**    | new V=48 shapes (Milestone 7, rng=4) |
 | B₄    | cantellated 16-cell (0,1,0,1)    |  96 | 288 | done          | done          | done          | done          | 0         | F₄ alias of rectified 24-cell |
 | B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | done          | done          | 0         | F₄ alias of truncated 24-cell; 12 raw fp → 3 unique, all in corpus |
-| B₄    | bitruncated tesseract (0,1,1,0)  |  96 | 192 | done          | done          | done          | not yet       | **+3**    | new V=96 shapes (Milestone 17, rng=2 d-d): `oblique_00`, `oblique_01`, `face_first_hexagon`; full 4-colour palette |
+| B₄    | bitruncated tesseract (0,1,1,0)  |  96 | 192 | done          | done          | done          | not yet       | **+3**    | new V=96 shapes (Milestone 17, rng=2 d-d): `oblique_00`, `oblique_01`, `oblique_02` (originally misclassified `face_first_hexagon`, renamed in M17b); full 4-colour palette |
 | B₄    | other tesseract / 16-cell records (truncated tesseract, runcinated tesseract, omnitruncated tesseract, runcitruncated 16-cell, runcitruncated tesseract, omnitruncated tesseract, …) | 64 .. 384 | 128 .. 768 | done | not yet | not yet | not yet | (likely 0) | not on the audit case list, since each is either an F₄ alias or a tesseract record covered by the cuboid-family argument |
 | F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | n/a (regular) | done          | 0         | regular |
 | F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell; 4 d-d new fp all collapse via Stage-B to corpus |
@@ -831,8 +831,14 @@ Interpretation by group:
   and none match anything in the existing corpus.  These 3 shapes
   were promoted to
   `output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
-  face_first_hexagon}_*.vZome` with `rng=2` flag and a Milestone 17
-  note in `manifest.json`.
+  oblique_02}_*.vZome` (the third was originally promoted as
+  `face_first_hexagon_df821cc628.vZome`, but the heuristic
+  `classify_kernel` in `lib/polytope_features.py` over-matched the
+  kernel direction `[φ³, −φ, φ, φ]` against the bitr_tesseract's
+  hexagonal face normals; the projection's two visible hexagons are
+  off-centre, so it is correctly oblique — renamed to
+  `oblique_02_df821cc628.vZome` in M17b).  All 3 have `rng=2` flag
+  and a Milestone 17 note in `manifest.json`.
 - **F₄ (12 new fp, 0 new shapes).**  9 fp Stage-B-match existing
   corpus entries.  3 fp **failed to snap to ℤ[φ]³**: one in
   `cantellated 24-cell` with kernel `[0, 0, 1/φ², −1/φ²]` (a
@@ -862,7 +868,7 @@ also coincides with the 24-cell triality master projection:
 | 16-cell antiprism master kernel (axis-aligned B4 basis)              | 16-cell V=8 image                            | 24-cell V=24 image            | bitr_tesseract V=96 image (M17 file)         |
 |----------------------------------------------------------------------|:---------------------------------------------|:------------------------------|:---------------------------------------------|
 | `[2φ³, 2, −2φ³, 2φ³]` (B6R12Y6_master_A)                             | `16cell_antiprism_B6R12Y6.vZome`             | `24cell_triality.vZome`       | `oblique_01_26f0b7c6e6.vZome`                |
-| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (R12B6Y6_master_B; `3φ−4 ≈ 0.854`)       | `16cell_antiprism_R12B6Y6.vZome`             | `24cell_triality.vZome`       | `face_first_hexagon_df821cc628.vZome`        |
+| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (R12B6Y6_master_B; `3φ−4 ≈ 0.854`)       | `16cell_antiprism_R12B6Y6.vZome`             | `24cell_triality.vZome`       | `oblique_02_df821cc628.vZome`               |
 | `[1+2φ³, √5, √5, −√5]` (Y6R12B6_master_C)                            | `16cell_antiprism_Y6R12B6.vZome`             | `24cell_triality.vZome`       | `oblique_00_80a961d9da.vZome`                |
 
 So the corpus has **0 documented exceptions** to the inheritance
@@ -872,7 +878,9 @@ kernel.
 
 The reason the M17 audit reported a 3rd "descendant-only" kernel
 `[φ³, −φ, φ, φ]` (the kernel originally assigned to
-`face_first_hexagon_df821cc628.vZome`) is subtler: that kernel and
+`oblique_02_df821cc628.vZome`, originally promoted as
+`face_first_hexagon_df821cc628.vZome` and renamed in M17b) is
+subtler: that kernel and
 the R12B6Y6 antiprism master kernel `[1/φ², 3φ−4, −1/φ², 1/φ²]`
 project the bitr_tesseract to **the same 3D V=96 shape** (Stage-B
 sig `df821cc628…`) even though they are *not* B4-Weyl-equivalent
@@ -978,7 +986,7 @@ A second follow-up — the rng = 2 *descendant-direct* (Step-1 blind-
 spot) audit on every A₄/B₄/F₄ Wythoff descendant — added **3 more
 distinct shapes** to the corpus, all from B₄ bitruncated tesseract
 (`output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
-face_first_hexagon}_*.vZome`).  Each is V = 96 with the full 4-colour
+oblique_02}_*.vZome`).  Each is V = 96 with the full 4-colour
 zometool palette `(B:48, Y:48, G:48, R:48)`.  The blind spot is
 architectural: `tools/run_wythoff_sweep.py` Step 1 snap-filters
 against the parent regular polytope only, so any kernel where the
@@ -1092,17 +1100,21 @@ points to a 5-cell vertex), so it has no descendant `oblique_*.vZome`
 counterpart; instead it shows up under the descendants' `vertex_first_*` /
 `cell_first_*` labels.
 
-### B4 — 3 master kernels (parent: 16-cell, *not* tesseract), 6 descendant files
+### B4 — 3 master kernels (parent: 16-cell, *not* tesseract), 9 descendant files
 
-These 3 kernels are reachable only at **rng = 4** (the 6 descendant
-files were promoted in milestones 13–14 from the rng=4 audit).
-Crucially, projecting the *tesseract* along any of these 3 kernels
-**snap-fails** — they are 16-cell-aligned only.
+These 3 kernels are reachable only at **rng = 4** in the
+parent-filtered Step-1 search (the 6 rectified-tesseract /
+truncated-16-cell descendant files were promoted in milestones
+13–14 from the rng=4 audit).  Crucially, projecting the *tesseract*
+along any of these 3 kernels **snap-fails** — they are 16-cell-
+aligned only.  The bitruncated tesseract additionally inherits all
+3 directions at rng = 2 (Milestone 17b), giving 3 more descendant
+files (one per row).
 
 | kernel `n` (4D, sweep basis)                                  | parent master file                                | descendant `oblique_*.vZome` files                                                                                                                                  |
 |---------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `[8.472, 2, −8.472, 8.472]`                                   | `output/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806`, `bitruncated_tesseract/oblique_01_26f0b7c6e6` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², −φ, φ, φ]`) |
-| `[0.382, 0.854, −0.382, 0.382]` (`0.854 = 3φ−4 ∈ ℤ[φ]`)       | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9`, `bitruncated_tesseract/face_first_hexagon_df821cc628` (3 files; the M17 bitr-tesseract inherits via the bitr-tesseract's B4 × Z/2 outer aut, see [M17 audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)) |
+| `[0.382, 0.854, −0.382, 0.382]` (`0.854 = 3φ−4 ∈ ℤ[φ]`)       | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9`, `bitruncated_tesseract/oblique_02_df821cc628` (3 files; the M17 bitr-tesseract inherits via the bitr-tesseract's B4 × Z/2 outer aut, see [M17 audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)) |
 | `[9.472, 2.236, 2.236, −2.236]` = `[1+2φ³, √5, √5, −√5]`      | `output/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8`, `bitruncated_tesseract/oblique_00_80a961d9da` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², 1/φ², −1/φ², −φ]`) |
 
 The three antiprism master projections form the well-known **D₄
@@ -1178,7 +1190,7 @@ B₄ Weyl orbit equivalence:
 | 16-cell antiprism master kernel                          | 16-cell V=8 image               | 24-cell V=24 image      | bitr_tesseract V=96 (M17) image       |
 |----------------------------------------------------------|:--------------------------------|:------------------------|:--------------------------------------|
 | `[2φ³, 2, −2φ³, 2φ³]`                                    | `16cell_antiprism_B6R12Y6.vZome`| `24cell_triality.vZome` | `oblique_01_26f0b7c6e6.vZome`         |
-| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (`3φ−4 ≈ 0.854`)             | `16cell_antiprism_R12B6Y6.vZome`| `24cell_triality.vZome` | `face_first_hexagon_df821cc628.vZome` |
+| `[1/φ², 3φ−4, −1/φ², 1/φ²]` (`3φ−4 ≈ 0.854`)             | `16cell_antiprism_R12B6Y6.vZome`| `24cell_triality.vZome` | `oblique_02_df821cc628.vZome` (renamed from `face_first_hexagon_df821cc628.vZome` in M17b) |
 | `[1+2φ³, √5, √5, −√5]`                                   | `16cell_antiprism_Y6R12B6.vZome`| `24cell_triality.vZome` | `oblique_00_80a961d9da.vZome`         |
 
 So the corpus has **0 documented exceptions** to the inheritance
