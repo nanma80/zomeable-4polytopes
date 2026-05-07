@@ -41,6 +41,7 @@ import numpy as np
 
 from wythoff import build_polytope, simple_roots, wythoff_seed, orbit
 from uniform_polytopes import all_uniform_polytopes, KNOWN_DUPLICATES
+from polytopes import snub_24cell, grand_antiprism
 from search_engine import gen_dirs, search, group_by_shape
 
 
@@ -61,6 +62,24 @@ def _vertex_count(group, bitmask):
 
 GROUPS = ("A4", "B4", "F4", "H4")
 REGULAR_BITMASK = (1, 0, 0, 0)
+
+# Non-Wythoff polytopes: tested against the kernels of their parent
+# group (snub 24-cell and grand antiprism are both naturally inscribed
+# in the H4 root system — snub 24-cell as the 96 of the 600-cell's 120
+# vertices that sit outside the inscribed 24-cell, grand antiprism as
+# a vertex-deletion of the 600-cell).  The sentinel bitmask (0,0,0,0)
+# is impossible for a Wythoff polytope (Wythoff requires at least one
+# ringed node), so it doubles as a "non-Wythoff" tag in shape records.
+# Master kernels that this sweep is expected to rediscover (the .vZome
+# files already in output/snub24cell/ and output/grand_antiprism/):
+#   snub 24-cell      cell-first   (1, 0, 0, 0)
+#   snub 24-cell      vertex-first (phi^2, phi, 1, 0)
+#   grand antiprism   vertex-first (1, 1, 1, 1)
+#   grand antiprism   ring-first   (1, 0, 0, 0)
+NON_WYTHOFF = (
+    ("H4", (0, 0, 0, 0), "snub 24-cell",    snub_24cell),
+    ("H4", (0, 0, 0, 0), "grand antiprism", grand_antiprism),
+)
 
 # ongoing_work/ relative to repo root (parent of tools/)
 ONGOING = os.path.normpath(
@@ -388,6 +407,45 @@ def main():
                 print(f"  WARN: shape dump failed for {group} {b}: {e}")
         results.append((group, b, name, len(V), len(E), len(hits),
                         shape_groups))
+
+    # 2b. Non-Wythoff polytopes (snub 24-cell, grand antiprism), tested
+    #     against the kernels of their parent group.  These are not in
+    #     all_uniform_polytopes() so we iterate them explicitly.  The
+    #     --bitmask filter excludes them (real Wythoff bitmask required);
+    #     a missing parent-group kernel set (e.g. when --group A4 is
+    #     selected and the non-Wythoff entry needs H4 kernels) skips
+    #     silently.
+    if args.bitmask is None:
+        for parent_group, b, name, loader in NON_WYTHOFF:
+            if parent_group not in group_kernels:
+                continue
+            kernels = group_kernels[parent_group]
+            t0 = time.time()
+            try:
+                V, E = loader()
+                hits = search(name, V, E, kernels, verbose=False)
+                shape_groups = group_by_shape(hits, V, E)
+            except RuntimeError as e:
+                print(f"  {parent_group} {b}  {name:30s}  ERR: {e}  "
+                      f"[non-Wythoff]")
+                results.append((parent_group, b, name, f"ERR: {e}",
+                                None, None, None))
+                continue
+            dt = time.time() - t0
+            print(f"  {parent_group} {b}  {name:30s}  "
+                  f"V={len(V):5d} E={len(E):5d}  "
+                  f"hits={len(hits):4d}  shapes={len(shape_groups)}  "
+                  f"({dt:.1f}s)  [non-Wythoff]")
+            if not args.no_dump_shapes:
+                try:
+                    dump_shape_record(shapes_jsonl_path, parent_group,
+                                      b, name, V, E, len(hits),
+                                      len(kernels), shape_groups)
+                except Exception as e:
+                    print(f"  WARN: shape dump failed for "
+                          f"{parent_group} {b}: {e}")
+            results.append((parent_group, b, name, len(V), len(E),
+                            len(hits), shape_groups))
 
     # 3. Census of *this run* (use parse_done_set across all logs for
     #    a global census).
