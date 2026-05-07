@@ -1,11 +1,12 @@
 {
   "n_fail": 27,
-  "n_ok": 208,
+  "n_ok": 214,
   "notes": [
     "deduplicated by kernel direction (cos>1-1e-06): 44 aliases collapsed into 34 canonical entries",
-    "deduplicated by 3D shape congruence (dist_decimals=5, edge_decimals=5): 104 aliases collapsed into 18 canonical entries"
+    "deduplicated by 3D shape congruence (dist_decimals=5, edge_decimals=5): 104 aliases collapsed into 18 canonical entries",
+    "B4 rng=4 audit (Milestones 6/7): added 6 new shapes (3 from rectified tesseract, 3 from truncated 16-cell) found at rng=4 that the rng=2 sweep cannot reach.  Each new entry carries rng=4."
   ],
-  "rng": 2,
+  "rng": "mixed (2 baseline; 4 for B4 rng=4 audit-flagged additions)",
   "shapes": [
     {
       "bitmask": [
@@ -1073,6 +1074,16 @@
       }
     },
     {
+      "alias_of": {
+        "bitmask": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "group": "B4",
+        "source_polytope": "cantellated 16-cell"
+      },
       "bitmask": [
         0,
         1,
@@ -1097,19 +1108,19 @@
       "strut_counts": {
         "B": 72,
         "G": 84
-      },
+      }
+    },
+    {
       "alias_of": {
-        "source_polytope": "cantellated 16-cell",
-        "group": "B4",
         "bitmask": [
           0,
           1,
           0,
           1
-        ]
-      }
-    },
-    {
+        ],
+        "group": "B4",
+        "source_polytope": "cantellated 16-cell"
+      },
       "bitmask": [
         0,
         1,
@@ -1134,16 +1145,6 @@
       "strut_counts": {
         "B": 36,
         "Y": 96
-      },
-      "alias_of": {
-        "source_polytope": "cantellated 16-cell",
-        "group": "B4",
-        "bitmask": [
-          0,
-          1,
-          0,
-          1
-        ]
       }
     },
     {
@@ -1228,6 +1229,16 @@
       }
     },
     {
+      "alias_of": {
+        "bitmask": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "group": "B4",
+        "source_polytope": "cantitruncated 16-cell"
+      },
       "bitmask": [
         0,
         1,
@@ -1252,19 +1263,19 @@
       "strut_counts": {
         "B": 96,
         "G": 120
-      },
+      }
+    },
+    {
       "alias_of": {
-        "source_polytope": "cantitruncated 16-cell",
-        "group": "B4",
         "bitmask": [
           0,
           1,
           1,
           1
-        ]
-      }
-    },
-    {
+        ],
+        "group": "B4",
+        "source_polytope": "cantitruncated 16-cell"
+      },
       "bitmask": [
         0,
         1,
@@ -1289,16 +1300,6 @@
       "strut_counts": {
         "B": 48,
         "Y": 128
-      },
-      "alias_of": {
-        "source_polytope": "cantitruncated 16-cell",
-        "group": "B4",
-        "bitmask": [
-          0,
-          1,
-          1,
-          1
-        ]
       }
     },
     {
@@ -2426,6 +2427,192 @@
       "shape_idx": 0,
       "source_polytope": "omnitruncated 24-cell",
       "status": "snap_failed"
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "file": "wythoff_sweep\\rectified_tesseract\\oblique_00_e2b79a96f7.vZome",
+      "fp_hash": "e2b79a96f751b400",
+      "group": "B4",
+      "kernel": [
+        8.472136,
+        2.0,
+        -8.472136,
+        8.472136
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 32,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "rectified tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 24,
+        "G": 24,
+        "R": 24,
+        "Y": 24
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "file": "wythoff_sweep\\rectified_tesseract\\oblique_01_b35b865a54.vZome",
+      "fp_hash": "b35b865a5417fa8f",
+      "group": "B4",
+      "kernel": [
+        0.381966,
+        0.854102,
+        -0.381966,
+        0.381966
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 32,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "rectified tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 24,
+        "G": 24,
+        "R": 24,
+        "Y": 24
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "file": "wythoff_sweep\\rectified_tesseract\\oblique_02_2be6954c03.vZome",
+      "fp_hash": "2be6954c03446986",
+      "group": "B4",
+      "kernel": [
+        9.472136,
+        2.236068,
+        2.236068,
+        -2.236068
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 32,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "rectified tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 24,
+        "G": 24,
+        "R": 24,
+        "Y": 24
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\truncated_16-cell\\oblique_00_9d18eb2806.vZome",
+      "fp_hash": "9d18eb2806934d51",
+      "group": "B4",
+      "kernel": [
+        8.472136,
+        2.0,
+        -8.472136,
+        8.472136
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 48,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "truncated 16-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 30,
+        "G": 30,
+        "R": 30,
+        "Y": 30
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\truncated_16-cell\\oblique_01_ccdfd208c9.vZome",
+      "fp_hash": "ccdfd208c989df2c",
+      "group": "B4",
+      "kernel": [
+        0.381966,
+        0.854102,
+        -0.381966,
+        0.381966
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 48,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "truncated 16-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 30,
+        "G": 30,
+        "R": 30,
+        "Y": 30
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "file": "wythoff_sweep\\truncated_16-cell\\oblique_02_2c50f047a8.vZome",
+      "fp_hash": "2c50f047a8300057",
+      "group": "B4",
+      "kernel": [
+        9.472136,
+        2.236068,
+        2.236068,
+        -2.236068
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 48,
+      "note": "B4 rng=4 audit-flagged finding (Milestone 6 / 7).  Found by ongoing_work/probes/{rect_tess,trunc16}_rng4_focused.py.",
+      "rng": 4,
+      "shape_idx": null,
+      "source_polytope": "truncated 16-cell",
+      "status": "ok",
+      "strut_counts": {
+        "B": 30,
+        "G": 30,
+        "R": 30,
+        "Y": 30
+      }
     }
   ]
 }

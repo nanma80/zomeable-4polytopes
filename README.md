@@ -56,10 +56,27 @@ once and reuses it across all 9–15 Wythoff variants in that group.
 At rng=2 the sweep finds **127 distinct novel zomeable shapes** beyond
 the 8 polytopes above (regular reference set is the (1,0,0,0)/(0,0,0,1)
 records of every group, which collectively are the 6 standard
-regulars).  100 of the 127 successfully snap to ZZ[φ]³ and are
-emitted as .vZome files in [`output/wythoff_sweep/`](output/wythoff_sweep/);
-the remaining 27 are abstractly zomeable but not vZome-embeddable at
-the snap precision used by `lib/emit_generic.py`.
+regulars).  100 of the 127 successfully snap to ZZ[φ]³ as candidate
+.vZome files; the remaining 27 are abstractly zomeable but not
+vZome-embeddable at the snap precision used by `lib/emit_generic.py`.
+After a Stage-B shape-congruence dedup pass the snapped 100 collapse
+to **60 distinct rng=2 .vZome shapes** (many fingerprints were
+direction-equivalent but produced slightly different fp_hashes — see
+`docs/WYTHOFF_SWEEP.md` for the full accounting).  These live in
+[`output/wythoff_sweep/`](output/wythoff_sweep/).
+
+A follow-up rng=4 audit on six B₄ Wythoff descendants flagged by the
+kernel-completeness probe found **6 additional zomeable shapes** that
+the rng=2 sweep cannot reach: 3 new V=32 shapes for the rectified
+tesseract and 3 new V=48 shapes for the truncated 16-cell.  All six
+use only the 4 standard zometool strut colours and are recorded as
+`oblique_00_*` … `oblique_02_*` in their respective output folders
+with `rng: 4` in the manifest.  After Stage-B shape-congruence dedup
+the emitted corpus is **66 distinct .vZome shapes** in
+`output/wythoff_sweep/` (60 from rng=2 plus the 6 rng=4 additions).
+The other four B₄ rng=4 audit gaps reconcile to zero new shapes
+once master regulars and B₄ ↔ F₄ aliases are properly indexed
+(see `docs/WYTHOFF_SWEEP.md` § *B₄ rng = 4 finding*).
 
 ```powershell
 # Reproduce (see docs/WYTHOFF_SWEEP.md for details and parallel options)

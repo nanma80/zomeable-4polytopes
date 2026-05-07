@@ -608,8 +608,23 @@ cantitruncated 16-cell rng = 4 probe (V = 192, E = 384) ran in
 exactly: 12 raw fp → 3 Stage-B unique shapes, all already present
 in the truncated 24-cell folder.
 
-The new shapes and per-fingerprint kernel-direction data are
-preserved at
+The 6 new shapes have been promoted to the main corpus at
+[`output/wythoff_sweep/rectified_tesseract/oblique_00_e2b79a96f7.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_00_e2b79a96f7.vZome),
+[`oblique_01_b35b865a54.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_01_b35b865a54.vZome),
+[`oblique_02_2be6954c03.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_02_2be6954c03.vZome)
+and the analogous trio at
+[`output/wythoff_sweep/truncated_16-cell/`](../output/wythoff_sweep/truncated_16-cell/).
+Each entry in [`output/wythoff_sweep/manifest.json`](../output/wythoff_sweep/manifest.json)
+carries a `"rng": 4` field marking it as a higher-`rng` discovery.
+The promotion script
+[`ongoing_work/probes/promote_b4_rng4.py`](../ongoing_work/probes/promote_b4_rng4.py)
+is reproducible: re-running it would (a) re-verify Stage-B
+distinctness from corpus and within the candidate set, (b) drop
+fp-index duplicates, (c) classify each kernel as `oblique`, and
+(d) overwrite-refuse on idempotency.
+
+The original per-fingerprint kernel-direction records and the raw
+emitted .vZomes are also preserved at
 [`ongoing_work/rectified_tesseract_rng4/`](../ongoing_work/rectified_tesseract_rng4/),
 [`ongoing_work/truncated_16cell_rng4/`](../ongoing_work/truncated_16cell_rng4/),
 and the matching `*.json` files.  The reconciliation evidence for
@@ -767,6 +782,18 @@ successfully snapped to ZZ[φ]³ and confirmed pairwise non-congruent
 | B₄ | 34  | 13  | 13 |
 | F₄ | 20  | 7   | 2  |
 | H₄ | 145 | 145 | 13 |
+
+A follow-up rng = 4 audit on the six B₄ Wythoff descendants whose
+kernel-completeness probe reported a non-zero gap added **6 more
+distinct shapes** to the corpus (3 V = 32 from rectified tesseract,
+3 V = 48 from truncated 16-cell), all under `oblique` classification
+because their snapped kernels lie outside the rng = 2 candidate set
+(typical kernel coordinates: 4φ + 2 ≈ 8.47, 9φ + 2 ≈ 9.47 — see
+[B₄ rng = 4 finding](#b4-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled)
+below).  These are flagged with `"rng": 4` in
+`output/wythoff_sweep/manifest.json`.  The shape-dedup totals
+above therefore become **66 distinct shapes after dedup** when both
+`rng = 2` and `rng = 4` discoveries are counted.
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
 The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
