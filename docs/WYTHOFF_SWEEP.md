@@ -711,9 +711,9 @@ table is one of:
 | F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | n/a (regular) | done          | 0         | regular |
 | F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell; 4 d-d new fp all collapse via Stage-B to corpus |
 | F₄    | truncated 24-cell (1,1,0,0)      | 144 | 288 | done          | done          | done          | done          | 0         | 5 d-d new fp all collapse via Stage-B to corpus |
-| F₄    | cantellated 24-cell (1,0,1,0)    | 288 | 864 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (`ZZ[√3]`-flavoured kernel `[0,0,1/φ²,−1/φ²]`) |
-| F₄    | runcinated 24-cell (1,0,0,1)     | 192 | 576 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ²]` along F₄ axis) |
-| F₄    | runcitruncated 24-cell (1,1,0,1) | 576 |1440 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ²]` along F₄ axis) |
+| F₄    | cantellated 24-cell (1,0,1,0)    | 288 | 864 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (`ℤ[φ,√2]`-flavoured kernel `[0,0,1/φ²,−1/φ²]`) |
+| F₄    | runcinated 24-cell (1,0,0,1)     | 192 | 576 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ]` along F₄ axis; ℤ[φ,√2] field) |
+| F₄    | runcitruncated 24-cell (1,1,0,1) | 576 |1440 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ]` along F₄ axis; ℤ[φ,√2] field) |
 | F₄    | other F₄ Wythoff records         |   – |   – | done          | done          | done          | partly        | 0         | most are B₄ aliases; remaining F₄ rng=4 probes covered transitively |
 | H₄    | 600-cell (0,0,0,1)               | 120 |  720 | done          | done          | not yet       | running       | 0 (rng=2) | rng=4 currently running (~19 h wall) |
 | H₄    | rectified 600-cell (0,0,1,0)     | 720 | 3600 | done          | done          | not yet       | infeasible    | 0 (rng=2) | rectified-600-cell ≡ rectified-120-cell up to H₄ outer auto |
@@ -843,18 +843,25 @@ Interpretation by group:
   and a Milestone 17 note in `manifest.json`.
 - **F₄ (12 new fp, 0 new shapes).**  9 fp Stage-B-match existing
   corpus entries.  3 fp **failed to snap to ℤ[φ]³**: one in
-  `cantellated 24-cell` with kernel `[0, 0, 1/φ², −1/φ²]` (a
-  numerically rational but ℤ[φ]-irrational projection — the rotated
-  3D coordinates pick up a `√3` factor) and two in `runcinated /
-  runcitruncated 24-cell` with the same `[0, 0, 0, 2φ²]` along-axis
-  kernel.  These 3 are recorded as `snap_fail` in the triage JSON;
-  they pass `lib.search_engine.search` (so `_try_align` accepts
-  them) but `lib.emit_generic._snap_coords` cannot find a scale that
-  brings them into ℤ[φ]³.  Investigation deferred — most likely
-  these descendants under these kernels have projections in a
-  larger field like ℤ[φ, √3] that vZome's φ-only field cannot
-  represent (analogous to the 13 `ℤ[√2]³` snap-failures already
-  documented in [Coverage vs. qfbox.info](#coverage-vs-qfboxinfo-reference)).
+  `cantellated 24-cell` with kernel `[0, 0, 1/φ², −1/φ²]` and two in
+  `runcinated / runcitruncated 24-cell` with the same `[0, 0, 0, 2φ]`
+  along-axis kernel.  (Earlier drafts wrote `2φ²`; the actual
+  numeric is `3.236… = 2φ`, not `5.236… = 2φ²`.)  These 3 are
+  recorded as `snap_fail` in the triage JSON; they pass
+  `lib.search_engine.search` (so `_try_align` accepts them) but
+  `lib.emit_generic._snap_coords` cannot find a scale that brings
+  them into ℤ[φ]³.  An empirical field check
+  (`ongoing_work/probes/f4_snap_fail_field_check.py`, M18) confirmed
+  that each projected vertex coordinate lies in **ℤ[φ, √2]** — most
+  in the pure ℤ[√2] sub-field — with edge lengths squared in the
+  perfectly clean rational set `{0, 1, 3/2, 2}`.  The same kernels
+  applied to the corresponding B₄ snap-fails (`runcinated /
+  cantellated tesseract`, `runcitruncated 16-cell`) give the same
+  ℤ[φ, √2] field, so the obstruction is intrinsic to the kernel
+  direction, not to the host group.  The shapes are geometrically
+  perfectly regular projections; they simply cannot be encoded in
+  vZome's φ-only field (analogous to the 13 ℤ[√2]³ snap-failures
+  already documented in [Coverage vs. qfbox.info](#coverage-vs-qfboxinfo-reference)).
 
 The 3 promoted bitruncated tesseract shapes were initially flagged
 as **exceptions** to the [oblique-kernel inheritance pattern](#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
@@ -931,6 +938,99 @@ Outputs:
   classification, staged path.
 - `ongoing_work/blind_spot_candidates/<group>_<bitmask>_<slug>/fp_<hash>.vZome`
   — staged .vZome files for each successfully snapped candidate.
+
+#### M18 — F₄/B₄ snap-fail field diagnosis (3 "magic" kernels are ℤ[φ, √2])
+
+While auditing the snap-fail entries that survived from M17 into the
+manifest (`output/wythoff_sweep/manifest.json`), three kernel
+directions appear repeatedly across both B₄ and F₄ snap-fail
+records:
+
+| Kernel (Cholesky frame)            | Decimal                              | Polytopes that hit it (B₄ + F₄) |
+|------------------------------------|--------------------------------------|---------------------------------|
+| `[√5, −√5, −√5, √5]`               | `[2.236, −2.236, −2.236, 2.236]`     | 7 B₄ (`runcinated/cantellated/runcitruncated tesseract`, `runcitruncated 16-cell`, …) |
+| `[0, 0, 0, 2φ]`                    | `[0, 0, 0, 3.236]`                   | 7 B₄ + 4 F₄ (`bitruncated/cantellated/cantitruncated 24-cell`, etc.) |
+| `[0, 0, 1/φ², −1/φ²]`              | `[0, 0, 0.382, −0.382]`              | 7 B₄ + 2 F₄ |
+
+(Earlier drafts of this document referred to one of these as
+`[0, 0, 0, 2φ²]` ≈ `[0, 0, 0, 5.236]`. That was a transcription
+error: the actual numeric in the manifest, `3.236…`, is `2φ`, not
+`2φ²`.)
+
+`ongoing_work/probes/f4_snap_fail_field_check.py` projects each
+host polytope along its snap-fail kernel and reports the algebraic
+field of the resulting 3D vertex coordinates. After rescaling so
+the smallest non-zero edge length squared is `1`, every test case
+has the same picture:
+
+- Edge lengths squared lie in **{0, 1, 3/2, 2}** — perfectly clean
+  rationals, no φ or √2 in the lengths.
+- Vertex coordinates lie in **ℤ[φ, √2]**, with the majority in the
+  pure ℤ[√2] sub-field (i.e. `(p + q √2)/d` for small integers
+  `p, q, d`, with no φ component). Examples (runcinated 24-cell,
+  scale = 1):
+
+  ```
+  ±√2/2 = (0 ± 1·√2)/2
+  ±(1 + √2/2) = (±2 ± √2)/2
+  ±(1 + √2)
+  ```
+
+The same kernels applied to the corresponding B₄ snap-fails
+(`runcinated tesseract`, `cantellated tesseract`,
+`runcitruncated 16-cell`) give projections in the same
+ℤ[φ, √2] field, so the obstruction is intrinsic to the kernel
+direction (the 4D rotation maps a basis vector into a `√2`-flavoured
+combination), not to the host group.
+
+**Conclusion.** These projections are not numerically degenerate:
+they are clean, regular shapes with the simplest possible rational
+edge structure. They simply live in ℤ[φ, √2]³ rather than ℤ[φ]³,
+and vZome's golden-zome field can only encode ℤ[φ]³. They join the
+13 ℤ[√2]³ snap-failures already documented in
+[Coverage vs. qfbox.info](#coverage-vs-qfboxinfo-reference); the
+same algebraic obstruction blocks all of them.
+
+Reproducer: `python ongoing_work/probes/f4_snap_fail_field_check.py`.
+Cached output: `ongoing_work/f4_snap_fail_field_results.txt`.
+
+#### M18 — manifest gap: `runcinated 24-cell` shares fp with `cantellated tesseract`
+
+When triaging the snap-fail kernels, `runcinated 24-cell` looked
+"missing" from `output/wythoff_sweep/manifest.json` even though
+it is a Wythoff descendant present in `ongoing_work/shapes_rng2.jsonl`
+with fp `4507a6810f54bab2`. The cause is in
+`tools/emit_novel.py:80–85` (`pick_representative`): when the same
+fp_hash occurs in two polytopes, the occurrence with the smallest
+`(n_balls, group, bitmask, shape_idx)` tuple wins. For
+`4507a6810f54bab2` (n_balls = 84), B₄ wins on the alphabetic group
+tiebreak, so the manifest records the shape under
+`source_polytope = "cantellated tesseract"` and the fact that
+`runcinated 24-cell` produces the same shape is silently dropped.
+
+Cross-polytope same-fp records found in `novel_rng2.json` (7 total):
+
+| fp_hash             | n_balls | shared between |
+|---------------------|---------|---------------|
+| `4507a6810f54bab2`  | 84      | B₄ `cantellated tesseract` ↔ F₄ `runcinated 24-cell` (snap-fail, ℤ[φ,√2]) |
+| `aabdf1c8acc26695`  | 312     | B₄ `omnitruncated tesseract` ↔ F₄ `runcitruncated 24-cell` (snap-fail, ℤ[φ,√2]) |
+| `5452b207028c5f19`  | 60      | B₄ `cantellated 16-cell` ↔ F₄ `rectified 24-cell` (B₄ ≡ F₄ same polytope) |
+| `cca712ec6eab236a`  | 52      | B₄ `cantellated 16-cell` ↔ F₄ `rectified 24-cell` (B₄ ≡ F₄ same polytope) |
+| `598a9495c4a6ee08`  | 120     | B₄ `cantitruncated 16-cell` ↔ F₄ `truncated 24-cell` (B₄ ≡ F₄ same polytope) |
+| `5f5834c16179095e`  | 96      | B₄ `cantitruncated 16-cell` ↔ F₄ `truncated 24-cell` (B₄ ≡ F₄ same polytope) |
+| `f79e915e332666e1`  | 156     | B₄ `runcitruncated tesseract` ↔ F₄ `cantellated 24-cell` (snap-fail, ℤ[φ,√2]) |
+
+5 of the 7 are the well-known B₄ ≡ F₄ same-polytope identifications
+(rectified-24-cell ≡ cantellated-16-cell, truncated-24-cell ≡
+cantitruncated-16-cell). The remaining 2 are genuine cross-polytope
+shape collisions, all in the snap-fail set above — geometrically
+distinct 4-polytopes whose along-`[0,0,0,2φ]`-style projections
+collapse to the same 3D shape because the kernel direction kills
+the polytope-distinguishing 4D structure. No data is lost; the
+manifest entry is simply attributed to the alphabetically-first
+group. (Low priority cleanup: emit a per-occurrence aliases list
+into the manifest so cross-polytope fp_hashes are searchable from
+either polytope.)
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 

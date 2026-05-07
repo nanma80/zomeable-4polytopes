@@ -1,0 +1,129 @@
+======================================================================
+F4 cantellated 24-cell  bm=(1, 0, 1, 0)  kernel=[0, 0, 1/phi^2, -1/phi^2]
+======================================================================
+V4 = 288 vertices (4D, F4 cholesky_aligned basis)
+P3 = (288, 3)  proj along kernel
+  edges: 864, smallest non-zero L2 = 1.000000
+  distinct normalised L2 values: 4
+    L2_norm=  0.000000  ZZ[phi]: = 0
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  1.500000  ZZ[phi]: = (3)/2
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 17 distinct values
+    in ZZ[phi]:        3
+    in ZZ[phi,sqrt2]:  14
+      e.g.  -3.414214 = (-2 + (-1)*sqrt2)
+      e.g.  -3.121320 = (-2 + (-3)*sqrt2)  / 2
+      e.g.  -2.707107 = (-4 + (-1)*sqrt2)  / 2
+      e.g.  -2.414214 = (-1 + (-1)*sqrt2)
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
+======================================================================
+F4 runcinated 24-cell  bm=(1, 0, 0, 1)  kernel=[0, 0, 0, 2*phi]
+======================================================================
+V4 = 144 vertices (4D, F4 cholesky_aligned basis)
+P3 = (144, 3)  proj along kernel
+  edges: 576, smallest non-zero L2 = 1.000000
+  distinct normalised L2 values: 4
+    L2_norm=  0.000000  ZZ[phi]: = 0
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  1.500000  ZZ[phi]: = (3)/2
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 9 distinct values
+    in ZZ[phi]:        3
+    in ZZ[phi,sqrt2]:  6
+      e.g.  -2.414214 = (-1 + (-1)*sqrt2)
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+      e.g.  -0.707107 = (0 + (-1)*sqrt2)  / 2
+      e.g.   0.707107 = (0 + (1)*sqrt2)  / 2
+      e.g.   1.707107 = (2 + (1)*sqrt2)  / 2
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
+======================================================================
+F4 runcitruncated 24-cell  bm=(1, 1, 0, 1)  kernel=[0, 0, 0, 2*phi]
+======================================================================
+V4 = 576 vertices (4D, F4 cholesky_aligned basis)
+P3 = (576, 3)  proj along kernel
+  edges: 1440, smallest non-zero L2 = 1.000000
+  distinct normalised L2 values: 4
+    L2_norm=  0.000000  ZZ[phi]: = 0
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  1.500000  ZZ[phi]: = (3)/2
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 15 distinct values
+    in ZZ[phi]:        5
+    in ZZ[phi,sqrt2]:  10
+      e.g.  -4.414214 = (-3 + (-1)*sqrt2)
+      e.g.  -3.707107 = (-6 + (-1)*sqrt2)  / 2
+      e.g.  -2.707107 = (-4 + (-1)*sqrt2)  / 2
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+      e.g.  -0.707107 = (0 + (-1)*sqrt2)  / 2
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
+======================================================================
+B4 cantellated tesseract  bm=(1, 0, 1, 0)  kernel=[sqrt5, -sqrt5, -sqrt5, sqrt5]
+======================================================================
+V4 = 96 vertices (4D, F4 cholesky_aligned basis)
+P3 = (96, 3)  proj along kernel
+  edges: 288, smallest non-zero L2 = 2.000000
+  distinct normalised L2 values: 3
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  1.500000  ZZ[phi]: = (3)/2
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 29 distinct values
+    in ZZ[phi]:        7
+    in ZZ[phi,sqrt2]:  22
+      e.g.  -2.414214 = (-1 + (-1)*sqrt2)
+      e.g.  -2.379445 = (-11 - 19phi + (-2 + 7phi)*sqrt2)  / 12
+      e.g.  -1.802095 = (25 - 20phi + (3 - 1phi)*sqrt2)  / 3
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+      e.g.  -1.562949 = (30 - 21phi + (-8 + 6phi)*sqrt2)
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
+======================================================================
+B4 runcinated tesseract  bm=(1, 0, 0, 1)  kernel=[0, 0, 0, 2*phi]
+======================================================================
+V4 = 64 vertices (4D, F4 cholesky_aligned basis)
+P3 = (64, 3)  proj along kernel
+  edges: 192, smallest non-zero L2 = 2.000000
+  distinct normalised L2 values: 3
+    L2_norm=  0.000000  ZZ[phi]: = 0
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 4 distinct values
+    in ZZ[phi]:        0
+    in ZZ[phi,sqrt2]:  4
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+      e.g.  -0.707107 = (0 + (-1)*sqrt2)  / 2
+      e.g.   0.707107 = (0 + (1)*sqrt2)  / 2
+      e.g.   1.707107 = (2 + (1)*sqrt2)  / 2
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
+======================================================================
+B4 runcitruncated 16-cell  bm=(1, 0, 1, 1)  kernel=[0, 0, 1/phi^2, -1/phi^2]
+======================================================================
+V4 = 192 vertices (4D, F4 cholesky_aligned basis)
+P3 = (192, 3)  proj along kernel
+  edges: 480, smallest non-zero L2 = 2.000000
+  distinct normalised L2 values: 4
+    L2_norm=  0.000000  ZZ[phi]: = 0
+    L2_norm=  1.000000  ZZ[phi]: = 1
+    L2_norm=  1.500000  ZZ[phi]: = (3)/2
+    L2_norm=  2.000000  ZZ[phi]: = 2
+  vertex coords (rescaled, /sqrt(L2_min)): 15 distinct values
+    in ZZ[phi]:        3
+    in ZZ[phi,sqrt2]:  12
+      e.g.  -3.121320 = (-2 + (-3)*sqrt2)  / 2
+      e.g.  -2.707107 = (-4 + (-1)*sqrt2)  / 2
+      e.g.  -2.414214 = (-1 + (-1)*sqrt2)
+      e.g.  -1.707107 = (-2 + (-1)*sqrt2)  / 2
+      e.g.  -1.414214 = (0 + (-1)*sqrt2)
+    in ZZ[phi,sqrt3]:  0
+    in neither:        0
+
