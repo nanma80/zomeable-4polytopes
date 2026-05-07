@@ -859,6 +859,29 @@ so basis differences between `lib/emit_vzome.py` and `lib/emit_generic.py`
 do not interfere); the result matches a master file's Stage-B
 fingerprint in every case.
 
+> **Convention disclaimer.**  A kernel vector is a 4D direction expressed
+> in a particular coordinate system, so the specific 4-tuples below are
+> meaningful only relative to **this repository's canonical embeddings**:
+>
+> * **A4**: vertex-first 5-cell with `v₅ = (0, 0, 0, 4√5)` and the
+>   opposite tetrahedral cell at `x₄ = −√5`
+>   (`lib/polytopes.py:fivecell()`).
+> * **B4**: axis-aligned tesseract `(±1)⁴`
+>   (`lib/polytopes.py:tesseract()`).
+> * **F4**: D₄ long-root 24-cell, all permutations of `(±1, ±1, 0, 0)`
+>   (`lib/polytopes.py:cell24_long_root()`).
+> * **H4**: standard 600-cell / 120-cell embedding from
+>   `lib/polytopes.py:cell600()` / `cell120()`.
+>
+> The sweep's per-group bases are produced by Cholesky-frame simple
+> roots Procrustes-aligned to these targets (`lib/wythoff.py:104-165`),
+> so descendant kernels always live in the *same* basis as their parent
+> regular.  Choosing different (but still SO(4)-equivalent) embeddings
+> for any of these would rotate every kernel below by the corresponding
+> O(4) matrix.  Statements that compare kernels *across* groups (notably
+> the A4↔F4 coincidence in the F4 subsection) are therefore convention-
+> dependent rather than coordinate-free geometric assertions.
+
 ### A4 — 3 master kernels (parent: 5-cell), 17 descendant files
 
 | kernel `n` (4D, sweep basis)                          | parent master file                                   | descendant `oblique_*.vZome` files                                                                                                                                                                                                                                                                                                                                                                            |
@@ -899,11 +922,28 @@ their full descendant-vertex sets differ.
 |-------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
 | `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/24cell/24cell_triality.vZome` (V=24) | `rectified_24-cell/oblique_56093e7cd7`, `truncated_24-cell/oblique_6b7eadcbcf` (2 files)    |
 
-**The same 4D vector is simultaneously the master oblique kernel for
-A4 and F4.**  The 5-cell embeds in the 24-cell along this direction;
-the projection produces the 5cell `5ball_R6Y1B3` shape when applied
-to the 5-cell vertices, and the much larger triality shape when
-applied to the 24 24-cell vertices.
+**Under the conventions noted at the top of this section, the same
+4D 4-tuple `[1/φ², 1/φ², −1/φ², −φ]` is simultaneously the A4 5-ball
+master kernel (in the vertex-first 5-cell basis) and the F4 triality
+master kernel (in the D₄ long-root 24-cell basis).**  Concretely,
+this 4-tuple — read in the A4 basis — projects the 5 vertices of the
+5-cell to the `5ball_R6Y1B3` shape, and the very same 4-tuple — read
+in the F4 basis — projects the 24 vertices of the 24-cell to the
+`24cell_triality` shape.
+
+This coincidence is **basis-dependent**.  The two canonical
+embeddings (vertex-first 5-cell, D₄ long-root 24-cell) were chosen
+independently in `lib/polytopes.py`, with no cross-group anchoring
+step that would force a particular kernel 4-tuple to mean "triality"
+in both.  Re-Procrustes-aligning either group to a different (but
+SO(4)-equivalent) representative of its canonical embedding would
+rotate one of the kernels by an O(4) matrix and the numerical
+equality would disappear.  So the observation is a real numerical
+fact about the embeddings shipped in this repo, not a coordinate-
+free statement that "the 5-cell sits inside the 24-cell along this
+axis".  (Comparisons *within* a group — kernel ↔ parent ↔
+descendants — are coordinate-free, since descendants and parent
+share the group's basis by construction.)
 
 ### H4 — 0 oblique kernels at rng ≤ 4
 
