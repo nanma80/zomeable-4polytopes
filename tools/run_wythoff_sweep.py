@@ -63,22 +63,74 @@ def _vertex_count(group, bitmask):
 GROUPS = ("A4", "B4", "F4", "H4")
 REGULAR_BITMASK = (1, 0, 0, 0)
 
-# Non-Wythoff polytopes: tested against the kernels of their parent
-# group (snub 24-cell and grand antiprism are both naturally inscribed
-# in the H4 root system — snub 24-cell as the 96 of the 600-cell's 120
-# vertices that sit outside the inscribed 24-cell, grand antiprism as
-# a vertex-deletion of the 600-cell).  The sentinel bitmask (0,0,0,0)
-# is impossible for a Wythoff polytope (Wythoff requires at least one
-# ringed node), so it doubles as a "non-Wythoff" tag in shape records.
+# Non-Wythoff polytopes: tested against the kernels of an explicit
+# canonical-frame regular polytope (NOT the wythoff (1,0,0,0) cache).
+# The wythoff frame uses a Procrustes calibration anchored to the
+# (1,0,0,0) regular (cell120 for H4, tesseract for B4, ...), so the
+# (0,0,0,1) regular -- e.g., the wythoff-frame 600-cell -- comes out
+# in a *different* frame from the canonical cell600() in lib/polytopes.py
+# (radii 1.2361 vs 1.000, 0/120 vertex overlap).  snub_24cell() and
+# grand_antiprism() are constructed in the canonical cell600 frame, so
+# their zomeable kernels live in *that* frame, not in the wythoff
+# (1,0,0,0)-calibrated H4 frame.
+#
+# Each entry: (parent_group_label, sentinel_bitmask, polytope_name,
+#              vertex_loader, canonical_kernel_loader).
+#
+# `parent_group_label` is informational (used in shape records); the
+# kernel set comes from the kernel_loader callable, not from
+# group_kernels[parent_group].
+#
+# The sentinel bitmask (0,0,0,0) is impossible for a Wythoff polytope
+# (Wythoff requires at least one ringed node), so it doubles as a
+# "non-Wythoff" tag in shape records.
+#
 # Master kernels that this sweep is expected to rediscover (the .vZome
 # files already in output/snub24cell/ and output/grand_antiprism/):
 #   snub 24-cell      cell-first   (1, 0, 0, 0)
 #   snub 24-cell      vertex-first (phi^2, phi, 1, 0)
 #   grand antiprism   vertex-first (1, 1, 1, 1)
 #   grand antiprism   ring-first   (1, 0, 0, 0)
+
+
+def _find_canonical_cell600_kernels(rng, cache=True):
+    """Kernels of canonical cell600() (lib/polytopes.py), at coefficient
+    range `rng`, in the *canonical* 600-cell frame (radius 1).
+
+    Used for non-Wythoff polytopes whose vertex coordinates are also in
+    the canonical cell600 frame (snub_24cell, grand_antiprism).  Cached
+    to ongoing_work/kernels_H4_canon600_rng<N>.npy so the 40+ minute
+    search is paid once."""
+    from polytopes import cell600
+    path = os.path.join(ONGOING, f"kernels_H4_canon600_rng{rng}.npy")
+    if cache and os.path.exists(path):
+        arr = np.load(path)
+        rel = os.path.relpath(path)
+        print(f"  [cell600 canon] loaded {len(arr)} cached kernels "
+              f"from {rel}")
+        kernels = [arr[i] for i in range(len(arr))]
+    else:
+        V, E = cell600()
+        dirs = gen_dirs(rng=rng, integer_only=False, permute_dedup=False)
+        print(f"  [cell600 canon] |V|={len(V)}, |E|={len(E)}, "
+              f"trying {len(dirs)} dirs...")
+        t0 = time.time()
+        hits = search("cell600_canon", V, E, dirs, verbose=False)
+        kernels = [np.array(n) for (n, sig, balls) in hits]
+        print(f"  [cell600 canon] {len(kernels)} hits in "
+              f"{time.time()-t0:.1f}s")
+        if cache and kernels:
+            os.makedirs(ONGOING, exist_ok=True)
+            np.save(path, np.array(kernels))
+            print(f"  [cell600 canon] cached to {os.path.relpath(path)}")
+    return _dedup_kernels_by_direction(kernels)
+
+
 NON_WYTHOFF = (
-    ("H4", (0, 0, 0, 0), "snub 24-cell",    snub_24cell),
-    ("H4", (0, 0, 0, 0), "grand antiprism", grand_antiprism),
+    ("H4", (0, 0, 0, 0), "snub 24-cell",
+     snub_24cell, _find_canonical_cell600_kernels),
+    ("H4", (0, 0, 0, 0), "grand antiprism",
+     grand_antiprism, _find_canonical_cell600_kernels),
 )
 
 # ongoing_work/ relative to repo root (parent of tools/)
@@ -409,17 +461,18 @@ def main():
                         shape_groups))
 
     # 2b. Non-Wythoff polytopes (snub 24-cell, grand antiprism), tested
-    #     against the kernels of their parent group.  These are not in
+    #     against an explicit canonical-frame kernel set rather than the
+    #     parent group's wythoff (1,0,0,0) cache.  These are not in
     #     all_uniform_polytopes() so we iterate them explicitly.  The
-    #     --bitmask filter excludes them (real Wythoff bitmask required);
-    #     a missing parent-group kernel set (e.g. when --group A4 is
-    #     selected and the non-Wythoff entry needs H4 kernels) skips
-    #     silently.
+    #     --bitmask filter excludes them (real Wythoff bitmask required).
     if args.bitmask is None:
-        for parent_group, b, name, loader in NON_WYTHOFF:
-            if parent_group not in group_kernels:
+        for parent_group, b, name, loader, kernel_loader in NON_WYTHOFF:
+            try:
+                kernels = kernel_loader(args.rng)
+            except Exception as e:
+                print(f"  {parent_group} {b}  {name:30s}  "
+                      f"kernel-loader ERR: {e}  [non-Wythoff, skip]")
                 continue
-            kernels = group_kernels[parent_group]
             t0 = time.time()
             try:
                 V, E = loader()

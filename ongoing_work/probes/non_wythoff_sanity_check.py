@@ -60,8 +60,8 @@ def direction_eq(u, v, tol=1e-6):
 
 
 def main():
-    print(f"Loading H4 rng=2 kernel cache...")
-    K = np.load(ROOT / "ongoing_work" / "kernels_H4_rng2.npy")
+    print(f"Loading H4 canonical cell600 rng=2 kernel cache...")
+    K = np.load(ROOT / "ongoing_work" / "kernels_H4_canon600_rng2.npy")
     kernels = [K[i] for i in range(len(K))]
     print(f"  loaded {len(kernels)} kernels")
     print()
