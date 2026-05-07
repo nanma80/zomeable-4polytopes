@@ -16,6 +16,16 @@ Pipeline (all in one pass, full audit logging):
        Build target filename: <label>[_<idx>]_<hash10>.vZome under
        output/wythoff_sweep/<slug>/.
     6. Copy the .vZome with the new name; preserve original kernel.
+    6b. Normalise physical scale within each polytope: the upstream
+        rng=4 emitter sometimes outputs a kernel-rotated shape at a
+        scale that is phi^k times larger than its sibling shapes
+        (where k>=1 is a small integer).  Within each polytope we
+        apply tools/scale_vzome_by_inv_phi.transform_text to bring
+        every file down to the smallest emitted min-edge.  This is
+        an exact ZZ[phi]-integer rewrite (no floating-point error)
+        and the Stage-B fingerprint hash is uniform-scale invariant,
+        so signatures are preserved.  Result: all promoted shapes in
+        a given polytope share a common min-edge length.
     7. Append new entries to output/wythoff_sweep/manifest.json with
        a per-entry 'rng': 4 field; bump top-level n_ok and update
        'rng' top-level field to 'mixed (2 baseline; 4 for B4 rng=4
@@ -23,10 +33,11 @@ Pipeline (all in one pass, full audit logging):
     8. Print a full audit log.
 """
 import json
+import math
 import os
 import shutil
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -39,6 +50,9 @@ from polytope_features import (
     classify_kernel, extract_features, label_basename,
 )
 from dedup_corpus_by_shape import parse_vzome, shape_signature
+from scale_vzome_by_inv_phi import transform_text as _inv_phi_transform_text
+
+PHI = (1.0 + 5.0 ** 0.5) / 2.0
 
 
 SOURCES = [
@@ -229,6 +243,7 @@ print()
 print('=' * 80)
 print('Stage 5: Copy files into output/wythoff_sweep/<slug>/')
 print('=' * 80)
+dst_paths = []  # parallel to candidates / classifications / filenames
 for c, (label, subtype), fname in zip(candidates, classifications, filenames):
     dst = OUT_DIR / c['poly']['slug'] / fname
     dst.parent.mkdir(parents=True, exist_ok=True)
@@ -236,8 +251,58 @@ for c, (label, subtype), fname in zip(candidates, classifications, filenames):
         print(f'  refuse to overwrite existing {dst}')
         sys.exit(1)
     shutil.copy2(c['src_path'], dst)
+    dst_paths.append(dst)
     print(f"  copied {c['src_path'].name}")
     print(f"      -> {dst.relative_to(ROOT)}")
+
+
+def _min_edge_length(path):
+    P, E = parse_vzome(path)
+    L = np.array([np.linalg.norm(P[i] - P[j]) for i, j in E])
+    return float(L.min())
+
+
+print()
+print('=' * 80)
+print('Stage 5b: Normalise physical scale within each polytope (* phi^-k)')
+print('=' * 80)
+# Group dst paths by polytope slug so we can find the canonical (smallest)
+# min-edge length and rescale outliers down to it via integer powers of 1/phi.
+slug_to_paths = defaultdict(list)
+for c, dst in zip(candidates, dst_paths):
+    slug_to_paths[c['poly']['slug']].append(dst)
+
+for slug, paths in slug_to_paths.items():
+    edges = {p: _min_edge_length(p) for p in paths}
+    target = min(edges.values())
+    print(f'  {slug}: canonical target min_edge = {target:.5f}')
+    for p, m in edges.items():
+        ratio = m / target
+        if ratio < 1.001:
+            print(f'    {p.name}: already at target ({m:.5f})')
+            continue
+        k = int(round(math.log(ratio, PHI)))
+        if k <= 0 or abs(ratio - PHI ** k) > 0.01 * (PHI ** k):
+            print(f'    {p.name}: WARNING ratio={ratio:.4f} not a clean '
+                  f'power of phi -- LEAVING AS-IS')
+            continue
+        text = p.read_text(encoding='utf-8')
+        for _ in range(k):
+            text = _inv_phi_transform_text(text)
+        p.write_text(text, encoding='utf-8')
+        new_min = _min_edge_length(p)
+        print(f'    {p.name}: was {m:.5f}, /phi^{k} -> {new_min:.5f}')
+        # Stage-B sig is scale-invariant; verify hash unchanged.
+        P_new, E_new = parse_vzome(p)
+        sig_new = shape_signature(P_new, E_new)
+        # find the original sig for this dst
+        for c, d in zip(candidates, dst_paths):
+            if d == p:
+                if sig_new[2] != c['sig'][2]:
+                    print(f'      FATAL: hash changed during rescale '
+                          f'({c["sig"][2]} -> {sig_new[2]})')
+                    sys.exit(1)
+                break
 
 print()
 print('=' * 80)
