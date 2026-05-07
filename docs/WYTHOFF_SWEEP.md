@@ -1127,6 +1127,57 @@ both `rectified_tesseract` and `truncated_16-cell` — these two
 descendants share the same oblique-projection structure even though
 their full descendant-vertex sets differ.
 
+#### M17d audit: which other B4 Wythoff polytopes inherit the antiprism trio?
+
+The M14/M17 milestones promoted the antiprism trio to 3 of the 12
+non-regular B4 Wythoff polytopes (`rectified_tesseract`, `truncated_16-cell`,
+`bitruncated_tesseract`).  An exhaustive M17d audit
+(`ongoing_work/probes/m17d_antiprism_full_b4_audit.py`) projected
+every non-regular B4 Wythoff descendant along the 3 antiprism master
+kernels, with the following clean dichotomy:
+
+| bitmask  | polytope                              | snap result                                                         |
+|----------|---------------------------------------|---------------------------------------------------------------------|
+| (0,1,0,0) | rectified tesseract                  | **3 distinct shapes** (M14 trio above)                              |
+| (0,0,1,1) | truncated 16-cell                    | **3 distinct shapes** (M14 trio above)                              |
+| (0,1,1,0) | bitruncated tesseract                | **3 distinct shapes** (M17 trio above)                              |
+| (0,1,0,1) | rect 24-cell ≡ cantellated 16-cell   | **1 shape** (`rectified_24-cell/oblique_56093e7cd7`); F4 triality collapses 3 → 1 |
+| (0,1,1,1) | trunc 24-cell ≡ cantitr 16-cell      | **1 shape** (`truncated_24-cell/oblique_6b7eadcbcf`); F4 triality collapses 3 → 1 |
+| (1,1,0,0) | truncated tesseract                  | snap-fail (all 3 kernels)                                           |
+| (1,0,1,0) | cantellated tesseract                | snap-fail (all 3 kernels)                                           |
+| (1,0,0,1) | runcinated tesseract                 | snap-fail (all 3 kernels)                                           |
+| (1,1,1,0) | cantitruncated tesseract             | snap-fail (all 3 kernels)                                           |
+| (1,1,0,1) | runcitruncated tesseract             | snap-fail (all 3 kernels)                                           |
+| (1,0,1,1) | runcitruncated 16-cell               | snap-fail (all 3 kernels)                                           |
+| (1,1,1,1) | omnitruncated tesseract              | snap-fail (all 3 kernels)                                           |
+
+The dichotomy is by `bitmask[0]`:
+
+* **`bitmask[0] = 0` (no tesseract orbit in the vertex set)**: the
+  3 antiprism kernels snap.  This holds for **all 5** such polytopes.
+  Of these, the 3 with pure B4 (or B4 × Z/2) symmetry produce 3
+  distinct V = 32 / 48 / 96 shapes; the 2 F4-symmetric polytopes
+  (`(0,1,0,1)` and `(0,1,1,1)`, with full F4 = B4 ⋊ S₃ symmetry)
+  collapse the 3 kernels to a single shape under triality.
+
+* **`bitmask[0] = 1` (tesseract orbit present)**: snap-fails on all
+  3 antiprism kernels.  This is the same snap-failure as the bare
+  tesseract — the tesseract sub-orbit's image is non-zomeable along
+  any antiprism direction (the antiprism kernels are 16-cell-aligned
+  only), so any descendant containing the tesseract orbit inherits
+  the snap-failure.  This holds for **all 7** such polytopes.
+
+**Conclusion**: the corpus is complete with respect to the antiprism
+trio.  No further B4 polytope hides a missed antiprism-inherited
+shape; every snap-able combination is already promoted.  The 2
+F4-symmetric singletons (`oblique_56093e7cd7`, `oblique_6b7eadcbcf`)
+are documented under the F4 triality master in the next subsection;
+they are simultaneously B4-antiprism-inherited and F4-triality-
+inherited (the F4 triality master kernel `[1/φ², 1/φ², −1/φ², −φ]`
+is exactly the B4 antiprism Y6R12B6 master kernel up to a B4 Weyl
+rotation, again under the basis conventions noted at the top of
+this section).
+
 ### F4 — 1 master kernel (parent: 24-cell), 2 descendant files
 
 | kernel `n` (4D, sweep basis)                          | parent master file                          | descendant `oblique_*.vZome` files                                                          |
