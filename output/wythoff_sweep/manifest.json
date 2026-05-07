@@ -1,10 +1,11 @@
 {
   "n_fail": 27,
-  "n_ok": 214,
+  "n_ok": 217,
   "notes": [
     "deduplicated by kernel direction (cos>1-1e-06): 44 aliases collapsed into 34 canonical entries",
     "deduplicated by 3D shape congruence (dist_decimals=5, edge_decimals=5): 104 aliases collapsed into 18 canonical entries",
-    "B4 rng=4 audit (Milestones 6/7): added 6 new shapes (3 from rectified tesseract, 3 from truncated 16-cell) found at rng=4 that the rng=2 sweep cannot reach.  Each new entry carries rng=4."
+    "B4 rng=4 audit (Milestones 6/7): added 6 new shapes (3 from rectified tesseract, 3 from truncated 16-cell) found at rng=4 that the rng=2 sweep cannot reach.  Each new entry carries rng=4.",
+    "Milestone 17 blind-spot audit (rng=2 descendant-direct): added 3 new shape(s) from bitruncated tesseract.  Found by ongoing_work/probes/blind_spot_audit.py running search() directly against descendant edge sets, bypassing the parent-regular Step-1 filter in tools/run_wythoff_sweep.py.  Each entry carries rng=2."
   ],
   "rng": "mixed (2 baseline; 4 for B4 rng=4 audit-flagged additions)",
   "shapes": [
@@ -2612,6 +2613,99 @@
         "G": 30,
         "R": 30,
         "Y": 30
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_00_80a961d9da.vZome",
+      "fp_hash": "80a961d9da91d5a4",
+      "group": "B4",
+      "kernel": [
+        0.381966,
+        0.381966,
+        -0.381966,
+        -1.618034
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 96,
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.",
+      "rng": 2,
+      "shape_idx": null,
+      "source_polytope": "bitruncated tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 48,
+        "G": 48,
+        "R": 48,
+        "Y": 48
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_01_26f0b7c6e6.vZome",
+      "fp_hash": "26f0b7c6e6bc0a7b",
+      "group": "B4",
+      "kernel": [
+        0.381966,
+        -1.618034,
+        1.618034,
+        1.618034
+      ],
+      "label": "oblique",
+      "label_subtype": null,
+      "n_balls": 96,
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.",
+      "rng": 2,
+      "shape_idx": null,
+      "source_polytope": "bitruncated tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 48,
+        "G": 48,
+        "R": 48,
+        "Y": 48
+      }
+    },
+    {
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "file": "wythoff_sweep\\bitruncated_tesseract\\face_first_hexagon_df821cc628.vZome",
+      "fp_hash": "df821cc628a5d5a1",
+      "group": "B4",
+      "kernel": [
+        3.618034,
+        -1.618034,
+        1.618034,
+        1.618034
+      ],
+      "label": "face_first",
+      "label_subtype": "hexagon",
+      "n_balls": 96,
+      "note": "Milestone 17 blind-spot audit (rng=2 descendant-direct).  Found by ongoing_work/probes/blind_spot_audit.py.",
+      "rng": 2,
+      "shape_idx": null,
+      "source_polytope": "bitruncated tesseract",
+      "status": "ok",
+      "strut_counts": {
+        "B": 48,
+        "G": 48,
+        "R": 48,
+        "Y": 48
       }
     }
   ]

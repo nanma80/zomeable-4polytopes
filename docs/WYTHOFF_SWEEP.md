@@ -285,13 +285,28 @@ the same 3D shape (cell-first truncated icosidodecahedron).
 | group | files | running total |
 |-------|------:|--------------:|
 | A₄    | 32    | 32 |
-| B₄    | 9     | 41 |
-| F₄    | 6     | 47 |
-| H₄    | 13    | **60** |
+| B₄    | 22    | 54 |
+| F₄    | 2     | 56 |
+| H₄    | 13    | **69** |
 
-The **60** total matches the count of `.vZome` files in
+The **69** total matches the count of `.vZome` files in
 `output/wythoff_sweep/` and the count of `status=ok` entries in
-`output/wythoff_sweep/manifest.json`.
+`output/wythoff_sweep/manifest.json`.  Of these 69:
+
+- **60** were found by the rng = 2 production sweep
+  (`tools/run_wythoff_sweep.py`).
+- **6** were added by the B₄ rng = 4 audit (Milestones 6/7): 3 from
+  rectified tesseract, 3 from truncated 16-cell — kernels with
+  components like `4φ + 2 ≈ 8.47` that lie outside the rng = 2
+  candidate set.  See
+  [B₄ rng = 4 finding](#b4-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled).
+- **3** were added by the rng = 2 *descendant-direct* (blind-spot)
+  audit (Milestone 17), all from B₄ bitruncated tesseract — kernels
+  inside the rng = 2 candidate set but the parent-regular Step-1
+  filter in `tools/run_wythoff_sweep.py` rejected them because the
+  tesseract's edge set fails to snap along those directions while
+  the bitruncated tesseract's edge set succeeds.  See
+  [Step-1 blind-spot audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep).
 
 ### Equivalences (B₄/F₄ overlap)
 
@@ -663,40 +678,50 @@ table is one of:
   candidate directions, regular-only seed dropped) has run in
   addition to the production sweep, and any gap shapes have been
   classified as "snap" or "no-snap".
+- **rng = 2 d-d done**: a *descendant-direct* (Step-1 blind-spot)
+  rng = 2 sweep has run on this polytope — `lib.search_engine.search`
+  is invoked directly on the descendant's edge set, bypassing the
+  parent-regular Step-1 filter in `tools/run_wythoff_sweep.py`.  See
+  [Step-1 blind-spot audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep).
 - **rng = 4 done**: a focused rng = 4 snap+dedup probe has run on
   this polytope, with all unique shapes either matched against
   the existing corpus or saved to `ongoing_work/` as new.
 - **untested / infeasible**: see notes per row.
 
-| group | polytope (bitmask)               |   V |    E | rng = 2 sweep | rng = 2 audit | rng = 4 probe | new shapes | notes |
-|:------|:---------------------------------|----:|-----:|:-------------:|:-------------:|:-------------:|----------:|:------|
-| A₄    | 5-cell (1,0,0,0)                 |   5 |  10 | done          | done          | done          | 0         | regular |
-| A₄    | rectified 5-cell (0,1,0,0)       |  10 |  30 | done          | done          | rng = 3 done  | 0         | A₄ self-dual |
-| A₄    | truncated 5-cell (1,1,0,0)       |  20 |  40 | done          | done          | done          | 0         |       |
-| A₄    | bitruncated 5-cell (0,1,1,0)     |  30 |  60 | done          | done          | rng = 3 done  | 0         |       |
-| A₄    | cantellated 5-cell (1,0,1,0)     |  30 |  60 | done          | done          | rng = 3 done  | 0         |       |
-| A₄    | cantitruncated 5-cell (1,1,1,0)  |  60 | 120 | done          | done          | done          | 0         |       |
-| A₄    | runcinated 5-cell (1,0,0,1)      |  20 |  60 | done          | done          | done          | 0         |       |
-| A₄    | runcitruncated 5-cell (1,1,0,1)  |  60 | 150 | done          | done          | done          | 0         |       |
-| A₄    | omnitruncated 5-cell (1,1,1,1)   | 120 | 240 | done          | done          | rng = 3 done  | 0         |       |
-| B₄    | 16-cell (0,0,0,1)                |   8 |  24 | done          | done          | done          | 0         | regular |
-| B₄    | tesseract (1,0,0,0)              |  16 |  32 | done          | done          | done          | infinite  | follows known cuboid family |
-| B₄    | rectified tesseract (0,1,0,0)    |  32 |  96 | done          | done          | done          | **+3**    | new V=32 shapes (Milestone 6) |
-| B₄    | 24-cell-as-B₄ (0,0,1,0)          |  24 |  96 | done          | done          | done          | 0         | regular (24-cell sits here too) |
-| B₄    | truncated 16-cell (0,0,1,1)      |  48 | 120 | done          | done          | done          | **+3**    | new V=48 shapes (Milestone 7) |
-| B₄    | cantellated 16-cell (0,1,0,1)    |  96 | 288 | done          | done          | done          | 0         | F₄ alias of rectified 24-cell |
-| B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | done          | 0             | F₄ alias of truncated 24-cell; 12 raw fp → 3 unique, all in corpus |
-| B₄    | other tesseract / 16-cell records (truncated tesseract, bitruncated tesseract, runcinated tesseract, omnitruncated tesseract, runcitruncated 16-cell, runcitruncated tesseract, omnitruncated tesseract, …) | 64 .. 384 | 128 .. 768 | done | not yet | not yet | (likely 0) | not on the audit case list, since each is either an F₄ alias or a tesseract record covered by the cuboid-family argument |
-| F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | done          | 0         | regular |
-| F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell |
-| F₄    | other F₄ Wythoff records         |   – |   – | done          | done          | partly        | 0         | most are B₄ aliases; remaining F₄ rng=4 probes covered transitively |
-| H₄    | 600-cell (0,0,0,1)               | 120 |  720 | done          | done          | not yet       | 0 (rng=2) | tractable at rng = 4 (~19 h wall) |
-| H₄    | rectified 600-cell (0,0,1,0)     | 720 | 3600 | done          | done          | infeasible    | 0 (rng=2) | rectified-600-cell ≡ rectified-120-cell up to H₄ outer auto |
-| H₄    | rectified 120-cell (0,1,0,0)     |1200 | 3600 | done          | done          | infeasible    | 0 (rng=2) |       |
-| H₄    | cantellated 600-cell (0,1,0,1)   |3600 |10800 | done          | done          | infeasible    | 0 (rng=2) |       |
-| H₄    | 120-cell (1,0,0,0)               | 600 | 1200 | done          | done          | infeasible    | 0 (rng=2) | full audit run; 1 raw fp = 1 unique shape = 1 master shape (`120cell_H4_to_H3.vZome`); rng=4 infeasible |
-| H₄    | omnitruncated 120-cell (1,1,1,1) |14400|28800| done          | done¹         | infeasible    | **0** (rng=2, parent-filtered) | ¹ rng=2 Step-2 sweep at parent-filter (120-cell) found 65 raw fingerprints → all 65 snap to **1** Stage-B-unique shape = the existing corpus `cell_first_truncated_icosidodecahedron_00512c47fe.vZome` master.  Salvaged from a stuck 88-h shell by `ongoing_work/probes/omnitr120_rng2_focused.py`; results in `ongoing_work/h4_omnitr120_rng2.json`.  **Caveat**: descendant-direct (blind-spot) audit not run — would require ~10⁵ kernel × 14400-vertex passes at rng=2, prohibitively slow; the 0-gap finding here only covers kernels that survive the 120-cell parent-snap filter. |
-| H₄    | other 7 H₄ Wythoff records (truncated 600-cell, truncated 120-cell, cantellated 120-cell, bitruncated 120-cell, cantitruncated 600-cell, cantitruncated 120-cell, runcinated 120-cell, runcitruncated 600-cell / 120-cell) | 1440 .. 7200 | 4320 .. 14520 | done | **untested** | infeasible | unknown | rng = 2 audit estimated >24 h CPU per case at the present `lib/search_engine` speed |
+| group | polytope (bitmask)               |   V |    E | rng = 2 sweep | rng = 2 audit | rng = 2 d-d   | rng = 4 probe | new shapes | notes |
+|:------|:---------------------------------|----:|-----:|:-------------:|:-------------:|:-------------:|:-------------:|----------:|:------|
+| A₄    | 5-cell (1,0,0,0)                 |   5 |  10 | done          | done          | n/a (regular) | done          | 0         | regular |
+| A₄    | rectified 5-cell (0,1,0,0)       |  10 |  30 | done          | done          | done          | rng = 3 done  | 0         | A₄ self-dual; 4 d-d fp all collapse via Stage-B to corpus |
+| A₄    | truncated 5-cell (1,1,0,0)       |  20 |  40 | done          | done          | done          | done          | 0         |       |
+| A₄    | bitruncated 5-cell (0,1,1,0)     |  30 |  60 | done          | done          | done          | rng = 3 done  | 0         |       |
+| A₄    | cantellated 5-cell (1,0,1,0)     |  30 |  60 | done          | done          | done          | rng = 3 done  | 0         |       |
+| A₄    | cantitruncated 5-cell (1,1,1,0)  |  60 | 120 | done          | done          | done          | done          | 0         | 3 d-d new fp all collapse via Stage-B to corpus |
+| A₄    | runcinated 5-cell (1,0,0,1)      |  20 |  60 | done          | done          | done          | done          | 0         |       |
+| A₄    | runcitruncated 5-cell (1,1,0,1)  |  60 | 150 | done          | done          | done          | done          | 0         | 2 d-d new fp all collapse via Stage-B to corpus |
+| A₄    | omnitruncated 5-cell (1,1,1,1)   | 120 | 240 | done          | done          | done          | rng = 3 done  | 0         | 6 d-d new fp all collapse via Stage-B to corpus |
+| B₄    | 16-cell (0,0,0,1)                |   8 |  24 | done          | done          | n/a (regular) | done          | 0         | regular |
+| B₄    | tesseract (1,0,0,0)              |  16 |  32 | done          | done          | n/a (regular) | done          | infinite  | follows known cuboid family |
+| B₄    | rectified tesseract (0,1,0,0)    |  32 |  96 | done          | done          | done          | done          | **+3**    | new V=32 shapes (Milestone 6, rng=4) |
+| B₄    | 24-cell-as-B₄ (0,0,1,0)          |  24 |  96 | done          | done          | done          | done          | 0         | 24-cell sits here too; 3 d-d new fp = 3 master 24-cell projections |
+| B₄    | truncated 16-cell (0,0,1,1)      |  48 | 120 | done          | done          | done          | done          | **+3**    | new V=48 shapes (Milestone 7, rng=4) |
+| B₄    | cantellated 16-cell (0,1,0,1)    |  96 | 288 | done          | done          | done          | done          | 0         | F₄ alias of rectified 24-cell |
+| B₄    | cantitruncated 16-cell (0,1,1,1) | 192 | 384 | done          | done          | done          | done          | 0         | F₄ alias of truncated 24-cell; 12 raw fp → 3 unique, all in corpus |
+| B₄    | bitruncated tesseract (0,1,1,0)  |  96 | 192 | done          | done          | done          | not yet       | **+3**    | new V=96 shapes (Milestone 17, rng=2 d-d): `oblique_00`, `oblique_01`, `face_first_hexagon`; full 4-colour palette |
+| B₄    | other tesseract / 16-cell records (truncated tesseract, runcinated tesseract, omnitruncated tesseract, runcitruncated 16-cell, runcitruncated tesseract, omnitruncated tesseract, …) | 64 .. 384 | 128 .. 768 | done | not yet | not yet | not yet | (likely 0) | not on the audit case list, since each is either an F₄ alias or a tesseract record covered by the cuboid-family argument |
+| F₄    | 24-cell (1,0,0,0)                |  24 |  96 | done          | done          | n/a (regular) | done          | 0         | regular |
+| F₄    | rectified 24-cell (0,1,0,0)      |  96 | 288 | done          | done          | done          | done¹         | 0         | ¹ tested via B₄ alias cantellated 16-cell; 4 d-d new fp all collapse via Stage-B to corpus |
+| F₄    | truncated 24-cell (1,1,0,0)      | 144 | 288 | done          | done          | done          | done          | 0         | 5 d-d new fp all collapse via Stage-B to corpus |
+| F₄    | cantellated 24-cell (1,0,1,0)    | 288 | 864 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (`ZZ[√3]`-flavoured kernel `[0,0,1/φ²,−1/φ²]`) |
+| F₄    | runcinated 24-cell (1,0,0,1)     | 192 | 576 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ²]` along F₄ axis) |
+| F₄    | runcitruncated 24-cell (1,1,0,1) | 576 |1440 | done          | done          | done          | partly        | 0         | 1 d-d new fp snap-failed (kernel `[0,0,0,2φ²]` along F₄ axis) |
+| F₄    | other F₄ Wythoff records         |   – |   – | done          | done          | done          | partly        | 0         | most are B₄ aliases; remaining F₄ rng=4 probes covered transitively |
+| H₄    | 600-cell (0,0,0,1)               | 120 |  720 | done          | done          | not yet       | running       | 0 (rng=2) | rng=4 currently running (~19 h wall) |
+| H₄    | rectified 600-cell (0,0,1,0)     | 720 | 3600 | done          | done          | not yet       | infeasible    | 0 (rng=2) | rectified-600-cell ≡ rectified-120-cell up to H₄ outer auto |
+| H₄    | rectified 120-cell (0,1,0,0)     |1200 | 3600 | done          | done          | not yet       | infeasible    | 0 (rng=2) |       |
+| H₄    | cantellated 600-cell (0,1,0,1)   |3600 |10800 | done          | done          | not yet       | infeasible    | 0 (rng=2) |       |
+| H₄    | 120-cell (1,0,0,0)               | 600 | 1200 | done          | done          | n/a (regular) | infeasible    | 0 (rng=2) | full audit run; 1 raw fp = 1 unique shape = 1 master shape (`120cell_H4_to_H3.vZome`); rng=4 infeasible |
+| H₄    | omnitruncated 120-cell (1,1,1,1) |14400|28800| done          | done¹         | infeasible    | infeasible    | **0** (rng=2, parent-filtered) | ¹ rng=2 Step-2 sweep at parent-filter (120-cell) found 65 raw fingerprints → all 65 snap to **1** Stage-B-unique shape = the existing corpus `cell_first_truncated_icosidodecahedron_00512c47fe.vZome` master.  Salvaged from a stuck 88-h shell by `ongoing_work/probes/omnitr120_rng2_focused.py`; results in `ongoing_work/h4_omnitr120_rng2.json`.  **Caveat**: descendant-direct (blind-spot) audit not run — would require ~10⁵ kernel × 14400-vertex passes at rng=2, prohibitively slow; the 0-gap finding here only covers kernels that survive the 120-cell parent-snap filter. |
+| H₄    | other 7 H₄ Wythoff records (truncated 600-cell, truncated 120-cell, cantellated 120-cell, bitruncated 120-cell, cantitruncated 600-cell, cantitruncated 120-cell, runcinated 120-cell, runcitruncated 600-cell / 120-cell) | 1440 .. 7200 | 4320 .. 14520 | done | **untested** | **untested** | infeasible | unknown | rng = 2 audit estimated >24 h CPU per case at the present `lib/search_engine` speed |
 
 Summary of unfinished territory:
 
@@ -740,6 +765,116 @@ limitations — they are limitations of the present search-engine
 implementation.  A vectorised per-direction strut-hit cache or
 a GPU port would unlock several H₄ rows at rng = 2 and possibly
 the smaller H₄ rows at rng = 4.
+
+### Step-1 blind-spot audit (Milestone 17): rng = 2 descendant-direct sweep
+
+`tools/run_wythoff_sweep.py` is a two-step pipeline.  Step 1
+(`find_group_kernels`, line ~108) enumerates every rng candidate
+direction and snap-filters them against the **parent regular**
+polytope only — i.e. against the (1, 0, 0, 0) bitmask form of each
+group.  Step 2 reuses that filtered kernel set for every Wythoff
+descendant of the same group.
+
+This architecture has a **blind spot**: if a kernel direction makes
+the *descendant's* edge set zomeable (passes `_try_align`) but the
+*parent regular's* edge set fails the same test, the kernel gets
+dropped in Step 1 and Step 2 never sees it.  Such kernels can exist
+because the descendant has a different (richer) edge multiset than
+the parent — a descendant edge set may admit a zomeable rotation that
+the parent's denser-or-sparser edge set rejects.  This blind spot
+was first identified empirically when the
+[B₄ rng = 4 finding](#b4-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled)
+section traced its 6 new shapes to kernels that snap-fail on the
+tesseract at every rng but classify on rectified tesseract / truncated
+16-cell.
+
+The Milestone 17 audit (`ongoing_work/probes/blind_spot_audit.py`)
+re-ran the rng = 2 search **directly against each descendant's edge
+set**, bypassing Step 1 entirely.  It covered every A₄/B₄/F₄
+Wythoff descendant *not* already addressed by the rng = 4 audit
+(25 polytopes total), reproduced every existing manifest fp_hash
+(0 misses across all 25), and flagged 31 raw fingerprints whose hashes
+were absent from the manifest.  A follow-up triage
+(`ongoing_work/probes/blind_spot_triage.py`) snapped each candidate
+to ℤ[φ]³ and matched the resulting Stage-B signature against the
+full corpus (`output/wythoff_sweep/` + master regulars):
+
+| group | new fp | snap OK | snap FAIL | matched corpus (same poly) | matched corpus (other poly) | intra-audit dup | **GENUINELY NEW** |
+|:------|------:|--------:|----------:|---------------------------:|----------------------------:|----------------:|------------------:|
+| A₄    | 11    | 11      | 0         | 11                         | 0                           | 0               | **0** |
+| B₄    | 8     | 8       | 0         | 0                          | 3                           | 2               | **3** |
+| F₄    | 12    | 9       | 3         | 9                          | 0                           | 0               | **0** |
+| **total** | **31** | **28** | **3** | **20** | **3** | **2** | **3** |
+
+Interpretation by group:
+
+- **A₄ (11 new fp, 0 new shapes).**  The audit found that
+  `cantitruncated_5-cell` (3 fp), `runcitruncated_5-cell` (2 fp),
+  and `omnitruncated_5-cell` (6 fp) each have rng = 2 kernels where
+  the 5-cell parent fails to snap but the descendant succeeds.  All
+  11 of these rng = 2 d-d kernels project to 3D shapes that are
+  Stage-B-equivalent to existing entries in the same polytope's
+  folder under the production sweep.  Self-duality of A₄ does **not**
+  prevent the blind spot — it only means descendants of A₄ are
+  particularly sparsely edged, which gives them more `_try_align`
+  freedom than the 5-cell parent has — but in the rng = 2 case every
+  recovered shape happens to coincide with one already in the corpus
+  via a different (parent-snapping) kernel orbit.
+- **B₄ (8 new fp, 3 new shapes).**  Three fp belong to B₄ (0,0,1,0)
+  ≡ 24-cell-as-B₄ and Stage-B-match the three master 24-cell
+  projections (`24cell_triality.vZome`, `24cell_long_root_rhombic_dodecahedron.vZome`,
+  `24cell_short_root_cuboctahedron.vZome` in `output/24cell/`); these
+  are aliases of pre-existing master shapes, not new shapes.  Five
+  fp belong to B₄ (0,1,1,0) ≡ bitruncated tesseract; intra-audit
+  dedup collapses them to **3 distinct Stage-B shapes**, all V = 96
+  with the full 4-colour zometool palette `(B:48, Y:48, G:48, R:48)`,
+  and none match anything in the existing corpus.  These 3 shapes
+  were promoted to
+  `output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
+  face_first_hexagon}_*.vZome` with `rng=2` flag and a Milestone 17
+  note in `manifest.json`.
+- **F₄ (12 new fp, 0 new shapes).**  9 fp Stage-B-match existing
+  corpus entries.  3 fp **failed to snap to ℤ[φ]³**: one in
+  `cantellated 24-cell` with kernel `[0, 0, 1/φ², −1/φ²]` (a
+  numerically rational but ℤ[φ]-irrational projection — the rotated
+  3D coordinates pick up a `√3` factor) and two in `runcinated /
+  runcitruncated 24-cell` with the same `[0, 0, 0, 2φ²]` along-axis
+  kernel.  These 3 are recorded as `snap_fail` in the triage JSON;
+  they pass `lib.search_engine.search` (so `_try_align` accepts
+  them) but `lib.emit_generic._snap_coords` cannot find a scale that
+  brings them into ℤ[φ]³.  Investigation deferred — most likely
+  these descendants under these kernels have projections in a
+  larger field like ℤ[φ, √3] that vZome's φ-only field cannot
+  represent (analogous to the 13 `ℤ[√2]³` snap-failures already
+  documented in [Coverage vs. qfbox.info](#coverage-vs-qfboxinfo-reference)).
+
+The 3 promoted bitruncated tesseract shapes are the **first
+documented exceptions** to the [oblique-kernel inheritance pattern](#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
+that earlier milestones described: their kernels are not inherited
+from any 16-cell or tesseract master projection (the parent
+tesseract's edge set fails to snap along these directions, and the
+parent 16-cell rng-2 master directions don't include them).  They
+are genuinely descendant-only, and their existence demonstrates that
+the inheritance lemma is a *frequency observation* rather than a
+structural theorem — most descendant obliques happen to inherit, but
+some don't.
+
+Reproducer:
+
+```powershell
+python ongoing_work/probes/blind_spot_audit.py     # 25 polytopes, ~9h on the present engine
+python ongoing_work/probes/blind_spot_triage.py    # snap+classify the 31 fp
+python ongoing_work/probes/promote_blind_spot_m17.py
+```
+
+Outputs:
+
+- `ongoing_work/blind_spot_audit_rng2.json` — per-polytope new-fp
+  records.
+- `ongoing_work/blind_spot_triage.json` — per-fp snap, Stage-B,
+  classification, staged path.
+- `ongoing_work/blind_spot_candidates/<group>_<bitmask>_<slug>/fp_<hash>.vZome`
+  — staged .vZome files for each successfully snapped candidate.
 
 ## Wythoff-extension shape inventory (rng = 2, full 47 of 47 polytope records)
 
@@ -792,9 +927,24 @@ because their snapped kernels lie outside the rng = 2 candidate set
 (typical kernel coordinates: 4φ + 2 ≈ 8.47, 9φ + 2 ≈ 9.47 — see
 [B₄ rng = 4 finding](#b4-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled)
 below).  These are flagged with `"rng": 4` in
-`output/wythoff_sweep/manifest.json`.  The shape-dedup totals
-above therefore become **66 distinct shapes after dedup** when both
-`rng = 2` and `rng = 4` discoveries are counted.
+`output/wythoff_sweep/manifest.json`.
+
+A second follow-up — the rng = 2 *descendant-direct* (Step-1 blind-
+spot) audit on every A₄/B₄/F₄ Wythoff descendant — added **3 more
+distinct shapes** to the corpus, all from B₄ bitruncated tesseract
+(`output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
+face_first_hexagon}_*.vZome`).  Each is V = 96 with the full 4-colour
+zometool palette `(B:48, Y:48, G:48, R:48)`.  The blind spot is
+architectural: `tools/run_wythoff_sweep.py` Step 1 snap-filters
+against the parent regular polytope only, so any kernel where the
+descendant's edge set classifies but the parent's does not gets
+dropped before Step 2 ever runs.  See
+[Step-1 blind-spot audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)
+below.
+
+The shape-dedup totals above therefore become **69 distinct shapes
+after dedup** when rng = 2 production + rng = 4 B₄ audit + rng = 2
+descendant-direct audit findings are all counted.
 
 The 27 snap failures are all in B₄/F₄ (cubic / 24-cellic geometry).
 The truncated tesseract under kernel `(0, 0, 0, 2 + 2φ)` for example
@@ -956,18 +1106,35 @@ under `oblique`.
 
 ### Implication
 
-The wythoff sweep does **not** discover any *new* oblique projection
+The wythoff sweep, when restricted to its parent-filtered Step-1
+kernel set, does **not** discover any *new* oblique projection
 directions beyond what the parent-regular master files already
 exhibit.  Every "obscure" oblique projection of every Wythoff
-descendant is just the descendant's vertex set viewed through one of
-the parent regular's documented oblique axes.  This is consistent
-with the way the sweep is architected (Step 1 finds kernels for the
+descendant *that the production pipeline has emitted* is just the
+descendant's vertex set viewed through one of the parent regular's
+documented oblique axes.  This is consistent with the way the
+production sweep is architected (Step 1 finds kernels for the
 parent regular only; Step 2 reuses the same kernel set for every
-descendant), but it is a theoretical observation that holds even
-across re-runs at higher rng.
+descendant), but it is a property of the *parent-filtered kernel
+set*, not a property of the descendant polytopes.
 
-The 7 master kernels above account for **25 of 25** `oblique_*.vZome`
-files in `output/wythoff_sweep/` — full coverage.  Reproducer:
+The
+[Step-1 blind-spot audit (Milestone 17)](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)
+ran the rng = 2 search directly against each descendant's edge set
+and found **3 new Stage-B-distinct shapes from B₄ bitruncated
+tesseract** whose kernels are *not* inherited from any 16-cell or
+tesseract master projection — the tesseract's edge set snap-fails on
+those directions, so they are genuinely descendant-only.  These 3
+shapes (`output/wythoff_sweep/bitruncated_tesseract/{oblique_00,
+oblique_01, face_first_hexagon}_*.vZome`) are the only known
+counter-examples to the inheritance pattern in the rng = 2 + rng = 4
+audit at present, but their existence demotes the inheritance
+observation from a *theorem* to a *typical-case empirical fact*.
+
+The 7 master kernels above account for **25 of 28** `oblique_*.vZome`
+files in `output/wythoff_sweep/`; the remaining 2 (the `oblique_00`
+and `oblique_01` Milestone 17 additions in `bitruncated_tesseract/`)
+are the descendant-only exceptions discussed above.  Reproducer:
 `python ongoing_work/probes/_verify_obliques_inherited.py`.
 
 ## Reproduction
