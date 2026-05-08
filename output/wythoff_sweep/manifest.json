@@ -8,7 +8,8 @@
     "Milestone 17 blind-spot audit (rng=2 descendant-direct): added 3 new shape(s) from bitruncated tesseract.  Found by ongoing_work/probes/blind_spot_audit.py running search() directly against descendant edge sets, bypassing the parent-regular Step-1 filter in tools/run_wythoff_sweep.py.  Each entry carries rng=2.",
     "Milestone 17b: rescaled the 3 M17 bitruncated_tesseract V=96 oblique files to canonical antiprism scale (min_edge=12.31073) by /phi^k for k=0,1,2 respectively, and renamed face_first_hexagon_df821cc628 to oblique_02_df821cc628 (it is a bitr_tesseract image of the 16-cell antiprism R12B6Y6 master kernel, not a face-first hexagonal projection).",
     "Milestone 17c: renumbered the 3 M17 bitruncated_tesseract obliques so the index suffix (oblique_00/01/02) aligns row-for-row with the antiprism inheritance table in docs/WYTHOFF_SWEEP.md (B6R12Y6 master -> 00, R12B6Y6 master -> 01, Y6R12B6 master -> 02).  After M17c: oblique_00_26f0b7c6e6 (was oblique_01), oblique_01_df821cc628 (was oblique_02 / originally face_first_hexagon), oblique_02_80a961d9da (was oblique_00).  Hash suffixes are sig-derived and unchanged.  Also normalised label_subtype to null on all 3 entries (entry df821cc628 had a stale '00' from the M17b rename).",
-    "M19.audit: audit_h4 flagged e631eef5931ff05a as new on rect 600-cell; post-snap shape_signature confirms it is congruent to existing e690959a51597439 (kernel-direction alias).  e631 added to e690 aliases."
+    "M19.audit: audit_h4 flagged e631eef5931ff05a as new on rect 600-cell; post-snap shape_signature confirms it is congruent to existing e690959a51597439 (kernel-direction alias).  e631 added to e690 aliases.",
+    "M19.gap-triage: triaged 40 novel_rng2.json fp_hashes that had no manifest entry and no alias; ALL 40 are post-snap kernel-direction aliases of existing canonical entries (0 genuinely new shapes were silently dropped). Aliases now persisted; see ongoing_work/triage_novel_gap.log for raw output."
   ],
   "rng": "mixed (2 baseline; 4 for B4 rng=4 audit-flagged additions)",
   "shapes": [
@@ -1466,8 +1467,9 @@
       }
     },
     {
-      "alias_count": 3,
+      "alias_count": 4,
       "aliases": [
+        "146e0f9552fd5bfd",
         "99723519096daf25",
         "d6adf55a401f2fd9",
         "d78b84c72e45c08a"
@@ -1500,9 +1502,10 @@
       }
     },
     {
-      "alias_count": 2,
+      "alias_count": 3,
       "aliases": [
         "04cd47c59a1d1576",
+        "5f1d3ef65066d4ff",
         "d5e0a9df5db2763e"
       ],
       "bitmask": [
@@ -1533,7 +1536,7 @@
       }
     },
     {
-      "alias_count": 17,
+      "alias_count": 25,
       "aliases": [
         "1a0d721320c4f9a4",
         "1fc5749f9eb5111f",
@@ -1541,17 +1544,25 @@
         "49d3d59b0be0af8f",
         "59350c907e205e3a",
         "6237017ed42b06c2",
+        "665d7f8ac310071d",
         "669e04c0d9f0e093",
         "731abc5dc0bac389",
         "7c320f9d25c35485",
+        "800f72c3baa479fe",
         "8f579c25f1a3b738",
+        "98d0fae89b75adfc",
         "a2c47bfa6218777a",
         "aa55b8a9d1f83b71",
         "b54e075a59987fbd",
+        "b5a8ec00269113aa",
         "b92076625c902fdf",
+        "c95674ff52925e31",
         "ca7e9a12342693f6",
         "d2bc1b0ca38dccb6",
-        "e30149ab81ce86ef"
+        "da41392ff51f8259",
+        "e30149ab81ce86ef",
+        "e60e673cfd483272",
+        "f85e2e96c70d8cc4"
       ],
       "bitmask": [
         0,
@@ -1581,10 +1592,11 @@
       }
     },
     {
-      "alias_count": 2,
+      "alias_count": 3,
       "aliases": [
         "0d13d8d35e2b29d4",
-        "8c1ae2542c39bd9b"
+        "8c1ae2542c39bd9b",
+        "b26f233ca5d22a87"
       ],
       "bitmask": [
         1,
@@ -1614,11 +1626,12 @@
       }
     },
     {
-      "alias_count": 3,
+      "alias_count": 4,
       "aliases": [
         "11927f5a0ff18e7d",
         "51ac222d7b0be00b",
-        "a87be0db658d8b8e"
+        "a87be0db658d8b8e",
+        "feebd08ddebb8d64"
       ],
       "bitmask": [
         1,
@@ -1648,11 +1661,12 @@
       }
     },
     {
-      "alias_count": 9,
+      "alias_count": 10,
       "aliases": [
         "0137580b4ebb8a1b",
         "3b44cc41a2697b03",
         "7c5d26836a772f89",
+        "8b82a8d4fcf6f7ca",
         "920f7d987456d258",
         "93f8773f2a9f4ff6",
         "9c22ea52b419c364",
@@ -1721,9 +1735,10 @@
       }
     },
     {
-      "alias_count": 4,
+      "alias_count": 5,
       "aliases": [
         "13e387db31db699e",
+        "2ff0da38f367d655",
         "a4e5c7b80c17d45d",
         "a5838ce67b11ed4b",
         "f451c8c5fb3ae05d"
@@ -1756,11 +1771,12 @@
       }
     },
     {
-      "alias_count": 9,
+      "alias_count": 10,
       "aliases": [
         "1ae105e55323f972",
         "416fbd8e396057ac",
         "633ba56c30a8db1e",
+        "76caf5223054b76e",
         "7af56c5f9944ca44",
         "92c34345287d3fbe",
         "9d39cd0b0381aec2",
@@ -1796,37 +1812,61 @@
       }
     },
     {
-      "alias_count": 39,
+      "alias_count": 64,
       "aliases": [
+        "013cba07694cd6f1",
         "0201baf7a39ee24d",
         "05894248e7a48bfc",
         "0a7dae49015937e5",
         "0b7e8bc85eeb1763",
+        "0ecfe79e5e324f50",
+        "0f6eecdb02a488fa",
+        "17cdeb648d871829",
+        "187042090517dc77",
         "1871656b77368d13",
         "1a5d8c0939c3cf99",
+        "1b3933ec226101f9",
         "1d7039d2db0567fb",
         "20e75f4939bbdaae",
+        "24a8d9bc99f8ca9b",
+        "27009422bf0cc09b",
         "281de9b8566e0bd1",
         "29fe0c07e29119b5",
+        "2bfdf4b6ef7199cd",
+        "3309702dc5d60833",
+        "3a7b00ed3158b92b",
         "3ff4ffcf2a78514f",
+        "4525a9d7e3a08640",
         "45ba58888beb9c81",
+        "4604d6d605ee2e75",
         "57be3803dce8fe0f",
         "599fed7617aa6071",
+        "5e88217dbf68598f",
         "62b1504db795c214",
         "6530022112b36de2",
+        "6c686781c268a7c0",
+        "6dad26f8ce83e5b2",
         "7f30f14d84843ed9",
         "81f39e3a23cf8543",
         "82a087d896e1f2c2",
+        "8609c8d358845ac9",
         "8698d8421ad252ef",
+        "87ba4b3994fbde43",
+        "910cfbbb721b7ea3",
         "94f5c9c2780f54d2",
         "964659815b75a104",
         "971ff6c4466594b3",
         "9e2e193e4988b559",
         "a10a98bf7537ef5a",
+        "a2398d5d4a671d91",
         "a56086e06425cd41",
+        "a8e2a61deb083868",
         "af091d409b4561c0",
+        "b193f938890cb7c3",
+        "b2f04de7df353257",
         "b449d80f390b33ad",
         "b4c2c2bed844732e",
+        "b8928db2e2959c43",
         "b8aef3d92de67090",
         "c3a40f59b5011733",
         "c9355e379cf5d9f7",
@@ -1834,6 +1874,7 @@
         "d7d03f785d18bdda",
         "de6adacc80280cd8",
         "e3b9993e75ba8566",
+        "e4e29df04cae9619",
         "f1d39a397cd4786f",
         "f4b0068c4ef8ba7e",
         "fd1373d44be0f754"
