@@ -63,6 +63,30 @@ def _vertex_count(group, bitmask):
 GROUPS = ("A4", "B4", "F4", "H4")
 REGULAR_BITMASK = (1, 0, 0, 0)
 
+# Regular polytopes per group (single-ring Coxeter ringings that are
+# regular polytopes, NOT the rectifications).  Both (1,0,0,0) and
+# (0,0,0,1) ringings are regular for every Coxeter group; for the
+# self-dual groups A4 and F4 they happen to be the same polytope but
+# oriented differently in the wythoff frame, so the search may surface
+# different kernel vectors.  For the dual-pair groups B4 and H4 they
+# are different polytopes (tesseract vs 16-cell, 120-cell vs 600-cell).
+#
+# kernel-completeness-fix (2026-05-08): the production sweep used to
+# search only (1,0,0,0); empirical blind-spot audits at rng=2 across
+# all four groups (A4/B4/F4 in commit history M17/M18; H4 small-V in
+# M19.audit and M19.audit-round-3; H4 large-V in this milestone)
+# discovered no genuinely new shapes that the (1,0,0,0)-only inheritance
+# missed.  But the production code's safety claim is "all single-ring
+# regulars give every kernel any descendant could need", so this dict
+# now lists all the regulars per group, the cache stores them
+# separately, and find_group_kernels() unions them at runtime.
+REGULAR_BITMASKS = {
+    "A4": [(1, 0, 0, 0), (0, 0, 0, 1)],
+    "B4": [(1, 0, 0, 0), (0, 0, 0, 1)],
+    "F4": [(1, 0, 0, 0), (0, 0, 0, 1)],
+    "H4": [(1, 0, 0, 0), (0, 0, 0, 1)],
+}
+
 # Non-Wythoff polytopes: tested against the kernels of an explicit
 # canonical-frame regular polytope (NOT the wythoff (1,0,0,0) cache).
 # The wythoff frame uses a Procrustes calibration anchored to the
@@ -138,8 +162,19 @@ ONGOING = os.path.normpath(
     os.path.join(os.path.dirname(__file__), "..", "ongoing_work"))
 
 
-def kernel_cache_path(group, rng):
-    return os.path.join(ONGOING, f"kernels_{group}_rng{rng}.npy")
+def kernel_cache_path(group, rng, bitmask=None):
+    """Cache path for the kernels of a given regular bitmask of `group`.
+
+    `bitmask=None` (or the legacy default (1,0,0,0)) returns the
+    historical filename ``kernels_<group>_rng<N>.npy`` so existing
+    caches keep working.  Other regulars use
+    ``kernels_<group>_<bm>_rng<N>.npy`` (e.g.
+    ``kernels_H4_0001_rng2.npy``).
+    """
+    if bitmask is None or tuple(bitmask) == REGULAR_BITMASK:
+        return os.path.join(ONGOING, f"kernels_{group}_rng{rng}.npy")
+    bm_str = "".join(str(b) for b in bitmask)
+    return os.path.join(ONGOING, f"kernels_{group}_{bm_str}_rng{rng}.npy")
 
 
 def _dedup_kernels_by_direction(kernels, cos_tol=1e-6):
@@ -176,39 +211,81 @@ def _dedup_kernels_by_direction(kernels, cos_tol=1e-6):
     return [kernels[i] for i in keep_idx]
 
 
-def find_group_kernels(group, rng, cache=True):
+def find_group_kernels_for_bitmask(group, bitmask, rng, cache=True):
     """Return a list of kernel ndarrays for the regular polytope of
-    `group` at coefficient range `rng`.
+    `group` at single-ring `bitmask` and coefficient range `rng`.
 
-    Reads from ongoing_work/kernels_<group>_rng<N>.npy if present;
-    otherwise runs the search and writes the cache.  The result is
-    deduplicated by direction (positive scalar multiples collapsed),
-    even when loaded from a cache that pre-dates the dedup pass."""
-    path = kernel_cache_path(group, rng)
+    Reads from the kernel cache file if present; otherwise runs the
+    search and writes the cache.  The result is deduplicated by
+    direction (positive scalar multiples collapsed), even when loaded
+    from a cache that pre-dates the dedup pass."""
+    path = kernel_cache_path(group, rng, bitmask)
+    bm_label = "".join(str(b) for b in bitmask)
     if cache and os.path.exists(path):
         arr = np.load(path)
         rel = os.path.relpath(path)
-        print(f"  [{group}] loaded {len(arr)} cached kernels from {rel}")
+        print(f"  [{group} {bm_label}] loaded {len(arr)} cached kernels "
+              f"from {rel}")
         kernels = [arr[i] for i in range(len(arr))]
     else:
-        V, E = build_polytope(group, REGULAR_BITMASK)
+        V, E = build_polytope(group, bitmask)
         dirs = gen_dirs(rng=rng, integer_only=False, permute_dedup=False)
-        print(f"  [{group}] regular: |V|={len(V)}, |E|={len(E)}, "
+        print(f"  [{group} {bm_label}] regular: |V|={len(V)}, |E|={len(E)}, "
               f"trying {len(dirs)} dirs...")
         t0 = time.time()
-        hits = search(group + "_regular", V, E, dirs, verbose=False)
+        hits = search(group + "_" + bm_label, V, E, dirs, verbose=False)
         kernels = [np.array(n) for (n, sig, balls) in hits]
-        print(f"  [{group}] {len(kernels)} hits in {time.time()-t0:.1f}s")
+        print(f"  [{group} {bm_label}] {len(kernels)} hits in "
+              f"{time.time()-t0:.1f}s")
         if cache and kernels:
             os.makedirs(ONGOING, exist_ok=True)
             np.save(path, np.array(kernels))
-            print(f"  [{group}] cached to {os.path.relpath(path)}")
+            print(f"  [{group} {bm_label}] cached to "
+                  f"{os.path.relpath(path)}")
     n_before = len(kernels)
     kernels = _dedup_kernels_by_direction(kernels)
     if len(kernels) < n_before:
-        print(f"  [{group}] direction-dedup: "
+        print(f"  [{group} {bm_label}] direction-dedup: "
               f"{n_before} -> {len(kernels)} kernels")
     return kernels
+
+
+def find_group_kernels(group, rng, cache=True):
+    """Return the deduplicated union of kernels across all regular
+    polytopes of `group` at coefficient range `rng`.
+
+    For each regular bitmask in REGULAR_BITMASKS[group], runs the
+    per-bitmask search (cached separately), then unions and dedupes by
+    direction so the caller sees a single combined kernel list.
+
+    The (1,0,0,0) entry uses the historical cache path
+    ``kernels_<group>_rng<N>.npy`` so existing caches keep working.
+    Additional regular bitmasks (currently (0,0,0,1) for all four
+    groups) are cached separately.
+
+    Empirical note (2026-05-08): for rng=2 the (0,0,0,1) cache is
+    expected to add zero new kernel directions to the deduplicated
+    union; the blind-spot audits across all four groups found no
+    genuinely new shapes that the (1,0,0,0)-only inheritance missed.
+    Including (0,0,0,1) here ensures the production code's safety
+    claim is implemented, not just empirically supported.
+    """
+    bitmasks = REGULAR_BITMASKS.get(group, [REGULAR_BITMASK])
+    all_kernels = []
+    per_bm_counts = []
+    for bm in bitmasks:
+        ks = find_group_kernels_for_bitmask(group, bm, rng, cache=cache)
+        all_kernels.extend(ks)
+        per_bm_counts.append((bm, len(ks)))
+    n_pre_union = len(all_kernels)
+    merged = _dedup_kernels_by_direction(all_kernels)
+    if len(bitmasks) > 1:
+        parts = ", ".join(f"{''.join(str(b) for b in bm)}={n}"
+                          for bm, n in per_bm_counts)
+        print(f"  [{group}] union of {len(bitmasks)} regulars "
+              f"({parts}) -> {n_pre_union} kernels, "
+              f"{len(merged)} after direction-dedup")
+    return merged
 
 
 def test_polytope_against_kernels(group, bitmask, name, kernels):
