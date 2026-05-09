@@ -102,9 +102,19 @@ def _check_cos_pairs(U, tol=1e-5):
     within `tol` of some entry of `_ALLOWED_COS`.  Chunked along the
     rows so that for large K (e.g. 28800 edges of the omnitruncated
     120-cell) the K x K Gram matrix is never fully materialised.
+
+    The chunk size is small (16) so the `np.any(diff > tol)` early-exit
+    fires after only ~chunk*K cosine checks for kernels that fail the
+    necessary-condition test.  The cos-pair test is a pure
+    necessary-condition check, so smaller chunks just reject failing
+    kernels sooner without changing semantics.  Empirically chunk=16
+    gives 4-23x speedup over chunk=512 on K=240..2304 polytopes (and
+    more on K>=4000 H4 polytopes), with hits-set identical.
+    See ongoing_work/probes/bench_search_chunk.py for the regression
+    test that validates this.
     """
     K = U.shape[1]
-    chunk = 512
+    chunk = 16
     allowed = _ALLOWED_COS
     n_allowed = len(allowed)
     for i in range(0, K, chunk):
