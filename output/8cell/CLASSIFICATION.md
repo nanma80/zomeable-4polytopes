@@ -58,31 +58,56 @@ For n = (a, b, 0, 0) (and B₄-images thereof), with a, b ∈ ℤ[φ]:
 The 16 ball positions form a **4 × 2 × 2 cuboid lattice** with x-spacings
 (2|b|, 2|a−b|, 2|b|), y-spacing 2c, z-spacing 2c.
 
-**Parameter**: integer ratio (a : b) ∈ ℤ²₊ / overall scale, modulo a ↔ b
-swap and modulo the constraint that (a, b, c) is "a square sum in ℤ[φ]"
-(i.e. √(a²+b²) ∈ ℤ[φ]).
+**Parameter**: pair (a, b) ∈ ℤ[φ]²₊ modulo overall scale, modulo a ↔ b
+swap, and modulo the constraint √(a²+b²) ∈ ℤ[φ] (so c is in the same
+field as the projected coordinates).
 
-**vZome-embeddability constraint**: a² + b² must be a square in ℤ[φ].
-For (m+nφ)² = (m²+n²) + n(2m+n)φ to lie in ℤ we need either n=0 (giving
-m²) or n=−2m (giving 5m²). So **a² + b² must equal either an integer
-square c², or 5m²** (in which case c = m·(2φ−1) = m·√5).
+**vZome-embeddability constraint**. Write a = a₁ + a₂φ, b = b₁ + b₂φ
+with aᵢ, bᵢ ∈ ℤ. Then
 
-Two infinite sub-families therefore arise:
+  a² + b²  =  (a₁² + a₂² + b₁² + b₂²)  +  [a₂(2a₁ + a₂) + b₂(2b₁ + b₂)] · φ
 
-- **Pythagorean branch**: a² + b² = c² with c ∈ ℤ. All edges integer
-  blue struts. Primitive solutions are the usual Pythagorean triples.
-- **5m² branch**: a² + b² = 5m² with c = m(2φ−1). The y- and z-edges
-  are now blue-φ struts (length involves φ); only x-edges are integer.
-  Primitive solutions come from factoring in ℤ[i]: writing
-  a + b·i = (2 + i)·(p + q·i)² gives
+For a² + b² to lie in ℤ at all, the φ-coefficient must vanish:
+
+  **a₂(2a₁ + a₂) + b₂(2b₁ + b₂) = 0**          (trace-zero condition)
+
+When this holds, a² + b² is a positive integer S, and we further need
+S to be a perfect square or 5·m² in ℤ for c = √S to lie in ℤ[φ]. The
+two infinite sub-families therefore arise:
+
+- **Pythagorean branch**: a² + b² = c² with c ∈ ℤ. y- and z-edges
+  integer blue struts.
+- **5m² branch**: a² + b² = 5m² with c = m·(2φ − 1) = m·√5. y- and
+  z-edges are blue-φ struts.
+
+Primitive **integer** (a, b ∈ ℤ, so trivially trace-zero) solutions on
+the 5m² branch come from factoring in ℤ[i]: writing
+a + b·i = (2 + i)·(p + q·i)² gives
 
     a = 2p² − 2pq − 2q²,   b = p² + 4pq − q²,   m = p² + q².
 
-  First few primitive (a, b, m):
-  (1, 2, 1), (2, 11, 5), (19, 22, 13), (2, 29, 13), (22, 31, 17), …
+First few primitive integer (a, b, m): (1, 2, 1), (2, 11, 5),
+(19, 22, 13), (2, 29, 13), (22, 31, 17), …
+
+**Genuinely-φ generators (a₂ ≠ 0 or b₂ ≠ 0)** also exist; the integer
+case is just the (a₂ = b₂ = 0) sub-locus. The smallest non-integer
+generator points (canonicalised so a ≥ b > 0, then by ascending S) are:
+
+| (a, b)          | trace-zero? | S = a² + b² | c       | branch       |
+|:----------------|:-----------:|:-----------:|:-------:|:-------------|
+| (√5, 2)         | ✓ (a = −1+2φ) | 9          | 3       | Pythagorean  |
+| (3 + 2φ, 4φ − 4) | ✓           | 45 = 5·9    | 3√5     | 5m² (m=3)    |
+
+The first row is emitted as **`8cell_inf_family_phi_aSqrt5_b2.vZome`**
+(discovered via the inheritance-free matrix sweep 2026-05-08); it is
+the first explicit ℤ[φ] generator point in the corpus.  The 5m² (m=3)
+example is left unemitted; the broader ℤ[φ] parameter space is not yet
+systematically enumerated.
 
 **Examples emitted** (`8cell_inf_family_a*_b*.vZome`, all normalized so
-the longest edge is roughly one ball-spacing):
+the longest edge is roughly one ball-spacing). All seven existing files
+use integer (a, b); the broader ℤ[φ] parameter space is not yet
+systematically enumerated.
 
 | (a, b)   | a² + b²    | c              | branch       |
 |:--------:|:----------:|:--------------:|:-------------|
@@ -95,9 +120,9 @@ the longest edge is roughly one ball-spacing):
 | (2, 29)  | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)   |
 
 Note that (19, 22) and (2, 29) share the same c = 13√5 but are
-genuinely distinct shapes (different a:b ratios). Other valid (a, b)
-include (7, 24, 25), (20, 21, 29), … on the Pythagorean branch and
-(22, 31, 17), … on the 5m² branch. Trivially-related cases:
+genuinely distinct shapes (different a:b ratios). Other valid integer
+(a, b) include (7, 24, 25), (20, 21, 29), … on the Pythagorean branch
+and (22, 31, 17), … on the 5m² branch. Trivially-related cases:
 (2, 4) ≡ (1, 2) (same ratio, scaled); (1, 0) → cube; (a, a) → degenerate
 12-ball collapse.
 
@@ -173,6 +198,7 @@ zomeable projections (4, 6, 3, 1, 1 respectively in our enumeration).
 8cell_inf_family_a2_b11.vZome          ← infinite family, 5m² branch (m=5)
 8cell_inf_family_a19_b22.vZome         ← infinite family, 5m² branch (m=13)
 8cell_inf_family_a2_b29.vZome          ← infinite family, 5m² branch (m=13)
+8cell_inf_family_phi_aSqrt5_b2.vZome   ← infinite family, Pythagorean (√5, 2, 3) — first ℤ[φ] generator (added 2026-05-08)
 ```
 
 All inf-family models are normalized per-emit (each divided by its own
