@@ -142,6 +142,17 @@ in ℤ[φ]³:
 Both live in different algebraic-field extensions of vZome, not the
 icosahedral field. We do not emit them.
 
+### Phi-oblique sporadic — `8cell_phi_oblique.vZome` (kernel support 3)
+
+Discovered 2026-05-08 by the inheritance-free matrix sweep
+(`tools/inheritance_free_sweep.py`).  Kernel `(0, 1/φ², 1, −1/φ)` (a
+support-3 direction whose three nonzero components are *all* φ-rational).
+This is the support-3 case the original analysis above did not anticipate:
+unlike the two non-embeddable support-3 directions, this one **does**
+embed cleanly in ℤ[φ]³.  Full V=16, E=32 with 4 distinct edge-length
+classes (1.0×8, 1.473×8, φ×8, 1.701×8).  Stage-B sig prefix
+`88c5a53810074918`.
+
 ## 5. Why other regular 4-polytopes are finite
 
 For the 5/16/24/120/600-cells, edge directions are not aligned with any
@@ -154,6 +165,7 @@ zomeable projections (4, 6, 3, 1, 1 respectively in our enumeration).
 ```
 8cell_cell_first_cube.vZome            ← cell-first sporadic (cube, 8 balls)
 8cell_vertex_first_rhombic_dodec.vZome ← vertex-first sporadic (rhombic dodec, 15 balls)
+8cell_phi_oblique.vZome                ← phi-oblique sporadic, support-3 (16 balls, added 2026-05-08)
 8cell_inf_family_a1_b2.vZome           ← infinite family, 5m² branch (m=1)
 8cell_inf_family_a3_b4.vZome           ← infinite family, Pythagorean (3-4-5)
 8cell_inf_family_a5_b12.vZome          ← infinite family, Pythagorean (5-12-13)
