@@ -310,7 +310,8 @@ def gen_dirs(rng=3, integer_only=False, permute_dedup=True):
     return [np.array(v) for v in out]
 
 
-def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True):
+def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True,
+           progress_every=None, progress_tag=None):
     """Run the search.  Returns a list of (n_tuple, signature_dict, n_balls).
 
     Optimisation: edges that are parallel in 4D (scalar multiples of each
@@ -321,9 +322,21 @@ def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True):
     by indexing reps[class_of[k]].  For highly symmetric polytopes
     (omnitruncated 120-cell, etc.) this reduces K by 50-200x and the
     cos-pair work by 2500-40000x.
+
+    Progress logging (cheap, no per-direction cost):
+      verbose=True               -> per-hit print
+      verbose='progress'         -> default progress lines every ~8% of dirs
+      progress_every=N           -> custom interval (overrides 8% default)
+      progress_tag='1/8 cantitr' -> prefix shown in progress lines
     """
-    if verbose:
-        print(f"\n=== {rep_name}: {len(dirs)} candidate directions ===")
+    n_dirs = len(dirs)
+    show_hits = verbose is True
+    show_progress = verbose == 'progress' or progress_every is not None
+    if progress_every is None:
+        progress_every = max(1, int(n_dirs * 0.08))
+    tag = f"  [{progress_tag}]" if progress_tag else "  "
+    if verbose is True:
+        print(f"\n=== {rep_name}: {n_dirs} candidate directions ===")
     found = []
     t0 = time.time()
     K_full = len(edges)
@@ -331,12 +344,19 @@ def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True):
     rep_idx, class_of = _edge_dir_classes(E)
     K_reps = len(rep_idx)
     E_reps = E[:, rep_idx] if K_reps > 0 else E
-    if verbose and K_reps < K_full:
-        print(f"  parallel-edge reduction: K {K_full} -> {K_reps} "
-              f"({100.0*K_reps/max(K_full,1):.1f}% of full)")
-    # Pre-compute boolean mask of zero-class edges (defensive: should be 0)
-    zero_class_mask = (class_of == -1)
-    for n in dirs:
+    if (show_hits or show_progress) and K_reps < K_full:
+        print(f"{tag} parallel-edge reduction: K {K_full} -> {K_reps} "
+              f"({100.0*K_reps/max(K_full,1):.2f}%)  ndirs={n_dirs}",
+              flush=True)
+    for i, n in enumerate(dirs):
+        if show_progress and i > 0 and i % progress_every == 0:
+            elapsed = time.time() - t0
+            pct = 100.0 * i / n_dirs
+            eta = elapsed * (n_dirs - i) / max(i, 1)
+            ts = time.strftime('%H:%M:%S')
+            print(f"{tag} {ts}  {pct:5.1f}%  {i}/{n_dirs}  "
+                  f"elapsed={elapsed:.1f}s  ETA={eta:.1f}s  "
+                  f"hits={len(found)}", flush=True)
         if np.linalg.norm(n) < 1e-9:
             continue
         Q = projection_matrix(n)
@@ -355,9 +375,15 @@ def search(rep_name, V, edges, dirs, tol=1e-5, verbose=True):
         Vp = (Q @ V.T).T
         balls = set(tuple(np.round(p, 4)) for p in Vp)
         found.append((tuple(np.round(n, 6)), sig, len(balls)))
-        if verbose:
+        if show_hits:
             print(f"  HIT n={tuple(np.round(n, 4))}  balls={len(balls)}  sig={sig}")
-    if verbose:
+    if show_progress:
+        elapsed = time.time() - t0
+        ts = time.strftime('%H:%M:%S')
+        print(f"{tag} {ts}  100.0%  {n_dirs}/{n_dirs}  "
+              f"elapsed={elapsed:.1f}s  ETA=0.0s  hits={len(found)}",
+              flush=True)
+    if show_hits:
         print(f"  ({len(found)} hits, {time.time() - t0:.1f}s)")
     return found
 
