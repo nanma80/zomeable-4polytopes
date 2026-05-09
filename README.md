@@ -16,7 +16,7 @@ rotation-and-uniform-scale-invariant fingerprint to count distinct 3D shapes.
 | Polytope                      | Verts | Edges | Distinct zomeable shapes |
 |-------------------------------|-------|-------|--------------------------|
 | 5-cell `{3,3,3}`              | 5     | 10    | **4** — vertex-first + 3 others |
-| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 2 sporadic** ¹ — cell-first, vertex-first, inf family of cuboids |
+| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 3 sporadic** ¹ — cell-first cube, vertex-first rhombic dodec, phi-oblique, inf family of cuboids |
 | 16-cell `{3,3,4}`             | 8     | 24    | **6** — vertex-first, cell-first, edge-first, 3 triality |
 | 24-cell `{3,4,3}`             | 24    | 96    | **3** — cell-first, vertex-first, triality |
 | 120-cell `{5,3,3}`            | 600   | 1200  | **1** — cell-first |
@@ -36,9 +36,16 @@ zomeable projection. We have no formal upper bound on the coefficient
 size that suffices. See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for
 details.
 
-¹ The 8-cell infinite family is parametrized by integer pairs `(a,b)`
-producing distinct rectangular cuboids. Two additional sporadic shapes
-exist on zometool but are not vZome-embeddable. See
+¹ The 8-cell infinite family is parametrized by ℤ[φ]-Pythagorean
+triples `(a, b, c)` with `a² + b² = c²` (both integer-Pythagorean and
+genuinely-φ branches), producing distinct rectangular cuboids. The
+three sporadics are the cell-first cube (V=8), the vertex-first rhombic
+dodecahedron (V=15), and the phi-oblique sporadic (V=16, kernel
+`(0, 1/φ², 1, −1/φ)` — three image vectors coplanar, 4th independent).
+Three further canonical projections — edge-first hex prism, face-first
+4×2 cuboid, face-first-like BYR shape — exist as zometool sculptures
+in vZome's *cubic* algebraic-field system but cannot be expressed
+in the icosahedral ℤ[φ] field. See
 [`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md).
 
 Per-polytope writeups live in `output/<polytope>/RESULTS.md` (or
@@ -118,8 +125,12 @@ been published or built independently; our enumeration confirms them.
 
 To our knowledge, the following results are new:
 
-- **8-cell** — the infinite family of zometool-buildable cuboids, and
-  the 2 sporadic non-vZome-embeddable shapes
+- **8-cell** — the infinite family of zometool-buildable cuboids
+  (parameterized by ℤ[φ]-Pythagorean triples), the **phi-oblique
+  sporadic** (V=16, kernel support 3, three image vectors coplanar),
+  and the cubic-system canonical projections (edge-first hex prism,
+  face-first cuboid, BYR shape) that are not embeddable in the
+  icosahedral ℤ[φ] field
   (see [`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md)).
 - **Snub 24-cell, vertex-first** — does not appear in Richter's page or
   any source we could find.

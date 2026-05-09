@@ -127,7 +127,7 @@ have not been audited yet via this test but should be cheap to add.
 | Polytope | Result            | Saturation evidence | Confidence |
 |----------|-------------------|---------------------|------------|
 | 5-cell   | 4 shapes          | rng 2/3 both 4      | high       |
-| 8-cell   | 1 inf family + 2 sporadic | rng 1/2/3 → 8/32/129 with per-support breakdown {1,28,2,1} → {1,125,2,1}: only support-2 grows | high (theoretical + search) |
+| 8-cell   | 1 inf family + 3 sporadic | rng 1/2/3 → 8/32/129 with per-support breakdown — only support-2 grows; sporadics are cube + rhombic dodec + phi-oblique | high (theoretical + search) |
 | 16-cell  | 6 shapes          | rng 2/3/4 all 6     | high       |
 | 24-cell  | 3 shapes          | rng 2/3 both 3      | high       |
 | 120-cell | 1 shape           | rng 2/3 both 1      | high       |

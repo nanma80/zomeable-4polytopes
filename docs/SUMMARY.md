@@ -10,7 +10,7 @@ icosahedral system).
 | Polytope        | Verts | Edges | Distinct shapes | Notes                             |
 |-----------------|-------|-------|-----------------|-----------------------------------|
 | 5-cell  {3,3,3} | 5     | 10    | **4**           | saturated rng=3; matches Richter/Vorthmann 2007 |
-| 8-cell  {4,3,3} | 16    | 32    | **1 inf family + 2 sporadic** | inf family = split cuboids parametrized by integer ratio (a:b) with a²+b² ∈ ℤ[φ]² |
+| 8-cell  {4,3,3} | 16    | 32    | **1 inf family + 3 sporadic** | inf family = split cuboids parametrized by ℤ[φ]-Pythagorean triples (a:b) with a²+b²=c²∈ℤ[φ]; sporadics = cube, rhombic dodec, phi-oblique (V=16, kernel support 3) |
 | 16-cell {3,3,4} | 8     | 24    | **6**           | saturated rng=4                   |
 | 24-cell {3,4,3} | 24    | 96    | **3**           | saturated rng=3                   |
 | 120-cell {5,3,3}| 600   | 1200  | **1**           | saturated rng=3 (330-ball image)  |
