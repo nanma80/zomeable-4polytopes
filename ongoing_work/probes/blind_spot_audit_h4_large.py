@@ -1,13 +1,17 @@
-"""H4 large-descendant blind-spot audit (post search-engine-prefilter).
+"""H4 large-descendant blind-spot audit (post search-engine-prefilter
++ parallel-edge-class reduction).
 
 Runs the same descendant-direct rng=2 sweep architecture as
 ongoing_work/probes/blind_spot_audit_h4.py, but covers the 8 remaining
-H4 Wythoff descendants with V >= 3600 that were skipped before because
-each cost >5 hours under chunk=512.
+H4 Wythoff descendants with V >= 3600.
 
-Now feasible thanks to lib/search_engine.py:_check_cos_pairs chunk=16
-optimisation (commit 7ccc1a7) which gives ~6x speedup on K=3600 and
-correspondingly more on larger K.
+Performance fixes used:
+  * lib/search_engine.py:_check_cos_pairs chunk=16   (commit 7ccc1a7)
+  * lib/search_engine.py:search() parallel-edge-class reduction:
+    K_full -> ~60 reps for every H4 large-V polytope (492x reduction
+    on omnitruncated 120-cell).
+  * Per-polytope progress logger that prints elapsed + ETA every ~8% of
+    direction candidates, so sleep-cycle monitoring can see motion.
 
 H4 polytopes audited:
     (0, 1, 1, 0)  bitruncated 600-cell                V=3600  E=7200
@@ -22,15 +26,20 @@ H4 polytopes audited:
 Persists to ongoing_work/blind_spot_audit_h4_large_rng2.json.
 """
 import os, sys, json, time, hashlib
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
+
+import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "lib"))
 sys.path.insert(0, str(ROOT / "tools"))
 
 from wythoff import build_polytope                             # noqa: E402
-from search_engine import gen_dirs, search, group_by_shape     # noqa: E402
+import search_engine as se                                     # noqa: E402
+from search_engine import (gen_dirs, group_by_shape,            # noqa: E402
+                           projection_matrix, _try_align,
+                           _edge_dir_classes)
 
 
 def hash_fp(fp):
@@ -38,6 +47,52 @@ def hash_fp(fp):
     payload = repr((int(n_balls),
                     tuple(round(float(d), 6) for d in dists)))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def search_with_progress(rep_name, V, edges, dirs, tag,
+                         report_every=0.08, tol=1e-5):
+    """Same hit-set as `search_engine.search()`, but emits progress
+    lines like "[tag]  37%  73452/195312  1247s  ETA 2123s  hits=2"."""
+    found = []
+    t0 = time.time()
+    K_full = len(edges)
+    E = np.array([V[b] - V[a] for (a, b) in edges]).T
+    rep_idx, class_of = _edge_dir_classes(E)
+    K_reps = len(rep_idx)
+    E_reps = E[:, rep_idx] if K_reps > 0 else E
+    print(f"  [{tag}] reduction K {K_full} -> {K_reps} "
+          f"({100*K_reps/max(K_full,1):.2f}%)  ndirs={len(dirs)}",
+          flush=True)
+    n_dirs = len(dirs)
+    if n_dirs == 0:
+        return found
+    next_report = max(1, int(n_dirs * report_every))
+    for i_n, n in enumerate(dirs):
+        if np.linalg.norm(n) < 1e-9:
+            continue
+        Q = projection_matrix(n)
+        P_reps = Q @ E_reps
+        res = _try_align(P_reps, tol=tol)
+        if res is not None:
+            R, classes_reps = res
+            if K_reps == K_full:
+                classes_full = classes_reps
+            else:
+                classes_full = [classes_reps[c] if c >= 0 else '_'
+                                for c in class_of]
+            sig = dict(Counter(classes_full))
+            Vp = (Q @ V.T).T
+            balls = set(tuple(np.round(p, 4)) for p in Vp)
+            found.append((tuple(np.round(n, 6)), sig, len(balls)))
+        if (i_n + 1) % next_report == 0 or (i_n + 1) == n_dirs:
+            elapsed = time.time() - t0
+            pct = 100.0 * (i_n + 1) / n_dirs
+            eta = elapsed * (n_dirs - i_n - 1) / max(i_n + 1, 1)
+            ts = time.strftime("%H:%M:%S")
+            print(f"  [{tag}] {ts}  {pct:5.1f}%  {i_n+1}/{n_dirs}  "
+                  f"elapsed={elapsed:.1f}s  ETA={eta:.1f}s  "
+                  f"hits={len(found)}", flush=True)
+    return found
 
 
 # Order: smallest K first so we discover fast feedback before the big
@@ -103,7 +158,8 @@ def main():
         ts = time.strftime("%H:%M:%S")
         print(f"[{i_p}/{len(work)}] {ts} {group} {b} {name}  "
               f"V={n_v} E={n_e}  starting search...", flush=True)
-        hits = search(name, V, E, dirs2, verbose=False)
+        tag = f"{i_p}/{len(work)} {name}"
+        hits = search_with_progress(name, V, E, dirs2, tag)
         groups = group_by_shape(hits, V, E)
         n_fp = len(groups)
         fp_hashes_now = {}
