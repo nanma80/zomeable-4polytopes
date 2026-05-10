@@ -60,30 +60,45 @@ rank-4 Coxeter groups (A₄, B₄, F₄, H₄).
 systematic two-step enumeration that searches each group's kernel set
 once and reuses it across all 9–15 Wythoff variants in that group.
 
-At rng=2 the sweep finds **127 distinct novel zomeable shapes** beyond
-the 8 polytopes above (regular reference set is the (1,0,0,0)/(0,0,0,1)
-records of every group, which collectively are the 6 standard
-regulars).  100 of the 127 successfully snap to ZZ[φ]³ as candidate
-.vZome files; the remaining 27 are abstractly zomeable but not
-vZome-embeddable at the snap precision used by `lib/emit_generic.py`.
-After a Stage-B shape-congruence dedup pass the snapped 100 collapse
-to **60 distinct rng=2 .vZome shapes** (many fingerprints were
-direction-equivalent but produced slightly different fp_hashes — see
-`docs/WYTHOFF_SWEEP.md` for the full accounting).  These live in
-[`output/wythoff_sweep/`](output/wythoff_sweep/).
+At rng = 2 the production sweep finds **127 distinct novel zomeable
+shapes** beyond the 8 polytopes above (regular reference set is the
+(1,0,0,0)/(0,0,0,1) records of every group, which collectively are the
+6 standard regulars).  100 of the 127 successfully snap to ℤ[φ]³ as
+candidate .vZome files; the remaining 27 are abstractly zomeable but
+not vZome-embeddable at the snap precision used by
+`lib/emit_generic.py`.  After a Stage-B shape-congruence dedup pass
+the snapped 100 collapse to **60 distinct rng = 2 .vZome shapes**
+(many fingerprints were direction-equivalent but produced slightly
+different fp_hashes — see [`docs/WYTHOFF_SWEEP.md`](docs/WYTHOFF_SWEEP.md)
+for the full accounting).
 
-A follow-up rng=4 audit on six B₄ Wythoff descendants flagged by the
+A follow-up rng = 4 audit on six B₄ Wythoff descendants flagged by the
 kernel-completeness probe found **6 additional zomeable shapes** that
-the rng=2 sweep cannot reach: 3 new V=32 shapes for the rectified
+the rng = 2 sweep cannot reach: 3 new V=32 shapes for the rectified
 tesseract and 3 new V=48 shapes for the truncated 16-cell.  All six
 use only the 4 standard zometool strut colours and are recorded as
-`oblique_00_*` … `oblique_02_*` in their respective output folders
-with `rng: 4` in the manifest.  After Stage-B shape-congruence dedup
-the emitted corpus is **66 distinct .vZome shapes** in
-`output/wythoff_sweep/` (60 from rng=2 plus the 6 rng=4 additions).
-The other four B₄ rng=4 audit gaps reconcile to zero new shapes
-once master regulars and B₄ ↔ F₄ aliases are properly indexed
-(see `docs/WYTHOFF_SWEEP.md` § *B₄ rng = 4 finding*).
+`*_oblique_0?.vZome` in their respective output folders with
+`rng: 4` in the manifest.  The other four B₄ rng = 4 audit gaps
+reconcile to zero new shapes once master regulars and B₄ ↔ F₄ aliases
+are properly indexed (see `docs/WYTHOFF_SWEEP.md` § *B₄ rng = 4
+finding*).
+
+**Corpus on disk (69 .vZome files):** every Wythoff descendant has its
+own `output/<polytope>/` folder with a `RESULTS.md`.  26 folders carry
+between 1 and 6 `.vZome` files (combining the 60 rng = 2 hits with
+the 6 rng = 4 additions and 3 more discovered during the
+inheritance-free audit); the remaining 13 folders are documented
+snap-fail variants (zometool-axis-aligned but not embeddable in ℤ[φ]³ —
+typically into the ℤ[√2]³ field that is natural for B₄/F₄ but outside
+this project's scope).  The provenance ledger lives at
+[`output/wythoff_sweep_manifest.json`](output/wythoff_sweep_manifest.json).
+
+A separate 38-hour, 180-cell **inheritance-free matrix sweep** then
+audited every `(group, bitmask, rng ≤ 4)` cell from scratch (no
+parent-regular kernel inheritance) and found **zero genuinely new
+shapes** — every flagged candidate is a fingerprint-aliased copy of a
+shape already on disk.  See
+[`docs/INHERITANCE_FREE_SWEEP.md`](docs/INHERITANCE_FREE_SWEEP.md).
 
 ```powershell
 # Reproduce (see docs/WYTHOFF_SWEEP.md for details and parallel options)
@@ -93,6 +108,9 @@ python tools/run_wythoff_sweep.py --group F4 --rng 2
 python tools/run_wythoff_sweep.py --group H4 --rng 2 --sort-by-size
 python tools/analyze_sweep.py --rng 2 --out-novel ongoing_work/novel_rng2.json
 python tools/emit_novel.py --rng 2
+
+# Inheritance-free completeness audit (~38h on a multi-core box):
+python tools/inheritance_free_sweep.py --rng 2  # then --rng 3, --rng 4
 ```
 
 ## Prior work and novelty
@@ -165,15 +183,18 @@ zomeable-4polytopes/
 │   ├── run_wythoff_sweep.py     Wythoff sweep over A4/B4/F4/H4
 │   ├── analyze_sweep.py         label sweep shapes vs. regular references
 │   ├── emit_novel.py            emit .vZome per novel sweep shape
+│   ├── inheritance_free_sweep.py  inheritance-free matrix audit (corpus completeness)
 │   └── patch_origin.py          one-shot origin-ball cleanup for hand-built files
 ├── docs/
 │   ├── SUMMARY.md               full result narrative
 │   ├── METHODOLOGY.md           saturation + open questions
 │   ├── UNIFORM_PLAN.md          extension to all 47 convex uniform 4-polytopes
-│   └── WYTHOFF_SWEEP.md         results + reproduction for the Wythoff sweep
+│   ├── WYTHOFF_SWEEP.md         results + reproduction for the Wythoff sweep
+│   └── INHERITANCE_FREE_SWEEP.md  38h matrix-sweep audit of corpus completeness
 └── output/
     ├── <polytope>/              .vZome files + per-polytope writeup
-    └── wythoff_sweep/           novel shapes from the Wythoff sweep + manifest.json
+    │                            (47 folders: 8 master + 39 Wythoff descendants)
+    └── wythoff_sweep_manifest.json   provenance ledger for the 69 Wythoff .vZome files
 ```
 
 ## Usage
