@@ -26,7 +26,7 @@ constructions on the rank-4 Coxeter groups:
 Plus the 2 non-Wythoff convex uniforms (snub 24-cell, grand antiprism)
 gives the well-known total of 47 + 2 ≡ 49 — but the snub 24-cell is
 [Coxeter-equivalent to B₄ (0,0,1,0) snubbed](https://en.wikipedia.org/wiki/Snub_24-cell)
-and is already enumerated in `output/snub24cell/`. Likewise the grand
+and is already enumerated in `output/snub_24cell/`. Likewise the grand
 antiprism is in `output/grand_antiprism/`.
 
 ## Terminology: "natural" vs "novel"
@@ -361,7 +361,7 @@ artefact (see the
 [snap-failure analysis](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records)
 below).  The two non-Wythoffian uniforms (snub 24-cell, grand
 antiprism) are out of scope for this Wythoff-only sweep but have
-hand-curated projections at `output/snub24cell/` and
+hand-curated projections at `output/snub_24cell/` and
 `output/grand_antiprism/`.
 
 ### Kernel completeness audit
@@ -568,7 +568,7 @@ via [`lib/polytopes.py`](../lib/polytopes.py) (`snub_24cell`,
 `grand_antiprism`), and they share the rest of the pipeline (the
 rng = 2 search engine, the snap, and the Stage A / Stage B dedup) with
 the Wythoff sweep.  Master maintains a hand-curated set of 4 zomeable
-projections for them (`output/snub24cell/*.vZome` and
+projections for them (`output/snub_24cell/*.vZome` and
 `output/grand_antiprism/*.vZome`, two per polytope) which have been
 studied by zometool/4D enthusiasts for years; recovering this set
 end-to-end through the same pipeline is the calibration captured

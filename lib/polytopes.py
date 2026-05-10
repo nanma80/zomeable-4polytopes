@@ -347,7 +347,7 @@ POLYTOPES = {
                        ("short_root", cell24_short_root)],
     "120cell":        [("standard", cell120)],
     "600cell":        [("standard", cell600)],
-    "snub24cell":     [("standard", snub_24cell)],
+    "snub_24cell":     [("standard", snub_24cell)],
     "grand_antiprism":[("standard", grand_antiprism)],
 }
 

@@ -174,7 +174,7 @@ Optional: write the batch driver and run overnight.
 1. Add snub_24cell to `polytopes.py` (vertices + edges).
 2. Run search_engine at rng=3,4. Identify zomeable kernels.
 3. For each kernel, classify projected 3D shape and emit `.vZome`.
-4. Document in `snub24cell/RESULTS.md`.
+4. Document in `snub_24cell/RESULTS.md`.
 
 ### Phase C — grand antiprism
 Same workflow; smaller in vertex count but irregular structure means

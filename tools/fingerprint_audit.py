@@ -34,7 +34,7 @@ TARGETS = [
     ("24cell", 3),
     ("120cell", 4),
     ("600cell", 4),
-    ("snub24cell", 4),
+    ("snub_24cell", 4),
     ("grand_antiprism", 4),
 ]
 

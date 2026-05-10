@@ -204,7 +204,7 @@ Requires Python 3.10+ and NumPy. No other dependencies.
 ```bash
 # Run search for one polytope
 python lib/run_search.py 24cell 3
-python lib/run_search.py snub24cell 4
+python lib/run_search.py snub_24cell 4
 
 # Re-emit vZome files
 python lib/emit_vzome.py            # 24-cell (3 files)

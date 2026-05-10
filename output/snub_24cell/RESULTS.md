@@ -20,8 +20,8 @@ orthographic by the M·Mᵀ = s²·I test:
 
 | File | Kernel direction | 3D balls | 4D edges → 3D struts | Strut counts |
 |------|------------------|----------|----------------------|--------------|
-| `snub24cell_cell_first.vZome`   | (1, 0, 0, 0) | 60 | 432 → 228 | B:72  Y:84  R:72 |
-| `snub24cell_vertex_first.vZome` | (φ², φ, 1, 0) | 69 | 432 → 312 | B:90  Y:102 R:120 |
+| `snub_24cell_cell_first.vZome`   | (1, 0, 0, 0) | 60 | 432 → 228 | B:72  Y:84  R:72 |
+| `snub_24cell_vertex_first.vZome` | (φ², φ, 1, 0) | 69 | 432 → 312 | B:90  Y:102 R:120 |
 
 Both projections use **all three default zometool colors** (blue,
 yellow, red) — a richer color signature than any of the regular

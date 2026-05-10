@@ -54,7 +54,7 @@ rings, in this projection, is **4 missing balls on the outermost equator**.
 
 The same camouflage effect occurs in the snub 24-cell vertex-first
 projection (18 of 24 deletions hidden, 6 visible on the outer equator);
-see `snub24cell/RESULTS.md`. In general, vertex-first projections of any
+see `snub_24cell/RESULTS.md`. In general, vertex-first projections of any
 *diminished* 600-cell hide most deletions because (i) opposite-hemisphere
 vertices project onto each other and (ii) the 600-cell shadow is
 densely degenerate (75 positions for 120 vertices). This makes the

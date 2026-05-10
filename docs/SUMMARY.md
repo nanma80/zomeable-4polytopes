@@ -74,7 +74,7 @@ zomeable-4polytopes\
     ├── 24cell\          ZOMEABLE_PROJECTIONS.md + 3 .vZome files
     ├── 120cell\         RESULTS.md  + 1 .vZome file
     ├── 600cell\         RESULTS.md  + 1 .vZome file
-    ├── snub24cell\      RESULTS.md  + 2 .vZome files
+    ├── snub_24cell\      RESULTS.md  + 2 .vZome files
     ├── grand_antiprism\ RESULTS.md  + 2 .vZome files
     ├── <wythoff descendants>\    39 folders (e.g. rectified_5cell, bitruncated_8cell,
     │                             omnitruncated_120cell, …), each with RESULTS.md
