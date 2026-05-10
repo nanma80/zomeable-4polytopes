@@ -1,0 +1,44 @@
+======================================================================
+Step 1: kernels of regular polytopes
+======================================================================
+  [A4] regular: |V|=5, |E|=10, trying 195312 dirs...
+  [A4] 324 hits in 12.2s
+  [B4] regular: |V|=16, |E|=32, trying 195312 dirs...
+  [B4] 2640 hits in 38.1s
+  [F4] regular: |V|=24, |E|=96, trying 195312 dirs...
+  [F4] 608 hits in 34.8s
+  [H4] regular: |V|=600, |E|=1200, trying 195312 dirs...
+  [H4] 432 hits in 2902.1s
+
+======================================================================
+Step 2: test each Wythoff combo against group kernels
+======================================================================
+  A4 (1, 0, 0, 0)  5-cell                          V=    5 E=   10  hits= 324  shapes=4  (3.6s)
+  A4 (0, 1, 0, 0)  rectified 5-cell                V=   10 E=   30  hits= 324  shapes=4  (4.4s)
+  A4 (1, 1, 0, 0)  truncated 5-cell                V=   20 E=   40  hits= 324  shapes=4  (5.6s)
+  A4 (1, 0, 1, 0)  cantellated 5-cell              V=   30 E=   90  hits= 324  shapes=4  (15.0s)
+  A4 (0, 1, 1, 0)  bitruncated 5-cell              V=   30 E=   60  hits= 324  shapes=4  (7.4s)
+  A4 (1, 1, 1, 0)  cantitruncated 5-cell           V=   60 E=  120  hits= 324  shapes=7  (21.1s)
+  A4 (1, 0, 0, 1)  runcinated 5-cell               V=   20 E=   60  hits= 324  shapes=4  (11.9s)
+  A4 (1, 1, 0, 1)  runcitruncated 5-cell           V=   60 E=  150  hits= 324  shapes=6  (56.2s)
+  A4 (1, 1, 1, 1)  omnitruncated 5-cell            V=  120 E=  240  hits= 324  shapes=10  (87.5s)
+  B4 (1, 0, 0, 0)  tesseract                       V=   16 E=   32  hits=2640  shapes=32  (43.4s)
+  B4 (0, 1, 0, 0)  rectified tesseract             V=   32 E=   96  hits= 288  shapes=3  (17.7s)
+  B4 (1, 1, 0, 0)  truncated tesseract             V=   64 E=  128  hits= 288  shapes=3  (22.6s)
+  B4 (0, 0, 1, 0)  24-cell                         V=   24 E=   96  hits= 288  shapes=2  (11.8s)
+  B4 (1, 0, 1, 0)  cantellated tesseract           V=   96 E=  288  hits= 288  shapes=3  (97.2s)
+  B4 (0, 1, 1, 0)  bitruncated tesseract           V=   96 E=  192  hits= 288  shapes=3  (44.4s)
+  B4 (1, 1, 1, 0)  cantitruncated tesseract        V=  192 E=  384  hits= 288  shapes=3  (159.6s)
+  B4 (0, 0, 0, 1)  16-cell                         V=    8 E=   24  hits= 288  shapes=3  (4.3s)
+  B4 (1, 0, 0, 1)  runcinated tesseract            V=   64 E=  192  hits= 288  shapes=3  (48.3s)
+  B4 (0, 1, 0, 1)  cantellated 16-cell             V=   96 E=  288  hits= 288  shapes=2  (102.7s)
+  B4 (1, 1, 0, 1)  runcitruncated tesseract        V=  192 E=  480  hits= 288  shapes=3  (217.5s)
+  B4 (0, 0, 1, 1)  truncated 16-cell               V=   48 E=  120  hits= 288  shapes=3  (19.9s)
+  B4 (1, 0, 1, 1)  runcitruncated 16-cell          V=  192 E=  480  hits= 288  shapes=3  (217.4s)
+  B4 (0, 1, 1, 1)  cantitruncated 16-cell          V=  192 E=  384  hits= 288  shapes=2  (136.1s)
+  B4 (1, 1, 1, 1)  omnitruncated tesseract         V=  384 E=  768  hits= 288  shapes=3  (542.7s)
+  F4 (0, 1, 0, 0)  rectified 24-cell               V=   96 E=  288  hits= 608  shapes=5  (172.6s)
+  F4 (1, 1, 0, 0)  truncated 24-cell               V=  192 E=  384  hits= 608  shapes=6  (509.2s)
+  F4 (1, 0, 1, 0)  cantellated 24-cell             V=  288 E=  864  hits= 288  shapes=2  (1469.4s)
+  F4 (0, 1, 1, 0)  bitruncated 24-cell             V=  288 E=  576  hits= 288  shapes=1  (311.8s)
+  --- INTERRUPTED at F4 bitruncated 24-cell; remaining F4 forms + all 15 H4 forms not yet run ---

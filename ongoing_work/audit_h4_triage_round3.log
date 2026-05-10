@@ -1,0 +1,21 @@
+manifest indexed: 69 shapes across 28 (group,bitmask) keys
+
+=== H4 [0, 0, 1, 0] rectified 600-cell: 1 new fp_hash(es) to triage ===
+  e631eef5931ff05a balls=  396 ALIAS_OF e690959a51597439  counts={'Y': 600, 'B': 480, 'R': 720}
+
+=== H4 [0, 0, 1, 1] truncated 600-cell: 1 new fp_hash(es) to triage ===
+  c2f8b43f1b869711 balls=  780 ALIAS_OF e7e32b66250c1951  counts={'Y': 720, 'R': 864, 'B': 600}
+
+=== H4 [1, 1, 0, 0] truncated 120-cell: 2 new fp_hash(es) to triage ===
+  35859e561367e8df balls= 1260 ALIAS_OF 3b18c3dede8d0fdc  counts={'R': 960, 'B': 660, 'Y': 800}
+  37c52dd9183db80b balls= 1260 ALIAS_OF 3b18c3dede8d0fdc  counts={'B': 660, 'Y': 800, 'R': 960}
+
+=== H4 [1, 0, 0, 1] runcinated 120-cell: 3 new fp_hash(es) to triage ===
+  0d13d8d35e2b29d4 balls= 1260 ALIAS_OF 4bd3daf2ff691601  counts={'B': 960, 'Y': 1200, 'R': 1440}
+  8c1ae2542c39bd9b balls= 1260 ALIAS_OF 4bd3daf2ff691601  counts={'R': 1440, 'Y': 1200, 'B': 960}
+  b26f233ca5d22a87 balls= 1260 ALIAS_OF 4bd3daf2ff691601  counts={'R': 1440, 'Y': 1200, 'B': 960}
+
+=== Triage summary ===
+  alias of existing:       7
+  genuinely new:           0
+  snap-failed during emit: 0

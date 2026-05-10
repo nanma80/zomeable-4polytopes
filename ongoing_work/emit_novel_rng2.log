@@ -1,0 +1,238 @@
+235 novel fp_hashes loaded.
+  OK    55abe81889  A4 [0, 1, 0, 0] rectified 5-cell          balls=7
+  OK    18db22bc8b  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
+  OK    4fe32006bf  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
+  OK    c2ff97e546  A4 [0, 1, 0, 0] rectified 5-cell          balls=10
+  OK    6f67e6cb83  A4 [1, 0, 0, 1] runcinated 5-cell         balls=13
+  OK    cd65b76a7d  A4 [1, 1, 0, 0] truncated 5-cell          balls=13
+  OK    be9338e636  A4 [0, 1, 1, 0] bitruncated 5-cell        balls=18
+  OK    e7d00a6967  A4 [1, 0, 1, 0] cantellated 5-cell        balls=18
+  OK    1c278a1d7d  A4 [1, 0, 0, 1] runcinated 5-cell         balls=20
+  OK    24e9b2fd40  B4 [0, 1, 0, 0] rectified tesseract       balls=20
+  OK    4547c11713  A4 [1, 0, 0, 1] runcinated 5-cell         balls=20
+  OK    7df137dba4  A4 [1, 1, 0, 0] truncated 5-cell          balls=20
+  OK    82123904b0  A4 [1, 1, 0, 0] truncated 5-cell          balls=20
+  OK    86c7a043be  B4 [0, 1, 0, 0] rectified tesseract       balls=20
+  OK    9fee63fe24  A4 [1, 1, 0, 0] truncated 5-cell          balls=20
+  OK    aef3339065  A4 [1, 0, 0, 1] runcinated 5-cell         balls=20
+  OK    30ce845d3f  B4 [0, 0, 1, 1] truncated 16-cell         balls=28
+  OK    190a7b1c71  A4 [0, 1, 1, 0] bitruncated 5-cell        balls=30
+  OK    1c346b0e6a  A4 [1, 0, 1, 0] cantellated 5-cell        balls=30
+  OK    467bb01461  A4 [0, 1, 1, 0] bitruncated 5-cell        balls=30
+  OK    9e2d21191f  A4 [0, 1, 1, 0] bitruncated 5-cell        balls=30
+  OK    a6537a898e  A4 [1, 0, 1, 0] cantellated 5-cell        balls=30
+  OK    e1d5c7a081  A4 [1, 0, 1, 0] cantellated 5-cell        balls=30
+  FAIL  0b68d395ef  B4 [1, 1, 0, 0] truncated tesseract        [snap_failed] B4 (1, 1, 0, 0) truncated tesseract (shape 0, hash 0b68d395ef): could not snap coords to ZZ[phi]^3
+  FAIL  663bee1002  B4 [1, 0, 0, 1] runcinated tesseract       [snap_failed] B4 (1, 0, 0, 1) runcinated tesseract (shape 0, hash 663bee1002): could not snap coords to ZZ[phi]^3
+  OK    b54c2aaed8  B4 [0, 1, 0, 0] rectified tesseract       balls=32
+  OK    a98cfbe1f2  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=33
+  OK    befb910d19  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=33
+  OK    bb5b56af58  B4 [0, 0, 1, 1] truncated 16-cell         balls=36
+  FAIL  79eb8c71bb  B4 [1, 1, 0, 0] truncated tesseract        [snap_failed] B4 (1, 1, 0, 0) truncated tesseract (shape 1, hash 79eb8c71bb): could not snap coords to ZZ[phi]^3
+  FAIL  fc04dc943b  B4 [1, 0, 0, 1] runcinated tesseract       [snap_failed] B4 (1, 0, 0, 1) runcinated tesseract (shape 1, hash fc04dc943b): could not snap coords to ZZ[phi]^3
+  FAIL  a4032f7bbb  B4 [1, 0, 1, 0] cantellated tesseract      [snap_failed] B4 (1, 0, 1, 0) cantellated tesseract (shape 0, hash a4032f7bbb): could not snap coords to ZZ[phi]^3
+  OK    bebffceea5  B4 [0, 0, 1, 1] truncated 16-cell         balls=48
+  OK    40be7cc1d7  B4 [0, 1, 1, 0] bitruncated tesseract     balls=52
+  OK    cca712ec6e  B4 [0, 1, 0, 1] cantellated 16-cell       balls=52
+  FAIL  a0b1cc08ef  B4 [1, 0, 1, 0] cantellated tesseract      [snap_failed] B4 (1, 0, 1, 0) cantellated tesseract (shape 1, hash a0b1cc08ef): could not snap coords to ZZ[phi]^3
+  OK    1f76ff2f94  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    26f9c4de5c  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=60
+  OK    53a4d0700d  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    5452b20702  B4 [0, 1, 0, 1] cantellated 16-cell       balls=60
+  OK    6189be49ed  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    6a8e448e70  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    70107e6dc6  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=60
+  OK    85a806f8ee  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    8fb8506b88  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=60
+  OK    aceab99c00  B4 [0, 1, 1, 0] bitruncated tesseract     balls=60
+  OK    c1635833bd  A4 [1, 1, 1, 0] cantitruncated 5-cell     balls=60
+  OK    c94790ed91  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=60
+  OK    db7b74a33d  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=60
+  OK    e203af4fe0  A4 [1, 1, 0, 1] runcitruncated 5-cell     balls=60
+  FAIL  2a0440c4d1  B4 [1, 0, 0, 1] runcinated tesseract       [snap_failed] B4 (1, 0, 0, 1) runcinated tesseract (shape 2, hash 2a0440c4d1): could not snap coords to ZZ[phi]^3
+  FAIL  7f25ac0bea  B4 [1, 1, 0, 0] truncated tesseract        [snap_failed] B4 (1, 1, 0, 0) truncated tesseract (shape 2, hash 7f25ac0bea): could not snap coords to ZZ[phi]^3
+  FAIL  4507a6810f  B4 [1, 0, 1, 0] cantellated tesseract      [snap_failed] B4 (1, 0, 1, 0) cantellated tesseract (shape 2, hash 4507a6810f): could not snap coords to ZZ[phi]^3
+  OK    1915a4f1b2  F4 [0, 1, 0, 0] rectified 24-cell         balls=96
+  OK    3c7ea12f56  B4 [0, 1, 1, 0] bitruncated tesseract     balls=96
+  OK    56093e7cd7  F4 [0, 1, 0, 0] rectified 24-cell         balls=96
+  OK    56df31592c  F4 [0, 1, 0, 0] rectified 24-cell         balls=96
+  FAIL  5716e0a9db  B4 [1, 0, 1, 1] runcitruncated 16-cell     [snap_failed] B4 (1, 0, 1, 1) runcitruncated 16-cell (shape 0, hash 5716e0a9db): could not snap coords to ZZ[phi]^3
+  OK    5f5834c161  B4 [0, 1, 1, 1] cantitruncated 16-cell    balls=96
+  FAIL  8b13523ca7  B4 [1, 1, 1, 0] cantitruncated tesseract   [snap_failed] B4 (1, 1, 1, 0) cantitruncated tesseract (shape 0, hash 8b13523ca7): could not snap coords to ZZ[phi]^3
+  OK    94c404ee6a  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=96
+  FAIL  d11016586d  B4 [1, 1, 0, 1] runcitruncated tesseract   [snap_failed] B4 (1, 1, 0, 1) runcitruncated tesseract (shape 0, hash d11016586d): could not snap coords to ZZ[phi]^3
+  FAIL  0f19c9a9d8  B4 [1, 1, 1, 0] cantitruncated tesseract   [snap_failed] B4 (1, 1, 1, 0) cantitruncated tesseract (shape 1, hash 0f19c9a9d8): could not snap coords to ZZ[phi]^3
+  FAIL  9fdd3e8c3b  B4 [1, 0, 1, 1] runcitruncated 16-cell     [snap_failed] B4 (1, 0, 1, 1) runcitruncated 16-cell (shape 1, hash 9fdd3e8c3b): could not snap coords to ZZ[phi]^3
+  FAIL  a96b0a716a  B4 [1, 1, 0, 1] runcitruncated tesseract   [snap_failed] B4 (1, 1, 0, 1) runcitruncated tesseract (shape 1, hash a96b0a716a): could not snap coords to ZZ[phi]^3
+  OK    38f25a2cbb  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    598a9495c4  B4 [0, 1, 1, 1] cantitruncated 16-cell    balls=120
+  OK    600bccb09e  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    6d9784faf4  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    9028dd62eb  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    991048cd4e  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    9f354d53ae  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    9f73b85175  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  OK    e4fb66f8e7  A4 [1, 1, 1, 1] omnitruncated 5-cell      balls=120
+  FAIL  2542c973f7  F4 [1, 0, 1, 0] cantellated 24-cell        [snap_failed] F4 (1, 0, 1, 0) cantellated 24-cell (shape 0, hash 2542c973f7): could not snap coords to ZZ[phi]^3
+  FAIL  472ead9bc8  F4 [0, 1, 1, 0] bitruncated 24-cell        [snap_failed] F4 (0, 1, 1, 0) bitruncated 24-cell (shape 0, hash 472ead9bc8): could not snap coords to ZZ[phi]^3
+  FAIL  f79e915e33  B4 [1, 1, 0, 1] runcitruncated tesseract   [snap_failed] B4 (1, 1, 0, 1) runcitruncated tesseract (shape 2, hash f79e915e33): could not snap coords to ZZ[phi]^3
+  FAIL  3123f1e60a  B4 [1, 1, 1, 0] cantitruncated tesseract   [snap_failed] B4 (1, 1, 1, 0) cantitruncated tesseract (shape 2, hash 3123f1e60a): could not snap coords to ZZ[phi]^3
+  OK    6b7eadcbcf  F4 [1, 1, 0, 0] truncated 24-cell         balls=192
+  FAIL  98f06b019a  B4 [1, 1, 1, 1] omnitruncated tesseract    [snap_failed] B4 (1, 1, 1, 1) omnitruncated tesseract (shape 1, hash 98f06b019a): could not snap coords to ZZ[phi]^3
+  OK    b7477fe6c0  F4 [1, 1, 0, 0] truncated 24-cell         balls=192
+  FAIL  c5a2631677  B4 [1, 1, 1, 1] omnitruncated tesseract    [snap_failed] B4 (1, 1, 1, 1) omnitruncated tesseract (shape 0, hash c5a2631677): could not snap coords to ZZ[phi]^3
+  OK    c7db1d36fb  F4 [1, 1, 0, 0] truncated 24-cell         balls=192
+  OK    d98b5f4add  F4 [1, 1, 0, 0] truncated 24-cell         balls=192
+  FAIL  f4883725e7  B4 [1, 0, 1, 1] runcitruncated 16-cell     [snap_failed] B4 (1, 0, 1, 1) runcitruncated 16-cell (shape 2, hash f4883725e7): could not snap coords to ZZ[phi]^3
+  FAIL  e2027f8484  F4 [1, 1, 1, 0] cantitruncated 24-cell     [snap_failed] F4 (1, 1, 1, 0) cantitruncated 24-cell (shape 1, hash e2027f8484): could not snap coords to ZZ[phi]^3
+  FAIL  e21eb9c5f8  F4 [1, 1, 0, 1] runcitruncated 24-cell     [snap_failed] F4 (1, 1, 0, 1) runcitruncated 24-cell (shape 1, hash e21eb9c5f8): could not snap coords to ZZ[phi]^3
+  FAIL  03a05d79ee  F4 [1, 1, 1, 0] cantitruncated 24-cell     [snap_failed] F4 (1, 1, 1, 0) cantitruncated 24-cell (shape 0, hash 03a05d79ee): could not snap coords to ZZ[phi]^3
+  FAIL  aabdf1c8ac  B4 [1, 1, 1, 1] omnitruncated tesseract    [snap_failed] B4 (1, 1, 1, 1) omnitruncated tesseract (shape 2, hash aabdf1c8ac): could not snap coords to ZZ[phi]^3
+  OK    e631eef593  H4 [0, 0, 1, 0] rectified 600-cell        balls=396
+  OK    e690959a51  H4 [0, 0, 1, 0] rectified 600-cell        balls=396
+  FAIL  b3cddc04da  F4 [1, 1, 1, 1] omnitruncated 24-cell      [snap_failed] F4 (1, 1, 1, 1) omnitruncated 24-cell (shape 0, hash b3cddc04da): could not snap coords to ZZ[phi]^3
+  OK    49633284a3  H4 [0, 1, 0, 0] rectified 120-cell        balls=640
+  OK    c2f8b43f1b  H4 [0, 0, 1, 1] truncated 600-cell        balls=780
+  OK    e7e32b6625  H4 [0, 0, 1, 1] truncated 600-cell        balls=780
+  OK    0d13d8d35e  H4 [1, 0, 0, 1] runcinated 120-cell       balls=1260
+  OK    35859e5613  H4 [1, 1, 0, 0] truncated 120-cell        balls=1260
+  OK    37c52dd918  H4 [1, 1, 0, 0] truncated 120-cell        balls=1260
+  OK    3b18c3dede  H4 [1, 1, 0, 0] truncated 120-cell        balls=1260
+  OK    4bd3daf2ff  H4 [1, 0, 0, 1] runcinated 120-cell       balls=1260
+  OK    8c1ae2542c  H4 [1, 0, 0, 1] runcinated 120-cell       balls=1260
+  OK    b26f233ca5  H4 [1, 0, 0, 1] runcinated 120-cell       balls=1260
+  OK    04c056fa6f  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
+  OK    04cd47c59a  H4 [0, 1, 1, 0] bitruncated 120-cell      balls=1860
+  OK    11927f5a0f  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
+  OK    146e0f9552  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
+  OK    51ac222d7b  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
+  OK    5f1d3ef650  H4 [0, 1, 1, 0] bitruncated 120-cell      balls=1860
+  OK    6f289fe95c  H4 [0, 1, 1, 0] bitruncated 120-cell      balls=1860
+  OK    9269136b5b  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
+  OK    9972351909  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
+  OK    a87be0db65  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
+  OK    d5e0a9df5d  H4 [0, 1, 1, 0] bitruncated 120-cell      balls=1860
+  OK    d6adf55a40  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
+  OK    d78b84c72e  H4 [0, 1, 0, 1] cantellated 600-cell      balls=1860
+  OK    feebd08dde  H4 [1, 0, 1, 0] cantellated 120-cell      balls=1860
+  OK    0137580b4e  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    13e387db31  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    1a0d721320  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    1ae105e553  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    1dd1965c7d  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    1fc5749f9e  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    24655dcf09  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    2ff0da38f3  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    3b44cc41a2  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    3e43cba23f  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    416fbd8e39  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    49d3d59b0b  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    59350c907e  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    6237017ed4  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    633ba56c30  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    665d7f8ac3  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    669e04c0d9  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    731abc5dc0  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    76caf52230  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    77bc10c853  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    7af56c5f99  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    7c320f9d25  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    7c5d26836a  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    800f72c3ba  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    8b82a8d4fc  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    8f579c25f1  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    920f7d9874  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    92c3434528  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    93f8773f2a  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    9815da3055  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    98d0fae89b  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    9c22ea52b4  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    9d39cd0b03  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    a2c47bfa62  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    a4e5c7b80c  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    a5838ce67b  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    aa55b8a9d1  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b4f719ee37  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    b54e075a59  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b5a8ec0026  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    b92076625c  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    c95674ff52  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    ca7e9a1234  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    cd4fbb2bef  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    d2bc1b0ca3  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    da41392ff5  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    e30149ab81  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    e45dd01d6e  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    e60e673cfd  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    e97405e509  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    f451c8c5fb  H4 [1, 1, 0, 1] runcitruncated 120-cell   balls=3660
+  OK    f7d1282c71  H4 [1, 1, 1, 0] cantitruncated 120-cell   balls=3660
+  OK    f85e2e96c7  H4 [0, 1, 1, 1] cantitruncated 600-cell   balls=3660
+  OK    fb0b1ebf05  H4 [1, 0, 1, 1] runcitruncated 600-cell   balls=3660
+  OK    00512c47fe  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    013cba0769  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0201baf7a3  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    05894248e7  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0a7dae4901  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0b7e8bc85e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0ecfe79e5e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    0f6eecdb02  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    17cdeb648d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1870420905  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1871656b77  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1a5d8c0939  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1b3933ec22  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    1d7039d2db  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    20e75f4939  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    24a8d9bc99  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    27009422bf  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    281de9b856  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    29fe0c07e2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    2bfdf4b6ef  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3309702dc5  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3a7b00ed31  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    3ff4ffcf2a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    4525a9d7e3  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    45ba58888b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    4604d6d605  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    57be3803dc  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    599fed7617  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    5e88217dbf  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    62b1504db7  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6530022112  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6c686781c2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    6dad26f8ce  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    7f30f14d84  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    81f39e3a23  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    82a087d896  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    8609c8d358  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    8698d8421a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    87ba4b3994  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    910cfbbb72  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    94f5c9c278  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    964659815b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    971ff6c446  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    9e2e193e49  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a10a98bf75  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a2398d5d4a  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a56086e064  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    a8e2a61deb  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    af091d409b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b193f93889  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b2f04de7df  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b449d80f39  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b4c2c2bed8  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b8928db2e2  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    b8aef3d92d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    c3a40f59b5  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    c9355e379c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    d5f606a226  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    d7d03f785d  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    de6adacc80  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    e3b9993e75  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    e4e29df04c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    f1d39a397c  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    f4b0068c4e  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+  OK    fd1373d44b  H4 [1, 1, 1, 1] omnitruncated 120-cell    balls=7200
+
+208 emitted, 27 failed.  Manifest: output\wythoff_sweep\manifest.json

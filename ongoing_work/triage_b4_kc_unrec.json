@@ -1,0 +1,903 @@
+{
+  "summary": {
+    "total_unrec": 53,
+    "master_corpus_alias": 12,
+    "manifest_alias": 9,
+    "genuinely_new": 2,
+    "emit_fail": 30
+  },
+  "findings": [
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "fc8c05639a813857",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash fc8c05639a): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "c081a2d6de78709a",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash c081a2d6de): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "ec37da8446e6bcd6",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash ec37da8446): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "ed8ad6270a123d35",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash ed8ad6270a): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "5a4744601c64c707",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 5a4744601c): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "948148bcbdc74057",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 948148bcbd): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "a73d19951f0965b5",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash a73d19951f): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "32eb7bf63aa75631",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 32eb7bf63a): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "095db5ebd6da4e08",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 095db5ebd6): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "8cc5f8c1d5a8d7ae",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 8cc5f8c1d5): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "27491447acfca8af",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 27491447ac): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "1f5025c9da89281b",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 1f5025c9da): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "6c8680806a4d410f",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 6c8680806a): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "487bf879aeee1e1f",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 487bf879ae): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "2c105cd47b7fbae6",
+      "n_balls": 16,
+      "post_snap_sig": [
+        16,
+        32,
+        "88c5a53810074918"
+      ],
+      "status": "genuinely_new",
+      "matches": [],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\tesseract\\kc_triage_2c105cd47b.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "a0ee41c578607b71",
+      "n_balls": 16,
+      "post_snap_sig": [
+        16,
+        32,
+        "093484beea6aecaf"
+      ],
+      "status": "genuinely_new",
+      "matches": [],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\tesseract\\kc_triage_a0ee41c578.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "4f9124f949c71269",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 4f9124f949): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "434c9b375b2b69e2",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 434c9b375b): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "e587e4b05a9c8ae6",
+      "n_balls": 16,
+      "post_snap_sig": [
+        16,
+        32,
+        "3ff0df8f4b8d45a2"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/8cell/8cell_inf_family_a1_b2.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\tesseract\\kc_triage_e587e4b05a.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "4d970d119b5ea43b",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 4d970d119b): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "08d3c4e7f8c94078",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 08d3c4e7f8): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "f5791e5f4f373f90",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash f5791e5f4f): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "90d371304277394d",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 90d3713042): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "221af9e5fd81d5c0",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 221af9e5fd): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "15e72b5ef0246b4f",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 15e72b5ef0): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "7e8cb491402b7d9f",
+      "n_balls": 15,
+      "post_snap_sig": [
+        15,
+        32,
+        "d6b0c39fff08a0cf"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/8cell/8cell_vertex_first_rhombic_dodec.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\tesseract\\kc_triage_7e8cb49140.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "8a27931881231d14",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 8a27931881): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "f9c598fb888644c9",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash f9c598fb88): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "b6a2eef5104b25b6",
+      "n_balls": 8,
+      "post_snap_sig": [
+        8,
+        12,
+        "a39e6d81f909a25b"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/8cell/8cell_cell_first_cube.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\tesseract\\kc_triage_b6a2eef510.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "e492dc276f0ae9e3",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash e492dc276f): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "tesseract",
+      "fp_hash": "4d584234ec516032",
+      "status": "emit_fail",
+      "reason": "B4 (1, 0, 0, 0) tesseract (shape -1, hash 4d584234ec): could not snap coords to ZZ[phi]^3"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "name": "rectified tesseract",
+      "fp_hash": "8df60cde36f3fe35",
+      "n_balls": 32,
+      "post_snap_sig": [
+        32,
+        96,
+        "2be6954c03446986"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "2be6954c03446986:wythoff_sweep\\rectified_tesseract\\oblique_02_2be6954c03.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\rectified_tesseract\\kc_triage_8df60cde36.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "name": "rectified tesseract",
+      "fp_hash": "ba23bcbbc60bfb0e",
+      "n_balls": 32,
+      "post_snap_sig": [
+        32,
+        96,
+        "b35b865a5417fa8f"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "b35b865a5417fa8f:wythoff_sweep\\rectified_tesseract\\oblique_01_b35b865a54.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\rectified_tesseract\\kc_triage_ba23bcbbc6.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "name": "rectified tesseract",
+      "fp_hash": "f0811ee84a99043b",
+      "n_balls": 32,
+      "post_snap_sig": [
+        32,
+        96,
+        "e2b79a96f751b400"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "e2b79a96f751b400:wythoff_sweep\\rectified_tesseract\\oblique_00_e2b79a96f7.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\rectified_tesseract\\kc_triage_f0811ee84a.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "name": "24-cell",
+      "fp_hash": "7e8cb491402b7d9f",
+      "n_balls": 15,
+      "post_snap_sig": [
+        15,
+        44,
+        "d6b0c39fff08a0cf"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/24cell/24cell_long_root_rhombic_dodecahedron.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\24-cell\\kc_triage_7e8cb49140.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "name": "24-cell",
+      "fp_hash": "bed179a68fa997ec",
+      "n_balls": 18,
+      "post_snap_sig": [
+        18,
+        60,
+        "8a30e95572fca92e"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/24cell/24cell_short_root_cuboctahedron.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\24-cell\\kc_triage_bed179a68f.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "name": "24-cell",
+      "fp_hash": "37cb5fcff9e54798",
+      "n_balls": 24,
+      "post_snap_sig": [
+        24,
+        96,
+        "3476750ab51e80fc"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/24cell/24cell_triality.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\24-cell\\kc_triage_37cb5fcff9.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "name": "bitruncated tesseract",
+      "fp_hash": "0e82f4b3c5e5a9b8",
+      "n_balls": 96,
+      "post_snap_sig": [
+        96,
+        192,
+        "80a961d9da91d5a4"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "80a961d9da91d5a4:wythoff_sweep\\bitruncated_tesseract\\oblique_02_80a961d9da.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\bitruncated_tesseract\\kc_triage_0e82f4b3c5.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "name": "bitruncated tesseract",
+      "fp_hash": "a03eaff2c09471c7",
+      "n_balls": 96,
+      "post_snap_sig": [
+        96,
+        192,
+        "df821cc628a5d5a1"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "df821cc628a5d5a1:wythoff_sweep\\bitruncated_tesseract\\oblique_01_df821cc628.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\bitruncated_tesseract\\kc_triage_a03eaff2c0.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "name": "bitruncated tesseract",
+      "fp_hash": "77574f424e016f45",
+      "n_balls": 96,
+      "post_snap_sig": [
+        96,
+        192,
+        "26f0b7c6e6bc0a7b"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "26f0b7c6e6bc0a7b:wythoff_sweep\\bitruncated_tesseract\\oblique_00_26f0b7c6e6.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\bitruncated_tesseract\\kc_triage_77574f424e.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "4df7a1807d91ce9f",
+      "n_balls": 6,
+      "post_snap_sig": [
+        6,
+        13,
+        "306a0492e14db4f1"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_edge_first_squashed_octahedron.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_4df7a1807d.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "b6a2eef5104b25b6",
+      "n_balls": 8,
+      "post_snap_sig": [
+        8,
+        24,
+        "a39e6d81f909a25b"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_cell_first_cube.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_b6a2eef510.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "24540a5db9a98371",
+      "n_balls": 7,
+      "post_snap_sig": [
+        7,
+        18,
+        "66973245e5b09aee"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_vertex_first_octahedron.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_24540a5db9.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "16a1e78959b85633",
+      "n_balls": 8,
+      "post_snap_sig": [
+        8,
+        24,
+        "d3a7efe163202ae6"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_antiprism_Y6R12B6.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_16a1e78959.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "7f0d9e5e0ebeef3f",
+      "n_balls": 8,
+      "post_snap_sig": [
+        8,
+        24,
+        "1adf533595970344"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_antiprism_R12B6Y6.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_7f0d9e5e0e.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "16-cell",
+      "fp_hash": "1a58c5f760f6141d",
+      "n_balls": 8,
+      "post_snap_sig": [
+        8,
+        24,
+        "86ae516f6a15242b"
+      ],
+      "status": "master_corpus_alias",
+      "matches": [
+        "output/16cell/16cell_antiprism_B6R12Y6.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\16-cell\\kc_triage_1a58c5f760.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "name": "truncated 16-cell",
+      "fp_hash": "e1f7a0e153176e0c",
+      "n_balls": 48,
+      "post_snap_sig": [
+        48,
+        120,
+        "2c50f047a8300057"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "2c50f047a8300057:wythoff_sweep\\truncated_16-cell\\oblique_02_2c50f047a8.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\truncated_16-cell\\kc_triage_e1f7a0e153.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "name": "truncated 16-cell",
+      "fp_hash": "9a4a8f6a8ee8aec0",
+      "n_balls": 48,
+      "post_snap_sig": [
+        48,
+        120,
+        "ccdfd208c989df2c"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "ccdfd208c989df2c:wythoff_sweep\\truncated_16-cell\\oblique_01_ccdfd208c9.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\truncated_16-cell\\kc_triage_9a4a8f6a8e.vZome"
+    },
+    {
+      "group": "B4",
+      "bitmask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "name": "truncated 16-cell",
+      "fp_hash": "63dcf6824a64c591",
+      "n_balls": 48,
+      "post_snap_sig": [
+        48,
+        120,
+        "9d18eb2806934d51"
+      ],
+      "status": "manifest_alias",
+      "matches": [
+        "9d18eb2806934d51:wythoff_sweep\\truncated_16-cell\\oblique_00_9d18eb2806.vZome"
+      ],
+      "emitted_path": "ongoing_work\\triage_b4_kc_emitted\\truncated_16-cell\\kc_triage_63dcf6824a.vZome"
+    },
+    {
+      "group": "H4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "snub 24-cell",
+      "fp_hash": "21553f09151f7758",
+      "status": "emit_fail",
+      "reason": "bitmask must have at least one ringed node"
+    },
+    {
+      "group": "H4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "snub 24-cell",
+      "fp_hash": "a5af623d9d28e063",
+      "status": "emit_fail",
+      "reason": "bitmask must have at least one ringed node"
+    },
+    {
+      "group": "H4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "grand antiprism",
+      "fp_hash": "56af4b383af1f77a",
+      "status": "emit_fail",
+      "reason": "bitmask must have at least one ringed node"
+    },
+    {
+      "group": "H4",
+      "bitmask": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "grand antiprism",
+      "fp_hash": "de290bc9426040d6",
+      "status": "emit_fail",
+      "reason": "bitmask must have at least one ringed node"
+    }
+  ]
+}

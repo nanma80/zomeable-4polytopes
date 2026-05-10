@@ -6,3 +6,6 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# wythoff sweep manifest backup (local rollback only)
+output/wythoff_sweep/manifest.json.*.bak

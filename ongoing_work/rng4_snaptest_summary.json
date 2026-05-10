@@ -1,0 +1,74 @@
+[
+  {
+    "group": "A4",
+    "bitmask": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "name": "5cell",
+    "V": 5,
+    "E": 10,
+    "master_count": 4,
+    "rng4_raw_fp": 4,
+    "rng4_snapped": 4,
+    "rng4_failed": 0,
+    "rng4_unique_after_stage_b": 4,
+    "time_seconds": 802.5182542800903
+  },
+  {
+    "group": "B4",
+    "bitmask": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "name": "16cell",
+    "V": 8,
+    "E": 24,
+    "master_count": 6,
+    "rng4_raw_fp": 6,
+    "rng4_snapped": 6,
+    "rng4_failed": 0,
+    "rng4_unique_after_stage_b": 6,
+    "time_seconds": 1019.2898330688477
+  },
+  {
+    "group": "F4",
+    "bitmask": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "name": "24cell",
+    "V": 24,
+    "E": 96,
+    "master_count": 3,
+    "rng4_raw_fp": 3,
+    "rng4_snapped": 3,
+    "rng4_failed": 0,
+    "rng4_unique_after_stage_b": 3,
+    "time_seconds": 3322.5793719291687
+  },
+  {
+    "group": "B4",
+    "bitmask": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "name": "tesseract",
+    "V": 16,
+    "E": 32,
+    "master_count": 9,
+    "rng4_raw_fp": 344,
+    "rng4_snapped": 11,
+    "rng4_failed": 333,
+    "rng4_unique_after_stage_b": 8,
+    "time_seconds": 1094.760454416275
+  }
+]

@@ -7,10 +7,16 @@ icosahedral system).
 
 ## Master result
 
+The 8 polytopes documented below are the **regulars + non-Wythoff** corpus.
+For the full Wythoff family (47 unique convex uniform 4-polytopes including
+all of the rectified / truncated / cantellated / runcinated descendants),
+see [`WYTHOFF_SWEEP.md`](WYTHOFF_SWEEP.md) and the inheritance-free
+corpus-completeness audit in [`INHERITANCE_FREE_SWEEP.md`](INHERITANCE_FREE_SWEEP.md).
+
 | Polytope        | Verts | Edges | Distinct shapes | Notes                             |
 |-----------------|-------|-------|-----------------|-----------------------------------|
 | 5-cell  {3,3,3} | 5     | 10    | **4**           | saturated rng=3; matches Richter/Vorthmann 2007 |
-| 8-cell  {4,3,3} | 16    | 32    | **1 inf family + 2 sporadic** | inf family = split cuboids parametrized by integer ratio (a:b) with a²+b² ∈ ℤ[φ]² |
+| 8-cell  {4,3,3} | 16    | 32    | **1 inf family + 3 sporadic** | inf family = split cuboids parametrized by ℤ[φ]-Pythagorean triples (a:b) with a²+b²=c²∈ℤ[φ]; sporadics = cube, rhombic dodec, phi-oblique (V=16, kernel support 3) |
 | 16-cell {3,3,4} | 8     | 24    | **6**           | saturated rng=4                   |
 | 24-cell {3,4,3} | 24    | 96    | **3**           | saturated rng=3                   |
 | 120-cell {5,3,3}| 600   | 1200  | **1**           | saturated rng=3 (330-ball image)  |
@@ -58,7 +64,9 @@ zomeable-4polytopes\
 ├── docs\
 │   ├── SUMMARY.md               this file
 │   ├── METHODOLOGY.md           saturation & open questions
-│   └── UNIFORM_PLAN.md          extension to all 47 convex uniform 4-polytopes
+│   ├── UNIFORM_PLAN.md          extension to all 47 convex uniform 4-polytopes
+│   ├── WYTHOFF_SWEEP.md         Wythoff-family corpus: methodology, taxonomy, per-polytope tables
+│   └── INHERITANCE_FREE_SWEEP.md  38-hour matrix sweep auditing the Wythoff corpus for completeness
 └── output\
     ├── 5cell\           RESULTS.md  + 4 .vZome files
     ├── 8cell\           CLASSIFICATION.md + 9 .vZome files
@@ -67,7 +75,11 @@ zomeable-4polytopes\
     ├── 120cell\         RESULTS.md  + 1 .vZome file
     ├── 600cell\         RESULTS.md  + 1 .vZome file
     ├── snub24cell\      RESULTS.md  + 2 .vZome files
-    └── grand_antiprism\ RESULTS.md  + 2 .vZome files
+    ├── grand_antiprism\ RESULTS.md  + 2 .vZome files
+    ├── <wythoff descendants>\    39 folders (e.g. rectified_5cell, bitruncated_8cell,
+    │                             omnitruncated_120cell, …), each with RESULTS.md
+    │                             plus 0–3 .vZome files — see WYTHOFF_SWEEP.md
+    └── wythoff_sweep_manifest.json   provenance ledger for the 69 Wythoff-descendant .vZome files
 ```
 
 ## Two notions of "zomeable"
