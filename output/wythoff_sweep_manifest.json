@@ -11,7 +11,11 @@
     "M19.audit: audit_h4 flagged e631eef5931ff05a as new on rect 600-cell; post-snap shape_signature confirms it is congruent to existing e690959a51597439 (kernel-direction alias).  e631 added to e690 aliases.",
     "M19.gap-triage: triaged 40 novel_rng2.json fp_hashes that had no manifest entry and no alias; ALL 40 are post-snap kernel-direction aliases of existing canonical entries (0 genuinely new shapes were silently dropped). Aliases now persisted; see ongoing_work/triage_novel_gap.log for raw output.",
     "M19.audit (round 2): audit_h4 finished polytopes 1-4 of 5 with 4 candidate new fp_hashes total (rect 600c x1, trunc 600c x1, trunc 120c x2). Post-snap triage classifies all 4 as kernel-direction aliases of existing canonical entries; 0 genuinely new shapes.  Aliases now persisted.",
-    "M19.audit round-3 (h4-blind-spot-audit-small): audit_h4 finished 5/5 polytopes in 115018s = 31.95h wall. 7 new fp_hashes triaged; ALL 7 are post-snap aliases of existing canonical entries. 0 genuinely new shapes. The (1,0,0,0)-regular kernel inheritance assumption is empirically confirmed at rng=2 for ALL H4 small-V (V<=2400) polytopes."
+    "M19.audit round-3 (h4-blind-spot-audit-small): audit_h4 finished 5/5 polytopes in 115018s = 31.95h wall. 7 new fp_hashes triaged; ALL 7 are post-snap aliases of existing canonical entries. 0 genuinely new shapes. The (1,0,0,0)-regular kernel inheritance assumption is empirically confirmed at rng=2 for ALL H4 small-V (V<=2400) polytopes.",
+    {
+      "kind": "merge-prep-hoist",
+      "summary": "Folder layout hoisted: output/wythoff_sweep/<polytope>/ -> output/<polytope>/.  Folder names follow master-corpus convention (no hyphens; 'tesseract' -> '8cell').  File names drop the 10-char fp-hash suffix and acquire the polytope-name prefix.  manifest.json moved to output/wythoff_sweep_manifest.json.  All 'file:' fields now contain new-layout paths relative to output/."
+    }
   ],
   "rng": "mixed (2 baseline; 4 for B4 rng=4 audit-flagged additions)",
   "shapes": [
@@ -22,7 +26,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_5-cell\\cell_first_tetrahedron_18db22bc8b.vZome",
+      "file": "rectified_5cell/rectified_5cell_cell_first_tetrahedron.vZome",
       "fp_hash": "18db22bc8bc4f517",
       "group": "A4",
       "kernel": [
@@ -49,7 +53,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_5-cell\\oblique_00_4fe32006bf.vZome",
+      "file": "rectified_5cell/rectified_5cell_oblique_00.vZome",
       "fp_hash": "4fe32006bff8c0d5",
       "group": "A4",
       "kernel": [
@@ -77,7 +81,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_5-cell\\oblique_01_55abe81889.vZome",
+      "file": "rectified_5cell/rectified_5cell_oblique_01.vZome",
       "fp_hash": "55abe818897aa7ff",
       "group": "A4",
       "kernel": [
@@ -104,7 +108,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_5-cell\\oblique_02_c2ff97e546.vZome",
+      "file": "rectified_5cell/rectified_5cell_oblique_02.vZome",
       "fp_hash": "c2ff97e54699246b",
       "group": "A4",
       "kernel": [
@@ -132,7 +136,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_5-cell\\oblique_00_190a7b1c71.vZome",
+      "file": "bitruncated_5cell/bitruncated_5cell_oblique_00.vZome",
       "fp_hash": "190a7b1c71a7cad4",
       "group": "A4",
       "kernel": [
@@ -160,7 +164,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_5-cell\\cell_first_truncated_tetrahedron_467bb01461.vZome",
+      "file": "bitruncated_5cell/bitruncated_5cell_cell_first_truncated_tetrahedron.vZome",
       "fp_hash": "467bb01461b4a7fb",
       "group": "A4",
       "kernel": [
@@ -187,7 +191,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_5-cell\\oblique_01_9e2d21191f.vZome",
+      "file": "bitruncated_5cell/bitruncated_5cell_oblique_01.vZome",
       "fp_hash": "9e2d21191f5bb5c9",
       "group": "A4",
       "kernel": [
@@ -215,7 +219,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_5-cell\\face_first_hexagon_be9338e636.vZome",
+      "file": "bitruncated_5cell/bitruncated_5cell_face_first_hexagon.vZome",
       "fp_hash": "be9338e63608729a",
       "group": "A4",
       "kernel": [
@@ -242,7 +246,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcinated_5-cell\\oblique_00_1c278a1d7d.vZome",
+      "file": "runcinated_5cell/runcinated_5cell_oblique_00.vZome",
       "fp_hash": "1c278a1d7d573e01",
       "group": "A4",
       "kernel": [
@@ -270,7 +274,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcinated_5-cell\\oblique_01_4547c11713.vZome",
+      "file": "runcinated_5cell/runcinated_5cell_oblique_01.vZome",
       "fp_hash": "4547c1171357ea3a",
       "group": "A4",
       "kernel": [
@@ -298,7 +302,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcinated_5-cell\\vertex_first_6f67e6cb83.vZome",
+      "file": "runcinated_5cell/runcinated_5cell_vertex_first.vZome",
       "fp_hash": "6f67e6cb8345c5ef",
       "group": "A4",
       "kernel": [
@@ -325,7 +329,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcinated_5-cell\\cell_first_tetrahedron_aef3339065.vZome",
+      "file": "runcinated_5cell/runcinated_5cell_cell_first_tetrahedron.vZome",
       "fp_hash": "aef3339065210c8c",
       "group": "A4",
       "kernel": [
@@ -352,7 +356,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantellated_5-cell\\oblique_00_1c346b0e6a.vZome",
+      "file": "cantellated_5cell/cantellated_5cell_oblique_00.vZome",
       "fp_hash": "1c346b0e6a004968",
       "group": "A4",
       "kernel": [
@@ -380,7 +384,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantellated_5-cell\\face_first_square_a6537a898e.vZome",
+      "file": "cantellated_5cell/cantellated_5cell_face_first_square.vZome",
       "fp_hash": "a6537a898ef9f5f4",
       "group": "A4",
       "kernel": [
@@ -408,7 +412,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantellated_5-cell\\cell_first_octahedron_e1d5c7a081.vZome",
+      "file": "cantellated_5cell/cantellated_5cell_cell_first_octahedron.vZome",
       "fp_hash": "e1d5c7a0817918b3",
       "group": "A4",
       "kernel": [
@@ -435,7 +439,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantellated_5-cell\\oblique_01_e7d00a6967.vZome",
+      "file": "cantellated_5cell/cantellated_5cell_oblique_01.vZome",
       "fp_hash": "e7d00a6967b796c5",
       "group": "A4",
       "kernel": [
@@ -462,7 +466,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_5-cell\\oblique_00_7df137dba4.vZome",
+      "file": "truncated_5cell/truncated_5cell_oblique_00.vZome",
       "fp_hash": "7df137dba457dbe8",
       "group": "A4",
       "kernel": [
@@ -490,7 +494,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_5-cell\\cell_first_tetrahedron_82123904b0.vZome",
+      "file": "truncated_5cell/truncated_5cell_cell_first_tetrahedron.vZome",
       "fp_hash": "82123904b041cf96",
       "group": "A4",
       "kernel": [
@@ -517,7 +521,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_5-cell\\oblique_01_9fee63fe24.vZome",
+      "file": "truncated_5cell/truncated_5cell_oblique_01.vZome",
       "fp_hash": "9fee63fe247ea33a",
       "group": "A4",
       "kernel": [
@@ -545,7 +549,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_5-cell\\oblique_02_cd65b76a7d.vZome",
+      "file": "truncated_5cell/truncated_5cell_oblique_02.vZome",
       "fp_hash": "cd65b76a7d0641f4",
       "group": "A4",
       "kernel": [
@@ -572,7 +576,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_5-cell\\cell_first_cuboctahedron_8fb8506b88.vZome",
+      "file": "runcitruncated_5cell/runcitruncated_5cell_cell_first_cuboctahedron.vZome",
       "fp_hash": "8fb8506b88904a84",
       "group": "A4",
       "kernel": [
@@ -599,7 +603,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_5-cell\\face_first_triangle_a98cfbe1f2.vZome",
+      "file": "runcitruncated_5cell/runcitruncated_5cell_face_first_triangle.vZome",
       "fp_hash": "a98cfbe1f2d3b740",
       "group": "A4",
       "kernel": [
@@ -631,7 +635,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_5-cell\\oblique_db7b74a33d.vZome",
+      "file": "runcitruncated_5cell/runcitruncated_5cell_oblique.vZome",
       "fp_hash": "db7b74a33dd8f802",
       "group": "A4",
       "kernel": [
@@ -659,7 +663,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_5-cell\\edge_first_e203af4fe0.vZome",
+      "file": "runcitruncated_5cell/runcitruncated_5cell_edge_first.vZome",
       "fp_hash": "e203af4fe04c2981",
       "group": "A4",
       "kernel": [
@@ -693,7 +697,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantitruncated_5-cell\\oblique_00_6189be49ed.vZome",
+      "file": "cantitruncated_5cell/cantitruncated_5cell_oblique_00.vZome",
       "fp_hash": "6189be49ed3fd2c0",
       "group": "A4",
       "kernel": [
@@ -721,7 +725,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantitruncated_5-cell\\cell_first_truncated_tetrahedron_6a8e448e70.vZome",
+      "file": "cantitruncated_5cell/cantitruncated_5cell_cell_first_truncated_tetrahedron.vZome",
       "fp_hash": "6a8e448e705fe862",
       "group": "A4",
       "kernel": [
@@ -748,7 +752,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantitruncated_5-cell\\oblique_01_befb910d19.vZome",
+      "file": "cantitruncated_5cell/cantitruncated_5cell_oblique_01.vZome",
       "fp_hash": "befb910d199e347a",
       "group": "A4",
       "kernel": [
@@ -775,7 +779,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantitruncated_5-cell\\oblique_02_c1635833bd.vZome",
+      "file": "cantitruncated_5cell/cantitruncated_5cell_oblique_02.vZome",
       "fp_hash": "c1635833bdd4184a",
       "group": "A4",
       "kernel": [
@@ -803,7 +807,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\omnitruncated_5-cell\\cell_first_truncated_octahedron_94c404ee6a.vZome",
+      "file": "omnitruncated_5cell/omnitruncated_5cell_cell_first_truncated_octahedron.vZome",
       "fp_hash": "94c404ee6aa8fa97",
       "group": "A4",
       "kernel": [
@@ -836,7 +840,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\omnitruncated_5-cell\\oblique_9f354d53ae.vZome",
+      "file": "omnitruncated_5cell/omnitruncated_5cell_oblique.vZome",
       "fp_hash": "9f354d53aebc1c3b",
       "group": "A4",
       "kernel": [
@@ -870,7 +874,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\omnitruncated_5-cell\\face_first_square_9f73b85175.vZome",
+      "file": "omnitruncated_5cell/omnitruncated_5cell_face_first_square.vZome",
       "fp_hash": "9f73b85175ea12ad",
       "group": "A4",
       "kernel": [
@@ -898,7 +902,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\omnitruncated_5-cell\\face_first_hexagon_c94790ed91.vZome",
+      "file": "omnitruncated_5cell/omnitruncated_5cell_face_first_hexagon.vZome",
       "fp_hash": "c94790ed916a5c87",
       "group": "A4",
       "kernel": [
@@ -925,7 +929,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\edge_first_30ce845d3f.vZome",
+      "file": "truncated_16cell/truncated_16cell_edge_first.vZome",
       "fp_hash": "30ce845d3f147147",
       "group": "B4",
       "kernel": [
@@ -952,7 +956,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\cell_first_octahedron_bb5b56af58.vZome",
+      "file": "truncated_16cell/truncated_16cell_cell_first_octahedron.vZome",
       "fp_hash": "bb5b56af5879ca97",
       "group": "B4",
       "kernel": [
@@ -979,7 +983,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\cell_first_truncated_tetrahedron_bebffceea5.vZome",
+      "file": "truncated_16cell/truncated_16cell_cell_first_truncated_tetrahedron.vZome",
       "fp_hash": "bebffceea5593325",
       "group": "B4",
       "kernel": [
@@ -1006,7 +1010,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\face_first_square_24e9b2fd40.vZome",
+      "file": "rectified_8cell/rectified_8cell_face_first_square.vZome",
       "fp_hash": "24e9b2fd40d33c12",
       "group": "B4",
       "kernel": [
@@ -1033,7 +1037,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\cell_first_cuboctahedron_86c7a043be.vZome",
+      "file": "rectified_8cell/rectified_8cell_cell_first_cuboctahedron.vZome",
       "fp_hash": "86c7a043be22d7e9",
       "group": "B4",
       "kernel": [
@@ -1060,7 +1064,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\cell_first_tetrahedron_b54c2aaed8.vZome",
+      "file": "rectified_8cell/rectified_8cell_cell_first_tetrahedron.vZome",
       "fp_hash": "b54c2aaed88eaa68",
       "group": "B4",
       "kernel": [
@@ -1097,7 +1101,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\rectified_24-cell\\cell_first_cuboctahedron_5452b20702.vZome",
+      "file": "rectified_24cell/rectified_24cell_cell_first_cuboctahedron.vZome",
       "fp_hash": "5452b207028c5f19",
       "group": "B4",
       "kernel": [
@@ -1134,7 +1138,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\rectified_24-cell\\cell_first_cube_cca712ec6e.vZome",
+      "file": "rectified_24cell/rectified_24cell_cell_first_cube.vZome",
       "fp_hash": "cca712ec6eab236a",
       "group": "B4",
       "kernel": [
@@ -1161,7 +1165,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\cell_first_truncated_tetrahedron_3c7ea12f56.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_cell_first_truncated_tetrahedron.vZome",
       "fp_hash": "3c7ea12f56255bad",
       "group": "B4",
       "kernel": [
@@ -1188,7 +1192,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\face_first_square_40be7cc1d7.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_face_first_square.vZome",
       "fp_hash": "40be7cc1d7a2aae6",
       "group": "B4",
       "kernel": [
@@ -1215,7 +1219,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\cell_first_truncated_octahedron_aceab99c00.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_cell_first_truncated_octahedron.vZome",
       "fp_hash": "aceab99c0074dfc2",
       "group": "B4",
       "kernel": [
@@ -1252,7 +1256,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_24-cell\\cell_first_truncated_octahedron_598a9495c4.vZome",
+      "file": "truncated_24cell/truncated_24cell_cell_first_truncated_octahedron.vZome",
       "fp_hash": "598a9495c4a6ee08",
       "group": "B4",
       "kernel": [
@@ -1289,7 +1293,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_24-cell\\cell_first_cube_5f5834c161.vZome",
+      "file": "truncated_24cell/truncated_24cell_cell_first_cube.vZome",
       "fp_hash": "5f5834c16179095e",
       "group": "B4",
       "kernel": [
@@ -1321,7 +1325,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_24-cell\\oblique_56093e7cd7.vZome",
+      "file": "rectified_24cell/rectified_24cell_oblique.vZome",
       "fp_hash": "56093e7cd7e23ea3",
       "group": "F4",
       "kernel": [
@@ -1355,7 +1359,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_24-cell\\oblique_6b7eadcbcf.vZome",
+      "file": "truncated_24cell/truncated_24cell_oblique.vZome",
       "fp_hash": "6b7eadcbcfccf6a3",
       "group": "F4",
       "kernel": [
@@ -1387,7 +1391,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\rectified_600-cell\\cell_first_icosahedron_e690959a51.vZome",
+      "file": "rectified_600cell/rectified_600cell_cell_first_icosahedron.vZome",
       "fp_hash": "e690959a51597439",
       "group": "H4",
       "kernel": [
@@ -1419,7 +1423,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_600-cell\\cell_first_icosahedron_e7e32b6625.vZome",
+      "file": "truncated_600cell/truncated_600cell_cell_first_icosahedron.vZome",
       "fp_hash": "e7e32b66250c1951",
       "group": "H4",
       "kernel": [
@@ -1447,7 +1451,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_120-cell\\cell_first_icosidodecahedron_49633284a3.vZome",
+      "file": "rectified_120cell/rectified_120cell_cell_first_icosidodecahedron.vZome",
       "fp_hash": "49633284a34e3399",
       "group": "H4",
       "kernel": [
@@ -1482,7 +1486,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\cantellated_600-cell\\cell_first_icosidodecahedron_9269136b5b.vZome",
+      "file": "cantellated_600cell/cantellated_600cell_cell_first_icosidodecahedron.vZome",
       "fp_hash": "9269136b5bd10f4b",
       "group": "H4",
       "kernel": [
@@ -1516,7 +1520,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_120-cell\\cell_first_truncated_icosahedron_6f289fe95c.vZome",
+      "file": "bitruncated_120cell/bitruncated_120cell_cell_first_truncated_icosahedron.vZome",
       "fp_hash": "6f289fe95c73e9d6",
       "group": "H4",
       "kernel": [
@@ -1572,7 +1576,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\cantitruncated_600-cell\\cell_first_truncated_icosahedron_1dd1965c7d.vZome",
+      "file": "cantitruncated_600cell/cantitruncated_600cell_cell_first_truncated_icosahedron.vZome",
       "fp_hash": "1dd1965c7d3eab6f",
       "group": "H4",
       "kernel": [
@@ -1606,7 +1610,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcinated_120-cell\\cell_first_dodecahedron_4bd3daf2ff.vZome",
+      "file": "runcinated_120cell/runcinated_120cell_cell_first_dodecahedron.vZome",
       "fp_hash": "4bd3daf2ff691601",
       "group": "H4",
       "kernel": [
@@ -1641,7 +1645,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantellated_120-cell\\cell_first_rhombicosidodecahedron_04c056fa6f.vZome",
+      "file": "cantellated_120cell/cantellated_120cell_cell_first_rhombicosidodecahedron.vZome",
       "fp_hash": "04c056fa6fde11cd",
       "group": "H4",
       "kernel": [
@@ -1682,7 +1686,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_600-cell\\cell_first_rhombicosidodecahedron_9815da3055.vZome",
+      "file": "runcitruncated_600cell/runcitruncated_600cell_cell_first_rhombicosidodecahedron.vZome",
       "fp_hash": "9815da3055bce1b5",
       "group": "H4",
       "kernel": [
@@ -1715,7 +1719,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\truncated_120-cell\\cell_first_truncated_dodecahedron_3b18c3dede.vZome",
+      "file": "truncated_120cell/truncated_120cell_cell_first_truncated_dodecahedron.vZome",
       "fp_hash": "3b18c3dede8d0fdc",
       "group": "H4",
       "kernel": [
@@ -1751,7 +1755,7 @@
         0,
         1
       ],
-      "file": "wythoff_sweep\\runcitruncated_120-cell\\cell_first_truncated_dodecahedron_77bc10c853.vZome",
+      "file": "runcitruncated_120cell/runcitruncated_120cell_cell_first_truncated_dodecahedron.vZome",
       "fp_hash": "77bc10c853647913",
       "group": "H4",
       "kernel": [
@@ -1792,7 +1796,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\cantitruncated_120-cell\\cell_first_truncated_icosidodecahedron_3e43cba23f.vZome",
+      "file": "cantitruncated_120cell/cantitruncated_120cell_cell_first_truncated_icosidodecahedron.vZome",
       "fp_hash": "3e43cba23f267509",
       "group": "H4",
       "kernel": [
@@ -1887,7 +1891,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\omnitruncated_120-cell\\cell_first_truncated_icosidodecahedron_00512c47fe.vZome",
+      "file": "omnitruncated_120cell/omnitruncated_120cell_cell_first_truncated_icosidodecahedron.vZome",
       "fp_hash": "00512c47fede00d6",
       "group": "H4",
       "kernel": [
@@ -2482,7 +2486,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\oblique_00_e2b79a96f7.vZome",
+      "file": "rectified_8cell/rectified_8cell_oblique_00.vZome",
       "fp_hash": "e2b79a96f751b400",
       "group": "B4",
       "kernel": [
@@ -2513,7 +2517,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\oblique_01_b35b865a54.vZome",
+      "file": "rectified_8cell/rectified_8cell_oblique_01.vZome",
       "fp_hash": "b35b865a5417fa8f",
       "group": "B4",
       "kernel": [
@@ -2544,7 +2548,7 @@
         0,
         0
       ],
-      "file": "wythoff_sweep\\rectified_tesseract\\oblique_02_2be6954c03.vZome",
+      "file": "rectified_8cell/rectified_8cell_oblique_02.vZome",
       "fp_hash": "2be6954c03446986",
       "group": "B4",
       "kernel": [
@@ -2575,7 +2579,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\oblique_00_9d18eb2806.vZome",
+      "file": "truncated_16cell/truncated_16cell_oblique_00.vZome",
       "fp_hash": "9d18eb2806934d51",
       "group": "B4",
       "kernel": [
@@ -2606,7 +2610,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\oblique_01_ccdfd208c9.vZome",
+      "file": "truncated_16cell/truncated_16cell_oblique_01.vZome",
       "fp_hash": "ccdfd208c989df2c",
       "group": "B4",
       "kernel": [
@@ -2637,7 +2641,7 @@
         1,
         1
       ],
-      "file": "wythoff_sweep\\truncated_16-cell\\oblique_02_2c50f047a8.vZome",
+      "file": "truncated_16cell/truncated_16cell_oblique_02.vZome",
       "fp_hash": "2c50f047a8300057",
       "group": "B4",
       "kernel": [
@@ -2668,7 +2672,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_02_80a961d9da.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_oblique_02.vZome",
       "fp_hash": "80a961d9da91d5a4",
       "group": "B4",
       "kernel": [
@@ -2699,7 +2703,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_00_26f0b7c6e6.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_oblique_00.vZome",
       "fp_hash": "26f0b7c6e6bc0a7b",
       "group": "B4",
       "kernel": [
@@ -2730,7 +2734,7 @@
         1,
         0
       ],
-      "file": "wythoff_sweep\\bitruncated_tesseract\\oblique_01_df821cc628.vZome",
+      "file": "bitruncated_8cell/bitruncated_8cell_oblique_01.vZome",
       "fp_hash": "df821cc628a5d5a1",
       "group": "B4",
       "kernel": [
