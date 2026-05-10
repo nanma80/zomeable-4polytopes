@@ -60,17 +60,31 @@ rank-4 Coxeter groups (A₄, B₄, F₄, H₄).
 systematic two-step enumeration that searches each group's kernel set
 once and reuses it across all 9–15 Wythoff variants in that group.
 
-At rng = 2 the production sweep finds **127 distinct novel zomeable
-shapes** beyond the 8 polytopes above (regular reference set is the
-(1,0,0,0)/(0,0,0,1) records of every group, which collectively are the
-6 standard regulars).  100 of the 127 successfully snap to ℤ[φ]³ as
-candidate .vZome files; the remaining 27 are abstractly zomeable but
-not vZome-embeddable at the snap precision used by
-`lib/emit_generic.py`.  After a Stage-B shape-congruence dedup pass
-the snapped 100 collapse to **60 distinct rng = 2 .vZome shapes**
-(many fingerprints were direction-equivalent but produced slightly
-different fp_hashes — see [`docs/WYTHOFF_SWEEP.md`](docs/WYTHOFF_SWEEP.md)
-for the full accounting).
+At rng = 2 the production sweep finds **127 distinct zomeable
+shapes** for the 47 Wythoff descendants beyond the 8 polytopes above
+(regular reference set is the (1,0,0,0)/(0,0,0,1) records of every
+group, which collectively are the 6 standard regulars).  100 of the
+127 successfully snap to ℤ[φ]³ as candidate .vZome files; the
+remaining 27 are abstractly zomeable but not vZome-embeddable at the
+snap precision used by `lib/emit_generic.py`.  After a Stage-B
+shape-congruence dedup pass the snapped 100 collapse to **60 distinct
+rng = 2 .vZome shapes** (many fingerprints were direction-equivalent
+but produced slightly different fp_hashes — see
+[`docs/WYTHOFF_SWEEP.md`](docs/WYTHOFF_SWEEP.md) for the full
+accounting).
+
+These are all derived by Wythoff-extending zomeable projections of the
+parent regulars: the production sweep takes each regular's good
+kernels and applies them to every Wythoff variant in that regular's
+Coxeter group.  Empirically, this **inheritance scheme is complete**:
+the 38-hour, 180-cell inheritance-free matrix sweep described below
+exhaustively searches every `(group, bitmask, rng ≤ 4)` cell from
+scratch — with no parent-regular kernel inheritance — and finds zero
+zomeable projections outside the inherited corpus.  So the Wythoff
+descendants do not give rise to genuinely new zome shapes beyond what
+the regulars + standard Wythoff operations produce; the value of the
+corpus is the explicit catalogue of all 69 vZome-embeddable
+projections of the 47 polytopes, not a discovery of new geometry.
 
 A follow-up rng = 4 audit on six B₄ Wythoff descendants flagged by the
 kernel-completeness probe found **6 additional zomeable shapes** that
@@ -78,10 +92,12 @@ the rng = 2 sweep cannot reach: 3 new V=32 shapes for the rectified
 tesseract and 3 new V=48 shapes for the truncated 16-cell.  All six
 use only the 4 standard zometool strut colours and are recorded as
 `*_oblique_0?.vZome` in their respective output folders with
-`rng: 4` in the manifest.  The other four B₄ rng = 4 audit gaps
-reconcile to zero new shapes once master regulars and B₄ ↔ F₄ aliases
-are properly indexed (see `docs/WYTHOFF_SWEEP.md` § *B₄ rng = 4
-finding*).
+`rng: 4` in the manifest.  These too are inheritance-derived (their
+kernels come from the parent regular at rng = 4); the rng = 2
+production sweep simply did not search that far.  The other four
+B₄ rng = 4 audit gaps reconcile to zero new shapes once master
+regulars and B₄ ↔ F₄ aliases are properly indexed (see
+`docs/WYTHOFF_SWEEP.md` § *B₄ rng = 4 finding*).
 
 **Corpus on disk (69 .vZome files):** every Wythoff descendant has its
 own `output/<polytope>/` folder with a `RESULTS.md`.  26 folders carry
@@ -93,12 +109,12 @@ typically into the ℤ[√2]³ field that is natural for B₄/F₄ but outside
 this project's scope).  The provenance ledger lives at
 [`output/wythoff_sweep_manifest.json`](output/wythoff_sweep_manifest.json).
 
-A separate 38-hour, 180-cell **inheritance-free matrix sweep** then
-audited every `(group, bitmask, rng ≤ 4)` cell from scratch (no
-parent-regular kernel inheritance) and found **zero genuinely new
-shapes** — every flagged candidate is a fingerprint-aliased copy of a
-shape already on disk.  See
-[`docs/INHERITANCE_FREE_SWEEP.md`](docs/INHERITANCE_FREE_SWEEP.md).
+The 38-hour, 180-cell **inheritance-free matrix sweep** mentioned
+above audited every `(group, bitmask, rng ≤ 4)` cell from scratch and
+found **zero genuinely new shapes** — every flagged candidate is a
+fingerprint-aliased copy of a shape already on disk.  This is the
+empirical evidence backing the "inheritance is complete" claim above.
+See [`docs/INHERITANCE_FREE_SWEEP.md`](docs/INHERITANCE_FREE_SWEEP.md).
 
 ```powershell
 # Reproduce (see docs/WYTHOFF_SWEEP.md for details and parallel options)
