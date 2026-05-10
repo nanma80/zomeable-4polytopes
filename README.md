@@ -16,7 +16,7 @@ rotation-and-uniform-scale-invariant fingerprint to count distinct 3D shapes.
 | Polytope                      | Verts | Edges | Distinct zomeable shapes |
 |-------------------------------|-------|-------|--------------------------|
 | 5-cell `{3,3,3}`              | 5     | 10    | **4** — vertex-first + 3 others |
-| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 3 sporadic** ¹ — cell-first cube, vertex-first rhombic dodec, phi-oblique, inf family of cuboids |
+| 8-cell `{4,3,3}`              | 16    | 32    | **1 infinite family + 3 sporadic** ¹ — cell-first, vertex-first, phi-oblique, inf family of cuboids |
 | 16-cell `{3,3,4}`             | 8     | 24    | **6** — vertex-first, cell-first, edge-first, 3 triality |
 | 24-cell `{3,4,3}`             | 24    | 96    | **3** — cell-first, vertex-first, triality |
 | 120-cell `{5,3,3}`            | 600   | 1200  | **1** — cell-first |
