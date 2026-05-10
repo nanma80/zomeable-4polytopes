@@ -18,6 +18,11 @@ constructions on the rank-4 Coxeter groups:
 | H₄ | 5-3-3 | 15 | 15 |
 | **total** | | **48** | **47** |
 
+> **Related corpus-completeness analysis:** see [`INHERITANCE_FREE_SWEEP.md`](INHERITANCE_FREE_SWEEP.md)
+> for a 38-hour, 180-cell matrix sweep that searches every (group, bitmask, rng ≤ 4)
+> cell *without* assuming kernel-inheritance from the parent regular.  It confirms
+> that the production sweep below misses zero shapes that would snap to `ℤ[φ]³`.
+
 Plus the 2 non-Wythoff convex uniforms (snub 24-cell, grand antiprism)
 gives the well-known total of 47 + 2 ≡ 49 — but the snub 24-cell is
 [Coxeter-equivalent to B₄ (0,0,1,0) snubbed](https://en.wikipedia.org/wiki/Snub_24-cell)
@@ -61,7 +66,7 @@ Wythoff extension"** of a regular's projection — applying the
 truncation/cantellation/etc. operation in 4D and projecting under a
 kernel direction the regular already provides.
 
-The 60 .vZome files in `output/wythoff_sweep/` are therefore best
+The 69 .vZome files in the `output/<polytope>/` folders are therefore best
 understood as **"every distinct natural Wythoff extension of the 6
 regulars' projections at rng=2, modulo 3D-shape congruence and
 modulo coincidence with a regular's own projection"**.  There are no
@@ -118,7 +123,7 @@ Each table reports two columns:
   hashes produced by step-2 of the search (the *pre-dedup, pre-emit*
   count).
 - **files²** — the number of `.vZome` files that actually survive in
-  `output/wythoff_sweep/<polytope>/` (the *post-dedup, post-emit* count).
+  `output/<polytope>/` (the *post-dedup, post-emit* count).
   This is the user-visible corpus.  For the 6 regulars (5-cell,
   tesseract, 16-cell, 24-cell, 600-cell, 120-cell) the corresponding
   models live in their own dedicated folders (`output/5cell/`,
@@ -289,9 +294,9 @@ the same 3D shape (cell-first truncated icosidodecahedron).
 | F₄    | 2     | 56 |
 | H₄    | 13    | **69** |
 
-The **69** total matches the count of `.vZome` files in
-`output/wythoff_sweep/` and the count of `status=ok` entries in
-`output/wythoff_sweep/manifest.json`.  Of these 69:
+The **69** total matches the count of `.vZome` files in the
+`output/<polytope>/` folders and the count of `status=ok` entries in
+`output/wythoff_sweep_manifest.json`.  Of these 69:
 
 - **60** were found by the rng = 2 production sweep
   (`tools/run_wythoff_sweep.py`).
@@ -320,8 +325,8 @@ folder via `→ <folder>/` and have no folder of their own.
 | F₄ canonical name | F₄ bitmask | ≡ B₄ name              | B₄ bitmask | folder |
 |-------------------|------------|------------------------|------------|--------|
 | 24-cell           | (1,0,0,0)  | rectified 16-cell      | (0,0,1,0)  | `output/24cell/` |
-| rectified 24-cell | (0,1,0,0)  | cantellated 16-cell    | (0,1,0,1)  | `output/wythoff_sweep/rectified_24-cell/` |
-| truncated 24-cell | (1,1,0,0)  | cantitruncated 16-cell | (0,1,1,1)  | `output/wythoff_sweep/truncated_24-cell/` |
+| rectified 24-cell | (0,1,0,0)  | cantellated 16-cell    | (0,1,0,1)  | `output/rectified_24cell/` |
+| truncated 24-cell | (1,1,0,0)  | cantitruncated 16-cell | (0,1,1,1)  | `output/truncated_24cell/` |
 
 The qfbox.info reference lists these three coincidences explicitly:
 *"Rectified 16-cell: identical to the 24-cell"*,
@@ -611,7 +616,7 @@ directions simply don't exist among rng = 2 candidates.
 Three of them (16-cell B₄, 24-cell B₄, cantellated 16-cell) were
 flagged because the
 [`probe_kernel_completeness.py`](../ongoing_work/probes/probe_kernel_completeness.py)
-counter only inspected `output/wythoff_sweep/<polytope>/` and ignored
+counter only inspected `output/<polytope>/` and ignored
 both the master regular folders (`output/16cell/`, `output/24cell/`)
 and the cross-group alias folders (cantellated 16-cell ≡ rectified
 24-cell, cantitruncated 16-cell ≡ truncated 24-cell, see
@@ -624,12 +629,12 @@ exactly: 12 raw fp → 3 Stage-B unique shapes, all already present
 in the truncated 24-cell folder.
 
 The 6 new shapes have been promoted to the main corpus at
-[`output/wythoff_sweep/rectified_tesseract/oblique_00_e2b79a96f7.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_00_e2b79a96f7.vZome),
-[`oblique_01_b35b865a54.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_01_b35b865a54.vZome),
-[`oblique_02_2be6954c03.vZome`](../output/wythoff_sweep/rectified_tesseract/oblique_02_2be6954c03.vZome)
+[`output/rectified_8cell/rectified_8cell_oblique_00.vZome`](../output/rectified_8cell/rectified_8cell_oblique_00.vZome),
+[`oblique_01.vZome`](../output/rectified_8cell/rectified_8cell_oblique_01.vZome),
+[`oblique_02.vZome`](../output/rectified_8cell/rectified_8cell_oblique_02.vZome)
 and the analogous trio at
-[`output/wythoff_sweep/truncated_16-cell/`](../output/wythoff_sweep/truncated_16-cell/).
-Each entry in [`output/wythoff_sweep/manifest.json`](../output/wythoff_sweep/manifest.json)
+[`output/truncated_16cell/`](../output/truncated_16cell/).
+Each entry in [`output/wythoff_sweep_manifest.json`](../output/wythoff_sweep_manifest.json)
 carries a `"rng": 4` field marking it as a higher-`rng` discovery.
 The promotion script
 [`ongoing_work/probes/promote_b4_rng4.py`](../ongoing_work/probes/promote_b4_rng4.py)
@@ -797,7 +802,7 @@ Wythoff descendant *not* already addressed by the rng = 4 audit
 were absent from the manifest.  A follow-up triage
 (`ongoing_work/probes/blind_spot_triage.py`) snapped each candidate
 to ℤ[φ]³ and matched the resulting Stage-B signature against the
-full corpus (`output/wythoff_sweep/` + master regulars):
+full corpus (`output/` + master regulars):
 
 | group | new fp | snap OK | snap FAIL | matched corpus (same poly) | matched corpus (other poly) | intra-audit dup | **GENUINELY NEW** |
 |:------|------:|--------:|----------:|---------------------------:|----------------------------:|----------------:|------------------:|
@@ -830,7 +835,7 @@ Interpretation by group:
   with the full 4-colour zometool palette `(B:48, Y:48, G:48, R:48)`,
   and none match anything in the existing corpus.  These 3 shapes
   were promoted to
-  `output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
+  `output/bitruncated_8cell/{oblique_00,oblique_01,
   oblique_02}_*.vZome` (the third was originally promoted as
   `face_first_hexagon_df821cc628.vZome`, but the heuristic
   `classify_kernel` in `lib/polytope_features.py` over-matched the
@@ -881,7 +886,7 @@ also coincides with the 24-cell triality master projection:
 | `[1+2φ³, √5, √5, −√5]` (Y6R12B6_master_C)                            | `16cell_antiprism_Y6R12B6.vZome`             | `24cell_triality.vZome`       | `oblique_02_80a961d9da.vZome`                |
 
 So the corpus has **0 documented exceptions** to the inheritance
-pattern — all 28 `oblique_*.vZome` files in `output/wythoff_sweep/`,
+pattern — all 28 `oblique_*.vZome` files in `output/`,
 including the 3 M17 additions, project from a parent regular master
 kernel.
 
@@ -942,7 +947,7 @@ Outputs:
 #### M18 — F₄/B₄ snap-fail field diagnosis (3 "magic" kernels are ℤ[φ, √2])
 
 While auditing the snap-fail entries that survived from M17 into the
-manifest (`output/wythoff_sweep/manifest.json`), three kernel
+manifest (`output/wythoff_sweep_manifest.json`), three kernel
 directions appear repeatedly across both B₄ and F₄ snap-fail
 records:
 
@@ -997,7 +1002,7 @@ Cached output: `ongoing_work/f4_snap_fail_field_results.txt`.
 #### M18 — manifest gap: `runcinated 24-cell` shares fp with `cantellated tesseract`
 
 When triaging the snap-fail kernels, `runcinated 24-cell` looked
-"missing" from `output/wythoff_sweep/manifest.json` even though
+"missing" from `output/wythoff_sweep_manifest.json` even though
 it is a Wythoff descendant present in `ongoing_work/shapes_rng2.jsonl`
 with fp `4507a6810f54bab2`. The cause is in
 `tools/emit_novel.py:80–85` (`pick_representative`): when the same
@@ -1083,12 +1088,12 @@ because their snapped kernels lie outside the rng = 2 candidate set
 (typical kernel coordinates: 4φ + 2 ≈ 8.47, 9φ + 2 ≈ 9.47 — see
 [B₄ rng = 4 finding](#b4-rng--4-finding-2-polytopes-grow-4-are-clean-audit-gaps-reconciled)
 below).  These are flagged with `"rng": 4` in
-`output/wythoff_sweep/manifest.json`.
+`output/wythoff_sweep_manifest.json`.
 
 A second follow-up — the rng = 2 *descendant-direct* (Step-1 blind-
 spot) audit on every A₄/B₄/F₄ Wythoff descendant — added **3 more
 distinct shapes** to the corpus, all from B₄ bitruncated tesseract
-(`output/wythoff_sweep/bitruncated_tesseract/{oblique_00,oblique_01,
+(`output/bitruncated_8cell/{oblique_00,oblique_01,
 oblique_02}_*.vZome`).  Each is V = 96 with the full 4-colour
 zometool palette `(B:48, Y:48, G:48, R:48)`.  The blind spot is
 architectural: `tools/run_wythoff_sweep.py` Step 1 snap-filters
@@ -1114,10 +1119,10 @@ B₄/F₄ projections, not a search-precision artefact.  All the
 icosahedral H₄ shapes snap because the icosahedral basis is naturally
 aligned with the golden-ratio integer lattice.
 
-vZome files are in [`output/wythoff_sweep/`](../output/wythoff_sweep/),
+vZome files are in [`output/`](../output/),
 organised into one subfolder per polytope common name (e.g.
-`output/wythoff_sweep/cantellated_120-cell/`,
-`output/wythoff_sweep/omnitruncated_120-cell/`).  Each file is named
+`output/cantellated_120cell/`,
+`output/omnitruncated_120cell/`).  Each file is named
 after the kernel direction's classification against that polytope's
 features:
 
@@ -1137,7 +1142,7 @@ extracts cell/face features via two nested `scipy.spatial.ConvexHull`
 calls and returns the highest-priority match (`vertex_first` >
 `cell_first` > `face_first` > `edge_first` > `oblique`).
 
-A JSON manifest at `output/wythoff_sweep/manifest.json` cross-
+A JSON manifest at `output/wythoff_sweep_manifest.json` cross-
 references every file with its fp_hash, source polytope, kernel
 direction, label, label-subtype, alias hashes (see "Direction-dedup"
 below), and per-axis strut counts.
@@ -1152,7 +1157,7 @@ consistent strut/ball ratio regardless of which `s` happened to snap.
 
 ## Oblique-kernel inheritance: every `oblique_*.vZome` is a parent's master projection
 
-The 25 `oblique_*.vZome` files in `output/wythoff_sweep/` come from
+The 25 `oblique_*.vZome` files in `output/` come from
 only **7 distinct kernel directions across the 4 groups**, and each
 of those 7 directions is *exactly* the kernel of one of the
 hand-curated parent-regular master projection files in
@@ -1348,7 +1353,7 @@ B₄ Weyl orbit equivalence:
 | `[1+2φ³, √5, √5, −√5]`                                   | `16cell_antiprism_Y6R12B6.vZome`| `24cell_triality.vZome` | `oblique_02_80a961d9da.vZome`         |
 
 So the corpus has **0 documented exceptions** to the inheritance
-pattern.  All 28 `oblique_*.vZome` files in `output/wythoff_sweep/`
+pattern.  All 28 `oblique_*.vZome` files in `output/`
 are inherited from a parent regular master kernel.  The 7 master
 kernels listed in the [oblique kernel inheritance table below](#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
 account for **25 of 28** files; the remaining 3 (the M17
@@ -1386,7 +1391,7 @@ python tools/analyze_sweep.py --rng 2 `
     --out-novel ongoing_work/novel_rng2.json
 
 # Emit .vZome files for every Wythoff-extension shape that survived
-# the regular-coincidence filter (output/wythoff_sweep/).
+# the regular-coincidence filter (output/).
 python tools/emit_novel.py --rng 2
 ```
 
@@ -1514,7 +1519,7 @@ python tools/emit_novel.py --rng 2
   target.  This makes the corpus visually consistent.
 - **Per-polytope subfolders.**  `tools/emit_novel.py` writes each
   natural-extension shape (legacy code-name "novel") into
-  `output/wythoff_sweep/<common-name-slug>/` (e.g.
+  `output/<common-name-slug>/` (e.g.
   `omnitruncated_120-cell/`, `cantellated_5-cell/`) so the directory
   tree is browsable by Wythoff form rather than fp_hash.  The shape
   index and short fp_hash are still in the filename for cross-
