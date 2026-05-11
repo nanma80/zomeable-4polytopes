@@ -21,7 +21,8 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 ## 3D Viewers
 
 <!-- _3d-viewer-html-link_ -->
-➡️ **[Open this page on GitHub Pages](RESULTS.html)** to interact with the 3D models below (the embeds only render when this file is served via GitHub Pages, not in github.com's markdown preview).
+➡️ **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/cantitruncated_120cell/RESULTS.html)** to interact with the 3D models below (the embeds only render when this file is served via GitHub Pages, not in github.com's markdown preview).
+
 
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
