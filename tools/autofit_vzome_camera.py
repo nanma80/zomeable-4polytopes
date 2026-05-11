@@ -1,23 +1,33 @@
 """Auto-fit the camera frustum in every output/**/*.vZome so models open at a
-sensible zoom in the vzome-viewer embed (and in vZome desktop).
+sensible zoom in both the vzome-viewer web embed and vZome desktop.
 
-vZome's camera FOV is derived from the ViewModel attributes:
+The two clients compute FOV differently:
 
-    FOV = 2 * atan( (width / 2) / distance )       (Camera.java:142)
+  - vZome desktop:   FOV = 2 * atan( (width / 2) / distance )    (Camera.java:142)
+    Uses both width and distance from the file directly.
 
-The frustum width at the look-at plane is exactly `width`.  So for the model
-to fit, we need `width >= 2 * radius`, where `radius` is the bounding-sphere
-radius around the origin (LookAtPoint is at the origin in all our files).
+  - vzome-viewer (web): the file's width is OVERRIDDEN by the viewer's
+    hardcoded WIDTH_FACTOR = 0.45  (online/src/viewer/context/camera.jsx:11);
+    width is effectively `distance * 0.45`.  So FOV = 2*atan(0.45/2) ~= 25.4
+    degrees, fixed, and only the file's `distance` attribute affects how
+    much of the scene is visible.
 
-Default is `distance=50, width=50` -> FOV ~= 53.13 degrees, fits radius ~= 25.
-Models with radius > 25 (e.g. 120-cell projections) get clipped/zoomed in.
-We rescale `width` and `distance` together to preserve the 53-degree FOV
-while making the frustum just large enough to contain the model with a
-small margin.
+The web embed has the narrower FOV, so distance must be chosen to fit
+the model there; the desktop FOV will then be wider (looser fit) which
+is fine.
 
-The script is idempotent: re-running on the same file produces the same
-attributes (computed from ball coordinates, not from previous attribute
-values).
+For radius r, we need:
+    r  <=  (WIDTH_FACTOR / 2) * distance * FILL_FACTOR
+    distance  >=  2 * r / (WIDTH_FACTOR * FILL_FACTOR)  ~= 5.23 * r at 85% fill
+
+The file's `width` is set to `distance` (so vZome desktop opens at its
+default ~53 degree FOV).
+
+LookAtPoint is at the origin in every file in this repo, so radius is
+measured as max(|P|) over <ShowPoint> elements.
+
+The script is idempotent: re-running computes attributes from coordinates,
+not from previous attribute values.
 """
 from __future__ import annotations
 
@@ -46,31 +56,35 @@ VIEW_MODEL_RE = re.compile(
     r'(\s*>)'                       # 3: closing
 )
 
-# Margin between model and frustum edge: model occupies 80% of the view.
-FILL_FACTOR = 0.80
-DEFAULT_WIDTH = 50.0
+# Hardcoded in online/src/viewer/context/camera.jsx (WIDTH_FACTOR).
+VIEWER_WIDTH_FACTOR = 0.45
+# Fraction of half-frustum the model should occupy (15% margin).
+FILL_FACTOR = 0.85
+DEFAULT_DISTANCE = 50.0
 DEFAULT_FAR = 200.0
 DEFAULT_NEAR = 0.5
 
 
 def compute_radius(path: Path) -> float | None:
-    """Return max distance from origin of any ShowPoint in the file, or None
-    if there are no balls (no <ShowPoint> elements)."""
+    """Return max |P| over all ShowPoints, or None if the file has no balls."""
     P, _E = parse_vzome(path)
     if P.shape[0] == 0:
         return None
     return float(np.linalg.norm(P, axis=1).max())
 
 
-def round_nice(x: float, step: float = 5.0) -> float:
-    """Round up to the next multiple of `step` for tidy attribute values."""
+def round_nice(x: float, step: float = 10.0) -> float:
     return math.ceil(x / step) * step
 
 
 def new_attrs(radius: float) -> tuple[float, float, float, float]:
-    needed_width = 2.0 * radius / FILL_FACTOR
-    width = max(DEFAULT_WIDTH, round_nice(needed_width, 5.0))
-    distance = width
+    # Distance needed so radius r fits within FILL_FACTOR of the viewer's
+    # half-frustum (viewer width = distance * VIEWER_WIDTH_FACTOR).
+    needed_distance = 2.0 * radius / (VIEWER_WIDTH_FACTOR * FILL_FACTOR)
+    distance = max(DEFAULT_DISTANCE, round_nice(needed_distance, 10.0))
+    # vZome desktop reads `width` directly and computes FOV from width/distance;
+    # width == distance gives the default ~53-degree desktop FOV.
+    width = distance
     far = max(DEFAULT_FAR, round_nice(distance + 2.0 * radius, 10.0))
     near = DEFAULT_NEAR
     return distance, far, near, width
