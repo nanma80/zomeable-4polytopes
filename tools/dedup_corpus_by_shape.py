@@ -49,6 +49,7 @@ import json
 import re
 import shutil
 from collections import Counter, defaultdict
+from fractions import Fraction
 from pathlib import Path
 
 import numpy as np
@@ -59,12 +60,19 @@ JPP_RE = re.compile(r'<JoinPointPair start="([^"]+)" end="([^"]+)"\s*/>')
 SHOW_RE = re.compile(r'<ShowPoint\s+point="([^"]+)"\s*/>')
 
 
-def _parse_int_coord(s: str) -> tuple[int, ...]:
-    return tuple(int(x) for x in s.split())
+def _parse_coord(s: str) -> tuple[Fraction, ...]:
+    """Parse a vZome 6-tuple coord string into Fractions.
+
+    Each entry is either an integer (e.g. ``42``) or a rational
+    ``num/denom`` (e.g. ``-14/13``).  vZome emits rational Z[phi]
+    coordinates for the 8-cell inf-family shapes when the Pythagorean
+    triple introduces a denominator.
+    """
+    return tuple(Fraction(x) for x in s.split())
 
 
-def _to_float3(t6: tuple[int, ...]) -> np.ndarray:
-    a = np.array(t6, dtype=float)
+def _to_float3(t6: tuple[Fraction, ...]) -> np.ndarray:
+    a = np.array([float(x) for x in t6], dtype=float)
     return np.array([a[0] + a[1] * PHI,
                      a[2] + a[3] * PHI,
                      a[4] + a[5] * PHI])
@@ -72,23 +80,23 @@ def _to_float3(t6: tuple[int, ...]) -> np.ndarray:
 
 def parse_vzome(path: Path) -> tuple[np.ndarray, list[tuple[int, int]]]:
     text = path.read_text()
-    seen: dict[tuple[int, ...], int] = {}
-    points_int: list[tuple[int, ...]] = []
+    seen: dict[tuple[Fraction, ...], int] = {}
+    points: list[tuple[Fraction, ...]] = []
     for s in SHOW_RE.findall(text):
-        t = _parse_int_coord(s)
+        t = _parse_coord(s)
         if t not in seen:
-            seen[t] = len(points_int)
-            points_int.append(t)
+            seen[t] = len(points)
+            points.append(t)
     edges: list[tuple[int, int]] = []
     for s, e in JPP_RE.findall(text):
-        ts = _parse_int_coord(s)
-        te = _parse_int_coord(e)
+        ts = _parse_coord(s)
+        te = _parse_coord(e)
         if ts not in seen:
-            seen[ts] = len(points_int); points_int.append(ts)
+            seen[ts] = len(points); points.append(ts)
         if te not in seen:
-            seen[te] = len(points_int); points_int.append(te)
+            seen[te] = len(points); points.append(te)
         edges.append((seen[ts], seen[te]))
-    P = np.stack([_to_float3(t) for t in points_int])
+    P = np.stack([_to_float3(t) for t in points])
     return P, edges
 
 
