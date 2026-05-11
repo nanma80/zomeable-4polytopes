@@ -43,7 +43,7 @@ A 4D unit kernel direction n falls into one of four cases by support
 
 | Support of n | Zometool-aligned? | vZome-embeddable? | Family structure |
 |:---:|:---|:---|:---|
-| 1 | Yes | Yes | **Cell-first sporadic**: the cube (V=8) |
+| 1 | Yes | Yes | **Cell-first sporadic**: the cube (V=8). Also the `b → 0` degenerate limit of the support-2 inf-family (4 of the 16 balls collapse pairwise onto the other 4). |
 | 2 | Always | Iff a²+b² is a square in ℤ[φ] | **The infinite family**: split cuboids parametrized by (a:b); face-first cuboid (a,b)=(1,1) is the cubic-system V=12 case |
 | 3 | Discrete subset | **One φ-rational direction yes** + 2 cubic-only directions | **Phi-oblique sporadic** (V=16, vZome ℤ[φ]); edge-first hex prism (V=14, cubic Z[√2,√3]); face-first-like BYR shape (V=16, cubic) |
 | 4 | Discrete subset | Only n = ±(1,1,1,1) up to ±-flips | **Vertex-first sporadic**: rhombic dodecahedron (V=15) |
@@ -51,6 +51,11 @@ A 4D unit kernel direction n falls into one of four cases by support
 So **in vZome strict** (icosahedral ℤ[φ] coords): there is
 
   **1 infinite family + 3 sporadic shapes** (cube, phi-oblique, rhombic dodec).
+
+We list the cube as a sporadic even though it is technically the `b → 0`
+degenerate boundary of the inf-family: at that limit the strut count and
+ball count drop (V=8, E=12 instead of 16/32), making it visually and
+combinatorially distinct from every interior member of the family.
 
 The "phi-oblique" sporadic (kernel support 3, three image vectors *coplanar*
 in 3D — none zero — with the 4th independent) was added 2026-05-08 after
@@ -190,6 +195,14 @@ its 3-cube image. The 4th edge direction collapses: c_4 = 0.
 
 - **8 balls, 12 struts (B:12)**.
 - File: `8cell_cell_first_cube.vZome`
+
+This is also the **`b → 0` degenerate boundary** of the inf-family
+(support-2) parametrization: setting (a, b) = (1, 0) gives kernel
+n = (1, 0, 0, 0), with c_4 = 0 collapsing 4 of the 16 inf-family balls
+onto their c_3 partners. We list it as a sporadic anyway because the
+collapse changes both the ball count (16 → 8) and the strut count
+(32 → 12), so visually and combinatorially it is a distinct shape, not
+a generic family member.
 
 ### Vertex-first sporadic — the rhombic dodecahedron (kernel support 4)
 

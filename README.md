@@ -36,7 +36,9 @@ details.
 ¹ The 8-cell infinite family is parametrized by ℤ[φ]-Pythagorean
 triples `(a, b, c)` with `a² + b² = c²` (both integer-Pythagorean and
 genuinely-φ branches), producing distinct rectangular cuboids. The
-three sporadics are the cell-first cube (V=8), the vertex-first rhombic
+three sporadics are the cell-first cube (V=8 — also the degenerate
+`b → 0` boundary of the inf-family, but listed separately because the
+ball/strut counts drop), the vertex-first rhombic
 dodecahedron (V=15), and the phi-oblique sporadic (V=16, kernel
 `(0, 1/φ², 1, −1/φ)` — three image vectors coplanar, 4th independent).
 Three further canonical projections — edge-first hex prism, face-first
