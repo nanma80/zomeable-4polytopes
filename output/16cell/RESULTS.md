@@ -76,7 +76,7 @@ python run_search.py 16cell 3
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_B6R12Y6.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_B6R12Y6.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_antiprism_B6R12Y6.vZome
@@ -84,7 +84,7 @@ python run_search.py 16cell 3
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_R12B6Y6.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_R12B6Y6.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_antiprism_R12B6Y6.vZome
@@ -92,7 +92,7 @@ python run_search.py 16cell 3
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_Y6R12B6.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_Y6R12B6.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_antiprism_Y6R12B6.vZome
@@ -100,7 +100,7 @@ python run_search.py 16cell 3
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_cell_first_cube.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_cell_first_cube.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_cell_first_cube.vZome
@@ -108,7 +108,7 @@ python run_search.py 16cell 3
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_edge_first_squashed_octahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_edge_first_squashed_octahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_edge_first_squashed_octahedron.vZome
@@ -116,7 +116,7 @@ python run_search.py 16cell 3
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="16cell_vertex_first_octahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_vertex_first_octahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_vertex_first_octahedron.vZome

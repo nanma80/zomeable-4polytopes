@@ -31,7 +31,7 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_cell_first_cuboctahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_cell_first_cuboctahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     runcitruncated_5cell_cell_first_cuboctahedron.vZome
@@ -39,7 +39,7 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_edge_first.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_edge_first.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     runcitruncated_5cell_edge_first.vZome
@@ -47,7 +47,7 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_face_first_triangle.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_face_first_triangle.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     runcitruncated_5cell_face_first_triangle.vZome
@@ -55,7 +55,7 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     runcitruncated_5cell_oblique.vZome

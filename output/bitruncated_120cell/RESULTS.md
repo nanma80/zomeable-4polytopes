@@ -28,7 +28,7 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_120cell_cell_first_truncated_icosahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_120cell_cell_first_truncated_icosahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     bitruncated_120cell_cell_first_truncated_icosahedron.vZome

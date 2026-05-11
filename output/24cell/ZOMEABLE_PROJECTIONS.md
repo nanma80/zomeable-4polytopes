@@ -211,7 +211,7 @@ Key scripts:
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_long_root_rhombic_dodecahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_long_root_rhombic_dodecahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     24cell_long_root_rhombic_dodecahedron.vZome
@@ -219,7 +219,7 @@ Key scripts:
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_short_root_cuboctahedron.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_short_root_cuboctahedron.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     24cell_short_root_cuboctahedron.vZome
@@ -227,7 +227,7 @@ Key scripts:
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_triality.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_triality.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     24cell_triality.vZome

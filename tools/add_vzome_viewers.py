@@ -18,7 +18,7 @@ SCRIPT_LINE = "<script type='module' src='https://www.vzome.com/modules/vzome-vi
 def figure_block(fname: str) -> str:
     return (
         '<figure style="width: 800px; margin: 5%">\n'
-        f' <vzome-viewer style="width: 100%; height: 500px" src="{fname}" >\n'
+        f' <vzome-viewer style="width: 100%; height: 500px" src="{fname}" progress="true" >\n'
         ' </vzome-viewer>\n'
         ' <figcaption style="text-align: center; font-style: italic;">\n'
         f'    {fname}\n'

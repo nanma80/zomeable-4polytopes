@@ -43,7 +43,7 @@ python run_search.py 120cell 2
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="120cell_H4_to_H3.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="120cell_H4_to_H3.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     120cell_H4_to_H3.vZome

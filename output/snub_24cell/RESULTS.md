@@ -216,7 +216,7 @@ in vZome may reveal nested polyhedra.
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_cell_first.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_cell_first.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     snub_24cell_cell_first.vZome
@@ -224,7 +224,7 @@ in vZome may reveal nested polyhedra.
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_vertex_first.vZome" >
+ <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_vertex_first.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     snub_24cell_vertex_first.vZome
