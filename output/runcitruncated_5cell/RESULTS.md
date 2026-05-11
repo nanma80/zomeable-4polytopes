@@ -20,3 +20,40 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 - Production sweep: `tools/run_wythoff_sweep.py` (rng = 2).
 - Inheritance-free audit: `tools/inheritance_free_sweep.py` (rng ∈ {2, 3, 4}); see [`docs/INHERITANCE_FREE_SWEEP.md`](../../docs/INHERITANCE_FREE_SWEEP.md).
 - Manifest entry: `output/wythoff_sweep_manifest.json` (search `"source_polytope": "runcitruncated 5-cell"`).
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_cell_first_cuboctahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_cell_first_cuboctahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_edge_first.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_edge_first.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_face_first_triangle.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_face_first_triangle.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_oblique.vZome
+ </figcaption>
+</figure>
+

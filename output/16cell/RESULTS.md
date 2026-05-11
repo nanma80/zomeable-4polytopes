@@ -64,3 +64,56 @@ these correspond to our `24cell_triality.vZome` projection.
 cd regular_4polytopes\lib
 python run_search.py 16cell 3
 ```
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_B6R12Y6.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_B6R12Y6.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_R12B6Y6.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_R12B6Y6.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_Y6R12B6.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_Y6R12B6.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_cell_first_cube.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_cell_first_cube.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_edge_first_squashed_octahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_edge_first_squashed_octahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="16cell_vertex_first_octahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_vertex_first_octahedron.vZome
+ </figcaption>
+</figure>
+

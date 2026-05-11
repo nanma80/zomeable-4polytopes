@@ -199,3 +199,32 @@ Key scripts:
 ---
 
 *Last updated 2026-05-01.*
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_long_root_rhombic_dodecahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    24cell_long_root_rhombic_dodecahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_short_root_cuboctahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    24cell_short_root_cuboctahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="24cell_triality.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    24cell_triality.vZome
+ </figcaption>
+</figure>
+

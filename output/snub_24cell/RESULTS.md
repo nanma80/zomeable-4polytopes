@@ -205,3 +205,24 @@ These two shapes use all three default colors with 60+ ball counts.
 A natural follow-up: do they decompose into recognisable pieces (e.g.
 icosahedral or rhombicuboctahedral substructures)? Visual inspection
 in vZome may reveal nested polyhedra.
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_cell_first.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    snub_24cell_cell_first.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="snub_24cell_vertex_first.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    snub_24cell_vertex_first.vZome
+ </figcaption>
+</figure>
+

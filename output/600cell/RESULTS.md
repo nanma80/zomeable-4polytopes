@@ -47,3 +47,16 @@ After the fix, 600-cell saturates cleanly at 1 shape.
 cd regular_4polytopes\lib
 python run_search.py 600cell 3
 ```
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="600cell_H4_to_H3.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    600cell_H4_to_H3.vZome
+ </figcaption>
+</figure>
+

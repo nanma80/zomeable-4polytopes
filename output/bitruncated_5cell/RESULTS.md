@@ -20,3 +20,40 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 - Production sweep: `tools/run_wythoff_sweep.py` (rng = 2).
 - Inheritance-free audit: `tools/inheritance_free_sweep.py` (rng ∈ {2, 3, 4}); see [`docs/INHERITANCE_FREE_SWEEP.md`](../../docs/INHERITANCE_FREE_SWEEP.md).
 - Manifest entry: `output/wythoff_sweep_manifest.json` (search `"source_polytope": "bitruncated 5-cell"`).
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_5cell_cell_first_truncated_tetrahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    bitruncated_5cell_cell_first_truncated_tetrahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_5cell_face_first_hexagon.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    bitruncated_5cell_face_first_hexagon.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_5cell_oblique_00.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    bitruncated_5cell_oblique_00.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="bitruncated_5cell_oblique_01.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    bitruncated_5cell_oblique_01.vZome
+ </figcaption>
+</figure>
+

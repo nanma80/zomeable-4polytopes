@@ -20,3 +20,32 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 - Production sweep: `tools/run_wythoff_sweep.py` (rng = 2).
 - Inheritance-free audit: `tools/inheritance_free_sweep.py` (rng ∈ {2, 3, 4}); see [`docs/INHERITANCE_FREE_SWEEP.md`](../../docs/INHERITANCE_FREE_SWEEP.md).
 - Manifest entry: `output/wythoff_sweep_manifest.json` (search `"source_polytope": "rectified 24-cell"`).
+
+## 3D Viewers
+
+<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="rectified_24cell_cell_first_cube.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    rectified_24cell_cell_first_cube.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="rectified_24cell_cell_first_cuboctahedron.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    rectified_24cell_cell_first_cuboctahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="rectified_24cell_oblique.vZome" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    rectified_24cell_oblique.vZome
+ </figcaption>
+</figure>
+
