@@ -202,6 +202,10 @@ Key scripts:
 
 ## 3D Viewers
 
+<!-- _3d-viewer-html-link_ -->
+➡️ **[Open this page on GitHub Pages](ZOMEABLE_PROJECTIONS.html)** to interact with the 3D models below (the embeds only render when this file is served via GitHub Pages, not in github.com's markdown preview).
+
+
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
