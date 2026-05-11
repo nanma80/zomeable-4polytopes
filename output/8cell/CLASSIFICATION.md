@@ -127,16 +127,24 @@ First few primitive integer (a, b, m): (1, 2, 1), (2, 11, 5),
 case is just the (a₂ = b₂ = 0) sub-locus. The smallest non-integer
 generator points (canonicalised so a ≥ b > 0, then by ascending S) are:
 
-| (a, b)            | regime          | a² + b²    | c                 | notes                                  |
-|:------------------|:----------------|:----------:|:------------------|:---------------------------------------|
-| (√5, 2) = (−1+2φ, 2) | (i) trace-zero | 9          | 3                 | first explicit ℤ[φ] generator (emitted)|
-| (4, 1+3φ)         | (ii) genuinely-φ| 26+15φ     | −1+5φ ≈ 7.09      | discovered by strut-iso enumerator b≤8  |
-| (3 + 2φ, −4+4φ)   | (i) trace-zero  | 45 = 5·9   | 3√5               | 5m² branch (m=3)                       |
+| (a, b)              | regime           | a² + b² | c            | notes                                                            |
+|:--------------------|:-----------------|:-------:|:-------------|:-----------------------------------------------------------------|
+| (√5, 2) = (−1+2φ, 2) | (i) trace-zero  |   9     | 3            | emitted as `8cell_inf_family_phi_aSqrt5_b2.vZome`                |
+| (3 + 2φ, 4φ − 4)    | (i) trace-zero   |  45     | 3√5          | 5m² branch (m=3); emitted as `8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome` |
+| (4φ, 5 − 2φ)        | (i) trace-zero   |  45     | 3√5          | Galois conjugate of the previous row; emitted as `8cell_inf_family_phi_a4phi_b5-2phi.vZome` |
+| (4, 1+3φ)           | (ii) genuinely-φ | 26+15φ  | −1+5φ ≈ 7.09 | discovered by strut-iso enumerator b≤8; not yet emitted          |
 
-The first row is emitted as **`8cell_inf_family_phi_aSqrt5_b2.vZome`**;
-the second and third are not yet emitted.
+**rng=5/6 audit (2026-05-10).** A re-search at rng ∈ {4, 5, 6} with
+B₄-symmetry-deduplicated kernel directions
+(`gen_dirs(permute_dedup=True)`, exact for the tesseract) finds
+**exactly the same 4 shape types** — cube, rhombic dodec, phi-oblique,
+inf-family — and 2 inf-family parameter rows not previously emitted
+(the (3+2φ, 4φ−4) and (4φ, 5−2φ) rows above).  Both snap cleanly to
+ℤ[φ]³ with integer coordinates and single-colour B struts.  No new
+sporadic types appear.  Audit driver:
+`ongoing_work/probes/tesseract_audit_rng5.py`.
 
-**Bound=12 enumeration status.** The strut-quadruple iso-frame enumerator
+**Strut-iso enumeration status.** The strut-quadruple iso-frame enumerator
 (`ongoing_work/strut_iso_enumerator.py`) at scalar bound 12 found
 **12 distinct (a:b) ratios** in the inf-family at V=16: a few integer
 Pythagorean branch members ((1,2,√5), (3,4,5), …), one (2,√5,3) trace-zero
@@ -147,25 +155,28 @@ the bound higher adds more (a:b) points but produces no new shape *type*
 closed under all icosahedral-palette zomeable orthographic projections
 of the 8-cell.
 
-**Examples emitted** (`8cell_inf_family_a*_b*.vZome`, all normalized so
-the longest edge is roughly one ball-spacing). All seven existing files
-use integer (a, b); the broader ℤ[φ] parameter space is not yet
-systematically enumerated.
+**Examples emitted** (`8cell_inf_family_*.vZome`, all normalized so
+the longest edge is roughly one ball-spacing).
 
-| (a, b)   | a² + b²    | c              | branch       |
-|:--------:|:----------:|:--------------:|:-------------|
-| (1, 2)   | 5          | 2φ − 1 = √5    | 5m² (m=1)    |
-| (3, 4)   | 25         | 5              | Pythagorean  |
-| (5, 12)  | 169        | 13             | Pythagorean  |
-| (8, 15)  | 289        | 17             | Pythagorean  |
-| (2, 11)  | 125 = 25·5 | 5(2φ − 1)      | 5m² (m=5)    |
-| (19, 22) | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)   |
-| (2, 29)  | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)   |
+| (a, b)            | a² + b²    | c              | branch                | filename suffix                |
+|:------------------|:----------:|:--------------:|:----------------------|:-------------------------------|
+| (1, 2)            | 5          | 2φ − 1 = √5    | 5m² (m=1)             | `a1_b2`                        |
+| (3, 4)            | 25         | 5              | Pythagorean           | `a3_b4`                        |
+| (5, 12)           | 169        | 13             | Pythagorean           | `a5_b12`                       |
+| (8, 15)           | 289        | 17             | Pythagorean           | `a8_b15`                       |
+| (2, 11)           | 125 = 25·5 | 5(2φ − 1)      | 5m² (m=5)             | `a2_b11`                       |
+| (19, 22)          | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)            | `a19_b22`                      |
+| (2, 29)           | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)            | `a2_b29`                       |
+| (√5, 2)           | 9          | 3              | trace-zero ℤ[φ]       | `phi_aSqrt5_b2`                |
+| (3 + 2φ, 4φ − 4)  | 45 = 9·5   | 3√5            | 5m² (m=3), ℤ[φ]       | `phi_a3plus2phi_b4phi-4`       |
+| (4φ, 5 − 2φ)      | 45 = 9·5   | 3√5            | 5m² (m=3), ℤ[φ]       | `phi_a4phi_b5-2phi`            |
 
 Note that (19, 22) and (2, 29) share the same c = 13√5 but are
-genuinely distinct shapes (different a:b ratios). Other valid integer
-(a, b) include (7, 24, 25), (20, 21, 29), … on the Pythagorean branch
-and (22, 31, 17), … on the 5m² branch. Trivially-related cases:
+genuinely distinct shapes (different a:b ratios).  Similarly the last
+two rows above share c = 3√5 but are distinct directions (and Galois
+conjugates of each other).  Other valid integer (a, b) include
+(7, 24, 25), (20, 21, 29), … on the Pythagorean branch and
+(22, 31, 17), … on the 5m² branch. Trivially-related cases:
 (2, 4) ≡ (1, 2) (same ratio, scaled); (1, 0) → cube; (a, a) → degenerate
 12-ball collapse.
 
