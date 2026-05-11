@@ -118,6 +118,8 @@ restricted to the surviving subset.
 | cantitruncated 600-cell   | 1 | 600-cell |
 | runcitruncated 600-cell   | 1 | 600-cell |
 
+vZome files for every shape above are in [`output/<polytope>/`](output/).
+
 **Totals:** 69 zomeable shapes across 26 of the 39 Wythoff descendants,
 plus 4 shapes for the 2 non-Wythoffian uniforms — 73 total.  The 13
 Wythoff descendants with **0** shapes have no zomeable orthographic
