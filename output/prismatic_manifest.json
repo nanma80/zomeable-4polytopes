@@ -534,7 +534,7 @@
         },
         "nV": 120,
         "nE": 240,
-        "n_shapes": 6,
+        "n_shapes": 5,
         "shapes": [
           {
             "basename": "cell_first_truncated_dodecahedron",
@@ -589,7 +589,7 @@
             "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/oblique_01.vZome"
           },
           {
-            "basename": "face_first_square_00",
+            "basename": "face_first_square",
             "label": "face_first",
             "subtype": "square",
             "n_balls": 64,
@@ -604,7 +604,7 @@
               "B": 46,
               "Y": 24
             },
-            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/face_first_square_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/face_first_square.vZome"
           },
           {
             "basename": "oblique_02",
@@ -623,24 +623,6 @@
               "B": 60
             },
             "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/oblique_02.vZome"
-          },
-          {
-            "basename": "face_first_square_01",
-            "label": "face_first",
-            "subtype": "square",
-            "n_balls": 64,
-            "kernel": [
-              0.618034,
-              1.0,
-              0.381966,
-              -0.0
-            ],
-            "strut_counts": {
-              "R": 48,
-              "B": 46,
-              "Y": 24
-            },
-            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/face_first_square_01.vZome"
           }
         ]
       },
@@ -651,7 +633,7 @@
         },
         "nV": 120,
         "nE": 240,
-        "n_shapes": 6,
+        "n_shapes": 5,
         "shapes": [
           {
             "basename": "cell_first_truncated_icosahedron",
@@ -711,24 +693,6 @@
             "subtype": null,
             "n_balls": 120,
             "kernel": [
-              -0.0,
-              1.0,
-              0.381966,
-              -0.618034
-            ],
-            "strut_counts": {
-              "R": 72,
-              "Y": 132,
-              "B": 36
-            },
-            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_01.vZome"
-          },
-          {
-            "basename": "oblique_02",
-            "label": "oblique",
-            "subtype": null,
-            "n_balls": 120,
-            "kernel": [
               0.381966,
               -0.381966,
               -0.381966,
@@ -739,10 +703,10 @@
               "R": 72,
               "B": 36
             },
-            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_01.vZome"
           },
           {
-            "basename": "oblique_03",
+            "basename": "oblique_02",
             "label": "oblique",
             "subtype": null,
             "n_balls": 120,
@@ -757,7 +721,7 @@
               "B": 60,
               "Y": 60
             },
-            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_03.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_02.vZome"
           }
         ]
       },
@@ -768,7 +732,7 @@
         },
         "nV": 120,
         "nE": 300,
-        "n_shapes": 6,
+        "n_shapes": 5,
         "shapes": [
           {
             "basename": "cell_first_rhombicosidodecahedron",
@@ -823,25 +787,7 @@
             "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/face_first_pentagon.vZome"
           },
           {
-            "basename": "cell_first_cube_00",
-            "label": "cell_first",
-            "subtype": "cube",
-            "n_balls": 64,
-            "kernel": [
-              0.381966,
-              0.618034,
-              1.0,
-              -0.0
-            ],
-            "strut_counts": {
-              "R": 64,
-              "Y": 32,
-              "B": 48
-            },
-            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_cube_00.vZome"
-          },
-          {
-            "basename": "cell_first_cube_01",
+            "basename": "cell_first_cube",
             "label": "cell_first",
             "subtype": "cube",
             "n_balls": 64,
@@ -856,7 +802,7 @@
               "R": 64,
               "Y": 32
             },
-            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_cube_01.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_cube.vZome"
           },
           {
             "basename": "oblique_01",
@@ -895,7 +841,7 @@
         },
         "nV": 240,
         "nE": 480,
-        "n_shapes": 7,
+        "n_shapes": 5,
         "shapes": [
           {
             "basename": "cell_first_truncated_icosidodecahedron",
@@ -919,24 +865,6 @@
             "subtype": null,
             "n_balls": 240,
             "kernel": [
-              -0.0,
-              0.381966,
-              1.0,
-              -0.618034
-            ],
-            "strut_counts": {
-              "R": 144,
-              "B": 72,
-              "Y": 264
-            },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_00.vZome"
-          },
-          {
-            "basename": "oblique_01",
-            "label": "oblique",
-            "subtype": null,
-            "n_balls": 240,
-            "kernel": [
               0.381966,
               -0.381966,
               -0.381966,
@@ -947,10 +875,10 @@
               "B": 72,
               "R": 144
             },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_00.vZome"
           },
           {
-            "basename": "oblique_02",
+            "basename": "oblique_01",
             "label": "oblique",
             "subtype": null,
             "n_balls": 240,
@@ -965,28 +893,10 @@
               "B": 120,
               "R": 240
             },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_01.vZome"
           },
           {
-            "basename": "cell_first_cube_00",
-            "label": "cell_first",
-            "subtype": "cube",
-            "n_balls": 120,
-            "kernel": [
-              0.381966,
-              0.618034,
-              1.0,
-              -0.0
-            ],
-            "strut_counts": {
-              "R": 96,
-              "B": 84,
-              "Y": 48
-            },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_cube_00.vZome"
-          },
-          {
-            "basename": "cell_first_cube_01",
+            "basename": "cell_first_cube",
             "label": "cell_first",
             "subtype": "cube",
             "n_balls": 120,
@@ -1001,10 +911,10 @@
               "Y": 48,
               "R": 96
             },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_cube_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_cube.vZome"
           },
           {
-            "basename": "oblique_03",
+            "basename": "oblique_02",
             "label": "oblique",
             "subtype": null,
             "n_balls": 240,
@@ -1019,7 +929,7 @@
               "B": 120,
               "Y": 120
             },
-            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_03.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_02.vZome"
           }
         ]
       }
