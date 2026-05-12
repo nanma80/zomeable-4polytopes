@@ -45,7 +45,7 @@ Three further canonical projections — edge-first hex prism, face-first
 4×2 cuboid, face-first-like BYR shape — exist as zometool sculptures
 in vZome's *cubic* algebraic-field system but cannot be expressed
 in the icosahedral ℤ[φ] field. See
-[`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md).
+[`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md).
 
 Per-polytope writeups live in `output/<polytope>/RESULTS.md` (or
 `CLASSIFICATION.md` for 8-cell, `ZOMEABLE_PROJECTIONS.md` for 24-cell).
@@ -157,6 +157,40 @@ axes naturally accessible from either parent.  See
 [`docs/WYTHOFF_SWEEP.md`](docs/WYTHOFF_SWEEP.md#oblique-kernel-inheritance-every-oblique_vzome-is-a-parents-master-projection)
 for the explicit kernel↔master-file map.
 
+## Prismatic uniform 4-polytopes
+
+The 204 prismatic convex uniform 4-polytopes in scope (17 polyhedral
+prisms minus the tesseract, 170 duoprisms `{p}×{q}` with
+`3 ≤ p ≤ q ≤ 20` minus `(4,4)`, and 17 antiprismatic prisms with
+`4 ≤ n ≤ 20`) were swept with the identical agnostic kernel-search
+machinery used for the 47-corpus.  No filtering by obstruction
+arguments: every polytope was tested at `rng = 2` with
+`permute_dedup = False`.
+
+| Family | Description | In scope | Hit ≥ 1 | Total shapes |
+|---|---|---:|---:|---:|
+| **A** | Polyhedral prisms `P × [0,1]`        | 17  | 12 | 48 |
+| **B** | Duoprisms `{p}×{q}`                  | 170 |  6 |  9 |
+| **C** | Antiprismatic prisms `A_n × [0,1]`   | 17  |  1 |  9 |
+| **Total** |                                  | **204** | **19** | **66** |
+
+Notable surprise hits in Family B (the naive obstruction lemma —
+"every `{p}×{q}` with both `p, q ≠ 4` projects only to ℝ²" — would
+have predicted these to be impossible, but the agnostic sweep finds
+genuine rank-3 projections through clever rotations):
+
+- `{3}×{6}`, `{4}×{6}`, `{6}×{6}`, `{4}×{10}`, `{5}×{10}`, `{10}×{10}`
+
+The only Family C hit is `5_antiprismatic_prism` (pentagonal-antiprism
+prism), via the icosahedral embedding of the pentagonal antiprism (10
+non-polar icosahedron vertices).  All `n ≠ 5` antiprism prisms in
+scope produce zero zomeable projections, confirming that
+non-icosahedral antiprisms have no ℤ[φ]³ embedding.
+
+Full per-polytope tables, RESULTS.md links and vZome viewer embeds
+live in [`docs/PRISMATIC.md`](docs/PRISMATIC.md) and the per-polytope
+`output/<slug>/RESULTS.md` files.
+
 ## Prior work and novelty
 
 Standard "vertex-first / cell-first / edge-first" zome projections of
@@ -193,7 +227,7 @@ To our knowledge, the following results are new:
   and the cubic-system canonical projections (edge-first hex prism,
   face-first cuboid, BYR shape) that are not embeddable in the
   icosahedral ℤ[φ] field
-  (see [`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md)).
+  (see [`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md)).
 - **Snub 24-cell, vertex-first** — does not appear in Richter's page or
   any source we could find.
 - **Grand antiprism, vertex-first** — not in Vorthmann (2006) or other

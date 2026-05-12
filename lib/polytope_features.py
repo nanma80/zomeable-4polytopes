@@ -70,8 +70,18 @@ CELL_NAMES = {
     ((3, 2), (4, 3)): "triangular_prism",
     ((4, 5), (5, 2)): "pentagonal_prism",
     ((4, 6), (6, 2)): "hexagonal_prism",
+    ((4, 7), (7, 2)): "heptagonal_prism",
     ((4, 8), (8, 2)): "octagonal_prism",
+    ((4, 9), (9, 2)): "enneagonal_prism",
     ((4, 10), (10, 2)): "decagonal_prism",
+    # n-gonal antiprism for n>=4 (n=3 antiprism = octahedron, listed above).
+    ((3, 8), (4, 2)): "square_antiprism",
+    ((3, 10), (5, 2)): "pentagonal_antiprism",
+    ((3, 12), (6, 2)): "hexagonal_antiprism",
+    ((3, 14), (7, 2)): "heptagonal_antiprism",
+    ((3, 16), (8, 2)): "octagonal_antiprism",
+    ((3, 18), (9, 2)): "enneagonal_antiprism",
+    ((3, 20), (10, 2)): "decagonal_antiprism",
 }
 
 

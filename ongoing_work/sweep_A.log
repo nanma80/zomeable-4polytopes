@@ -1,0 +1,55 @@
+=== prismatic sweep rng=2  (17 polytopes) ===
+  generating kernels at rng=2 (permute_dedup=False)...
+  195312 kernel directions (0.52s)
+[20:56:42] [1/17   0.0% elapsed=0s ETA=0s] tetrahedron_prism
+  [tetrahedron_prism] V=8 E=16
+  [tetrahedron_prism] 9 unique shapes -> 1 emitted, 8 snap-fail  (8.8s)
+[20:56:51] [2/17   5.9% elapsed=9s ETA=141s] octahedron_prism
+  [octahedron_prism] V=12 E=30
+  [octahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (12.9s)
+[20:57:04] [3/17  11.8% elapsed=22s ETA=163s] icosahedron_prism
+  [icosahedron_prism] V=24 E=72
+  [icosahedron_prism] 5 unique shapes -> 5 emitted, 0 snap-fail  (10.4s)
+[20:57:15] [4/17  17.6% elapsed=32s ETA=150s] truncated_tetrahedron_prism
+  [truncated_tetrahedron_prism] V=24 E=48
+  [truncated_tetrahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (8.9s)
+[20:57:24] [5/17  23.5% elapsed=41s ETA=134s] cuboctahedron_prism
+  [cuboctahedron_prism] V=24 E=60
+  [cuboctahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (13.1s)
+[20:57:37] [6/17  29.4% elapsed=54s ETA=130s] dodecahedron_prism
+  [dodecahedron_prism] V=40 E=80
+  [dodecahedron_prism] 5 unique shapes -> 5 emitted, 0 snap-fail  (10.6s)
+[20:57:47] [7/17  35.3% elapsed=65s ETA=119s] truncated_octahedron_prism
+  [truncated_octahedron_prism] V=48 E=96
+  [truncated_octahedron_prism] 9 unique shapes -> 1 emitted, 8 snap-fail  (9.0s)
+[20:57:56] [8/17  41.2% elapsed=74s ETA=105s] truncated_cube_prism
+  [truncated_cube_prism] V=48 E=96
+  [truncated_cube_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (8.5s)
+[20:58:05] [9/17  47.1% elapsed=82s ETA=93s] rhombicuboctahedron_prism
+  [rhombicuboctahedron_prism] V=48 E=120
+  [rhombicuboctahedron_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (8.6s)
+[20:58:13] [10/17  52.9% elapsed=91s ETA=81s] snub_cube_prism
+  [snub_cube_prism] V=48 E=144
+  [snub_cube_prism] 0 hits in 10.3s
+[20:58:24] [11/17  58.8% elapsed=101s ETA=71s] icosidodecahedron_prism
+  [icosidodecahedron_prism] V=60 E=150
+  [icosidodecahedron_prism] 5 unique shapes -> 5 emitted, 0 snap-fail  (11.3s)
+[20:58:35] [12/17  64.7% elapsed=113s ETA=61s] truncated_cuboctahedron_prism
+  [truncated_cuboctahedron_prism] V=96 E=192
+  [truncated_cuboctahedron_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (12.0s)
+[20:58:47] [13/17  70.6% elapsed=125s ETA=52s] truncated_dodecahedron_prism
+  [truncated_dodecahedron_prism] V=120 E=240
+  [truncated_dodecahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (12.9s)
+[20:59:00] [14/17  76.5% elapsed=137s ETA=42s] truncated_icosahedron_prism
+  [truncated_icosahedron_prism] V=120 E=240
+  [truncated_icosahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (13.3s)
+[20:59:13] [15/17  82.4% elapsed=151s ETA=32s] rhombicosidodecahedron_prism
+  [rhombicosidodecahedron_prism] V=120 E=300
+  [rhombicosidodecahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (18.2s)
+[20:59:31] [16/17  88.2% elapsed=169s ETA=23s] snub_dodecahedron_prism
+  [snub_dodecahedron_prism] V=120 E=360
+  [snub_dodecahedron_prism] 0 hits in 20.7s
+[20:59:52] [17/17  94.1% elapsed=190s ETA=12s] truncated_icosidodecahedron_prism
+  [truncated_icosidodecahedron_prism] V=240 E=480
+  [truncated_icosidodecahedron_prism] 7 unique shapes -> 7 emitted, 0 snap-fail  (20.3s)
+=== done (209.8s) ===

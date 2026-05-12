@@ -1,0 +1,55 @@
+=== prismatic sweep rng=2  (17 polytopes) ===
+  generating kernels at rng=2 (permute_dedup=False)...
+  195312 kernel directions (0.52s)
+[21:00:31] [1/17   0.0% elapsed=0s ETA=0s] 4_antiprismatic_prism
+  [4_antiprismatic_prism] V=16 E=40
+  [4_antiprismatic_prism] 0 hits in 6.7s
+[21:00:38] [2/17   5.9% elapsed=7s ETA=108s] 5_antiprismatic_prism
+  [5_antiprismatic_prism] V=20 E=50
+  [5_antiprismatic_prism] 3 unique shapes -> 0 emitted, 3 snap-fail  (7.1s)
+[21:00:45] [3/17  11.8% elapsed=14s ETA=104s] 6_antiprismatic_prism
+  [6_antiprismatic_prism] V=24 E=60
+  [6_antiprismatic_prism] 0 hits in 7.5s
+[21:00:53] [4/17  17.6% elapsed=21s ETA=100s] 7_antiprismatic_prism
+  [7_antiprismatic_prism] V=28 E=70
+  [7_antiprismatic_prism] 0 hits in 6.9s
+[21:00:59] [5/17  23.5% elapsed=28s ETA=92s] 8_antiprismatic_prism
+  [8_antiprismatic_prism] V=32 E=80
+  [8_antiprismatic_prism] 0 hits in 7.9s
+[21:01:07] [6/17  29.4% elapsed=36s ETA=87s] 9_antiprismatic_prism
+  [9_antiprismatic_prism] V=36 E=90
+  [9_antiprismatic_prism] 0 hits in 7.3s
+[21:01:15] [7/17  35.3% elapsed=43s ETA=80s] 10_antiprismatic_prism
+  [10_antiprismatic_prism] V=40 E=100
+  [10_antiprismatic_prism] 0 hits in 8.4s
+[21:01:23] [8/17  41.2% elapsed=52s ETA=74s] 11_antiprismatic_prism
+  [11_antiprismatic_prism] V=44 E=110
+  [11_antiprismatic_prism] 0 hits in 7.6s
+[21:01:31] [9/17  47.1% elapsed=59s ETA=67s] 12_antiprismatic_prism
+  [12_antiprismatic_prism] V=48 E=120
+  [12_antiprismatic_prism] 0 hits in 8.9s
+[21:01:39] [10/17  52.9% elapsed=68s ETA=61s] 13_antiprismatic_prism
+  [13_antiprismatic_prism] V=52 E=130
+  [13_antiprismatic_prism] 0 hits in 7.9s
+[21:01:47] [11/17  58.8% elapsed=76s ETA=53s] 14_antiprismatic_prism
+  [14_antiprismatic_prism] V=56 E=140
+  [14_antiprismatic_prism] 0 hits in 9.6s
+[21:01:57] [12/17  64.7% elapsed=86s ETA=47s] 15_antiprismatic_prism
+  [15_antiprismatic_prism] V=60 E=150
+  [15_antiprismatic_prism] 0 hits in 8.4s
+[21:02:05] [13/17  70.6% elapsed=94s ETA=39s] 16_antiprismatic_prism
+  [16_antiprismatic_prism] V=64 E=160
+  [16_antiprismatic_prism] 0 hits in 10.2s
+[21:02:16] [14/17  76.5% elapsed=104s ETA=32s] 17_antiprismatic_prism
+  [17_antiprismatic_prism] V=68 E=170
+  [17_antiprismatic_prism] 0 hits in 8.8s
+[21:02:24] [15/17  82.4% elapsed=113s ETA=24s] 18_antiprismatic_prism
+  [18_antiprismatic_prism] V=72 E=180
+  [18_antiprismatic_prism] 0 hits in 10.8s
+[21:02:35] [16/17  88.2% elapsed=124s ETA=17s] 19_antiprismatic_prism
+  [19_antiprismatic_prism] V=76 E=190
+  [19_antiprismatic_prism] 0 hits in 9.2s
+[21:02:44] [17/17  94.1% elapsed=133s ETA=8s] 20_antiprismatic_prism
+  [20_antiprismatic_prism] V=80 E=200
+  [20_antiprismatic_prism] 0 hits in 11.4s
+=== done (144.6s) ===
