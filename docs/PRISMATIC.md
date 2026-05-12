@@ -123,32 +123,20 @@ strut counts and visual inspection.)
 | 6 | 6 | 36 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
 | 10 | 10 | 100 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
 
-The remaining 164 duoprisms produced 0 zomeable projections, consistent with the obstruction lemma (see below).
+The remaining 164 duoprisms produced 0 zomeable projections, consistent with the obstruction lemma (see above).
 
 
 ### Family C — antiprismatic prisms
 
 17 in scope (n ∈ [4, 20]; n=3 = octahedral prism, in Family A).
 
+**1 antiprismatic prism** yielded ≥ 1 zomeable projection.
+
 | n | nV (4D) | Distinct shapes |
 |---:|---:|---:|
-| 4 | 16 | 4_antiprismatic_prism → 0 |
 | 5 | 20 | [`5_antiprismatic_prism`](../output/antiprismatic_prisms/5_antiprismatic_prism/RESULTS.md) → 9 |
-| 6 | 24 | 6_antiprismatic_prism → 0 |
-| 7 | 28 | 7_antiprismatic_prism → 0 |
-| 8 | 32 | 8_antiprismatic_prism → 0 |
-| 9 | 36 | 9_antiprismatic_prism → 0 |
-| 10 | 40 | 10_antiprismatic_prism → 0 |
-| 11 | 44 | 11_antiprismatic_prism → 0 |
-| 12 | 48 | 12_antiprismatic_prism → 0 |
-| 13 | 52 | 13_antiprismatic_prism → 0 |
-| 14 | 56 | 14_antiprismatic_prism → 0 |
-| 15 | 60 | 15_antiprismatic_prism → 0 |
-| 16 | 64 | 16_antiprismatic_prism → 0 |
-| 17 | 68 | 17_antiprismatic_prism → 0 |
-| 18 | 72 | 18_antiprismatic_prism → 0 |
-| 19 | 76 | 19_antiprismatic_prism → 0 |
-| 20 | 80 | 20_antiprismatic_prism → 0 |
+
+The remaining 16 antiprismatic prisms (n ≠ 5) produced 0 zomeable projections, consistent with the obstruction lemma (see above): only the pentagonal antiprism embeds in ℤ[φ]³ via the icosahedron.
 
 
 ## Reproduction

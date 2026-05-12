@@ -108,26 +108,41 @@ def _table_b(recs):
     lines.append("The remaining "
                  f"{len(rows) - len(hits)} duoprisms produced 0 zomeable "
                  "projections, consistent with the obstruction lemma "
-                 "(see below).")
+                 "(see above).")
     lines.append("")
     return "\n".join(lines)
 
 
 def _table_c(recs):
     rows = sorted([r for r in recs if r["family"] == "C"], key=_sort_c)
+    hits = [r for r in rows
+            if any(e.get("status") == "emitted" for e in r.get("emitted", []))]
     lines = []
     lines.append("### Family C — antiprismatic prisms")
     lines.append("")
     lines.append("17 in scope (n ∈ [4, 20]; n=3 = octahedral prism, in Family A).")
     lines.append("")
-    lines.append("| n | nV (4D) | Distinct shapes |")
-    lines.append("|---:|---:|---:|")
-    for r in rows:
-        emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
-        link = (f"[`{r['slug']}`]({_rel_link(r['slug'], 'C')})"
-                if emits else r["slug"])
-        lines.append(f"| {r['metadata']['n']} | {r.get('nV','?')} "
-                     f"| {link} → {len(emits)} |")
+    if hits:
+        noun = "antiprismatic prism" if len(hits) == 1 else "antiprismatic prisms"
+        lines.append(f"**{len(hits)} {noun}** yielded ≥ 1 zomeable projection.")
+        lines.append("")
+        lines.append("| n | nV (4D) | Distinct shapes |")
+        lines.append("|---:|---:|---:|")
+        for r in hits:
+            emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
+            link = f"[`{r['slug']}`]({_rel_link(r['slug'], 'C')})"
+            lines.append(f"| {r['metadata']['n']} | {r.get('nV','?')} "
+                         f"| {link} → {len(emits)} |")
+    else:
+        lines.append("No antiprismatic prisms yielded zomeable projections.")
+    lines.append("")
+    remaining = len(rows) - len(hits)
+    if remaining:
+        noun = "antiprismatic prism" if remaining == 1 else "antiprismatic prisms"
+        lines.append(f"The remaining {remaining} {noun} (n ≠ 5) produced 0 "
+                     "zomeable projections, consistent with the obstruction "
+                     "lemma (see above): only the pentagonal antiprism embeds "
+                     "in ℤ[φ]³ via the icosahedron.")
     lines.append("")
     return "\n".join(lines)
 
