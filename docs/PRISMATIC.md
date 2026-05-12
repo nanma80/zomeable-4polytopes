@@ -41,7 +41,7 @@ that maps the projected edge directions onto Zome axes —
 planar images cannot satisfy this for non-collinear edge
 sets).
 
-## Sweep methodology
+## Methodology
 
 Identical machinery to the 47-corpus sweep:
 
@@ -59,71 +59,49 @@ Driver: [`tools/run_prismatic_sweep.py`](../tools/run_prismatic_sweep.py).
 Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_log.jsonl)
 (one record per polytope).
 
-## Obstruction lemma (classification aid; not used as a filter)
-
-For a duoprism `{p}×{q}` with both p, q ∉ {4}: no rank-3
-orthographic projection ℝ⁴ → ℝ³ sends all vertices into
-ℤ[φ]³.  Reason: the standard duoprism vertex set lies on the
-Clifford torus, with two distinct 2D circles each in their
-own ℤ[φ]-incompatible field unless that circle is the
-"square" (p or q = 4).  An analogous obstruction kills
-non-icosahedral antiprism prisms (only the pentagonal case
-n=5, which embeds inside the icosahedron, survives in ℤ[φ]).
-
-The sweep treats this lemma as a *prediction* to falsify,
-not as a filter.  Zero hits for `{3}×{3}`, `{5}×{5}`,
-`{3}×{5}`, etc., empirically confirm the lemma in the
-`rng = 2` regime.  Surprise hits — when they occur — are
-worth manual review (the search engine returns kernels for
-which edge directions align; some such hits may still produce
-ℤ[φ]-incompatible 3D shapes that nevertheless pass `_snap_coords`
-via the multi-scale rescaling.  These warrant case-by-case
-verification — see the per-polytope `RESULTS.md` files for
-strut counts and visual inspection.)
-
 ## Results
 
 ### Family A — polyhedral prisms
 
 17 in scope (the cube prism = tesseract is covered in the main corpus).
 
-| 3D base polyhedron | nV (4D) | Distinct shapes |
-|---|---:|---:|
-| cuboctahedron ([`cuboctahedron_prism`](../output/polyhedral_prisms/cuboctahedron_prism/RESULTS.md)) | 24 | 2 |
-| dodecahedron ([`dodecahedron_prism`](../output/polyhedral_prisms/dodecahedron_prism/RESULTS.md)) | 40 | 5 |
-| icosahedron ([`icosahedron_prism`](../output/polyhedral_prisms/icosahedron_prism/RESULTS.md)) | 24 | 5 |
-| icosidodecahedron ([`icosidodecahedron_prism`](../output/polyhedral_prisms/icosidodecahedron_prism/RESULTS.md)) | 60 | 5 |
-| octahedron ([`octahedron_prism`](../output/polyhedral_prisms/octahedron_prism/RESULTS.md)) | 12 | 2 |
-| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/polyhedral_prisms/rhombicosidodecahedron_prism/RESULTS.md)) | 120 | 6 |
-| rhombicuboctahedron (rhombicuboctahedron_prism) | 48 | 0 |
-| snub cube (snub_cube_prism) | 48 | 0 |
-| snub dodecahedron (snub_dodecahedron_prism) | 120 | 0 |
-| tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 8 | 1 |
-| truncated cube (truncated_cube_prism) | 48 | 0 |
-| truncated cuboctahedron (truncated_cuboctahedron_prism) | 96 | 0 |
-| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 120 | 6 |
-| truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 120 | 6 |
-| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 240 | 7 |
-| truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 48 | 1 |
-| truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/polyhedral_prisms/truncated_tetrahedron_prism/RESULTS.md)) | 24 | 2 |
+| 3D base polyhedron | Distinct shapes |
+|---|---:|
+| cuboctahedron ([`cuboctahedron_prism`](../output/polyhedral_prisms/cuboctahedron_prism/RESULTS.md)) | 2 |
+| dodecahedron ([`dodecahedron_prism`](../output/polyhedral_prisms/dodecahedron_prism/RESULTS.md)) | 5 |
+| icosahedron ([`icosahedron_prism`](../output/polyhedral_prisms/icosahedron_prism/RESULTS.md)) | 5 |
+| icosidodecahedron ([`icosidodecahedron_prism`](../output/polyhedral_prisms/icosidodecahedron_prism/RESULTS.md)) | 5 |
+| octahedron ([`octahedron_prism`](../output/polyhedral_prisms/octahedron_prism/RESULTS.md)) | 2 |
+| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/polyhedral_prisms/rhombicosidodecahedron_prism/RESULTS.md)) | 6 |
+| rhombicuboctahedron (rhombicuboctahedron_prism) | 0 |
+| snub cube (snub_cube_prism) | 0 |
+| snub dodecahedron (snub_dodecahedron_prism) | 0 |
+| tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 1 |
+| truncated cube (truncated_cube_prism) | 0 |
+| truncated cuboctahedron (truncated_cuboctahedron_prism) | 0 |
+| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 6 |
+| truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 6 |
+| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 7 |
+| truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 1 |
+| truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/polyhedral_prisms/truncated_tetrahedron_prism/RESULTS.md)) | 2 |
 
 
-### Family B — duoprisms {p}×{q}
+### Family B — duoprisms `{p}×{q}`
 
 170 in scope (3 ≤ p ≤ q ≤ 20, skipping (4, 4) = tesseract).
 
 **6 duoprisms** yielded ≥ 1 zomeable projection.
 
-| p | q | nV (4D) | Distinct shapes |
-|---:|---:|---:|---:|
-| 3 | 6 | 18 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
-| 4 | 6 | 24 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 1 |
-| 4 | 10 | 40 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 2 |
-| 5 | 10 | 50 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
-| 6 | 6 | 36 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
-| 10 | 10 | 100 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
+| p | q | Distinct shapes |
+|---:|---:|---:|
+| 3 | 6 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
+| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 1 |
+| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 2 |
+| 5 | 10 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
+| 6 | 6 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
+| 10 | 10 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
 
-The remaining 164 duoprisms produced 0 zomeable projections, consistent with the obstruction lemma (see above).
+The remaining 164 duoprisms produced 0 zomeable projections.  Most fail because at least one of the {p}-gon or {q}-gon circles lies in ℤ[√3] (p ∈ {3, 6, 12, …}) or ℤ[√2] (p ∈ {8, …}), which don't embed in the icosahedral field ℤ[φ].  The icosahedral-compatible regular polygons in range are {4} (in ℤ), {5}, and {10} (both in ℤ[φ]).
 
 
 ### Family C — antiprismatic prisms
@@ -132,11 +110,11 @@ The remaining 164 duoprisms produced 0 zomeable projections, consistent with the
 
 **1 antiprismatic prism** yielded ≥ 1 zomeable projection.
 
-| n | nV (4D) | Distinct shapes |
-|---:|---:|---:|
-| 5 | 20 | [`5_antiprismatic_prism`](../output/antiprismatic_prisms/5_antiprismatic_prism/RESULTS.md) → 9 |
+| n | Distinct shapes |
+|---:|---:|
+| 5 | [`5_antiprismatic_prism`](../output/antiprismatic_prisms/5_antiprismatic_prism/RESULTS.md) → 9 |
 
-The remaining 16 antiprismatic prisms (n ≠ 5) produced 0 zomeable projections, consistent with the obstruction lemma (see above): only the pentagonal antiprism embeds in ℤ[φ]³ via the icosahedron.
+The remaining 16 antiprismatic prisms (n ≠ 5) produced 0 zomeable projections: only the pentagonal antiprism embeds in ℤ[φ]³ via the icosahedron's non-polar vertices.
 
 
 ## Reproduction

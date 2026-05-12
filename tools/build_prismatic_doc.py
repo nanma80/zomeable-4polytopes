@@ -68,16 +68,15 @@ def _table_a(recs):
     lines.append("")
     lines.append("17 in scope (the cube prism = tesseract is covered in the main corpus).")
     lines.append("")
-    lines.append("| 3D base polyhedron | nV (4D) | Distinct shapes |")
-    lines.append("|---|---:|---:|")
+    lines.append("| 3D base polyhedron | Distinct shapes |")
+    lines.append("|---|---:|")
     for r in rows:
         emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
-        nv = r.get("nV", "?")
         n = len(emits)
         link = (f"[`{r['slug']}`]({_rel_link(r['slug'], 'A')})"
                 if n > 0 else r["slug"])
         polyhedron = r["metadata"]["polyhedron"].replace("_", " ")
-        lines.append(f"| {polyhedron} ({link}) | {nv} | {n} |")
+        lines.append(f"| {polyhedron} ({link}) | {n} |")
     lines.append("")
     return "\n".join(lines)
 
@@ -88,27 +87,31 @@ def _table_b(recs):
     hits = [r for r in rows
             if any(e.get("status") == "emitted" for e in r.get("emitted", []))]
     lines = []
-    lines.append("### Family B — duoprisms {p}×{q}")
+    lines.append("### Family B — duoprisms `{p}×{q}`")
     lines.append("")
     lines.append(f"170 in scope (3 ≤ p ≤ q ≤ 20, skipping (4, 4) = tesseract).")
     lines.append("")
     if hits:
         lines.append(f"**{len(hits)} duoprisms** yielded ≥ 1 zomeable projection.")
         lines.append("")
-        lines.append("| p | q | nV (4D) | Distinct shapes |")
-        lines.append("|---:|---:|---:|---:|")
+        lines.append("| p | q | Distinct shapes |")
+        lines.append("|---:|---:|---:|")
         for r in hits:
             p, q = r["metadata"]["p"], r["metadata"]["q"]
             emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
             link = f"[`{r['slug']}`]({_rel_link(r['slug'], 'B')})"
-            lines.append(f"| {p} | {q} | {r.get('nV','?')} | {link} → {len(emits)} |")
+            lines.append(f"| {p} | {q} | {link} → {len(emits)} |")
     else:
         lines.append("No duoprisms yielded zomeable projections.")
     lines.append("")
     lines.append("The remaining "
                  f"{len(rows) - len(hits)} duoprisms produced 0 zomeable "
-                 "projections, consistent with the obstruction lemma "
-                 "(see above).")
+                 "projections.  Most fail because at least one of the "
+                 "{p}-gon or {q}-gon circles lies in ℤ[√3] (p ∈ {3, 6, "
+                 "12, …}) or ℤ[√2] (p ∈ {8, …}), which don't embed in "
+                 "the icosahedral field ℤ[φ].  The icosahedral-compatible "
+                 "regular polygons in range are {4} (in ℤ), {5}, and "
+                 "{10} (both in ℤ[φ]).")
     lines.append("")
     return "\n".join(lines)
 
@@ -126,13 +129,12 @@ def _table_c(recs):
         noun = "antiprismatic prism" if len(hits) == 1 else "antiprismatic prisms"
         lines.append(f"**{len(hits)} {noun}** yielded ≥ 1 zomeable projection.")
         lines.append("")
-        lines.append("| n | nV (4D) | Distinct shapes |")
-        lines.append("|---:|---:|---:|")
+        lines.append("| n | Distinct shapes |")
+        lines.append("|---:|---:|")
         for r in hits:
             emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
             link = f"[`{r['slug']}`]({_rel_link(r['slug'], 'C')})"
-            lines.append(f"| {r['metadata']['n']} | {r.get('nV','?')} "
-                         f"| {link} → {len(emits)} |")
+            lines.append(f"| {r['metadata']['n']} | {link} → {len(emits)} |")
     else:
         lines.append("No antiprismatic prisms yielded zomeable projections.")
     lines.append("")
@@ -140,9 +142,9 @@ def _table_c(recs):
     if remaining:
         noun = "antiprismatic prism" if remaining == 1 else "antiprismatic prisms"
         lines.append(f"The remaining {remaining} {noun} (n ≠ 5) produced 0 "
-                     "zomeable projections, consistent with the obstruction "
-                     "lemma (see above): only the pentagonal antiprism embeds "
-                     "in ℤ[φ]³ via the icosahedron.")
+                     "zomeable projections: only the pentagonal antiprism "
+                     "embeds in ℤ[φ]³ via the icosahedron's non-polar "
+                     "vertices.")
     lines.append("")
     return "\n".join(lines)
 
@@ -220,7 +222,7 @@ def build_doc(recs):
     L.append("planar images cannot satisfy this for non-collinear edge")
     L.append("sets).")
     L.append("")
-    L.append("## Sweep methodology")
+    L.append("## Methodology")
     L.append("")
     L.append("Identical machinery to the 47-corpus sweep:")
     L.append("")
@@ -237,28 +239,6 @@ def build_doc(recs):
     L.append("Driver: [`tools/run_prismatic_sweep.py`](../tools/run_prismatic_sweep.py).")
     L.append("Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_log.jsonl)")
     L.append("(one record per polytope).")
-    L.append("")
-    L.append("## Obstruction lemma (classification aid; not used as a filter)")
-    L.append("")
-    L.append("For a duoprism `{p}×{q}` with both p, q ∉ {4}: no rank-3")
-    L.append("orthographic projection ℝ⁴ → ℝ³ sends all vertices into")
-    L.append("ℤ[φ]³.  Reason: the standard duoprism vertex set lies on the")
-    L.append("Clifford torus, with two distinct 2D circles each in their")
-    L.append("own ℤ[φ]-incompatible field unless that circle is the")
-    L.append("\"square\" (p or q = 4).  An analogous obstruction kills")
-    L.append("non-icosahedral antiprism prisms (only the pentagonal case")
-    L.append("n=5, which embeds inside the icosahedron, survives in ℤ[φ]).")
-    L.append("")
-    L.append("The sweep treats this lemma as a *prediction* to falsify,")
-    L.append("not as a filter.  Zero hits for `{3}×{3}`, `{5}×{5}`,")
-    L.append("`{3}×{5}`, etc., empirically confirm the lemma in the")
-    L.append("`rng = 2` regime.  Surprise hits — when they occur — are")
-    L.append("worth manual review (the search engine returns kernels for")
-    L.append("which edge directions align; some such hits may still produce")
-    L.append("ℤ[φ]-incompatible 3D shapes that nevertheless pass `_snap_coords`")
-    L.append("via the multi-scale rescaling.  These warrant case-by-case")
-    L.append("verification — see the per-polytope `RESULTS.md` files for")
-    L.append("strut counts and visual inspection.)")
     L.append("")
     L.append("## Results")
     L.append("")
