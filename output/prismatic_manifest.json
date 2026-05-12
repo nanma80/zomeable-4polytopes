@@ -27,7 +27,7 @@
             "strut_counts": {
               "G": 6
             },
-            "path": "output/tetrahedron_prism/cell_first_tetrahedron.vZome"
+            "path": "output/polyhedral_prisms/tetrahedron_prism/cell_first_tetrahedron.vZome"
           }
         ]
       },
@@ -54,7 +54,7 @@
             "strut_counts": {
               "G": 12
             },
-            "path": "output/octahedron_prism/cell_first_octahedron.vZome"
+            "path": "output/polyhedral_prisms/octahedron_prism/cell_first_octahedron.vZome"
           },
           {
             "basename": "edge_first",
@@ -71,7 +71,7 @@
               "B": 13,
               "G": 8
             },
-            "path": "output/octahedron_prism/edge_first.vZome"
+            "path": "output/polyhedral_prisms/octahedron_prism/edge_first.vZome"
           }
         ]
       },
@@ -98,7 +98,7 @@
             "strut_counts": {
               "B": 30
             },
-            "path": "output/icosahedron_prism/cell_first_icosahedron.vZome"
+            "path": "output/polyhedral_prisms/icosahedron_prism/cell_first_icosahedron.vZome"
           },
           {
             "basename": "face_first_square",
@@ -116,7 +116,7 @@
               "B": 14,
               "Y": 8
             },
-            "path": "output/icosahedron_prism/face_first_square.vZome"
+            "path": "output/polyhedral_prisms/icosahedron_prism/face_first_square.vZome"
           },
           {
             "basename": "oblique_00",
@@ -134,7 +134,7 @@
               "Y": 20,
               "B": 20
             },
-            "path": "output/icosahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/icosahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "face_first_triangle",
@@ -152,7 +152,7 @@
               "R": 24,
               "B": 12
             },
-            "path": "output/icosahedron_prism/face_first_triangle.vZome"
+            "path": "output/polyhedral_prisms/icosahedron_prism/face_first_triangle.vZome"
           },
           {
             "basename": "oblique_01",
@@ -170,7 +170,7 @@
               "R": 32,
               "B": 20
             },
-            "path": "output/icosahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/icosahedron_prism/oblique_01.vZome"
           }
         ]
       },
@@ -197,7 +197,7 @@
             "strut_counts": {
               "G": 18
             },
-            "path": "output/truncated_tetrahedron_prism/cell_first_truncated_tetrahedron.vZome"
+            "path": "output/polyhedral_prisms/truncated_tetrahedron_prism/cell_first_truncated_tetrahedron.vZome"
           },
           {
             "basename": "face_first_square",
@@ -214,7 +214,7 @@
               "B": 24,
               "G": 24
             },
-            "path": "output/truncated_tetrahedron_prism/face_first_square.vZome"
+            "path": "output/polyhedral_prisms/truncated_tetrahedron_prism/face_first_square.vZome"
           }
         ]
       },
@@ -241,7 +241,7 @@
             "strut_counts": {
               "G": 24
             },
-            "path": "output/cuboctahedron_prism/cell_first_cuboctahedron.vZome"
+            "path": "output/polyhedral_prisms/cuboctahedron_prism/cell_first_cuboctahedron.vZome"
           },
           {
             "basename": "cell_first_cube",
@@ -258,7 +258,7 @@
               "B": 16,
               "G": 16
             },
-            "path": "output/cuboctahedron_prism/cell_first_cube.vZome"
+            "path": "output/polyhedral_prisms/cuboctahedron_prism/cell_first_cube.vZome"
           }
         ]
       },
@@ -285,7 +285,7 @@
             "strut_counts": {
               "B": 30
             },
-            "path": "output/dodecahedron_prism/cell_first_dodecahedron.vZome"
+            "path": "output/polyhedral_prisms/dodecahedron_prism/cell_first_dodecahedron.vZome"
           },
           {
             "basename": "oblique_00",
@@ -303,7 +303,7 @@
               "R": 24,
               "Y": 44
             },
-            "path": "output/dodecahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/dodecahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "oblique_01",
@@ -321,7 +321,7 @@
               "R": 40,
               "Y": 20
             },
-            "path": "output/dodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/dodecahedron_prism/oblique_01.vZome"
           },
           {
             "basename": "face_first_square",
@@ -339,7 +339,7 @@
               "Y": 8,
               "B": 18
             },
-            "path": "output/dodecahedron_prism/face_first_square.vZome"
+            "path": "output/polyhedral_prisms/dodecahedron_prism/face_first_square.vZome"
           },
           {
             "basename": "oblique_02",
@@ -357,7 +357,7 @@
               "Y": 20,
               "R": 40
             },
-            "path": "output/dodecahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/dodecahedron_prism/oblique_02.vZome"
           }
         ]
       },
@@ -384,7 +384,7 @@
             "strut_counts": {
               "G": 36
             },
-            "path": "output/truncated_octahedron_prism/cell_first_truncated_octahedron.vZome"
+            "path": "output/polyhedral_prisms/truncated_octahedron_prism/cell_first_truncated_octahedron.vZome"
           }
         ]
       },
@@ -441,7 +441,7 @@
             "strut_counts": {
               "B": 60
             },
-            "path": "output/icosidodecahedron_prism/cell_first_icosidodecahedron.vZome"
+            "path": "output/polyhedral_prisms/icosidodecahedron_prism/cell_first_icosidodecahedron.vZome"
           },
           {
             "basename": "oblique_00",
@@ -459,7 +459,7 @@
               "R": 48,
               "B": 24
             },
-            "path": "output/icosidodecahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/icosidodecahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "face_first_pentagon",
@@ -477,7 +477,7 @@
               "B": 40,
               "Y": 40
             },
-            "path": "output/icosidodecahedron_prism/face_first_pentagon.vZome"
+            "path": "output/polyhedral_prisms/icosidodecahedron_prism/face_first_pentagon.vZome"
           },
           {
             "basename": "edge_first",
@@ -495,7 +495,7 @@
               "B": 25,
               "Y": 16
             },
-            "path": "output/icosidodecahedron_prism/edge_first.vZome"
+            "path": "output/polyhedral_prisms/icosidodecahedron_prism/edge_first.vZome"
           },
           {
             "basename": "oblique_01",
@@ -513,7 +513,7 @@
               "B": 40,
               "R": 70
             },
-            "path": "output/icosidodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/icosidodecahedron_prism/oblique_01.vZome"
           }
         ]
       },
@@ -550,7 +550,7 @@
             "strut_counts": {
               "B": 90
             },
-            "path": "output/truncated_dodecahedron_prism/cell_first_truncated_dodecahedron.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/cell_first_truncated_dodecahedron.vZome"
           },
           {
             "basename": "oblique_00",
@@ -568,7 +568,7 @@
               "B": 36,
               "R": 72
             },
-            "path": "output/truncated_dodecahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "oblique_01",
@@ -586,7 +586,7 @@
               "R": 120,
               "B": 60
             },
-            "path": "output/truncated_dodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/oblique_01.vZome"
           },
           {
             "basename": "face_first_square_00",
@@ -604,7 +604,7 @@
               "B": 46,
               "Y": 24
             },
-            "path": "output/truncated_dodecahedron_prism/face_first_square_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/face_first_square_00.vZome"
           },
           {
             "basename": "oblique_02",
@@ -622,7 +622,7 @@
               "Y": 60,
               "B": 60
             },
-            "path": "output/truncated_dodecahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/oblique_02.vZome"
           },
           {
             "basename": "face_first_square_01",
@@ -640,7 +640,7 @@
               "B": 46,
               "Y": 24
             },
-            "path": "output/truncated_dodecahedron_prism/face_first_square_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_dodecahedron_prism/face_first_square_01.vZome"
           }
         ]
       },
@@ -667,7 +667,7 @@
             "strut_counts": {
               "B": 90
             },
-            "path": "output/truncated_icosahedron_prism/cell_first_truncated_icosahedron.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/cell_first_truncated_icosahedron.vZome"
           },
           {
             "basename": "face_first_square",
@@ -685,7 +685,7 @@
               "B": 46,
               "R": 48
             },
-            "path": "output/truncated_icosahedron_prism/face_first_square.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/face_first_square.vZome"
           },
           {
             "basename": "oblique_00",
@@ -703,7 +703,7 @@
               "B": 60,
               "R": 120
             },
-            "path": "output/truncated_icosahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "oblique_01",
@@ -721,7 +721,7 @@
               "Y": 132,
               "B": 36
             },
-            "path": "output/truncated_icosahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_01.vZome"
           },
           {
             "basename": "oblique_02",
@@ -739,7 +739,7 @@
               "R": 72,
               "B": 36
             },
-            "path": "output/truncated_icosahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_02.vZome"
           },
           {
             "basename": "oblique_03",
@@ -757,7 +757,7 @@
               "B": 60,
               "Y": 60
             },
-            "path": "output/truncated_icosahedron_prism/oblique_03.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosahedron_prism/oblique_03.vZome"
           }
         ]
       },
@@ -784,7 +784,7 @@
             "strut_counts": {
               "B": 120
             },
-            "path": "output/rhombicosidodecahedron_prism/cell_first_rhombicosidodecahedron.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_rhombicosidodecahedron.vZome"
           },
           {
             "basename": "oblique_00",
@@ -802,7 +802,7 @@
               "R": 96,
               "B": 48
             },
-            "path": "output/rhombicosidodecahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "face_first_pentagon",
@@ -820,7 +820,7 @@
               "R": 140,
               "B": 70
             },
-            "path": "output/rhombicosidodecahedron_prism/face_first_pentagon.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/face_first_pentagon.vZome"
           },
           {
             "basename": "cell_first_cube_00",
@@ -838,7 +838,7 @@
               "Y": 32,
               "B": 48
             },
-            "path": "output/rhombicosidodecahedron_prism/cell_first_cube_00.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_cube_00.vZome"
           },
           {
             "basename": "cell_first_cube_01",
@@ -856,7 +856,7 @@
               "R": 64,
               "Y": 32
             },
-            "path": "output/rhombicosidodecahedron_prism/cell_first_cube_01.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/cell_first_cube_01.vZome"
           },
           {
             "basename": "oblique_01",
@@ -874,7 +874,7 @@
               "Y": 80,
               "B": 80
             },
-            "path": "output/rhombicosidodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/rhombicosidodecahedron_prism/oblique_01.vZome"
           }
         ]
       },
@@ -911,7 +911,7 @@
             "strut_counts": {
               "B": 180
             },
-            "path": "output/truncated_icosidodecahedron_prism/cell_first_truncated_icosidodecahedron.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_truncated_icosidodecahedron.vZome"
           },
           {
             "basename": "oblique_00",
@@ -929,7 +929,7 @@
               "B": 72,
               "Y": 264
             },
-            "path": "output/truncated_icosidodecahedron_prism/oblique_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_00.vZome"
           },
           {
             "basename": "oblique_01",
@@ -947,7 +947,7 @@
               "B": 72,
               "R": 144
             },
-            "path": "output/truncated_icosidodecahedron_prism/oblique_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_01.vZome"
           },
           {
             "basename": "oblique_02",
@@ -965,7 +965,7 @@
               "B": 120,
               "R": 240
             },
-            "path": "output/truncated_icosidodecahedron_prism/oblique_02.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_02.vZome"
           },
           {
             "basename": "cell_first_cube_00",
@@ -983,7 +983,7 @@
               "B": 84,
               "Y": 48
             },
-            "path": "output/truncated_icosidodecahedron_prism/cell_first_cube_00.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_cube_00.vZome"
           },
           {
             "basename": "cell_first_cube_01",
@@ -1001,7 +1001,7 @@
               "Y": 48,
               "R": 96
             },
-            "path": "output/truncated_icosidodecahedron_prism/cell_first_cube_01.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/cell_first_cube_01.vZome"
           },
           {
             "basename": "oblique_03",
@@ -1019,7 +1019,7 @@
               "B": 120,
               "Y": 120
             },
-            "path": "output/truncated_icosidodecahedron_prism/oblique_03.vZome"
+            "path": "output/polyhedral_prisms/truncated_icosidodecahedron_prism/oblique_03.vZome"
           }
         ]
       }
@@ -1058,7 +1058,7 @@
             "strut_counts": {
               "B": 20
             },
-            "path": "output/5_antiprismatic_prism/cell_first_pentagonal_antiprism.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/cell_first_pentagonal_antiprism.vZome"
           },
           {
             "basename": "oblique_00",
@@ -1076,7 +1076,7 @@
               "B": 12,
               "Y": 8
             },
-            "path": "output/5_antiprismatic_prism/oblique_00.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/oblique_00.vZome"
           },
           {
             "basename": "oblique_01",
@@ -1094,7 +1094,7 @@
               "B": 12,
               "Y": 12
             },
-            "path": "output/5_antiprismatic_prism/oblique_01.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/oblique_01.vZome"
           },
           {
             "basename": "oblique_02",
@@ -1112,7 +1112,7 @@
               "Y": 26,
               "B": 4
             },
-            "path": "output/5_antiprismatic_prism/oblique_02.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/oblique_02.vZome"
           },
           {
             "basename": "face_first_triangle",
@@ -1130,7 +1130,7 @@
               "B": 12,
               "R": 12
             },
-            "path": "output/5_antiprismatic_prism/face_first_triangle.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/face_first_triangle.vZome"
           },
           {
             "basename": "oblique_03",
@@ -1148,7 +1148,7 @@
               "R": 22,
               "B": 12
             },
-            "path": "output/5_antiprismatic_prism/oblique_03.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/oblique_03.vZome"
           },
           {
             "basename": "face_first_square",
@@ -1166,7 +1166,7 @@
               "R": 12,
               "B": 8
             },
-            "path": "output/5_antiprismatic_prism/face_first_square.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/face_first_square.vZome"
           },
           {
             "basename": "oblique_04",
@@ -1183,7 +1183,7 @@
               "R": 30,
               "B": 20
             },
-            "path": "output/5_antiprismatic_prism/oblique_04.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/oblique_04.vZome"
           },
           {
             "basename": "face_first_pentagon",
@@ -1201,7 +1201,7 @@
               "B": 20,
               "R": 10
             },
-            "path": "output/5_antiprismatic_prism/face_first_pentagon.vZome"
+            "path": "output/antiprismatic_prisms/5_antiprismatic_prism/face_first_pentagon.vZome"
           }
         ]
       },
@@ -1415,7 +1415,7 @@
               "B": 18,
               "Y": 18
             },
-            "path": "output/duoprism_3_6/face_first_hexagon_00.vZome"
+            "path": "output/duoprisms/duoprism_3_6/face_first_hexagon_00.vZome"
           }
         ]
       },
@@ -1477,7 +1477,7 @@
               "B": 24,
               "Y": 24
             },
-            "path": "output/duoprism_4_6/oblique_24.vZome"
+            "path": "output/duoprisms/duoprism_4_6/oblique_24.vZome"
           }
         ]
       },
@@ -1616,7 +1616,7 @@
               "Y": 12,
               "B": 18
             },
-            "path": "output/duoprism_6_6/face_first_hexagon_02.vZome"
+            "path": "output/duoprisms/duoprism_6_6/face_first_hexagon_02.vZome"
           },
           {
             "basename": "oblique_16",
@@ -1633,7 +1633,7 @@
               "R": 48,
               "B": 24
             },
-            "path": "output/duoprism_6_6/oblique_16.vZome"
+            "path": "output/duoprisms/duoprism_6_6/oblique_16.vZome"
           }
         ]
       },
@@ -1673,7 +1673,7 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprism_4_10/oblique_13.vZome"
+            "path": "output/duoprisms/duoprism_4_10/oblique_13.vZome"
           },
           {
             "basename": "face_first_decagon_02",
@@ -1690,7 +1690,7 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprism_4_10/face_first_decagon_02.vZome"
+            "path": "output/duoprisms/duoprism_4_10/face_first_decagon_02.vZome"
           }
         ]
       },
@@ -1829,7 +1829,7 @@
               "B": 50,
               "R": 50
             },
-            "path": "output/duoprism_5_10/face_first_decagon_04.vZome"
+            "path": "output/duoprisms/duoprism_5_10/face_first_decagon_04.vZome"
           }
         ]
       },
@@ -2354,7 +2354,7 @@
               "Y": 80,
               "B": 38
             },
-            "path": "output/duoprism_10_10/oblique_02.vZome"
+            "path": "output/duoprisms/duoprism_10_10/oblique_02.vZome"
           },
           {
             "basename": "face_first_decagon_04",
@@ -2371,7 +2371,7 @@
               "R": 40,
               "B": 50
             },
-            "path": "output/duoprism_10_10/face_first_decagon_04.vZome"
+            "path": "output/duoprisms/duoprism_10_10/face_first_decagon_04.vZome"
           }
         ]
       },

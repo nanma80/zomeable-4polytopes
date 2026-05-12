@@ -89,23 +89,23 @@ strut counts and visual inspection.)
 
 | 3D base polyhedron | nV (4D) | Distinct shapes |
 |---|---:|---:|
-| cuboctahedron ([`cuboctahedron_prism`](../output/cuboctahedron_prism/RESULTS.md)) | 24 | 2 |
-| dodecahedron ([`dodecahedron_prism`](../output/dodecahedron_prism/RESULTS.md)) | 40 | 5 |
-| icosahedron ([`icosahedron_prism`](../output/icosahedron_prism/RESULTS.md)) | 24 | 5 |
-| icosidodecahedron ([`icosidodecahedron_prism`](../output/icosidodecahedron_prism/RESULTS.md)) | 60 | 5 |
-| octahedron ([`octahedron_prism`](../output/octahedron_prism/RESULTS.md)) | 12 | 2 |
-| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/rhombicosidodecahedron_prism/RESULTS.md)) | 120 | 6 |
+| cuboctahedron ([`cuboctahedron_prism`](../output/polyhedral_prisms/cuboctahedron_prism/RESULTS.md)) | 24 | 2 |
+| dodecahedron ([`dodecahedron_prism`](../output/polyhedral_prisms/dodecahedron_prism/RESULTS.md)) | 40 | 5 |
+| icosahedron ([`icosahedron_prism`](../output/polyhedral_prisms/icosahedron_prism/RESULTS.md)) | 24 | 5 |
+| icosidodecahedron ([`icosidodecahedron_prism`](../output/polyhedral_prisms/icosidodecahedron_prism/RESULTS.md)) | 60 | 5 |
+| octahedron ([`octahedron_prism`](../output/polyhedral_prisms/octahedron_prism/RESULTS.md)) | 12 | 2 |
+| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/polyhedral_prisms/rhombicosidodecahedron_prism/RESULTS.md)) | 120 | 6 |
 | rhombicuboctahedron (rhombicuboctahedron_prism) | 48 | 0 |
 | snub cube (snub_cube_prism) | 48 | 0 |
 | snub dodecahedron (snub_dodecahedron_prism) | 120 | 0 |
-| tetrahedron ([`tetrahedron_prism`](../output/tetrahedron_prism/RESULTS.md)) | 8 | 1 |
+| tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 8 | 1 |
 | truncated cube (truncated_cube_prism) | 48 | 0 |
 | truncated cuboctahedron (truncated_cuboctahedron_prism) | 96 | 0 |
-| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/truncated_dodecahedron_prism/RESULTS.md)) | 120 | 6 |
-| truncated icosahedron ([`truncated_icosahedron_prism`](../output/truncated_icosahedron_prism/RESULTS.md)) | 120 | 6 |
-| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/truncated_icosidodecahedron_prism/RESULTS.md)) | 240 | 7 |
-| truncated octahedron ([`truncated_octahedron_prism`](../output/truncated_octahedron_prism/RESULTS.md)) | 48 | 1 |
-| truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/truncated_tetrahedron_prism/RESULTS.md)) | 24 | 2 |
+| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 120 | 6 |
+| truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 120 | 6 |
+| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 240 | 7 |
+| truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 48 | 1 |
+| truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/polyhedral_prisms/truncated_tetrahedron_prism/RESULTS.md)) | 24 | 2 |
 
 
 ### Family B — duoprisms {p}×{q}
@@ -116,12 +116,12 @@ strut counts and visual inspection.)
 
 | p | q | nV (4D) | Distinct shapes |
 |---:|---:|---:|---:|
-| 3 | 6 | 18 | [`duoprism_3_6`](../output/duoprism_3_6/RESULTS.md) → 1 |
-| 4 | 6 | 24 | [`duoprism_4_6`](../output/duoprism_4_6/RESULTS.md) → 1 |
-| 4 | 10 | 40 | [`duoprism_4_10`](../output/duoprism_4_10/RESULTS.md) → 2 |
-| 5 | 10 | 50 | [`duoprism_5_10`](../output/duoprism_5_10/RESULTS.md) → 1 |
-| 6 | 6 | 36 | [`duoprism_6_6`](../output/duoprism_6_6/RESULTS.md) → 2 |
-| 10 | 10 | 100 | [`duoprism_10_10`](../output/duoprism_10_10/RESULTS.md) → 2 |
+| 3 | 6 | 18 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
+| 4 | 6 | 24 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 1 |
+| 4 | 10 | 40 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 2 |
+| 5 | 10 | 50 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
+| 6 | 6 | 36 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
+| 10 | 10 | 100 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
 
 The remaining 164 duoprisms produced 0 zomeable projections, consistent with the obstruction lemma (see below).
 
@@ -133,7 +133,7 @@ The remaining 164 duoprisms produced 0 zomeable projections, consistent with the
 | n | nV (4D) | Distinct shapes |
 |---:|---:|---:|
 | 4 | 16 | 4_antiprismatic_prism → 0 |
-| 5 | 20 | [`5_antiprismatic_prism`](../output/5_antiprismatic_prism/RESULTS.md) → 9 |
+| 5 | 20 | [`5_antiprismatic_prism`](../output/antiprismatic_prisms/5_antiprismatic_prism/RESULTS.md) → 9 |
 | 6 | 24 | 6_antiprismatic_prism → 0 |
 | 7 | 28 | 7_antiprismatic_prism → 0 |
 | 8 | 32 | 8_antiprismatic_prism → 0 |

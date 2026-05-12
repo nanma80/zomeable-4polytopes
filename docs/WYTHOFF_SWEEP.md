@@ -26,8 +26,8 @@ constructions on the rank-4 Coxeter groups:
 Plus the 2 non-Wythoff convex uniforms (snub 24-cell, grand antiprism)
 gives the well-known total of 47 + 2 ≡ 49 — but the snub 24-cell is
 [Coxeter-equivalent to B₄ (0,0,1,0) snubbed](https://en.wikipedia.org/wiki/Snub_24-cell)
-and is already enumerated in `output/snub_24cell/`. Likewise the grand
-antiprism is in `output/grand_antiprism/`.
+and is already enumerated in `output/uniform/snub_24cell/`. Likewise the grand
+antiprism is in `output/uniform/grand_antiprism/`.
 
 ## Terminology: "natural" vs "novel"
 
@@ -126,14 +126,14 @@ Each table reports two columns:
   `output/<polytope>/` (the *post-dedup, post-emit* count).
   This is the user-visible corpus.  For the 6 regulars (5-cell,
   tesseract, 16-cell, 24-cell, 600-cell, 120-cell) the corresponding
-  models live in their own dedicated folders (`output/5cell/`,
-  `output/8cell/`, `output/16cell/`, `output/24cell/`,
-  `output/600cell/`, `output/120cell/`) and are noted as `→ <folder>` in
+  models live in their own dedicated folders (`output/regular/5cell/`,
+  `output/regular/8cell/`, `output/regular/16cell/`, `output/regular/24cell/`,
+  `output/regular/600cell/`, `output/regular/120cell/`) and are noted as `→ <folder>` in
   the **files** column rather than counted here.
 
 The B₄ tesseract figure of **32 shapes** matches the documented
 tesseract enumeration at rng=2 in
-[`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md):
+[`output/regular/8cell/CLASSIFICATION.md`](../output/regular/8cell/CLASSIFICATION.md):
 "rng = 1, 2, 3 (yielding 8, 32, 129 distinct shapes — the count grows
 without bound)". The growth comes from the infinite split-cuboid family
 (kernels of support 2; see `CLASSIFICATION.md §3`); the other 14 B₄
@@ -169,7 +169,7 @@ The omnitruncated 120-cell row is the most extreme example:
 
 | bitmask    | name                       | V    | E    | raw fp² | files² |
 |------------|----------------------------|-----:|-----:|--------:|-------:|
-| (1,0,0,0)  | 5-cell                     | 5    | 10   | 4       | → `output/5cell/` |
+| (1,0,0,0)  | 5-cell                     | 5    | 10   | 4       | → `output/regular/5cell/` |
 | (0,1,0,0)  | rectified 5-cell           | 10   | 30   | 4       | 4 |
 | (1,1,0,0)  | truncated 5-cell           | 20   | 40   | 4       | 4 |
 | (1,0,1,0)  | cantellated 5-cell         | 30   | 90   | 4       | 4 |
@@ -185,14 +185,14 @@ A₄ subtotal: 32 files.
 
 | bitmask    | name                       | V    | E    | raw fp² | files² |
 |------------|----------------------------|-----:|-----:|--------:|-------:|
-| (1,0,0,0)  | tesseract                  | 16   | 32   | 32 ¹    | → `output/8cell/` |
+| (1,0,0,0)  | tesseract                  | 16   | 32   | 32 ¹    | → `output/regular/8cell/` |
 | (0,1,0,0)  | rectified tesseract        | 32   | 96   | 3       | 3 |
 | (1,1,0,0)  | truncated tesseract        | 64   | 128  | 3       | 0 (snap-fail) |
-| (0,0,1,0)  | 24-cell                    | 24   | 96   | 2       | → `output/24cell/` |
+| (0,0,1,0)  | 24-cell                    | 24   | 96   | 2       | → `output/regular/24cell/` |
 | (1,0,1,0)  | cantellated tesseract      | 96   | 288  | 3       | 0 (snap-fail) |
 | (0,1,1,0)  | bitruncated tesseract      | 96   | 192  | 3       | 3 |
 | (1,1,1,0)  | cantitruncated tesseract   | 192  | 384  | 3       | 0 (snap-fail) |
-| (0,0,0,1)  | 16-cell                    | 8    | 24   | 3       | → `output/16cell/` |
+| (0,0,0,1)  | 16-cell                    | 8    | 24   | 3       | → `output/regular/16cell/` |
 | (1,0,0,1)  | runcinated tesseract       | 64   | 192  | 3       | 0 (snap-fail) |
 | (0,1,0,1)  | cantellated 16-cell ³      | 96   | 288  | 2       | → `rectified_24-cell/` |
 | (1,1,0,1)  | runcitruncated tesseract   | 192  | 480  | 3       | 0 (snap-fail) |
@@ -215,7 +215,7 @@ section below).  Their .vZome files live under the canonical F₄ folder.
 
 ¹ The 32 tesseract shapes at rng=2 are the *finite truncation* of an
 infinite cuboid family. See
-[`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
+[`output/regular/8cell/CLASSIFICATION.md`](../output/regular/8cell/CLASSIFICATION.md)
 for the master theorem and the family parametrization. This is a
 property of the tesseract specifically (its edge directions align with
 the 4D coordinate basis); the 14 other B₄ forms do not enjoy this
@@ -225,7 +225,7 @@ support-2 automatic-zomeability and have only 1–3 shapes each.
 
 | bitmask    | name                       | V    | E    | raw fp² | files² |
 |------------|----------------------------|-----:|-----:|--------:|-------:|
-| (1,0,0,0)  | 24-cell ³                  | 24   | 96   | (≡ B₄ (0,0,1,0)) | → `output/24cell/` |
+| (1,0,0,0)  | 24-cell ³                  | 24   | 96   | (≡ B₄ (0,0,1,0)) | → `output/regular/24cell/` |
 | (0,1,0,0)  | rectified 24-cell ³        | 96   | 288  | 5       | 3 |
 | (1,1,0,0)  | truncated 24-cell ³        | 192  | 384  | 6       | 3 |
 | (1,0,1,0)  | cantellated 24-cell        | 288  | 864  | 2       | 0 (snap-fail) |
@@ -253,8 +253,8 @@ in `lib/search_engine.shape_fingerprint` (see implementation notes).
 
 | bitmask    | name                       | V     | E     | raw fp² | files² |
 |------------|----------------------------|------:|------:|--------:|-------:|
-| (0,0,0,1)  | 600-cell                   | 120   | 720   | 1       | → `output/600cell/` |
-| (1,0,0,0)  | 120-cell                   | 600   | 1200  | 1       | → `output/120cell/` |
+| (0,0,0,1)  | 600-cell                   | 120   | 720   | 1       | → `output/regular/600cell/` |
+| (1,0,0,0)  | 120-cell                   | 600   | 1200  | 1       | → `output/regular/120cell/` |
 | (0,0,1,0)  | rectified 600-cell         | 720   | 3600  | 2       | 1 |
 | (0,1,0,0)  | rectified 120-cell         | 1200  | 3600  | 1       | 1 |
 | (0,0,1,1)  | truncated 600-cell         | 1440  | 4320  | 2       | 1 |
@@ -324,9 +324,9 @@ folder via `→ <folder>/` and have no folder of their own.
 
 | F₄ canonical name | F₄ bitmask | ≡ B₄ name              | B₄ bitmask | folder |
 |-------------------|------------|------------------------|------------|--------|
-| 24-cell           | (1,0,0,0)  | rectified 16-cell      | (0,0,1,0)  | `output/24cell/` |
-| rectified 24-cell | (0,1,0,0)  | cantellated 16-cell    | (0,1,0,1)  | `output/rectified_24cell/` |
-| truncated 24-cell | (1,1,0,0)  | cantitruncated 16-cell | (0,1,1,1)  | `output/truncated_24cell/` |
+| 24-cell           | (1,0,0,0)  | rectified 16-cell      | (0,0,1,0)  | `output/regular/24cell/` |
+| rectified 24-cell | (0,1,0,0)  | cantellated 16-cell    | (0,1,0,1)  | `output/uniform/rectified_24cell/` |
+| truncated 24-cell | (1,1,0,0)  | cantitruncated 16-cell | (0,1,1,1)  | `output/uniform/truncated_24cell/` |
 
 The qfbox.info reference lists these three coincidences explicitly:
 *"Rectified 16-cell: identical to the 24-cell"*,
@@ -361,8 +361,8 @@ artefact (see the
 [snap-failure analysis](#wythoff-extension-shape-inventory-rng--2-full-47-of-47-polytope-records)
 below).  The two non-Wythoffian uniforms (snub 24-cell, grand
 antiprism) are out of scope for this Wythoff-only sweep but have
-hand-curated projections at `output/snub_24cell/` and
-`output/grand_antiprism/`.
+hand-curated projections at `output/uniform/snub_24cell/` and
+`output/uniform/grand_antiprism/`.
 
 ### Kernel completeness audit
 
@@ -423,7 +423,7 @@ gain 3 new zomeable shapes**, see
 
 The 16-cell case is a particularly clean validation: the regular-only
 seed found 3 shapes; the full-rng=2 search found 6, **exactly matching
-master's hand-curated 6 16-cell projections** in `output/16cell/`.
+master's hand-curated 6 16-cell projections** in `output/regular/16cell/`.
 This confirms (i) the missing 3 shapes exist, (ii) the search engine
 recovers them correctly when given the wider kernel set, and (iii) the
 production pipeline could in principle be extended to the
@@ -459,7 +459,7 @@ completeness audit above).
 ⁶ The tesseract is an outlier with a documented infinite-family
 behaviour: its rng = 1, 2, 3 raw fingerprint counts are 8, 32, 129
 (matching the
-[`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)
+[`output/regular/8cell/CLASSIFICATION.md`](../output/regular/8cell/CLASSIFICATION.md)
 master theorem exactly), and at rng = 4 raw fingerprints jump to
 344.  But of those 344 only **11 snap to ℤ[φ]³** — the cuboid family
 is parametrised by `(a, b) ∈ ℤ[φ]²` with `a² + b² ∈ ℤ[φ]` (silver-
@@ -539,7 +539,7 @@ curated reference data.
 | grand antiprism    | 100 |  500 |             2 | rng = 2 (Milestone 5)                     |              2 |     2 / 2 |     0 |
 
 The infinite cuboid family in the tesseract row is parameterised
-(`output/8cell/*inf_family*.vZome`); the search engine generates
+(`output/regular/8cell/*inf_family*.vZome`); the search engine generates
 the family correctly (8 unique snapped shapes at rng = 4 cover all
 generic-cuboid projections), but the inf-family `.vZome` files
 themselves use fractional coordinates that the
@@ -568,8 +568,8 @@ via [`lib/polytopes.py`](../lib/polytopes.py) (`snub_24cell`,
 `grand_antiprism`), and they share the rest of the pipeline (the
 rng = 2 search engine, the snap, and the Stage A / Stage B dedup) with
 the Wythoff sweep.  Master maintains a hand-curated set of 4 zomeable
-projections for them (`output/snub_24cell/*.vZome` and
-`output/grand_antiprism/*.vZome`, two per polytope) which have been
+projections for them (`output/uniform/snub_24cell/*.vZome` and
+`output/uniform/grand_antiprism/*.vZome`, two per polytope) which have been
 studied by zometool/4D enthusiasts for years; recovering this set
 end-to-end through the same pipeline is the calibration captured
 above.  The exact recovery confirms that for these two non-
@@ -617,7 +617,7 @@ Three of them (16-cell B₄, 24-cell B₄, cantellated 16-cell) were
 flagged because the
 [`probe_kernel_completeness.py`](../ongoing_work/probes/probe_kernel_completeness.py)
 counter only inspected `output/<polytope>/` and ignored
-both the master regular folders (`output/16cell/`, `output/24cell/`)
+both the master regular folders (`output/regular/16cell/`, `output/regular/24cell/`)
 and the cross-group alias folders (cantellated 16-cell ≡ rectified
 24-cell, cantitruncated 16-cell ≡ truncated 24-cell, see
 [B₄ ↔ F₄ aliases](#equivalences-b4f4-overlap)).  Once those
@@ -629,11 +629,11 @@ exactly: 12 raw fp → 3 Stage-B unique shapes, all already present
 in the truncated 24-cell folder.
 
 The 6 new shapes have been promoted to the main corpus at
-[`output/rectified_8cell/rectified_8cell_oblique_00.vZome`](../output/rectified_8cell/rectified_8cell_oblique_00.vZome),
-[`oblique_01.vZome`](../output/rectified_8cell/rectified_8cell_oblique_01.vZome),
-[`oblique_02.vZome`](../output/rectified_8cell/rectified_8cell_oblique_02.vZome)
+[`output/uniform/rectified_8cell/rectified_8cell_oblique_00.vZome`](../output/uniform/rectified_8cell/rectified_8cell_oblique_00.vZome),
+[`oblique_01.vZome`](../output/uniform/rectified_8cell/rectified_8cell_oblique_01.vZome),
+[`oblique_02.vZome`](../output/uniform/rectified_8cell/rectified_8cell_oblique_02.vZome)
 and the analogous trio at
-[`output/truncated_16cell/`](../output/truncated_16cell/).
+[`output/uniform/truncated_16cell/`](../output/uniform/truncated_16cell/).
 Each entry in [`output/wythoff_sweep_manifest.json`](../output/wythoff_sweep_manifest.json)
 carries a `"rng": 4` field marking it as a higher-`rng` discovery.
 The promotion script
@@ -828,14 +828,14 @@ Interpretation by group:
 - **B₄ (8 new fp, 3 new shapes).**  Three fp belong to B₄ (0,0,1,0)
   ≡ 24-cell-as-B₄ and Stage-B-match the three master 24-cell
   projections (`24cell_triality.vZome`, `24cell_long_root_rhombic_dodecahedron.vZome`,
-  `24cell_short_root_cuboctahedron.vZome` in `output/24cell/`); these
+  `24cell_short_root_cuboctahedron.vZome` in `output/regular/24cell/`); these
   are aliases of pre-existing master shapes, not new shapes.  Five
   fp belong to B₄ (0,1,1,0) ≡ bitruncated tesseract; intra-audit
   dedup collapses them to **3 distinct Stage-B shapes**, all V = 96
   with the full 4-colour zometool palette `(B:48, Y:48, G:48, R:48)`,
   and none match anything in the existing corpus.  These 3 shapes
   were promoted to
-  `output/bitruncated_8cell/{oblique_00,oblique_01,
+  `output/uniform/bitruncated_8cell/{oblique_00,oblique_01,
   oblique_02}_*.vZome` (the third was originally promoted as
   `face_first_hexagon_df821cc628.vZome`, but the heuristic
   `classify_kernel` in `lib/polytope_features.py` over-matched the
@@ -1093,7 +1093,7 @@ below).  These are flagged with `"rng": 4` in
 A second follow-up — the rng = 2 *descendant-direct* (Step-1 blind-
 spot) audit on every A₄/B₄/F₄ Wythoff descendant — added **3 more
 distinct shapes** to the corpus, all from B₄ bitruncated tesseract
-(`output/bitruncated_8cell/{oblique_00,oblique_01,
+(`output/uniform/bitruncated_8cell/{oblique_00,oblique_01,
 oblique_02}_*.vZome`).  Each is V = 96 with the full 4-colour
 zometool palette `(B:48, Y:48, G:48, R:48)`.  The blind spot is
 architectural: `tools/run_wythoff_sweep.py` Step 1 snap-filters
@@ -1121,8 +1121,8 @@ aligned with the golden-ratio integer lattice.
 
 vZome files are in [`output/`](../output/),
 organised into one subfolder per polytope common name (e.g.
-`output/cantellated_120cell/`,
-`output/omnitruncated_120cell/`).  Each file is named
+`output/uniform/cantellated_120cell/`,
+`output/uniform/omnitruncated_120cell/`).  Each file is named
 after the kernel direction's classification against that polytope's
 features:
 
@@ -1198,9 +1198,9 @@ fingerprint in every case.
 
 | kernel `n` (4D, sweep basis)                          | parent master file                                   | descendant `oblique_*.vZome` files                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------|------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/5cell/5cell_5ball_R6Y1B3.vZome` (V=5)        | `bitruncated_5-cell/oblique_01_9e2d21191f`, `cantellated_5-cell/oblique_00_1c346b0e6a`, `cantitruncated_5-cell/oblique_00_6189be49ed`, `omnitruncated_5-cell/oblique_9f354d53ae`, `rectified_5-cell/oblique_00_4fe32006bf`, `runcinated_5-cell/oblique_00_1c278a1d7d`, `runcitruncated_5-cell/oblique_db7b74a33d`, `truncated_5-cell/oblique_01_9fee63fe24` (8 files) |
-| `[φ³−1, 0, φ³−1, 0]` = `[3.618, 0, 3.618, 0]`         | `output/5cell/5cell_4ball_Y6B3.vZome` (V=4, edge-collapses) | `cantellated_5-cell/oblique_01_e7d00a6967`, `cantitruncated_5-cell/oblique_01_befb910d19`, `rectified_5-cell/oblique_01_55abe81889`, `truncated_5-cell/oblique_02_cd65b76a7d` (4 files)                                                                                                                                                                          |
-| `[0, 0, 1/φ², −1/φ²]` = `[0, 0, 0.382, −0.382]`       | `output/5cell/5cell_5ball_Y4B2R4.vZome` (V=5)        | `bitruncated_5-cell/oblique_00_190a7b1c71`, `cantitruncated_5-cell/oblique_02_c1635833bd`, `rectified_5-cell/oblique_02_c2ff97e546`, `runcinated_5-cell/oblique_01_4547c11713`, `truncated_5-cell/oblique_00_7df137dba4` (5 files)                                                                                                                                |
+| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/regular/5cell/5cell_5ball_R6Y1B3.vZome` (V=5)        | `bitruncated_5-cell/oblique_01_9e2d21191f`, `cantellated_5-cell/oblique_00_1c346b0e6a`, `cantitruncated_5-cell/oblique_00_6189be49ed`, `omnitruncated_5-cell/oblique_9f354d53ae`, `rectified_5-cell/oblique_00_4fe32006bf`, `runcinated_5-cell/oblique_00_1c278a1d7d`, `runcitruncated_5-cell/oblique_db7b74a33d`, `truncated_5-cell/oblique_01_9fee63fe24` (8 files) |
+| `[φ³−1, 0, φ³−1, 0]` = `[3.618, 0, 3.618, 0]`         | `output/regular/5cell/5cell_4ball_Y6B3.vZome` (V=4, edge-collapses) | `cantellated_5-cell/oblique_01_e7d00a6967`, `cantitruncated_5-cell/oblique_01_befb910d19`, `rectified_5-cell/oblique_01_55abe81889`, `truncated_5-cell/oblique_02_cd65b76a7d` (4 files)                                                                                                                                                                          |
+| `[0, 0, 1/φ², −1/φ²]` = `[0, 0, 0.382, −0.382]`       | `output/regular/5cell/5cell_5ball_Y4B2R4.vZome` (V=5)        | `bitruncated_5-cell/oblique_00_190a7b1c71`, `cantitruncated_5-cell/oblique_02_c1635833bd`, `rectified_5-cell/oblique_02_c2ff97e546`, `runcinated_5-cell/oblique_01_4547c11713`, `truncated_5-cell/oblique_00_7df137dba4` (5 files)                                                                                                                                |
 
 The 4th master file `5cell_vertex_first_tet_plus_center.vZome` is
 *not* an oblique direction (its kernel `(1−2φ, 1−2φ, 1−2φ, 1) = (−√5, −√5, −√5, 1)`
@@ -1221,12 +1221,12 @@ files (one per row).
 
 | kernel `n` (4D, sweep basis)                                  | parent master file                                | descendant `oblique_*.vZome` files                                                                                                                                  |
 |---------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `[8.472, 2, −8.472, 8.472]`                                   | `output/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806`, `bitruncated_tesseract/oblique_00_26f0b7c6e6` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², −φ, φ, φ]`) |
-| `[0.382, 0.854, −0.382, 0.382]` (`0.854 = 3φ−4 ∈ ℤ[φ]`)       | `output/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9`, `bitruncated_tesseract/oblique_01_df821cc628` (3 files; the M17 bitr-tesseract inherits via the bitr-tesseract's B4 × Z/2 outer aut, see [M17 audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)) |
-| `[9.472, 2.236, 2.236, −2.236]` = `[1+2φ³, √5, √5, −√5]`      | `output/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8`, `bitruncated_tesseract/oblique_02_80a961d9da` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², 1/φ², −1/φ², −φ]`) |
+| `[8.472, 2, −8.472, 8.472]`                                   | `output/regular/16cell/16cell_antiprism_B6R12Y6.vZome`    | `rectified_tesseract/oblique_00_e2b79a96f7`, `truncated_16-cell/oblique_00_9d18eb2806`, `bitruncated_tesseract/oblique_00_26f0b7c6e6` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², −φ, φ, φ]`) |
+| `[0.382, 0.854, −0.382, 0.382]` (`0.854 = 3φ−4 ∈ ℤ[φ]`)       | `output/regular/16cell/16cell_antiprism_R12B6Y6.vZome`    | `rectified_tesseract/oblique_01_b35b865a54`, `truncated_16-cell/oblique_01_ccdfd208c9`, `bitruncated_tesseract/oblique_01_df821cc628` (3 files; the M17 bitr-tesseract inherits via the bitr-tesseract's B4 × Z/2 outer aut, see [M17 audit](#step-1-blind-spot-audit-milestone-17-rng--2-descendant-direct-sweep)) |
+| `[9.472, 2.236, 2.236, −2.236]` = `[1+2φ³, √5, √5, −√5]`      | `output/regular/16cell/16cell_antiprism_Y6R12B6.vZome`    | `rectified_tesseract/oblique_02_2be6954c03`, `truncated_16-cell/oblique_02_2c50f047a8`, `bitruncated_tesseract/oblique_02_80a961d9da` (3 files; M17 bitr-tesseract inherits via B4 Weyl orbit at rng=2 rep `[1/φ², 1/φ², −1/φ², −φ]`) |
 
 The three antiprism master projections form the well-known **D₄
-triality orbit** of the 16-cell (see `output/16cell/RESULTS.md`).
+triality orbit** of the 16-cell (see `output/regular/16cell/RESULTS.md`).
 Empirically all three triality directions propagate identically to
 both `rectified_tesseract` and `truncated_16-cell` — these two
 descendants share the same oblique-projection structure even though
@@ -1287,7 +1287,7 @@ this section).
 
 | kernel `n` (4D, sweep basis)                          | parent master file                          | descendant `oblique_*.vZome` files                                                          |
 |-------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------|
-| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/24cell/24cell_triality.vZome` (V=24) | `rectified_24-cell/oblique_56093e7cd7`, `truncated_24-cell/oblique_6b7eadcbcf` (2 files)    |
+| `[1/φ², 1/φ², −1/φ², −φ]` = `[0.382, 0.382, −0.382, −1.618]` | `output/regular/24cell/24cell_triality.vZome` (V=24) | `rectified_24-cell/oblique_56093e7cd7`, `truncated_24-cell/oblique_6b7eadcbcf` (2 files)    |
 
 **Under the conventions noted at the top of this section, the same
 4D 4-tuple `[1/φ², 1/φ², −1/φ², −φ]` is simultaneously the A4 5-ball
@@ -1505,7 +1505,7 @@ python tools/emit_novel.py --rng 2
   family, *plus* one spurious duplicate from the SVD-basis fp_hash bug
   described above.  After direction-dedup the count is 31 shapes
   (1 cell-first `B': 24` sporadic plus 30 generic rectangular-cuboid
-  kernels with `B': 32` signature) — see `output/8cell/CLASSIFICATION.md
+  kernels with `B': 32` signature) — see `output/regular/8cell/CLASSIFICATION.md
   §3` for the structural enumeration; the previous "32" tally double-
   counted one cuboid direction.
 - **Output normalisation (`emit_generic._normalize_scale`).**  After

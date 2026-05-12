@@ -110,7 +110,7 @@ REGULAR_BITMASKS = {
 # "non-Wythoff" tag in shape records.
 #
 # Master kernels that this sweep is expected to rediscover (the .vZome
-# files already in output/snub_24cell/ and output/grand_antiprism/):
+# files already in output/uniform/snub_24cell/ and output/uniform/grand_antiprism/):
 #   snub 24-cell      cell-first   (1, 0, 0, 0)
 #   snub 24-cell      vertex-first (phi^2, phi, 1, 0)
 #   grand antiprism   vertex-first (1, 1, 1, 1)

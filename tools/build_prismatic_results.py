@@ -22,6 +22,23 @@ REPO_ROOT = os.path.dirname(HERE)
 LOG_PATH = os.path.join(REPO_ROOT, "ongoing_work", "prismatic_sweep_log.jsonl")
 OUTPUT_ROOT = os.path.join(REPO_ROOT, "output")
 
+# Family -> category subfolder under output/.  Mirrors the layout used
+# by tools/run_prismatic_sweep.py.
+FAMILY_DIR = {
+    "A": "polyhedral_prisms",
+    "B": "duoprisms",
+    "C": "antiprismatic_prisms",
+}
+
+
+def _category(family: str) -> str:
+    return FAMILY_DIR.get(family, "")
+
+
+def _rel_output_path(slug: str, family: str) -> str:
+    cat = _category(family)
+    return f"output/{cat}/{slug}" if cat else f"output/{slug}"
+
 
 SCRIPT_LINE = ("<script type='module' "
                "src='https://www.vzome.com/modules/vzome-viewer.js'></script>")
@@ -103,7 +120,7 @@ def build_results_md(rec: dict) -> str | None:
     lines.append("")
     lines.append(f"- Family **{family}** ({fam_text})")
     lines.append(f"- 4D vertices: **{nV}**, edges: **{nE}**")
-    lines.append(f"- Folder: `output/{slug}/`")
+    lines.append(f"- Folder: `{_rel_output_path(slug, family)}/`")
     lines.append("")
     lines.append(f"**{len(emits)} distinct zomeable shape"
                  f"{'' if len(emits) == 1 else 's'}** found "
@@ -131,17 +148,18 @@ def build_results_md(rec: dict) -> str | None:
                  f"--family {family} --rng {rng}`")
     lines.append(f"- Construction: `lib/polytopes_prismatic.py` "
                  f"+ `lib/uniform_polyhedra.py`")
-    lines.append("- See [`docs/PRISMATIC.md`](../../docs/PRISMATIC.md) "
+    lines.append("- See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) "
                  "for the full prismatic-family taxonomy and sweep summary.")
     lines.append("")
     lines.append("## 3D Viewers")
     lines.append("")
     lines.append("<!-- _3d-viewer-html-link_ -->")
     lines.append(f"➡️ **[Open this page on GitHub Pages]"
-                 f"(https://nanma80.github.io/zomeable-4polytopes/output/"
-                 f"{slug}/RESULTS.html)** to interact with the 3D models "
-                 f"below (the embeds only render when this file is served "
-                 f"via GitHub Pages, not in github.com's markdown preview).")
+                 f"(https://nanma80.github.io/zomeable-4polytopes/"
+                 f"{_rel_output_path(slug, family)}/RESULTS.html)** to "
+                 f"interact with the 3D models below (the embeds only "
+                 f"render when this file is served via GitHub Pages, not "
+                 f"in github.com's markdown preview).")
     lines.append("")
     lines.append(SCRIPT_LINE)
     lines.append("")
@@ -171,7 +189,11 @@ def main():
         if md is None:
             skipped_no_emit += 1
             continue
-        out_dir = os.path.join(OUTPUT_ROOT, slug)
+        cat = _category(rec.get("family", ""))
+        if cat:
+            out_dir = os.path.join(OUTPUT_ROOT, cat, slug)
+        else:
+            out_dir = os.path.join(OUTPUT_ROOT, slug)
         os.makedirs(out_dir, exist_ok=True)
         out_path = os.path.join(out_dir, "RESULTS.md")
         with open(out_path, "w", encoding="utf-8") as f:

@@ -27,10 +27,10 @@ production corpus is empirically saturated at rng ≤ 4.
 
 All five flagged tesseract candidates resolved to **existing corpus
 entries or predicted members of the tesseract `inf-family`** (see
-[`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md)).
+[`output/regular/8cell/CLASSIFICATION.md`](../output/regular/8cell/CLASSIFICATION.md)).
 The production corpus is therefore complete at rng ≤ 4 modulo the
 documented field boundary (ℤ[φ]³ versus the larger ℤ[φ, √n]³ family
-discussed in `output/8cell/CLASSIFICATION.md §3` and in the snap-failure
+discussed in `output/regular/8cell/CLASSIFICATION.md §3` and in the snap-failure
 analysis of [WYTHOFF_SWEEP.md](./WYTHOFF_SWEEP.md)).
 
 ## Motivation
@@ -137,8 +137,8 @@ fingerprints resolve to existing-corpus or predicted-family entries:
 
 | edge spectrum (multiplicity ×) | classification | corpus file |
 |--------------------------------|----------------|-------------|
-| `(1.0 ×8, 1.473 ×8, 1.618 ×8, 1.701 ×8)` — 4 distinct edges, kernel support 3 | **phi-oblique** sporadic | `output/8cell/8cell_phi_oblique.vZome` |
-| `(1.0 ×8, √5/2 ×8, 3/2 ×16)` — 3 distinct edges, kernel support 2 | **inf-family** at (a:b) = (2:√5) | `output/8cell/8cell_inf_family_phi_aSqrt5_b2.vZome` |
+| `(1.0 ×8, 1.473 ×8, 1.618 ×8, 1.701 ×8)` — 4 distinct edges, kernel support 3 | **phi-oblique** sporadic | `output/regular/8cell/8cell_phi_oblique.vZome` |
+| `(1.0 ×8, √5/2 ×8, 3/2 ×16)` — 3 distinct edges, kernel support 2 | **inf-family** at (a:b) = (2:√5) | `output/regular/8cell/8cell_inf_family_phi_aSqrt5_b2.vZome` |
 
 Both are already in the master corpus.  The "new" flags are a
 corpus-index timestamp artefact: the corpus index was rebuilt mid-sweep
@@ -150,13 +150,13 @@ and the rng = 2 phase reading the index.
 All three are members of the tesseract **`inf-family`** (the
 1-parameter family of "split-cuboid" projections parameterised by
 ℤ[φ]²-Pythagorean pairs (a, b) with `a² + b² = c² ∈ ℤ[φ]`, defined in
-[`output/8cell/CLASSIFICATION.md §3`](../output/8cell/CLASSIFICATION.md#3-the-inf-family-parameterisation)
+[`output/regular/8cell/CLASSIFICATION.md §3`](../output/regular/8cell/CLASSIFICATION.md#3-the-inf-family-parameterisation)
 and enumerated independently to scalar bound 15 in the iso-frame
 enumerator):
 
 | edge spectrum (normalised) | (a : b) ratio | inf-family row |
 |----------------------------|---------------|----------------|
-| `(0.6, 0.8, 1.0)`          | (3 : 4)       | 3 : 4 : 5 Pythagorean (already in corpus as `output/8cell/8cell_inf_family_a3_b4.vZome`)|
+| `(0.6, 0.8, 1.0)`          | (3 : 4)       | 3 : 4 : 5 Pythagorean (already in corpus as `output/regular/8cell/8cell_inf_family_a3_b4.vZome`)|
 | `(0.263, 0.965, 1.0)`      | (φ + 3 : 1)   | strut-iso b15 row, predicted by the parameterisation |
 | `(0.369, 0.930, 1.0)`      | (φ + 2 : 1)   | strut-iso b15 row, predicted by the parameterisation |
 
@@ -165,7 +165,7 @@ tesseract taxonomy (`cube`, `rhombic dodecahedron`, `phi-oblique`,
 `inf-family parameterised by all ZZ[φ]²-Pythagorean (a, b)`).  The
 first is already in the master corpus; the latter two are predicted
 parameterisation rows beyond rng ≤ 2 — they would be added to
-`output/8cell/` if larger-coefficient family members were desired,
+`output/regular/8cell/` if larger-coefficient family members were desired,
 but no new shape *type* is involved.
 
 ### Strut iso-frame corroboration
@@ -225,7 +225,7 @@ resume mode; already-done cells are skipped automatically.
 - [`WYTHOFF_SWEEP.md`](./WYTHOFF_SWEEP.md) — master corpus document
   (terminology, methodology, per-polytope shape inventory, B₄/F₄
   equivalences, snap-failure analysis).
-- [`output/8cell/CLASSIFICATION.md`](../output/8cell/CLASSIFICATION.md) —
+- [`output/regular/8cell/CLASSIFICATION.md`](../output/regular/8cell/CLASSIFICATION.md) —
   tesseract 4-shape taxonomy and inf-family parameterisation theorem.
 - [`tools/inheritance_free_sweep.py`](../tools/inheritance_free_sweep.py) —
   the driver.

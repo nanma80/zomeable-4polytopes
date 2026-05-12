@@ -20,6 +20,19 @@ LOG_PATH = os.path.join(REPO_ROOT, "ongoing_work", "prismatic_sweep_log.jsonl")
 DOC_PATH = os.path.join(REPO_ROOT, "docs", "PRISMATIC.md")
 MANIFEST_PATH = os.path.join(REPO_ROOT, "output", "prismatic_manifest.json")
 
+# Family -> category subfolder under output/.  Mirrors the layout used
+# by tools/run_prismatic_sweep.py.
+FAMILY_DIR = {
+    "A": "polyhedral_prisms",
+    "B": "duoprisms",
+    "C": "antiprismatic_prisms",
+}
+
+
+def _rel_link(slug: str, family: str) -> str:
+    cat = FAMILY_DIR.get(family, "")
+    return f"../output/{cat}/{slug}/RESULTS.md" if cat else f"../output/{slug}/RESULTS.md"
+
 
 def _latest_per_slug(log_path):
     recs = OrderedDict()
@@ -61,7 +74,7 @@ def _table_a(recs):
         emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
         nv = r.get("nV", "?")
         n = len(emits)
-        link = (f"[`{r['slug']}`](../output/{r['slug']}/RESULTS.md)"
+        link = (f"[`{r['slug']}`]({_rel_link(r['slug'], 'A')})"
                 if n > 0 else r["slug"])
         polyhedron = r["metadata"]["polyhedron"].replace("_", " ")
         lines.append(f"| {polyhedron} ({link}) | {nv} | {n} |")
@@ -87,7 +100,7 @@ def _table_b(recs):
         for r in hits:
             p, q = r["metadata"]["p"], r["metadata"]["q"]
             emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
-            link = f"[`{r['slug']}`](../output/{r['slug']}/RESULTS.md)"
+            link = f"[`{r['slug']}`]({_rel_link(r['slug'], 'B')})"
             lines.append(f"| {p} | {q} | {r.get('nV','?')} | {link} → {len(emits)} |")
     else:
         lines.append("No duoprisms yielded zomeable projections.")
@@ -111,7 +124,7 @@ def _table_c(recs):
     lines.append("|---:|---:|---:|")
     for r in rows:
         emits = [e for e in r.get("emitted", []) if e.get("status") == "emitted"]
-        link = (f"[`{r['slug']}`](../output/{r['slug']}/RESULTS.md)"
+        link = (f"[`{r['slug']}`]({_rel_link(r['slug'], 'C')})"
                 if emits else r["slug"])
         lines.append(f"| {r['metadata']['n']} | {r.get('nV','?')} "
                      f"| {link} → {len(emits)} |")

@@ -1,6 +1,6 @@
 """Append a '3D Viewers' section to each output/<polytope>/<RESULTS|CLASSIFICATION|...>.md
 that does not already have one, following the pattern Scott introduced in PR #1
-for output/5cell/RESULTS.md.
+for output/regular/5cell/RESULTS.md.
 
 For each subfolder of output/:
   - find the single markdown file

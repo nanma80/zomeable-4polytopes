@@ -20,7 +20,8 @@ Usage:
 
 Output:
   * Log: ongoing_work/prismatic_sweep_log.jsonl (one record per polytope)
-  * Emitted shapes: output/<slug>/<basename>.vZome
+  * Emitted shapes: output/<family-category>/<slug>/<basename>.vZome
+    where family-category is polyhedral_prisms / duoprisms / antiprismatic_prisms.
   * Kernel cache: NOT used here (kernels regenerate trivially per
     polytope; gen_dirs is cheap).
 
@@ -54,6 +55,17 @@ from emit_generic import project_and_emit
 
 LOG_PATH = os.path.join(REPO_ROOT, "ongoing_work", "prismatic_sweep_log.jsonl")
 OUTPUT_ROOT = os.path.join(REPO_ROOT, "output")
+
+# Family -> category subfolder under output/.  Antiprismatic prisms are
+# the only Family C members; polyhedral prisms = Family A; duoprisms =
+# Family B.  These align with the broader output/ taxonomy
+# (output/regular, output/uniform, output/polyhedral_prisms,
+# output/duoprisms, output/antiprismatic_prisms).
+FAMILY_DIR = {
+    "A": "polyhedral_prisms",
+    "B": "duoprisms",
+    "C": "antiprismatic_prisms",
+}
 
 
 # ---------------------------------------------------------------------- #
@@ -198,7 +210,11 @@ def sweep_polytope(entry: dict, dirs, rng: int, emit: bool, verbose: bool):
     # Emit each canonical
     emitted = []
     if emit:
-        out_dir = os.path.join(OUTPUT_ROOT, slug)
+        category = FAMILY_DIR.get(family, "")
+        if category:
+            out_dir = os.path.join(OUTPUT_ROOT, category, slug)
+        else:
+            out_dir = os.path.join(OUTPUT_ROOT, slug)
         os.makedirs(out_dir, exist_ok=True)
         for c in classified:
             out_path = os.path.join(out_dir, f"{c['basename']}.vZome")

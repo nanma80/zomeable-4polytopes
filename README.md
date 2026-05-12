@@ -45,7 +45,7 @@ Three further canonical projections — edge-first hex prism, face-first
 4×2 cuboid, face-first-like BYR shape — exist as zometool sculptures
 in vZome's *cubic* algebraic-field system but cannot be expressed
 in the icosahedral ℤ[φ] field. See
-[`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md).
+[`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md).
 
 Per-polytope writeups live in `output/<polytope>/RESULTS.md` (or
 `CLASSIFICATION.md` for 8-cell, `ZOMEABLE_PROJECTIONS.md` for 24-cell).
@@ -227,7 +227,7 @@ To our knowledge, the following results are new:
   and the cubic-system canonical projections (edge-first hex prism,
   face-first cuboid, BYR shape) that are not embeddable in the
   icosahedral ℤ[φ] field
-  (see [`output/8cell/CLASSIFICATION.md`](output/8cell/CLASSIFICATION.md)).
+  (see [`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md)).
 - **Snub 24-cell, vertex-first** — does not appear in Richter's page or
   any source we could find.
 - **Grand antiprism, vertex-first** — not in Vorthmann (2006) or other
