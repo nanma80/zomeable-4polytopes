@@ -18,10 +18,10 @@ Polytopes covered: **204 (in scope)**
 
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
-| **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 51 |
+| **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 43 |
 | **B** | Duoprisms `{p}×{q}` | 170 | 6 | 11 |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
-| **Total** | | **204** | **19** | **71** |
+| **Total** | | **204** | **19** | **63** |
 
 ## Definitions
 
@@ -70,18 +70,18 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 | cuboctahedron ([`cuboctahedron_prism`](../output/polyhedral_prisms/cuboctahedron_prism/RESULTS.md)) | 2 |
 | dodecahedron ([`dodecahedron_prism`](../output/polyhedral_prisms/dodecahedron_prism/RESULTS.md)) | 5 |
 | icosahedron ([`icosahedron_prism`](../output/polyhedral_prisms/icosahedron_prism/RESULTS.md)) | 5 |
-| icosidodecahedron ([`icosidodecahedron_prism`](../output/polyhedral_prisms/icosidodecahedron_prism/RESULTS.md)) | 6 |
+| icosidodecahedron ([`icosidodecahedron_prism`](../output/polyhedral_prisms/icosidodecahedron_prism/RESULTS.md)) | 5 |
 | octahedron ([`octahedron_prism`](../output/polyhedral_prisms/octahedron_prism/RESULTS.md)) | 2 |
-| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/polyhedral_prisms/rhombicosidodecahedron_prism/RESULTS.md)) | 6 |
+| rhombicosidodecahedron ([`rhombicosidodecahedron_prism`](../output/polyhedral_prisms/rhombicosidodecahedron_prism/RESULTS.md)) | 5 |
 | rhombicuboctahedron (rhombicuboctahedron_prism) | 0 |
 | snub cube (snub_cube_prism) | 0 |
 | snub dodecahedron (snub_dodecahedron_prism) | 0 |
 | tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 1 |
 | truncated cube (truncated_cube_prism) | 0 |
 | truncated cuboctahedron (truncated_cuboctahedron_prism) | 0 |
-| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 8 |
-| truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 6 |
-| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 7 |
+| truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 5 |
+| truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 5 |
+| truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 5 |
 | truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 1 |
 | truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/polyhedral_prisms/truncated_tetrahedron_prism/RESULTS.md)) | 2 |
 

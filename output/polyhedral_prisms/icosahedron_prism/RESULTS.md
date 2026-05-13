@@ -12,7 +12,7 @@
 |---|------|-------------------|--------:|--------|
 | 1 | `face_first_square.vZome` | face_first / square | 16 | B:14  R:16  Y:8 |
 | 2 | `oblique_00.vZome` | oblique | 24 | B:20  R:32  Y:20 |
-| 3 | `oblique_02.vZome` | face_first / triangle | 24 | B:12  R:24  Y:36 |
+| 3 | `oblique_02.vZome` | oblique | 24 | B:12  R:24  Y:36 |
 | 4 | `cell_first_icosahedron.vZome` | cell_first / icosahedron | 12 | B:30 |
 | 5 | `oblique_01.vZome` | oblique | 24 | B:20  R:32  Y:20 |
 

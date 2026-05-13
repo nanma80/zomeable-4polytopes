@@ -11,8 +11,8 @@
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `oblique_00.vZome` | oblique | 24 | B:24  Y:24 |
-| 2 | `oblique_01.vZome` | cell_first / hexagonal_prism | 24 | B:24  Y:24 |
-| 3 | `oblique_02.vZome` | face_first / hexagon | 24 | B:24  Y:24 |
+| 2 | `oblique_01.vZome` | oblique | 24 | B:24  Y:24 |
+| 3 | `oblique_02.vZome` | oblique | 24 | B:24  Y:24 |
 
 ## Provenance
 

@@ -189,7 +189,11 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
         manifest = json.load(f)
 
     cache = FeatureCache("prismatic")
-    affected_slugs: list[str] = []
+    # Slugs where ANY (label, subtype) was refreshed. We must update the log
+    # for these regardless of whether basenames changed, otherwise the next
+    # `build_prismatic_doc` run will re-introduce stale label/subtype.
+    relabel_slugs: list[str] = []
+    affected_slugs: list[str] = []  # subset with file renames
     total_files_renamed = 0
     rename_log: list[tuple[str, str, str]] = []  # (slug, old, new)
     per_slug_rename_maps: dict[str, dict] = {}
@@ -220,6 +224,8 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
             if not changed_any:
                 continue
 
+            relabel_slugs.append(slug)
+
             # Pass 2: stable-anchor basename assignment
             idxs = list(range(len(shapes)))
             new_basenames = _assign_stable_basenames(
@@ -233,6 +239,13 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
             for i, s in enumerate(shapes):
                 old_base = s.get("basename")
                 new_base = new_basenames[i]
+                # Always refresh label/subtype from the new classification,
+                # regardless of whether the basename changed. The basename
+                # may stay stable (e.g. (oblique, None) -> (oblique, None))
+                # while subtype changes due to feature improvements; we
+                # must keep label/subtype synced with the kernel.
+                s["label"] = new_class[i][0]
+                s["subtype"] = new_class[i][1]
                 if old_base == new_base:
                     continue
                 rename_map[old_base] = new_base
@@ -244,14 +257,14 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
                                       Path(REPO_ROOT) / rel_new))
                     s["path"] = rel_new
                 s["basename"] = new_base
-                s["label"] = new_class[i][0]
-                s["subtype"] = new_class[i][1]
                 rename_log.append((slug, old_base, new_base))
                 total_files_renamed += 1
 
             if rename_map:
                 affected_slugs.append(slug)
                 per_slug_rename_maps[slug] = rename_map
+            else:
+                per_slug_rename_maps[slug] = {}
 
             # Renames: do via two-phase swap through temp names to handle
             # cycles (e.g. when an oblique_00 needs to swap places with
@@ -273,47 +286,72 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
                 print(f"[{slug}]", flush=True)
                 for old, new in rename_map.items():
                     print(f"   {old}.vZome -> {new}.vZome", flush=True)
+            elif verbose and not rename_map:
+                print(f"[{slug}] (label/subtype refreshed, no file rename)",
+                      flush=True)
 
     # Update manifest on disk
-    if not dry_run and affected_slugs:
+    if not dry_run and relabel_slugs:
         notes = manifest.get("notes")
         notes = list(notes) if isinstance(notes, list) else []
         notes.append(
             "relabel_corpus: classify_kernel tightened from tol=5e-3 to "
             "tol=1e-6; "
             f"{total_files_renamed} basename(s) corrected across "
-            f"{len(affected_slugs)} polytope(s) "
+            f"{len(affected_slugs)} polytope(s); "
+            f"label/subtype refreshed across {len(relabel_slugs)} polytope(s) "
             f"({datetime.datetime.now(datetime.timezone.utc).isoformat()})"
         )
         manifest["notes"] = notes
         with manifest_path.open("w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2)
 
-    # Append corrected log records (prismatic only)
-    if not dry_run and affected_slugs and log_path.exists():
+    # Append corrected log records (prismatic only).  ALL slugs whose
+    # classification refreshed must get a corrected log record, not just
+    # those with file renames -- otherwise the next build_prismatic_doc
+    # run would re-introduce stale label/subtype.
+    if not dry_run and relabel_slugs and log_path.exists():
         recs = _latest_per_slug_jsonl(log_path)
+        # Build a slug -> {basename -> (label, subtype)} lookup with the
+        # freshly-classified values from the in-memory manifest.
+        slug_to_fresh: dict[str, dict[str, tuple[str, str | None]]] = {}
+        for fam, polys in manifest.get("families", {}).items():
+            for poly in polys:
+                slug = poly["slug"]
+                fresh: dict[str, tuple[str, str | None]] = {}
+                for s in poly.get("shapes", []):
+                    fresh[s["basename"]] = (s.get("label"), s.get("subtype"))
+                slug_to_fresh[slug] = fresh
         with log_path.open("a", encoding="utf-8") as f:
-            for slug in affected_slugs:
+            for slug in relabel_slugs:
                 old_rec = recs.get(slug)
                 if old_rec is None:
                     continue
                 new_rec = dict(old_rec)
                 old_emits = old_rec.get("emitted", [])
                 new_emits = []
-                rename_map = per_slug_rename_maps[slug]
+                rename_map = per_slug_rename_maps.get(slug, {})
+                fresh_lookup = slug_to_fresh.get(slug, {})
                 for e in old_emits:
                     if e.get("status") != "emitted":
                         new_emits.append(e)
                         continue
                     base = e.get("basename")
+                    e = dict(e)
                     if base in rename_map:
-                        e = dict(e)
                         new_base = rename_map[base]
                         e["basename"] = new_base
                         p = e.get("path")
                         if p:
                             e["path"] = p.replace(
                                 f"/{base}.vZome", f"/{new_base}.vZome")
+                    # Always rewrite label/subtype from the freshly-classified
+                    # values. The principle is: ground truth = kernel; label
+                    # is derived fresh from it via classify_kernel.
+                    fresh_lbl = fresh_lookup.get(e["basename"])
+                    if fresh_lbl is not None:
+                        e["label"] = fresh_lbl[0]
+                        e["subtype"] = fresh_lbl[1]
                     new_emits.append(e)
                 new_rec["emitted"] = new_emits
                 new_rec["relabel_pass"] = {
@@ -323,6 +361,13 @@ def relabel_prismatic(manifest_path: Path, log_path: Path, *,
                     "renamed": rename_map,
                 }
                 f.write(json.dumps(new_rec) + "\n")
+
+    return {
+        "affected_slugs": affected_slugs,
+        "relabel_slugs": relabel_slugs,
+        "total_files_renamed": total_files_renamed,
+        "rename_log": rename_log,
+    }
 
     return {
         "affected_slugs": affected_slugs,

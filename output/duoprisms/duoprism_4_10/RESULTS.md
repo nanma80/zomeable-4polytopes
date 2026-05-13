@@ -11,7 +11,7 @@
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `oblique_00.vZome` | oblique | 40 | B:40  R:40 |
-| 2 | `oblique_01.vZome` | face_first / decagon | 40 | B:40  R:40 |
+| 2 | `oblique_01.vZome` | oblique | 40 | B:40  R:40 |
 
 ## Provenance
 
