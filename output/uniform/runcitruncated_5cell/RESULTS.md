@@ -9,9 +9,9 @@
 | File | Label / direction | n_balls | fp_hash |
 |------|-------------------|--------:|---------|
 | `runcitruncated_5cell_cell_first_cuboctahedron.vZome` | cell_first / cuboctahedron | 60 | `8fb8506b88` |
-| `runcitruncated_5cell_edge_first.vZome` | edge_first | 60 | `e203af4fe0` |
-| `runcitruncated_5cell_face_first_triangle.vZome` | face_first / triangle | 33 | `a98cfbe1f2` |
-| `runcitruncated_5cell_oblique.vZome` | oblique | 60 | `db7b74a33d` |
+| `runcitruncated_5cell_oblique_00.vZome` | oblique | 60 | `e203af4fe0` |
+| `runcitruncated_5cell_oblique_01.vZome` | oblique | 60 | `db7b74a33d` |
+| `runcitruncated_5cell_oblique_02.vZome` | oblique | 33 | `a98cfbe1f2` |
 
 Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under a specific kernel direction.  See [`docs/WYTHOFF_SWEEP.md`](../../docs/WYTHOFF_SWEEP.md) for the master taxonomy, the search methodology, and the per-shape strut counts (B/Y/R/G zometool axes).
 
@@ -39,26 +39,26 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_edge_first.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique_00.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    runcitruncated_5cell_edge_first.vZome
+    runcitruncated_5cell_oblique_00.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_face_first_triangle.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique_02.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    runcitruncated_5cell_face_first_triangle.vZome
+    runcitruncated_5cell_oblique_02.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique_01.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    runcitruncated_5cell_oblique.vZome
+    runcitruncated_5cell_oblique_01.vZome
  </figcaption>
 </figure>
 

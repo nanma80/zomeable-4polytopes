@@ -251,17 +251,35 @@ def _is_parallel(k_unit: np.ndarray, d: np.ndarray, tol: float) -> bool:
     # symmetric polytopes (e.g. 5-cell) the antipodal direction lies
     # through a cell centroid, not a vertex, so we want each feature
     # listed only on the side where it actually points.
+    #
+    # Tolerance: both kernel components and feature directions are
+    # rational combinations of ZZ[phi] entries (kernels come from
+    # gen_dirs over Z+Z*phi; feature centroids are means of integer
+    # ZZ[phi] vertex coords), so genuine parallelism gives
+    # cos = 1 +/- ~1e-14.  A tight tol (default 1e-6) rejects kernels
+    # that merely come within a few degrees of a feature axis, which
+    # would visually project the feature *near* but not *at* the
+    # projected origin.  Don't loosen this: tol=5e-3 (the previous
+    # default) gave ~11 wrong labels across the rng=2 prismatic +
+    # Wythoff corpora.
     return cos > 1.0 - tol
 
 
 def classify_kernel(kernel,
                     features: PolytopeFeatures,
-                    tol: float = 5e-3
+                    tol: float = 1e-6
                     ) -> Tuple[str, str | None]:
     """Classify kernel direction ``k`` against a polytope's features.
 
     Returns a (label, subtype_or_None) pair.  Priority order:
     vertex_first > cell_first > face_first > edge_first > oblique.
+
+    Tolerance: feature directions and kernels are both rational
+    combinations of ZZ[phi] entries so genuine parallelism gives
+    cos = 1 +/- ~1e-14.  The default tol=1e-6 (angular ~0.08 deg)
+    is tight enough to reject "near-feature" kernels that would
+    visually project the feature near but not at the origin.
+    See ``_is_parallel`` for the rationale.
     """
     k = np.asarray(kernel, dtype=float)
     nk = float(np.linalg.norm(k))
