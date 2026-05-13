@@ -9,9 +9,9 @@
 | File | Label / direction | n_balls | fp_hash |
 |------|-------------------|--------:|---------|
 | `cantellated_5cell_cell_first_octahedron.vZome` | cell_first / octahedron | 30 | `e1d5c7a081` |
-| `cantellated_5cell_face_first_square.vZome` | face_first / square | 30 | `a6537a898e` |
 | `cantellated_5cell_oblique_00.vZome` | oblique | 30 | `1c346b0e6a` |
 | `cantellated_5cell_oblique_01.vZome` | oblique | 18 | `e7d00a6967` |
+| `cantellated_5cell_oblique_02.vZome` | oblique | 30 | `a6537a898e` |
 
 Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under a specific kernel direction.  See [`docs/WYTHOFF_SWEEP.md`](../../docs/WYTHOFF_SWEEP.md) for the master taxonomy, the search methodology, and the per-shape strut counts (B/Y/R/G zometool axes).
 
@@ -39,10 +39,10 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="cantellated_5cell_face_first_square.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="cantellated_5cell_oblique_02.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    cantellated_5cell_face_first_square.vZome
+    cantellated_5cell_oblique_02.vZome
  </figcaption>
 </figure>
 

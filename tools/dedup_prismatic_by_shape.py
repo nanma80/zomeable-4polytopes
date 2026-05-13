@@ -320,8 +320,11 @@ def main():
     if not args.dry_run and stats["affected_slugs"]:
         print()
         print("Now re-run:")
-        print("  python tools/build_prismatic_results.py")
         print("  python tools/build_prismatic_doc.py")
+        print("  python tools/relabel_corpus.py --kind prismatic")
+        print("  python tools/build_prismatic_doc.py")
+        print("  python tools/build_prismatic_results.py")
+        print("  python tools/autofit_vzome_camera.py")
 
 
 if __name__ == "__main__":

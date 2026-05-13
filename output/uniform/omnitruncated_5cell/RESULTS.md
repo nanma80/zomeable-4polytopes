@@ -10,8 +10,8 @@
 |------|-------------------|--------:|---------|
 | `omnitruncated_5cell_cell_first_truncated_octahedron.vZome` | cell_first / truncated_octahedron | 96 | `94c404ee6a` |
 | `omnitruncated_5cell_face_first_hexagon.vZome` | face_first / hexagon | 60 | `c94790ed91` |
-| `omnitruncated_5cell_face_first_square.vZome` | face_first / square | 120 | `9f73b85175` |
-| `omnitruncated_5cell_oblique.vZome` | oblique | 120 | `9f354d53ae` |
+| `omnitruncated_5cell_oblique_00.vZome` | oblique | 120 | `9f73b85175` |
+| `omnitruncated_5cell_oblique_01.vZome` | oblique | 120 | `9f354d53ae` |
 
 Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under a specific kernel direction.  See [`docs/WYTHOFF_SWEEP.md`](../../docs/WYTHOFF_SWEEP.md) for the master taxonomy, the search methodology, and the per-shape strut counts (B/Y/R/G zometool axes).
 
@@ -47,18 +47,18 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="omnitruncated_5cell_face_first_square.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="omnitruncated_5cell_oblique_00.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    omnitruncated_5cell_face_first_square.vZome
+    omnitruncated_5cell_oblique_00.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="omnitruncated_5cell_oblique.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="omnitruncated_5cell_oblique_01.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    omnitruncated_5cell_oblique.vZome
+    omnitruncated_5cell_oblique_01.vZome
  </figcaption>
 </figure>
 

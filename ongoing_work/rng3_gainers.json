@@ -1,0 +1,15 @@
+{
+  "rng2_total": 61,
+  "rng3_total": 63,
+  "rng2_hit_polytopes": 19,
+  "rng3_hit_polytopes": 19,
+  "gainers": [
+    {
+      "slug": "duoprism_4_6",
+      "rng2": 1,
+      "rng3": 3,
+      "delta": 2
+    }
+  ],
+  "note": "Ground-truth identity is shape_signature (rotation/reflection/scale-invariant fingerprint of pairwise distances + edge multiset). Per ground truth, rng=3 gains only +2 shapes vs rng=2, both in duoprism_4_6. Earlier pre-cleanup tally of +10 was inflated by 8 shape-duplicates that survived a buggy dedup pipeline (dedup ran on stale manifest, missed orbit-equivalent kernels). All 61 rng=2 shapes are preserved at rng=3 -- 0 lost. Note on labels: rng=2 corpus contains face_first/cell_first labels that, under classify_kernel(tol=1e-6), are actually oblique; rng=3 corpus has those re-labelled. Labels are presentation; ground truth is unchanged."
+}

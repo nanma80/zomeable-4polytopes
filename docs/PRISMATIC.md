@@ -9,7 +9,7 @@ families, two of which are infinite. This document sweeps a
 bounded sample of each family and catalogues every zomeable
 orthographic projection found.
 
-Sweep parameters: `rng = 2`, `permute_dedup = False`,
+Sweep parameters: `rng = 3`, `permute_dedup = False`,
 agnostic search (no kernel-inheritance shortcut, no
 obstruction-based filtering).  Each polytope is constructed
 from scratch and tested identically.
@@ -19,9 +19,9 @@ Polytopes covered: **204 (in scope)**
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
 | **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 43 |
-| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 9 |
+| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 11 |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
-| **Total** | | **204** | **19** | **61** |
+| **Total** | | **204** | **19** | **63** |
 
 ## Definitions
 
@@ -46,8 +46,8 @@ sets).
 Identical machinery to the 47-corpus sweep:
 
 1. Construct each polytope's vertex set V ⊂ ℝ⁴ and edge list.
-2. Enumerate kernel directions n ∈ ℤ[φ]⁴ with |a|, |b| ≤ 2
-   (`gen_dirs(rng=2, permute_dedup=False)` — `False` because
+2. Enumerate kernel directions n ∈ ℤ[φ]⁴ with |a|, |b| ≤ 3
+   (`gen_dirs(rng=3, permute_dedup=False)` — `False` because
    prismatic polytopes lack full S₄ axis-permutation
    symmetry).
 3. For each n: project, attempt RGBY-alignment of edge
@@ -95,7 +95,7 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 | p | q | Distinct shapes |
 |---:|---:|---:|
 | 3 | 6 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
-| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 1 |
+| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 3 |
 | 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 2 |
 | 5 | 10 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
 | 6 | 6 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
@@ -120,12 +120,12 @@ The remaining 16 antiprismatic prisms (n ≠ 5) produced 0 zomeable projections:
 ## Reproduction
 
 ```bash
-# Family A (17 polyhedral prisms, ~3 min)
-python tools/run_prismatic_sweep.py --family A --rng 2
-# Family B (170 duoprisms, ~45 min)
-python tools/run_prismatic_sweep.py --family B --rng 2
-# Family C (17 antiprismatic prisms, ~2 min)
-python tools/run_prismatic_sweep.py --family C --rng 2
+# Family A (17 polyhedral prisms)
+python tools/run_prismatic_sweep.py --family A --rng 3
+# Family B (170 duoprisms)
+python tools/run_prismatic_sweep.py --family B --rng 3
+# Family C (17 antiprismatic prisms)
+python tools/run_prismatic_sweep.py --family C --rng 3
 
 # Regenerate per-polytope RESULTS.md files from the sweep log
 python tools/build_prismatic_results.py
