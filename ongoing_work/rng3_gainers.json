@@ -1,0 +1,45 @@
+{
+  "rng2_total": 61,
+  "rng3_total": 71,
+  "rng2_hit_polytopes": 19,
+  "rng3_hit_polytopes": 19,
+  "gainers": [
+    {
+      "slug": "duoprism_4_6",
+      "rng2": 1,
+      "rng3": 3,
+      "delta": 2
+    },
+    {
+      "slug": "icosidodecahedron_prism",
+      "rng2": 5,
+      "rng3": 6,
+      "delta": 1
+    },
+    {
+      "slug": "rhombicosidodecahedron_prism",
+      "rng2": 5,
+      "rng3": 6,
+      "delta": 1
+    },
+    {
+      "slug": "truncated_dodecahedron_prism",
+      "rng2": 5,
+      "rng3": 8,
+      "delta": 3
+    },
+    {
+      "slug": "truncated_icosahedron_prism",
+      "rng2": 5,
+      "rng3": 6,
+      "delta": 1
+    },
+    {
+      "slug": "truncated_icosidodecahedron_prism",
+      "rng2": 5,
+      "rng3": 7,
+      "delta": 2
+    }
+  ],
+  "note": "rng=2 face_first_* labels in icosahedron_prism, icosidodecahedron_prism, rhombicosidodecahedron_prism, 5_antiprismatic_prism (x2), duoprism_4_10 are actually oblique under classify_kernel tol=1e-6. rng=3 labels are correct. So a slug going from K (rng=2) to K (rng=3) with the same shape count may still differ in label composition."
+}

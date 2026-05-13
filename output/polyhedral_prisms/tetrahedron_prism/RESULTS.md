@@ -4,7 +4,7 @@
 - 4D vertices: **8**, edges: **16**
 - Folder: `output/polyhedral_prisms/tetrahedron_prism/`
 
-**1 distinct zomeable shape** found (rng = 2 agnostic kernel sweep).
+**1 distinct zomeable shape** found (rng = 3 agnostic kernel sweep).
 
 ## Shapes
 
@@ -14,7 +14,7 @@
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 2`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 

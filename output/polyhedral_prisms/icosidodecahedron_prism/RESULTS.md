@@ -4,21 +4,22 @@
 - 4D vertices: **60**, edges: **150**
 - Folder: `output/polyhedral_prisms/icosidodecahedron_prism/`
 
-**5 distinct zomeable shapes** found (rng = 2 agnostic kernel sweep).
+**6 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `cell_first_icosidodecahedron.vZome` | cell_first / icosidodecahedron | 30 | B:60 |
-| 2 | `oblique_00.vZome` | oblique | 60 | B:24  R:48  Y:78 |
-| 3 | `face_first_pentagon.vZome` | face_first / pentagon | 60 | B:40  R:70  Y:40 |
-| 4 | `edge_first.vZome` | edge_first | 34 | B:25  R:32  Y:16 |
-| 5 | `oblique_01.vZome` | oblique | 60 | B:40  R:70  Y:40 |
+| 1 | `edge_first.vZome` | edge_first | 34 | B:25  R:32  Y:16 |
+| 2 | `oblique_00.vZome` | oblique | 60 | B:40  R:70  Y:40 |
+| 3 | `oblique_03.vZome` | face_first / pentagon | 60 | B:40  R:70  Y:40 |
+| 4 | `oblique_01.vZome` | oblique | 60 | B:24  R:48  Y:78 |
+| 5 | `cell_first_icosidodecahedron.vZome` | cell_first / icosidodecahedron | 30 | B:60 |
+| 6 | `oblique_02.vZome` | oblique | 60 | B:24  R:48  Y:78 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 2`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -30,10 +31,10 @@
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="cell_first_icosidodecahedron.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="edge_first.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    cell_first_icosidodecahedron.vZome
+    edge_first.vZome
  </figcaption>
 </figure>
 
@@ -46,18 +47,10 @@
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="face_first_pentagon.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_03.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    face_first_pentagon.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="edge_first.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    edge_first.vZome
+    oblique_03.vZome
  </figcaption>
 </figure>
 
@@ -66,6 +59,22 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_01.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_icosidodecahedron.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_icosidodecahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_02.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    oblique_02.vZome
  </figcaption>
 </figure>
 

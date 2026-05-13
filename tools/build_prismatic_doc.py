@@ -185,7 +185,7 @@ def build_doc(recs):
     L.append("bounded sample of each family and catalogues every zomeable")
     L.append("orthographic projection found.")
     L.append("")
-    L.append("Sweep parameters: `rng = 2`, `permute_dedup = False`,")
+    L.append("Sweep parameters: `rng = 3`, `permute_dedup = False`,")
     L.append("agnostic search (no kernel-inheritance shortcut, no")
     L.append("obstruction-based filtering).  Each polytope is constructed")
     L.append("from scratch and tested identically.")
@@ -227,8 +227,8 @@ def build_doc(recs):
     L.append("Identical machinery to the 47-corpus sweep:")
     L.append("")
     L.append("1. Construct each polytope's vertex set V ⊂ ℝ⁴ and edge list.")
-    L.append("2. Enumerate kernel directions n ∈ ℤ[φ]⁴ with |a|, |b| ≤ 2")
-    L.append("   (`gen_dirs(rng=2, permute_dedup=False)` — `False` because")
+    L.append("2. Enumerate kernel directions n ∈ ℤ[φ]⁴ with |a|, |b| ≤ 3")
+    L.append("   (`gen_dirs(rng=3, permute_dedup=False)` — `False` because")
     L.append("   prismatic polytopes lack full S₄ axis-permutation")
     L.append("   symmetry).")
     L.append("3. For each n: project, attempt RGBY-alignment of edge")
@@ -251,12 +251,12 @@ def build_doc(recs):
     L.append("## Reproduction")
     L.append("")
     L.append("```bash")
-    L.append("# Family A (17 polyhedral prisms, ~3 min)")
-    L.append("python tools/run_prismatic_sweep.py --family A --rng 2")
-    L.append("# Family B (170 duoprisms, ~45 min)")
-    L.append("python tools/run_prismatic_sweep.py --family B --rng 2")
-    L.append("# Family C (17 antiprismatic prisms, ~2 min)")
-    L.append("python tools/run_prismatic_sweep.py --family C --rng 2")
+    L.append("# Family A (17 polyhedral prisms)")
+    L.append("python tools/run_prismatic_sweep.py --family A --rng 3")
+    L.append("# Family B (170 duoprisms)")
+    L.append("python tools/run_prismatic_sweep.py --family B --rng 3")
+    L.append("# Family C (17 antiprismatic prisms)")
+    L.append("python tools/run_prismatic_sweep.py --family C --rng 3")
     L.append("")
     L.append("# Regenerate per-polytope RESULTS.md files from the sweep log")
     L.append("python tools/build_prismatic_results.py")
@@ -272,7 +272,7 @@ def build_manifest(recs):
     """A compact JSON manifest of all emitted shapes."""
     manifest = {
         "version": 1,
-        "rng": 2,
+        "rng": 3,
         "permute_dedup": False,
         "families": {},
     }

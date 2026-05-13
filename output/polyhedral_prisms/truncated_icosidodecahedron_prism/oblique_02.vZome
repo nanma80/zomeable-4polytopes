@@ -1,726 +1,726 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
   <EditHistory editNumber="722" lastStickyEdit="-1">
-    <ShowPoint point="2 4 4 8 -16 -26"/>
-    <ShowPoint point="-2 -4 -12 -20 -12 -18"/>
-    <ShowPoint point="-2 -4 -2 -4 14 24"/>
-    <ShowPoint point="18 28 0 0 -4 -6"/>
-    <ShowPoint point="-2 -4 16 26 6 10"/>
-    <ShowPoint point="-18 -28 -2 -2 0 0"/>
-    <ShowPoint point="2 4 -12 -20 -12 -18"/>
-    <ShowPoint point="-2 -4 8 14 -14 -22"/>
-    <ShowPoint point="18 28 2 4 2 4"/>
-    <ShowPoint point="2 4 -2 -4 14 24"/>
-    <ShowPoint point="-18 -28 4 6 -2 -2"/>
-    <ShowPoint point="2 4 16 26 6 10"/>
-    <ShowPoint point="-2 -4 -6 -10 12 20"/>
-    <ShowPoint point="2 4 8 14 -14 -22"/>
-    <ShowPoint point="18 28 4 6 -2 -2"/>
-    <ShowPoint point="-2 -4 -14 -22 -8 -12"/>
-    <ShowPoint point="18 28 -2 -2 0 0"/>
-    <ShowPoint point="2 4 -14 -22 -8 -12"/>
-    <ShowPoint point="-2 -4 4 8 -16 -26"/>
-    <ShowPoint point="-18 -28 0 0 -4 -6"/>
-    <ShowPoint point="2 4 -6 -10 12 20"/>
-    <ShowPoint point="-2 -4 14 24 10 16"/>
-    <ShowPoint point="-18 -28 2 4 2 4"/>
-    <ShowPoint point="2 4 14 24 10 16"/>
-    <ShowPoint point="6 10 2 4 -16 -26"/>
-    <ShowPoint point="-6 -10 -8 -12 10 16"/>
-    <ShowPoint point="-16 -26 8 12 -2 -2"/>
-    <ShowPoint point="6 10 0 0 14 24"/>
-    <ShowPoint point="16 26 8 12 -2 -2"/>
-    <ShowPoint point="-6 -10 2 4 -16 -26"/>
-    <ShowPoint point="-16 -26 -6 -8 0 0"/>
-    <ShowPoint point="6 10 10 16 -12 -18"/>
-    <ShowPoint point="-6 -10 0 0 14 24"/>
-    <ShowPoint point="16 26 -6 -8 0 0"/>
-    <ShowPoint point="6 10 -8 -12 10 16"/>
-    <ShowPoint point="4 8 16 26 2 4"/>
-    <ShowPoint point="4 8 12 20 12 20"/>
-    <ShowPoint point="-16 -26 4 8 6 10"/>
-    <ShowPoint point="16 26 4 8 6 10"/>
-    <ShowPoint point="-4 -8 16 26 2 4"/>
-    <ShowPoint point="-4 -8 12 20 12 20"/>
-    <ShowPoint point="4 8 -10 -16 -14 -22"/>
-    <ShowPoint point="4 8 -14 -22 -4 -6"/>
-    <ShowPoint point="-4 -8 -10 -16 -14 -22"/>
-    <ShowPoint point="-4 -8 -14 -22 -4 -6"/>
-    <ShowPoint point="-6 -10 10 16 -12 -18"/>
-    <ShowPoint point="16 26 -2 -4 -8 -12"/>
-    <ShowPoint point="-16 -26 -2 -4 -8 -12"/>
-    <ShowPoint point="-2 -4 16 26 -2 -2"/>
-    <ShowPoint point="10 16 -6 -8 10 16"/>
-    <ShowPoint point="10 16 4 6 -14 -22"/>
-    <ShowPoint point="2 4 10 16 14 24"/>
-    <ShowPoint point="-2 -4 10 16 14 24"/>
-    <ShowPoint point="-14 -24 8 14 6 10"/>
-    <ShowPoint point="2 4 16 26 -2 -2"/>
-    <ShowPoint point="-14 -24 -6 -10 -8 -12"/>
-    <ShowPoint point="14 24 -8 -12 -4 -6"/>
-    <ShowPoint point="-10 -16 -2 -2 12 20"/>
-    <ShowPoint point="14 24 10 16 2 4"/>
-    <ShowPoint point="-10 -16 8 12 -12 -18"/>
-    <ShowPoint point="10 16 -2 -2 12 20"/>
-    <ShowPoint point="-14 -24 10 16 2 4"/>
-    <ShowPoint point="10 16 8 12 -12 -18"/>
-    <ShowPoint point="14 24 8 14 6 10"/>
-    <ShowPoint point="-2 -4 -8 -12 -16 -26"/>
-    <ShowPoint point="-10 -16 -6 -8 10 16"/>
-    <ShowPoint point="-14 -24 -8 -12 -4 -6"/>
-    <ShowPoint point="2 4 -14 -22 0 0"/>
-    <ShowPoint point="-2 -4 -14 -22 0 0"/>
-    <ShowPoint point="14 24 -6 -10 -8 -12"/>
-    <ShowPoint point="-10 -16 4 6 -14 -22"/>
-    <ShowPoint point="2 4 -8 -12 -16 -26"/>
-    <ShowPoint point="-8 -12 -10 -16 6 10"/>
-    <ShowPoint point="14 22 4 8 10 16"/>
-    <ShowPoint point="8 14 -8 -12 -14 -22"/>
-    <ShowPoint point="-8 -12 4 6 14 24"/>
-    <ShowPoint point="8 12 -10 -16 6 10"/>
-    <ShowPoint point="-8 -12 -2 -2 -16 -26"/>
-    <ShowPoint point="-8 -14 10 16 12 20"/>
-    <ShowPoint point="14 22 10 16 -4 -6"/>
-    <ShowPoint point="8 12 -2 -2 -16 -26"/>
-    <ShowPoint point="8 12 4 6 14 24"/>
-    <ShowPoint point="-14 -22 4 8 10 16"/>
-    <ShowPoint point="14 22 -8 -12 2 4"/>
-    <ShowPoint point="-8 -12 12 20 -8 -12"/>
-    <ShowPoint point="-8 -14 -12 -20 -2 -2"/>
-    <ShowPoint point="-8 -14 14 24 0 0"/>
-    <ShowPoint point="8 12 12 20 -8 -12"/>
-    <ShowPoint point="-14 -22 10 16 -4 -6"/>
-    <ShowPoint point="14 22 -2 -4 -12 -18"/>
-    <ShowPoint point="-8 -14 -8 -12 -14 -22"/>
-    <ShowPoint point="-14 -22 -8 -12 2 4"/>
-    <ShowPoint point="8 14 10 16 12 20"/>
-    <ShowPoint point="8 14 14 24 0 0"/>
-    <ShowPoint point="-14 -22 -2 -4 -12 -18"/>
-    <ShowPoint point="8 14 -12 -20 -2 -2"/>
-    <ShowPoint point="6 10 -12 -20 2 4"/>
-    <ShowPoint point="-6 -10 8 12 14 24"/>
-    <ShowPoint point="12 18 10 16 -8 -12"/>
-    <ShowPoint point="6 10 -6 -8 -16 -26"/>
-    <ShowPoint point="12 20 -6 -10 -12 -18"/>
-    <ShowPoint point="12 20 12 20 0 0"/>
-    <ShowPoint point="12 20 -10 -16 -2 -2"/>
-    <ShowPoint point="12 20 8 14 10 16"/>
-    <ShowPoint point="12 18 -8 -12 6 10"/>
-    <ShowPoint point="-6 -10 14 24 -4 -6"/>
-    <ShowPoint point="12 18 2 4 12 20"/>
-    <ShowPoint point="-12 -18 -8 -12 6 10"/>
-    <ShowPoint point="-6 -10 -12 -20 2 4"/>
-    <ShowPoint point="-12 -20 -10 -16 -2 -2"/>
-    <ShowPoint point="6 10 8 12 14 24"/>
-    <ShowPoint point="-12 -20 -6 -10 -12 -18"/>
-    <ShowPoint point="-12 -20 12 20 0 0"/>
-    <ShowPoint point="-12 -18 2 4 12 20"/>
-    <ShowPoint point="-12 -20 8 14 10 16"/>
-    <ShowPoint point="6 10 14 24 -4 -6"/>
-    <ShowPoint point="12 18 0 0 -14 -22"/>
-    <ShowPoint point="-12 -18 0 0 -14 -22"/>
-    <ShowPoint point="-6 -10 -6 -8 -16 -26"/>
-    <ShowPoint point="-12 -18 10 16 -8 -12"/>
-    <ShowPoint point="2 4 2 4 -14 -24"/>
-    <ShowPoint point="-2 -4 -14 -24 -10 -16"/>
-    <ShowPoint point="-2 -4 -4 -8 16 26"/>
-    <ShowPoint point="18 28 -2 -4 -2 -4"/>
-    <ShowPoint point="-2 -4 14 22 8 12"/>
-    <ShowPoint point="-18 -28 -4 -6 2 2"/>
-    <ShowPoint point="2 4 -14 -24 -10 -16"/>
-    <ShowPoint point="-2 -4 6 10 -12 -20"/>
-    <ShowPoint point="18 28 0 0 4 6"/>
-    <ShowPoint point="2 4 -4 -8 16 26"/>
-    <ShowPoint point="-18 -28 2 2 0 0"/>
-    <ShowPoint point="2 4 14 22 8 12"/>
-    <ShowPoint point="-2 -4 -8 -14 14 22"/>
-    <ShowPoint point="2 4 6 10 -12 -20"/>
-    <ShowPoint point="18 28 2 2 0 0"/>
-    <ShowPoint point="-2 -4 -16 -26 -6 -10"/>
-    <ShowPoint point="18 28 -4 -6 2 2"/>
-    <ShowPoint point="2 4 -16 -26 -6 -10"/>
-    <ShowPoint point="-2 -4 2 4 -14 -24"/>
-    <ShowPoint point="-18 -28 -2 -4 -2 -4"/>
-    <ShowPoint point="2 4 -8 -14 14 22"/>
-    <ShowPoint point="-2 -4 12 20 12 18"/>
-    <ShowPoint point="-18 -28 0 0 4 6"/>
-    <ShowPoint point="2 4 12 20 12 18"/>
-    <ShowPoint point="6 10 0 0 -14 -24"/>
-    <ShowPoint point="-6 -10 -10 -16 12 18"/>
-    <ShowPoint point="-16 -26 6 8 0 0"/>
-    <ShowPoint point="6 10 -2 -4 16 26"/>
-    <ShowPoint point="16 26 6 8 0 0"/>
-    <ShowPoint point="-6 -10 0 0 -14 -24"/>
-    <ShowPoint point="-16 -26 -8 -12 2 2"/>
-    <ShowPoint point="6 10 8 12 -10 -16"/>
-    <ShowPoint point="-6 -10 -2 -4 16 26"/>
-    <ShowPoint point="16 26 -8 -12 2 2"/>
-    <ShowPoint point="6 10 -10 -16 12 18"/>
-    <ShowPoint point="4 8 14 22 4 6"/>
-    <ShowPoint point="4 8 10 16 14 22"/>
-    <ShowPoint point="-16 -26 2 4 8 12"/>
-    <ShowPoint point="16 26 2 4 8 12"/>
-    <ShowPoint point="-4 -8 14 22 4 6"/>
-    <ShowPoint point="-4 -8 10 16 14 22"/>
-    <ShowPoint point="4 8 -12 -20 -12 -20"/>
-    <ShowPoint point="4 8 -16 -26 -2 -4"/>
-    <ShowPoint point="-4 -8 -12 -20 -12 -20"/>
-    <ShowPoint point="-4 -8 -16 -26 -2 -4"/>
-    <ShowPoint point="-6 -10 8 12 -10 -16"/>
-    <ShowPoint point="16 26 -4 -8 -6 -10"/>
-    <ShowPoint point="-16 -26 -4 -8 -6 -10"/>
-    <ShowPoint point="-2 -4 14 22 0 0"/>
-    <ShowPoint point="10 16 -8 -12 12 18"/>
-    <ShowPoint point="10 16 2 2 -12 -20"/>
-    <ShowPoint point="2 4 8 12 16 26"/>
-    <ShowPoint point="-2 -4 8 12 16 26"/>
-    <ShowPoint point="-14 -24 6 10 8 12"/>
-    <ShowPoint point="2 4 14 22 0 0"/>
-    <ShowPoint point="-14 -24 -8 -14 -6 -10"/>
-    <ShowPoint point="14 24 -10 -16 -2 -4"/>
-    <ShowPoint point="-10 -16 -4 -6 14 22"/>
-    <ShowPoint point="14 24 8 12 4 6"/>
-    <ShowPoint point="-10 -16 6 8 -10 -16"/>
-    <ShowPoint point="10 16 -4 -6 14 22"/>
-    <ShowPoint point="-14 -24 8 12 4 6"/>
-    <ShowPoint point="10 16 6 8 -10 -16"/>
-    <ShowPoint point="14 24 6 10 8 12"/>
-    <ShowPoint point="-2 -4 -10 -16 -14 -24"/>
-    <ShowPoint point="-10 -16 -8 -12 12 18"/>
-    <ShowPoint point="-14 -24 -10 -16 -2 -4"/>
-    <ShowPoint point="2 4 -16 -26 2 2"/>
-    <ShowPoint point="-2 -4 -16 -26 2 2"/>
-    <ShowPoint point="14 24 -8 -14 -6 -10"/>
-    <ShowPoint point="-10 -16 2 2 -12 -20"/>
-    <ShowPoint point="2 4 -10 -16 -14 -24"/>
-    <ShowPoint point="-8 -12 -12 -20 8 12"/>
-    <ShowPoint point="14 22 2 4 12 18"/>
-    <ShowPoint point="8 14 -10 -16 -12 -20"/>
-    <ShowPoint point="-8 -12 2 2 16 26"/>
-    <ShowPoint point="8 12 -12 -20 8 12"/>
-    <ShowPoint point="-8 -12 -4 -6 -14 -24"/>
-    <ShowPoint point="-8 -14 8 12 14 22"/>
-    <ShowPoint point="14 22 8 12 -2 -4"/>
-    <ShowPoint point="8 12 -4 -6 -14 -24"/>
-    <ShowPoint point="8 12 2 2 16 26"/>
-    <ShowPoint point="-14 -22 2 4 12 18"/>
-    <ShowPoint point="14 22 -10 -16 4 6"/>
-    <ShowPoint point="-8 -12 10 16 -6 -10"/>
-    <ShowPoint point="-8 -14 -14 -24 0 0"/>
-    <ShowPoint point="-8 -14 12 20 2 2"/>
-    <ShowPoint point="8 12 10 16 -6 -10"/>
-    <ShowPoint point="-14 -22 8 12 -2 -4"/>
-    <ShowPoint point="14 22 -4 -8 -10 -16"/>
-    <ShowPoint point="-8 -14 -10 -16 -12 -20"/>
-    <ShowPoint point="-14 -22 -10 -16 4 6"/>
-    <ShowPoint point="8 14 8 12 14 22"/>
-    <ShowPoint point="8 14 12 20 2 2"/>
-    <ShowPoint point="-14 -22 -4 -8 -10 -16"/>
-    <ShowPoint point="8 14 -14 -24 0 0"/>
-    <ShowPoint point="6 10 -14 -24 4 6"/>
-    <ShowPoint point="-6 -10 6 8 16 26"/>
-    <ShowPoint point="12 18 8 12 -6 -10"/>
-    <ShowPoint point="6 10 -8 -12 -14 -24"/>
-    <ShowPoint point="12 20 -8 -14 -10 -16"/>
-    <ShowPoint point="12 20 10 16 2 2"/>
-    <ShowPoint point="12 20 -12 -20 0 0"/>
-    <ShowPoint point="12 20 6 10 12 18"/>
-    <ShowPoint point="12 18 -10 -16 8 12"/>
-    <ShowPoint point="-6 -10 12 20 -2 -4"/>
-    <ShowPoint point="12 18 0 0 14 22"/>
-    <ShowPoint point="-12 -18 -10 -16 8 12"/>
-    <ShowPoint point="-6 -10 -14 -24 4 6"/>
-    <ShowPoint point="-12 -20 -12 -20 0 0"/>
-    <ShowPoint point="6 10 6 8 16 26"/>
-    <ShowPoint point="-12 -20 -8 -14 -10 -16"/>
-    <ShowPoint point="-12 -20 10 16 2 2"/>
-    <ShowPoint point="-12 -18 0 0 14 22"/>
-    <ShowPoint point="-12 -20 6 10 12 18"/>
-    <ShowPoint point="6 10 12 20 -2 -4"/>
-    <ShowPoint point="12 18 -2 -4 -12 -20"/>
-    <ShowPoint point="-12 -18 -2 -4 -12 -20"/>
-    <ShowPoint point="-6 -10 -8 -12 -14 -24"/>
-    <ShowPoint point="-12 -18 8 12 -6 -10"/>
-    <JoinPointPair start="2 4 4 8 -16 -26" end="2 4 8 14 -14 -22"/>
-    <JoinPointPair start="2 4 4 8 -16 -26" end="-2 -4 4 8 -16 -26"/>
-    <JoinPointPair start="2 4 4 8 -16 -26" end="6 10 2 4 -16 -26"/>
-    <JoinPointPair start="2 4 4 8 -16 -26" end="2 4 2 4 -14 -24"/>
-    <JoinPointPair start="-2 -4 -12 -20 -12 -18" end="2 4 -12 -20 -12 -18"/>
-    <JoinPointPair start="-2 -4 -12 -20 -12 -18" end="-2 -4 -14 -22 -8 -12"/>
-    <JoinPointPair start="-2 -4 -12 -20 -12 -18" end="-4 -8 -10 -16 -14 -22"/>
-    <JoinPointPair start="-2 -4 -12 -20 -12 -18" end="-2 -4 -14 -24 -10 -16"/>
-    <JoinPointPair start="-2 -4 -2 -4 14 24" end="2 4 -2 -4 14 24"/>
-    <JoinPointPair start="-2 -4 -2 -4 14 24" end="-2 -4 -6 -10 12 20"/>
-    <JoinPointPair start="-2 -4 -2 -4 14 24" end="-6 -10 0 0 14 24"/>
-    <JoinPointPair start="-2 -4 -2 -4 14 24" end="-2 -4 -4 -8 16 26"/>
-    <JoinPointPair start="18 28 0 0 -4 -6" end="18 28 4 6 -2 -2"/>
-    <JoinPointPair start="18 28 0 0 -4 -6" end="18 28 -2 -2 0 0"/>
-    <JoinPointPair start="18 28 0 0 -4 -6" end="16 26 -2 -4 -8 -12"/>
-    <JoinPointPair start="18 28 0 0 -4 -6" end="18 28 -2 -4 -2 -4"/>
-    <JoinPointPair start="-2 -4 16 26 6 10" end="2 4 16 26 6 10"/>
-    <JoinPointPair start="-2 -4 16 26 6 10" end="-2 -4 14 24 10 16"/>
-    <JoinPointPair start="-2 -4 16 26 6 10" end="-4 -8 16 26 2 4"/>
-    <JoinPointPair start="-2 -4 16 26 6 10" end="-2 -4 14 22 8 12"/>
-    <JoinPointPair start="-18 -28 -2 -2 0 0" end="-18 -28 0 0 -4 -6"/>
-    <JoinPointPair start="-18 -28 -2 -2 0 0" end="-18 -28 2 4 2 4"/>
-    <JoinPointPair start="-18 -28 -2 -2 0 0" end="-16 -26 -6 -8 0 0"/>
-    <JoinPointPair start="-18 -28 -2 -2 0 0" end="-18 -28 -4 -6 2 2"/>
-    <JoinPointPair start="2 4 -12 -20 -12 -18" end="2 4 -14 -22 -8 -12"/>
-    <JoinPointPair start="2 4 -12 -20 -12 -18" end="4 8 -10 -16 -14 -22"/>
-    <JoinPointPair start="2 4 -12 -20 -12 -18" end="2 4 -14 -24 -10 -16"/>
-    <JoinPointPair start="-2 -4 8 14 -14 -22" end="2 4 8 14 -14 -22"/>
-    <JoinPointPair start="-2 -4 8 14 -14 -22" end="-2 -4 4 8 -16 -26"/>
-    <JoinPointPair start="-2 -4 8 14 -14 -22" end="-6 -10 10 16 -12 -18"/>
-    <JoinPointPair start="-2 -4 8 14 -14 -22" end="-2 -4 6 10 -12 -20"/>
-    <JoinPointPair start="18 28 2 4 2 4" end="18 28 4 6 -2 -2"/>
-    <JoinPointPair start="18 28 2 4 2 4" end="18 28 -2 -2 0 0"/>
-    <JoinPointPair start="18 28 2 4 2 4" end="16 26 4 8 6 10"/>
-    <JoinPointPair start="18 28 2 4 2 4" end="18 28 0 0 4 6"/>
-    <JoinPointPair start="2 4 -2 -4 14 24" end="2 4 -6 -10 12 20"/>
-    <JoinPointPair start="2 4 -2 -4 14 24" end="6 10 0 0 14 24"/>
-    <JoinPointPair start="2 4 -2 -4 14 24" end="2 4 -4 -8 16 26"/>
-    <JoinPointPair start="-18 -28 4 6 -2 -2" end="-18 -28 0 0 -4 -6"/>
-    <JoinPointPair start="-18 -28 4 6 -2 -2" end="-18 -28 2 4 2 4"/>
-    <JoinPointPair start="-18 -28 4 6 -2 -2" end="-16 -26 8 12 -2 -2"/>
-    <JoinPointPair start="-18 -28 4 6 -2 -2" end="-18 -28 2 2 0 0"/>
-    <JoinPointPair start="2 4 16 26 6 10" end="2 4 14 24 10 16"/>
-    <JoinPointPair start="2 4 16 26 6 10" end="4 8 16 26 2 4"/>
-    <JoinPointPair start="2 4 16 26 6 10" end="2 4 14 22 8 12"/>
-    <JoinPointPair start="-2 -4 -6 -10 12 20" end="2 4 -6 -10 12 20"/>
-    <JoinPointPair start="-2 -4 -6 -10 12 20" end="-6 -10 -8 -12 10 16"/>
-    <JoinPointPair start="-2 -4 -6 -10 12 20" end="-2 -4 -8 -14 14 22"/>
-    <JoinPointPair start="2 4 8 14 -14 -22" end="6 10 10 16 -12 -18"/>
-    <JoinPointPair start="2 4 8 14 -14 -22" end="2 4 6 10 -12 -20"/>
-    <JoinPointPair start="18 28 4 6 -2 -2" end="16 26 8 12 -2 -2"/>
-    <JoinPointPair start="18 28 4 6 -2 -2" end="18 28 2 2 0 0"/>
-    <JoinPointPair start="-2 -4 -14 -22 -8 -12" end="2 4 -14 -22 -8 -12"/>
-    <JoinPointPair start="-2 -4 -14 -22 -8 -12" end="-4 -8 -14 -22 -4 -6"/>
-    <JoinPointPair start="-2 -4 -14 -22 -8 -12" end="-2 -4 -16 -26 -6 -10"/>
-    <JoinPointPair start="18 28 -2 -2 0 0" end="16 26 -6 -8 0 0"/>
-    <JoinPointPair start="18 28 -2 -2 0 0" end="18 28 -4 -6 2 2"/>
-    <JoinPointPair start="2 4 -14 -22 -8 -12" end="4 8 -14 -22 -4 -6"/>
-    <JoinPointPair start="2 4 -14 -22 -8 -12" end="2 4 -16 -26 -6 -10"/>
-    <JoinPointPair start="-2 -4 4 8 -16 -26" end="-6 -10 2 4 -16 -26"/>
-    <JoinPointPair start="-2 -4 4 8 -16 -26" end="-2 -4 2 4 -14 -24"/>
-    <JoinPointPair start="-18 -28 0 0 -4 -6" end="-16 -26 -2 -4 -8 -12"/>
-    <JoinPointPair start="-18 -28 0 0 -4 -6" end="-18 -28 -2 -4 -2 -4"/>
-    <JoinPointPair start="2 4 -6 -10 12 20" end="6 10 -8 -12 10 16"/>
-    <JoinPointPair start="2 4 -6 -10 12 20" end="2 4 -8 -14 14 22"/>
-    <JoinPointPair start="-2 -4 14 24 10 16" end="2 4 14 24 10 16"/>
-    <JoinPointPair start="-2 -4 14 24 10 16" end="-4 -8 12 20 12 20"/>
-    <JoinPointPair start="-2 -4 14 24 10 16" end="-2 -4 12 20 12 18"/>
-    <JoinPointPair start="-18 -28 2 4 2 4" end="-16 -26 4 8 6 10"/>
-    <JoinPointPair start="-18 -28 2 4 2 4" end="-18 -28 0 0 4 6"/>
-    <JoinPointPair start="2 4 14 24 10 16" end="4 8 12 20 12 20"/>
-    <JoinPointPair start="2 4 14 24 10 16" end="2 4 12 20 12 18"/>
-    <JoinPointPair start="6 10 2 4 -16 -26" end="10 16 4 6 -14 -22"/>
-    <JoinPointPair start="6 10 2 4 -16 -26" end="8 12 -2 -2 -16 -26"/>
-    <JoinPointPair start="6 10 2 4 -16 -26" end="6 10 0 0 -14 -24"/>
-    <JoinPointPair start="-6 -10 -8 -12 10 16" end="-10 -16 -6 -8 10 16"/>
-    <JoinPointPair start="-6 -10 -8 -12 10 16" end="-8 -12 -10 -16 6 10"/>
-    <JoinPointPair start="-6 -10 -8 -12 10 16" end="-6 -10 -10 -16 12 18"/>
-    <JoinPointPair start="-16 -26 8 12 -2 -2" end="-14 -24 10 16 2 4"/>
-    <JoinPointPair start="-16 -26 8 12 -2 -2" end="-14 -22 10 16 -4 -6"/>
-    <JoinPointPair start="-16 -26 8 12 -2 -2" end="-16 -26 6 8 0 0"/>
-    <JoinPointPair start="6 10 0 0 14 24" end="10 16 -2 -2 12 20"/>
-    <JoinPointPair start="6 10 0 0 14 24" end="8 12 4 6 14 24"/>
-    <JoinPointPair start="6 10 0 0 14 24" end="6 10 -2 -4 16 26"/>
-    <JoinPointPair start="16 26 8 12 -2 -2" end="14 24 10 16 2 4"/>
-    <JoinPointPair start="16 26 8 12 -2 -2" end="14 22 10 16 -4 -6"/>
-    <JoinPointPair start="16 26 8 12 -2 -2" end="16 26 6 8 0 0"/>
-    <JoinPointPair start="-6 -10 2 4 -16 -26" end="-10 -16 4 6 -14 -22"/>
-    <JoinPointPair start="-6 -10 2 4 -16 -26" end="-8 -12 -2 -2 -16 -26"/>
-    <JoinPointPair start="-6 -10 2 4 -16 -26" end="-6 -10 0 0 -14 -24"/>
-    <JoinPointPair start="-16 -26 -6 -8 0 0" end="-14 -24 -8 -12 -4 -6"/>
-    <JoinPointPair start="-16 -26 -6 -8 0 0" end="-14 -22 -8 -12 2 4"/>
-    <JoinPointPair start="-16 -26 -6 -8 0 0" end="-16 -26 -8 -12 2 2"/>
-    <JoinPointPair start="6 10 10 16 -12 -18" end="10 16 8 12 -12 -18"/>
-    <JoinPointPair start="6 10 10 16 -12 -18" end="8 12 12 20 -8 -12"/>
-    <JoinPointPair start="6 10 10 16 -12 -18" end="6 10 8 12 -10 -16"/>
-    <JoinPointPair start="-6 -10 0 0 14 24" end="-10 -16 -2 -2 12 20"/>
-    <JoinPointPair start="-6 -10 0 0 14 24" end="-8 -12 4 6 14 24"/>
-    <JoinPointPair start="-6 -10 0 0 14 24" end="-6 -10 -2 -4 16 26"/>
-    <JoinPointPair start="16 26 -6 -8 0 0" end="14 24 -8 -12 -4 -6"/>
-    <JoinPointPair start="16 26 -6 -8 0 0" end="14 22 -8 -12 2 4"/>
-    <JoinPointPair start="16 26 -6 -8 0 0" end="16 26 -8 -12 2 2"/>
-    <JoinPointPair start="6 10 -8 -12 10 16" end="10 16 -6 -8 10 16"/>
-    <JoinPointPair start="6 10 -8 -12 10 16" end="8 12 -10 -16 6 10"/>
-    <JoinPointPair start="6 10 -8 -12 10 16" end="6 10 -10 -16 12 18"/>
-    <JoinPointPair start="4 8 16 26 2 4" end="2 4 16 26 -2 -2"/>
-    <JoinPointPair start="4 8 16 26 2 4" end="8 14 14 24 0 0"/>
-    <JoinPointPair start="4 8 16 26 2 4" end="4 8 14 22 4 6"/>
-    <JoinPointPair start="4 8 12 20 12 20" end="2 4 10 16 14 24"/>
-    <JoinPointPair start="4 8 12 20 12 20" end="8 14 10 16 12 20"/>
-    <JoinPointPair start="4 8 12 20 12 20" end="4 8 10 16 14 22"/>
-    <JoinPointPair start="-16 -26 4 8 6 10" end="-14 -24 8 14 6 10"/>
-    <JoinPointPair start="-16 -26 4 8 6 10" end="-14 -22 4 8 10 16"/>
-    <JoinPointPair start="-16 -26 4 8 6 10" end="-16 -26 2 4 8 12"/>
-    <JoinPointPair start="16 26 4 8 6 10" end="14 24 8 14 6 10"/>
-    <JoinPointPair start="16 26 4 8 6 10" end="14 22 4 8 10 16"/>
-    <JoinPointPair start="16 26 4 8 6 10" end="16 26 2 4 8 12"/>
-    <JoinPointPair start="-4 -8 16 26 2 4" end="-2 -4 16 26 -2 -2"/>
-    <JoinPointPair start="-4 -8 16 26 2 4" end="-8 -14 14 24 0 0"/>
-    <JoinPointPair start="-4 -8 16 26 2 4" end="-4 -8 14 22 4 6"/>
-    <JoinPointPair start="-4 -8 12 20 12 20" end="-2 -4 10 16 14 24"/>
-    <JoinPointPair start="-4 -8 12 20 12 20" end="-8 -14 10 16 12 20"/>
-    <JoinPointPair start="-4 -8 12 20 12 20" end="-4 -8 10 16 14 22"/>
-    <JoinPointPair start="4 8 -10 -16 -14 -22" end="2 4 -8 -12 -16 -26"/>
-    <JoinPointPair start="4 8 -10 -16 -14 -22" end="8 14 -8 -12 -14 -22"/>
-    <JoinPointPair start="4 8 -10 -16 -14 -22" end="4 8 -12 -20 -12 -20"/>
-    <JoinPointPair start="4 8 -14 -22 -4 -6" end="2 4 -14 -22 0 0"/>
-    <JoinPointPair start="4 8 -14 -22 -4 -6" end="8 14 -12 -20 -2 -2"/>
-    <JoinPointPair start="4 8 -14 -22 -4 -6" end="4 8 -16 -26 -2 -4"/>
-    <JoinPointPair start="-4 -8 -10 -16 -14 -22" end="-2 -4 -8 -12 -16 -26"/>
-    <JoinPointPair start="-4 -8 -10 -16 -14 -22" end="-8 -14 -8 -12 -14 -22"/>
-    <JoinPointPair start="-4 -8 -10 -16 -14 -22" end="-4 -8 -12 -20 -12 -20"/>
-    <JoinPointPair start="-4 -8 -14 -22 -4 -6" end="-2 -4 -14 -22 0 0"/>
-    <JoinPointPair start="-4 -8 -14 -22 -4 -6" end="-8 -14 -12 -20 -2 -2"/>
-    <JoinPointPair start="-4 -8 -14 -22 -4 -6" end="-4 -8 -16 -26 -2 -4"/>
-    <JoinPointPair start="-6 -10 10 16 -12 -18" end="-10 -16 8 12 -12 -18"/>
-    <JoinPointPair start="-6 -10 10 16 -12 -18" end="-8 -12 12 20 -8 -12"/>
-    <JoinPointPair start="-6 -10 10 16 -12 -18" end="-6 -10 8 12 -10 -16"/>
-    <JoinPointPair start="16 26 -2 -4 -8 -12" end="14 24 -6 -10 -8 -12"/>
-    <JoinPointPair start="16 26 -2 -4 -8 -12" end="14 22 -2 -4 -12 -18"/>
-    <JoinPointPair start="16 26 -2 -4 -8 -12" end="16 26 -4 -8 -6 -10"/>
-    <JoinPointPair start="-16 -26 -2 -4 -8 -12" end="-14 -24 -6 -10 -8 -12"/>
-    <JoinPointPair start="-16 -26 -2 -4 -8 -12" end="-14 -22 -2 -4 -12 -18"/>
-    <JoinPointPair start="-16 -26 -2 -4 -8 -12" end="-16 -26 -4 -8 -6 -10"/>
-    <JoinPointPair start="-2 -4 16 26 -2 -2" end="2 4 16 26 -2 -2"/>
-    <JoinPointPair start="-2 -4 16 26 -2 -2" end="-6 -10 14 24 -4 -6"/>
-    <JoinPointPair start="-2 -4 16 26 -2 -2" end="-2 -4 14 22 0 0"/>
-    <JoinPointPair start="10 16 -6 -8 10 16" end="10 16 -2 -2 12 20"/>
-    <JoinPointPair start="10 16 -6 -8 10 16" end="12 18 -8 -12 6 10"/>
-    <JoinPointPair start="10 16 -6 -8 10 16" end="10 16 -8 -12 12 18"/>
-    <JoinPointPair start="10 16 4 6 -14 -22" end="10 16 8 12 -12 -18"/>
-    <JoinPointPair start="10 16 4 6 -14 -22" end="12 18 0 0 -14 -22"/>
-    <JoinPointPair start="10 16 4 6 -14 -22" end="10 16 2 2 -12 -20"/>
-    <JoinPointPair start="2 4 10 16 14 24" end="-2 -4 10 16 14 24"/>
-    <JoinPointPair start="2 4 10 16 14 24" end="6 10 8 12 14 24"/>
-    <JoinPointPair start="2 4 10 16 14 24" end="2 4 8 12 16 26"/>
-    <JoinPointPair start="-2 -4 10 16 14 24" end="-6 -10 8 12 14 24"/>
-    <JoinPointPair start="-2 -4 10 16 14 24" end="-2 -4 8 12 16 26"/>
-    <JoinPointPair start="-14 -24 8 14 6 10" end="-14 -24 10 16 2 4"/>
-    <JoinPointPair start="-14 -24 8 14 6 10" end="-12 -20 8 14 10 16"/>
-    <JoinPointPair start="-14 -24 8 14 6 10" end="-14 -24 6 10 8 12"/>
-    <JoinPointPair start="2 4 16 26 -2 -2" end="6 10 14 24 -4 -6"/>
-    <JoinPointPair start="2 4 16 26 -2 -2" end="2 4 14 22 0 0"/>
-    <JoinPointPair start="-14 -24 -6 -10 -8 -12" end="-14 -24 -8 -12 -4 -6"/>
-    <JoinPointPair start="-14 -24 -6 -10 -8 -12" end="-12 -20 -6 -10 -12 -18"/>
-    <JoinPointPair start="-14 -24 -6 -10 -8 -12" end="-14 -24 -8 -14 -6 -10"/>
-    <JoinPointPair start="14 24 -8 -12 -4 -6" end="14 24 -6 -10 -8 -12"/>
-    <JoinPointPair start="14 24 -8 -12 -4 -6" end="12 20 -10 -16 -2 -2"/>
-    <JoinPointPair start="14 24 -8 -12 -4 -6" end="14 24 -10 -16 -2 -4"/>
-    <JoinPointPair start="-10 -16 -2 -2 12 20" end="-10 -16 -6 -8 10 16"/>
-    <JoinPointPair start="-10 -16 -2 -2 12 20" end="-12 -18 2 4 12 20"/>
-    <JoinPointPair start="-10 -16 -2 -2 12 20" end="-10 -16 -4 -6 14 22"/>
-    <JoinPointPair start="14 24 10 16 2 4" end="14 24 8 14 6 10"/>
-    <JoinPointPair start="14 24 10 16 2 4" end="12 20 12 20 0 0"/>
-    <JoinPointPair start="14 24 10 16 2 4" end="14 24 8 12 4 6"/>
-    <JoinPointPair start="-10 -16 8 12 -12 -18" end="-10 -16 4 6 -14 -22"/>
-    <JoinPointPair start="-10 -16 8 12 -12 -18" end="-12 -18 10 16 -8 -12"/>
-    <JoinPointPair start="-10 -16 8 12 -12 -18" end="-10 -16 6 8 -10 -16"/>
-    <JoinPointPair start="10 16 -2 -2 12 20" end="12 18 2 4 12 20"/>
-    <JoinPointPair start="10 16 -2 -2 12 20" end="10 16 -4 -6 14 22"/>
-    <JoinPointPair start="-14 -24 10 16 2 4" end="-12 -20 12 20 0 0"/>
-    <JoinPointPair start="-14 -24 10 16 2 4" end="-14 -24 8 12 4 6"/>
-    <JoinPointPair start="10 16 8 12 -12 -18" end="12 18 10 16 -8 -12"/>
-    <JoinPointPair start="10 16 8 12 -12 -18" end="10 16 6 8 -10 -16"/>
-    <JoinPointPair start="14 24 8 14 6 10" end="12 20 8 14 10 16"/>
-    <JoinPointPair start="14 24 8 14 6 10" end="14 24 6 10 8 12"/>
-    <JoinPointPair start="-2 -4 -8 -12 -16 -26" end="2 4 -8 -12 -16 -26"/>
-    <JoinPointPair start="-2 -4 -8 -12 -16 -26" end="-6 -10 -6 -8 -16 -26"/>
-    <JoinPointPair start="-2 -4 -8 -12 -16 -26" end="-2 -4 -10 -16 -14 -24"/>
-    <JoinPointPair start="-10 -16 -6 -8 10 16" end="-12 -18 -8 -12 6 10"/>
-    <JoinPointPair start="-10 -16 -6 -8 10 16" end="-10 -16 -8 -12 12 18"/>
-    <JoinPointPair start="-14 -24 -8 -12 -4 -6" end="-12 -20 -10 -16 -2 -2"/>
-    <JoinPointPair start="-14 -24 -8 -12 -4 -6" end="-14 -24 -10 -16 -2 -4"/>
-    <JoinPointPair start="2 4 -14 -22 0 0" end="-2 -4 -14 -22 0 0"/>
-    <JoinPointPair start="2 4 -14 -22 0 0" end="6 10 -12 -20 2 4"/>
-    <JoinPointPair start="2 4 -14 -22 0 0" end="2 4 -16 -26 2 2"/>
-    <JoinPointPair start="-2 -4 -14 -22 0 0" end="-6 -10 -12 -20 2 4"/>
-    <JoinPointPair start="-2 -4 -14 -22 0 0" end="-2 -4 -16 -26 2 2"/>
-    <JoinPointPair start="14 24 -6 -10 -8 -12" end="12 20 -6 -10 -12 -18"/>
-    <JoinPointPair start="14 24 -6 -10 -8 -12" end="14 24 -8 -14 -6 -10"/>
-    <JoinPointPair start="-10 -16 4 6 -14 -22" end="-12 -18 0 0 -14 -22"/>
-    <JoinPointPair start="-10 -16 4 6 -14 -22" end="-10 -16 2 2 -12 -20"/>
-    <JoinPointPair start="2 4 -8 -12 -16 -26" end="6 10 -6 -8 -16 -26"/>
-    <JoinPointPair start="2 4 -8 -12 -16 -26" end="2 4 -10 -16 -14 -24"/>
-    <JoinPointPair start="-8 -12 -10 -16 6 10" end="-12 -18 -8 -12 6 10"/>
-    <JoinPointPair start="-8 -12 -10 -16 6 10" end="-6 -10 -12 -20 2 4"/>
-    <JoinPointPair start="-8 -12 -10 -16 6 10" end="-8 -12 -12 -20 8 12"/>
-    <JoinPointPair start="14 22 4 8 10 16" end="12 20 8 14 10 16"/>
-    <JoinPointPair start="14 22 4 8 10 16" end="12 18 2 4 12 20"/>
-    <JoinPointPair start="14 22 4 8 10 16" end="14 22 2 4 12 18"/>
-    <JoinPointPair start="8 14 -8 -12 -14 -22" end="6 10 -6 -8 -16 -26"/>
-    <JoinPointPair start="8 14 -8 -12 -14 -22" end="12 20 -6 -10 -12 -18"/>
-    <JoinPointPair start="8 14 -8 -12 -14 -22" end="8 14 -10 -16 -12 -20"/>
-    <JoinPointPair start="-8 -12 4 6 14 24" end="-6 -10 8 12 14 24"/>
-    <JoinPointPair start="-8 -12 4 6 14 24" end="-12 -18 2 4 12 20"/>
-    <JoinPointPair start="-8 -12 4 6 14 24" end="-8 -12 2 2 16 26"/>
-    <JoinPointPair start="8 12 -10 -16 6 10" end="6 10 -12 -20 2 4"/>
-    <JoinPointPair start="8 12 -10 -16 6 10" end="12 18 -8 -12 6 10"/>
-    <JoinPointPair start="8 12 -10 -16 6 10" end="8 12 -12 -20 8 12"/>
-    <JoinPointPair start="-8 -12 -2 -2 -16 -26" end="-12 -18 0 0 -14 -22"/>
-    <JoinPointPair start="-8 -12 -2 -2 -16 -26" end="-6 -10 -6 -8 -16 -26"/>
-    <JoinPointPair start="-8 -12 -2 -2 -16 -26" end="-8 -12 -4 -6 -14 -24"/>
-    <JoinPointPair start="-8 -14 10 16 12 20" end="-6 -10 8 12 14 24"/>
-    <JoinPointPair start="-8 -14 10 16 12 20" end="-12 -20 8 14 10 16"/>
-    <JoinPointPair start="-8 -14 10 16 12 20" end="-8 -14 8 12 14 22"/>
-    <JoinPointPair start="14 22 10 16 -4 -6" end="12 18 10 16 -8 -12"/>
-    <JoinPointPair start="14 22 10 16 -4 -6" end="12 20 12 20 0 0"/>
-    <JoinPointPair start="14 22 10 16 -4 -6" end="14 22 8 12 -2 -4"/>
-    <JoinPointPair start="8 12 -2 -2 -16 -26" end="6 10 -6 -8 -16 -26"/>
-    <JoinPointPair start="8 12 -2 -2 -16 -26" end="12 18 0 0 -14 -22"/>
-    <JoinPointPair start="8 12 -2 -2 -16 -26" end="8 12 -4 -6 -14 -24"/>
-    <JoinPointPair start="8 12 4 6 14 24" end="12 18 2 4 12 20"/>
-    <JoinPointPair start="8 12 4 6 14 24" end="6 10 8 12 14 24"/>
-    <JoinPointPair start="8 12 4 6 14 24" end="8 12 2 2 16 26"/>
-    <JoinPointPair start="-14 -22 4 8 10 16" end="-12 -18 2 4 12 20"/>
-    <JoinPointPair start="-14 -22 4 8 10 16" end="-12 -20 8 14 10 16"/>
-    <JoinPointPair start="-14 -22 4 8 10 16" end="-14 -22 2 4 12 18"/>
-    <JoinPointPair start="14 22 -8 -12 2 4" end="12 20 -10 -16 -2 -2"/>
-    <JoinPointPair start="14 22 -8 -12 2 4" end="12 18 -8 -12 6 10"/>
-    <JoinPointPair start="14 22 -8 -12 2 4" end="14 22 -10 -16 4 6"/>
-    <JoinPointPair start="-8 -12 12 20 -8 -12" end="-6 -10 14 24 -4 -6"/>
-    <JoinPointPair start="-8 -12 12 20 -8 -12" end="-12 -18 10 16 -8 -12"/>
-    <JoinPointPair start="-8 -12 12 20 -8 -12" end="-8 -12 10 16 -6 -10"/>
-    <JoinPointPair start="-8 -14 -12 -20 -2 -2" end="-6 -10 -12 -20 2 4"/>
-    <JoinPointPair start="-8 -14 -12 -20 -2 -2" end="-12 -20 -10 -16 -2 -2"/>
-    <JoinPointPair start="-8 -14 -12 -20 -2 -2" end="-8 -14 -14 -24 0 0"/>
-    <JoinPointPair start="-8 -14 14 24 0 0" end="-6 -10 14 24 -4 -6"/>
-    <JoinPointPair start="-8 -14 14 24 0 0" end="-12 -20 12 20 0 0"/>
-    <JoinPointPair start="-8 -14 14 24 0 0" end="-8 -14 12 20 2 2"/>
-    <JoinPointPair start="8 12 12 20 -8 -12" end="12 18 10 16 -8 -12"/>
-    <JoinPointPair start="8 12 12 20 -8 -12" end="6 10 14 24 -4 -6"/>
-    <JoinPointPair start="8 12 12 20 -8 -12" end="8 12 10 16 -6 -10"/>
-    <JoinPointPair start="-14 -22 10 16 -4 -6" end="-12 -20 12 20 0 0"/>
-    <JoinPointPair start="-14 -22 10 16 -4 -6" end="-12 -18 10 16 -8 -12"/>
-    <JoinPointPair start="-14 -22 10 16 -4 -6" end="-14 -22 8 12 -2 -4"/>
-    <JoinPointPair start="14 22 -2 -4 -12 -18" end="12 20 -6 -10 -12 -18"/>
-    <JoinPointPair start="14 22 -2 -4 -12 -18" end="12 18 0 0 -14 -22"/>
-    <JoinPointPair start="14 22 -2 -4 -12 -18" end="14 22 -4 -8 -10 -16"/>
-    <JoinPointPair start="-8 -14 -8 -12 -14 -22" end="-12 -20 -6 -10 -12 -18"/>
-    <JoinPointPair start="-8 -14 -8 -12 -14 -22" end="-6 -10 -6 -8 -16 -26"/>
-    <JoinPointPair start="-8 -14 -8 -12 -14 -22" end="-8 -14 -10 -16 -12 -20"/>
-    <JoinPointPair start="-14 -22 -8 -12 2 4" end="-12 -18 -8 -12 6 10"/>
-    <JoinPointPair start="-14 -22 -8 -12 2 4" end="-12 -20 -10 -16 -2 -2"/>
-    <JoinPointPair start="-14 -22 -8 -12 2 4" end="-14 -22 -10 -16 4 6"/>
-    <JoinPointPair start="8 14 10 16 12 20" end="12 20 8 14 10 16"/>
-    <JoinPointPair start="8 14 10 16 12 20" end="6 10 8 12 14 24"/>
-    <JoinPointPair start="8 14 10 16 12 20" end="8 14 8 12 14 22"/>
-    <JoinPointPair start="8 14 14 24 0 0" end="12 20 12 20 0 0"/>
-    <JoinPointPair start="8 14 14 24 0 0" end="6 10 14 24 -4 -6"/>
-    <JoinPointPair start="8 14 14 24 0 0" end="8 14 12 20 2 2"/>
-    <JoinPointPair start="-14 -22 -2 -4 -12 -18" end="-12 -20 -6 -10 -12 -18"/>
-    <JoinPointPair start="-14 -22 -2 -4 -12 -18" end="-12 -18 0 0 -14 -22"/>
-    <JoinPointPair start="-14 -22 -2 -4 -12 -18" end="-14 -22 -4 -8 -10 -16"/>
-    <JoinPointPair start="8 14 -12 -20 -2 -2" end="6 10 -12 -20 2 4"/>
-    <JoinPointPair start="8 14 -12 -20 -2 -2" end="12 20 -10 -16 -2 -2"/>
-    <JoinPointPair start="8 14 -12 -20 -2 -2" end="8 14 -14 -24 0 0"/>
-    <JoinPointPair start="6 10 -12 -20 2 4" end="6 10 -14 -24 4 6"/>
-    <JoinPointPair start="-6 -10 8 12 14 24" end="-6 -10 6 8 16 26"/>
-    <JoinPointPair start="12 18 10 16 -8 -12" end="12 18 8 12 -6 -10"/>
-    <JoinPointPair start="6 10 -6 -8 -16 -26" end="6 10 -8 -12 -14 -24"/>
-    <JoinPointPair start="12 20 -6 -10 -12 -18" end="12 20 -8 -14 -10 -16"/>
-    <JoinPointPair start="12 20 12 20 0 0" end="12 20 10 16 2 2"/>
-    <JoinPointPair start="12 20 -10 -16 -2 -2" end="12 20 -12 -20 0 0"/>
-    <JoinPointPair start="12 20 8 14 10 16" end="12 20 6 10 12 18"/>
-    <JoinPointPair start="12 18 -8 -12 6 10" end="12 18 -10 -16 8 12"/>
-    <JoinPointPair start="-6 -10 14 24 -4 -6" end="-6 -10 12 20 -2 -4"/>
-    <JoinPointPair start="12 18 2 4 12 20" end="12 18 0 0 14 22"/>
-    <JoinPointPair start="-12 -18 -8 -12 6 10" end="-12 -18 -10 -16 8 12"/>
-    <JoinPointPair start="-6 -10 -12 -20 2 4" end="-6 -10 -14 -24 4 6"/>
-    <JoinPointPair start="-12 -20 -10 -16 -2 -2" end="-12 -20 -12 -20 0 0"/>
-    <JoinPointPair start="6 10 8 12 14 24" end="6 10 6 8 16 26"/>
-    <JoinPointPair start="-12 -20 -6 -10 -12 -18" end="-12 -20 -8 -14 -10 -16"/>
-    <JoinPointPair start="-12 -20 12 20 0 0" end="-12 -20 10 16 2 2"/>
-    <JoinPointPair start="-12 -18 2 4 12 20" end="-12 -18 0 0 14 22"/>
-    <JoinPointPair start="-12 -20 8 14 10 16" end="-12 -20 6 10 12 18"/>
-    <JoinPointPair start="6 10 14 24 -4 -6" end="6 10 12 20 -2 -4"/>
-    <JoinPointPair start="12 18 0 0 -14 -22" end="12 18 -2 -4 -12 -20"/>
-    <JoinPointPair start="-12 -18 0 0 -14 -22" end="-12 -18 -2 -4 -12 -20"/>
-    <JoinPointPair start="-6 -10 -6 -8 -16 -26" end="-6 -10 -8 -12 -14 -24"/>
-    <JoinPointPair start="-12 -18 10 16 -8 -12" end="-12 -18 8 12 -6 -10"/>
-    <JoinPointPair start="2 4 2 4 -14 -24" end="2 4 6 10 -12 -20"/>
-    <JoinPointPair start="2 4 2 4 -14 -24" end="-2 -4 2 4 -14 -24"/>
-    <JoinPointPair start="2 4 2 4 -14 -24" end="6 10 0 0 -14 -24"/>
-    <JoinPointPair start="-2 -4 -14 -24 -10 -16" end="2 4 -14 -24 -10 -16"/>
-    <JoinPointPair start="-2 -4 -14 -24 -10 -16" end="-2 -4 -16 -26 -6 -10"/>
-    <JoinPointPair start="-2 -4 -14 -24 -10 -16" end="-4 -8 -12 -20 -12 -20"/>
-    <JoinPointPair start="-2 -4 -4 -8 16 26" end="2 4 -4 -8 16 26"/>
-    <JoinPointPair start="-2 -4 -4 -8 16 26" end="-2 -4 -8 -14 14 22"/>
-    <JoinPointPair start="-2 -4 -4 -8 16 26" end="-6 -10 -2 -4 16 26"/>
-    <JoinPointPair start="18 28 -2 -4 -2 -4" end="18 28 2 2 0 0"/>
-    <JoinPointPair start="18 28 -2 -4 -2 -4" end="18 28 -4 -6 2 2"/>
-    <JoinPointPair start="18 28 -2 -4 -2 -4" end="16 26 -4 -8 -6 -10"/>
-    <JoinPointPair start="-2 -4 14 22 8 12" end="2 4 14 22 8 12"/>
-    <JoinPointPair start="-2 -4 14 22 8 12" end="-2 -4 12 20 12 18"/>
-    <JoinPointPair start="-2 -4 14 22 8 12" end="-4 -8 14 22 4 6"/>
-    <JoinPointPair start="-18 -28 -4 -6 2 2" end="-18 -28 -2 -4 -2 -4"/>
-    <JoinPointPair start="-18 -28 -4 -6 2 2" end="-18 -28 0 0 4 6"/>
-    <JoinPointPair start="-18 -28 -4 -6 2 2" end="-16 -26 -8 -12 2 2"/>
-    <JoinPointPair start="2 4 -14 -24 -10 -16" end="2 4 -16 -26 -6 -10"/>
-    <JoinPointPair start="2 4 -14 -24 -10 -16" end="4 8 -12 -20 -12 -20"/>
-    <JoinPointPair start="-2 -4 6 10 -12 -20" end="2 4 6 10 -12 -20"/>
-    <JoinPointPair start="-2 -4 6 10 -12 -20" end="-2 -4 2 4 -14 -24"/>
-    <JoinPointPair start="-2 -4 6 10 -12 -20" end="-6 -10 8 12 -10 -16"/>
-    <JoinPointPair start="18 28 0 0 4 6" end="18 28 2 2 0 0"/>
-    <JoinPointPair start="18 28 0 0 4 6" end="18 28 -4 -6 2 2"/>
-    <JoinPointPair start="18 28 0 0 4 6" end="16 26 2 4 8 12"/>
-    <JoinPointPair start="2 4 -4 -8 16 26" end="2 4 -8 -14 14 22"/>
-    <JoinPointPair start="2 4 -4 -8 16 26" end="6 10 -2 -4 16 26"/>
-    <JoinPointPair start="-18 -28 2 2 0 0" end="-18 -28 -2 -4 -2 -4"/>
-    <JoinPointPair start="-18 -28 2 2 0 0" end="-18 -28 0 0 4 6"/>
-    <JoinPointPair start="-18 -28 2 2 0 0" end="-16 -26 6 8 0 0"/>
-    <JoinPointPair start="2 4 14 22 8 12" end="2 4 12 20 12 18"/>
-    <JoinPointPair start="2 4 14 22 8 12" end="4 8 14 22 4 6"/>
-    <JoinPointPair start="-2 -4 -8 -14 14 22" end="2 4 -8 -14 14 22"/>
-    <JoinPointPair start="-2 -4 -8 -14 14 22" end="-6 -10 -10 -16 12 18"/>
-    <JoinPointPair start="2 4 6 10 -12 -20" end="6 10 8 12 -10 -16"/>
-    <JoinPointPair start="18 28 2 2 0 0" end="16 26 6 8 0 0"/>
-    <JoinPointPair start="-2 -4 -16 -26 -6 -10" end="2 4 -16 -26 -6 -10"/>
-    <JoinPointPair start="-2 -4 -16 -26 -6 -10" end="-4 -8 -16 -26 -2 -4"/>
-    <JoinPointPair start="18 28 -4 -6 2 2" end="16 26 -8 -12 2 2"/>
-    <JoinPointPair start="2 4 -16 -26 -6 -10" end="4 8 -16 -26 -2 -4"/>
-    <JoinPointPair start="-2 -4 2 4 -14 -24" end="-6 -10 0 0 -14 -24"/>
-    <JoinPointPair start="-18 -28 -2 -4 -2 -4" end="-16 -26 -4 -8 -6 -10"/>
-    <JoinPointPair start="2 4 -8 -14 14 22" end="6 10 -10 -16 12 18"/>
-    <JoinPointPair start="-2 -4 12 20 12 18" end="2 4 12 20 12 18"/>
-    <JoinPointPair start="-2 -4 12 20 12 18" end="-4 -8 10 16 14 22"/>
-    <JoinPointPair start="-18 -28 0 0 4 6" end="-16 -26 2 4 8 12"/>
-    <JoinPointPair start="2 4 12 20 12 18" end="4 8 10 16 14 22"/>
-    <JoinPointPair start="6 10 0 0 -14 -24" end="10 16 2 2 -12 -20"/>
-    <JoinPointPair start="6 10 0 0 -14 -24" end="8 12 -4 -6 -14 -24"/>
-    <JoinPointPair start="-6 -10 -10 -16 12 18" end="-10 -16 -8 -12 12 18"/>
-    <JoinPointPair start="-6 -10 -10 -16 12 18" end="-8 -12 -12 -20 8 12"/>
-    <JoinPointPair start="-16 -26 6 8 0 0" end="-14 -24 8 12 4 6"/>
-    <JoinPointPair start="-16 -26 6 8 0 0" end="-14 -22 8 12 -2 -4"/>
-    <JoinPointPair start="6 10 -2 -4 16 26" end="10 16 -4 -6 14 22"/>
-    <JoinPointPair start="6 10 -2 -4 16 26" end="8 12 2 2 16 26"/>
-    <JoinPointPair start="16 26 6 8 0 0" end="14 24 8 12 4 6"/>
-    <JoinPointPair start="16 26 6 8 0 0" end="14 22 8 12 -2 -4"/>
-    <JoinPointPair start="-6 -10 0 0 -14 -24" end="-10 -16 2 2 -12 -20"/>
-    <JoinPointPair start="-6 -10 0 0 -14 -24" end="-8 -12 -4 -6 -14 -24"/>
-    <JoinPointPair start="-16 -26 -8 -12 2 2" end="-14 -24 -10 -16 -2 -4"/>
-    <JoinPointPair start="-16 -26 -8 -12 2 2" end="-14 -22 -10 -16 4 6"/>
-    <JoinPointPair start="6 10 8 12 -10 -16" end="10 16 6 8 -10 -16"/>
-    <JoinPointPair start="6 10 8 12 -10 -16" end="8 12 10 16 -6 -10"/>
-    <JoinPointPair start="-6 -10 -2 -4 16 26" end="-10 -16 -4 -6 14 22"/>
-    <JoinPointPair start="-6 -10 -2 -4 16 26" end="-8 -12 2 2 16 26"/>
-    <JoinPointPair start="16 26 -8 -12 2 2" end="14 24 -10 -16 -2 -4"/>
-    <JoinPointPair start="16 26 -8 -12 2 2" end="14 22 -10 -16 4 6"/>
-    <JoinPointPair start="6 10 -10 -16 12 18" end="10 16 -8 -12 12 18"/>
-    <JoinPointPair start="6 10 -10 -16 12 18" end="8 12 -12 -20 8 12"/>
-    <JoinPointPair start="4 8 14 22 4 6" end="2 4 14 22 0 0"/>
-    <JoinPointPair start="4 8 14 22 4 6" end="8 14 12 20 2 2"/>
-    <JoinPointPair start="4 8 10 16 14 22" end="2 4 8 12 16 26"/>
-    <JoinPointPair start="4 8 10 16 14 22" end="8 14 8 12 14 22"/>
-    <JoinPointPair start="-16 -26 2 4 8 12" end="-14 -24 6 10 8 12"/>
-    <JoinPointPair start="-16 -26 2 4 8 12" end="-14 -22 2 4 12 18"/>
-    <JoinPointPair start="16 26 2 4 8 12" end="14 24 6 10 8 12"/>
-    <JoinPointPair start="16 26 2 4 8 12" end="14 22 2 4 12 18"/>
-    <JoinPointPair start="-4 -8 14 22 4 6" end="-2 -4 14 22 0 0"/>
-    <JoinPointPair start="-4 -8 14 22 4 6" end="-8 -14 12 20 2 2"/>
-    <JoinPointPair start="-4 -8 10 16 14 22" end="-2 -4 8 12 16 26"/>
-    <JoinPointPair start="-4 -8 10 16 14 22" end="-8 -14 8 12 14 22"/>
-    <JoinPointPair start="4 8 -12 -20 -12 -20" end="2 4 -10 -16 -14 -24"/>
-    <JoinPointPair start="4 8 -12 -20 -12 -20" end="8 14 -10 -16 -12 -20"/>
-    <JoinPointPair start="4 8 -16 -26 -2 -4" end="2 4 -16 -26 2 2"/>
-    <JoinPointPair start="4 8 -16 -26 -2 -4" end="8 14 -14 -24 0 0"/>
-    <JoinPointPair start="-4 -8 -12 -20 -12 -20" end="-2 -4 -10 -16 -14 -24"/>
-    <JoinPointPair start="-4 -8 -12 -20 -12 -20" end="-8 -14 -10 -16 -12 -20"/>
-    <JoinPointPair start="-4 -8 -16 -26 -2 -4" end="-2 -4 -16 -26 2 2"/>
-    <JoinPointPair start="-4 -8 -16 -26 -2 -4" end="-8 -14 -14 -24 0 0"/>
-    <JoinPointPair start="-6 -10 8 12 -10 -16" end="-10 -16 6 8 -10 -16"/>
-    <JoinPointPair start="-6 -10 8 12 -10 -16" end="-8 -12 10 16 -6 -10"/>
-    <JoinPointPair start="16 26 -4 -8 -6 -10" end="14 24 -8 -14 -6 -10"/>
-    <JoinPointPair start="16 26 -4 -8 -6 -10" end="14 22 -4 -8 -10 -16"/>
-    <JoinPointPair start="-16 -26 -4 -8 -6 -10" end="-14 -24 -8 -14 -6 -10"/>
-    <JoinPointPair start="-16 -26 -4 -8 -6 -10" end="-14 -22 -4 -8 -10 -16"/>
-    <JoinPointPair start="-2 -4 14 22 0 0" end="2 4 14 22 0 0"/>
-    <JoinPointPair start="-2 -4 14 22 0 0" end="-6 -10 12 20 -2 -4"/>
-    <JoinPointPair start="10 16 -8 -12 12 18" end="10 16 -4 -6 14 22"/>
-    <JoinPointPair start="10 16 -8 -12 12 18" end="12 18 -10 -16 8 12"/>
-    <JoinPointPair start="10 16 2 2 -12 -20" end="10 16 6 8 -10 -16"/>
-    <JoinPointPair start="10 16 2 2 -12 -20" end="12 18 -2 -4 -12 -20"/>
-    <JoinPointPair start="2 4 8 12 16 26" end="-2 -4 8 12 16 26"/>
-    <JoinPointPair start="2 4 8 12 16 26" end="6 10 6 8 16 26"/>
-    <JoinPointPair start="-2 -4 8 12 16 26" end="-6 -10 6 8 16 26"/>
-    <JoinPointPair start="-14 -24 6 10 8 12" end="-14 -24 8 12 4 6"/>
-    <JoinPointPair start="-14 -24 6 10 8 12" end="-12 -20 6 10 12 18"/>
-    <JoinPointPair start="2 4 14 22 0 0" end="6 10 12 20 -2 -4"/>
-    <JoinPointPair start="-14 -24 -8 -14 -6 -10" end="-14 -24 -10 -16 -2 -4"/>
-    <JoinPointPair start="-14 -24 -8 -14 -6 -10" end="-12 -20 -8 -14 -10 -16"/>
-    <JoinPointPair start="14 24 -10 -16 -2 -4" end="14 24 -8 -14 -6 -10"/>
-    <JoinPointPair start="14 24 -10 -16 -2 -4" end="12 20 -12 -20 0 0"/>
-    <JoinPointPair start="-10 -16 -4 -6 14 22" end="-10 -16 -8 -12 12 18"/>
-    <JoinPointPair start="-10 -16 -4 -6 14 22" end="-12 -18 0 0 14 22"/>
-    <JoinPointPair start="14 24 8 12 4 6" end="14 24 6 10 8 12"/>
-    <JoinPointPair start="14 24 8 12 4 6" end="12 20 10 16 2 2"/>
-    <JoinPointPair start="-10 -16 6 8 -10 -16" end="-10 -16 2 2 -12 -20"/>
-    <JoinPointPair start="-10 -16 6 8 -10 -16" end="-12 -18 8 12 -6 -10"/>
-    <JoinPointPair start="10 16 -4 -6 14 22" end="12 18 0 0 14 22"/>
-    <JoinPointPair start="-14 -24 8 12 4 6" end="-12 -20 10 16 2 2"/>
-    <JoinPointPair start="10 16 6 8 -10 -16" end="12 18 8 12 -6 -10"/>
-    <JoinPointPair start="14 24 6 10 8 12" end="12 20 6 10 12 18"/>
-    <JoinPointPair start="-2 -4 -10 -16 -14 -24" end="2 4 -10 -16 -14 -24"/>
-    <JoinPointPair start="-2 -4 -10 -16 -14 -24" end="-6 -10 -8 -12 -14 -24"/>
-    <JoinPointPair start="-10 -16 -8 -12 12 18" end="-12 -18 -10 -16 8 12"/>
-    <JoinPointPair start="-14 -24 -10 -16 -2 -4" end="-12 -20 -12 -20 0 0"/>
-    <JoinPointPair start="2 4 -16 -26 2 2" end="-2 -4 -16 -26 2 2"/>
-    <JoinPointPair start="2 4 -16 -26 2 2" end="6 10 -14 -24 4 6"/>
-    <JoinPointPair start="-2 -4 -16 -26 2 2" end="-6 -10 -14 -24 4 6"/>
-    <JoinPointPair start="14 24 -8 -14 -6 -10" end="12 20 -8 -14 -10 -16"/>
-    <JoinPointPair start="-10 -16 2 2 -12 -20" end="-12 -18 -2 -4 -12 -20"/>
-    <JoinPointPair start="2 4 -10 -16 -14 -24" end="6 10 -8 -12 -14 -24"/>
-    <JoinPointPair start="-8 -12 -12 -20 8 12" end="-12 -18 -10 -16 8 12"/>
-    <JoinPointPair start="-8 -12 -12 -20 8 12" end="-6 -10 -14 -24 4 6"/>
-    <JoinPointPair start="14 22 2 4 12 18" end="12 20 6 10 12 18"/>
-    <JoinPointPair start="14 22 2 4 12 18" end="12 18 0 0 14 22"/>
-    <JoinPointPair start="8 14 -10 -16 -12 -20" end="6 10 -8 -12 -14 -24"/>
-    <JoinPointPair start="8 14 -10 -16 -12 -20" end="12 20 -8 -14 -10 -16"/>
-    <JoinPointPair start="-8 -12 2 2 16 26" end="-6 -10 6 8 16 26"/>
-    <JoinPointPair start="-8 -12 2 2 16 26" end="-12 -18 0 0 14 22"/>
-    <JoinPointPair start="8 12 -12 -20 8 12" end="6 10 -14 -24 4 6"/>
-    <JoinPointPair start="8 12 -12 -20 8 12" end="12 18 -10 -16 8 12"/>
-    <JoinPointPair start="-8 -12 -4 -6 -14 -24" end="-12 -18 -2 -4 -12 -20"/>
-    <JoinPointPair start="-8 -12 -4 -6 -14 -24" end="-6 -10 -8 -12 -14 -24"/>
-    <JoinPointPair start="-8 -14 8 12 14 22" end="-6 -10 6 8 16 26"/>
-    <JoinPointPair start="-8 -14 8 12 14 22" end="-12 -20 6 10 12 18"/>
-    <JoinPointPair start="14 22 8 12 -2 -4" end="12 18 8 12 -6 -10"/>
-    <JoinPointPair start="14 22 8 12 -2 -4" end="12 20 10 16 2 2"/>
-    <JoinPointPair start="8 12 -4 -6 -14 -24" end="6 10 -8 -12 -14 -24"/>
-    <JoinPointPair start="8 12 -4 -6 -14 -24" end="12 18 -2 -4 -12 -20"/>
-    <JoinPointPair start="8 12 2 2 16 26" end="12 18 0 0 14 22"/>
-    <JoinPointPair start="8 12 2 2 16 26" end="6 10 6 8 16 26"/>
-    <JoinPointPair start="-14 -22 2 4 12 18" end="-12 -18 0 0 14 22"/>
-    <JoinPointPair start="-14 -22 2 4 12 18" end="-12 -20 6 10 12 18"/>
-    <JoinPointPair start="14 22 -10 -16 4 6" end="12 20 -12 -20 0 0"/>
-    <JoinPointPair start="14 22 -10 -16 4 6" end="12 18 -10 -16 8 12"/>
-    <JoinPointPair start="-8 -12 10 16 -6 -10" end="-6 -10 12 20 -2 -4"/>
-    <JoinPointPair start="-8 -12 10 16 -6 -10" end="-12 -18 8 12 -6 -10"/>
-    <JoinPointPair start="-8 -14 -14 -24 0 0" end="-6 -10 -14 -24 4 6"/>
-    <JoinPointPair start="-8 -14 -14 -24 0 0" end="-12 -20 -12 -20 0 0"/>
-    <JoinPointPair start="-8 -14 12 20 2 2" end="-6 -10 12 20 -2 -4"/>
-    <JoinPointPair start="-8 -14 12 20 2 2" end="-12 -20 10 16 2 2"/>
-    <JoinPointPair start="8 12 10 16 -6 -10" end="12 18 8 12 -6 -10"/>
-    <JoinPointPair start="8 12 10 16 -6 -10" end="6 10 12 20 -2 -4"/>
-    <JoinPointPair start="-14 -22 8 12 -2 -4" end="-12 -20 10 16 2 2"/>
-    <JoinPointPair start="-14 -22 8 12 -2 -4" end="-12 -18 8 12 -6 -10"/>
-    <JoinPointPair start="14 22 -4 -8 -10 -16" end="12 20 -8 -14 -10 -16"/>
-    <JoinPointPair start="14 22 -4 -8 -10 -16" end="12 18 -2 -4 -12 -20"/>
-    <JoinPointPair start="-8 -14 -10 -16 -12 -20" end="-12 -20 -8 -14 -10 -16"/>
-    <JoinPointPair start="-8 -14 -10 -16 -12 -20" end="-6 -10 -8 -12 -14 -24"/>
-    <JoinPointPair start="-14 -22 -10 -16 4 6" end="-12 -18 -10 -16 8 12"/>
-    <JoinPointPair start="-14 -22 -10 -16 4 6" end="-12 -20 -12 -20 0 0"/>
-    <JoinPointPair start="8 14 8 12 14 22" end="12 20 6 10 12 18"/>
-    <JoinPointPair start="8 14 8 12 14 22" end="6 10 6 8 16 26"/>
-    <JoinPointPair start="8 14 12 20 2 2" end="12 20 10 16 2 2"/>
-    <JoinPointPair start="8 14 12 20 2 2" end="6 10 12 20 -2 -4"/>
-    <JoinPointPair start="-14 -22 -4 -8 -10 -16" end="-12 -20 -8 -14 -10 -16"/>
-    <JoinPointPair start="-14 -22 -4 -8 -10 -16" end="-12 -18 -2 -4 -12 -20"/>
-    <JoinPointPair start="8 14 -14 -24 0 0" end="6 10 -14 -24 4 6"/>
-    <JoinPointPair start="8 14 -14 -24 0 0" end="12 20 -12 -20 0 0"/>
+    <ShowPoint point="-6 -10 10 16 -24 -38"/>
+    <ShowPoint point="-16 -26 -16 -26 -16 -26"/>
+    <ShowPoint point="0 0 -10 -16 26 42"/>
+    <ShowPoint point="-14 -22 22 36 -4 -6"/>
+    <ShowPoint point="12 20 12 20 12 20"/>
+    <ShowPoint point="4 6 -26 -42 2 4"/>
+    <ShowPoint point="-18 -30 -10 -16 -16 -26"/>
+    <ShowPoint point="0 0 8 12 -20 -32"/>
+    <ShowPoint point="-10 -16 24 38 6 10"/>
+    <ShowPoint point="-2 -4 -4 -6 26 42"/>
+    <ShowPoint point="8 12 -20 -32 0 0"/>
+    <ShowPoint point="10 16 18 30 12 20"/>
+    <ShowPoint point="-4 -6 -14 -22 22 36"/>
+    <ShowPoint point="-2 -4 14 22 -20 -32"/>
+    <ShowPoint point="-10 -16 26 42 0 0"/>
+    <ShowPoint point="-16 -26 -18 -30 -10 -16"/>
+    <ShowPoint point="-14 -22 20 32 2 4"/>
+    <ShowPoint point="-18 -30 -12 -20 -10 -16"/>
+    <ShowPoint point="-4 -6 4 6 -24 -38"/>
+    <ShowPoint point="4 6 -24 -38 -4 -6"/>
+    <ShowPoint point="-6 -10 -8 -12 22 36"/>
+    <ShowPoint point="12 20 10 16 18 30"/>
+    <ShowPoint point="8 12 -22 -36 6 10"/>
+    <ShowPoint point="10 16 16 26 18 30"/>
+    <ShowPoint point="-10 -16 12 20 -24 -38"/>
+    <ShowPoint point="-4 -6 -20 -32 18 30"/>
+    <ShowPoint point="10 16 -14 -22 0 0"/>
+    <ShowPoint point="-2 -4 4 6 26 42"/>
+    <ShowPoint point="-6 -10 28 46 0 0"/>
+    <ShowPoint point="-4 -6 -4 -6 -24 -38"/>
+    <ShowPoint point="0 0 -28 -46 2 4"/>
+    <ShowPoint point="-2 -4 20 32 -16 -26"/>
+    <ShowPoint point="4 6 -12 -20 26 42"/>
+    <ShowPoint point="-16 -26 14 22 2 4"/>
+    <ShowPoint point="-10 -16 -4 -6 18 30"/>
+    <ShowPoint point="8 12 22 36 6 10"/>
+    <ShowPoint point="8 12 16 26 22 36"/>
+    <ShowPoint point="10 16 -18 -30 12 20"/>
+    <ShowPoint point="-6 -10 24 38 12 20"/>
+    <ShowPoint point="12 20 10 16 6 10"/>
+    <ShowPoint point="12 20 4 6 22 36"/>
+    <ShowPoint point="-18 -30 -4 -6 -20 -32"/>
+    <ShowPoint point="-18 -30 -10 -16 -4 -6"/>
+    <ShowPoint point="-14 -22 -16 -26 -20 -32"/>
+    <ShowPoint point="-14 -22 -22 -36 -4 -6"/>
+    <ShowPoint point="4 6 4 6 -16 -26"/>
+    <ShowPoint point="-16 -26 18 30 -10 -16"/>
+    <ShowPoint point="0 0 -24 -38 -10 -16"/>
+    <ShowPoint point="10 16 14 22 0 0"/>
+    <ShowPoint point="-10 -16 4 6 18 30"/>
+    <ShowPoint point="-10 -16 18 30 -20 -32"/>
+    <ShowPoint point="8 12 10 16 26 42"/>
+    <ShowPoint point="10 16 4 6 26 42"/>
+    <ShowPoint point="12 20 -12 -20 12 20"/>
+    <ShowPoint point="8 12 20 32 0 0"/>
+    <ShowPoint point="-4 -6 -26 -42 -10 -16"/>
+    <ShowPoint point="-18 -30 10 16 -4 -6"/>
+    <ShowPoint point="4 6 -18 -30 22 36"/>
+    <ShowPoint point="-2 -4 28 46 6 10"/>
+    <ShowPoint point="4 6 -4 -6 -16 -26"/>
+    <ShowPoint point="-6 -10 8 12 22 36"/>
+    <ShowPoint point="12 20 -10 -16 6 10"/>
+    <ShowPoint point="-6 -10 22 36 -16 -26"/>
+    <ShowPoint point="-2 -4 26 42 12 20"/>
+    <ShowPoint point="-14 -22 -10 -16 -24 -38"/>
+    <ShowPoint point="0 0 -22 -36 18 30"/>
+    <ShowPoint point="-4 -6 -28 -46 -4 -6"/>
+    <ShowPoint point="-16 -26 -14 -22 2 4"/>
+    <ShowPoint point="-14 -22 -20 -32 2 4"/>
+    <ShowPoint point="-18 -30 12 20 -10 -16"/>
+    <ShowPoint point="0 0 -8 -12 -20 -32"/>
+    <ShowPoint point="-16 -26 -4 -6 -24 -38"/>
+    <ShowPoint point="-6 -10 -24 -38 12 20"/>
+    <ShowPoint point="-4 -6 20 32 18 30"/>
+    <ShowPoint point="-18 -30 4 6 -20 -32"/>
+    <ShowPoint point="8 12 -10 -16 26 42"/>
+    <ShowPoint point="-14 -22 -4 -6 12 20"/>
+    <ShowPoint point="-6 -10 -10 -16 -24 -38"/>
+    <ShowPoint point="12 20 -4 -6 22 36"/>
+    <ShowPoint point="-4 -6 28 46 -4 -6"/>
+    <ShowPoint point="-14 -22 10 16 -24 -38"/>
+    <ShowPoint point="0 0 10 16 26 42"/>
+    <ShowPoint point="10 16 -16 -26 18 30"/>
+    <ShowPoint point="-16 -26 8 12 6 10"/>
+    <ShowPoint point="8 12 4 6 -10 -16"/>
+    <ShowPoint point="-10 -16 -26 -42 0 0"/>
+    <ShowPoint point="12 20 4 6 2 4"/>
+    <ShowPoint point="0 0 24 38 -10 -16"/>
+    <ShowPoint point="10 16 -8 -12 -4 -6"/>
+    <ShowPoint point="-16 -26 16 26 -16 -26"/>
+    <ShowPoint point="-10 -16 -18 -30 -20 -32"/>
+    <ShowPoint point="-2 -4 -28 -46 6 10"/>
+    <ShowPoint point="4 6 18 30 22 36"/>
+    <ShowPoint point="4 6 26 42 2 4"/>
+    <ShowPoint point="-2 -4 -20 -32 -16 -26"/>
+    <ShowPoint point="-18 -30 -4 -6 0 0"/>
+    <ShowPoint point="-16 -26 -8 -12 6 10"/>
+    <ShowPoint point="10 16 -4 -6 26 42"/>
+    <ShowPoint point="-4 -6 26 42 -10 -16"/>
+    <ShowPoint point="-16 -26 4 6 -24 -38"/>
+    <ShowPoint point="-18 -30 10 16 -16 -26"/>
+    <ShowPoint point="0 0 28 46 2 4"/>
+    <ShowPoint point="-18 -30 4 6 0 0"/>
+    <ShowPoint point="0 0 22 36 18 30"/>
+    <ShowPoint point="-14 -22 4 6 12 20"/>
+    <ShowPoint point="10 16 8 12 -4 -6"/>
+    <ShowPoint point="-4 -6 14 22 22 36"/>
+    <ShowPoint point="-2 -4 -26 -42 12 20"/>
+    <ShowPoint point="-10 -16 -24 -38 6 10"/>
+    <ShowPoint point="-6 -10 -28 -46 0 0"/>
+    <ShowPoint point="4 6 12 20 26 42"/>
+    <ShowPoint point="-6 -10 -22 -36 -16 -26"/>
+    <ShowPoint point="12 20 -4 -6 2 4"/>
+    <ShowPoint point="8 12 -16 -26 22 36"/>
+    <ShowPoint point="12 20 -10 -16 18 30"/>
+    <ShowPoint point="4 6 24 38 -4 -6"/>
+    <ShowPoint point="-14 -22 16 26 -20 -32"/>
+    <ShowPoint point="-2 -4 -14 -22 -20 -32"/>
+    <ShowPoint point="-10 -16 -12 -20 -24 -38"/>
+    <ShowPoint point="8 12 -4 -6 -10 -16"/>
+    <ShowPoint point="0 0 10 16 -26 -42"/>
+    <ShowPoint point="-10 -16 -16 -26 -18 -30"/>
+    <ShowPoint point="6 10 -10 -16 24 38"/>
+    <ShowPoint point="-8 -12 22 36 -6 -10"/>
+    <ShowPoint point="18 30 12 20 10 16"/>
+    <ShowPoint point="10 16 -26 -42 0 0"/>
+    <ShowPoint point="-12 -20 -10 -16 -18 -30"/>
+    <ShowPoint point="6 10 8 12 -22 -36"/>
+    <ShowPoint point="-4 -6 24 38 4 6"/>
+    <ShowPoint point="4 6 -4 -6 24 38"/>
+    <ShowPoint point="14 22 -20 -32 -2 -4"/>
+    <ShowPoint point="16 26 18 30 10 16"/>
+    <ShowPoint point="2 4 -14 -22 20 32"/>
+    <ShowPoint point="4 6 14 22 -22 -36"/>
+    <ShowPoint point="-4 -6 26 42 -2 -4"/>
+    <ShowPoint point="-10 -16 -18 -30 -12 -20"/>
+    <ShowPoint point="-8 -12 20 32 0 0"/>
+    <ShowPoint point="-12 -20 -12 -20 -12 -20"/>
+    <ShowPoint point="2 4 4 6 -26 -42"/>
+    <ShowPoint point="10 16 -24 -38 -6 -10"/>
+    <ShowPoint point="0 0 -8 -12 20 32"/>
+    <ShowPoint point="18 30 10 16 16 26"/>
+    <ShowPoint point="14 22 -22 -36 4 6"/>
+    <ShowPoint point="16 26 16 26 16 26"/>
+    <ShowPoint point="-4 -6 12 20 -26 -42"/>
+    <ShowPoint point="2 4 -20 -32 16 26"/>
+    <ShowPoint point="16 26 -14 -22 -2 -4"/>
+    <ShowPoint point="4 6 4 6 24 38"/>
+    <ShowPoint point="0 0 28 46 -2 -4"/>
+    <ShowPoint point="2 4 -4 -6 -26 -42"/>
+    <ShowPoint point="6 10 -28 -46 0 0"/>
+    <ShowPoint point="4 6 20 32 -18 -30"/>
+    <ShowPoint point="10 16 -12 -20 24 38"/>
+    <ShowPoint point="-10 -16 14 22 0 0"/>
+    <ShowPoint point="-4 -6 -4 -6 16 26"/>
+    <ShowPoint point="14 22 22 36 4 6"/>
+    <ShowPoint point="14 22 16 26 20 32"/>
+    <ShowPoint point="16 26 -18 -30 10 16"/>
+    <ShowPoint point="0 0 24 38 10 16"/>
+    <ShowPoint point="18 30 10 16 4 6"/>
+    <ShowPoint point="18 30 4 6 20 32"/>
+    <ShowPoint point="-12 -20 -4 -6 -22 -36"/>
+    <ShowPoint point="-12 -20 -10 -16 -6 -10"/>
+    <ShowPoint point="-8 -12 -16 -26 -22 -36"/>
+    <ShowPoint point="-8 -12 -22 -36 -6 -10"/>
+    <ShowPoint point="10 16 4 6 -18 -30"/>
+    <ShowPoint point="-10 -16 18 30 -12 -20"/>
+    <ShowPoint point="6 10 -24 -38 -12 -20"/>
+    <ShowPoint point="16 26 14 22 -2 -4"/>
+    <ShowPoint point="-4 -6 4 6 16 26"/>
+    <ShowPoint point="-4 -6 18 30 -22 -36"/>
+    <ShowPoint point="14 22 10 16 24 38"/>
+    <ShowPoint point="16 26 4 6 24 38"/>
+    <ShowPoint point="18 30 -12 -20 10 16"/>
+    <ShowPoint point="14 22 20 32 -2 -4"/>
+    <ShowPoint point="2 4 -26 -42 -12 -20"/>
+    <ShowPoint point="-12 -20 10 16 -6 -10"/>
+    <ShowPoint point="10 16 -18 -30 20 32"/>
+    <ShowPoint point="4 6 28 46 4 6"/>
+    <ShowPoint point="10 16 -4 -6 -18 -30"/>
+    <ShowPoint point="0 0 8 12 20 32"/>
+    <ShowPoint point="18 30 -10 -16 4 6"/>
+    <ShowPoint point="0 0 22 36 -18 -30"/>
+    <ShowPoint point="4 6 26 42 10 16"/>
+    <ShowPoint point="-8 -12 -10 -16 -26 -42"/>
+    <ShowPoint point="6 10 -22 -36 16 26"/>
+    <ShowPoint point="2 4 -28 -46 -6 -10"/>
+    <ShowPoint point="-10 -16 -14 -22 0 0"/>
+    <ShowPoint point="-8 -12 -20 -32 0 0"/>
+    <ShowPoint point="-12 -20 12 20 -12 -20"/>
+    <ShowPoint point="6 10 -8 -12 -22 -36"/>
+    <ShowPoint point="-10 -16 -4 -6 -26 -42"/>
+    <ShowPoint point="0 0 -24 -38 10 16"/>
+    <ShowPoint point="2 4 20 32 16 26"/>
+    <ShowPoint point="-12 -20 4 6 -22 -36"/>
+    <ShowPoint point="14 22 -10 -16 24 38"/>
+    <ShowPoint point="-8 -12 -4 -6 10 16"/>
+    <ShowPoint point="0 0 -10 -16 -26 -42"/>
+    <ShowPoint point="18 30 -4 -6 20 32"/>
+    <ShowPoint point="2 4 28 46 -6 -10"/>
+    <ShowPoint point="-8 -12 10 16 -26 -42"/>
+    <ShowPoint point="6 10 10 16 24 38"/>
+    <ShowPoint point="16 26 -16 -26 16 26"/>
+    <ShowPoint point="-10 -16 8 12 4 6"/>
+    <ShowPoint point="14 22 4 6 -12 -20"/>
+    <ShowPoint point="-4 -6 -26 -42 -2 -4"/>
+    <ShowPoint point="18 30 4 6 0 0"/>
+    <ShowPoint point="6 10 24 38 -12 -20"/>
+    <ShowPoint point="16 26 -8 -12 -6 -10"/>
+    <ShowPoint point="-10 -16 16 26 -18 -30"/>
+    <ShowPoint point="-4 -6 -18 -30 -22 -36"/>
+    <ShowPoint point="4 6 -28 -46 4 6"/>
+    <ShowPoint point="10 16 18 30 20 32"/>
+    <ShowPoint point="10 16 26 42 0 0"/>
+    <ShowPoint point="4 6 -20 -32 -18 -30"/>
+    <ShowPoint point="-12 -20 -4 -6 -2 -4"/>
+    <ShowPoint point="-10 -16 -8 -12 4 6"/>
+    <ShowPoint point="16 26 -4 -6 24 38"/>
+    <ShowPoint point="2 4 26 42 -12 -20"/>
+    <ShowPoint point="-10 -16 4 6 -26 -42"/>
+    <ShowPoint point="-12 -20 10 16 -18 -30"/>
+    <ShowPoint point="6 10 28 46 0 0"/>
+    <ShowPoint point="-12 -20 4 6 -2 -4"/>
+    <ShowPoint point="6 10 22 36 16 26"/>
+    <ShowPoint point="-8 -12 4 6 10 16"/>
+    <ShowPoint point="16 26 8 12 -6 -10"/>
+    <ShowPoint point="2 4 14 22 20 32"/>
+    <ShowPoint point="4 6 -26 -42 10 16"/>
+    <ShowPoint point="-4 -6 -24 -38 4 6"/>
+    <ShowPoint point="0 0 -28 -46 -2 -4"/>
+    <ShowPoint point="10 16 12 20 24 38"/>
+    <ShowPoint point="0 0 -22 -36 -18 -30"/>
+    <ShowPoint point="18 30 -4 -6 0 0"/>
+    <ShowPoint point="14 22 -16 -26 20 32"/>
+    <ShowPoint point="18 30 -10 -16 16 26"/>
+    <ShowPoint point="10 16 24 38 -6 -10"/>
+    <ShowPoint point="-8 -12 16 26 -22 -36"/>
+    <ShowPoint point="4 6 -14 -22 -22 -36"/>
+    <ShowPoint point="-4 -6 -12 -20 -26 -42"/>
+    <ShowPoint point="14 22 -4 -6 -12 -20"/>
+    <JoinPointPair start="-6 -10 10 16 -24 -38" end="-2 -4 14 22 -20 -32"/>
+    <JoinPointPair start="-6 -10 10 16 -24 -38" end="-4 -6 4 6 -24 -38"/>
+    <JoinPointPair start="-6 -10 10 16 -24 -38" end="-10 -16 12 20 -24 -38"/>
+    <JoinPointPair start="-6 -10 10 16 -24 -38" end="0 0 10 16 -26 -42"/>
+    <JoinPointPair start="-16 -26 -16 -26 -16 -26" end="-18 -30 -10 -16 -16 -26"/>
+    <JoinPointPair start="-16 -26 -16 -26 -16 -26" end="-16 -26 -18 -30 -10 -16"/>
+    <JoinPointPair start="-16 -26 -16 -26 -16 -26" end="-14 -22 -16 -26 -20 -32"/>
+    <JoinPointPair start="-16 -26 -16 -26 -16 -26" end="-10 -16 -16 -26 -18 -30"/>
+    <JoinPointPair start="0 0 -10 -16 26 42" end="-2 -4 -4 -6 26 42"/>
+    <JoinPointPair start="0 0 -10 -16 26 42" end="-4 -6 -14 -22 22 36"/>
+    <JoinPointPair start="0 0 -10 -16 26 42" end="4 6 -12 -20 26 42"/>
+    <JoinPointPair start="0 0 -10 -16 26 42" end="6 10 -10 -16 24 38"/>
+    <JoinPointPair start="-14 -22 22 36 -4 -6" end="-10 -16 26 42 0 0"/>
+    <JoinPointPair start="-14 -22 22 36 -4 -6" end="-14 -22 20 32 2 4"/>
+    <JoinPointPair start="-14 -22 22 36 -4 -6" end="-16 -26 18 30 -10 -16"/>
+    <JoinPointPair start="-14 -22 22 36 -4 -6" end="-8 -12 22 36 -6 -10"/>
+    <JoinPointPair start="12 20 12 20 12 20" end="10 16 18 30 12 20"/>
+    <JoinPointPair start="12 20 12 20 12 20" end="12 20 10 16 18 30"/>
+    <JoinPointPair start="12 20 12 20 12 20" end="12 20 10 16 6 10"/>
+    <JoinPointPair start="12 20 12 20 12 20" end="18 30 12 20 10 16"/>
+    <JoinPointPair start="4 6 -26 -42 2 4" end="4 6 -24 -38 -4 -6"/>
+    <JoinPointPair start="4 6 -26 -42 2 4" end="8 12 -22 -36 6 10"/>
+    <JoinPointPair start="4 6 -26 -42 2 4" end="0 0 -28 -46 2 4"/>
+    <JoinPointPair start="4 6 -26 -42 2 4" end="10 16 -26 -42 0 0"/>
+    <JoinPointPair start="-18 -30 -10 -16 -16 -26" end="-18 -30 -12 -20 -10 -16"/>
+    <JoinPointPair start="-18 -30 -10 -16 -16 -26" end="-18 -30 -4 -6 -20 -32"/>
+    <JoinPointPair start="-18 -30 -10 -16 -16 -26" end="-12 -20 -10 -16 -18 -30"/>
+    <JoinPointPair start="0 0 8 12 -20 -32" end="-2 -4 14 22 -20 -32"/>
+    <JoinPointPair start="0 0 8 12 -20 -32" end="-4 -6 4 6 -24 -38"/>
+    <JoinPointPair start="0 0 8 12 -20 -32" end="4 6 4 6 -16 -26"/>
+    <JoinPointPair start="0 0 8 12 -20 -32" end="6 10 8 12 -22 -36"/>
+    <JoinPointPair start="-10 -16 24 38 6 10" end="-10 -16 26 42 0 0"/>
+    <JoinPointPair start="-10 -16 24 38 6 10" end="-14 -22 20 32 2 4"/>
+    <JoinPointPair start="-10 -16 24 38 6 10" end="-6 -10 24 38 12 20"/>
+    <JoinPointPair start="-10 -16 24 38 6 10" end="-4 -6 24 38 4 6"/>
+    <JoinPointPair start="-2 -4 -4 -6 26 42" end="-6 -10 -8 -12 22 36"/>
+    <JoinPointPair start="-2 -4 -4 -6 26 42" end="-2 -4 4 6 26 42"/>
+    <JoinPointPair start="-2 -4 -4 -6 26 42" end="4 6 -4 -6 24 38"/>
+    <JoinPointPair start="8 12 -20 -32 0 0" end="4 6 -24 -38 -4 -6"/>
+    <JoinPointPair start="8 12 -20 -32 0 0" end="8 12 -22 -36 6 10"/>
+    <JoinPointPair start="8 12 -20 -32 0 0" end="10 16 -14 -22 0 0"/>
+    <JoinPointPair start="8 12 -20 -32 0 0" end="14 22 -20 -32 -2 -4"/>
+    <JoinPointPair start="10 16 18 30 12 20" end="10 16 16 26 18 30"/>
+    <JoinPointPair start="10 16 18 30 12 20" end="8 12 22 36 6 10"/>
+    <JoinPointPair start="10 16 18 30 12 20" end="16 26 18 30 10 16"/>
+    <JoinPointPair start="-4 -6 -14 -22 22 36" end="-6 -10 -8 -12 22 36"/>
+    <JoinPointPair start="-4 -6 -14 -22 22 36" end="-4 -6 -20 -32 18 30"/>
+    <JoinPointPair start="-4 -6 -14 -22 22 36" end="2 4 -14 -22 20 32"/>
+    <JoinPointPair start="-2 -4 14 22 -20 -32" end="-2 -4 20 32 -16 -26"/>
+    <JoinPointPair start="-2 -4 14 22 -20 -32" end="4 6 14 22 -22 -36"/>
+    <JoinPointPair start="-10 -16 26 42 0 0" end="-6 -10 28 46 0 0"/>
+    <JoinPointPair start="-10 -16 26 42 0 0" end="-4 -6 26 42 -2 -4"/>
+    <JoinPointPair start="-16 -26 -18 -30 -10 -16" end="-18 -30 -12 -20 -10 -16"/>
+    <JoinPointPair start="-16 -26 -18 -30 -10 -16" end="-14 -22 -22 -36 -4 -6"/>
+    <JoinPointPair start="-16 -26 -18 -30 -10 -16" end="-10 -16 -18 -30 -12 -20"/>
+    <JoinPointPair start="-14 -22 20 32 2 4" end="-16 -26 14 22 2 4"/>
+    <JoinPointPair start="-14 -22 20 32 2 4" end="-8 -12 20 32 0 0"/>
+    <JoinPointPair start="-18 -30 -12 -20 -10 -16" end="-18 -30 -10 -16 -4 -6"/>
+    <JoinPointPair start="-18 -30 -12 -20 -10 -16" end="-12 -20 -12 -20 -12 -20"/>
+    <JoinPointPair start="-4 -6 4 6 -24 -38" end="-4 -6 -4 -6 -24 -38"/>
+    <JoinPointPair start="-4 -6 4 6 -24 -38" end="2 4 4 6 -26 -42"/>
+    <JoinPointPair start="4 6 -24 -38 -4 -6" end="0 0 -24 -38 -10 -16"/>
+    <JoinPointPair start="4 6 -24 -38 -4 -6" end="10 16 -24 -38 -6 -10"/>
+    <JoinPointPair start="-6 -10 -8 -12 22 36" end="-10 -16 -4 -6 18 30"/>
+    <JoinPointPair start="-6 -10 -8 -12 22 36" end="0 0 -8 -12 20 32"/>
+    <JoinPointPair start="12 20 10 16 18 30" end="10 16 16 26 18 30"/>
+    <JoinPointPair start="12 20 10 16 18 30" end="12 20 4 6 22 36"/>
+    <JoinPointPair start="12 20 10 16 18 30" end="18 30 10 16 16 26"/>
+    <JoinPointPair start="8 12 -22 -36 6 10" end="10 16 -18 -30 12 20"/>
+    <JoinPointPair start="8 12 -22 -36 6 10" end="14 22 -22 -36 4 6"/>
+    <JoinPointPair start="10 16 16 26 18 30" end="8 12 16 26 22 36"/>
+    <JoinPointPair start="10 16 16 26 18 30" end="16 26 16 26 16 26"/>
+    <JoinPointPair start="-10 -16 12 20 -24 -38" end="-10 -16 18 30 -20 -32"/>
+    <JoinPointPair start="-10 -16 12 20 -24 -38" end="-14 -22 10 16 -24 -38"/>
+    <JoinPointPair start="-10 -16 12 20 -24 -38" end="-4 -6 12 20 -26 -42"/>
+    <JoinPointPair start="-4 -6 -20 -32 18 30" end="0 0 -22 -36 18 30"/>
+    <JoinPointPair start="-4 -6 -20 -32 18 30" end="-6 -10 -24 -38 12 20"/>
+    <JoinPointPair start="-4 -6 -20 -32 18 30" end="2 4 -20 -32 16 26"/>
+    <JoinPointPair start="10 16 -14 -22 0 0" end="12 20 -10 -16 6 10"/>
+    <JoinPointPair start="10 16 -14 -22 0 0" end="10 16 -8 -12 -4 -6"/>
+    <JoinPointPair start="10 16 -14 -22 0 0" end="16 26 -14 -22 -2 -4"/>
+    <JoinPointPair start="-2 -4 4 6 26 42" end="-6 -10 8 12 22 36"/>
+    <JoinPointPair start="-2 -4 4 6 26 42" end="0 0 10 16 26 42"/>
+    <JoinPointPair start="-2 -4 4 6 26 42" end="4 6 4 6 24 38"/>
+    <JoinPointPair start="-6 -10 28 46 0 0" end="-2 -4 28 46 6 10"/>
+    <JoinPointPair start="-6 -10 28 46 0 0" end="-4 -6 28 46 -4 -6"/>
+    <JoinPointPair start="-6 -10 28 46 0 0" end="0 0 28 46 -2 -4"/>
+    <JoinPointPair start="-4 -6 -4 -6 -24 -38" end="0 0 -8 -12 -20 -32"/>
+    <JoinPointPair start="-4 -6 -4 -6 -24 -38" end="-6 -10 -10 -16 -24 -38"/>
+    <JoinPointPair start="-4 -6 -4 -6 -24 -38" end="2 4 -4 -6 -26 -42"/>
+    <JoinPointPair start="0 0 -28 -46 2 4" end="-4 -6 -28 -46 -4 -6"/>
+    <JoinPointPair start="0 0 -28 -46 2 4" end="-2 -4 -28 -46 6 10"/>
+    <JoinPointPair start="0 0 -28 -46 2 4" end="6 10 -28 -46 0 0"/>
+    <JoinPointPair start="-2 -4 20 32 -16 -26" end="-6 -10 22 36 -16 -26"/>
+    <JoinPointPair start="-2 -4 20 32 -16 -26" end="0 0 24 38 -10 -16"/>
+    <JoinPointPair start="-2 -4 20 32 -16 -26" end="4 6 20 32 -18 -30"/>
+    <JoinPointPair start="4 6 -12 -20 26 42" end="4 6 -18 -30 22 36"/>
+    <JoinPointPair start="4 6 -12 -20 26 42" end="8 12 -10 -16 26 42"/>
+    <JoinPointPair start="4 6 -12 -20 26 42" end="10 16 -12 -20 24 38"/>
+    <JoinPointPair start="-16 -26 14 22 2 4" end="-18 -30 10 16 -4 -6"/>
+    <JoinPointPair start="-16 -26 14 22 2 4" end="-16 -26 8 12 6 10"/>
+    <JoinPointPair start="-16 -26 14 22 2 4" end="-10 -16 14 22 0 0"/>
+    <JoinPointPair start="-10 -16 -4 -6 18 30" end="-10 -16 4 6 18 30"/>
+    <JoinPointPair start="-10 -16 -4 -6 18 30" end="-14 -22 -4 -6 12 20"/>
+    <JoinPointPair start="-10 -16 -4 -6 18 30" end="-4 -6 -4 -6 16 26"/>
+    <JoinPointPair start="8 12 22 36 6 10" end="8 12 20 32 0 0"/>
+    <JoinPointPair start="8 12 22 36 6 10" end="4 6 26 42 2 4"/>
+    <JoinPointPair start="8 12 22 36 6 10" end="14 22 22 36 4 6"/>
+    <JoinPointPair start="8 12 16 26 22 36" end="8 12 10 16 26 42"/>
+    <JoinPointPair start="8 12 16 26 22 36" end="4 6 18 30 22 36"/>
+    <JoinPointPair start="8 12 16 26 22 36" end="14 22 16 26 20 32"/>
+    <JoinPointPair start="10 16 -18 -30 12 20" end="12 20 -12 -20 12 20"/>
+    <JoinPointPair start="10 16 -18 -30 12 20" end="10 16 -16 -26 18 30"/>
+    <JoinPointPair start="10 16 -18 -30 12 20" end="16 26 -18 -30 10 16"/>
+    <JoinPointPair start="-6 -10 24 38 12 20" end="-2 -4 26 42 12 20"/>
+    <JoinPointPair start="-6 -10 24 38 12 20" end="-4 -6 20 32 18 30"/>
+    <JoinPointPair start="-6 -10 24 38 12 20" end="0 0 24 38 10 16"/>
+    <JoinPointPair start="12 20 10 16 6 10" end="10 16 14 22 0 0"/>
+    <JoinPointPair start="12 20 10 16 6 10" end="12 20 4 6 2 4"/>
+    <JoinPointPair start="12 20 10 16 6 10" end="18 30 10 16 4 6"/>
+    <JoinPointPair start="12 20 4 6 22 36" end="10 16 4 6 26 42"/>
+    <JoinPointPair start="12 20 4 6 22 36" end="12 20 -4 -6 22 36"/>
+    <JoinPointPair start="12 20 4 6 22 36" end="18 30 4 6 20 32"/>
+    <JoinPointPair start="-18 -30 -4 -6 -20 -32" end="-16 -26 -4 -6 -24 -38"/>
+    <JoinPointPair start="-18 -30 -4 -6 -20 -32" end="-18 -30 4 6 -20 -32"/>
+    <JoinPointPair start="-18 -30 -4 -6 -20 -32" end="-12 -20 -4 -6 -22 -36"/>
+    <JoinPointPair start="-18 -30 -10 -16 -4 -6" end="-16 -26 -14 -22 2 4"/>
+    <JoinPointPair start="-18 -30 -10 -16 -4 -6" end="-18 -30 -4 -6 0 0"/>
+    <JoinPointPair start="-18 -30 -10 -16 -4 -6" end="-12 -20 -10 -16 -6 -10"/>
+    <JoinPointPair start="-14 -22 -16 -26 -20 -32" end="-14 -22 -10 -16 -24 -38"/>
+    <JoinPointPair start="-14 -22 -16 -26 -20 -32" end="-10 -16 -18 -30 -20 -32"/>
+    <JoinPointPair start="-14 -22 -16 -26 -20 -32" end="-8 -12 -16 -26 -22 -36"/>
+    <JoinPointPair start="-14 -22 -22 -36 -4 -6" end="-14 -22 -20 -32 2 4"/>
+    <JoinPointPair start="-14 -22 -22 -36 -4 -6" end="-10 -16 -26 -42 0 0"/>
+    <JoinPointPair start="-14 -22 -22 -36 -4 -6" end="-8 -12 -22 -36 -6 -10"/>
+    <JoinPointPair start="4 6 4 6 -16 -26" end="4 6 -4 -6 -16 -26"/>
+    <JoinPointPair start="4 6 4 6 -16 -26" end="8 12 4 6 -10 -16"/>
+    <JoinPointPair start="4 6 4 6 -16 -26" end="10 16 4 6 -18 -30"/>
+    <JoinPointPair start="-16 -26 18 30 -10 -16" end="-18 -30 12 20 -10 -16"/>
+    <JoinPointPair start="-16 -26 18 30 -10 -16" end="-16 -26 16 26 -16 -26"/>
+    <JoinPointPair start="-16 -26 18 30 -10 -16" end="-10 -16 18 30 -12 -20"/>
+    <JoinPointPair start="0 0 -24 -38 -10 -16" end="-4 -6 -26 -42 -10 -16"/>
+    <JoinPointPair start="0 0 -24 -38 -10 -16" end="-2 -4 -20 -32 -16 -26"/>
+    <JoinPointPair start="0 0 -24 -38 -10 -16" end="6 10 -24 -38 -12 -20"/>
+    <JoinPointPair start="10 16 14 22 0 0" end="8 12 20 32 0 0"/>
+    <JoinPointPair start="10 16 14 22 0 0" end="10 16 8 12 -4 -6"/>
+    <JoinPointPair start="10 16 14 22 0 0" end="16 26 14 22 -2 -4"/>
+    <JoinPointPair start="-10 -16 4 6 18 30" end="-6 -10 8 12 22 36"/>
+    <JoinPointPair start="-10 -16 4 6 18 30" end="-14 -22 4 6 12 20"/>
+    <JoinPointPair start="-10 -16 4 6 18 30" end="-4 -6 4 6 16 26"/>
+    <JoinPointPair start="-10 -16 18 30 -20 -32" end="-6 -10 22 36 -16 -26"/>
+    <JoinPointPair start="-10 -16 18 30 -20 -32" end="-14 -22 16 26 -20 -32"/>
+    <JoinPointPair start="-10 -16 18 30 -20 -32" end="-4 -6 18 30 -22 -36"/>
+    <JoinPointPair start="8 12 10 16 26 42" end="10 16 4 6 26 42"/>
+    <JoinPointPair start="8 12 10 16 26 42" end="4 6 12 20 26 42"/>
+    <JoinPointPair start="8 12 10 16 26 42" end="14 22 10 16 24 38"/>
+    <JoinPointPair start="10 16 4 6 26 42" end="10 16 -4 -6 26 42"/>
+    <JoinPointPair start="10 16 4 6 26 42" end="16 26 4 6 24 38"/>
+    <JoinPointPair start="12 20 -12 -20 12 20" end="12 20 -10 -16 6 10"/>
+    <JoinPointPair start="12 20 -12 -20 12 20" end="12 20 -10 -16 18 30"/>
+    <JoinPointPair start="12 20 -12 -20 12 20" end="18 30 -12 -20 10 16"/>
+    <JoinPointPair start="8 12 20 32 0 0" end="4 6 24 38 -4 -6"/>
+    <JoinPointPair start="8 12 20 32 0 0" end="14 22 20 32 -2 -4"/>
+    <JoinPointPair start="-4 -6 -26 -42 -10 -16" end="-4 -6 -28 -46 -4 -6"/>
+    <JoinPointPair start="-4 -6 -26 -42 -10 -16" end="-6 -10 -22 -36 -16 -26"/>
+    <JoinPointPair start="-4 -6 -26 -42 -10 -16" end="2 4 -26 -42 -12 -20"/>
+    <JoinPointPair start="-18 -30 10 16 -4 -6" end="-18 -30 12 20 -10 -16"/>
+    <JoinPointPair start="-18 -30 10 16 -4 -6" end="-18 -30 4 6 0 0"/>
+    <JoinPointPair start="-18 -30 10 16 -4 -6" end="-12 -20 10 16 -6 -10"/>
+    <JoinPointPair start="4 6 -18 -30 22 36" end="0 0 -22 -36 18 30"/>
+    <JoinPointPair start="4 6 -18 -30 22 36" end="8 12 -16 -26 22 36"/>
+    <JoinPointPair start="4 6 -18 -30 22 36" end="10 16 -18 -30 20 32"/>
+    <JoinPointPair start="-2 -4 28 46 6 10" end="-2 -4 26 42 12 20"/>
+    <JoinPointPair start="-2 -4 28 46 6 10" end="0 0 28 46 2 4"/>
+    <JoinPointPair start="-2 -4 28 46 6 10" end="4 6 28 46 4 6"/>
+    <JoinPointPair start="4 6 -4 -6 -16 -26" end="0 0 -8 -12 -20 -32"/>
+    <JoinPointPair start="4 6 -4 -6 -16 -26" end="8 12 -4 -6 -10 -16"/>
+    <JoinPointPair start="4 6 -4 -6 -16 -26" end="10 16 -4 -6 -18 -30"/>
+    <JoinPointPair start="-6 -10 8 12 22 36" end="-4 -6 14 22 22 36"/>
+    <JoinPointPair start="-6 -10 8 12 22 36" end="0 0 8 12 20 32"/>
+    <JoinPointPair start="12 20 -10 -16 6 10" end="12 20 -4 -6 2 4"/>
+    <JoinPointPair start="12 20 -10 -16 6 10" end="18 30 -10 -16 4 6"/>
+    <JoinPointPair start="-6 -10 22 36 -16 -26" end="-4 -6 26 42 -10 -16"/>
+    <JoinPointPair start="-6 -10 22 36 -16 -26" end="0 0 22 36 -18 -30"/>
+    <JoinPointPair start="-2 -4 26 42 12 20" end="0 0 22 36 18 30"/>
+    <JoinPointPair start="-2 -4 26 42 12 20" end="4 6 26 42 10 16"/>
+    <JoinPointPair start="-14 -22 -10 -16 -24 -38" end="-16 -26 -4 -6 -24 -38"/>
+    <JoinPointPair start="-14 -22 -10 -16 -24 -38" end="-10 -16 -12 -20 -24 -38"/>
+    <JoinPointPair start="-14 -22 -10 -16 -24 -38" end="-8 -12 -10 -16 -26 -42"/>
+    <JoinPointPair start="0 0 -22 -36 18 30" end="-2 -4 -26 -42 12 20"/>
+    <JoinPointPair start="0 0 -22 -36 18 30" end="6 10 -22 -36 16 26"/>
+    <JoinPointPair start="-4 -6 -28 -46 -4 -6" end="-6 -10 -28 -46 0 0"/>
+    <JoinPointPair start="-4 -6 -28 -46 -4 -6" end="2 4 -28 -46 -6 -10"/>
+    <JoinPointPair start="-16 -26 -14 -22 2 4" end="-14 -22 -20 -32 2 4"/>
+    <JoinPointPair start="-16 -26 -14 -22 2 4" end="-16 -26 -8 -12 6 10"/>
+    <JoinPointPair start="-16 -26 -14 -22 2 4" end="-10 -16 -14 -22 0 0"/>
+    <JoinPointPair start="-14 -22 -20 -32 2 4" end="-10 -16 -24 -38 6 10"/>
+    <JoinPointPair start="-14 -22 -20 -32 2 4" end="-8 -12 -20 -32 0 0"/>
+    <JoinPointPair start="-18 -30 12 20 -10 -16" end="-18 -30 10 16 -16 -26"/>
+    <JoinPointPair start="-18 -30 12 20 -10 -16" end="-12 -20 12 20 -12 -20"/>
+    <JoinPointPair start="0 0 -8 -12 -20 -32" end="-2 -4 -14 -22 -20 -32"/>
+    <JoinPointPair start="0 0 -8 -12 -20 -32" end="6 10 -8 -12 -22 -36"/>
+    <JoinPointPair start="-16 -26 -4 -6 -24 -38" end="-16 -26 4 6 -24 -38"/>
+    <JoinPointPair start="-16 -26 -4 -6 -24 -38" end="-10 -16 -4 -6 -26 -42"/>
+    <JoinPointPair start="-6 -10 -24 -38 12 20" end="-2 -4 -26 -42 12 20"/>
+    <JoinPointPair start="-6 -10 -24 -38 12 20" end="-10 -16 -24 -38 6 10"/>
+    <JoinPointPair start="-6 -10 -24 -38 12 20" end="0 0 -24 -38 10 16"/>
+    <JoinPointPair start="-4 -6 20 32 18 30" end="0 0 22 36 18 30"/>
+    <JoinPointPair start="-4 -6 20 32 18 30" end="-4 -6 14 22 22 36"/>
+    <JoinPointPair start="-4 -6 20 32 18 30" end="2 4 20 32 16 26"/>
+    <JoinPointPair start="-18 -30 4 6 -20 -32" end="-16 -26 4 6 -24 -38"/>
+    <JoinPointPair start="-18 -30 4 6 -20 -32" end="-18 -30 10 16 -16 -26"/>
+    <JoinPointPair start="-18 -30 4 6 -20 -32" end="-12 -20 4 6 -22 -36"/>
+    <JoinPointPair start="8 12 -10 -16 26 42" end="10 16 -4 -6 26 42"/>
+    <JoinPointPair start="8 12 -10 -16 26 42" end="8 12 -16 -26 22 36"/>
+    <JoinPointPair start="8 12 -10 -16 26 42" end="14 22 -10 -16 24 38"/>
+    <JoinPointPair start="-14 -22 -4 -6 12 20" end="-16 -26 -8 -12 6 10"/>
+    <JoinPointPair start="-14 -22 -4 -6 12 20" end="-14 -22 4 6 12 20"/>
+    <JoinPointPair start="-14 -22 -4 -6 12 20" end="-8 -12 -4 -6 10 16"/>
+    <JoinPointPair start="-6 -10 -10 -16 -24 -38" end="-2 -4 -14 -22 -20 -32"/>
+    <JoinPointPair start="-6 -10 -10 -16 -24 -38" end="-10 -16 -12 -20 -24 -38"/>
+    <JoinPointPair start="-6 -10 -10 -16 -24 -38" end="0 0 -10 -16 -26 -42"/>
+    <JoinPointPair start="12 20 -4 -6 22 36" end="10 16 -4 -6 26 42"/>
+    <JoinPointPair start="12 20 -4 -6 22 36" end="12 20 -10 -16 18 30"/>
+    <JoinPointPair start="12 20 -4 -6 22 36" end="18 30 -4 -6 20 32"/>
+    <JoinPointPair start="-4 -6 28 46 -4 -6" end="-4 -6 26 42 -10 -16"/>
+    <JoinPointPair start="-4 -6 28 46 -4 -6" end="0 0 28 46 2 4"/>
+    <JoinPointPair start="-4 -6 28 46 -4 -6" end="2 4 28 46 -6 -10"/>
+    <JoinPointPair start="-14 -22 10 16 -24 -38" end="-16 -26 4 6 -24 -38"/>
+    <JoinPointPair start="-14 -22 10 16 -24 -38" end="-14 -22 16 26 -20 -32"/>
+    <JoinPointPair start="-14 -22 10 16 -24 -38" end="-8 -12 10 16 -26 -42"/>
+    <JoinPointPair start="0 0 10 16 26 42" end="-4 -6 14 22 22 36"/>
+    <JoinPointPair start="0 0 10 16 26 42" end="4 6 12 20 26 42"/>
+    <JoinPointPair start="0 0 10 16 26 42" end="6 10 10 16 24 38"/>
+    <JoinPointPair start="10 16 -16 -26 18 30" end="8 12 -16 -26 22 36"/>
+    <JoinPointPair start="10 16 -16 -26 18 30" end="12 20 -10 -16 18 30"/>
+    <JoinPointPair start="10 16 -16 -26 18 30" end="16 26 -16 -26 16 26"/>
+    <JoinPointPair start="-16 -26 8 12 6 10" end="-18 -30 4 6 0 0"/>
+    <JoinPointPair start="-16 -26 8 12 6 10" end="-14 -22 4 6 12 20"/>
+    <JoinPointPair start="-16 -26 8 12 6 10" end="-10 -16 8 12 4 6"/>
+    <JoinPointPair start="8 12 4 6 -10 -16" end="10 16 8 12 -4 -6"/>
+    <JoinPointPair start="8 12 4 6 -10 -16" end="8 12 -4 -6 -10 -16"/>
+    <JoinPointPair start="8 12 4 6 -10 -16" end="14 22 4 6 -12 -20"/>
+    <JoinPointPair start="-10 -16 -26 -42 0 0" end="-10 -16 -24 -38 6 10"/>
+    <JoinPointPair start="-10 -16 -26 -42 0 0" end="-6 -10 -28 -46 0 0"/>
+    <JoinPointPair start="-10 -16 -26 -42 0 0" end="-4 -6 -26 -42 -2 -4"/>
+    <JoinPointPair start="12 20 4 6 2 4" end="10 16 8 12 -4 -6"/>
+    <JoinPointPair start="12 20 4 6 2 4" end="12 20 -4 -6 2 4"/>
+    <JoinPointPair start="12 20 4 6 2 4" end="18 30 4 6 0 0"/>
+    <JoinPointPair start="0 0 24 38 -10 -16" end="-4 -6 26 42 -10 -16"/>
+    <JoinPointPair start="0 0 24 38 -10 -16" end="4 6 24 38 -4 -6"/>
+    <JoinPointPair start="0 0 24 38 -10 -16" end="6 10 24 38 -12 -20"/>
+    <JoinPointPair start="10 16 -8 -12 -4 -6" end="12 20 -4 -6 2 4"/>
+    <JoinPointPair start="10 16 -8 -12 -4 -6" end="8 12 -4 -6 -10 -16"/>
+    <JoinPointPair start="10 16 -8 -12 -4 -6" end="16 26 -8 -12 -6 -10"/>
+    <JoinPointPair start="-16 -26 16 26 -16 -26" end="-18 -30 10 16 -16 -26"/>
+    <JoinPointPair start="-16 -26 16 26 -16 -26" end="-14 -22 16 26 -20 -32"/>
+    <JoinPointPair start="-16 -26 16 26 -16 -26" end="-10 -16 16 26 -18 -30"/>
+    <JoinPointPair start="-10 -16 -18 -30 -20 -32" end="-6 -10 -22 -36 -16 -26"/>
+    <JoinPointPair start="-10 -16 -18 -30 -20 -32" end="-10 -16 -12 -20 -24 -38"/>
+    <JoinPointPair start="-10 -16 -18 -30 -20 -32" end="-4 -6 -18 -30 -22 -36"/>
+    <JoinPointPair start="-2 -4 -28 -46 6 10" end="-2 -4 -26 -42 12 20"/>
+    <JoinPointPair start="-2 -4 -28 -46 6 10" end="-6 -10 -28 -46 0 0"/>
+    <JoinPointPair start="-2 -4 -28 -46 6 10" end="4 6 -28 -46 4 6"/>
+    <JoinPointPair start="4 6 18 30 22 36" end="0 0 22 36 18 30"/>
+    <JoinPointPair start="4 6 18 30 22 36" end="4 6 12 20 26 42"/>
+    <JoinPointPair start="4 6 18 30 22 36" end="10 16 18 30 20 32"/>
+    <JoinPointPair start="4 6 26 42 2 4" end="0 0 28 46 2 4"/>
+    <JoinPointPair start="4 6 26 42 2 4" end="4 6 24 38 -4 -6"/>
+    <JoinPointPair start="4 6 26 42 2 4" end="10 16 26 42 0 0"/>
+    <JoinPointPair start="-2 -4 -20 -32 -16 -26" end="-6 -10 -22 -36 -16 -26"/>
+    <JoinPointPair start="-2 -4 -20 -32 -16 -26" end="-2 -4 -14 -22 -20 -32"/>
+    <JoinPointPair start="-2 -4 -20 -32 -16 -26" end="4 6 -20 -32 -18 -30"/>
+    <JoinPointPair start="-18 -30 -4 -6 0 0" end="-16 -26 -8 -12 6 10"/>
+    <JoinPointPair start="-18 -30 -4 -6 0 0" end="-18 -30 4 6 0 0"/>
+    <JoinPointPair start="-18 -30 -4 -6 0 0" end="-12 -20 -4 -6 -2 -4"/>
+    <JoinPointPair start="-16 -26 -8 -12 6 10" end="-10 -16 -8 -12 4 6"/>
+    <JoinPointPair start="10 16 -4 -6 26 42" end="16 26 -4 -6 24 38"/>
+    <JoinPointPair start="-4 -6 26 42 -10 -16" end="2 4 26 42 -12 -20"/>
+    <JoinPointPair start="-16 -26 4 6 -24 -38" end="-10 -16 4 6 -26 -42"/>
+    <JoinPointPair start="-18 -30 10 16 -16 -26" end="-12 -20 10 16 -18 -30"/>
+    <JoinPointPair start="0 0 28 46 2 4" end="6 10 28 46 0 0"/>
+    <JoinPointPair start="-18 -30 4 6 0 0" end="-12 -20 4 6 -2 -4"/>
+    <JoinPointPair start="0 0 22 36 18 30" end="6 10 22 36 16 26"/>
+    <JoinPointPair start="-14 -22 4 6 12 20" end="-8 -12 4 6 10 16"/>
+    <JoinPointPair start="10 16 8 12 -4 -6" end="16 26 8 12 -6 -10"/>
+    <JoinPointPair start="-4 -6 14 22 22 36" end="2 4 14 22 20 32"/>
+    <JoinPointPair start="-2 -4 -26 -42 12 20" end="4 6 -26 -42 10 16"/>
+    <JoinPointPair start="-10 -16 -24 -38 6 10" end="-4 -6 -24 -38 4 6"/>
+    <JoinPointPair start="-6 -10 -28 -46 0 0" end="0 0 -28 -46 -2 -4"/>
+    <JoinPointPair start="4 6 12 20 26 42" end="10 16 12 20 24 38"/>
+    <JoinPointPair start="-6 -10 -22 -36 -16 -26" end="0 0 -22 -36 -18 -30"/>
+    <JoinPointPair start="12 20 -4 -6 2 4" end="18 30 -4 -6 0 0"/>
+    <JoinPointPair start="8 12 -16 -26 22 36" end="14 22 -16 -26 20 32"/>
+    <JoinPointPair start="12 20 -10 -16 18 30" end="18 30 -10 -16 16 26"/>
+    <JoinPointPair start="4 6 24 38 -4 -6" end="10 16 24 38 -6 -10"/>
+    <JoinPointPair start="-14 -22 16 26 -20 -32" end="-8 -12 16 26 -22 -36"/>
+    <JoinPointPair start="-2 -4 -14 -22 -20 -32" end="4 6 -14 -22 -22 -36"/>
+    <JoinPointPair start="-10 -16 -12 -20 -24 -38" end="-4 -6 -12 -20 -26 -42"/>
+    <JoinPointPair start="8 12 -4 -6 -10 -16" end="14 22 -4 -6 -12 -20"/>
+    <JoinPointPair start="0 0 10 16 -26 -42" end="4 6 14 22 -22 -36"/>
+    <JoinPointPair start="0 0 10 16 -26 -42" end="2 4 4 6 -26 -42"/>
+    <JoinPointPair start="0 0 10 16 -26 -42" end="-4 -6 12 20 -26 -42"/>
+    <JoinPointPair start="-10 -16 -16 -26 -18 -30" end="-12 -20 -10 -16 -18 -30"/>
+    <JoinPointPair start="-10 -16 -16 -26 -18 -30" end="-10 -16 -18 -30 -12 -20"/>
+    <JoinPointPair start="-10 -16 -16 -26 -18 -30" end="-8 -12 -16 -26 -22 -36"/>
+    <JoinPointPair start="6 10 -10 -16 24 38" end="4 6 -4 -6 24 38"/>
+    <JoinPointPair start="6 10 -10 -16 24 38" end="2 4 -14 -22 20 32"/>
+    <JoinPointPair start="6 10 -10 -16 24 38" end="10 16 -12 -20 24 38"/>
+    <JoinPointPair start="-8 -12 22 36 -6 -10" end="-4 -6 26 42 -2 -4"/>
+    <JoinPointPair start="-8 -12 22 36 -6 -10" end="-8 -12 20 32 0 0"/>
+    <JoinPointPair start="-8 -12 22 36 -6 -10" end="-10 -16 18 30 -12 -20"/>
+    <JoinPointPair start="18 30 12 20 10 16" end="16 26 18 30 10 16"/>
+    <JoinPointPair start="18 30 12 20 10 16" end="18 30 10 16 16 26"/>
+    <JoinPointPair start="18 30 12 20 10 16" end="18 30 10 16 4 6"/>
+    <JoinPointPair start="10 16 -26 -42 0 0" end="10 16 -24 -38 -6 -10"/>
+    <JoinPointPair start="10 16 -26 -42 0 0" end="14 22 -22 -36 4 6"/>
+    <JoinPointPair start="10 16 -26 -42 0 0" end="6 10 -28 -46 0 0"/>
+    <JoinPointPair start="-12 -20 -10 -16 -18 -30" end="-12 -20 -12 -20 -12 -20"/>
+    <JoinPointPair start="-12 -20 -10 -16 -18 -30" end="-12 -20 -4 -6 -22 -36"/>
+    <JoinPointPair start="6 10 8 12 -22 -36" end="4 6 14 22 -22 -36"/>
+    <JoinPointPair start="6 10 8 12 -22 -36" end="2 4 4 6 -26 -42"/>
+    <JoinPointPair start="6 10 8 12 -22 -36" end="10 16 4 6 -18 -30"/>
+    <JoinPointPair start="-4 -6 24 38 4 6" end="-4 -6 26 42 -2 -4"/>
+    <JoinPointPair start="-4 -6 24 38 4 6" end="-8 -12 20 32 0 0"/>
+    <JoinPointPair start="-4 -6 24 38 4 6" end="0 0 24 38 10 16"/>
+    <JoinPointPair start="4 6 -4 -6 24 38" end="0 0 -8 -12 20 32"/>
+    <JoinPointPair start="4 6 -4 -6 24 38" end="4 6 4 6 24 38"/>
+    <JoinPointPair start="14 22 -20 -32 -2 -4" end="10 16 -24 -38 -6 -10"/>
+    <JoinPointPair start="14 22 -20 -32 -2 -4" end="14 22 -22 -36 4 6"/>
+    <JoinPointPair start="14 22 -20 -32 -2 -4" end="16 26 -14 -22 -2 -4"/>
+    <JoinPointPair start="16 26 18 30 10 16" end="16 26 16 26 16 26"/>
+    <JoinPointPair start="16 26 18 30 10 16" end="14 22 22 36 4 6"/>
+    <JoinPointPair start="2 4 -14 -22 20 32" end="0 0 -8 -12 20 32"/>
+    <JoinPointPair start="2 4 -14 -22 20 32" end="2 4 -20 -32 16 26"/>
+    <JoinPointPair start="4 6 14 22 -22 -36" end="4 6 20 32 -18 -30"/>
+    <JoinPointPair start="-4 -6 26 42 -2 -4" end="0 0 28 46 -2 -4"/>
+    <JoinPointPair start="-10 -16 -18 -30 -12 -20" end="-12 -20 -12 -20 -12 -20"/>
+    <JoinPointPair start="-10 -16 -18 -30 -12 -20" end="-8 -12 -22 -36 -6 -10"/>
+    <JoinPointPair start="-8 -12 20 32 0 0" end="-10 -16 14 22 0 0"/>
+    <JoinPointPair start="-12 -20 -12 -20 -12 -20" end="-12 -20 -10 -16 -6 -10"/>
+    <JoinPointPair start="2 4 4 6 -26 -42" end="2 4 -4 -6 -26 -42"/>
+    <JoinPointPair start="10 16 -24 -38 -6 -10" end="6 10 -24 -38 -12 -20"/>
+    <JoinPointPair start="0 0 -8 -12 20 32" end="-4 -6 -4 -6 16 26"/>
+    <JoinPointPair start="18 30 10 16 16 26" end="16 26 16 26 16 26"/>
+    <JoinPointPair start="18 30 10 16 16 26" end="18 30 4 6 20 32"/>
+    <JoinPointPair start="14 22 -22 -36 4 6" end="16 26 -18 -30 10 16"/>
+    <JoinPointPair start="16 26 16 26 16 26" end="14 22 16 26 20 32"/>
+    <JoinPointPair start="-4 -6 12 20 -26 -42" end="-4 -6 18 30 -22 -36"/>
+    <JoinPointPair start="-4 -6 12 20 -26 -42" end="-8 -12 10 16 -26 -42"/>
+    <JoinPointPair start="2 4 -20 -32 16 26" end="6 10 -22 -36 16 26"/>
+    <JoinPointPair start="2 4 -20 -32 16 26" end="0 0 -24 -38 10 16"/>
+    <JoinPointPair start="16 26 -14 -22 -2 -4" end="18 30 -10 -16 4 6"/>
+    <JoinPointPair start="16 26 -14 -22 -2 -4" end="16 26 -8 -12 -6 -10"/>
+    <JoinPointPair start="4 6 4 6 24 38" end="0 0 8 12 20 32"/>
+    <JoinPointPair start="4 6 4 6 24 38" end="6 10 10 16 24 38"/>
+    <JoinPointPair start="0 0 28 46 -2 -4" end="4 6 28 46 4 6"/>
+    <JoinPointPair start="0 0 28 46 -2 -4" end="2 4 28 46 -6 -10"/>
+    <JoinPointPair start="2 4 -4 -6 -26 -42" end="6 10 -8 -12 -22 -36"/>
+    <JoinPointPair start="2 4 -4 -6 -26 -42" end="0 0 -10 -16 -26 -42"/>
+    <JoinPointPair start="6 10 -28 -46 0 0" end="2 4 -28 -46 -6 -10"/>
+    <JoinPointPair start="6 10 -28 -46 0 0" end="4 6 -28 -46 4 6"/>
+    <JoinPointPair start="4 6 20 32 -18 -30" end="0 0 22 36 -18 -30"/>
+    <JoinPointPair start="4 6 20 32 -18 -30" end="6 10 24 38 -12 -20"/>
+    <JoinPointPair start="10 16 -12 -20 24 38" end="10 16 -18 -30 20 32"/>
+    <JoinPointPair start="10 16 -12 -20 24 38" end="14 22 -10 -16 24 38"/>
+    <JoinPointPair start="-10 -16 14 22 0 0" end="-12 -20 10 16 -6 -10"/>
+    <JoinPointPair start="-10 -16 14 22 0 0" end="-10 -16 8 12 4 6"/>
+    <JoinPointPair start="-4 -6 -4 -6 16 26" end="-4 -6 4 6 16 26"/>
+    <JoinPointPair start="-4 -6 -4 -6 16 26" end="-8 -12 -4 -6 10 16"/>
+    <JoinPointPair start="14 22 22 36 4 6" end="14 22 20 32 -2 -4"/>
+    <JoinPointPair start="14 22 22 36 4 6" end="10 16 26 42 0 0"/>
+    <JoinPointPair start="14 22 16 26 20 32" end="14 22 10 16 24 38"/>
+    <JoinPointPair start="14 22 16 26 20 32" end="10 16 18 30 20 32"/>
+    <JoinPointPair start="16 26 -18 -30 10 16" end="18 30 -12 -20 10 16"/>
+    <JoinPointPair start="16 26 -18 -30 10 16" end="16 26 -16 -26 16 26"/>
+    <JoinPointPair start="0 0 24 38 10 16" end="4 6 26 42 10 16"/>
+    <JoinPointPair start="0 0 24 38 10 16" end="2 4 20 32 16 26"/>
+    <JoinPointPair start="18 30 10 16 4 6" end="16 26 14 22 -2 -4"/>
+    <JoinPointPair start="18 30 10 16 4 6" end="18 30 4 6 0 0"/>
+    <JoinPointPair start="18 30 4 6 20 32" end="16 26 4 6 24 38"/>
+    <JoinPointPair start="18 30 4 6 20 32" end="18 30 -4 -6 20 32"/>
+    <JoinPointPair start="-12 -20 -4 -6 -22 -36" end="-10 -16 -4 -6 -26 -42"/>
+    <JoinPointPair start="-12 -20 -4 -6 -22 -36" end="-12 -20 4 6 -22 -36"/>
+    <JoinPointPair start="-12 -20 -10 -16 -6 -10" end="-10 -16 -14 -22 0 0"/>
+    <JoinPointPair start="-12 -20 -10 -16 -6 -10" end="-12 -20 -4 -6 -2 -4"/>
+    <JoinPointPair start="-8 -12 -16 -26 -22 -36" end="-8 -12 -10 -16 -26 -42"/>
+    <JoinPointPair start="-8 -12 -16 -26 -22 -36" end="-4 -6 -18 -30 -22 -36"/>
+    <JoinPointPair start="-8 -12 -22 -36 -6 -10" end="-8 -12 -20 -32 0 0"/>
+    <JoinPointPair start="-8 -12 -22 -36 -6 -10" end="-4 -6 -26 -42 -2 -4"/>
+    <JoinPointPair start="10 16 4 6 -18 -30" end="10 16 -4 -6 -18 -30"/>
+    <JoinPointPair start="10 16 4 6 -18 -30" end="14 22 4 6 -12 -20"/>
+    <JoinPointPair start="-10 -16 18 30 -12 -20" end="-12 -20 12 20 -12 -20"/>
+    <JoinPointPair start="-10 -16 18 30 -12 -20" end="-10 -16 16 26 -18 -30"/>
+    <JoinPointPair start="6 10 -24 -38 -12 -20" end="2 4 -26 -42 -12 -20"/>
+    <JoinPointPair start="6 10 -24 -38 -12 -20" end="4 6 -20 -32 -18 -30"/>
+    <JoinPointPair start="16 26 14 22 -2 -4" end="14 22 20 32 -2 -4"/>
+    <JoinPointPair start="16 26 14 22 -2 -4" end="16 26 8 12 -6 -10"/>
+    <JoinPointPair start="-4 -6 4 6 16 26" end="0 0 8 12 20 32"/>
+    <JoinPointPair start="-4 -6 4 6 16 26" end="-8 -12 4 6 10 16"/>
+    <JoinPointPair start="-4 -6 18 30 -22 -36" end="0 0 22 36 -18 -30"/>
+    <JoinPointPair start="-4 -6 18 30 -22 -36" end="-8 -12 16 26 -22 -36"/>
+    <JoinPointPair start="14 22 10 16 24 38" end="16 26 4 6 24 38"/>
+    <JoinPointPair start="14 22 10 16 24 38" end="10 16 12 20 24 38"/>
+    <JoinPointPair start="16 26 4 6 24 38" end="16 26 -4 -6 24 38"/>
+    <JoinPointPair start="18 30 -12 -20 10 16" end="18 30 -10 -16 4 6"/>
+    <JoinPointPair start="18 30 -12 -20 10 16" end="18 30 -10 -16 16 26"/>
+    <JoinPointPair start="14 22 20 32 -2 -4" end="10 16 24 38 -6 -10"/>
+    <JoinPointPair start="2 4 -26 -42 -12 -20" end="2 4 -28 -46 -6 -10"/>
+    <JoinPointPair start="2 4 -26 -42 -12 -20" end="0 0 -22 -36 -18 -30"/>
+    <JoinPointPair start="-12 -20 10 16 -6 -10" end="-12 -20 12 20 -12 -20"/>
+    <JoinPointPair start="-12 -20 10 16 -6 -10" end="-12 -20 4 6 -2 -4"/>
+    <JoinPointPair start="10 16 -18 -30 20 32" end="6 10 -22 -36 16 26"/>
+    <JoinPointPair start="10 16 -18 -30 20 32" end="14 22 -16 -26 20 32"/>
+    <JoinPointPair start="4 6 28 46 4 6" end="4 6 26 42 10 16"/>
+    <JoinPointPair start="4 6 28 46 4 6" end="6 10 28 46 0 0"/>
+    <JoinPointPair start="10 16 -4 -6 -18 -30" end="6 10 -8 -12 -22 -36"/>
+    <JoinPointPair start="10 16 -4 -6 -18 -30" end="14 22 -4 -6 -12 -20"/>
+    <JoinPointPair start="0 0 8 12 20 32" end="2 4 14 22 20 32"/>
+    <JoinPointPair start="18 30 -10 -16 4 6" end="18 30 -4 -6 0 0"/>
+    <JoinPointPair start="0 0 22 36 -18 -30" end="2 4 26 42 -12 -20"/>
+    <JoinPointPair start="4 6 26 42 10 16" end="6 10 22 36 16 26"/>
+    <JoinPointPair start="-8 -12 -10 -16 -26 -42" end="-10 -16 -4 -6 -26 -42"/>
+    <JoinPointPair start="-8 -12 -10 -16 -26 -42" end="-4 -6 -12 -20 -26 -42"/>
+    <JoinPointPair start="6 10 -22 -36 16 26" end="4 6 -26 -42 10 16"/>
+    <JoinPointPair start="2 4 -28 -46 -6 -10" end="0 0 -28 -46 -2 -4"/>
+    <JoinPointPair start="-10 -16 -14 -22 0 0" end="-8 -12 -20 -32 0 0"/>
+    <JoinPointPair start="-10 -16 -14 -22 0 0" end="-10 -16 -8 -12 4 6"/>
+    <JoinPointPair start="-8 -12 -20 -32 0 0" end="-4 -6 -24 -38 4 6"/>
+    <JoinPointPair start="-12 -20 12 20 -12 -20" end="-12 -20 10 16 -18 -30"/>
+    <JoinPointPair start="6 10 -8 -12 -22 -36" end="4 6 -14 -22 -22 -36"/>
+    <JoinPointPair start="-10 -16 -4 -6 -26 -42" end="-10 -16 4 6 -26 -42"/>
+    <JoinPointPair start="0 0 -24 -38 10 16" end="4 6 -26 -42 10 16"/>
+    <JoinPointPair start="0 0 -24 -38 10 16" end="-4 -6 -24 -38 4 6"/>
+    <JoinPointPair start="2 4 20 32 16 26" end="6 10 22 36 16 26"/>
+    <JoinPointPair start="2 4 20 32 16 26" end="2 4 14 22 20 32"/>
+    <JoinPointPair start="-12 -20 4 6 -22 -36" end="-10 -16 4 6 -26 -42"/>
+    <JoinPointPair start="-12 -20 4 6 -22 -36" end="-12 -20 10 16 -18 -30"/>
+    <JoinPointPair start="14 22 -10 -16 24 38" end="16 26 -4 -6 24 38"/>
+    <JoinPointPair start="14 22 -10 -16 24 38" end="14 22 -16 -26 20 32"/>
+    <JoinPointPair start="-8 -12 -4 -6 10 16" end="-10 -16 -8 -12 4 6"/>
+    <JoinPointPair start="-8 -12 -4 -6 10 16" end="-8 -12 4 6 10 16"/>
+    <JoinPointPair start="0 0 -10 -16 -26 -42" end="4 6 -14 -22 -22 -36"/>
+    <JoinPointPair start="0 0 -10 -16 -26 -42" end="-4 -6 -12 -20 -26 -42"/>
+    <JoinPointPair start="18 30 -4 -6 20 32" end="16 26 -4 -6 24 38"/>
+    <JoinPointPair start="18 30 -4 -6 20 32" end="18 30 -10 -16 16 26"/>
+    <JoinPointPair start="2 4 28 46 -6 -10" end="2 4 26 42 -12 -20"/>
+    <JoinPointPair start="2 4 28 46 -6 -10" end="6 10 28 46 0 0"/>
+    <JoinPointPair start="-8 -12 10 16 -26 -42" end="-10 -16 4 6 -26 -42"/>
+    <JoinPointPair start="-8 -12 10 16 -26 -42" end="-8 -12 16 26 -22 -36"/>
+    <JoinPointPair start="6 10 10 16 24 38" end="2 4 14 22 20 32"/>
+    <JoinPointPair start="6 10 10 16 24 38" end="10 16 12 20 24 38"/>
+    <JoinPointPair start="16 26 -16 -26 16 26" end="14 22 -16 -26 20 32"/>
+    <JoinPointPair start="16 26 -16 -26 16 26" end="18 30 -10 -16 16 26"/>
+    <JoinPointPair start="-10 -16 8 12 4 6" end="-12 -20 4 6 -2 -4"/>
+    <JoinPointPair start="-10 -16 8 12 4 6" end="-8 -12 4 6 10 16"/>
+    <JoinPointPair start="14 22 4 6 -12 -20" end="16 26 8 12 -6 -10"/>
+    <JoinPointPair start="14 22 4 6 -12 -20" end="14 22 -4 -6 -12 -20"/>
+    <JoinPointPair start="-4 -6 -26 -42 -2 -4" end="-4 -6 -24 -38 4 6"/>
+    <JoinPointPair start="-4 -6 -26 -42 -2 -4" end="0 0 -28 -46 -2 -4"/>
+    <JoinPointPair start="18 30 4 6 0 0" end="16 26 8 12 -6 -10"/>
+    <JoinPointPair start="18 30 4 6 0 0" end="18 30 -4 -6 0 0"/>
+    <JoinPointPair start="6 10 24 38 -12 -20" end="2 4 26 42 -12 -20"/>
+    <JoinPointPair start="6 10 24 38 -12 -20" end="10 16 24 38 -6 -10"/>
+    <JoinPointPair start="16 26 -8 -12 -6 -10" end="18 30 -4 -6 0 0"/>
+    <JoinPointPair start="16 26 -8 -12 -6 -10" end="14 22 -4 -6 -12 -20"/>
+    <JoinPointPair start="-10 -16 16 26 -18 -30" end="-12 -20 10 16 -18 -30"/>
+    <JoinPointPair start="-10 -16 16 26 -18 -30" end="-8 -12 16 26 -22 -36"/>
+    <JoinPointPair start="-4 -6 -18 -30 -22 -36" end="0 0 -22 -36 -18 -30"/>
+    <JoinPointPair start="-4 -6 -18 -30 -22 -36" end="-4 -6 -12 -20 -26 -42"/>
+    <JoinPointPair start="4 6 -28 -46 4 6" end="4 6 -26 -42 10 16"/>
+    <JoinPointPair start="4 6 -28 -46 4 6" end="0 0 -28 -46 -2 -4"/>
+    <JoinPointPair start="10 16 18 30 20 32" end="6 10 22 36 16 26"/>
+    <JoinPointPair start="10 16 18 30 20 32" end="10 16 12 20 24 38"/>
+    <JoinPointPair start="10 16 26 42 0 0" end="6 10 28 46 0 0"/>
+    <JoinPointPair start="10 16 26 42 0 0" end="10 16 24 38 -6 -10"/>
+    <JoinPointPair start="4 6 -20 -32 -18 -30" end="0 0 -22 -36 -18 -30"/>
+    <JoinPointPair start="4 6 -20 -32 -18 -30" end="4 6 -14 -22 -22 -36"/>
+    <JoinPointPair start="-12 -20 -4 -6 -2 -4" end="-10 -16 -8 -12 4 6"/>
+    <JoinPointPair start="-12 -20 -4 -6 -2 -4" end="-12 -20 4 6 -2 -4"/>
     <SelectManifestation point="0 0 0 0 0 0"/>
     <Delete/>
   </EditHistory>
@@ -731,7 +731,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="340.0" far="470.0" near="0.5" parallel="false" stereoAngle="0.0" width="340.0">
+    <ViewModel distance="50.0" far="200.0" near="0.5" parallel="false" stereoAngle="0.0" width="50.0">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>

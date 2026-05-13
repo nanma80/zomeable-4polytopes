@@ -1,0 +1,616 @@
+=== prismatic sweep rng=3  (204 polytopes) ===
+  generating kernels at rng=3 (permute_dedup=False)...
+  2882400 kernel directions (8.30s)
+[14:39:07] [1/204   0.0% elapsed=0s ETA=0s] tetrahedron_prism
+  [tetrahedron_prism] V=8 E=16
+  [tetrahedron_prism] 9 unique shapes -> 1 emitted, 8 snap-fail  (98.8s)
+[14:40:45] [2/204   0.5% elapsed=99s ETA=20061s] duoprism_3_3
+  [duoprism_3_3] V=9 E=18
+  [duoprism_3_3] 227 unique shapes -> 0 emitted, 227 snap-fail  (141.4s)
+[14:43:07] [3/204   1.0% elapsed=240s ETA=24267s] octahedron_prism
+  [octahedron_prism] V=12 E=30
+  [octahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (103.6s)
+[14:44:51] [4/204   1.5% elapsed=344s ETA=23041s] duoprism_3_4
+  [duoprism_3_4] V=12 E=24
+  [duoprism_3_4] 343 unique shapes -> 0 emitted, 343 snap-fail  (141.5s)
+[14:47:12] [5/204   2.0% elapsed=485s ETA=24271s] duoprism_3_5
+  [duoprism_3_5] V=15 E=30
+  [duoprism_3_5] 454 unique shapes -> 0 emitted, 454 snap-fail  (146.2s)
+[14:49:38] [6/204   2.5% elapsed=632s ETA=25140s] 4_antiprismatic_prism
+  [4_antiprismatic_prism] V=16 E=40
+  [4_antiprismatic_prism] 0 hits in 97.7s
+[14:51:16] [7/204   2.9% elapsed=729s ETA=24069s] duoprism_3_6
+  [duoprism_3_6] V=18 E=36
+  [duoprism_3_6] 456 unique shapes -> 1 emitted, 455 snap-fail  (143.8s)
+[14:53:40] [8/204   3.4% elapsed=873s ETA=24572s] duoprism_4_5
+  [duoprism_4_5] V=20 E=40
+  [duoprism_4_5] 341 unique shapes -> 0 emitted, 341 snap-fail  (99.6s)
+[14:55:19] [9/204   3.9% elapsed=973s ETA=23831s] 5_antiprismatic_prism
+  [5_antiprismatic_prism] V=20 E=50
+  [5_antiprismatic_prism] 9 unique shapes -> 9 emitted, 0 snap-fail  (99.5s)
+[14:56:59] [10/204   4.4% elapsed=1072s ETA=23231s] duoprism_3_7
+  [duoprism_3_7] V=21 E=42
+  [duoprism_3_7] 226 unique shapes -> 0 emitted, 226 snap-fail  (143.8s)
+[14:59:23] [11/204   4.9% elapsed=1216s ETA=23591s] icosahedron_prism
+  [icosahedron_prism] V=24 E=72
+  [icosahedron_prism] 5 unique shapes -> 5 emitted, 0 snap-fail  (106.8s)
+[15:01:09] [12/204   5.4% elapsed=1323s ETA=23209s] truncated_tetrahedron_prism
+  [truncated_tetrahedron_prism] V=24 E=48
+  [truncated_tetrahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (95.1s)
+[15:02:44] [13/204   5.9% elapsed=1418s ETA=22686s] cuboctahedron_prism
+  [cuboctahedron_prism] V=24 E=60
+  [cuboctahedron_prism] 9 unique shapes -> 2 emitted, 7 snap-fail  (102.2s)
+[15:04:27] [14/204   6.4% elapsed=1520s ETA=22333s] duoprism_3_8
+  [duoprism_3_8] V=24 E=48
+  [duoprism_3_8] 323 unique shapes -> 0 emitted, 323 snap-fail  (134.8s)
+[15:06:41] [15/204   6.9% elapsed=1655s ETA=22459s] duoprism_4_6
+  [duoprism_4_6] V=24 E=48
+  [duoprism_4_6] 343 unique shapes -> 3 emitted, 340 snap-fail  (98.8s)
+[15:08:20] [16/204   7.4% elapsed=1754s ETA=22096s] 6_antiprismatic_prism
+  [6_antiprismatic_prism] V=24 E=60
+  [6_antiprismatic_prism] 0 hits in 105.7s
+[15:10:06] [17/204   7.8% elapsed=1859s ETA=21848s] duoprism_5_5
+  [duoprism_5_5] V=25 E=50
+  [duoprism_5_5] 228 unique shapes -> 0 emitted, 228 snap-fail  (170.9s)
+[15:12:57] [18/204   8.3% elapsed=2030s ETA=22334s] duoprism_3_9
+  [duoprism_3_9] V=27 E=54
+  [duoprism_3_9] 227 unique shapes -> 0 emitted, 227 snap-fail  (142.3s)
+[15:15:19] [19/204   8.8% elapsed=2173s ETA=22450s] duoprism_4_7
+  [duoprism_4_7] V=28 E=56
+  [duoprism_4_7] 226 unique shapes -> 0 emitted, 226 snap-fail  (97.5s)
+[15:16:57] [20/204   9.3% elapsed=2270s ETA=22104s] 7_antiprismatic_prism
+  [7_antiprismatic_prism] V=28 E=70
+  [7_antiprismatic_prism] 0 hits in 99.6s
+[15:18:36] [21/204   9.8% elapsed=2370s ETA=21802s] duoprism_3_10
+  [duoprism_3_10] V=30 E=60
+  [duoprism_3_10] 452 unique shapes -> 0 emitted, 452 snap-fail  (147.0s)
+[15:21:03] [22/204  10.3% elapsed=2517s ETA=21932s] duoprism_5_6
+  [duoprism_5_6] V=30 E=60
+  [duoprism_5_6] 454 unique shapes -> 0 emitted, 454 snap-fail  (173.8s)
+[15:23:57] [23/204  10.8% elapsed=2691s ETA=22258s] duoprism_4_8
+  [duoprism_4_8] V=32 E=64
+  [duoprism_4_8] 211 unique shapes -> 0 emitted, 211 snap-fail  (95.2s)
+[15:25:32] [24/204  11.3% elapsed=2786s ETA=21922s] 8_antiprismatic_prism
+  [8_antiprismatic_prism] V=32 E=80
+  [8_antiprismatic_prism] 0 hits in 114.1s
+[15:27:26] [25/204  11.8% elapsed=2900s ETA=21748s] duoprism_3_11
+  [duoprism_3_11] V=33 E=66
+  [duoprism_3_11] 227 unique shapes -> 0 emitted, 227 snap-fail  (145.4s)
+[15:29:52] [26/204  12.3% elapsed=3045s ETA=21803s] duoprism_5_7
+  [duoprism_5_7] V=35 E=70
+  [duoprism_5_7] 227 unique shapes -> 0 emitted, 227 snap-fail  (170.0s)
+[15:32:42] [27/204  12.7% elapsed=3215s ETA=22011s] duoprism_3_12
+  [duoprism_3_12] V=36 E=72
+  [duoprism_3_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (134.2s)
+[15:34:56] [28/204  13.2% elapsed=3349s ETA=21957s] duoprism_4_9
+  [duoprism_4_9] V=36 E=72
+  [duoprism_4_9] 227 unique shapes -> 0 emitted, 227 snap-fail  (101.9s)
+[15:36:38] [29/204  13.7% elapsed=3451s ETA=21694s] duoprism_6_6
+  [duoprism_6_6] V=36 E=72
+  [duoprism_6_6] 228 unique shapes -> 2 emitted, 226 snap-fail  (136.0s)
+[15:38:54] [30/204  14.2% elapsed=3587s ETA=21647s] 9_antiprismatic_prism
+  [9_antiprismatic_prism] V=36 E=90
+  [9_antiprismatic_prism] 0 hits in 105.3s
+[15:40:39] [31/204  14.7% elapsed=3693s ETA=21417s] duoprism_3_13
+  [duoprism_3_13] V=39 E=78
+  [duoprism_3_13] 221 unique shapes -> 0 emitted, 221 snap-fail  (147.6s)
+[15:43:07] [32/204  15.2% elapsed=3840s ETA=21431s] dodecahedron_prism
+  [dodecahedron_prism] V=40 E=80
+  [dodecahedron_prism] 5 unique shapes -> 5 emitted, 0 snap-fail  (108.1s)
+[15:44:55] [33/204  15.7% elapsed=3948s ETA=21222s] duoprism_4_10
+  [duoprism_4_10] V=40 E=80
+  [duoprism_4_10] 340 unique shapes -> 2 emitted, 338 snap-fail  (100.9s)
+[15:46:36] [34/204  16.2% elapsed=4049s ETA=20982s] duoprism_5_8
+  [duoprism_5_8] V=40 E=80
+  [duoprism_5_8] 326 unique shapes -> 0 emitted, 326 snap-fail  (163.8s)
+[15:49:20] [35/204  16.7% elapsed=4213s ETA=21065s] 10_antiprismatic_prism
+  [10_antiprismatic_prism] V=40 E=100
+  [10_antiprismatic_prism] 0 hits in 122.4s
+[15:51:22] [36/204  17.2% elapsed=4335s ETA=20933s] duoprism_3_14
+  [duoprism_3_14] V=42 E=84
+  [duoprism_3_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (138.6s)
+[15:53:40] [37/204  17.6% elapsed=4474s ETA=20878s] duoprism_6_7
+  [duoprism_6_7] V=42 E=84
+  [duoprism_6_7] 226 unique shapes -> 0 emitted, 226 snap-fail  (138.6s)
+[15:55:59] [38/204  18.1% elapsed=4612s ETA=20818s] duoprism_4_11
+  [duoprism_4_11] V=44 E=88
+  [duoprism_4_11] 227 unique shapes -> 0 emitted, 227 snap-fail  (102.3s)
+[15:57:41] [39/204  18.6% elapsed=4715s ETA=20596s] 11_antiprismatic_prism
+  [11_antiprismatic_prism] V=44 E=110
+  [11_antiprismatic_prism] 0 hits in 114.3s
+[15:59:36] [40/204  19.1% elapsed=4829s ETA=20431s] duoprism_3_15
+  [duoprism_3_15] V=45 E=90
+  [duoprism_3_15] 227 unique shapes -> 0 emitted, 227 snap-fail  (149.0s)
+[16:02:05] [41/204  19.6% elapsed=4978s ETA=20410s] duoprism_5_9
+  [duoprism_5_9] V=45 E=90
+  [duoprism_5_9] 228 unique shapes -> 0 emitted, 228 snap-fail  (173.0s)
+[16:04:58] [42/204  20.1% elapsed=5151s ETA=20479s] truncated_octahedron_prism
+  [truncated_octahedron_prism] V=48 E=96
+  [truncated_octahedron_prism] 9 unique shapes -> 1 emitted, 8 snap-fail  (94.2s)
+[16:06:32] [43/204  20.6% elapsed=5245s ETA=20232s] truncated_cube_prism
+  [truncated_cube_prism] V=48 E=96
+  [truncated_cube_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (96.6s)
+[16:08:08] [44/204  21.1% elapsed=5342s ETA=20001s] rhombicuboctahedron_prism
+  [rhombicuboctahedron_prism] V=48 E=120
+  [rhombicuboctahedron_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (95.9s)
+[16:09:44] [45/204  21.6% elapsed=5438s ETA=19774s] snub_cube_prism
+  [snub_cube_prism] V=48 E=144
+  [snub_cube_prism] 0 hits in 151.0s
+[16:12:15] [46/204  22.1% elapsed=5589s ETA=19747s] duoprism_3_16
+  [duoprism_3_16] V=48 E=96
+  [duoprism_3_16] 95 unique shapes -> 0 emitted, 95 snap-fail  (133.5s)
+[16:14:29] [47/204  22.5% elapsed=5722s ETA=19655s] duoprism_4_12
+  [duoprism_4_12] V=48 E=96
+  [duoprism_4_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (93.8s)
+[16:16:03] [48/204  23.0% elapsed=5816s ETA=19428s] duoprism_6_8
+  [duoprism_6_8] V=48 E=96
+  [duoprism_6_8] 324 unique shapes -> 0 emitted, 324 snap-fail  (138.1s)
+[16:18:21] [49/204  23.5% elapsed=5954s ETA=19351s] 12_antiprismatic_prism
+  [12_antiprismatic_prism] V=48 E=120
+  [12_antiprismatic_prism] 0 hits in 134.9s
+[16:20:36] [50/204  24.0% elapsed=6089s ETA=19261s] duoprism_7_7
+  [duoprism_7_7] V=49 E=98
+  [duoprism_7_7] 0 hits in 97.5s
+[16:22:13] [51/204  24.5% elapsed=6187s ETA=19055s] duoprism_5_10
+  [duoprism_5_10] V=50 E=100
+  [duoprism_5_10] 455 unique shapes -> 1 emitted, 454 snap-fail  (176.4s)
+[16:25:10] [52/204  25.0% elapsed=6363s ETA=19089s] duoprism_3_17
+  [duoprism_3_17] V=51 E=102
+  [duoprism_3_17] 230 unique shapes -> 0 emitted, 230 snap-fail  (149.4s)
+[16:27:39] [53/204  25.5% elapsed=6512s ETA=19036s] duoprism_4_13
+  [duoprism_4_13] V=52 E=104
+  [duoprism_4_13] 221 unique shapes -> 0 emitted, 221 snap-fail  (106.0s)
+[16:29:25] [54/204  26.0% elapsed=6618s ETA=18856s] 13_antiprismatic_prism
+  [13_antiprismatic_prism] V=52 E=130
+  [13_antiprismatic_prism] 0 hits in 117.4s
+[16:31:22] [55/204  26.5% elapsed=6736s ETA=18711s] duoprism_3_18
+  [duoprism_3_18] V=54 E=108
+  [duoprism_3_18] 227 unique shapes -> 0 emitted, 227 snap-fail  (141.0s)
+[16:33:43] [56/204  27.0% elapsed=6877s ETA=18630s] duoprism_6_9
+  [duoprism_6_9] V=54 E=108
+  [duoprism_6_9] 227 unique shapes -> 0 emitted, 227 snap-fail  (144.1s)
+[16:36:08] [57/204  27.5% elapsed=7021s ETA=18555s] duoprism_5_11
+  [duoprism_5_11] V=55 E=110
+  [duoprism_5_11] 227 unique shapes -> 0 emitted, 227 snap-fail  (181.7s)
+[16:39:09] [58/204  27.9% elapsed=7203s ETA=18575s] duoprism_4_14
+  [duoprism_4_14] V=56 E=112
+  [duoprism_4_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (99.8s)
+[16:40:49] [59/204  28.4% elapsed=7302s ETA=18382s] duoprism_7_8
+  [duoprism_7_8] V=56 E=112
+  [duoprism_7_8] 227 unique shapes -> 0 emitted, 227 snap-fail  (100.6s)
+[16:42:30] [60/204  28.9% elapsed=7403s ETA=18194s] 14_antiprismatic_prism
+  [14_antiprismatic_prism] V=56 E=140
+  [14_antiprismatic_prism] 0 hits in 143.4s
+[16:44:53] [61/204  29.4% elapsed=7547s ETA=18112s] duoprism_3_19
+  [duoprism_3_19] V=57 E=114
+  [duoprism_3_19] 226 unique shapes -> 0 emitted, 226 snap-fail  (151.6s)
+[16:47:25] [62/204  29.9% elapsed=7698s ETA=18046s] icosidodecahedron_prism
+  [icosidodecahedron_prism] V=60 E=150
+  [icosidodecahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (106.9s)
+[16:49:12] [63/204  30.4% elapsed=7805s ETA=17876s] duoprism_3_20
+  [duoprism_3_20] V=60 E=120
+  [duoprism_3_20] 121 unique shapes -> 0 emitted, 121 snap-fail  (136.3s)
+[16:51:28] [64/204  30.9% elapsed=7941s ETA=17773s] duoprism_4_15
+  [duoprism_4_15] V=60 E=120
+  [duoprism_4_15] 227 unique shapes -> 0 emitted, 227 snap-fail  (111.0s)
+[16:53:19] [65/204  31.4% elapsed=8052s ETA=17614s] duoprism_5_12
+  [duoprism_5_12] V=60 E=120
+  [duoprism_5_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (160.4s)
+[16:55:59] [66/204  31.9% elapsed=8213s ETA=17563s] duoprism_6_10
+  [duoprism_6_10] V=60 E=120
+  [duoprism_6_10] 453 unique shapes -> 0 emitted, 453 snap-fail  (145.3s)
+[16:58:25] [67/204  32.4% elapsed=8358s ETA=17476s] 15_antiprismatic_prism
+  [15_antiprismatic_prism] V=60 E=150
+  [15_antiprismatic_prism] 0 hits in 123.8s
+[17:00:29] [68/204  32.8% elapsed=8482s ETA=17344s] duoprism_7_9
+  [duoprism_7_9] V=63 E=126
+  [duoprism_7_9] 0 hits in 100.5s
+[17:02:09] [69/204  33.3% elapsed=8582s ETA=17165s] duoprism_4_16
+  [duoprism_4_16] V=64 E=128
+  [duoprism_4_16] 95 unique shapes -> 0 emitted, 95 snap-fail  (95.5s)
+[17:03:45] [70/204  33.8% elapsed=8678s ETA=16979s] duoprism_8_8
+  [duoprism_8_8] V=64 E=128
+  [duoprism_8_8] 98 unique shapes -> 0 emitted, 98 snap-fail  (95.3s)
+[17:05:20] [71/204  34.3% elapsed=8773s ETA=16794s] 16_antiprismatic_prism
+  [16_antiprismatic_prism] V=64 E=160
+  [16_antiprismatic_prism] 0 hits in 153.2s
+[17:07:53] [72/204  34.8% elapsed=8926s ETA=16721s] duoprism_5_13
+  [duoprism_5_13] V=65 E=130
+  [duoprism_5_13] 226 unique shapes -> 0 emitted, 226 snap-fail  (178.4s)
+[17:10:51] [73/204  35.3% elapsed=9105s ETA=16692s] duoprism_6_11
+  [duoprism_6_11] V=66 E=132
+  [duoprism_6_11] 227 unique shapes -> 0 emitted, 227 snap-fail  (143.0s)
+[17:13:14] [74/204  35.8% elapsed=9248s ETA=16596s] duoprism_4_17
+  [duoprism_4_17] V=68 E=136
+  [duoprism_4_17] 230 unique shapes -> 0 emitted, 230 snap-fail  (111.0s)
+[17:15:05] [75/204  36.3% elapsed=9359s ETA=16441s] 17_antiprismatic_prism
+  [17_antiprismatic_prism] V=68 E=170
+  [17_antiprismatic_prism] 0 hits in 126.7s
+[17:17:12] [76/204  36.8% elapsed=9486s ETA=16315s] duoprism_5_14
+  [duoprism_5_14] V=70 E=140
+  [duoprism_5_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (173.3s)
+[17:20:05] [77/204  37.3% elapsed=9659s ETA=16268s] duoprism_7_10
+  [duoprism_7_10] V=70 E=140
+  [duoprism_7_10] 227 unique shapes -> 0 emitted, 227 snap-fail  (103.0s)
+[17:21:49] [78/204  37.7% elapsed=9762s ETA=16101s] duoprism_4_18
+  [duoprism_4_18] V=72 E=144
+  [duoprism_4_18] 227 unique shapes -> 0 emitted, 227 snap-fail  (100.0s)
+[17:23:28] [79/204  38.2% elapsed=9862s ETA=15931s] duoprism_6_12
+  [duoprism_6_12] V=72 E=144
+  [duoprism_6_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (131.4s)
+[17:25:40] [80/204  38.7% elapsed=9993s ETA=15812s] duoprism_8_9
+  [duoprism_8_9] V=72 E=144
+  [duoprism_8_9] 227 unique shapes -> 0 emitted, 227 snap-fail  (102.8s)
+[17:27:23] [81/204  39.2% elapsed=10096s ETA=15649s] 18_antiprismatic_prism
+  [18_antiprismatic_prism] V=72 E=180
+  [18_antiprismatic_prism] 0 hits in 157.8s
+[17:30:01] [82/204  39.7% elapsed=10254s ETA=15571s] duoprism_5_15
+  [duoprism_5_15] V=75 E=150
+  [duoprism_5_15] 230 unique shapes -> 0 emitted, 230 snap-fail  (179.6s)
+[17:33:00] [83/204  40.2% elapsed=10434s ETA=15523s] duoprism_4_19
+  [duoprism_4_19] V=76 E=152
+  [duoprism_4_19] 226 unique shapes -> 0 emitted, 226 snap-fail  (113.3s)
+[17:34:54] [84/204  40.7% elapsed=10547s ETA=15376s] 19_antiprismatic_prism
+  [19_antiprismatic_prism] V=76 E=190
+  [19_antiprismatic_prism] 0 hits in 132.3s
+[17:37:06] [85/204  41.2% elapsed=10679s ETA=15256s] duoprism_7_11
+  [duoprism_7_11] V=77 E=154
+  [duoprism_7_11] 0 hits in 104.1s
+[17:38:50] [86/204  41.7% elapsed=10783s ETA=15097s] duoprism_6_13
+  [duoprism_6_13] V=78 E=156
+  [duoprism_6_13] 221 unique shapes -> 0 emitted, 221 snap-fail  (152.2s)
+[17:41:22] [87/204  42.2% elapsed=10936s ETA=15005s] duoprism_4_20
+  [duoprism_4_20] V=80 E=160
+  [duoprism_4_20] 121 unique shapes -> 0 emitted, 121 snap-fail  (98.1s)
+[17:43:00] [88/204  42.6% elapsed=11034s ETA=14838s] duoprism_5_16
+  [duoprism_5_16] V=80 E=160
+  [duoprism_5_16] 96 unique shapes -> 0 emitted, 96 snap-fail  (163.7s)
+[17:45:44] [89/204  43.1% elapsed=11197s ETA=14760s] duoprism_8_10
+  [duoprism_8_10] V=80 E=160
+  [duoprism_8_10] 327 unique shapes -> 0 emitted, 327 snap-fail  (103.1s)
+[17:47:27] [90/204  43.6% elapsed=11300s ETA=14602s] 20_antiprismatic_prism
+  [20_antiprismatic_prism] V=80 E=200
+  [20_antiprismatic_prism] 0 hits in 162.3s
+[17:50:09] [91/204  44.1% elapsed=11463s ETA=14519s] duoprism_9_9
+  [duoprism_9_9] V=81 E=162
+  [duoprism_9_9] 0 hits in 103.5s
+[17:51:53] [92/204  44.6% elapsed=11566s ETA=14362s] duoprism_6_14
+  [duoprism_6_14] V=84 E=168
+  [duoprism_6_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (139.3s)
+[17:54:12] [93/204  45.1% elapsed=11705s ETA=14250s] duoprism_7_12
+  [duoprism_7_12] V=84 E=168
+  [duoprism_7_12] 0 hits in 100.9s
+[17:55:53] [94/204  45.6% elapsed=11806s ETA=14091s] duoprism_5_17
+  [duoprism_5_17] V=85 E=170
+  [duoprism_5_17] 232 unique shapes -> 0 emitted, 232 snap-fail  (182.7s)
+[17:58:56] [95/204  46.1% elapsed=11989s ETA=14030s] duoprism_8_11
+  [duoprism_8_11] V=88 E=176
+  [duoprism_8_11] 228 unique shapes -> 0 emitted, 228 snap-fail  (107.5s)
+[18:00:43] [96/204  46.6% elapsed=12097s ETA=13879s] duoprism_5_18
+  [duoprism_5_18] V=90 E=180
+  [duoprism_5_18] 231 unique shapes -> 0 emitted, 231 snap-fail  (175.4s)
+[18:03:39] [97/204  47.1% elapsed=12272s ETA=13806s] duoprism_6_15
+  [duoprism_6_15] V=90 E=180
+  [duoprism_6_15] 227 unique shapes -> 0 emitted, 227 snap-fail  (149.8s)
+[18:06:08] [98/204  47.5% elapsed=12422s ETA=13702s] duoprism_9_10
+  [duoprism_9_10] V=90 E=180
+  [duoprism_9_10] 228 unique shapes -> 0 emitted, 228 snap-fail  (105.4s)
+[18:07:54] [99/204  48.0% elapsed=12527s ETA=13550s] duoprism_7_13
+  [duoprism_7_13] V=91 E=182
+  [duoprism_7_13] 0 hits in 104.5s
+[18:09:38] [100/204  48.5% elapsed=12632s ETA=13397s] duoprism_5_19
+  [duoprism_5_19] V=95 E=190
+  [duoprism_5_19] 234 unique shapes -> 0 emitted, 234 snap-fail  (185.0s)
+[18:12:43] [101/204  49.0% elapsed=12817s ETA=13329s] truncated_cuboctahedron_prism
+  [truncated_cuboctahedron_prism] V=96 E=192
+  [truncated_cuboctahedron_prism] 5 unique shapes -> 0 emitted, 5 snap-fail  (104.8s)
+[18:14:28] [102/204  49.5% elapsed=12921s ETA=13177s] duoprism_6_16
+  [duoprism_6_16] V=96 E=192
+  [duoprism_6_16] 95 unique shapes -> 0 emitted, 95 snap-fail  (134.1s)
+[18:16:42] [103/204  50.0% elapsed=13056s ETA=13056s] duoprism_8_12
+  [duoprism_8_12] V=96 E=192
+  [duoprism_8_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (96.4s)
+[18:18:19] [104/204  50.5% elapsed=13152s ETA=12897s] duoprism_7_14
+  [duoprism_7_14] V=98 E=196
+  [duoprism_7_14] 0 hits in 100.4s
+[18:19:59] [105/204  51.0% elapsed=13252s ETA=12743s] duoprism_9_11
+  [duoprism_9_11] V=99 E=198
+  [duoprism_9_11] 0 hits in 103.7s
+[18:21:43] [106/204  51.5% elapsed=13356s ETA=12593s] duoprism_5_20
+  [duoprism_5_20] V=100 E=200
+  [duoprism_5_20] 122 unique shapes -> 0 emitted, 122 snap-fail  (166.7s)
+[18:24:29] [107/204  52.0% elapsed=13523s ETA=12502s] duoprism_10_10
+  [duoprism_10_10] V=100 E=200
+  [duoprism_10_10] 227 unique shapes -> 2 emitted, 225 snap-fail  (173.2s)
+[18:27:23] [108/204  52.5% elapsed=13696s ETA=12416s] duoprism_6_17
+  [duoprism_6_17] V=102 E=204
+  [duoprism_6_17] 230 unique shapes -> 0 emitted, 230 snap-fail  (153.9s)
+[18:29:57] [109/204  52.9% elapsed=13850s ETA=12311s] duoprism_8_13
+  [duoprism_8_13] V=104 E=208
+  [duoprism_8_13] 225 unique shapes -> 0 emitted, 225 snap-fail  (108.9s)
+[18:31:45] [110/204  53.4% elapsed=13959s ETA=12166s] duoprism_7_15
+  [duoprism_7_15] V=105 E=210
+  [duoprism_7_15] 0 hits in 106.4s
+[18:33:32] [111/204  53.9% elapsed=14065s ETA=12019s] duoprism_6_18
+  [duoprism_6_18] V=108 E=216
+  [duoprism_6_18] 227 unique shapes -> 0 emitted, 227 snap-fail  (144.8s)
+[18:35:57] [112/204  54.4% elapsed=14210s ETA=11906s] duoprism_9_12
+  [duoprism_9_12] V=108 E=216
+  [duoprism_9_12] 0 hits in 99.4s
+[18:37:36] [113/204  54.9% elapsed=14310s ETA=11754s] duoprism_10_11
+  [duoprism_10_11] V=110 E=220
+  [duoprism_10_11] 227 unique shapes -> 0 emitted, 227 snap-fail  (178.0s)
+[18:40:34] [114/204  55.4% elapsed=14488s ETA=11667s] duoprism_7_16
+  [duoprism_7_16] V=112 E=224
+  [duoprism_7_16] 0 hits in 98.8s
+[18:42:13] [115/204  55.9% elapsed=14586s ETA=11516s] duoprism_8_14
+  [duoprism_8_14] V=112 E=224
+  [duoprism_8_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (100.5s)
+[18:43:54] [116/204  56.4% elapsed=14687s ETA=11366s] duoprism_6_19
+  [duoprism_6_19] V=114 E=228
+  [duoprism_6_19] 226 unique shapes -> 0 emitted, 226 snap-fail  (156.8s)
+[18:46:30] [117/204  56.9% elapsed=14844s ETA=11261s] duoprism_9_13
+  [duoprism_9_13] V=117 E=234
+  [duoprism_9_13] 0 hits in 107.4s
+[18:48:18] [118/204  57.4% elapsed=14951s ETA=11118s] duoprism_7_17
+  [duoprism_7_17] V=119 E=238
+  [duoprism_7_17] 0 hits in 109.2s
+[18:50:07] [119/204  57.8% elapsed=15060s ETA=10976s] truncated_dodecahedron_prism
+  [truncated_dodecahedron_prism] V=120 E=240
+  [truncated_dodecahedron_prism] 8 unique shapes -> 8 emitted, 0 snap-fail  (114.1s)
+[18:52:01] [120/204  58.3% elapsed=15174s ETA=10839s] truncated_icosahedron_prism
+  [truncated_icosahedron_prism] V=120 E=240
+  [truncated_icosahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (110.1s)
+[18:53:51] [121/204  58.8% elapsed=15285s ETA=10699s] rhombicosidodecahedron_prism
+  [rhombicosidodecahedron_prism] V=120 E=300
+  [rhombicosidodecahedron_prism] 6 unique shapes -> 6 emitted, 0 snap-fail  (113.7s)
+[18:55:45] [122/204  59.3% elapsed=15398s ETA=10562s] snub_dodecahedron_prism
+  [snub_dodecahedron_prism] V=120 E=360
+  [snub_dodecahedron_prism] 0 hits in 298.5s
+[19:00:43] [123/204  59.8% elapsed=15697s ETA=10550s] duoprism_6_20
+  [duoprism_6_20] V=120 E=240
+  [duoprism_6_20] 121 unique shapes -> 0 emitted, 121 snap-fail  (136.7s)
+[19:03:00] [124/204  60.3% elapsed=15834s ETA=10427s] duoprism_8_15
+  [duoprism_8_15] V=120 E=240
+  [duoprism_8_15] 231 unique shapes -> 0 emitted, 231 snap-fail  (110.2s)
+[19:04:50] [125/204  60.8% elapsed=15944s ETA=10286s] duoprism_10_12
+  [duoprism_10_12] V=120 E=240
+  [duoprism_10_12] 116 unique shapes -> 0 emitted, 116 snap-fail  (165.8s)
+[19:07:36] [126/204  61.3% elapsed=16110s ETA=10181s] duoprism_11_11
+  [duoprism_11_11] V=121 E=242
+  [duoprism_11_11] 0 hits in 106.8s
+[19:09:23] [127/204  61.8% elapsed=16216s ETA=10039s] duoprism_7_18
+  [duoprism_7_18] V=126 E=252
+  [duoprism_7_18] 0 hits in 105.1s
+[19:11:08] [128/204  62.3% elapsed=16321s ETA=9896s] duoprism_9_14
+  [duoprism_9_14] V=126 E=252
+  [duoprism_9_14] 0 hits in 99.4s
+[19:12:47] [129/204  62.7% elapsed=16421s ETA=9750s] duoprism_8_16
+  [duoprism_8_16] V=128 E=256
+  [duoprism_8_16] 96 unique shapes -> 0 emitted, 96 snap-fail  (99.7s)
+[19:14:27] [130/204  63.2% elapsed=16521s ETA=9605s] duoprism_10_13
+  [duoprism_10_13] V=130 E=260
+  [duoprism_10_13] 226 unique shapes -> 0 emitted, 226 snap-fail  (181.7s)
+[19:17:29] [131/204  63.7% elapsed=16702s ETA=9507s] duoprism_11_12
+  [duoprism_11_12] V=132 E=264
+  [duoprism_11_12] 0 hits in 100.9s
+[19:19:10] [132/204  64.2% elapsed=16803s ETA=9364s] duoprism_7_19
+  [duoprism_7_19] V=133 E=266
+  [duoprism_7_19] 0 hits in 113.1s
+[19:21:03] [133/204  64.7% elapsed=16916s ETA=9227s] duoprism_9_15
+  [duoprism_9_15] V=135 E=270
+  [duoprism_9_15] 0 hits in 109.0s
+[19:22:52] [134/204  65.2% elapsed=17025s ETA=9089s] duoprism_8_17
+  [duoprism_8_17] V=136 E=272
+  [duoprism_8_17] 232 unique shapes -> 0 emitted, 232 snap-fail  (111.7s)
+[19:24:44] [135/204  65.7% elapsed=17137s ETA=8952s] duoprism_7_20
+  [duoprism_7_20] V=140 E=280
+  [duoprism_7_20] 0 hits in 105.0s
+[19:26:29] [136/204  66.2% elapsed=17242s ETA=8813s] duoprism_10_14
+  [duoprism_10_14] V=140 E=280
+  [duoprism_10_14] 229 unique shapes -> 0 emitted, 229 snap-fail  (175.2s)
+[19:29:24] [137/204  66.7% elapsed=17417s ETA=8709s] duoprism_11_13
+  [duoprism_11_13] V=143 E=286
+  [duoprism_11_13] 0 hits in 108.9s
+[19:31:13] [138/204  67.2% elapsed=17526s ETA=8571s] duoprism_8_18
+  [duoprism_8_18] V=144 E=288
+  [duoprism_8_18] 231 unique shapes -> 0 emitted, 231 snap-fail  (103.9s)
+[19:32:57] [139/204  67.6% elapsed=17630s ETA=8432s] duoprism_9_16
+  [duoprism_9_16] V=144 E=288
+  [duoprism_9_16] 0 hits in 105.1s
+[19:34:42] [140/204  68.1% elapsed=17735s ETA=8293s] duoprism_12_12
+  [duoprism_12_12] V=144 E=288
+  [duoprism_12_12] 0 hits in 95.3s
+[19:36:17] [141/204  68.6% elapsed=17831s ETA=8151s] duoprism_10_15
+  [duoprism_10_15] V=150 E=300
+  [duoprism_10_15] 230 unique shapes -> 0 emitted, 230 snap-fail  (182.3s)
+[19:39:20] [142/204  69.1% elapsed=18013s ETA=8048s] duoprism_8_19
+  [duoprism_8_19] V=152 E=304
+  [duoprism_8_19] 231 unique shapes -> 0 emitted, 231 snap-fail  (115.4s)
+[19:41:15] [143/204  69.6% elapsed=18128s ETA=7915s] duoprism_9_17
+  [duoprism_9_17] V=153 E=306
+  [duoprism_9_17] 0 hits in 110.6s
+[19:43:06] [144/204  70.1% elapsed=18239s ETA=7780s] duoprism_11_14
+  [duoprism_11_14] V=154 E=308
+  [duoprism_11_14] 0 hits in 105.4s
+[19:44:51] [145/204  70.6% elapsed=18344s ETA=7643s] duoprism_12_13
+  [duoprism_12_13] V=156 E=312
+  [duoprism_12_13] 0 hits in 102.4s
+[19:46:33] [146/204  71.1% elapsed=18447s ETA=7506s] duoprism_8_20
+  [duoprism_8_20] V=160 E=320
+  [duoprism_8_20] 121 unique shapes -> 0 emitted, 121 snap-fail  (102.4s)
+[19:48:16] [147/204  71.6% elapsed=18549s ETA=7369s] duoprism_10_16
+  [duoprism_10_16] V=160 E=320
+  [duoprism_10_16] 96 unique shapes -> 0 emitted, 96 snap-fail  (164.8s)
+[19:51:01] [148/204  72.1% elapsed=18714s ETA=7256s] duoprism_9_18
+  [duoprism_9_18] V=162 E=324
+  [duoprism_9_18] 0 hits in 103.1s
+[19:52:44] [149/204  72.5% elapsed=18817s ETA=7120s] duoprism_11_15
+  [duoprism_11_15] V=165 E=330
+  [duoprism_11_15] 0 hits in 113.5s
+[19:54:37] [150/204  73.0% elapsed=18931s ETA=6988s] duoprism_12_14
+  [duoprism_12_14] V=168 E=336
+  [duoprism_12_14] 0 hits in 96.0s
+[19:56:13] [151/204  73.5% elapsed=19027s ETA=6850s] duoprism_13_13
+  [duoprism_13_13] V=169 E=338
+  [duoprism_13_13] 0 hits in 109.5s
+[19:58:03] [152/204  74.0% elapsed=19136s ETA=6717s] duoprism_10_17
+  [duoprism_10_17] V=170 E=340
+  [duoprism_10_17] 232 unique shapes -> 0 emitted, 232 snap-fail  (192.6s)
+[20:01:15] [153/204  74.5% elapsed=19329s ETA=6612s] duoprism_9_19
+  [duoprism_9_19] V=171 E=342
+  [duoprism_9_19] 0 hits in 113.8s
+[20:03:09] [154/204  75.0% elapsed=19442s ETA=6481s] duoprism_11_16
+  [duoprism_11_16] V=176 E=352
+  [duoprism_11_16] 0 hits in 106.1s
+[20:04:55] [155/204  75.5% elapsed=19549s ETA=6347s] duoprism_9_20
+  [duoprism_9_20] V=180 E=360
+  [duoprism_9_20] 0 hits in 105.1s
+[20:06:40] [156/204  76.0% elapsed=19654s ETA=6213s] duoprism_10_18
+  [duoprism_10_18] V=180 E=360
+  [duoprism_10_18] 231 unique shapes -> 0 emitted, 231 snap-fail  (177.0s)
+[20:09:37] [157/204  76.5% elapsed=19831s ETA=6102s] duoprism_12_15
+  [duoprism_12_15] V=180 E=360
+  [duoprism_12_15] 0 hits in 105.7s
+[20:11:23] [158/204  77.0% elapsed=19936s ETA=5968s] duoprism_13_14
+  [duoprism_13_14] V=182 E=364
+  [duoprism_13_14] 0 hits in 103.7s
+[20:13:07] [159/204  77.5% elapsed=20040s ETA=5834s] duoprism_11_17
+  [duoprism_11_17] V=187 E=374
+  [duoprism_11_17] 0 hits in 116.2s
+[20:15:03] [160/204  77.9% elapsed=20156s ETA=5705s] duoprism_10_19
+  [duoprism_10_19] V=190 E=380
+  [duoprism_10_19] 234 unique shapes -> 0 emitted, 234 snap-fail  (190.7s)
+[20:18:14] [161/204  78.4% elapsed=20347s ETA=5595s] duoprism_12_16
+  [duoprism_12_16] V=192 E=384
+  [duoprism_12_16] 0 hits in 105.2s
+[20:19:59] [162/204  78.9% elapsed=20452s ETA=5462s] duoprism_13_15
+  [duoprism_13_15] V=195 E=390
+  [duoprism_13_15] 0 hits in 120.8s
+[20:22:00] [163/204  79.4% elapsed=20573s ETA=5334s] duoprism_14_14
+  [duoprism_14_14] V=196 E=392
+  [duoprism_14_14] 0 hits in 105.2s
+[20:23:45] [164/204  79.9% elapsed=20678s ETA=5201s] duoprism_11_18
+  [duoprism_11_18] V=198 E=396
+  [duoprism_11_18] 0 hits in 111.1s
+[20:25:36] [165/204  80.4% elapsed=20789s ETA=5071s] duoprism_10_20
+  [duoprism_10_20] V=200 E=400
+  [duoprism_10_20] 122 unique shapes -> 0 emitted, 122 snap-fail  (177.7s)
+[20:28:34] [166/204  80.9% elapsed=20967s ETA=4956s] duoprism_12_17
+  [duoprism_12_17] V=204 E=408
+  [duoprism_12_17] 0 hits in 117.0s
+[20:30:31] [167/204  81.4% elapsed=21084s ETA=4826s] duoprism_13_16
+  [duoprism_13_16] V=208 E=416
+  [duoprism_13_16] 0 hits in 109.9s
+[20:32:21] [168/204  81.9% elapsed=21194s ETA=4696s] duoprism_11_19
+  [duoprism_11_19] V=209 E=418
+  [duoprism_11_19] 0 hits in 119.1s
+[20:34:20] [169/204  82.4% elapsed=21313s ETA=4567s] duoprism_14_15
+  [duoprism_14_15] V=210 E=420
+  [duoprism_14_15] 0 hits in 107.9s
+[20:36:08] [170/204  82.8% elapsed=21421s ETA=4436s] duoprism_12_18
+  [duoprism_12_18] V=216 E=432
+  [duoprism_12_18] 0 hits in 99.7s
+[20:37:47] [171/204  83.3% elapsed=21521s ETA=4304s] duoprism_11_20
+  [duoprism_11_20] V=220 E=440
+  [duoprism_11_20] 0 hits in 108.3s
+[20:39:36] [172/204  83.8% elapsed=21629s ETA=4174s] duoprism_13_17
+  [duoprism_13_17] V=221 E=442
+  [duoprism_13_17] 0 hits in 119.2s
+[20:41:35] [173/204  84.3% elapsed=21748s ETA=4046s] duoprism_14_16
+  [duoprism_14_16] V=224 E=448
+  [duoprism_14_16] 0 hits in 103.3s
+[20:43:18] [174/204  84.8% elapsed=21851s ETA=3916s] duoprism_15_15
+  [duoprism_15_15] V=225 E=450
+  [duoprism_15_15] 0 hits in 123.5s
+[20:45:22] [175/204  85.3% elapsed=21975s ETA=3789s] duoprism_12_19
+  [duoprism_12_19] V=228 E=456
+  [duoprism_12_19] 0 hits in 116.1s
+[20:47:18] [176/204  85.8% elapsed=22091s ETA=3661s] duoprism_13_18
+  [duoprism_13_18] V=234 E=468
+  [duoprism_13_18] 0 hits in 114.2s
+[20:49:12] [177/204  86.3% elapsed=22205s ETA=3533s] duoprism_14_17
+  [duoprism_14_17] V=238 E=476
+  [duoprism_14_17] 0 hits in 118.8s
+[20:51:11] [178/204  86.8% elapsed=22324s ETA=3405s] truncated_icosidodecahedron_prism
+  [truncated_icosidodecahedron_prism] V=240 E=480
+  [truncated_icosidodecahedron_prism] 7 unique shapes -> 7 emitted, 0 snap-fail  (123.9s)
+[20:53:14] [179/204  87.3% elapsed=22448s ETA=3279s] duoprism_12_20
+  [duoprism_12_20] V=240 E=480
+  [duoprism_12_20] 0 hits in 107.4s
+[20:55:02] [180/204  87.7% elapsed=22555s ETA=3150s] duoprism_15_16
+  [duoprism_15_16] V=240 E=480
+  [duoprism_15_16] 0 hits in 108.6s
+[20:56:50] [181/204  88.2% elapsed=22664s ETA=3022s] duoprism_13_19
+  [duoprism_13_19] V=247 E=494
+  [duoprism_13_19] 0 hits in 118.3s
+[20:58:49] [182/204  88.7% elapsed=22782s ETA=2895s] duoprism_14_18
+  [duoprism_14_18] V=252 E=504
+  [duoprism_14_18] 0 hits in 103.2s
+[21:00:32] [183/204  89.2% elapsed=22885s ETA=2766s] duoprism_15_17
+  [duoprism_15_17] V=255 E=510
+  [duoprism_15_17] 0 hits in 117.2s
+[21:02:29] [184/204  89.7% elapsed=23003s ETA=2640s] duoprism_16_16
+  [duoprism_16_16] V=256 E=512
+  [duoprism_16_16] 0 hits in 100.9s
+[21:04:10] [185/204  90.2% elapsed=23104s ETA=2511s] duoprism_13_20
+  [duoprism_13_20] V=260 E=520
+  [duoprism_13_20] 0 hits in 109.1s
+[21:05:59] [186/204  90.7% elapsed=23213s ETA=2384s] duoprism_14_19
+  [duoprism_14_19] V=266 E=532
+  [duoprism_14_19] 0 hits in 112.9s
+[21:07:52] [187/204  91.2% elapsed=23326s ETA=2257s] duoprism_15_18
+  [duoprism_15_18] V=270 E=540
+  [duoprism_15_18] 0 hits in 110.1s
+[21:09:42] [188/204  91.7% elapsed=23436s ETA=2131s] duoprism_16_17
+  [duoprism_16_17] V=272 E=544
+  [duoprism_16_17] 0 hits in 109.9s
+[21:11:32] [189/204  92.2% elapsed=23546s ETA=2004s] duoprism_14_20
+  [duoprism_14_20] V=280 E=560
+  [duoprism_14_20] 0 hits in 104.0s
+[21:13:16] [190/204  92.6% elapsed=23650s ETA=1877s] duoprism_15_19
+  [duoprism_15_19] V=285 E=570
+  [duoprism_15_19] 0 hits in 123.5s
+[21:15:20] [191/204  93.1% elapsed=23773s ETA=1752s] duoprism_16_18
+  [duoprism_16_18] V=288 E=576
+  [duoprism_16_18] 0 hits in 102.2s
+[21:17:02] [192/204  93.6% elapsed=23875s ETA=1625s] duoprism_17_17
+  [duoprism_17_17] V=289 E=578
+  [duoprism_17_17] 0 hits in 121.6s
+[21:19:03] [193/204  94.1% elapsed=23997s ETA=1500s] duoprism_15_20
+  [duoprism_15_20] V=300 E=600
+  [duoprism_15_20] 0 hits in 112.4s
+[21:20:56] [194/204  94.6% elapsed=24109s ETA=1374s] duoprism_16_19
+  [duoprism_16_19] V=304 E=608
+  [duoprism_16_19] 0 hits in 110.8s
+[21:22:47] [195/204  95.1% elapsed=24220s ETA=1248s] duoprism_17_18
+  [duoprism_17_18] V=306 E=612
+  [duoprism_17_18] 0 hits in 111.4s
+[21:24:38] [196/204  95.6% elapsed=24332s ETA=1123s] duoprism_16_20
+  [duoprism_16_20] V=320 E=640
+  [duoprism_16_20] 0 hits in 104.3s
+[21:26:22] [197/204  96.1% elapsed=24436s ETA=997s] duoprism_17_19
+  [duoprism_17_19] V=323 E=646
+  [duoprism_17_19] 0 hits in 120.1s
+[21:28:23] [198/204  96.6% elapsed=24556s ETA=873s] duoprism_18_18
+  [duoprism_18_18] V=324 E=648
+  [duoprism_18_18] 0 hits in 107.1s
+[21:30:10] [199/204  97.1% elapsed=24663s ETA=747s] duoprism_17_20
+  [duoprism_17_20] V=340 E=680
+  [duoprism_17_20] 0 hits in 111.1s
+[21:32:01] [200/204  97.5% elapsed=24774s ETA=622s] duoprism_18_19
+  [duoprism_18_19] V=342 E=684
+  [duoprism_18_19] 0 hits in 111.5s
+[21:33:52] [201/204  98.0% elapsed=24886s ETA=498s] duoprism_18_20
+  [duoprism_18_20] V=360 E=720
+  [duoprism_18_20] 0 hits in 107.7s
+[21:35:40] [202/204  98.5% elapsed=24993s ETA=373s] duoprism_19_19
+  [duoprism_19_19] V=361 E=722
+  [duoprism_19_19] 0 hits in 122.2s
+[21:37:42] [203/204  99.0% elapsed=25116s ETA=249s] duoprism_19_20
+  [duoprism_19_20] V=380 E=760
+  [duoprism_19_20] 0 hits in 113.4s
+[21:39:36] [204/204  99.5% elapsed=25229s ETA=124s] duoprism_20_20
+  [duoprism_20_20] V=400 E=800
+  [duoprism_20_20] 0 hits in 104.4s
+=== done (25333.5s) ===
