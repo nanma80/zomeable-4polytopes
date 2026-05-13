@@ -46,6 +46,8 @@ REPO_ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(REPO_ROOT, "lib"))
 
 import numpy as np
+import multiprocessing as mp
+from multiprocessing.shared_memory import SharedMemory
 
 from prismatic_polytopes import get_registry
 from search_engine import gen_dirs, search, group_by_shape
@@ -66,6 +68,42 @@ FAMILY_DIR = {
     "B": "duoprisms",
     "C": "antiprismatic_prisms",
 }
+
+
+# ---------------------------------------------------------------------- #
+# Worker-side shared-memory state for parallel sweep
+# (Workers re-attach to a SharedMemory block holding the (N, 4) dirs array
+# created by the parent. This avoids each worker holding its own ~700 MB
+# copy at rng=4 — critical when running 4+ workers on 16 GB machines.)
+# ---------------------------------------------------------------------- #
+_DIRS_SHM = None
+_DIRS_ARR = None
+
+
+def _pool_init(shm_name, shape):
+    global _DIRS_SHM, _DIRS_ARR
+    _DIRS_SHM = SharedMemory(name=shm_name)
+    _DIRS_ARR = np.ndarray(shape, dtype=np.float64, buffer=_DIRS_SHM.buf)
+
+
+def _pool_run(args):
+    slug, rng, emit = args
+    try:
+        # Re-resolve the entry in worker (lambdas in entry["builder"] are
+        # not picklable; registry is small and cheap to re-load).
+        for entry in get_registry(None):
+            if entry["slug"] == slug:
+                rec, _ = sweep_polytope(entry, _DIRS_ARR, rng, emit, verbose=False)
+                return rec
+        return {"slug": slug, "rng": rng, "status": "missing_in_registry"}
+    except Exception as e:
+        return {
+            "slug": slug,
+            "rng": rng,
+            "status": "worker_failed",
+            "error": repr(e),
+            "traceback": traceback.format_exc(),
+        }
 
 
 # ---------------------------------------------------------------------- #
@@ -94,8 +132,12 @@ def _dedup_by_direction(hits, cos_tol=1e-6):
 # ---------------------------------------------------------------------- #
 # Log helpers
 # ---------------------------------------------------------------------- #
-def _load_done_slugs(path: str):
-    """Return set of slugs already present in the JSONL log."""
+def _load_done_slugs(path: str, rng: int = None):
+    """Return set of slugs already present in the JSONL log.
+
+    If rng is provided, only count records with that rng (so re-running at
+    a wider rng correctly re-sweeps slugs done at a narrower rng).
+    """
     out = set()
     if not os.path.exists(path):
         return out
@@ -103,6 +145,8 @@ def _load_done_slugs(path: str):
         for line in f:
             try:
                 rec = json.loads(line)
+                if rng is not None and rec.get("rng") != rng:
+                    continue
                 if rec.get("slug"):
                     out.add(rec["slug"])
             except Exception:
@@ -266,6 +310,11 @@ def main():
     ap.add_argument("--max-V", type=int, default=None,
                     help="Skip polytopes with more than N vertices.")
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--workers", type=int, default=1,
+                    help="Parallel workers (default: 1 = serial). For "
+                    "rng=4 with 16+ GB RAM, 4-8 workers gives ~4-8x "
+                    "speedup. Dirs array is shared via SharedMemory so "
+                    "memory cost is fixed regardless of worker count.")
     args = ap.parse_args()
 
     family = None if args.family == "all" else args.family
@@ -288,7 +337,7 @@ def main():
 
     # Skip already-done
     if not args.no_skip:
-        done = _load_done_slugs(LOG_PATH)
+        done = _load_done_slugs(LOG_PATH, rng=args.rng)
         before = len(entries)
         entries = [e for e in entries if e["slug"] not in done]
         skipped = before - len(entries)
@@ -327,17 +376,58 @@ def main():
     print(f"  {len(dirs)} kernel directions ({time.time()-t0:.2f}s)", flush=True)
 
     sweep_t0 = time.time()
-    for i, entry in enumerate(entries, 1):
-        if not args.quiet:
-            elapsed = time.time() - sweep_t0
-            pct = 100.0 * (i - 1) / len(entries)
-            eta = elapsed * (len(entries) - i + 1) / max(i - 1, 1)
-            ts = datetime.datetime.now().strftime("%H:%M:%S")
-            print(f"[{ts}] [{i}/{len(entries)} {pct:5.1f}% elapsed={elapsed:.0f}s "
-                  f"ETA={eta:.0f}s] {entry['slug']}", flush=True)
-        rec, _ = sweep_polytope(entry, dirs, args.rng,
-                                emit=not args.no_emit, verbose=not args.quiet)
-        _append_log(LOG_PATH, rec)
+    if args.workers <= 1:
+        # Serial path (preserves verbose output behaviour).
+        for i, entry in enumerate(entries, 1):
+            if not args.quiet:
+                elapsed = time.time() - sweep_t0
+                pct = 100.0 * (i - 1) / len(entries)
+                eta = elapsed * (len(entries) - i + 1) / max(i - 1, 1)
+                ts = datetime.datetime.now().strftime("%H:%M:%S")
+                print(f"[{ts}] [{i}/{len(entries)} {pct:5.1f}% elapsed={elapsed:.0f}s "
+                      f"ETA={eta:.0f}s] {entry['slug']}", flush=True)
+            rec, _ = sweep_polytope(entry, dirs, args.rng,
+                                    emit=not args.no_emit, verbose=not args.quiet)
+            _append_log(LOG_PATH, rec)
+    else:
+        # Parallel path: place dirs into SharedMemory once, fan out work via
+        # multiprocessing.Pool. Workers do not duplicate the dirs array.
+        dirs_arr = np.ascontiguousarray(np.array(dirs, dtype=np.float64))
+        shm = SharedMemory(create=True, size=dirs_arr.nbytes)
+        try:
+            shm_view = np.ndarray(dirs_arr.shape, dtype=np.float64, buffer=shm.buf)
+            shm_view[...] = dirs_arr
+            del dirs_arr  # free local copy; dirs list (Python objects) freed below
+            del dirs
+            shape = shm_view.shape
+            print(f"  shared-memory dirs: {shape}  size={shm.size/1e6:.1f} MB",
+                  flush=True)
+            args_iter = [(entry["slug"], args.rng, not args.no_emit) for entry in entries]
+            done_count = 0
+            with mp.Pool(processes=args.workers,
+                         initializer=_pool_init,
+                         initargs=(shm.name, shape)) as pool:
+                for rec in pool.imap_unordered(_pool_run, args_iter, chunksize=1):
+                    done_count += 1
+                    _append_log(LOG_PATH, rec)
+                    if not args.quiet:
+                        elapsed = time.time() - sweep_t0
+                        pct = 100.0 * done_count / len(entries)
+                        eta = elapsed * (len(entries) - done_count) / max(done_count, 1)
+                        ts = datetime.datetime.now().strftime("%H:%M:%S")
+                        slug = rec.get("slug", "?")
+                        status = rec.get("status", "?")
+                        n_emit = sum(1 for e in rec.get("emitted", [])
+                                     if isinstance(e, dict) and e.get("status") == "emitted")
+                        n_fail = sum(1 for e in rec.get("emitted", [])
+                                     if isinstance(e, dict) and e.get("status") == "snap_failed")
+                        print(f"[{ts}] [{done_count}/{len(entries)} {pct:5.1f}% "
+                              f"elapsed={elapsed:.0f}s ETA={eta:.0f}s] "
+                              f"{slug} {status} emit={n_emit} snap_fail={n_fail}",
+                              flush=True)
+        finally:
+            shm.close()
+            shm.unlink()
 
     if not args.quiet:
         print(f"=== done ({time.time()-sweep_t0:.1f}s) ===", flush=True)
