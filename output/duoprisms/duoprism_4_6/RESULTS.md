@@ -4,19 +4,19 @@
 - 4D vertices: **24**, edges: **48**
 - Folder: `output/duoprisms/duoprism_4_6/`
 
-**3 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**3 distinct zomeable shapes** found (rng = 5 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `oblique_00.vZome` | oblique | 24 | B:24  Y:24 |
-| 2 | `oblique_01.vZome` | oblique | 24 | B:24  Y:24 |
-| 3 | `oblique_02.vZome` | oblique | 24 | B:24  Y:24 |
+| 1 | `oblique_100.vZome` | oblique | 24 | B:24  Y:24 |
+| 2 | `oblique_133.vZome` | oblique | 24 | B:24  Y:24 |
+| 3 | `oblique_356.vZome` | oblique | 24 | B:24  Y:24 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 5`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -28,26 +28,26 @@
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_00.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_100.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    oblique_00.vZome
+    oblique_100.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_01.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_133.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    oblique_01.vZome
+    oblique_133.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_02.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_356.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    oblique_02.vZome
+    oblique_356.vZome
  </figcaption>
 </figure>
 

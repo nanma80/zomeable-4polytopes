@@ -1,0 +1,12 @@
+=== prismatic sweep rng=4  (204 polytopes) ===
+  generating kernels at rng=4 (permute_dedup=False)...
+  21523360 kernel directions (63.96s)
+  shared-memory dirs: (21523360, 4)  size=688.7 MB
+[00:12:53] [1/204   0.5% elapsed=946s ETA=192079s] tetrahedron_prism ok emit=1 snap_fail=8
+[00:13:08] [2/204   1.0% elapsed=961s ETA=97022s] octahedron_prism ok emit=2 snap_fail=7
+[00:13:12] [3/204   1.5% elapsed=964s ETA=64604s] duoprism_4_5 ok emit=0 snap_fail=741
+[00:13:45] [4/204   2.0% elapsed=998s ETA=49900s] 4_antiprismatic_prism zero_hits emit=0 snap_fail=0
+[00:15:23] [5/204   2.5% elapsed=1096s ETA=43607s] duoprism_3_4 ok emit=0 snap_fail=743
+[00:15:31] [6/204   2.9% elapsed=1103s ETA=36413s] duoprism_3_6 ok emit=1 snap_fail=986
+[00:15:31] [7/204   3.4% elapsed=1104s ETA=31064s] duoprism_3_3 ok emit=0 snap_fail=494
+[00:15:59] [8/204   3.9% elapsed=1131s ETA=27717s] duoprism_3_5 ok emit=0 snap_fail=985

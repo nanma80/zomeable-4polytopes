@@ -4,21 +4,21 @@
 - 4D vertices: **240**, edges: **480**
 - Folder: `output/polyhedral_prisms/truncated_icosidodecahedron_prism/`
 
-**5 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**5 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `oblique_00.vZome` | oblique | 240 | B:120  R:240  Y:120 |
-| 2 | `oblique_01.vZome` | oblique | 240 | B:120  R:240  Y:120 |
-| 3 | `oblique_02.vZome` | oblique | 240 | B:72  R:144  Y:264 |
-| 4 | `cell_first_cube.vZome` | cell_first / cube | 120 | B:84  R:96  Y:48 |
+| 2 | `cell_first_cube.vZome` | cell_first / cube | 120 | B:84  R:96  Y:48 |
+| 3 | `oblique_01.vZome` | oblique | 240 | B:120  R:240  Y:120 |
+| 4 | `oblique_02.vZome` | oblique | 240 | B:72  R:144  Y:264 |
 | 5 | `cell_first_truncated_icosidodecahedron.vZome` | cell_first / truncated_icosidodecahedron | 120 | B:180 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -38,6 +38,14 @@
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="oblique_01.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -50,14 +58,6 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_02.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    cell_first_cube.vZome
  </figcaption>
 </figure>
 

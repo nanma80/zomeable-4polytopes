@@ -4,7 +4,7 @@
 - 4D vertices: **12**, edges: **30**
 - Folder: `output/polyhedral_prisms/octahedron_prism/`
 
-**2 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**2 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
@@ -15,7 +15,7 @@
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 

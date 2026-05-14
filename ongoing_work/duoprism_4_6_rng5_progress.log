@@ -1,0 +1,7 @@
+=== prismatic sweep rng=5  (1 polytopes) ===
+  generating kernels at rng=5 (permute_dedup=False)...
+  107179440 kernel directions (425.43s)
+[11:26:17] [1/1   0.0% elapsed=0s ETA=0s] duoprism_4_6
+  [duoprism_4_6] V=24 E=48
+  [duoprism_4_6] 1037 unique shapes -> 3 emitted, 1034 snap-fail  (5069.0s)
+=== done (5069.0s) ===

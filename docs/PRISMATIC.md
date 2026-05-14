@@ -19,9 +19,9 @@ Polytopes covered: **204 (in scope)**
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
 | **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 43 |
-| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 11 |
+| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 14 |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
-| **Total** | | **204** | **19** | **63** |
+| **Total** | | **204** | **19** | **66** |
 
 ## Definitions
 
@@ -96,7 +96,7 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 |---:|---:|---:|
 | 3 | 6 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
 | 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 3 |
-| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 2 |
+| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 5 |
 | 5 | 10 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
 | 6 | 6 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
 | 10 | 10 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
