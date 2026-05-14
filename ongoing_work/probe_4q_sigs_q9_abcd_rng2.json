@@ -1,14 +1,14 @@
 {
-  "q": 5,
-  "plane": "ab00",
+  "q": 9,
+  "plane": "abcd",
   "rng": 2,
-  "V": 20,
-  "E": 40,
-  "n_dirs": 312,
+  "V": 36,
+  "E": 72,
+  "n_dirs": 195312,
   "n_aligned": 312,
   "n_snapped": 0,
   "n_errors": 0,
-  "elapsed_s": 8.35,
+  "elapsed_s": 46.33,
   "n_sigs": 0,
   "sigs": []
 }
