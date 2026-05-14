@@ -18,6 +18,21 @@ Signature = robust 5-decimal SHA-256 (same as `tools/dedup_corpus_by_shape.py`).
 | 11 | 0 | 0 | 0 | 0 | 0 |
 | 12 | 0 | 0 | 0 | 0 | 0 |
 
+### Saturation evidence for q=6 and q=10 (rng=4..8)
+
+| rng | q=6 sigs | q=6 snap | q=10 sigs | q=10 snap |
+|----:|---------:|---------:|----------:|----------:|
+|   4 |        3 |      104 |         5 |       160 |
+|   5 |        3 |      160 |         5 |       236 |
+|   6 |        3 |      224 |         5 |       328 |
+|   7 |        3 |      304 |         5 |       444 |
+|   8 |        3 |      384 |         5 |       576 |
+
+Both q=6 and q=10 saturate at small shape counts and remain there as rng
+grows.  At rng=8 the snap-count is 3.6–3.7× the rng=4 count, yet the
+distinct-shape count is unchanged.  The SHA-256 hash sets are bit-identical
+across all 5 rngs for both q values.  Neither is an inf-family.
+
 ## (a,b,c,d) plane — full 4D directions
 
 | q | rng=2 sigs | rng=3 sigs | rng=2 snap | rng=3 snap | rng=3 align |

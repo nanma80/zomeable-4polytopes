@@ -4,8 +4,8 @@
 
 duoprism_4_10 is **NOT** an inf-family analog of the tesseract.  The (a,b,0,0)
 kernel plane saturates at exactly **5 distinct shapes**, verified by
-ground-truth snap+signature probe at rng=4, 5, and 6.  All three rngs return
-the *same* 5 SHA-256 signatures.
+ground-truth snap+signature probe at rng=4, 5, 6, 7, and 8.  All five rngs
+return the *same* 5 SHA-256 signatures.
 
 ## Background
 
@@ -46,9 +46,11 @@ hash.  The signature does not have this defect.
 |   4 |   3280 |    3280 |     160 |             5 |          5 |   113 s |
 |   5 |   7320 |    7320 |     236 |             5 |          0 |   244 s |
 |   6 |  14280 |   14280 |     328 |             5 |          0 |   480 s |
+|   7 |  25312 |   25312 |     444 |             5 |          0 |   854 s |
+|   8 |  41760 |   41760 |     576 |             5 |          0 |  1388 s |
 
 The five SHA-256 hashes (top 16 hex chars of the d²-prefix) are identical at
-all three rngs:
+all five rngs:
 
 ```
 2f14904a74911329
@@ -58,19 +60,19 @@ all three rngs:
 9e455cd5c5a4fafd
 ```
 
-snap-count nearly doubles rng=5→6 (236 → 328) because more directions hit a
-valid kernel quantum, but every new kernel hash-collides with an existing
-shape.  This is the bounded-family signature: more directions, same set of
-shapes.
+snap-count keeps growing with rng (160 → 236 → 328 → 444 → 576) because more
+directions hit a valid kernel quantum, but every new kernel hash-collides
+with an existing shape.  This is the bounded-family signature: more directions,
+same set of shapes.  At rng=8 the snap-count is 3.6× the rng=4 count yet the
+shape count is unchanged.
 
 For comparison, the tesseract inf-family at rng=4 already produces dozens of
 distinct shapes and keeps growing without saturation.
 
 ## Output JSON
 
-- `ongoing_work/probe_4_10_sigs_rng4.json`
-- `ongoing_work/probe_4_10_sigs_rng5.json`
-- `ongoing_work/probe_4_10_sigs_rng6.json`
+- `ongoing_work/probe_4_10_sigs_rng{4,5,6}.json` (legacy q=10-only probe)
+- `ongoing_work/probe_4q_sigs_q10_ab00_rng{4,7,8}.json` (generalised probe)
 
 Each holds the full sig list and probe metadata.
 
@@ -78,8 +80,8 @@ Each holds the full sig list and probe metadata.
 
 **duoprism_4_10 is BOUNDED at 5 shapes on the (a,b,0,0) plane.**  Together
 with the production rng=4 sweep finding 5 shapes from *all* kernel
-directions, and the ground-truth probe finding 0 new shapes at rng=5 and 6,
-the conclusion is:
+directions, and the ground-truth probe finding 0 new shapes at rng=5, 6, 7,
+and 8, the conclusion is:
 
 - duoprism_4_10 has 5 distinct shapes total.
 - It is **not** a second inf-family.  The tesseract remains the only known
@@ -96,7 +98,7 @@ the conclusion is:
 |  7 |                0 | heptagon non-zomeable |
 |  8 |                0 | octagon non-zomeable |
 |  9 |                0 | nonagon non-zomeable |
-| 10 |                5 | bounded at rng=6 (this probe) |
+| 10 |                5 | bounded at rng=8 (this probe) |
 | 11 |                0 | hendecagon non-zomeable |
 | 12 |                0 | dodecagon non-zomeable in this geometry |
 | 13–20 |             0 | all non-zomeable |

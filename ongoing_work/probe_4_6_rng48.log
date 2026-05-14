@@ -1,0 +1,208 @@
+=== duoprism_4_6 ab00 snap+sig probe ===
+V=24, E=48
+
+rng |   dirs  | aligned | snapped | distinct sigs | new | elapsed_s
+----+---------+---------+---------+---------------+-----+----------
+      q=6 ab00 rng=4 0/3280 t=0s sigs=0 snap=0 err=0
+      q=6 ab00 rng=4 500/3280 t=17s sigs=2 snap=13 err=0
+      q=6 ab00 rng=4 1000/3280 t=33s sigs=2 snap=20 err=0
+      q=6 ab00 rng=4 1500/3280 t=50s sigs=3 snap=37 err=0
+      q=6 ab00 rng=4 2000/3280 t=66s sigs=3 snap=53 err=0
+      q=6 ab00 rng=4 2500/3280 t=82s sigs=3 snap=74 err=0
+      q=6 ab00 rng=4 3000/3280 t=100s sigs=3 snap=95 err=0
+  4 |    3280 |    3280 |     104 |             3 |   3 |    109.7  errors=0
+      wrote C:\Users\nanma\Documents\vZome\zomeable-4polytopes\ongoing_work\probe_4q_sigs_q6_ab00_rng4.json
+      q=6 ab00 rng=5 0/7320 t=0s sigs=0 snap=0 err=0
+      q=6 ab00 rng=5 500/7320 t=16s sigs=3 snap=11 err=0
+      q=6 ab00 rng=5 1000/7320 t=33s sigs=3 snap=23 err=0
+      q=6 ab00 rng=5 1500/7320 t=49s sigs=3 snap=37 err=0
+      q=6 ab00 rng=5 2000/7320 t=65s sigs=3 snap=49 err=0
+      q=6 ab00 rng=5 2500/7320 t=81s sigs=3 snap=61 err=0
+      q=6 ab00 rng=5 3000/7320 t=97s sigs=3 snap=74 err=0
+      q=6 ab00 rng=5 3500/7320 t=114s sigs=3 snap=87 err=0
+      q=6 ab00 rng=5 4000/7320 t=130s sigs=3 snap=95 err=0
+      q=6 ab00 rng=5 4500/7320 t=146s sigs=3 snap=105 err=0
+      q=6 ab00 rng=5 5000/7320 t=162s sigs=3 snap=116 err=0
+      q=6 ab00 rng=5 5500/7320 t=179s sigs=3 snap=131 err=0
+      q=6 ab00 rng=5 6000/7320 t=195s sigs=3 snap=133 err=0
+      q=6 ab00 rng=5 6500/7320 t=212s sigs=3 snap=142 err=0
+      q=6 ab00 rng=5 7000/7320 t=228s sigs=3 snap=150 err=0
+  5 |    7320 |    7320 |     160 |             3 |   0 |    238.3  errors=0
+      wrote C:\Users\nanma\Documents\vZome\zomeable-4polytopes\ongoing_work\probe_4q_sigs_q6_ab00_rng5.json
+      q=6 ab00 rng=6 0/14280 t=0s sigs=0 snap=0 err=0
+      q=6 ab00 rng=6 500/14280 t=16s sigs=3 snap=9 err=0
+      q=6 ab00 rng=6 1000/14280 t=32s sigs=3 snap=18 err=0
+      q=6 ab00 rng=6 1500/14280 t=49s sigs=3 snap=23 err=0
+      q=6 ab00 rng=6 2000/14280 t=65s sigs=3 snap=31 err=0
+      q=6 ab00 rng=6 2500/14280 t=81s sigs=3 snap=38 err=0
+      q=6 ab00 rng=6 3000/14280 t=97s sigs=3 snap=48 err=0
+      q=6 ab00 rng=6 3500/14280 t=113s sigs=3 snap=55 err=0
+      q=6 ab00 rng=6 4000/14280 t=130s sigs=3 snap=66 err=0
+      q=6 ab00 rng=6 4500/14280 t=146s sigs=3 snap=72 err=0
+      q=6 ab00 rng=6 5000/14280 t=164s sigs=3 snap=82 err=0
+      q=6 ab00 rng=6 5500/14280 t=179s sigs=3 snap=92 err=0
+      q=6 ab00 rng=6 6000/14280 t=195s sigs=3 snap=104 err=0
+      q=6 ab00 rng=6 6500/14280 t=211s sigs=3 snap=114 err=0
+      q=6 ab00 rng=6 7000/14280 t=228s sigs=3 snap=123 err=0
+      q=6 ab00 rng=6 7500/14280 t=244s sigs=3 snap=128 err=0
+      q=6 ab00 rng=6 8000/14280 t=260s sigs=3 snap=134 err=0
+      q=6 ab00 rng=6 8500/14280 t=276s sigs=3 snap=139 err=0
+      q=6 ab00 rng=6 9000/14280 t=293s sigs=3 snap=146 err=0
+      q=6 ab00 rng=6 9500/14280 t=309s sigs=3 snap=154 err=0
+      q=6 ab00 rng=6 10000/14280 t=325s sigs=3 snap=163 err=0
+      q=6 ab00 rng=6 10500/14280 t=342s sigs=3 snap=172 err=0
+      q=6 ab00 rng=6 11000/14280 t=359s sigs=3 snap=179 err=0
+      q=6 ab00 rng=6 11500/14280 t=375s sigs=3 snap=183 err=0
+      q=6 ab00 rng=6 12000/14280 t=391s sigs=3 snap=188 err=0
+      q=6 ab00 rng=6 12500/14280 t=407s sigs=3 snap=194 err=0
+      q=6 ab00 rng=6 13000/14280 t=424s sigs=3 snap=201 err=0
+      q=6 ab00 rng=6 13500/14280 t=440s sigs=3 snap=209 err=0
+      q=6 ab00 rng=6 14000/14280 t=456s sigs=3 snap=220 err=0
+  6 |   14280 |   14280 |     224 |             3 |   0 |    465.1  errors=0
+      wrote C:\Users\nanma\Documents\vZome\zomeable-4polytopes\ongoing_work\probe_4q_sigs_q6_ab00_rng6.json
+      q=6 ab00 rng=7 0/25312 t=0s sigs=0 snap=0 err=0
+      q=6 ab00 rng=7 500/25312 t=16s sigs=2 snap=4 err=0
+      q=6 ab00 rng=7 1000/25312 t=33s sigs=3 snap=10 err=0
+      q=6 ab00 rng=7 1500/25312 t=49s sigs=3 snap=12 err=0
+      q=6 ab00 rng=7 2000/25312 t=65s sigs=3 snap=18 err=0
+      q=6 ab00 rng=7 2500/25312 t=81s sigs=3 snap=22 err=0
+      q=6 ab00 rng=7 3000/25312 t=97s sigs=3 snap=31 err=0
+      q=6 ab00 rng=7 3500/25312 t=113s sigs=3 snap=35 err=0
+      q=6 ab00 rng=7 4000/25312 t=129s sigs=3 snap=41 err=0
+      q=6 ab00 rng=7 4500/25312 t=146s sigs=3 snap=49 err=0
+      q=6 ab00 rng=7 5000/25312 t=162s sigs=3 snap=56 err=0
+      q=6 ab00 rng=7 5500/25312 t=179s sigs=3 snap=62 err=0
+      q=6 ab00 rng=7 6000/25312 t=195s sigs=3 snap=65 err=0
+      q=6 ab00 rng=7 6500/25312 t=212s sigs=3 snap=71 err=0
+      q=6 ab00 rng=7 7000/25312 t=228s sigs=3 snap=77 err=0
+      q=6 ab00 rng=7 7500/25312 t=244s sigs=3 snap=81 err=0
+      q=6 ab00 rng=7 8000/25312 t=260s sigs=3 snap=87 err=0
+      q=6 ab00 rng=7 8500/25312 t=276s sigs=3 snap=94 err=0
+      q=6 ab00 rng=7 9000/25312 t=292s sigs=3 snap=103 err=0
+      q=6 ab00 rng=7 9500/25312 t=308s sigs=3 snap=113 err=0
+      q=6 ab00 rng=7 10000/25312 t=324s sigs=3 snap=121 err=0
+      q=6 ab00 rng=7 10500/25312 t=340s sigs=3 snap=126 err=0
+      q=6 ab00 rng=7 11000/25312 t=356s sigs=3 snap=130 err=0
+      q=6 ab00 rng=7 11500/25312 t=374s sigs=3 snap=137 err=0
+      q=6 ab00 rng=7 12000/25312 t=390s sigs=3 snap=143 err=0
+      q=6 ab00 rng=7 12500/25312 t=407s sigs=3 snap=147 err=0
+      q=6 ab00 rng=7 13000/25312 t=423s sigs=3 snap=155 err=0
+      q=6 ab00 rng=7 13500/25312 t=439s sigs=3 snap=162 err=0
+      q=6 ab00 rng=7 14000/25312 t=455s sigs=3 snap=167 err=0
+      q=6 ab00 rng=7 14500/25312 t=471s sigs=3 snap=173 err=0
+      q=6 ab00 rng=7 15000/25312 t=487s sigs=3 snap=182 err=0
+      q=6 ab00 rng=7 15500/25312 t=503s sigs=3 snap=191 err=0
+      q=6 ab00 rng=7 16000/25312 t=519s sigs=3 snap=195 err=0
+      q=6 ab00 rng=7 16500/25312 t=536s sigs=3 snap=199 err=0
+      q=6 ab00 rng=7 17000/25312 t=552s sigs=3 snap=207 err=0
+      q=6 ab00 rng=7 17500/25312 t=568s sigs=3 snap=212 err=0
+      q=6 ab00 rng=7 18000/25312 t=584s sigs=3 snap=220 err=0
+      q=6 ab00 rng=7 18500/25312 t=600s sigs=3 snap=225 err=0
+      q=6 ab00 rng=7 19000/25312 t=616s sigs=3 snap=236 err=0
+      q=6 ab00 rng=7 19500/25312 t=632s sigs=3 snap=241 err=0
+      q=6 ab00 rng=7 20000/25312 t=648s sigs=3 snap=247 err=0
+      q=6 ab00 rng=7 20500/25312 t=664s sigs=3 snap=254 err=0
+      q=6 ab00 rng=7 21000/25312 t=680s sigs=3 snap=263 err=0
+      q=6 ab00 rng=7 21500/25312 t=697s sigs=3 snap=269 err=0
+      q=6 ab00 rng=7 22000/25312 t=713s sigs=3 snap=275 err=0
+      q=6 ab00 rng=7 22500/25312 t=729s sigs=3 snap=281 err=0
+      q=6 ab00 rng=7 23000/25312 t=745s sigs=3 snap=285 err=0
+      q=6 ab00 rng=7 23500/25312 t=761s sigs=3 snap=289 err=0
+      q=6 ab00 rng=7 24000/25312 t=778s sigs=3 snap=291 err=0
+      q=6 ab00 rng=7 24500/25312 t=794s sigs=3 snap=295 err=0
+      q=6 ab00 rng=7 25000/25312 t=810s sigs=3 snap=301 err=0
+  7 |   25312 |   25312 |     304 |             3 |   0 |    819.9  errors=0
+      wrote C:\Users\nanma\Documents\vZome\zomeable-4polytopes\ongoing_work\probe_4q_sigs_q6_ab00_rng7.json
+      q=6 ab00 rng=8 0/41760 t=0s sigs=0 snap=0 err=0
+      q=6 ab00 rng=8 500/41760 t=16s sigs=2 snap=3 err=0
+      q=6 ab00 rng=8 1000/41760 t=32s sigs=2 snap=5 err=0
+      q=6 ab00 rng=8 1500/41760 t=49s sigs=3 snap=12 err=0
+      q=6 ab00 rng=8 2000/41760 t=65s sigs=3 snap=15 err=0
+      q=6 ab00 rng=8 2500/41760 t=81s sigs=3 snap=17 err=0
+      q=6 ab00 rng=8 3000/41760 t=98s sigs=3 snap=25 err=0
+      q=6 ab00 rng=8 3500/41760 t=114s sigs=3 snap=25 err=0
+      q=6 ab00 rng=8 4000/41760 t=130s sigs=3 snap=28 err=0
+      q=6 ab00 rng=8 4500/41760 t=147s sigs=3 snap=34 err=0
+      q=6 ab00 rng=8 5000/41760 t=163s sigs=3 snap=39 err=0
+      q=6 ab00 rng=8 5500/41760 t=179s sigs=3 snap=44 err=0
+      q=6 ab00 rng=8 6000/41760 t=196s sigs=3 snap=48 err=0
+      q=6 ab00 rng=8 6500/41760 t=212s sigs=3 snap=53 err=0
+      q=6 ab00 rng=8 7000/41760 t=228s sigs=3 snap=58 err=0
+      q=6 ab00 rng=8 7500/41760 t=245s sigs=3 snap=62 err=0
+      q=6 ab00 rng=8 8000/41760 t=263s sigs=3 snap=68 err=0
+      q=6 ab00 rng=8 8500/41760 t=280s sigs=3 snap=70 err=0
+      q=6 ab00 rng=8 9000/41760 t=296s sigs=3 snap=75 err=0
+      q=6 ab00 rng=8 9500/41760 t=313s sigs=3 snap=78 err=0
+      q=6 ab00 rng=8 10000/41760 t=329s sigs=3 snap=81 err=0
+      q=6 ab00 rng=8 10500/41760 t=345s sigs=3 snap=85 err=0
+      q=6 ab00 rng=8 11000/41760 t=362s sigs=3 snap=91 err=0
+      q=6 ab00 rng=8 11500/41760 t=378s sigs=3 snap=95 err=0
+      q=6 ab00 rng=8 12000/41760 t=395s sigs=3 snap=98 err=0
+      q=6 ab00 rng=8 12500/41760 t=411s sigs=3 snap=104 err=0
+      q=6 ab00 rng=8 13000/41760 t=429s sigs=3 snap=108 err=0
+      q=6 ab00 rng=8 13500/41760 t=445s sigs=3 snap=112 err=0
+      q=6 ab00 rng=8 14000/41760 t=461s sigs=3 snap=117 err=0
+      q=6 ab00 rng=8 14500/41760 t=478s sigs=3 snap=123 err=0
+      q=6 ab00 rng=8 15000/41760 t=494s sigs=3 snap=131 err=0
+      q=6 ab00 rng=8 15500/41760 t=511s sigs=3 snap=138 err=0
+      q=6 ab00 rng=8 16000/41760 t=527s sigs=3 snap=140 err=0
+      q=6 ab00 rng=8 16500/41760 t=544s sigs=3 snap=146 err=0
+      q=6 ab00 rng=8 17000/41760 t=560s sigs=3 snap=153 err=0
+      q=6 ab00 rng=8 17500/41760 t=577s sigs=3 snap=155 err=0
+      q=6 ab00 rng=8 18000/41760 t=593s sigs=3 snap=160 err=0
+      q=6 ab00 rng=8 18500/41760 t=610s sigs=3 snap=165 err=0
+      q=6 ab00 rng=8 19000/41760 t=626s sigs=3 snap=170 err=0
+      q=6 ab00 rng=8 19500/41760 t=642s sigs=3 snap=174 err=0
+      q=6 ab00 rng=8 20000/41760 t=659s sigs=3 snap=176 err=0
+      q=6 ab00 rng=8 20500/41760 t=677s sigs=3 snap=179 err=0
+      q=6 ab00 rng=8 21000/41760 t=694s sigs=3 snap=187 err=0
+      q=6 ab00 rng=8 21500/41760 t=710s sigs=3 snap=192 err=0
+      q=6 ab00 rng=8 22000/41760 t=727s sigs=3 snap=193 err=0
+      q=6 ab00 rng=8 22500/41760 t=743s sigs=3 snap=198 err=0
+      q=6 ab00 rng=8 23000/41760 t=760s sigs=3 snap=203 err=0
+      q=6 ab00 rng=8 23500/41760 t=776s sigs=3 snap=206 err=0
+      q=6 ab00 rng=8 24000/41760 t=793s sigs=3 snap=212 err=0
+      q=6 ab00 rng=8 24500/41760 t=809s sigs=3 snap=220 err=0
+      q=6 ab00 rng=8 25000/41760 t=826s sigs=3 snap=229 err=0
+      q=6 ab00 rng=8 25500/41760 t=843s sigs=3 snap=238 err=0
+      q=6 ab00 rng=8 26000/41760 t=859s sigs=3 snap=242 err=0
+      q=6 ab00 rng=8 26500/41760 t=875s sigs=3 snap=246 err=0
+      q=6 ab00 rng=8 27000/41760 t=892s sigs=3 snap=250 err=0
+      q=6 ab00 rng=8 27500/41760 t=908s sigs=3 snap=254 err=0
+      q=6 ab00 rng=8 28000/41760 t=925s sigs=3 snap=260 err=0
+      q=6 ab00 rng=8 28500/41760 t=941s sigs=3 snap=265 err=0
+      q=6 ab00 rng=8 29000/41760 t=958s sigs=3 snap=268 err=0
+      q=6 ab00 rng=8 29500/41760 t=974s sigs=3 snap=276 err=0
+      q=6 ab00 rng=8 30000/41760 t=991s sigs=3 snap=280 err=0
+      q=6 ab00 rng=8 30500/41760 t=1007s sigs=3 snap=286 err=0
+      q=6 ab00 rng=8 31000/41760 t=1023s sigs=3 snap=290 err=0
+      q=6 ab00 rng=8 31500/41760 t=1040s sigs=3 snap=298 err=0
+      q=6 ab00 rng=8 32000/41760 t=1057s sigs=3 snap=301 err=0
+      q=6 ab00 rng=8 32500/41760 t=1073s sigs=3 snap=305 err=0
+      q=6 ab00 rng=8 33000/41760 t=1090s sigs=3 snap=310 err=0
+      q=6 ab00 rng=8 33500/41760 t=1106s sigs=3 snap=317 err=0
+      q=6 ab00 rng=8 34000/41760 t=1123s sigs=3 snap=322 err=0
+      q=6 ab00 rng=8 34500/41760 t=1139s sigs=3 snap=329 err=0
+      q=6 ab00 rng=8 35000/41760 t=1157s sigs=3 snap=332 err=0
+      q=6 ab00 rng=8 35500/41760 t=1174s sigs=3 snap=336 err=0
+      q=6 ab00 rng=8 36000/41760 t=1191s sigs=3 snap=341 err=0
+      q=6 ab00 rng=8 36500/41760 t=1207s sigs=3 snap=347 err=0
+      q=6 ab00 rng=8 37000/41760 t=1224s sigs=3 snap=353 err=0
+      q=6 ab00 rng=8 37500/41760 t=1241s sigs=3 snap=354 err=0
+      q=6 ab00 rng=8 38000/41760 t=1257s sigs=3 snap=358 err=0
+      q=6 ab00 rng=8 38500/41760 t=1274s sigs=3 snap=360 err=0
+      q=6 ab00 rng=8 39000/41760 t=1291s sigs=3 snap=365 err=0
+      q=6 ab00 rng=8 39500/41760 t=1307s sigs=3 snap=365 err=0
+      q=6 ab00 rng=8 40000/41760 t=1324s sigs=3 snap=368 err=0
+      q=6 ab00 rng=8 40500/41760 t=1340s sigs=3 snap=374 err=0
+      q=6 ab00 rng=8 41000/41760 t=1357s sigs=3 snap=379 err=0
+      q=6 ab00 rng=8 41500/41760 t=1373s sigs=3 snap=381 err=0
+  8 |   41760 |   41760 |     384 |             3 |   0 |   1382.2  errors=0
+      wrote C:\Users\nanma\Documents\vZome\zomeable-4polytopes\ongoing_work\probe_4q_sigs_q6_ab00_rng8.json
+
+Summary (q=6, plane=ab00):
+  rng=4  distinct_sigs=3
+  rng=5  distinct_sigs=3
+  rng=6  distinct_sigs=3
+  rng=7  distinct_sigs=3
+  rng=8  distinct_sigs=3

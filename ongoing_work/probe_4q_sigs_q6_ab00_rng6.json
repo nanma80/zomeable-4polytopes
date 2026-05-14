@@ -1,14 +1,14 @@
 {
   "q": 6,
   "plane": "ab00",
-  "rng": 4,
+  "rng": 6,
   "V": 24,
   "E": 48,
-  "n_dirs": 3280,
-  "n_aligned": 3280,
-  "n_snapped": 104,
+  "n_dirs": 14280,
+  "n_aligned": 14280,
+  "n_snapped": 224,
   "n_errors": 0,
-  "elapsed_s": 109.71,
+  "elapsed_s": 465.11,
   "n_sigs": 3,
   "sigs": [
     [
