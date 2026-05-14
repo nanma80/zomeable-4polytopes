@@ -4,18 +4,18 @@
 - 4D vertices: **100**, edges: **200**
 - Folder: `output/duoprisms/duoprism_10_10/`
 
-**2 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**2 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `oblique_04.vZome` | oblique | 96 | B:38  R:80  Y:80 |
-| 2 | `face_first_decagon_04.vZome` | face_first / decagon | 50 | B:50  R:40 |
+| 1 | `face_first_decagon_00.vZome` | face_first / decagon | 50 | B:50  R:40 |
+| 2 | `oblique_56.vZome` | oblique | 96 | B:38  R:80  Y:80 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -27,18 +27,18 @@
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_04.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="face_first_decagon_00.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    oblique_04.vZome
+    face_first_decagon_00.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="face_first_decagon_04.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_56.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    face_first_decagon_04.vZome
+    oblique_56.vZome
  </figcaption>
 </figure>
 

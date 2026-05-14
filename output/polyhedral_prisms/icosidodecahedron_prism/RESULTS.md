@@ -4,21 +4,21 @@
 - 4D vertices: **60**, edges: **150**
 - Folder: `output/polyhedral_prisms/icosidodecahedron_prism/`
 
-**5 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**5 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `edge_first.vZome` | edge_first | 34 | B:25  R:32  Y:16 |
-| 2 | `oblique_00.vZome` | oblique | 60 | B:40  R:70  Y:40 |
-| 3 | `oblique_02.vZome` | oblique | 60 | B:40  R:70  Y:40 |
-| 4 | `oblique_01.vZome` | oblique | 60 | B:24  R:48  Y:78 |
+| 1 | `oblique_00.vZome` | oblique | 60 | B:40  R:70  Y:40 |
+| 2 | `edge_first.vZome` | edge_first | 34 | B:25  R:32  Y:16 |
+| 3 | `oblique_01.vZome` | oblique | 60 | B:40  R:70  Y:40 |
+| 4 | `oblique_02.vZome` | oblique | 60 | B:24  R:48  Y:78 |
 | 5 | `cell_first_icosidodecahedron.vZome` | cell_first / icosidodecahedron | 30 | B:60 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -30,14 +30,6 @@
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="edge_first.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    edge_first.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="oblique_00.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -46,10 +38,10 @@
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_02.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="edge_first.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    oblique_02.vZome
+    edge_first.vZome
  </figcaption>
 </figure>
 
@@ -58,6 +50,14 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_01.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="oblique_02.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    oblique_02.vZome
  </figcaption>
 </figure>
 

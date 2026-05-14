@@ -1,0 +1,17 @@
+{
+  "rng3_total": 63,
+  "rng4_total": 66,
+  "rng3_hit_polytopes": 19,
+  "rng4_hit_polytopes": 19,
+  "gainers": [
+    {
+      "slug": "duoprism_4_10",
+      "rng3": 2,
+      "rng4": 5,
+      "delta": 3
+    }
+  ],
+  "new_hits": [],
+  "losers": [],
+  "note": "Computed by ongoing_work/probes/rng3_vs_rng4_diff.py. Identity is per-polytope shape count from prismatic_manifest.json (canonical post-dedup view). Losers should always be empty: each rng=N corpus is a superset of rng=(N-1)."
+}

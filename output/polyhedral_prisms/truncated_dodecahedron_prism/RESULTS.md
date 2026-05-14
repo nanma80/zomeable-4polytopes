@@ -4,21 +4,21 @@
 - 4D vertices: **120**, edges: **240**
 - Folder: `output/polyhedral_prisms/truncated_dodecahedron_prism/`
 
-**5 distinct zomeable shapes** found (rng = 3 agnostic kernel sweep).
+**5 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `oblique_00.vZome` | oblique | 120 | B:60  R:120  Y:60 |
-| 2 | `oblique_01.vZome` | oblique | 120 | B:60  R:120  Y:60 |
-| 3 | `oblique_02.vZome` | oblique | 120 | B:36  R:72  Y:132 |
-| 4 | `face_first_square.vZome` | face_first / square | 64 | B:46  R:48  Y:24 |
+| 2 | `face_first_square.vZome` | face_first / square | 64 | B:46  R:48  Y:24 |
+| 3 | `oblique_01.vZome` | oblique | 120 | B:60  R:120  Y:60 |
+| 4 | `oblique_02.vZome` | oblique | 120 | B:36  R:72  Y:132 |
 | 5 | `cell_first_truncated_dodecahedron.vZome` | cell_first / truncated_dodecahedron | 60 | B:90 |
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family A --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
@@ -38,6 +38,14 @@
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="face_first_square.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    face_first_square.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="oblique_01.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -50,14 +58,6 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_02.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="face_first_square.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    face_first_square.vZome
  </figcaption>
 </figure>
 

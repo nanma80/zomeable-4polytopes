@@ -270,9 +270,11 @@ def build_doc(recs):
 
 def build_manifest(recs):
     """A compact JSON manifest of all emitted shapes."""
+    rng_values = [r.get("rng") for r in recs.values() if isinstance(r.get("rng"), int)]
+    max_rng = max(rng_values) if rng_values else 3
     manifest = {
         "version": 1,
-        "rng": 3,
+        "rng": max_rng,
         "permute_dedup": False,
         "families": {},
     }

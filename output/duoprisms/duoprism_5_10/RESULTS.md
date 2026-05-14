@@ -4,7 +4,7 @@
 - 4D vertices: **50**, edges: **100**
 - Folder: `output/duoprisms/duoprism_5_10/`
 
-**1 distinct zomeable shape** found (rng = 3 agnostic kernel sweep).
+**1 distinct zomeable shape** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
@@ -14,7 +14,7 @@
 
 ## Provenance
 
-- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 3`
+- Sweep driver: `tools/run_prismatic_sweep.py --family B --rng 4`
 - Construction: `lib/polytopes_prismatic.py` + `lib/uniform_polyhedra.py`
 - See [`docs/PRISMATIC.md`](../../../docs/PRISMATIC.md) for the full prismatic-family taxonomy and sweep summary.
 
