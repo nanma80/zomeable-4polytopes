@@ -1,5 +1,7 @@
 # zomeable-4polytopes
 
+> 🌐 **Interactive site:** [**nanma80.github.io/zomeable-4polytopes**](https://nanma80.github.io/zomeable-4polytopes/) — browse all 53 zomeable polytopes with embedded vZome 3D viewers.
+
 Enumeration of orthographic projections of convex uniform 4-polytopes
 whose every projected edge lies on a default-color
 [zometool](https://www.zometool.com/) axis (B / Y / R / G in the
