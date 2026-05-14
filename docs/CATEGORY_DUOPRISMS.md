@@ -8,14 +8,14 @@ Cartesian products {p}×{q} of two regular polygons, 3 ≤ p ≤ q ≤ 20
 for inf-family behavior — saturated bounded at 5 shapes through rng=8.
 Similarly `duoprism_4_6` is bounded at 3 shapes through rng=8.
 
-| Polytope | Zomeable shapes | Viewer |
-|----------|----------------:|--------|
-| {3}×{6} duoprism | 1 | [3D viewer →](../output/duoprisms/duoprism_3_6/VIEWER.md) |
-| {4}×{6} duoprism | 3 | [3D viewer →](../output/duoprisms/duoprism_4_6/VIEWER.md) |
-| {4}×{10} duoprism | 5 | [3D viewer →](../output/duoprisms/duoprism_4_10/VIEWER.md) |
-| {5}×{10} duoprism | 1 | [3D viewer →](../output/duoprisms/duoprism_5_10/VIEWER.md) |
-| {6}×{6} duoprism | 2 | [3D viewer →](../output/duoprisms/duoprism_6_6/VIEWER.md) |
-| {10}×{10} duoprism | 2 | [3D viewer →](../output/duoprisms/duoprism_10_10/VIEWER.md) |
+| Polytope | Zomeable projections | Viewer |
+|----------|---------------------:|--------|
+| {3}×{6} duoprism | 1 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_3_6/VIEWER.html) |
+| {4}×{6} duoprism | 3 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_6/VIEWER.html) |
+| {4}×{10} duoprism | 5 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_10/VIEWER.html) |
+| {5}×{10} duoprism | 1 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_5_10/VIEWER.html) |
+| {6}×{6} duoprism | 2 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_6_6/VIEWER.html) |
+| {10}×{10} duoprism | 2 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_10_10/VIEWER.html) |
 
 
 ## Zero-shape duoprisms (164)

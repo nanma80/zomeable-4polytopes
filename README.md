@@ -13,14 +13,14 @@ rotation and uniform scale to count distinct 3D shapes.
 
 ## Browse the corpus
 
-| Category | Polytopes in scope | With ≥1 zomeable shape | Distinct shapes |
-| -------- | -----------------: | ---------------------: | --------------: |
-| [Regular](docs/CATEGORY_REGULAR.md) | 6 | 6 | 15 sporadic + 1 infinite family ¹ |
-| [Uniform](docs/CATEGORY_UNIFORM.md) *(Wythoff descendants + non-Wythoffian)* | 41 | 28 | 73 |
-| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | 170 | 6 | 14 |
+| Category | Polytopes | Zomeable polytopes | Zomeable projections |
+| -------- | --------: | -----------------: | -------------------: |
+| [Regular](docs/CATEGORY_REGULAR.md) | 6 | 6 | 15 + 1 inf family ¹ |
+| [Uniform](docs/CATEGORY_UNIFORM.md) *(nonprismatic)* | 41 | 28 | 73 |
+| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | ∞ | 6 | 14 |
 | [Polyhedral prisms](docs/CATEGORY_POLYHEDRAL_PRISMS.md) | 17 | 12 | 43 |
-| [Antiprismatic prisms](docs/CATEGORY_ANTIPRISMATIC_PRISMS.md) | 17 | 1 | 9 |
-| **Total** | **251** | **53** | **154 sporadic + 1 inf family** |
+| [Antiprismatic prisms](docs/CATEGORY_ANTIPRISMATIC_PRISMS.md) | ∞ | 1 | 9 |
+| **Total** | **∞** | **53** | **154 + 1 inf family** |
 
 Click a category to see the per-polytope list with shape counts and
 links to the **3D viewer** for every polytope.  Each viewer page lives

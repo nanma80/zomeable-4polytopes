@@ -4,9 +4,9 @@ A_n × [0,1] for each n-gonal antiprism A_n.  17 in scope
 (n ∈ [4, 20]; n=3 is the octahedral prism, covered under
 polyhedral prisms).  Only n=5 yielded zomeable projections.
 
-| Polytope | Zomeable shapes | Viewer |
-|----------|----------------:|--------|
-| A_5 × [0,1] (n=5) | 9 | [3D viewer →](../output/antiprismatic_prisms/5_antiprismatic_prism/VIEWER.md) |
+| Polytope | Zomeable projections | Viewer |
+|----------|---------------------:|--------|
+| A_5 × [0,1] (n=5) | 9 | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/antiprismatic_prisms/5_antiprismatic_prism/VIEWER.html) |
 
 
 ## Zero-shape antiprismatic prisms (16)

@@ -273,14 +273,15 @@ def emit_category_page(filename, title, intro_lines, rows,
     if intro_lines:
         lines.append("")
 
-    lines.append("| Polytope | Zomeable shapes | Viewer |")
-    lines.append("|----------|----------------:|--------|")
+    lines.append("| Polytope | Zomeable projections | Viewer |")
+    lines.append("|----------|---------------------:|--------|")
     for name, count, viewer_rel, note in rows:
         nm = name
         if note:
             nm = f"{nm} {note}"
         if viewer_rel:
-            viewer_cell = f"[3D viewer →](../{viewer_rel})"
+            viewer_url = f"{PAGES_BASE}/{viewer_rel[:-3]}.html"
+            viewer_cell = f"[3D viewer →]({viewer_url})"
         else:
             viewer_cell = "—"
         lines.append(f"| {nm} | {count} | {viewer_cell} |")
@@ -447,15 +448,17 @@ def page_uniform():
         ("**F₄ descendants** *(24-cell family)*", "F4"),
         ("**H₄ descendants** *(120-cell / 600-cell family)*", "H4"),
     ]:
+        group_hits = [
+            (slug, display, n)
+            for slug, (display, group, n) in WYTHOFF_CATALOGUE.items()
+            if group == grp_id and n > 0
+        ]
+        if not group_hits:
+            continue
         rows.append((grp_label, "", None, None))
-        for slug, (display, group, n) in WYTHOFF_CATALOGUE.items():
-            if group != grp_id:
-                continue
-            if n > 0:
-                rel = f"output/uniform/{slug}/VIEWER.md"
-                rows.append((display, str(n), rel, None))
-            else:
-                rows.append((display, "0", None, "*(no ℤ[φ]³ embedding)*"))
+        for slug, display, n in group_hits:
+            rel = f"output/uniform/{slug}/VIEWER.md"
+            rows.append((display, str(n), rel, None))
     return emit_category_page(
         "CATEGORY_UNIFORM.md",
         "Uniform 4-polytopes — zomeable orthographic projections",
