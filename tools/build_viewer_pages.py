@@ -53,13 +53,19 @@ def viewer_figure(fname: str) -> str:
 # -----------------------------------------------------------------------
 
 REGULAR_POLYTOPES = OrderedDict([
-    # slug, display_name, deep_dive_filename, sporadic_count_text
-    ("5cell",   ("5-cell {3,3,3}",     "RESULTS.md",                "4 distinct shapes")),
-    ("8cell",   ("8-cell {4,3,3} (tesseract)", "CLASSIFICATION.md", "3 sporadic + 1 infinite family")),
-    ("16cell",  ("16-cell {3,3,4}",    "RESULTS.md",                "6 distinct shapes")),
-    ("24cell",  ("24-cell {3,4,3}",    "ZOMEABLE_PROJECTIONS.md",   "3 distinct shapes")),
-    ("120cell", ("120-cell {5,3,3}",   "RESULTS.md",                "1 distinct shape")),
-    ("600cell", ("600-cell {3,3,5}",   "RESULTS.md",                "1 distinct shape")),
+    # slug, display_name, deep_dive_filename, brief_count, shape_names
+    ("5cell",   ("5-cell {3,3,3}",     "RESULTS.md",
+                "4",                "vertex-first + 3 oblique")),
+    ("8cell",   ("8-cell {4,3,3} (tesseract)", "CLASSIFICATION.md",
+                "3 + 1 inf family", "cell-first cube + vertex-first rhombic dodec + phi-oblique + inf family of cuboids")),
+    ("16cell",  ("16-cell {3,3,4}",    "RESULTS.md",
+                "6",                "vertex-first + cell-first + edge-first + 3 triality")),
+    ("24cell",  ("24-cell {3,4,3}",    "ZOMEABLE_PROJECTIONS.md",
+                "3",                "cell-first + vertex-first + triality")),
+    ("120cell", ("120-cell {5,3,3}",   "RESULTS.md",
+                "1",                "cell-first")),
+    ("600cell", ("600-cell {3,3,5}",   "RESULTS.md",
+                "1",                "vertex-first")),
 ])
 
 
@@ -152,6 +158,65 @@ NON_WYTHOFFIAN = OrderedDict([
 ])
 
 
+# slug -> short inheritance descriptor for the level-2 uniform table.
+# Format mirrors the old top-level README "Inherits from" column.
+INHERITS_FROM = {
+    "snub_24cell":              "600-cell (diminishing)",
+    "grand_antiprism":          "600-cell (diminishing)",
+    # A4
+    "rectified_5cell":          "5-cell — vertex-first + 3 oblique",
+    "truncated_5cell":          "5-cell — vertex-first + 3 oblique",
+    "bitruncated_5cell":        "5-cell — vertex-first + 3 oblique",
+    "cantellated_5cell":        "5-cell — vertex-first + 3 oblique",
+    "cantitruncated_5cell":     "5-cell — vertex-first + 3 oblique",
+    "runcinated_5cell":         "5-cell — vertex-first + 3 oblique",
+    "runcitruncated_5cell":     "5-cell — vertex-first + 3 oblique",
+    "omnitruncated_5cell":      "5-cell — vertex-first + 3 oblique",
+    # B4 (kernels trace to the 16-cell)
+    "rectified_8cell":          "16-cell — vertex/cell/edge-first + 3 triality",
+    "bitruncated_8cell":        "16-cell — vertex/cell/edge-first + 3 triality",
+    "truncated_16cell":         "16-cell — vertex/cell/edge-first + 3 triality",
+    # F4
+    "rectified_24cell":         "24-cell — cell-first + vertex-first + triality",
+    "truncated_24cell":         "24-cell — cell-first + vertex-first + triality",
+    # H4
+    "rectified_120cell":        "120-cell",
+    "truncated_120cell":        "120-cell",
+    "cantellated_120cell":      "120-cell",
+    "cantitruncated_120cell":   "120-cell",
+    "runcitruncated_120cell":   "120-cell",
+    "bitruncated_120cell":      "120-cell + 600-cell",
+    "runcinated_120cell":       "120-cell + 600-cell",
+    "omnitruncated_120cell":    "120-cell + 600-cell",
+    "rectified_600cell":        "600-cell",
+    "truncated_600cell":        "600-cell",
+    "cantellated_600cell":      "600-cell",
+    "cantitruncated_600cell":   "600-cell",
+    "runcitruncated_600cell":   "600-cell",
+}
+
+
+CANONICAL_LABEL_ORDER = ["cell_first", "vertex_first", "face_first", "edge_first"]
+
+
+def prismatic_shape_descr(shapes):
+    """Aggregate prismatic shape labels into 'cell-first + 3 oblique' format."""
+    counts = defaultdict(int)
+    for sh in shapes:
+        counts[sh.get("label") or "oblique"] += 1
+    parts = []
+    for key in CANONICAL_LABEL_ORDER:
+        n = counts.get(key, 0)
+        if n == 0:
+            continue
+        label = key.replace("_", "-")
+        parts.append(label if n == 1 else f"{n} {label}")
+    n_obl = counts.get("oblique", 0)
+    if n_obl > 0:
+        parts.append("oblique" if n_obl == 1 else f"{n_obl} oblique")
+    return " + ".join(parts)
+
+
 # -----------------------------------------------------------------------
 # Manifest loaders
 # -----------------------------------------------------------------------
@@ -185,6 +250,7 @@ def load_prismatic_files():
             out[slug] = {
                 "n_shapes": n,
                 "files": sorted(set(files)),
+                "shapes": row.get("shapes", []),
                 "family": fam,
                 "metadata": row.get("metadata", {}),
                 "nV": row.get("nV"),
@@ -262,9 +328,9 @@ def emit_viewer(output_dir, display_name, files, deep_dive_filename,
 # Category-page emitter
 # -----------------------------------------------------------------------
 
-def emit_category_page(filename, title, intro_lines, rows,
+def emit_category_page(filename, title, intro_lines, rows, descr_header,
                        zero_section=None, footer_lines=None):
-    """rows: list of (display_name, count, viewer_relpath_or_None, extra_note)"""
+    """rows: list of (display_name, count, descr, viewer_relpath_or_None, extra_note)"""
     lines = []
     lines.append(f"# {title}")
     lines.append("")
@@ -273,9 +339,9 @@ def emit_category_page(filename, title, intro_lines, rows,
     if intro_lines:
         lines.append("")
 
-    lines.append("| Polytope | Zomeable projections | Viewer |")
-    lines.append("|----------|---------------------:|--------|")
-    for name, count, viewer_rel, note in rows:
+    lines.append(f"| Polytope | Zomeable projections | {descr_header} | Viewer |")
+    lines.append("|----------|---------------------:|----------------|--------|")
+    for name, count, descr, viewer_rel, note in rows:
         nm = name
         if note:
             nm = f"{nm} {note}"
@@ -284,7 +350,7 @@ def emit_category_page(filename, title, intro_lines, rows,
             viewer_cell = f"[3D viewer →]({viewer_url})"
         else:
             viewer_cell = "—"
-        lines.append(f"| {nm} | {count} | {viewer_cell} |")
+        lines.append(f"| {nm} | {count} | {descr} | {viewer_cell} |")
     lines.append("")
 
     if zero_section:
@@ -311,7 +377,7 @@ def emit_category_page(filename, title, intro_lines, rows,
 
 def build_regulars(counts):
     written = []
-    for slug, (display, dd, _summary) in REGULAR_POLYTOPES.items():
+    for slug, (display, dd, _brief, _descr) in REGULAR_POLYTOPES.items():
         rel_dir = os.path.join("regular", slug)
         if slug == "8cell":
             files = glob_vzome(rel_dir)
@@ -414,9 +480,9 @@ def build_prismatics(counts, prismatic_data):
 
 def page_regular():
     rows = []
-    for slug, (display, dd, summary) in REGULAR_POLYTOPES.items():
+    for slug, (display, dd, brief, descr) in REGULAR_POLYTOPES.items():
         viewer_rel = f"output/regular/{slug}/VIEWER.md"
-        rows.append((display, summary, viewer_rel, None))
+        rows.append((display, brief, descr, viewer_rel, None))
     return emit_category_page(
         "CATEGORY_REGULAR.md",
         "Regular 4-polytopes — zomeable orthographic projections",
@@ -426,6 +492,7 @@ def page_regular():
             "the others all saturate at a small finite count.",
         ],
         rows,
+        descr_header="By type",
         footer_lines=[
             "## More detail",
             "",
@@ -438,10 +505,10 @@ def page_regular():
 
 def page_uniform():
     rows = []
-    rows.append(("**Non-Wythoffian** *(diminishings of the 600-cell)*", "", None, None))
+    rows.append(("**Non-Wythoffian** *(diminishings of the 600-cell)*", "", "", None, None))
     for slug, (display, n) in NON_WYTHOFFIAN.items():
         rel = f"output/uniform/{slug}/VIEWER.md"
-        rows.append((display, str(n), rel, None))
+        rows.append((display, str(n), INHERITS_FROM.get(slug, ""), rel, None))
     for grp_label, grp_id in [
         ("**A₄ descendants** *(5-cell family)*", "A4"),
         ("**B₄ descendants** *(tesseract / 16-cell family)*", "B4"),
@@ -455,10 +522,10 @@ def page_uniform():
         ]
         if not group_hits:
             continue
-        rows.append((grp_label, "", None, None))
+        rows.append((grp_label, "", "", None, None))
         for slug, display, n in group_hits:
             rel = f"output/uniform/{slug}/VIEWER.md"
-            rows.append((display, str(n), rel, None))
+            rows.append((display, str(n), INHERITS_FROM.get(slug, ""), rel, None))
     return emit_category_page(
         "CATEGORY_UNIFORM.md",
         "Uniform 4-polytopes — zomeable orthographic projections",
@@ -473,6 +540,7 @@ def page_uniform():
             "which is outside the icosahedral scope of this project.",
         ],
         rows,
+        descr_header="Inherits from",
         footer_lines=[
             "## More detail",
             "",
@@ -496,7 +564,8 @@ def _prismatic_rows(prismatic_data, family_key, display_fn, sort_key):
             cat = {"A": "polyhedral_prisms", "B": "duoprisms",
                    "C": "antiprismatic_prisms"}[family_key]
             rel = f"output/{cat}/{slug}/VIEWER.md"
-            rows.append((display, str(row["n_shapes"]), rel, None))
+            descr = prismatic_shape_descr(row["shapes"])
+            rows.append((display, str(row["n_shapes"]), descr, rel, None))
         else:
             zero_items.append(display)
     return rows, zero_items
@@ -530,6 +599,7 @@ def page_duoprisms(prismatic_data):
             "Similarly `duoprism_4_6` is bounded at 3 shapes through rng=8.",
         ],
         rows,
+        descr_header="By type",
         zero_section=zero_sec,
         footer_lines=[
             "## More detail",
@@ -563,6 +633,7 @@ def page_polyhedral_prisms(prismatic_data):
             "≥1 zomeable projection.",
         ],
         rows,
+        descr_header="By type",
         zero_section=zero_sec,
         footer_lines=[
             "## More detail",
@@ -593,6 +664,7 @@ def page_antiprismatic_prisms(prismatic_data):
             "polyhedral prisms).  Only n=5 yielded zomeable projections.",
         ],
         rows,
+        descr_header="By type",
         zero_section=zero_sec,
         footer_lines=[
             "## More detail",
