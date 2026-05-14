@@ -1,0 +1,14 @@
+{
+  "q": 8,
+  "plane": "ab00",
+  "rng": 4,
+  "V": 32,
+  "E": 64,
+  "n_dirs": 3280,
+  "n_aligned": 3280,
+  "n_snapped": 0,
+  "n_errors": 0,
+  "elapsed_s": 89.93,
+  "n_sigs": 0,
+  "sigs": []
+}
