@@ -1,0 +1,5 @@
+title: "Zomeable 4-polytopes"
+description: "Enumerated orthographic projections of 4-polytopes that can be built in zometool and modeled in vZome."
+url: "https://nanma80.github.io"
+baseurl: "/zomeable-4polytopes"
+theme: jekyll-theme-primer
