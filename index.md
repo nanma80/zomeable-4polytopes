@@ -4,6 +4,8 @@ title: Zomeable 4-polytopes
 description: Enumerated orthographic projections of 4-polytopes that can be built in zometool and modeled in vZome.
 ---
 
+# Zomeable 4-polytopes
+
 A catalogue of 4-dimensional polytopes that can be projected to 3D in ways that are **physically buildable with [zometool](https://www.zometool.com/)** struts (Blue / Yellow / Red / Green) and **modelled exactly in [vZome](https://vzome.com/)**.
 
 For each polytope, we enumerate orthographic projections whose every edge lands on a default zometool axis. Hits are grouped up to rotation and uniform scale, then emitted as `.vZome` files that you can spin, zoom, and inspect right in the browser.
