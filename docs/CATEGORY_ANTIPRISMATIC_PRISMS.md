@@ -6,7 +6,7 @@ polyhedral prisms).  Only n=5 yielded zomeable projections.
 
 | Polytope | Zomeable projections | By type | Viewer |
 |----------|---------------------:|----------------|--------|
-| A_5 × [0,1] (n=5) | 9 | cell-first + face-first + 7 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/antiprismatic_prisms/5_antiprismatic_prism/VIEWER.html) |
+| A_5 × [0,1] (n=5) | 9 | cell-first + face-first + 7 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/antiprismatic_prisms/5_antiprismatic_prism/VIEWER.html) |
 
 
 ## Zero-shape antiprismatic prisms (16)

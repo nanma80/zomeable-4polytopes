@@ -347,7 +347,7 @@ def emit_category_page(filename, title, intro_lines, rows, descr_header,
             nm = f"{nm} {note}"
         if viewer_rel:
             viewer_url = f"{PAGES_BASE}/{viewer_rel[:-3]}.html"
-            viewer_cell = f"[3D viewer →]({viewer_url})"
+            viewer_cell = f"[3D viewer\u00a0→]({viewer_url})"
         else:
             viewer_cell = "—"
         lines.append(f"| {nm} | {count} | {descr} | {viewer_cell} |")
