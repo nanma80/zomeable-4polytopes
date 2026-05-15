@@ -57,7 +57,7 @@ REGULAR_POLYTOPES = OrderedDict([
     ("5cell",   ("5-cell {3,3,3}",     "RESULTS.md",
                 "4",                "vertex-first + 3 oblique")),
     ("8cell",   ("8-cell {4,3,3} (tesseract)", "CLASSIFICATION.md",
-                "3 + 1 inf family", "cell-first cube + vertex-first rhombic dodec + phi-oblique + inf family of cuboids")),
+                "3 + 1 inf family", "cell-first + vertex-first + phi-oblique + inf family")),
     ("16cell",  ("16-cell {3,3,4}",    "RESULTS.md",
                 "6",                "vertex-first + cell-first + edge-first + 3 triality")),
     ("24cell",  ("24-cell {3,4,3}",    "ZOMEABLE_PROJECTIONS.md",
