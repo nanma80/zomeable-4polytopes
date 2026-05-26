@@ -16,7 +16,7 @@ organised into category subfolders:
   prism (Family C: the pentagonal-antiprism prism).
 - [`gosset_projections/`](gosset_projections/) — related non-4D collection:
   strict orthographic zomeable projections of the Gosset-family polytopes
-  5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, `2_31`, and `4_21`.
+  5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, `2_31`, `1_32`, and `4_21`.
 
 Each polytope subfolder has its own `RESULTS.md` describing its shapes
 and kernel directions, with two historical exceptions kept under

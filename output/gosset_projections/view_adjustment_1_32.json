@@ -1,13 +1,13 @@
 {
-  "note": "Fitted 1_21 and 1_22 initial vZome camera views. Width/distance = max(80, 6*bounding radius), with isometric look/up directions. Geometry unchanged.",
+  "note": "Fitted 1_32 initial vZome camera views. Width/distance = max(80, 6*bounding radius), with isometric look/up directions. Geometry unchanged.",
   "items": [
     {
-      "file": "1_21/1_21_B3_15_balls.vZome",
-      "radius": 13.70820393249937,
-      "width": 82.24922359499621,
-      "distance": 82.24922359499621,
-      "near": 0.8224922359499621,
-      "far": 328.99689437998484,
+      "file": "1_32/1_32_B3_38_balls.vZome",
+      "radius": 18.94427190999916,
+      "width": 113.66563145999496,
+      "distance": 113.66563145999496,
+      "near": 1.1366563145999495,
+      "far": 454.6625258399798,
       "look_direction": [
         0.5773502691896258,
         -0.5773502691896258,
@@ -20,12 +20,12 @@
       ]
     },
     {
-      "file": "1_21/1_21_B3_8_balls.vZome",
-      "radius": 7.337084961345171,
-      "width": 80.0,
-      "distance": 80.0,
-      "near": 0.8,
-      "far": 320.0,
+      "file": "1_32/1_32_B3_59_balls.vZome",
+      "radius": 23.74330569160439,
+      "width": 142.45983414962635,
+      "distance": 142.45983414962635,
+      "near": 1.4245983414962635,
+      "far": 569.8393365985054,
       "look_direction": [
         0.5773502691896258,
         -0.5773502691896258,
@@ -38,12 +38,12 @@
       ]
     },
     {
-      "file": "1_21/1_21_D4_12_balls.vZome",
-      "radius": 11.98140956982914,
-      "width": 80.0,
-      "distance": 80.0,
-      "near": 0.8,
-      "far": 320.0,
+      "file": "1_32/1_32_B3_81_balls.vZome",
+      "radius": 20.752410121236036,
+      "width": 124.5144607274162,
+      "distance": 124.5144607274162,
+      "near": 1.245144607274162,
+      "far": 498.0578429096648,
       "look_direction": [
         0.5773502691896258,
         -0.5773502691896258,
@@ -56,12 +56,12 @@
       ]
     },
     {
-      "file": "1_22/1_22_B3_27_balls.vZome",
-      "radius": 19.3863279171168,
-      "width": 116.31796750270081,
-      "distance": 116.31796750270081,
-      "near": 1.163179675027008,
-      "far": 465.27187001080324,
+      "file": "1_32/1_32_H3_384_balls_hull32.vZome",
+      "radius": 21.09475678364719,
+      "width": 126.56854070188314,
+      "distance": 126.56854070188314,
+      "near": 1.2656854070188315,
+      "far": 506.27416280753255,
       "look_direction": [
         0.5773502691896258,
         -0.5773502691896258,
@@ -74,12 +74,12 @@
       ]
     },
     {
-      "file": "1_22/1_22_B3_33_balls.vZome",
-      "radius": 16.94427190999916,
-      "width": 101.66563145999496,
-      "distance": 101.66563145999496,
-      "near": 1.0166563145999497,
-      "far": 406.6625258399798,
+      "file": "1_32/1_32_H3_384_balls_hull80.vZome",
+      "radius": 19.20873780714737,
+      "width": 115.2524268428842,
+      "distance": 115.2524268428842,
+      "near": 1.1525242684288421,
+      "far": 461.0097073715368,
       "look_direction": [
         0.5773502691896258,
         -0.5773502691896258,

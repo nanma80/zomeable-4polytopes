@@ -1,68 +1,68 @@
 {
-  "note": "Presentation scale factors. For 2_21/3_21/4_21, manual vZome scaling is inferred from ApplyTool commands where scale up = phi and scale down = phi^-1. For 1_21, 1_22, and 2_31, physical scale factors were applied directly to coordinates so available strut lengths become standard phi-powers or double phi-powers.",
+  "note": "Presentation scale factors. For 2_21/3_21/4_21, manual vZome scaling is inferred from ApplyTool commands where scale up = phi and scale down = phi^-1. For 1_21, 1_22, 2_31, and 1_32, physical scale factors were applied directly to coordinates so available strut lengths become standard phi-powers or double phi-powers.",
   "items": [
     {
-      "file": "1_21_B3_8_balls.vZome",
+      "file": "1_21/1_21_B3_8_balls.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "all B/G edges become phi^1"
     },
     {
-      "file": "1_21_D4_12_balls.vZome",
+      "file": "1_21/1_21_D4_12_balls.vZome",
       "scale_factor": "2*phi/3",
       "scale_factor_zphi": "0 + 2/3*phi",
       "physical_length_result": "short B/G edges become phi^1; long B/Y edges become 2*phi^1"
     },
     {
-      "file": "1_21_B3_15_balls.vZome",
+      "file": "1_21/1_21_B3_15_balls.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "all B/G/Y edges become phi^2"
     },
     {
-      "file": "1_22_B3_27_balls.vZome",
+      "file": "1_22/1_22_B3_27_balls.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "all B/G/Y edges become phi^2"
     },
     {
-      "file": "1_22_B3_33_balls.vZome",
+      "file": "1_22/1_22_B3_33_balls.vZome",
       "scale_factor": "2*phi/3",
       "scale_factor_zphi": "0 + 2/3*phi",
       "physical_length_result": "short B/G edges become phi^1; long B/Y edges become 2*phi^1"
     },
     {
-      "file": "2_31_B3_19_balls.vZome",
+      "file": "2_31/2_31_B3_19_balls.vZome",
       "scale_factor": "2*phi/3",
       "scale_factor_zphi": "0 + 2/3*phi",
       "physical_length_result": "short G edges become phi^1; long B edges become 2*phi^1"
     },
     {
-      "file": "2_31_B3_27_balls.vZome",
+      "file": "2_31/2_31_B3_27_balls.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "all B/G/Y edges become phi^2"
     },
     {
-      "file": "2_31_B3_33_balls.vZome",
+      "file": "2_31/2_31_B3_33_balls.vZome",
       "scale_factor": "phi/3",
       "scale_factor_zphi": "0 + 1/3*phi",
       "physical_length_result": "short B/G edges become phi^1; long B/Y edges become 2*phi^1"
     },
     {
-      "file": "2_31_H3_93_balls_hull42.vZome",
+      "file": "2_31/2_31_H3_93_balls_hull42.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "short B/Y edges become phi^1; long B/R edges become phi^2"
     },
     {
-      "file": "2_31_H3_93_balls_hull30.vZome",
+      "file": "2_31/2_31_H3_93_balls_hull30.vZome",
       "scale_factor": "phi^2/3",
       "scale_factor_zphi": "1/3 + 1/3*phi",
       "physical_length_result": "R edges become phi^0; short B edges become phi^1; long B/Y edges become phi^2"
     },
     {
-      "file": "2_21_B3_15_balls.vZome",
+      "file": "2_21/2_21_B3_15_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -70,7 +70,7 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "2_21_B3_19_balls.vZome",
+      "file": "2_21/2_21_B3_19_balls.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 1,
       "net_phi_power": 5,
@@ -78,7 +78,7 @@
       "scale_factor_zphi": "3 + 5*phi"
     },
     {
-      "file": "3_21_B3_14_balls.vZome",
+      "file": "3_21/3_21_B3_14_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 2,
       "net_phi_power": 6,
@@ -86,7 +86,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "3_21_B3_15_balls.vZome",
+      "file": "3_21/3_21_B3_15_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -94,7 +94,7 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "3_21_B3_19_balls.vZome",
+      "file": "3_21/3_21_B3_19_balls.vZome",
       "scale_up_commands": 5,
       "scale_down_commands": 0,
       "net_phi_power": 5,
@@ -102,7 +102,7 @@
       "scale_factor_zphi": "3 + 5*phi"
     },
     {
-      "file": "3_21_H3_44_balls_icosa_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_icosa_hull.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
@@ -110,7 +110,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "3_21_H3_44_balls_dodeca_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_dodeca_hull.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
@@ -118,7 +118,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "4_21_B3_27_balls.vZome",
+      "file": "4_21/4_21_B3_27_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 1,
       "net_phi_power": 7,
@@ -126,7 +126,7 @@
       "scale_factor_zphi": "8 + 13*phi"
     },
     {
-      "file": "4_21_B3_33_balls.vZome",
+      "file": "4_21/4_21_B3_33_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -134,12 +134,67 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "4_21_H3_137_balls.vZome",
+      "file": "4_21/4_21_H3_137_balls.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
       "scale_factor_numeric": 17.944271909999163,
       "scale_factor_zphi": "5 + 8*phi"
+    },
+    {
+      "file": "1_32/1_32_B3_38_balls.vZome",
+      "scale_factor": "2*phi/3",
+      "zphi_pair": [
+        "0",
+        "2/3"
+      ],
+      "note": "short G edges become phi^1; long B edges become 2*phi^1",
+      "old_file_label": "1_32_N19_c21c42f41018.vZome",
+      "balls": 38
+    },
+    {
+      "file": "1_32/1_32_B3_59_balls.vZome",
+      "scale_factor": "phi^2/3",
+      "zphi_pair": [
+        "1/3",
+        "1/3"
+      ],
+      "note": "all B/G/Y edges become phi^2",
+      "old_file_label": "1_32_N27_9b4f2e0b8227.vZome",
+      "balls": 59
+    },
+    {
+      "file": "1_32/1_32_B3_81_balls.vZome",
+      "scale_factor": "phi/3",
+      "zphi_pair": [
+        "0",
+        "1/3"
+      ],
+      "note": "short B/G edges become phi^1; long B/Y edges become 2*phi^1",
+      "old_file_label": "1_32_N33_4e55b6f5e068.vZome",
+      "balls": 81
+    },
+    {
+      "file": "1_32/1_32_H3_384_balls_hull32.vZome",
+      "scale_factor": "phi^2/3",
+      "zphi_pair": [
+        "1/3",
+        "1/3"
+      ],
+      "note": "short B/Y edges become phi^1; long B/R edges become phi^2",
+      "old_file_label": "1_32_N93_b1168cf2acba.vZome",
+      "balls": 384
+    },
+    {
+      "file": "1_32/1_32_H3_384_balls_hull80.vZome",
+      "scale_factor": "phi^2/3",
+      "zphi_pair": [
+        "1/3",
+        "1/3"
+      ],
+      "note": "R edges become phi^0; short B edges become phi^1; long B/Y edges become phi^2",
+      "old_file_label": "1_32_N93_b7f5abfd8f2e.vZome",
+      "balls": 384
     }
   ]
 }

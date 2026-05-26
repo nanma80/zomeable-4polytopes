@@ -3,7 +3,7 @@
   "factor": 2.5,
   "files": [
     {
-      "file": "2_21_B3_15_balls.vZome",
+      "file": "2_21/2_21_B3_15_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 62.1082878112793,
@@ -19,7 +19,7 @@
       }
     },
     {
-      "file": "2_21_B3_19_balls.vZome",
+      "file": "2_21/2_21_B3_19_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 52.92518997192383,
@@ -35,7 +35,7 @@
       }
     },
     {
-      "file": "3_21_B3_14_balls.vZome",
+      "file": "3_21/3_21_B3_14_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.84996795654297,
@@ -51,7 +51,7 @@
       }
     },
     {
-      "file": "3_21_B3_15_balls.vZome",
+      "file": "3_21/3_21_B3_15_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 56.19790267944336,
@@ -67,7 +67,7 @@
       }
     },
     {
-      "file": "3_21_B3_19_balls.vZome",
+      "file": "3_21/3_21_B3_19_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.0,
@@ -83,7 +83,7 @@
       }
     },
     {
-      "file": "3_21_H3_44_balls_icosa_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_icosa_hull.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 51.877201080322266,
@@ -99,7 +99,7 @@
       }
     },
     {
-      "file": "3_21_H3_44_balls_dodeca_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_dodeca_hull.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.0,
@@ -115,7 +115,7 @@
       }
     },
     {
-      "file": "4_21_B3_27_balls.vZome",
+      "file": "4_21/4_21_B3_27_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 46.94043731689453,
@@ -131,7 +131,7 @@
       }
     },
     {
-      "file": "4_21_B3_33_balls.vZome",
+      "file": "4_21/4_21_B3_33_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 53.994354248046875,
@@ -147,7 +147,7 @@
       }
     },
     {
-      "file": "4_21_H3_137_balls.vZome",
+      "file": "4_21/4_21_H3_137_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 52.92518997192383,

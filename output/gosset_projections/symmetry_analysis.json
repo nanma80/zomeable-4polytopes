@@ -2,7 +2,7 @@
   "note": "Computed from clean pre-manual-scale files; manual vZome scale edits do not affect symmetry. Full order includes reflections.",
   "items": [
     {
-      "file": "1_21_B3_8_balls.vZome",
+      "file": "1_21/1_21_B3_8_balls.vZome",
       "polytope": "1_21",
       "balls": 8,
       "full_symmetry_order": 48,
@@ -12,7 +12,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "1_21_D4_12_balls.vZome",
+      "file": "1_21/1_21_D4_12_balls.vZome",
       "polytope": "1_21",
       "balls": 12,
       "full_symmetry_order": 16,
@@ -22,7 +22,7 @@
       "anchor_candidate_images": 16
     },
     {
-      "file": "1_21_B3_15_balls.vZome",
+      "file": "1_21/1_21_B3_15_balls.vZome",
       "polytope": "1_21",
       "balls": 15,
       "full_symmetry_order": 48,
@@ -32,7 +32,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "1_22_B3_27_balls.vZome",
+      "file": "1_22/1_22_B3_27_balls.vZome",
       "polytope": "1_22",
       "balls": 27,
       "full_symmetry_order": 48,
@@ -42,7 +42,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "1_22_B3_33_balls.vZome",
+      "file": "1_22/1_22_B3_33_balls.vZome",
       "polytope": "1_22",
       "balls": 33,
       "full_symmetry_order": 48,
@@ -52,7 +52,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "2_31_B3_19_balls.vZome",
+      "file": "2_31/2_31_B3_19_balls.vZome",
       "polytope": "2_31",
       "balls": 19,
       "full_symmetry_order": 48,
@@ -62,7 +62,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "2_31_B3_27_balls.vZome",
+      "file": "2_31/2_31_B3_27_balls.vZome",
       "polytope": "2_31",
       "balls": 27,
       "full_symmetry_order": 48,
@@ -72,7 +72,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "2_31_B3_33_balls.vZome",
+      "file": "2_31/2_31_B3_33_balls.vZome",
       "polytope": "2_31",
       "balls": 33,
       "full_symmetry_order": 48,
@@ -82,7 +82,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "2_31_H3_93_balls_hull42.vZome",
+      "file": "2_31/2_31_H3_93_balls_hull42.vZome",
       "polytope": "2_31",
       "balls": 93,
       "full_symmetry_order": 120,
@@ -93,7 +93,7 @@
       "hull_vertices": 42
     },
     {
-      "file": "2_31_H3_93_balls_hull30.vZome",
+      "file": "2_31/2_31_H3_93_balls_hull30.vZome",
       "polytope": "2_31",
       "balls": 93,
       "full_symmetry_order": 120,
@@ -104,7 +104,7 @@
       "hull_vertices": 30
     },
     {
-      "file": "2_21_B3_15_balls.vZome",
+      "file": "2_21/2_21_B3_15_balls.vZome",
       "polytope": "2_21",
       "balls": 15,
       "full_symmetry_order": 48,
@@ -114,7 +114,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "2_21_B3_19_balls.vZome",
+      "file": "2_21/2_21_B3_19_balls.vZome",
       "polytope": "2_21",
       "balls": 19,
       "full_symmetry_order": 48,
@@ -124,7 +124,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "3_21_B3_14_balls.vZome",
+      "file": "3_21/3_21_B3_14_balls.vZome",
       "polytope": "3_21",
       "balls": 14,
       "full_symmetry_order": 48,
@@ -134,7 +134,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "3_21_B3_15_balls.vZome",
+      "file": "3_21/3_21_B3_15_balls.vZome",
       "polytope": "3_21",
       "balls": 15,
       "full_symmetry_order": 48,
@@ -144,7 +144,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "3_21_B3_19_balls.vZome",
+      "file": "3_21/3_21_B3_19_balls.vZome",
       "polytope": "3_21",
       "balls": 19,
       "full_symmetry_order": 48,
@@ -154,7 +154,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "3_21_H3_44_balls_icosa_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_icosa_hull.vZome",
       "polytope": "3_21",
       "balls": 44,
       "full_symmetry_order": 120,
@@ -164,7 +164,7 @@
       "anchor_candidate_images": 120
     },
     {
-      "file": "3_21_H3_44_balls_dodeca_hull.vZome",
+      "file": "3_21/3_21_H3_44_balls_dodeca_hull.vZome",
       "polytope": "3_21",
       "balls": 44,
       "full_symmetry_order": 120,
@@ -174,7 +174,62 @@
       "anchor_candidate_images": 120
     },
     {
-      "file": "4_21_B3_27_balls.vZome",
+      "file": "1_32/1_32_B3_38_balls.vZome",
+      "polytope": "1_32",
+      "balls": 38,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48,
+      "hull_vertices": 24
+    },
+    {
+      "file": "1_32/1_32_B3_59_balls.vZome",
+      "polytope": "1_32",
+      "balls": 59,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 96,
+      "hull_vertices": 32
+    },
+    {
+      "file": "1_32/1_32_B3_81_balls.vZome",
+      "polytope": "1_32",
+      "balls": 81,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 96,
+      "hull_vertices": 24
+    },
+    {
+      "file": "1_32/1_32_H3_384_balls_hull32.vZome",
+      "polytope": "1_32",
+      "balls": 384,
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "classification": "H3 / full icosahedral (Ih)",
+      "anchor_candidate_images": 120,
+      "hull_vertices": 32
+    },
+    {
+      "file": "1_32/1_32_H3_384_balls_hull80.vZome",
+      "polytope": "1_32",
+      "balls": 384,
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "classification": "H3 / full icosahedral (Ih)",
+      "anchor_candidate_images": 120,
+      "hull_vertices": 80
+    },
+    {
+      "file": "4_21/4_21_B3_27_balls.vZome",
       "polytope": "4_21",
       "balls": 27,
       "full_symmetry_order": 48,
@@ -184,7 +239,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "4_21_B3_33_balls.vZome",
+      "file": "4_21/4_21_B3_33_balls.vZome",
       "polytope": "4_21",
       "balls": 33,
       "full_symmetry_order": 48,
@@ -194,7 +249,7 @@
       "anchor_candidate_images": 48
     },
     {
-      "file": "4_21_H3_137_balls.vZome",
+      "file": "4_21/4_21_H3_137_balls.vZome",
       "polytope": "4_21",
       "balls": 137,
       "full_symmetry_order": 120,

@@ -4,7 +4,7 @@ This is a related non-4D collection hosted in the same repository for
 convenience and shared tooling.  These models are not part of the 4-polytope
 category taxonomy; they are strict orthographic zomeable projections of the
 Gosset-family polytopes 5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, and
-`2_31`, and `4_21`.
+`2_31`, `1_32`, and `4_21`.
 
 | Source polytope | Natural dimension | Models | Viewer |
 |---|---:|---:|---|
@@ -13,17 +13,18 @@ Gosset-family polytopes 5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, and
 | `1_22` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_22.html) |
 | `3_21` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
 | `2_31` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
+| `1_32` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
 | `4_21` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 
-All 20 labelled models are available in a flat folder:
+All 25 labelled models are available in a flat folder:
 
 - [`output/gosset_projections/`](../output/gosset_projections/)
 
 The ball counts on the viewer page count distinct 3D ball positions after
 projection, not vertices of the original higher-dimensional Gosset polytope.
-Fourteen models have full B3/octahedral point-cloud symmetry; one 5-demicube
+Seventeen models have full B3/octahedral point-cloud symmetry; one 5-demicube
 (`1_21`) model has full D4/tetragonal point-cloud symmetry; the two `3_21`
-N=44 models, the two `2_31` N=93 models, and the `4_21` N=137 model have full
+N=44 models, the two `2_31` N=93 models, the two `1_32` 384-ball models, and the `4_21` N=137 model have full
 H3/icosahedral symmetry.
 
 The R=2 raw-column `Z[phi]^3` sweep recovers all 10 previously published
@@ -31,6 +32,7 @@ The R=2 raw-column `Z[phi]^3` sweep recovers all 10 previously published
 found no additional distinct models.  For the 5-demicube (`1_21`), the same
 methodology finds three models and saturates already at R=1.  For `1_22`, the
 same methodology finds two models and saturates through R=3.  For `2_31`, it
-finds five models and saturates through R=3.
+finds five models and saturates through R=3.  For `1_32`, evaluating those
+same E7 projection directions gives five labelled models.
 See [`GOSSET_PROJECTIONS.md`](GOSSET_PROJECTIONS.md) for the sweep method and
 symmetry audit.
