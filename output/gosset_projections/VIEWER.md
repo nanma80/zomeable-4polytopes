@@ -40,26 +40,6 @@ in 3D.
  </figcaption>
 </figure>
 
-<a id="1_22"></a>
-
-## E6 root polytope (1_22)
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="1_22_B3_27_balls.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    E6 root polytope (1_22) B3-symmetric projection - 27 balls
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="1_22_B3_33_balls.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    E6 root polytope (1_22) B3-symmetric projection - 33 balls
- </figcaption>
-</figure>
-
 ## 2_21
 
 <figure style="width: 800px; margin: 5%">
@@ -75,6 +55,26 @@ in 3D.
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     2_21 B3-symmetric projection - 19 balls
+ </figcaption>
+</figure>
+
+<a id="1_22"></a>
+
+## 1_22
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="1_22_B3_27_balls.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    1_22 B3-symmetric projection - 27 balls
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="1_22_B3_33_balls.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    1_22 B3-symmetric projection - 33 balls
  </figcaption>
 </figure>
 
