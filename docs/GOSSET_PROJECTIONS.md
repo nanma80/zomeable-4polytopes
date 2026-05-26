@@ -54,3 +54,36 @@ The public captions use full Euclidean point-cloud symmetry:
 The computed symmetry audit is in
 [`output/gosset_projections/symmetry_analysis.json`](../output/gosset_projections/symmetry_analysis.json).
 
+## Relation between the B3-symmetric models
+
+The B3-symmetric models are related through the usual vertex-figure chain
+
+```text
+2_21 -> 3_21 -> 4_21.
+```
+
+The same raw-column projection can produce compatible strict images for several
+members of this chain.  Under such a projection, vertices of the larger Gosset
+polytope may coincide in 3D, so a larger source polytope can produce a
+degenerate image whose visible ball arrangement agrees with a smaller source
+polytope's image.
+
+In the computed R=2/R=3 data, the B3 cases split into two projection branches:
+
+| Branch | `2_21` image | `3_21` image(s) | `4_21` image |
+|---|---|---|---|
+| A | 15 balls | 15 balls | 27 balls |
+| B | 19 balls | 19 balls and 14 balls | 33 balls |
+
+Branch A is the simplest inherited family: the same B3 projection gives the
+15-ball `2_21` and `3_21` images and the 27-ball `4_21` image.
+
+Branch B explains the apparent extra B3 model for `3_21`.  The same projection
+branch gives the 19-ball `2_21` image, the 19-ball `3_21` image, and the
+33-ball `4_21` image; but after choosing this B3 projection, the `3_21`
+vertex figures inside `4_21` split into more than one orbit under the remaining
+B3 symmetry.  One orbit gives the inherited 19-ball image, while another orbit
+gives the 14-ball cube-hull image.  Thus the 14-ball `3_21` model is not an
+unrelated projection direction; it is another degeneration within the same B3
+projection branch.
+
