@@ -21,12 +21,18 @@ It enforces:
 Useful entry points:
 
 - `zphi_column_sweep.py` — run the R=1/R=2/R=3 sweep.
+- `zphi_1_21_sweep.py` / `zphi_1_21_emit.py` — 5-demicube (`1_21`)
+  standalone sweep and emission.
+- `zphi_1_22_sweep.py` / `zphi_1_22_emit.py` — E6 root polytope (`1_22`)
+  standalone sweep and emission.
 - `zphi_column_postprocess.py` — compare sweep JSON output against curated
   `.vZome` files.
 - `zphi_full_dedup.py` — full Euclidean point-cloud dedup.
 - `zphi_r3_leaf_estimator.py` — estimator used for the R=3 leaf count.
 - `zphi_r4_profile.py` — memory-safe rough R=4 profile.
 - `scale_vzome_phi.py` and `fit_vzome_view.py` — presentation helpers.
+  For newly emitted Gosset-style models, also choose a physical scale so edge
+  lengths become standard `phi^n` strut lengths or exactly double them.
 
 The helper modules `lib/gosset_polytopes.py` and `lib/zometool_axes.py` are
 ported with these scripts.

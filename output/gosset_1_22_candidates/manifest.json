@@ -1,0 +1,30 @@
+[
+  {
+    "ok": true,
+    "sig": "N27_9b4f2e0b8227",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_1_22_candidates\\1_22_N27_9b4f2e0b8227.vZome",
+    "balls": 27,
+    "edges": 146,
+    "source_edges": 720,
+    "collapsed": 40,
+    "audit": {
+      "G": 48,
+      "B": 42,
+      "Y": 56
+    }
+  },
+  {
+    "ok": true,
+    "sig": "N33_4e55b6f5e068",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_1_22_candidates\\1_22_N33_4e55b6f5e068.vZome",
+    "balls": 33,
+    "edges": 227,
+    "source_edges": 720,
+    "collapsed": 20,
+    "audit": {
+      "Y": 56,
+      "G": 84,
+      "B": 87
+    }
+  }
+]
