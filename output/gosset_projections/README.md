@@ -15,18 +15,22 @@ Open the single-page gallery here:
 
 ## Models
 
-| File | Source polytope | Balls | Symmetry / family |
+| File | Source polytope | Balls | Symmetry |
 |---:|---|---:|---|
-| `01_...vZome` | `2_21` | 15 | - |
-| `02_...vZome` | `2_21` | 19 | - |
-| `03_...vZome` | `3_21` | 14 | - |
-| `04_...vZome` | `3_21` | 15 | - |
-| `05_...vZome` | `3_21` | 19 | - |
+| `01_...vZome` | `2_21` | 15 | B3-symmetric |
+| `02_...vZome` | `2_21` | 19 | B3-symmetric |
+| `03_...vZome` | `3_21` | 14 | B3-symmetric |
+| `04_...vZome` | `3_21` | 15 | B3-symmetric |
+| `05_...vZome` | `3_21` | 19 | B3-symmetric |
 | `06_...vZome` | `3_21` | 44 | H3-symmetric |
 | `07_...vZome` | `3_21` | 44 | H3-symmetric |
-| `08_...vZome` | `4_21` | 27 | - |
-| `09_...vZome` | `4_21` | 33 | - |
+| `08_...vZome` | `4_21` | 27 | B3-symmetric |
+| `09_...vZome` | `4_21` | 33 | B3-symmetric |
 | `10_...vZome` | `4_21` | 137 | H3-symmetric |
+
+The symmetry labels are full Euclidean point-cloud symmetries: B3 means full
+octahedral symmetry (order 48), and H3 means full icosahedral symmetry
+(order 120).  See [`symmetry_analysis.json`](symmetry_analysis.json).
 
 ## Provenance
 

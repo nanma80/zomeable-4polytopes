@@ -18,6 +18,10 @@ All 10 labelled models are available in a flat folder:
 
 The ball counts on the viewer page count distinct 3D ball positions after
 projection, not vertices of the original higher-dimensional Gosset polytope.
+Seven models have full B3/octahedral point-cloud symmetry; the two `3_21`
+N=44 models and the `4_21` N=137 model have full H3/icosahedral symmetry.
 
 The R=2 raw-column `Z[phi]^3` sweep recovers all 10 known labelled models,
 including the H3 family.  The R=3 sweep found no additional distinct models.
+See [`GOSSET_PROJECTIONS.md`](GOSSET_PROJECTIONS.md) for the sweep method and
+symmetry audit.
