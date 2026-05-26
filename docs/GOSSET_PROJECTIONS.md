@@ -12,6 +12,16 @@ projections of the Gosset polytopes:
 | `3_21` | 7 | 5 |
 | `4_21` | 8 | 3 |
 
+## Prior work
+
+Scott Vorthmann's *Gosset's Polytopes* (2005) is prior vZome/zometool work on
+Gosset-polytope models:
+
+<https://vorth.github.io/vzome-sharing/2005/09/18/gossets-polytopes.html>
+
+The sweep documented here was run from scratch, but this page should be cited
+as earlier public work on the Gosset-polytope subject in vZome.
+
 ## Raw-column sweep
 
 The successful unified sweep searches the raw columns of a projection matrix

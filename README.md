@@ -72,6 +72,11 @@ been published or built independently; our enumeration confirms them.
   https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html
   — same projection as our `grand_antiprism_ring_first.vZome`,
   verified equivalent ball-by-ball.
+- **Gosset polytopes** — Scott Vorthmann, *Gosset's Polytopes* (2005),
+  https://vorth.github.io/vzome-sharing/2005/09/18/gossets-polytopes.html
+  — prior vZome/zometool work on Gosset-polytope models; our
+  `output/gosset_projections/` section is a new from-scratch sweep and
+  publication of the corresponding strict orthographic zomeable projections.
 
 To our knowledge, the following results are new:
 
