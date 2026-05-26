@@ -10,7 +10,7 @@
       "dedup_sig": "N15_53c24bd39c6e230c",
       "N": 15,
       "status": "known",
-      "representative": "01_2_21_known_N15_53c24bd39c6e230c_2_21_N15_64bc42a7c2b8_vf_88_16.vZome",
+      "representative": "2_21_B3_15_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\2_21_N15_64bc42a7c2b8_vf_88_16.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\2_21_N15_64bc42a7c2b8_vf_88_16.vZome",
@@ -40,7 +40,7 @@
       "dedup_sig": "N19_108bd2e2c0028769",
       "N": 19,
       "status": "known",
-      "representative": "02_2_21_known_N19_108bd2e2c0028769_2_21_N19_c10b25c3dedc_vf_1_34.vZome",
+      "representative": "2_21_B3_19_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\2_21_N19_c10b25c3dedc_vf_1_34.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\2_21_N19_c10b25c3dedc_vf_1_34.vZome",
@@ -70,7 +70,7 @@
       "dedup_sig": "N14_bd02628118d3b49d",
       "N": 14,
       "status": "known",
-      "representative": "03_3_21_known_N14_bd02628118d3b49d_3_21_N14_b6c8b78f6bce_vf_108.vZome",
+      "representative": "3_21_B3_14_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\3_21_N14_b6c8b78f6bce_vf_108.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\3_21_N14_b6c8b78f6bce_vf_108.vZome",
@@ -99,7 +99,7 @@
       "dedup_sig": "N15_53c24bd39c6e230c",
       "N": 15,
       "status": "known",
-      "representative": "04_3_21_known_N15_53c24bd39c6e230c_3_21_N15_64bc42a7c2b8_vf_88.vZome",
+      "representative": "3_21_B3_15_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\3_21_N15_64bc42a7c2b8_vf_88.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\3_21_N15_64bc42a7c2b8_vf_88.vZome",
@@ -129,7 +129,7 @@
       "dedup_sig": "N19_108bd2e2c0028769",
       "N": 19,
       "status": "known",
-      "representative": "05_3_21_known_N19_108bd2e2c0028769_3_21_N19_c10b25c3dedc_vf_1.vZome",
+      "representative": "3_21_B3_19_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\3_21_N19_c10b25c3dedc_vf_1.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\3_21_N19_c10b25c3dedc_vf_1.vZome",
@@ -159,7 +159,7 @@
       "dedup_sig": "N44_0ea6a9c6f7535a44",
       "N": 44,
       "status": "known",
-      "representative": "06_3_21_known_N44_0ea6a9c6f7535a44_3_21_N44_8e176827903d_vf_157.vZome",
+      "representative": "3_21_H3_44_balls_icosa_hull.vZome",
       "representative_source": "output\\column_sweep_R2\\3_21_N44_8e176827903d_vf_157.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\3_21_N44_8e176827903d_vf_157.vZome"
@@ -188,7 +188,7 @@
       "dedup_sig": "N44_4a675dfdae7a2b88",
       "N": 44,
       "status": "known",
-      "representative": "07_3_21_known_N44_4a675dfdae7a2b88_3_21_N44_9d20bb8aa629_vf_163.vZome",
+      "representative": "3_21_H3_44_balls_dodeca_hull.vZome",
       "representative_source": "output\\column_sweep_R2\\3_21_N44_9d20bb8aa629_vf_163.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\3_21_N44_9d20bb8aa629_vf_163.vZome"
@@ -217,7 +217,7 @@
       "dedup_sig": "N27_5cb6c0852c7a85e1",
       "N": 27,
       "status": "known",
-      "representative": "08_4_21_known_N27_5cb6c0852c7a85e1_4_21_N27_9b4f2e0b8227_4_21_full.vZome",
+      "representative": "4_21_B3_27_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\4_21_N27_9b4f2e0b8227_4_21_full.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\4_21_N27_9b4f2e0b8227_4_21_full.vZome",
@@ -247,7 +247,7 @@
       "dedup_sig": "N33_eb76552e7623f7ab",
       "N": 33,
       "status": "known",
-      "representative": "09_4_21_known_N33_eb76552e7623f7ab_4_21_N33_4e55b6f5e068_4_21_full.vZome",
+      "representative": "4_21_B3_33_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\4_21_N33_4e55b6f5e068_4_21_full.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\4_21_N33_4e55b6f5e068_4_21_full.vZome",
@@ -277,7 +277,7 @@
       "dedup_sig": "N137_c0141872c4e92579",
       "N": 137,
       "status": "known",
-      "representative": "10_4_21_known_N137_c0141872c4e92579_4_21_N137_651c9da8ce63_4_21_full.vZome",
+      "representative": "4_21_H3_137_balls.vZome",
       "representative_source": "output\\column_sweep_R2\\4_21_N137_651c9da8ce63_4_21_full.vZome",
       "emitted_aliases": [
         "output\\column_sweep_R2\\4_21_N137_651c9da8ce63_4_21_full.vZome"

@@ -1,8 +1,26 @@
 {
-  "note": "Manual vZome scaling inferred from ApplyTool commands. vZome scale up = field.createPower(+1), scale down = field.createPower(-1), so net factor is phi^(ups-downs).",
+  "note": "Presentation scale factors. For 2_21/3_21/4_21, manual vZome scaling is inferred from ApplyTool commands where scale up = phi and scale down = phi^-1. For 1_21, physical scale factors were applied directly to coordinates so available strut lengths become standard phi-powers or double phi-powers.",
   "items": [
     {
-      "file": "01_2_21_known_N15_53c24bd39c6e230c_2_21_N15_64bc42a7c2b8_vf_88_16.vZome",
+      "file": "1_21_B3_8_balls.vZome",
+      "scale_factor": "phi^2/3",
+      "scale_factor_zphi": "1/3 + 1/3*phi",
+      "physical_length_result": "all B/G edges become phi^1"
+    },
+    {
+      "file": "1_21_D4_12_balls.vZome",
+      "scale_factor": "2*phi/3",
+      "scale_factor_zphi": "0 + 2/3*phi",
+      "physical_length_result": "short B/G edges become phi^1; long B/Y edges become 2*phi^1"
+    },
+    {
+      "file": "1_21_B3_15_balls.vZome",
+      "scale_factor": "phi^2/3",
+      "scale_factor_zphi": "1/3 + 1/3*phi",
+      "physical_length_result": "all B/G/Y edges become phi^2"
+    },
+    {
+      "file": "2_21_B3_15_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -10,7 +28,7 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "02_2_21_known_N19_108bd2e2c0028769_2_21_N19_c10b25c3dedc_vf_1_34.vZome",
+      "file": "2_21_B3_19_balls.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 1,
       "net_phi_power": 5,
@@ -18,7 +36,7 @@
       "scale_factor_zphi": "3 + 5*phi"
     },
     {
-      "file": "03_3_21_known_N14_bd02628118d3b49d_3_21_N14_b6c8b78f6bce_vf_108.vZome",
+      "file": "3_21_B3_14_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 2,
       "net_phi_power": 6,
@@ -26,7 +44,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "04_3_21_known_N15_53c24bd39c6e230c_3_21_N15_64bc42a7c2b8_vf_88.vZome",
+      "file": "3_21_B3_15_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -34,7 +52,7 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "05_3_21_known_N19_108bd2e2c0028769_3_21_N19_c10b25c3dedc_vf_1.vZome",
+      "file": "3_21_B3_19_balls.vZome",
       "scale_up_commands": 5,
       "scale_down_commands": 0,
       "net_phi_power": 5,
@@ -42,7 +60,7 @@
       "scale_factor_zphi": "3 + 5*phi"
     },
     {
-      "file": "06_3_21_known_N44_0ea6a9c6f7535a44_3_21_N44_8e176827903d_vf_157.vZome",
+      "file": "3_21_H3_44_balls_icosa_hull.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
@@ -50,7 +68,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "07_3_21_known_N44_4a675dfdae7a2b88_3_21_N44_9d20bb8aa629_vf_163.vZome",
+      "file": "3_21_H3_44_balls_dodeca_hull.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
@@ -58,7 +76,7 @@
       "scale_factor_zphi": "5 + 8*phi"
     },
     {
-      "file": "08_4_21_known_N27_5cb6c0852c7a85e1_4_21_N27_9b4f2e0b8227_4_21_full.vZome",
+      "file": "4_21_B3_27_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 1,
       "net_phi_power": 7,
@@ -66,7 +84,7 @@
       "scale_factor_zphi": "8 + 13*phi"
     },
     {
-      "file": "09_4_21_known_N33_eb76552e7623f7ab_4_21_N33_4e55b6f5e068_4_21_full.vZome",
+      "file": "4_21_B3_33_balls.vZome",
       "scale_up_commands": 8,
       "scale_down_commands": 0,
       "net_phi_power": 8,
@@ -74,7 +92,7 @@
       "scale_factor_zphi": "13 + 21*phi"
     },
     {
-      "file": "10_4_21_known_N137_c0141872c4e92579_4_21_N137_651c9da8ce63_4_21_full.vZome",
+      "file": "4_21_H3_137_balls.vZome",
       "scale_up_commands": 6,
       "scale_down_commands": 0,
       "net_phi_power": 6,
