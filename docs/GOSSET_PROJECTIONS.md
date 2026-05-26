@@ -12,6 +12,7 @@ projections of the Gosset polytopes:
 | E6 root polytope (`1_22`) | 6 | 2 |
 | `2_21` | 6 | 2 |
 | `3_21` | 7 | 5 |
+| `2_31` | 7 | 5 |
 | `4_21` | 8 | 3 |
 
 ## Prior work
@@ -61,6 +62,9 @@ constraints and strict orthographicity:
 | `1_22`, R=1 | 1.5 s | 433,289 | 2 models |
 | `1_22`, R=2 | 17.0 s | 3,702,503 | same 2 models |
 | `1_22`, R=3 | 444.1 s | 48,536,391 | same 2 models |
+| `2_31`, R=1 | 8.7 s | 1,370,293 | 5 models |
+| `2_31`, R=2 | 79.8 s | 14,183,831 | same 5 models |
+| `2_31`, R=3 | 57.2 min | 390,832,319 | same 5 models |
 | `2_21`/`3_21`/`4_21`, R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
 | `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 
@@ -120,4 +124,10 @@ The E6 root polytope (`1_22`) contributes two labelled B3 models.  Their
 visible point-cloud geometries agree with the `4_21` 27-ball and 33-ball B3
 models, but the source polytope and source edge set are different, so the
 gallery keeps them as separate labelled models.
+
+The `2_31` member contributes five labelled models.  Three are B3-symmetric
+degenerations with 19, 27, and 33 balls; two are H3-symmetric 93-ball models
+with different convex hulls.  As with `1_22`, some visible geometries agree
+with existing smaller entries, but the `2_31` source polytope and its edge set
+are distinct, so they are listed separately.
 
