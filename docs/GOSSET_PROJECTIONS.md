@@ -8,6 +8,7 @@ projections of the Gosset polytopes:
 
 | Polytope | Natural dimension | Models |
 |---|---:|---:|
+| `1_21` | 5 | 3 |
 | `2_21` | 6 | 2 |
 | `3_21` | 7 | 5 |
 | `4_21` | 8 | 3 |
@@ -41,15 +42,21 @@ constraints and strict orthographicity:
 2. Enumerate compatible 8-column tuples.
 3. Require exact `P P^T = c I_3` in `Z[phi]`.
 4. Check the 128 half-root sums of E8.
-5. Collect strict rank-3 images for all `4_21`, all `3_21` vertex figures,
-   and all `2_21` vertex figures.
+5. Collect strict rank-3 images for all relevant source polytopes.  For
+   `2_21`/`3_21`/`4_21`, this means all vertex-figure embeddings inside the
+   E8 model.  For `1_21`, the standalone 5-demicube is checked directly; its
+   edge directions are only of the `+/- e_i +/- e_j` type, so there is no
+   E8 half-root condition.
 
 ## Saturation runs
 
 | Range | Runtime | Leaves | Result |
 |---:|---:|---:|---|
-| R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
-| R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
+| `1_21`, R=1 | 1.2 s | 433,289 | 3 models |
+| `1_21`, R=2 | 30.4 s | 3,702,503 | same 3 models |
+| `1_21`, R=3 | 708.5 s | 48,536,391 | same 3 models |
+| `2_21`/`3_21`/`4_21`, R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
+| `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 
 The R=3 leaf estimator predicted `1.960e10 +/- 1.828e8` leaves, close to the
 actual `1.982e10` leaves.
@@ -59,6 +66,7 @@ actual `1.982e10` leaves.
 The public captions use full Euclidean point-cloud symmetry:
 
 - `B3-symmetric` means full octahedral symmetry, full order 48.
+- `D4-symmetric` means full tetragonal/dihedral symmetry, full order 16.
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
 
 The computed symmetry audit is in
@@ -69,7 +77,7 @@ The computed symmetry audit is in
 The B3-symmetric models are related through the usual vertex-figure chain
 
 ```text
-2_21 -> 3_21 -> 4_21.
+5-demicube (1_21) -> 2_21 -> 3_21 -> 4_21.
 ```
 
 The same raw-column projection can produce compatible strict images for several
@@ -96,4 +104,9 @@ B3 symmetry.  One orbit gives the inherited 19-ball image, while another orbit
 gives the 14-ball cube-hull image.  Thus the 14-ball `3_21` model is not an
 unrelated projection direction; it is another degeneration within the same B3
 projection branch.
+
+The 5-demicube (`1_21`) member adds three models.  Its 15-ball B3 model is the
+same visible point-cloud geometry as the 15-ball branch above; the 8-ball B3
+model and 12-ball D4 model are specific lower-dimensional degenerations of the
+5-demicube and do not match the current `2_21`/`3_21`/`4_21` gallery models.
 

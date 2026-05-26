@@ -3,7 +3,7 @@
   "factor": 2.5,
   "files": [
     {
-      "file": "01_2_21_known_N15_53c24bd39c6e230c_2_21_N15_64bc42a7c2b8_vf_88_16.vZome",
+      "file": "2_21_B3_15_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 62.1082878112793,
@@ -19,7 +19,7 @@
       }
     },
     {
-      "file": "02_2_21_known_N19_108bd2e2c0028769_2_21_N19_c10b25c3dedc_vf_1_34.vZome",
+      "file": "2_21_B3_19_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 52.92518997192383,
@@ -35,7 +35,7 @@
       }
     },
     {
-      "file": "03_3_21_known_N14_bd02628118d3b49d_3_21_N14_b6c8b78f6bce_vf_108.vZome",
+      "file": "3_21_B3_14_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.84996795654297,
@@ -51,7 +51,7 @@
       }
     },
     {
-      "file": "04_3_21_known_N15_53c24bd39c6e230c_3_21_N15_64bc42a7c2b8_vf_88.vZome",
+      "file": "3_21_B3_15_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 56.19790267944336,
@@ -67,7 +67,7 @@
       }
     },
     {
-      "file": "05_3_21_known_N19_108bd2e2c0028769_3_21_N19_c10b25c3dedc_vf_1.vZome",
+      "file": "3_21_B3_19_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.0,
@@ -83,7 +83,7 @@
       }
     },
     {
-      "file": "06_3_21_known_N44_0ea6a9c6f7535a44_3_21_N44_8e176827903d_vf_157.vZome",
+      "file": "3_21_H3_44_balls_icosa_hull.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 51.877201080322266,
@@ -99,7 +99,7 @@
       }
     },
     {
-      "file": "07_3_21_known_N44_4a675dfdae7a2b88_3_21_N44_9d20bb8aa629_vf_163.vZome",
+      "file": "3_21_H3_44_balls_dodeca_hull.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 50.0,
@@ -115,7 +115,7 @@
       }
     },
     {
-      "file": "08_4_21_known_N27_5cb6c0852c7a85e1_4_21_N27_9b4f2e0b8227_4_21_full.vZome",
+      "file": "4_21_B3_27_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 46.94043731689453,
@@ -131,7 +131,7 @@
       }
     },
     {
-      "file": "09_4_21_known_N33_eb76552e7623f7ab_4_21_N33_4e55b6f5e068_4_21_full.vZome",
+      "file": "4_21_B3_33_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 53.994354248046875,
@@ -147,7 +147,7 @@
       }
     },
     {
-      "file": "10_4_21_known_N137_c0141872c4e92579_4_21_N137_651c9da8ce63_4_21_full.vZome",
+      "file": "4_21_H3_137_balls.vZome",
       "zoom_out_factor": 2.5,
       "old": {
         "distance": 52.92518997192383,
