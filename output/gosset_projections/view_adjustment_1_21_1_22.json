@@ -2,7 +2,7 @@
   "note": "Fitted 1_21 and 1_22 initial vZome camera views. Width/distance = max(80, 6*bounding radius), with isometric look/up directions. Geometry unchanged.",
   "items": [
     {
-      "file": "1_21_B3_15_balls.vZome",
+      "file": "1_21/1_21_B3_15_balls.vZome",
       "radius": 13.70820393249937,
       "width": 82.24922359499621,
       "distance": 82.24922359499621,
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "file": "1_21_B3_8_balls.vZome",
+      "file": "1_21/1_21_B3_8_balls.vZome",
       "radius": 7.337084961345171,
       "width": 80.0,
       "distance": 80.0,
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "file": "1_21_D4_12_balls.vZome",
+      "file": "1_21/1_21_D4_12_balls.vZome",
       "radius": 11.98140956982914,
       "width": 80.0,
       "distance": 80.0,
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "file": "1_22_B3_27_balls.vZome",
+      "file": "1_22/1_22_B3_27_balls.vZome",
       "radius": 19.3863279171168,
       "width": 116.31796750270081,
       "distance": 116.31796750270081,
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "file": "1_22_B3_33_balls.vZome",
+      "file": "1_22/1_22_B3_33_balls.vZome",
       "radius": 16.94427190999916,
       "width": 101.66563145999496,
       "distance": 101.66563145999496,
