@@ -25,6 +25,12 @@ Pick a category and click **View →** to jump into its interactive page.
 | **Antiprismatic prisms** *(A_n × [0,1])* | ∞ | 1 | 9 | [**Browse antiprism prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_ANTIPRISMATIC_PRISMS.html) |
 | **Total** | **∞** | **53** | **154 + 1 inf family** | |
 
+Related non-4D collection:
+
+| Category | Source polytopes | Models | |
+| -------- | ---------------: | -----: | --- |
+| **Gosset orthographic projections** *(2_21, 3_21, 4_21)* | 3 | 10 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
 
 ¹ The tesseract (8-cell) is the only polytope whose set of zomeable projections is infinite, parametrized by ℤ[φ]-Pythagorean triples. Every other polytope saturates at a small finite count. See the [8-cell master theorem](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/CLASSIFICATION.html) for details.

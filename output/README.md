@@ -14,6 +14,9 @@ organised into category subfolders:
   (Family B).
 - [`antiprismatic_prisms/`](antiprismatic_prisms/) — 1 antiprismatic
   prism (Family C: the pentagonal-antiprism prism).
+- [`gosset_projections/`](gosset_projections/) — related non-4D collection:
+  strict orthographic zomeable projections of the Gosset polytopes `2_21`,
+  `3_21`, and `4_21`.
 
 Each polytope subfolder has its own `RESULTS.md` describing its shapes
 and kernel directions, with two historical exceptions kept under
@@ -36,3 +39,7 @@ Provenance for the 204-polytope prismatic sweep
 [`prismatic_manifest.json`](prismatic_manifest.json); see
 [`../docs/PRISMATIC.md`](../docs/PRISMATIC.md) for the methodology
 and the 19 emitting polytopes.
+
+The Gosset projection files are intentionally kept as a parallel related
+category rather than folded into the 4-polytope taxonomy; see
+[`../docs/CATEGORY_GOSSET_PROJECTIONS.md`](../docs/CATEGORY_GOSSET_PROJECTIONS.md).
