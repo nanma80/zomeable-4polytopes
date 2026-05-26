@@ -1,7 +1,7 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 1_21, 2_21, 3_21, and 4_21. Kept as a flat output category for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-demicube (1_21), E6 root polytope (1_22), 2_21, 3_21, and 4_21. Kept as a flat output category for sharing.",
   "viewer": "VIEWER.md",
   "models": [
     {
@@ -20,6 +20,20 @@
       "file": "1_21_B3_15_balls.vZome",
       "polytope": "1_21",
       "balls": 15,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_22_B3_27_balls.vZome",
+      "polytope": "1_22",
+      "common_name": "E6 root polytope",
+      "balls": 27,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_22_B3_33_balls.vZome",
+      "polytope": "1_22",
+      "common_name": "E6 root polytope",
+      "balls": 33,
       "symmetry": "B3"
     },
     {

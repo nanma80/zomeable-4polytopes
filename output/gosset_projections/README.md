@@ -1,11 +1,11 @@
 # Gosset orthographic projections
 
 This folder is a related collection in this repository, not a 4-polytope
-category.  The models are strict orthographic 3D projections of the Gosset
-polytopes `1_21`, `2_21`, `3_21`, and `4_21`, whose natural dimensions are 5,
-6, 7, and 8 respectively.
+category.  The models are strict orthographic 3D projections of the
+Gosset-family polytopes 5-demicube (`1_21`), E6 root polytope (`1_22`),
+`2_21`, `3_21`, and `4_21`.
 
-The thirteen `.vZome` files are kept in a flat structure for sharing and spot
+The fifteen `.vZome` files are kept in a flat structure for sharing and spot
 checking.  "Balls" counts distinct 3D ball positions in the projected vZome
 model; some vertices of the original Gosset polytope may coincide in 3D.
 
@@ -17,9 +17,11 @@ Open the single-page gallery here:
 
 | File | Source polytope | Balls | Symmetry |
 |---:|---|---:|---|
-| `11_...vZome` | `1_21` | 8 | B3-symmetric |
-| `12_...vZome` | `1_21` | 12 | D4-symmetric |
-| `13_...vZome` | `1_21` | 15 | B3-symmetric |
+| `1_21_B3_8_balls.vZome` | 5-demicube (`1_21`) | 8 | B3-symmetric |
+| `1_21_D4_12_balls.vZome` | 5-demicube (`1_21`) | 12 | D4-symmetric |
+| `1_21_B3_15_balls.vZome` | 5-demicube (`1_21`) | 15 | B3-symmetric |
+| `1_22_B3_27_balls.vZome` | E6 root polytope (`1_22`) | 27 | B3-symmetric |
+| `1_22_B3_33_balls.vZome` | E6 root polytope (`1_22`) | 33 | B3-symmetric |
 | `01_...vZome` | `2_21` | 15 | B3-symmetric |
 | `02_...vZome` | `2_21` | 19 | B3-symmetric |
 | `03_...vZome` | `3_21` | 14 | B3-symmetric |
@@ -40,6 +42,7 @@ octahedral symmetry (order 48), D4 means full tetragonal/dihedral symmetry
 
 These models were found by a unified raw-column `Z[phi]^3` sweep.  The R=2
 sweep recovers all ten `2_21`/`3_21`/`4_21` labelled models, including the H3
-family, and the R=3 sweep found no additional distinct models.  For `1_21`,
-R=1, R=2, and R=3 all give the same three models.
+family, and the R=3 sweep found no additional distinct models.  For the
+5-demicube (`1_21`), R=1, R=2, and R=3 all give the same three models.  For
+the E6 root polytope (`1_22`), R=1, R=2, and R=3 all give the same two models.
 

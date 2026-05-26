@@ -8,7 +8,8 @@ projections of the Gosset polytopes:
 
 | Polytope | Natural dimension | Models |
 |---|---:|---:|
-| `1_21` | 5 | 3 |
+| 5-demicube (`1_21`) | 5 | 3 |
+| E6 root polytope (`1_22`) | 6 | 2 |
 | `2_21` | 6 | 2 |
 | `3_21` | 7 | 5 |
 | `4_21` | 8 | 3 |
@@ -44,17 +45,22 @@ constraints and strict orthographicity:
 4. Check the 128 half-root sums of E8.
 5. Collect strict rank-3 images for all relevant source polytopes.  For
    `2_21`/`3_21`/`4_21`, this means all vertex-figure embeddings inside the
-   E8 model.  For `1_21`, the standalone 5-demicube is checked directly; its
-   edge directions are only of the `+/- e_i +/- e_j` type, so there is no
-   E8 half-root condition.
+   E8 model.  For the 5-demicube (`1_21`), the standalone 5-demicube is
+   checked directly; its edge directions are only of the `+/- e_i +/- e_j`
+   type, so there is no E8 half-root condition.  For the E6 root polytope
+   (`1_22`), we realize the polytope as the E8 roots orthogonal to an A2
+   subsystem and use the gauge representative annihilating that A2 complement.
 
 ## Saturation runs
 
 | Range | Runtime | Leaves | Result |
 |---:|---:|---:|---|
-| `1_21`, R=1 | 1.2 s | 433,289 | 3 models |
-| `1_21`, R=2 | 30.4 s | 3,702,503 | same 3 models |
-| `1_21`, R=3 | 708.5 s | 48,536,391 | same 3 models |
+| 5-demicube (`1_21`), R=1 | 1.2 s | 433,289 | 3 models |
+| 5-demicube (`1_21`), R=2 | 30.4 s | 3,702,503 | same 3 models |
+| 5-demicube (`1_21`), R=3 | 708.5 s | 48,536,391 | same 3 models |
+| `1_22`, R=1 | 1.5 s | 433,289 | 2 models |
+| `1_22`, R=2 | 17.0 s | 3,702,503 | same 2 models |
+| `1_22`, R=3 | 444.1 s | 48,536,391 | same 2 models |
 | `2_21`/`3_21`/`4_21`, R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
 | `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 
@@ -109,4 +115,9 @@ The 5-demicube (`1_21`) member adds three models.  Its 15-ball B3 model is the
 same visible point-cloud geometry as the 15-ball branch above; the 8-ball B3
 model and 12-ball D4 model are specific lower-dimensional degenerations of the
 5-demicube and do not match the current `2_21`/`3_21`/`4_21` gallery models.
+
+The E6 root polytope (`1_22`) contributes two labelled B3 models.  Their
+visible point-cloud geometries agree with the `4_21` 27-ball and 33-ball B3
+models, but the source polytope and source edge set are different, so the
+gallery keeps them as separate labelled models.
 
