@@ -8,12 +8,12 @@ Gosset-family polytopes 5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, and
 
 | Source polytope | Natural dimension | Models | Viewer |
 |---|---:|---:|---|
-| 5-demicube (`1_21`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#1_21) |
-| `2_21` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#2_21) |
-| `1_22` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#1_22) |
-| `3_21` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#3_21) |
-| `2_31` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#2_31) |
-| `4_21` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html#4_21) |
+| 5-demicube (`1_21`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_21.html) |
+| `2_21` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_21.html) |
+| `1_22` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_22.html) |
+| `3_21` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
+| `2_31` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
+| `4_21` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 
 All 20 labelled models are available in a flat folder:
 

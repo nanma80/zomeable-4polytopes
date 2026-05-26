@@ -9,7 +9,7 @@ The twenty `.vZome` files are kept in a flat structure for sharing and spot
 checking.  "Balls" counts distinct 3D ball positions in the projected vZome
 model; some vertices of the original Gosset polytope may coincide in 3D.
 
-Open the single-page gallery here:
+Open the viewer index here:
 
 - [`VIEWER.md`](VIEWER.md)
 
