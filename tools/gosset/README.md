@@ -25,6 +25,8 @@ Useful entry points:
   standalone sweep and emission.
 - `zphi_1_22_sweep.py` / `zphi_1_22_emit.py` — E6 root polytope (`1_22`)
   standalone sweep and emission.
+- `zphi_1_32_emit.py` — evaluate and emit `1_32` models from the completed
+  `2_31` projection directions.
 - `zphi_column_postprocess.py` — compare sweep JSON output against curated
   `.vZome` files.
 - `zphi_full_dedup.py` — full Euclidean point-cloud dedup.

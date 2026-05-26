@@ -174,6 +174,61 @@
       "anchor_candidate_images": 120
     },
     {
+      "file": "1_32_B3_38_balls.vZome",
+      "polytope": "1_32",
+      "balls": 38,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48,
+      "hull_vertices": 24
+    },
+    {
+      "file": "1_32_B3_59_balls.vZome",
+      "polytope": "1_32",
+      "balls": 59,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 96,
+      "hull_vertices": 32
+    },
+    {
+      "file": "1_32_B3_81_balls.vZome",
+      "polytope": "1_32",
+      "balls": 81,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 96,
+      "hull_vertices": 24
+    },
+    {
+      "file": "1_32_H3_384_balls_hull32.vZome",
+      "polytope": "1_32",
+      "balls": 384,
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "classification": "H3 / full icosahedral (Ih)",
+      "anchor_candidate_images": 120,
+      "hull_vertices": 32
+    },
+    {
+      "file": "1_32_H3_384_balls_hull80.vZome",
+      "polytope": "1_32",
+      "balls": 384,
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "classification": "H3 / full icosahedral (Ih)",
+      "anchor_candidate_images": 120,
+      "hull_vertices": 80
+    },
+    {
       "file": "4_21_B3_27_balls.vZome",
       "polytope": "4_21",
       "balls": 27,

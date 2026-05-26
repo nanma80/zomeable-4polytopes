@@ -13,6 +13,7 @@ projections of the Gosset polytopes:
 | `2_21` | 6 | 2 |
 | `3_21` | 7 | 5 |
 | `2_31` | 7 | 5 |
+| `1_32` | 7 | 5 |
 | `4_21` | 8 | 3 |
 
 ## Prior work
@@ -65,6 +66,7 @@ constraints and strict orthographicity:
 | `2_31`, R=1 | 8.7 s | 1,370,293 | 5 models |
 | `2_31`, R=2 | 79.8 s | 14,183,831 | same 5 models |
 | `2_31`, R=3 | 57.2 min | 390,832,319 | same 5 models |
+| `1_32` | reused `2_31` directions | — | 5 labelled models |
 | `2_21`/`3_21`/`4_21`, R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
 | `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 
@@ -130,4 +132,10 @@ degenerations with 19, 27, and 33 balls; two are H3-symmetric 93-ball models
 with different convex hulls.  As with `1_22`, some visible geometries agree
 with existing smaller entries, but the `2_31` source polytope and its edge set
 are distinct, so they are listed separately.
+
+The `1_32` member has the same E7 root edge-direction constraints as `2_31`,
+so no separate projection-direction search is needed.  Evaluating the completed
+`2_31` projection directions on the 576-vertex `1_32` source gives five
+labelled models: three B3-symmetric models with 38, 59, and 81 balls, and two
+H3-symmetric 384-ball models.
 
