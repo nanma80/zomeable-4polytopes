@@ -1,10 +1,10 @@
 # Gosset orthographic projections - interactive 3D viewer
 
-**[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html)** to interact with the 15 models below.
+**[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/VIEWER.html)** to interact with the 20 models below.
 
 These are a related non-4D collection: strict orthographic zomeable projections
 of the Gosset-family polytopes 5-demicube (`1_21`), E6 root polytope
-(`1_22`), `2_21`, `3_21`, and `4_21`.
+(`1_22`), `2_21`, `3_21`, `2_31`, and `4_21`.
 
 In the captions, "balls" means distinct 3D ball positions in the vZome model
 after projection; some vertices of the original Gosset polytope may coincide
@@ -117,6 +117,50 @@ in 3D.
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     3_21 H3-symmetric projection - 44 balls
+ </figcaption>
+</figure>
+
+<a id="2_31"></a>
+
+## 2_31
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="2_31_B3_19_balls.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    2_31 B3-symmetric projection - 19 balls
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="2_31_B3_27_balls.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    2_31 B3-symmetric projection - 27 balls
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="2_31_B3_33_balls.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    2_31 B3-symmetric projection - 33 balls
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="2_31_H3_93_balls_hull42.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    2_31 H3-symmetric projection - 93 balls (42 hull vertices)
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="2_31_H3_93_balls_hull30.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    2_31 H3-symmetric projection - 93 balls (30 hull vertices)
  </figcaption>
 </figure>
 
