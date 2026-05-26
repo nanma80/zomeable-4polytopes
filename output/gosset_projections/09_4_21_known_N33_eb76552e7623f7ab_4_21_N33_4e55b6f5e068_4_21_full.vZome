@@ -290,7 +290,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="53.994354248046875" far="215.97740173339844" near="0.539943516254425" parallel="false" stereoAngle="0.0" width="53.99435043334961">
+    <ViewModel distance="134.985886" far="539.943504" near="1.349859" parallel="false" stereoAngle="0.0" width="134.985876">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
       <UpDirection x="-0.06333387643098831" y="0.9575241804122925" z="-0.2813102602958679"/>
       <LookDirection x="-0.22407127916812897" y="-0.28832271695137024" z="-0.9309470653533936"/>
