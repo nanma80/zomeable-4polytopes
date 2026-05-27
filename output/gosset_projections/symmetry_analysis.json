@@ -2,6 +2,36 @@
   "note": "Computed from clean pre-manual-scale files; manual vZome scale edits do not affect symmetry. Full order includes reflections.",
   "items": [
     {
+      "file": "2_11/2_11_B3_7_balls.vZome",
+      "polytope": "2_11",
+      "balls": 7,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "2_11/2_11_D4_7_balls.vZome",
+      "polytope": "2_11",
+      "balls": 7,
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "classification": "D4 / full tetragonal-dihedral",
+      "anchor_candidate_images": 16
+    },
+    {
+      "file": "2_11/2_11_B3_9_balls.vZome",
+      "polytope": "2_11",
+      "balls": 9,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
       "file": "1_21/1_21_B3_8_balls.vZome",
       "polytope": "1_21",
       "balls": 8,
@@ -25,6 +55,36 @@
       "file": "1_21/1_21_B3_15_balls.vZome",
       "polytope": "1_21",
       "balls": 15,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "balls": 19,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_D4_21_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "balls": 21,
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "classification": "D4 / full tetragonal-dihedral",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_26_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "balls": 26,
       "full_symmetry_order": 48,
       "rotational_order": 24,
       "reflection_count": 24,

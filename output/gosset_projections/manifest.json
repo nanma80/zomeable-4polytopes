@@ -1,10 +1,12 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-demicube (1_21), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, and 4_21. Kept as one output category with per-source subfolders for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, and 4_21. Kept as one output category with per-source subfolders for sharing.",
   "viewer": "VIEWER.md",
   "viewer_pages": {
+    "2_11": "2_11.md",
     "1_21": "1_21.md",
+    "rectified_5_orthoplex": "rectified_5_orthoplex.md",
     "2_21": "2_21.md",
     "1_22": "1_22.md",
     "3_21": "3_21.md",
@@ -13,6 +15,27 @@
     "1_32": "1_32.md"
   },
   "models": [
+    {
+      "file": "2_11/2_11_B3_7_balls.vZome",
+      "polytope": "2_11",
+      "common_name": "5-orthoplex",
+      "balls": 7,
+      "symmetry": "B3"
+    },
+    {
+      "file": "2_11/2_11_D4_7_balls.vZome",
+      "polytope": "2_11",
+      "common_name": "5-orthoplex",
+      "balls": 7,
+      "symmetry": "D4"
+    },
+    {
+      "file": "2_11/2_11_B3_9_balls.vZome",
+      "polytope": "2_11",
+      "common_name": "5-orthoplex",
+      "balls": 9,
+      "symmetry": "B3"
+    },
     {
       "file": "1_21/1_21_B3_8_balls.vZome",
       "polytope": "1_21",
@@ -29,6 +52,30 @@
       "file": "1_21/1_21_B3_15_balls.vZome",
       "polytope": "1_21",
       "balls": 15,
+      "symmetry": "B3"
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "common_name": "rectified 5-orthoplex",
+      "coxeter_symbol": "t1 2_11",
+      "balls": 19,
+      "symmetry": "B3"
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_D4_21_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "common_name": "rectified 5-orthoplex",
+      "coxeter_symbol": "t1 2_11",
+      "balls": 21,
+      "symmetry": "D4"
+    },
+    {
+      "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_26_balls.vZome",
+      "polytope": "rectified_5_orthoplex",
+      "common_name": "rectified 5-orthoplex",
+      "coxeter_symbol": "t1 2_11",
+      "balls": 26,
       "symmetry": "B3"
     },
     {

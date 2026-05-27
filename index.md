@@ -29,7 +29,7 @@ Related non-4D collection:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
-| **Gosset orthographic projections** *(5-demicube/1_21, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21)* | 7 | 25 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+| **Gosset orthographic projections** *(5-orthoplex/2_11, 5-demicube/1_21, rectified 5-orthoplex/t1 2_11, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21)* | 9 | 31 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
 
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
 

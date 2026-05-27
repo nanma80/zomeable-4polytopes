@@ -1,0 +1,85 @@
+[
+  {
+    "ok": true,
+    "input_sig": "N19_cf2746136c69",
+    "shape_sig": "N19_cf2746136c69",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\rectified_5_orthoplex\\rectified_5_orthoplex_B3_19_balls.vZome",
+    "balls": 19,
+    "visible_edges": 66,
+    "source_edges": 240,
+    "collapsed": 24,
+    "audit": {
+      "G": 36,
+      "B": 30
+    },
+    "bad": [],
+    "cov_eigs": [
+      0.41025641025641013,
+      0.41025641025641024,
+      0.41025641025641024
+    ],
+    "rank_singular_values": [
+      4.0,
+      4.0,
+      3.9999999999999996
+    ],
+    "scale_factor": "phi^2/3",
+    "symmetry": "B3"
+  },
+  {
+    "ok": true,
+    "input_sig": "N21_ada25230f743",
+    "shape_sig": "N21_ada25230f743",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\rectified_5_orthoplex\\rectified_5_orthoplex_D4_21_balls.vZome",
+    "balls": 21,
+    "visible_edges": 85,
+    "source_edges": 240,
+    "collapsed": 12,
+    "audit": {
+      "Y": 40,
+      "G": 16,
+      "B": 29
+    },
+    "bad": [],
+    "cov_eigs": [
+      0.41025641025641013,
+      0.41025641025641035,
+      0.41025641025641035
+    ],
+    "rank_singular_values": [
+      4.000000000000001,
+      4.000000000000001,
+      4.0
+    ],
+    "scale_factor": "2*phi/3",
+    "symmetry": "D4"
+  },
+  {
+    "ok": true,
+    "input_sig": "N26_5823fab6c04d",
+    "shape_sig": "N26_5823fab6c04d",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\rectified_5_orthoplex\\rectified_5_orthoplex_B3_26_balls.vZome",
+    "balls": 26,
+    "visible_edges": 132,
+    "source_edges": 240,
+    "collapsed": 0,
+    "audit": {
+      "G": 48,
+      "B": 36,
+      "Y": 48
+    },
+    "bad": [],
+    "cov_eigs": [
+      0.41025641025641024,
+      0.41025641025641024,
+      0.41025641025641024
+    ],
+    "rank_singular_values": [
+      4.0,
+      4.0,
+      3.9999999999999996
+    ],
+    "scale_factor": "phi^2/3",
+    "symmetry": "B3"
+  }
+]

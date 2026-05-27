@@ -21,7 +21,12 @@ It enforces:
 Useful entry points:
 
 - `zphi_column_sweep.py` — run the R=1/R=2/R=3 sweep.
+- `zphi_2_11_sweep.py` / `zphi_2_11_emit.py` — 5-orthoplex (`2_11`)
+  standalone sweep and emission.
 - `zphi_1_21_sweep.py` / `zphi_1_21_emit.py` — 5-demicube (`1_21`)
+  standalone sweep and emission.
+- `zphi_rectified_5_orthoplex_sweep.py` /
+  `zphi_rectified_5_orthoplex_emit.py` — rectified 5-orthoplex (`t1 2_11`)
   standalone sweep and emission.
 - `zphi_1_22_sweep.py` / `zphi_1_22_emit.py` — E6 root polytope (`1_22`)
   standalone sweep and emission.

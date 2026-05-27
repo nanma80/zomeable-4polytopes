@@ -4,11 +4,13 @@ This page records the method used for the related
 [`output/gosset_projections/`](../output/gosset_projections/) collection.
 
 The models are not 4-polytopes.  They are strict orthographic zomeable
-projections of the Gosset polytopes:
+projections of Gosset-family and adjacent D/E root polytopes:
 
 | Polytope | Natural dimension | Models |
 |---|---:|---:|
+| 5-orthoplex (`2_11`) | 5 | 3 |
 | 5-demicube (`1_21`) | 5 | 3 |
+| Rectified 5-orthoplex (`t1 2_11`) | 5 | 3 |
 | E6 root polytope (`1_22`) | 6 | 2 |
 | `2_21` | 6 | 2 |
 | `3_21` | 7 | 5 |
@@ -47,26 +49,36 @@ constraints and strict orthographicity:
 4. Check the 128 half-root sums of E8.
 5. Collect strict rank-3 images for all relevant source polytopes.  For
    `2_21`/`3_21`/`4_21`, this means all vertex-figure embeddings inside the
-   E8 model.  For the 5-demicube (`1_21`), the standalone 5-demicube is
-   checked directly; its edge directions are only of the `+/- e_i +/- e_j`
-   type, so there is no E8 half-root condition.  For the E6 root polytope
-   (`1_22`), we realize the polytope as the E8 roots orthogonal to an A2
-   subsystem and use the gauge representative annihilating that A2 complement.
+   E8 model.  For `2_11`, `1_21`, and the rectified 5-orthoplex, the
+   standalone source polytopes are checked directly; their edge directions are
+   only of the `+/- e_i +/- e_j` type, so there is no E8 half-root condition.
+   The rectified 5-orthoplex is the D5 root polytope with vertices all
+   permutations of
+   `(+/-1,+/-1,0,0,0)`, so it has the same D5 root edge-direction constraints
+   as `1_21`.  For the E6 root polytope (`1_22`), we realize the polytope as
+   the E8 roots orthogonal to an A2 subsystem and use the gauge representative
+   annihilating that A2 complement.
 
 ## Saturation runs
 
 | Range | Runtime | Leaves | Result |
 |---:|---:|---:|---|
+| 5-orthoplex (`2_11`), R=1 | 1.2 s | 433,289 | 3 models |
+| 5-orthoplex (`2_11`), R=2 | 29.3 s | 3,702,503 | same 3 models |
+| 5-orthoplex (`2_11`), R=3 | 673.9 s | 48,536,391 | same 3 models |
 | 5-demicube (`1_21`), R=1 | 1.2 s | 433,289 | 3 models |
 | 5-demicube (`1_21`), R=2 | 30.4 s | 3,702,503 | same 3 models |
 | 5-demicube (`1_21`), R=3 | 708.5 s | 48,536,391 | same 3 models |
+| Rectified 5-orthoplex (`t1 2_11`), R=1 | 1.3 s | 433,289 | 3 models |
+| Rectified 5-orthoplex (`t1 2_11`), R=2 | 32.7 s | 3,702,503 | same 3 models |
+| Rectified 5-orthoplex (`t1 2_11`), R=3 | 678.4 s | 48,536,391 | same 3 models |
 | `1_22`, R=1 | 1.5 s | 433,289 | 2 models |
 | `1_22`, R=2 | 17.0 s | 3,702,503 | same 2 models |
 | `1_22`, R=3 | 444.1 s | 48,536,391 | same 2 models |
 | `2_31`, R=1 | 8.7 s | 1,370,293 | 5 models |
 | `2_31`, R=2 | 79.8 s | 14,183,831 | same 5 models |
 | `2_31`, R=3 | 57.2 min | 390,832,319 | same 5 models |
-| `1_32` | reused `2_31` directions | — | 5 labelled models |
+| `1_32` | reused `2_31` directions | n/a | 5 labelled models |
 | `2_21`/`3_21`/`4_21`, R=2 | 0.98 h | 190,459,868 | all 10 labelled models |
 | `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 
@@ -117,10 +129,19 @@ gives the 14-ball cube-hull image.  Thus the 14-ball `3_21` model is not an
 unrelated projection direction; it is another degeneration within the same B3
 projection branch.
 
-The 5-demicube (`1_21`) member adds three models.  Its 15-ball B3 model is the
+The regular 5-orthoplex (`2_11`) adds three labelled models: two B3-symmetric
+models with 7 and 9 balls, and one D4-symmetric model with 7 balls.  The
+5-demicube (`1_21`) member adds three models.  Its 15-ball B3 model is the
 same visible point-cloud geometry as the 15-ball branch above; the 8-ball B3
 model and 12-ball D4 model are specific lower-dimensional degenerations of the
 5-demicube and do not match the current `2_21`/`3_21`/`4_21` gallery models.
+
+The rectified 5-orthoplex fits the notation as the first rectification of
+`2_11`, so a compact label is `t1 2_11`.  It is the D5 root polytope /
+rectified pentacross (`t1{3,3,3,4}`), while unmodified `2_11` is the regular
+5-orthoplex.  Since its 240 edges use the same D5 root directions as the
+5-demicube, the direct R=1/R=2/R=3 sweep gives three labelled models with 19,
+21, and 26 balls.
 
 The E6 root polytope (`1_22`) contributes two labelled B3 models.  Their
 visible point-cloud geometries agree with the `4_21` 27-ball and 33-ball B3

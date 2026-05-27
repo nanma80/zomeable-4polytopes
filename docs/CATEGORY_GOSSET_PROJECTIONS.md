@@ -2,13 +2,14 @@
 
 This is a related non-4D collection hosted in the same repository for
 convenience and shared tooling.  These models are not part of the 4-polytope
-category taxonomy; they are strict orthographic zomeable projections of the
-Gosset-family polytopes 5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, and
-`2_31`, `1_32`, and `4_21`.
+category taxonomy; they are strict orthographic zomeable projections of
+Gosset-family and adjacent D/E root polytopes.
 
 | Source polytope | Natural dimension | Models | Viewer |
 |---|---:|---:|---|
+| 5-orthoplex (`2_11`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_11.html) |
 | 5-demicube (`1_21`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_21.html) |
+| Rectified 5-orthoplex (`t1 2_11`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/rectified_5_orthoplex.html) |
 | `2_21` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_21.html) |
 | `1_22` | 6 | 2 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_22.html) |
 | `3_21` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
@@ -16,14 +17,14 @@ Gosset-family polytopes 5-demicube (`1_21`), `2_21`, `1_22`, `3_21`, and
 | `1_32` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
 | `4_21` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 
-All 25 labelled models are available in a flat folder:
+All 31 labelled models are available in this folder tree:
 
 - [`output/gosset_projections/`](../output/gosset_projections/)
 
 The ball counts on the viewer page count distinct 3D ball positions after
-projection, not vertices of the original higher-dimensional Gosset polytope.
-Seventeen models have full B3/octahedral point-cloud symmetry; one 5-demicube
-(`1_21`) model has full D4/tetragonal point-cloud symmetry; the two `3_21`
+projection, not vertices of the original higher-dimensional source polytope.
+Twenty-one models have full B3/octahedral point-cloud symmetry; three models have
+full D4/tetragonal point-cloud symmetry; the two `3_21`
 N=44 models, the two `2_31` N=93 models, the two `1_32` 384-ball models, and the `4_21` N=137 model have full
 H3/icosahedral symmetry.
 
@@ -33,6 +34,8 @@ found no additional distinct models.  For the 5-demicube (`1_21`), the same
 methodology finds three models and saturates already at R=1.  For `1_22`, the
 same methodology finds two models and saturates through R=3.  For `2_31`, it
 finds five models and saturates through R=3.  For `1_32`, evaluating those
-same E7 projection directions gives five labelled models.
+same E7 projection directions gives five labelled models.  The rectified
+5-orthoplex and `2_11` have the same D5 root edge-direction constraints as
+`1_21`; direct R=1/R=2/R=3 sweeps give three labelled models each.
 See [`GOSSET_PROJECTIONS.md`](GOSSET_PROJECTIONS.md) for the sweep method and
 symmetry audit.
