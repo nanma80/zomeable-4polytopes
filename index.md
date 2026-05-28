@@ -30,7 +30,7 @@ Related non-4D collection:
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
 | **Gosset orthographic projections** *(5-orthoplex/2_11, 5-demicube/1_21, rectified 5-orthoplex/t1 2_11, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21, 2_41)* | 10 | 34 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
-| **A5 simplex family projections** *(5-simplex, rectified 5-simplex, birectified 5-simplex)* | 3 | 9 | [**View A5 projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
+| **A5 simplex family projections** *(all 19 A5 Wythoff polytopes)* | 19 | 57 | [**View A5 projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
 
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
 

@@ -2,7 +2,7 @@
   "polytope_family": "A5",
   "R": 2,
   "status": "complete",
-  "elapsed_s": 116.75470304489136,
+  "elapsed_s": 120.01009058952332,
   "stats": {
     "leaf": 24968567,
     "ortho_hits": 280

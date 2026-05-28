@@ -6,7 +6,6 @@ Run from repo root.  Prints a table used to curate the published gallery.
 from __future__ import annotations
 
 import importlib.util
-import itertools
 import json
 import sys
 from fractions import Fraction
@@ -27,34 +26,23 @@ col = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(col)
 
+from family import POLYS, build_polytope  # noqa: E402
+
 PHI = (1 + 5 ** 0.5) / 2
-POLYS = (("5_simplex", 1), ("rectified_5_simplex", 2), ("birectified_5_simplex", 3))
-
-
-def build_polytope(k):
-    verts = list(itertools.combinations(range(6), k))
-    V = np.zeros((len(verts), 6))
-    for r, combo in enumerate(verts):
-        for idx in combo:
-            V[r, idx] = 1.0
-    edges = []
-    for i in range(len(V)):
-        for j in range(i + 1, len(V)):
-            if int(np.sum(np.abs(V[i] - V[j]))) == 2:
-                edges.append((i, j))
-    return verts, V, edges
 
 
 def gf_pair(pair):
     return GF(Fraction(pair[0]), Fraction(pair[1]))
 
 
-def project_point(combo, columns6):
+def project_point(vertex, columns6):
     coords = [GF(0), GF(0), GF(0)]
-    for idx in combo:
+    for idx, weight in enumerate(vertex):
+        if weight == 0:
+            continue
         c = columns6[idx]
         for r in range(3):
-            coords[r] = coords[r] + gf_pair(c[r])
+            coords[r] = coords[r] + gf_pair(c[r]) * weight
     return tuple(coords)
 
 
@@ -178,8 +166,9 @@ def main():
     rows = []
     for key, hit in sorted(data["hits"].items()):
         columns6 = [tuple(tuple(int(x) for x in z) for z in c) for c in hit["columns"]]
-        for name, k in POLYS:
-            verts, V, edges = build_polytope(k)
+        for poly in POLYS:
+            name = poly["slug"]
+            verts, V, edges = build_polytope(name)
             pts = [project_point(combo, columns6) for combo in verts]
             # collapse coincident
             pidx, points, v2p = {}, [], []

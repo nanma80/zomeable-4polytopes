@@ -12,7 +12,7 @@ For every (shape, polytope) pair this:
      a ball), and a <Viewing> block fitted to the model bounds.
 
 The directions of every edge are genuine zome axes (verified BAD == 0 by the
-sweep/emit), so all nine models are strict-orthographic zome-direction
+sweep/emit), so all emitted models are strict-orthographic zome-direction
 projections; the per-color strut multiples are recorded in the manifest.
 """
 from __future__ import annotations
@@ -20,7 +20,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
-import itertools
 import json
 import math
 import sys
@@ -52,35 +51,24 @@ col = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(col)
 
+from family import POLYS, build_polytope  # noqa: E402
+
 PHI = (1 + 5 ** 0.5) / 2
-POLYS = (("5_simplex", 1), ("rectified_5_simplex", 2), ("birectified_5_simplex", 3))
 HALF = GF(Fraction(1, 2), 0)
-
-
-def build_polytope(k: int):
-    verts = list(itertools.combinations(range(6), k))
-    V = np.zeros((len(verts), 6))
-    for r, combo in enumerate(verts):
-        for idx in combo:
-            V[r, idx] = 1.0
-    edges = []
-    for i in range(len(V)):
-        for j in range(i + 1, len(V)):
-            if int(np.sum(np.abs(V[i] - V[j]))) == 2:
-                edges.append((i, j))
-    return verts, edges
 
 
 def gf_pair(pair):
     return GF(Fraction(pair[0]), Fraction(pair[1]))
 
 
-def project_point(combo, columns6):
+def project_point(vertex, columns6):
     coords = [GF(0), GF(0), GF(0)]
-    for idx in combo:
+    for idx, weight in enumerate(vertex):
+        if weight == 0:
+            continue
         c = columns6[idx]
         for r in range(3):
-            coords[r] = coords[r] + gf_pair(c[r])
+            coords[r] = coords[r] + gf_pair(c[r]) * weight
     return tuple(coords)
 
 
@@ -307,8 +295,9 @@ def main():
     for key, hit in sorted(data["hits"].items()):
         columns6 = [tuple(tuple(int(x) for x in z) for z in c) for c in hit["columns"]]
         khash = hashlib.sha1(key.encode()).hexdigest()[:6]
-        for name, k in POLYS:
-            verts, edges = build_polytope(k)
+        for poly in POLYS:
+            name = poly["slug"]
+            verts, _V, edges = build_polytope(name)
             points, edge_list = collapse(verts, edges, columns6)
             best = choose_scale(points, edge_list)
             _cost, num, den, n, s, classes, n_std, n_dbl = best
@@ -352,6 +341,11 @@ def main():
                 "file": rel,
                 "family_key": key,
                 "polytope": name,
+                "display": poly["display"],
+                "nodes": list(poly["nodes"]),
+                "base": list(poly["base"]),
+                "source_vertices": poly["vertices"],
+                "source_edges": len(edges),
                 "balls": len(points),
                 "edges": len(edge_list),
                 "symmetry_order": sym,
@@ -379,7 +373,7 @@ def main():
                 }
             )
             print(
-                f"{name:24s} {khash} balls={len(points):2d} edges={len(edge_list):2d} "
+                f"{name:24s} {khash} balls={len(points):3d} edges={len(edge_list):4d} "
                 f"sym={sym:2d} scale={row['scale']:<12s} struts={strut_colors} "
                 f"dir_only={non_standard} BAD={bad}"
             )

@@ -1,16 +1,353 @@
 {
   "polytope_family": "A5",
-  "description": "A5 / 5-simplex family: t0 (6), t1 rectified (15), t2 birectified (20)",
+  "description": "A5 / 5-simplex uniform family: all 19 Wythoff ringed-node subsets modulo reversal",
+  "polytopes": [
+    {
+      "slug": "5_simplex",
+      "display": "5-simplex (hexateron)",
+      "nodes": [
+        1
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 6
+    },
+    {
+      "slug": "rectified_5_simplex",
+      "display": "Rectified 5-simplex",
+      "nodes": [
+        2
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 15
+    },
+    {
+      "slug": "birectified_5_simplex",
+      "display": "Birectified 5-simplex",
+      "nodes": [
+        3
+      ],
+      "base": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 20
+    },
+    {
+      "slug": "a5_t12",
+      "display": "A5 Wythoff t{1,2}",
+      "nodes": [
+        1,
+        2
+      ],
+      "base": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 30
+    },
+    {
+      "slug": "a5_t13",
+      "display": "A5 Wythoff t{1,3}",
+      "nodes": [
+        1,
+        3
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t14",
+      "display": "A5 Wythoff t{1,4}",
+      "nodes": [
+        1,
+        4
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t15",
+      "display": "A5 Wythoff t{1,5}",
+      "nodes": [
+        1,
+        5
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "vertices": 30
+    },
+    {
+      "slug": "a5_t23",
+      "display": "A5 Wythoff t{2,3}",
+      "nodes": [
+        2,
+        3
+      ],
+      "base": [
+        2,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t24",
+      "display": "A5 Wythoff t{2,4}",
+      "nodes": [
+        2,
+        4
+      ],
+      "base": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 90
+    },
+    {
+      "slug": "a5_t123",
+      "display": "A5 Wythoff t{1,2,3}",
+      "nodes": [
+        1,
+        2,
+        3
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 120
+    },
+    {
+      "slug": "a5_t124",
+      "display": "A5 Wythoff t{1,2,4}",
+      "nodes": [
+        1,
+        2,
+        4
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t125",
+      "display": "A5 Wythoff t{1,2,5}",
+      "nodes": [
+        1,
+        2,
+        5
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "vertices": 120
+    },
+    {
+      "slug": "a5_t134",
+      "display": "A5 Wythoff t{1,3,4}",
+      "nodes": [
+        1,
+        3,
+        4
+      ],
+      "base": [
+        3,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t135",
+      "display": "A5 Wythoff t{1,3,5}",
+      "nodes": [
+        1,
+        3,
+        5
+      ],
+      "base": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t234",
+      "display": "A5 Wythoff t{2,3,4}",
+      "nodes": [
+        2,
+        3,
+        4
+      ],
+      "base": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t1234",
+      "display": "A5 Wythoff t{1,2,3,4}",
+      "nodes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t1235",
+      "display": "A5 Wythoff t{1,2,3,5}",
+      "nodes": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t1245",
+      "display": "A5 Wythoff t{1,2,4,5}",
+      "nodes": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t12345",
+      "display": "A5 Wythoff t{1,2,3,4,5}",
+      "nodes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "base": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "vertices": 720
+    }
+  ],
   "R": 2,
   "status": "complete",
-  "elapsed_s": 116.75470304489136,
+  "elapsed_s": 120.01009058952332,
   "candidates": 733,
   "stats": {
     "leaf": 24968567,
     "ortho_hits": 280
   },
   "hits": {
-    "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96": {
+    "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035": {
       "columns": [
         [
           [
@@ -109,10 +446,74 @@
         "birectified_5_simplex": {
           "sig": "N14_4d5740e23b96",
           "N": 14
+        },
+        "a5_t12": {
+          "sig": "N21_5f3b31f88adb",
+          "N": 21
+        },
+        "a5_t13": {
+          "sig": "N38_ed9de599891d",
+          "N": 38
+        },
+        "a5_t14": {
+          "sig": "N38_344aecee4ca2",
+          "N": 38
+        },
+        "a5_t15": {
+          "sig": "N21_65778fd07bb8",
+          "N": 21
+        },
+        "a5_t23": {
+          "sig": "N38_ffc26f3dd5e3",
+          "N": 38
+        },
+        "a5_t24": {
+          "sig": "N48_966b288cc318",
+          "N": 48
+        },
+        "a5_t123": {
+          "sig": "N72_ac7adfcedbaa",
+          "N": 72
+        },
+        "a5_t124": {
+          "sig": "N90_c380672e4183",
+          "N": 90
+        },
+        "a5_t125": {
+          "sig": "N72_7eef4e699ede",
+          "N": 72
+        },
+        "a5_t134": {
+          "sig": "N102_5ee36accd4f8",
+          "N": 102
+        },
+        "a5_t135": {
+          "sig": "N90_619e4f489743",
+          "N": 90
+        },
+        "a5_t234": {
+          "sig": "N102_6ea5d813e5c0",
+          "N": 102
+        },
+        "a5_t1234": {
+          "sig": "N168_2fa6aff08985",
+          "N": 168
+        },
+        "a5_t1235": {
+          "sig": "N168_21f7af10f994",
+          "N": 168
+        },
+        "a5_t1245": {
+          "sig": "N168_21f7af10f994",
+          "N": 168
+        },
+        "a5_t12345": {
+          "sig": "N240_788a79b2c035",
+          "N": 240
         }
       }
     },
-    "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e": {
+    "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97": {
       "columns": [
         [
           [
@@ -211,10 +612,74 @@
         "birectified_5_simplex": {
           "sig": "N14_ba65230b4a9e",
           "N": 14
+        },
+        "a5_t12": {
+          "sig": "N30_a878e70fa737",
+          "N": 30
+        },
+        "a5_t13": {
+          "sig": "N42_02b7aee64cd1",
+          "N": 42
+        },
+        "a5_t14": {
+          "sig": "N38_bfac3ef80fd5",
+          "N": 38
+        },
+        "a5_t15": {
+          "sig": "N18_284d1ddc4e36",
+          "N": 18
+        },
+        "a5_t23": {
+          "sig": "N54_3e6c0112df84",
+          "N": 54
+        },
+        "a5_t24": {
+          "sig": "N49_13fe1ede87c3",
+          "N": 49
+        },
+        "a5_t123": {
+          "sig": "N96_73d951df925f",
+          "N": 96
+        },
+        "a5_t124": {
+          "sig": "N110_e091a36d5e4f",
+          "N": 110
+        },
+        "a5_t125": {
+          "sig": "N72_a9ba2add485b",
+          "N": 72
+        },
+        "a5_t134": {
+          "sig": "N122_6ef3be2025bd",
+          "N": 122
+        },
+        "a5_t135": {
+          "sig": "N86_ac41a66eacaf",
+          "N": 86
+        },
+        "a5_t234": {
+          "sig": "N102_0865fe2e743b",
+          "N": 102
+        },
+        "a5_t1234": {
+          "sig": "N240_b8decb44aa97",
+          "N": 240
+        },
+        "a5_t1235": {
+          "sig": "N224_b8decb44aa97",
+          "N": 224
+        },
+        "a5_t1245": {
+          "sig": "N152_9bf8916cbeb3",
+          "N": 152
+        },
+        "a5_t12345": {
+          "sig": "N304_b8decb44aa97",
+          "N": 304
         }
       }
     },
-    "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba": {
+    "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39": {
       "columns": [
         [
           [
@@ -313,6 +778,70 @@
         "birectified_5_simplex": {
           "sig": "N14_6418e84ebeba",
           "N": 14
+        },
+        "a5_t12": {
+          "sig": "N21_05a0f23df0a4",
+          "N": 21
+        },
+        "a5_t13": {
+          "sig": "N38_01ada533c8dc",
+          "N": 38
+        },
+        "a5_t14": {
+          "sig": "N38_b22e9e49c617",
+          "N": 38
+        },
+        "a5_t15": {
+          "sig": "N21_7be7f51a13a7",
+          "N": 21
+        },
+        "a5_t23": {
+          "sig": "N38_b99042965ae4",
+          "N": 38
+        },
+        "a5_t24": {
+          "sig": "N54_448781eab625",
+          "N": 54
+        },
+        "a5_t123": {
+          "sig": "N72_1f1e0fb697c0",
+          "N": 72
+        },
+        "a5_t124": {
+          "sig": "N102_8783e8da6543",
+          "N": 102
+        },
+        "a5_t125": {
+          "sig": "N72_2aa438e272cb",
+          "N": 72
+        },
+        "a5_t134": {
+          "sig": "N102_a03c176929b7",
+          "N": 102
+        },
+        "a5_t135": {
+          "sig": "N102_daa14be78d1c",
+          "N": 102
+        },
+        "a5_t234": {
+          "sig": "N102_47dffdc0cdf7",
+          "N": 102
+        },
+        "a5_t1234": {
+          "sig": "N192_83c130f6a1b9",
+          "N": 192
+        },
+        "a5_t1235": {
+          "sig": "N192_8848b5f7479d",
+          "N": 192
+        },
+        "a5_t1245": {
+          "sig": "N192_c0c0138fe6c0",
+          "N": 192
+        },
+        "a5_t12345": {
+          "sig": "N300_eacf91cf0a39",
+          "N": 300
         }
       }
     }

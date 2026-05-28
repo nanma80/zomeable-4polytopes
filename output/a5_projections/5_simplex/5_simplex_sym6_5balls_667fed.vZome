@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
   <EditHistory editNumber="17" lastStickyEdit="-1">
-    <ShowPoint point="4/5 -1/5 9/5 14/5 6/5 6/5"/>
-    <ShowPoint point="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
-    <ShowPoint point="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
-    <ShowPoint point="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
     <ShowPoint point="9/5 14/5 -6/5 -6/5 -4/5 1/5"/>
-    <JoinPointPair start="4/5 -1/5 9/5 14/5 6/5 6/5" end="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
-    <JoinPointPair start="4/5 -1/5 9/5 14/5 6/5 6/5" end="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
-    <JoinPointPair start="4/5 -1/5 9/5 14/5 6/5 6/5" end="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
-    <JoinPointPair start="4/5 -1/5 9/5 14/5 6/5 6/5" end="9/5 14/5 -6/5 -6/5 -4/5 1/5"/>
-    <JoinPointPair start="-6/5 -6/5 -6/5 -6/5 6/5 6/5" end="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
-    <JoinPointPair start="-6/5 -6/5 -6/5 -6/5 6/5 6/5" end="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
-    <JoinPointPair start="-6/5 -6/5 -6/5 -6/5 6/5 6/5" end="9/5 14/5 -6/5 -6/5 -4/5 1/5"/>
-    <JoinPointPair start="-6/5 -6/5 4/5 -1/5 -9/5 -14/5" end="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
-    <JoinPointPair start="-6/5 -6/5 4/5 -1/5 -9/5 -14/5" end="9/5 14/5 -6/5 -6/5 -4/5 1/5"/>
-    <JoinPointPair start="-1/5 -1/5 -1/5 -1/5 1/5 1/5" end="9/5 14/5 -6/5 -6/5 -4/5 1/5"/>
+    <ShowPoint point="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
+    <ShowPoint point="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
+    <ShowPoint point="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
+    <ShowPoint point="4/5 -1/5 9/5 14/5 6/5 6/5"/>
+    <JoinPointPair start="9/5 14/5 -6/5 -6/5 -4/5 1/5" end="-1/5 -1/5 -1/5 -1/5 1/5 1/5"/>
+    <JoinPointPair start="9/5 14/5 -6/5 -6/5 -4/5 1/5" end="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
+    <JoinPointPair start="9/5 14/5 -6/5 -6/5 -4/5 1/5" end="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
+    <JoinPointPair start="9/5 14/5 -6/5 -6/5 -4/5 1/5" end="4/5 -1/5 9/5 14/5 6/5 6/5"/>
+    <JoinPointPair start="-1/5 -1/5 -1/5 -1/5 1/5 1/5" end="-6/5 -6/5 4/5 -1/5 -9/5 -14/5"/>
+    <JoinPointPair start="-1/5 -1/5 -1/5 -1/5 1/5 1/5" end="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
+    <JoinPointPair start="-1/5 -1/5 -1/5 -1/5 1/5 1/5" end="4/5 -1/5 9/5 14/5 6/5 6/5"/>
+    <JoinPointPair start="-6/5 -6/5 4/5 -1/5 -9/5 -14/5" end="-6/5 -6/5 -6/5 -6/5 6/5 6/5"/>
+    <JoinPointPair start="-6/5 -6/5 4/5 -1/5 -9/5 -14/5" end="4/5 -1/5 9/5 14/5 6/5 6/5"/>
+    <JoinPointPair start="-6/5 -6/5 -6/5 -6/5 6/5 6/5" end="4/5 -1/5 9/5 14/5 6/5 6/5"/>
     <SelectManifestation point="0 0 0 0 0 0"/>
     <Delete/>
   </EditHistory>

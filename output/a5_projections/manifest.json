@@ -1,8 +1,22 @@
 [
   {
-    "file": "5_simplex/5_simplex_sym24_5balls_4fb6eb.vZome",
-    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "file": "5_simplex/5_simplex_sym24_5balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "5_simplex",
+    "display": "5-simplex (hexateron)",
+    "nodes": [
+      1
+    ],
+    "base": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 6,
+    "source_edges": 15,
     "balls": 5,
     "edges": 10,
     "symmetry_order": 24,
@@ -12,12 +26,12 @@
       "1/3"
     ],
     "strut_colors": {
-      "Y": 4,
-      "G": 6
+      "G": 6,
+      "Y": 4
     },
     "direction_colors": {
-      "Y": 4,
-      "G": 6
+      "G": 6,
+      "Y": 4
     },
     "edges_standard": 10,
     "edges_double": 0,
@@ -26,9 +40,23 @@
     "fully_buildable": true
   },
   {
-    "file": "rectified_5_simplex/rectified_5_simplex_sym24_11balls_4fb6eb.vZome",
-    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "file": "rectified_5_simplex/rectified_5_simplex_sym24_11balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "rectified_5_simplex",
+    "display": "Rectified 5-simplex",
+    "nodes": [
+      2
+    ],
+    "base": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 15,
+    "source_edges": 60,
     "balls": 11,
     "edges": 34,
     "symmetry_order": 24,
@@ -38,12 +66,12 @@
       "1/3"
     ],
     "strut_colors": {
-      "G": 18,
-      "Y": 16
+      "Y": 16,
+      "G": 18
     },
     "direction_colors": {
-      "G": 18,
-      "Y": 16
+      "Y": 16,
+      "G": 18
     },
     "edges_standard": 34,
     "edges_double": 0,
@@ -52,9 +80,23 @@
     "fully_buildable": true
   },
   {
-    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_4fb6eb.vZome",
-    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "birectified_5_simplex",
+    "display": "Birectified 5-simplex",
+    "nodes": [
+      3
+    ],
+    "base": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 20,
+    "source_edges": 90,
     "balls": 14,
     "edges": 48,
     "symmetry_order": 48,
@@ -78,9 +120,694 @@
     "fully_buildable": true
   },
   {
-    "file": "5_simplex/5_simplex_sym6_5balls_cfe09c.vZome",
-    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "file": "a5_t12/a5_t12_sym24_21balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t12",
+    "display": "A5 Wythoff t{1,2}",
+    "nodes": [
+      1,
+      2
+    ],
+    "base": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 75,
+    "balls": 21,
+    "edges": 44,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 24,
+      "Y": 20
+    },
+    "direction_colors": {
+      "G": 24,
+      "Y": 20
+    },
+    "edges_standard": 44,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t13/a5_t13_sym24_38balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t13",
+    "display": "A5 Wythoff t{1,3}",
+    "nodes": [
+      1,
+      3
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 240,
+    "balls": 38,
+    "edges": 124,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 60,
+      "Y": 64
+    },
+    "direction_colors": {
+      "G": 60,
+      "Y": 64
+    },
+    "edges_standard": 124,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t14/a5_t14_sym24_38balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t14",
+    "display": "A5 Wythoff t{1,4}",
+    "nodes": [
+      1,
+      4
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 270,
+    "balls": 38,
+    "edges": 138,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 66,
+      "Y": 72
+    },
+    "direction_colors": {
+      "G": 66,
+      "Y": 72
+    },
+    "edges_standard": 138,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t15/a5_t15_sym48_21balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t15",
+    "display": "A5 Wythoff t{1,5}",
+    "nodes": [
+      1,
+      5
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 120,
+    "balls": 21,
+    "edges": 68,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 36,
+      "Y": 32
+    },
+    "direction_colors": {
+      "G": 36,
+      "Y": 32
+    },
+    "edges_standard": 68,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t23/a5_t23_sym24_38balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t23",
+    "display": "A5 Wythoff t{2,3}",
+    "nodes": [
+      2,
+      3
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 150,
+    "balls": 38,
+    "edges": 82,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "Y": 40,
+      "G": 42
+    },
+    "direction_colors": {
+      "Y": 40,
+      "G": 42
+    },
+    "edges_standard": 82,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t24/a5_t24_sym48_48balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t24",
+    "display": "A5 Wythoff t{2,4}",
+    "nodes": [
+      2,
+      4
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 90,
+    "source_edges": 360,
+    "balls": 48,
+    "edges": 168,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "Y": 96,
+      "G": 72
+    },
+    "direction_colors": {
+      "Y": 96,
+      "G": 72
+    },
+    "edges_standard": 168,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t123/a5_t123_sym24_72balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t123",
+    "display": "A5 Wythoff t{1,2,3}",
+    "nodes": [
+      1,
+      2,
+      3
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 300,
+    "balls": 72,
+    "edges": 158,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 78,
+      "Y": 80
+    },
+    "direction_colors": {
+      "G": 78,
+      "Y": 80
+    },
+    "edges_standard": 158,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t124/a5_t124_sym24_90balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t124",
+    "display": "A5 Wythoff t{1,2,4}",
+    "nodes": [
+      1,
+      2,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 630,
+    "balls": 90,
+    "edges": 288,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 120,
+      "Y": 168
+    },
+    "direction_colors": {
+      "G": 120,
+      "Y": 168
+    },
+    "edges_standard": 288,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t125/a5_t125_sym24_72balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t125",
+    "display": "A5 Wythoff t{1,2,5}",
+    "nodes": [
+      1,
+      2,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 420,
+    "balls": 72,
+    "edges": 214,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 102,
+      "Y": 112
+    },
+    "direction_colors": {
+      "G": 102,
+      "Y": 112
+    },
+    "edges_standard": 214,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t134/a5_t134_sym24_102balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t134",
+    "display": "A5 Wythoff t{1,3,4}",
+    "nodes": [
+      1,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 540,
+    "balls": 102,
+    "edges": 270,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 126,
+      "Y": 144
+    },
+    "direction_colors": {
+      "G": 126,
+      "Y": 144
+    },
+    "edges_standard": 270,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t135/a5_t135_sym48_90balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t135",
+    "display": "A5 Wythoff t{1,3,5}",
+    "nodes": [
+      1,
+      3,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 720,
+    "balls": 90,
+    "edges": 324,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 132,
+      "Y": 192
+    },
+    "direction_colors": {
+      "G": 132,
+      "Y": 192
+    },
+    "edges_standard": 324,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t234/a5_t234_sym48_102balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t234",
+    "display": "A5 Wythoff t{2,3,4}",
+    "nodes": [
+      2,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 450,
+    "balls": 102,
+    "edges": 228,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "Y": 120,
+      "G": 108
+    },
+    "direction_colors": {
+      "Y": 120,
+      "G": 108
+    },
+    "edges_standard": 228,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1234/a5_t1234_sym24_168balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t1234",
+    "display": "A5 Wythoff t{1,2,3,4}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 900,
+    "balls": 168,
+    "edges": 402,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 162,
+      "Y": 240
+    },
+    "direction_colors": {
+      "G": 162,
+      "Y": 240
+    },
+    "edges_standard": 402,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1235/a5_t1235_sym24_168balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t1235",
+    "display": "A5 Wythoff t{1,2,3,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 168,
+    "edges": 480,
+    "symmetry_order": 24,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 192,
+      "Y": 288
+    },
+    "direction_colors": {
+      "G": 192,
+      "Y": 288
+    },
+    "edges_standard": 480,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1245/a5_t1245_sym48_168balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t1245",
+    "display": "A5 Wythoff t{1,2,4,5}",
+    "nodes": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 168,
+    "edges": 480,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 192,
+      "Y": 288
+    },
+    "direction_colors": {
+      "G": 192,
+      "Y": 288
+    },
+    "edges_standard": 480,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t12345/a5_t12345_sym48_240balls_30531f.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
+    "polytope": "a5_t12345",
+    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "base": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 720,
+    "source_edges": 1800,
+    "balls": 240,
+    "edges": 600,
+    "symmetry_order": 48,
+    "scale": "phi^2/3",
+    "zphi_pair": [
+      "1/3",
+      "1/3"
+    ],
+    "strut_colors": {
+      "G": 216,
+      "Y": 384
+    },
+    "direction_colors": {
+      "G": 216,
+      "Y": 384
+    },
+    "edges_standard": 600,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "5_simplex/5_simplex_sym6_5balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "5_simplex",
+    "display": "5-simplex (hexateron)",
+    "nodes": [
+      1
+    ],
+    "base": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 6,
+    "source_edges": 15,
     "balls": 5,
     "edges": 10,
     "symmetry_order": 6,
@@ -94,9 +821,9 @@
       "Y": 1
     },
     "direction_colors": {
-      "Y": 4,
+      "G": 3,
       "B": 3,
-      "G": 3
+      "Y": 4
     },
     "edges_standard": 4,
     "edges_double": 0,
@@ -105,9 +832,23 @@
     "fully_buildable": false
   },
   {
-    "file": "rectified_5_simplex/rectified_5_simplex_sym6_11balls_cfe09c.vZome",
-    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "file": "rectified_5_simplex/rectified_5_simplex_sym6_11balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "rectified_5_simplex",
+    "display": "Rectified 5-simplex",
+    "nodes": [
+      2
+    ],
+    "base": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 15,
+    "source_edges": 60,
     "balls": 11,
     "edges": 34,
     "symmetry_order": 6,
@@ -117,13 +858,13 @@
       "1"
     ],
     "strut_colors": {
-      "Y": 4,
-      "G": 9
+      "G": 9,
+      "Y": 4
     },
     "direction_colors": {
-      "Y": 16,
+      "G": 9,
       "B": 9,
-      "G": 9
+      "Y": 16
     },
     "edges_standard": 13,
     "edges_double": 0,
@@ -132,9 +873,23 @@
     "fully_buildable": false
   },
   {
-    "file": "birectified_5_simplex/birectified_5_simplex_sym12_14balls_cfe09c.vZome",
-    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "file": "birectified_5_simplex/birectified_5_simplex_sym12_14balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "birectified_5_simplex",
+    "display": "Birectified 5-simplex",
+    "nodes": [
+      3
+    ],
+    "base": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 20,
+    "source_edges": 90,
     "balls": 14,
     "edges": 48,
     "symmetry_order": 12,
@@ -159,9 +914,710 @@
     "fully_buildable": false
   },
   {
-    "file": "5_simplex/5_simplex_sym48_6balls_53a41b.vZome",
-    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "file": "a5_t12/a5_t12_sym6_21balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t12",
+    "display": "A5 Wythoff t{1,2}",
+    "nodes": [
+      1,
+      2
+    ],
+    "base": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 75,
+    "balls": 21,
+    "edges": 44,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 12,
+      "Y": 5
+    },
+    "direction_colors": {
+      "G": 12,
+      "Y": 20,
+      "B": 12
+    },
+    "edges_standard": 17,
+    "edges_double": 0,
+    "edges_direction_only": 27,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t13/a5_t13_sym6_38balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t13",
+    "display": "A5 Wythoff t{1,3}",
+    "nodes": [
+      1,
+      3
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 240,
+    "balls": 38,
+    "edges": 124,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 30,
+      "Y": 16
+    },
+    "direction_colors": {
+      "G": 30,
+      "B": 30,
+      "Y": 64
+    },
+    "edges_standard": 46,
+    "edges_double": 0,
+    "edges_direction_only": 78,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t14/a5_t14_sym6_38balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t14",
+    "display": "A5 Wythoff t{1,4}",
+    "nodes": [
+      1,
+      4
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 270,
+    "balls": 38,
+    "edges": 138,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 33,
+      "Y": 18
+    },
+    "direction_colors": {
+      "G": 33,
+      "B": 33,
+      "Y": 72
+    },
+    "edges_standard": 51,
+    "edges_double": 0,
+    "edges_direction_only": 87,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t15/a5_t15_sym12_21balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t15",
+    "display": "A5 Wythoff t{1,5}",
+    "nodes": [
+      1,
+      5
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 120,
+    "balls": 21,
+    "edges": 68,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 18,
+      "Y": 8
+    },
+    "direction_colors": {
+      "G": 18,
+      "B": 18,
+      "Y": 32
+    },
+    "edges_standard": 26,
+    "edges_double": 0,
+    "edges_direction_only": 42,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t23/a5_t23_sym6_38balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t23",
+    "display": "A5 Wythoff t{2,3}",
+    "nodes": [
+      2,
+      3
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 150,
+    "balls": 38,
+    "edges": 82,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 21,
+      "Y": 10
+    },
+    "direction_colors": {
+      "G": 21,
+      "B": 21,
+      "Y": 40
+    },
+    "edges_standard": 31,
+    "edges_double": 0,
+    "edges_direction_only": 51,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t24/a5_t24_sym12_54balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t24",
+    "display": "A5 Wythoff t{2,4}",
+    "nodes": [
+      2,
+      4
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 90,
+    "source_edges": 360,
+    "balls": 54,
+    "edges": 180,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 42,
+      "Y": 24
+    },
+    "direction_colors": {
+      "G": 42,
+      "B": 42,
+      "Y": 96
+    },
+    "edges_standard": 66,
+    "edges_double": 0,
+    "edges_direction_only": 114,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t123/a5_t123_sym6_72balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t123",
+    "display": "A5 Wythoff t{1,2,3}",
+    "nodes": [
+      1,
+      2,
+      3
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 300,
+    "balls": 72,
+    "edges": 158,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 39,
+      "Y": 20
+    },
+    "direction_colors": {
+      "G": 39,
+      "Y": 80,
+      "B": 39
+    },
+    "edges_standard": 59,
+    "edges_double": 0,
+    "edges_direction_only": 99,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t124/a5_t124_sym6_102balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t124",
+    "display": "A5 Wythoff t{1,2,4}",
+    "nodes": [
+      1,
+      2,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 630,
+    "balls": 102,
+    "edges": 306,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 69,
+      "Y": 42
+    },
+    "direction_colors": {
+      "G": 69,
+      "Y": 168,
+      "B": 69
+    },
+    "edges_standard": 111,
+    "edges_double": 0,
+    "edges_direction_only": 195,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t125/a5_t125_sym6_72balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t125",
+    "display": "A5 Wythoff t{1,2,5}",
+    "nodes": [
+      1,
+      2,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 420,
+    "balls": 72,
+    "edges": 214,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 51,
+      "Y": 28
+    },
+    "direction_colors": {
+      "G": 51,
+      "Y": 112,
+      "B": 51
+    },
+    "edges_standard": 79,
+    "edges_double": 0,
+    "edges_direction_only": 135,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t134/a5_t134_sym6_102balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t134",
+    "display": "A5 Wythoff t{1,3,4}",
+    "nodes": [
+      1,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 540,
+    "balls": 102,
+    "edges": 270,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 63,
+      "Y": 36
+    },
+    "direction_colors": {
+      "G": 63,
+      "B": 63,
+      "Y": 144
+    },
+    "edges_standard": 99,
+    "edges_double": 0,
+    "edges_direction_only": 171,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t135/a5_t135_sym12_102balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t135",
+    "display": "A5 Wythoff t{1,3,5}",
+    "nodes": [
+      1,
+      3,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 720,
+    "balls": 102,
+    "edges": 348,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 78,
+      "Y": 48
+    },
+    "direction_colors": {
+      "G": 78,
+      "B": 78,
+      "Y": 192
+    },
+    "edges_standard": 126,
+    "edges_double": 0,
+    "edges_direction_only": 222,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t234/a5_t234_sym12_102balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t234",
+    "display": "A5 Wythoff t{2,3,4}",
+    "nodes": [
+      2,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 450,
+    "balls": 102,
+    "edges": 228,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 54,
+      "Y": 30
+    },
+    "direction_colors": {
+      "G": 54,
+      "B": 54,
+      "Y": 120
+    },
+    "edges_standard": 84,
+    "edges_double": 0,
+    "edges_direction_only": 144,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t1234/a5_t1234_sym6_192balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t1234",
+    "display": "A5 Wythoff t{1,2,3,4}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 900,
+    "balls": 192,
+    "edges": 438,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 99,
+      "Y": 60
+    },
+    "direction_colors": {
+      "G": 99,
+      "Y": 240,
+      "B": 99
+    },
+    "edges_standard": 159,
+    "edges_double": 0,
+    "edges_direction_only": 279,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t1235/a5_t1235_sym6_192balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t1235",
+    "display": "A5 Wythoff t{1,2,3,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 192,
+    "edges": 516,
+    "symmetry_order": 6,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 114,
+      "Y": 72
+    },
+    "direction_colors": {
+      "G": 114,
+      "Y": 288,
+      "B": 114
+    },
+    "edges_standard": 186,
+    "edges_double": 0,
+    "edges_direction_only": 330,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t1245/a5_t1245_sym12_192balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t1245",
+    "display": "A5 Wythoff t{1,2,4,5}",
+    "nodes": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 192,
+    "edges": 516,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 114,
+      "Y": 72
+    },
+    "direction_colors": {
+      "G": 114,
+      "Y": 288,
+      "B": 114
+    },
+    "edges_standard": 186,
+    "edges_double": 0,
+    "edges_direction_only": 330,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "a5_t12345/a5_t12345_sym12_300balls_667fed.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
+    "polytope": "a5_t12345",
+    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "base": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 720,
+    "source_edges": 1800,
+    "balls": 300,
+    "edges": 732,
+    "symmetry_order": 12,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 180,
+      "Y": 120
+    },
+    "direction_colors": {
+      "G": 180,
+      "Y": 408,
+      "B": 144
+    },
+    "edges_standard": 300,
+    "edges_double": 0,
+    "edges_direction_only": 432,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "5_simplex/5_simplex_sym48_6balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "5_simplex",
+    "display": "5-simplex (hexateron)",
+    "nodes": [
+      1
+    ],
+    "base": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 6,
+    "source_edges": 15,
     "balls": 6,
     "edges": 15,
     "symmetry_order": 48,
@@ -171,12 +1627,12 @@
       "1"
     ],
     "strut_colors": {
-      "B(x2)": 3,
-      "G": 12
+      "G": 12,
+      "B(x2)": 3
     },
     "direction_colors": {
-      "B": 3,
-      "G": 12
+      "G": 12,
+      "B": 3
     },
     "edges_standard": 12,
     "edges_double": 3,
@@ -185,9 +1641,23 @@
     "fully_buildable": true
   },
   {
-    "file": "rectified_5_simplex/rectified_5_simplex_sym48_13balls_53a41b.vZome",
-    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "file": "rectified_5_simplex/rectified_5_simplex_sym48_13balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "rectified_5_simplex",
+    "display": "Rectified 5-simplex",
+    "nodes": [
+      2
+    ],
+    "base": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 15,
+    "source_edges": 60,
     "balls": 13,
     "edges": 48,
     "symmetry_order": 48,
@@ -197,12 +1667,12 @@
       "1"
     ],
     "strut_colors": {
-      "G": 36,
-      "B(x2)": 12
+      "B(x2)": 12,
+      "G": 36
     },
     "direction_colors": {
-      "G": 36,
-      "B": 12
+      "B": 12,
+      "G": 36
     },
     "edges_standard": 36,
     "edges_double": 12,
@@ -211,9 +1681,23 @@
     "fully_buildable": true
   },
   {
-    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_53a41b.vZome",
-    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "birectified_5_simplex",
+    "display": "Birectified 5-simplex",
+    "nodes": [
+      3
+    ],
+    "base": [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 20,
+    "source_edges": 90,
     "balls": 14,
     "edges": 51,
     "symmetry_order": 48,
@@ -232,6 +1716,677 @@
     },
     "edges_standard": 36,
     "edges_double": 15,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t12/a5_t12_sym48_30balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t12",
+    "display": "A5 Wythoff t{1,2}",
+    "nodes": [
+      1,
+      2
+    ],
+    "base": [
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 75,
+    "balls": 30,
+    "edges": 75,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 60,
+      "B(x2)": 15
+    },
+    "direction_colors": {
+      "G": 60,
+      "B": 15
+    },
+    "edges_standard": 60,
+    "edges_double": 15,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t13/a5_t13_sym48_42balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t13",
+    "display": "A5 Wythoff t{1,3}",
+    "nodes": [
+      1,
+      3
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 240,
+    "balls": 42,
+    "edges": 180,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 144,
+      "B(x2)": 36
+    },
+    "direction_colors": {
+      "G": 144,
+      "B": 36
+    },
+    "edges_standard": 144,
+    "edges_double": 36,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t14/a5_t14_sym48_38balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t14",
+    "display": "A5 Wythoff t{1,4}",
+    "nodes": [
+      1,
+      4
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 270,
+    "balls": 38,
+    "edges": 171,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 144,
+      "B(x2)": 27
+    },
+    "direction_colors": {
+      "G": 144,
+      "B": 27
+    },
+    "edges_standard": 144,
+    "edges_double": 27,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t15/a5_t15_sym48_18balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t15",
+    "display": "A5 Wythoff t{1,5}",
+    "nodes": [
+      1,
+      5
+    ],
+    "base": [
+      2,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 30,
+    "source_edges": 120,
+    "balls": 18,
+    "edges": 60,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 48,
+      "B(x2)": 12
+    },
+    "direction_colors": {
+      "G": 48,
+      "B": 12
+    },
+    "edges_standard": 48,
+    "edges_double": 12,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t23/a5_t23_sym48_54balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t23",
+    "display": "A5 Wythoff t{2,3}",
+    "nodes": [
+      2,
+      3
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 60,
+    "source_edges": 150,
+    "balls": 54,
+    "edges": 147,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "B(x2)": 27,
+      "G": 120
+    },
+    "direction_colors": {
+      "B": 27,
+      "G": 120
+    },
+    "edges_standard": 120,
+    "edges_double": 27,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t24/a5_t24_sym48_49balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t24",
+    "display": "A5 Wythoff t{2,4}",
+    "nodes": [
+      2,
+      4
+    ],
+    "base": [
+      2,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 90,
+    "source_edges": 360,
+    "balls": 49,
+    "edges": 168,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "B(x2)": 36,
+      "G": 132
+    },
+    "direction_colors": {
+      "B": 36,
+      "G": 132
+    },
+    "edges_standard": 132,
+    "edges_double": 36,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t123/a5_t123_sym48_96balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t123",
+    "display": "A5 Wythoff t{1,2,3}",
+    "nodes": [
+      1,
+      2,
+      3
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      0,
+      0,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 300,
+    "balls": 96,
+    "edges": 252,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 204,
+      "B(x2)": 48
+    },
+    "direction_colors": {
+      "G": 204,
+      "B": 48
+    },
+    "edges_standard": 204,
+    "edges_double": 48,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t124/a5_t124_sym48_110balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t124",
+    "display": "A5 Wythoff t{1,2,4}",
+    "nodes": [
+      1,
+      2,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 630,
+    "balls": 110,
+    "edges": 423,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 360,
+      "B(x2)": 63
+    },
+    "direction_colors": {
+      "G": 360,
+      "B": 63
+    },
+    "edges_standard": 360,
+    "edges_double": 63,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t125/a5_t125_sym48_72balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t125",
+    "display": "A5 Wythoff t{1,2,5}",
+    "nodes": [
+      1,
+      2,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      1,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 120,
+    "source_edges": 420,
+    "balls": 72,
+    "edges": 300,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 252,
+      "B(x2)": 48
+    },
+    "direction_colors": {
+      "G": 252,
+      "B": 48
+    },
+    "edges_standard": 252,
+    "edges_double": 48,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t134/a5_t134_sym48_122balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t134",
+    "display": "A5 Wythoff t{1,3,4}",
+    "nodes": [
+      1,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 540,
+    "balls": 122,
+    "edges": 408,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 336,
+      "B(x2)": 72
+    },
+    "direction_colors": {
+      "G": 336,
+      "B": 72
+    },
+    "edges_standard": 336,
+    "edges_double": 72,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t135/a5_t135_sym48_86balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t135",
+    "display": "A5 Wythoff t{1,3,5}",
+    "nodes": [
+      1,
+      3,
+      5
+    ],
+    "base": [
+      3,
+      2,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 720,
+    "balls": 86,
+    "edges": 300,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 240,
+      "B(x2)": 60
+    },
+    "direction_colors": {
+      "G": 240,
+      "B": 60
+    },
+    "edges_standard": 240,
+    "edges_double": 60,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t234/a5_t234_sym48_102balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t234",
+    "display": "A5 Wythoff t{2,3,4}",
+    "nodes": [
+      2,
+      3,
+      4
+    ],
+    "base": [
+      3,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 180,
+    "source_edges": 450,
+    "balls": 102,
+    "edges": 231,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "B(x2)": 51,
+      "G": 180
+    },
+    "direction_colors": {
+      "B": 51,
+      "G": 180
+    },
+    "edges_standard": 180,
+    "edges_double": 51,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1234/a5_t1234_sym48_240balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t1234",
+    "display": "A5 Wythoff t{1,2,3,4}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 900,
+    "balls": 240,
+    "edges": 684,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 564,
+      "B(x2)": 120
+    },
+    "direction_colors": {
+      "G": 564,
+      "B": 120
+    },
+    "edges_standard": 564,
+    "edges_double": 120,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1235/a5_t1235_sym48_224balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t1235",
+    "display": "A5 Wythoff t{1,2,3,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      1,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 224,
+    "edges": 732,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 624,
+      "B(x2)": 108
+    },
+    "direction_colors": {
+      "G": 624,
+      "B": 108
+    },
+    "edges_standard": 624,
+    "edges_double": 108,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t1245/a5_t1245_sym48_152balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t1245",
+    "display": "A5 Wythoff t{1,2,4,5}",
+    "nodes": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "base": [
+      4,
+      3,
+      2,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 360,
+    "source_edges": 1080,
+    "balls": 152,
+    "edges": 444,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 360,
+      "B(x2)": 84
+    },
+    "direction_colors": {
+      "G": 360,
+      "B": 84
+    },
+    "edges_standard": 360,
+    "edges_double": 84,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "a5_t12345/a5_t12345_sym48_304balls_2be46b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
+    "polytope": "a5_t12345",
+    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "nodes": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "base": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "source_vertices": 720,
+    "source_edges": 1800,
+    "balls": 304,
+    "edges": 732,
+    "symmetry_order": 48,
+    "scale": "phi^2",
+    "zphi_pair": [
+      "1",
+      "1"
+    ],
+    "strut_colors": {
+      "G": 600,
+      "B(x2)": 132
+    },
+    "direction_colors": {
+      "G": 600,
+      "B": 132
+    },
+    "edges_standard": 600,
+    "edges_double": 132,
     "edges_direction_only": 0,
     "bad_directions": 0,
     "fully_buildable": true

@@ -1,24 +1,24 @@
 """Generate the A5-family gallery pages from output/a5_projections/manifest.json.
 
 Mirrors the gosset_projections layout: one viewer page per polytope (each
-embedding its three family-shape variants via the vzome-viewer web component),
+embedding its family-shape variants via the vzome-viewer web component),
 a VIEWER.md index, and a README.md file list + symmetry/buildability audit.
 """
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 GAL = ROOT / "output" / "a5_projections"
 BASE_URL = "https://nanma80.github.io/zomeable-4polytopes/output/a5_projections"
 
-DISPLAY = {
-    "5_simplex": "5-simplex (hexateron)",
-    "rectified_5_simplex": "Rectified 5-simplex",
-    "birectified_5_simplex": "Birectified 5-simplex",
-}
-ORDER = ["5_simplex", "rectified_5_simplex", "birectified_5_simplex"]
+from family import POLYS  # noqa: E402
+
+DISPLAY = {p["slug"]: p["display"] for p in POLYS}
+ORDER = [p["slug"] for p in POLYS]
 
 VZOME_SCRIPT = "<script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>"
 
@@ -97,7 +97,7 @@ def main():
             "",
             "[Back to A5 projections index](VIEWER.md).",
             "",
-            f"Strict orthographic zomeable projections of the {disp} (A5 family). "
+            f"Strict orthographic zomeable projections of {disp} (A5 family). "
             "Each edge points along a default zometool axis (Blue/Yellow/Red/Green).",
             "",
             'In the captions, "balls" means distinct 3D ball positions in the vZome model after projection.',
@@ -116,8 +116,8 @@ def main():
         "",
         "Strict orthographic zomeable projections of the A5 (5-simplex) uniform "
         "family.  The polytope-independent raw-column `Z[phi]^3` sweep saturates at "
-        "three distinct projection geometries, applied to each of the three "
-        "rectifications below.",
+        "three distinct projection geometries, applied to all 19 Wythoff "
+        "polytopes below.",
         "",
         '"Balls" counts distinct 3D ball positions in the projected vZome model; '
         "some vertices of the source polytope may coincide in 3D.",
@@ -141,7 +141,7 @@ def main():
         "# A5 simplex family projections",
         "",
         "Strict orthographic 3D projections of the A5 (5-simplex) uniform family: "
-        "the 5-simplex, rectified 5-simplex, and birectified 5-simplex.",
+        "all 19 Wythoff ringed-node subsets modulo diagram reversal.",
         "",
         f"The {len(manifest)} `.vZome` files are organized in per-polytope subfolders.  "
         '"Balls" counts distinct 3D ball positions in the projected vZome model.',
@@ -152,15 +152,16 @@ def main():
         "",
         "## Models",
         "",
-        "| File | Source polytope | Balls | Symmetry order | Scale | Colors | Buildable |",
-        "|---:|---|---:|---:|---|---|:---:|",
+        "| File | Source polytope | Vertices | Balls | Symmetry order | Scale | Colors | Buildable |",
+        "|---:|---|---:|---:|---:|---|---|:---:|",
     ]
     for poly in ORDER:
         for r in by_poly[poly]:
             cmap = r["strut_colors"] if r["fully_buildable"] else r["direction_colors"]
             struts = ", ".join(f"{k}x{v}" for k, v in sorted(cmap.items()))
             rl.append(
-                f"| `{r['file']}` | {DISPLAY[poly]} | {r['balls']} | "
+                f"| `{r['file']}` | {DISPLAY[poly]} | "
+                f"{r.get('source_vertices', '')} | {r['balls']} | "
                 f"{r['symmetry_order']} | `{r['scale']}` | {struts} | "
                 f"{'yes' if r['fully_buildable'] else 'direction-only'} |"
             )
@@ -176,8 +177,8 @@ def main():
         "",
         "Found by a polytope-independent raw-column `Z[phi]^3` sweep that enumerates "
         "every strict-orthographic projection whose columns and pairwise column "
-        "differences are zometool axes.  R=1, R=2, and R=3 all saturate at the same "
-        "three projection geometries.  See "
+        "differences are zometool axes.  R=2 and R=3 saturate at the same three "
+        "projection geometries; R=1 finds one of them.  See "
         "[`../../docs/A5_PROJECTIONS.md`](../../docs/A5_PROJECTIONS.md).",
         "",
     ]

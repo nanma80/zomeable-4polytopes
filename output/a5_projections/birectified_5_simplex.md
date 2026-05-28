@@ -4,14 +4,14 @@
 
 [Back to A5 projections index](VIEWER.md).
 
-Strict orthographic zomeable projections of the Birectified 5-simplex (A5 family). Each edge points along a default zometool axis (Blue/Yellow/Red/Green).
+Strict orthographic zomeable projections of Birectified 5-simplex (A5 family). Each edge points along a default zometool axis (Blue/Yellow/Red/Green).
 
 In the captions, "balls" means distinct 3D ball positions in the vZome model after projection.
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_53a41b.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_2be46b.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     Birectified 5-simplex - octahedral symmetry (order 48), 14 balls (buildable: B(x2)+G)
@@ -19,7 +19,7 @@ In the captions, "balls" means distinct 3D ball positions in the vZome model aft
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_4fb6eb.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_30531f.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     Birectified 5-simplex - octahedral symmetry (order 48), 14 balls (buildable: G+Y)
@@ -27,7 +27,7 @@ In the captions, "balls" means distinct 3D ball positions in the vZome model aft
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym12_14balls_cfe09c.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym12_14balls_667fed.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     Birectified 5-simplex - chiral-tetrahedral symmetry (order 12), 14 balls (direction-zomeable only)

@@ -1,11 +1,8 @@
 """Raw-column Z[phi]^3 sweep for the A5 (5-simplex) uniform-polytope family.
 
 The A5 family polytopes live in the 5D hyperplane H = {x in R^6 : sum x_i = c},
-perpendicular to 1 = (1,1,1,1,1,1).  The three rectification shapes are:
-
-    5-simplex (t0):      6 verts = permutations of (1,0,0,0,0,0)
-    rectified (t1):     15 verts = permutations of (1,1,0,0,0,0)
-    birectified (t2):   20 verts = permutations of (1,1,1,0,0,0)
+perpendicular to 1 = (1,1,1,1,1,1).  The 19 shapes are the nonempty Wythoff
+ringed-node subsets of the A5 Coxeter diagram, modulo diagram reversal.
 
 For every A5 uniform polytope the edge directions are exactly the A5 roots
 {e_i - e_j}.  A projection P = [c_0 ... c_5] (each c_i in Z[phi]^3) is therefore
@@ -29,7 +26,7 @@ and the exact integer test (with c_0 = 0, so s = c_1 + ... + c_5) is
     6 * sum_i c_i c_i^T - s s^T = lambda * I_3,   lambda != 0.
 
 A single sweep therefore finds every valid P; the per-polytope emission/dedup is
-done separately by zphi_a5_emit.py.  Hits are deduplicated by the triple of
+done separately by zphi_a5_emit.py.  Hits are deduplicated by the 19-tuple of
 per-polytope shape signatures (rotation- and mirror-invariant).
 
 The anchored-radius cutoff (c_0 = 0, |coeffs of c_i| <= R) is a deliberate,
@@ -58,31 +55,21 @@ col = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(col)
 
+from family import POLYS, build_polytope  # noqa: E402
+
 ZERO: col.ZV = ((0, 0), (0, 0), (0, 0))
 
 
 def build_polytopes():
-    """Return {name: (V_centered, edges)} for the three A5 rectifications."""
+    """Return {name: (V_centered, edges)} for all 19 A5 Wythoff polytopes."""
     polys = {}
-    for name, k in (("5_simplex", 1), ("rectified_5_simplex", 2), ("birectified_5_simplex", 3)):
-        verts = []
-        for combo in itertools.combinations(range(6), k):
-            v = np.zeros(6)
-            for idx in combo:
-                v[idx] = 1.0
-            verts.append(v)
-        V = np.asarray(verts, dtype=float)
-        edges = []
-        # Two k-subsets are adjacent iff they share k-1 indices (Hamming-2 on the
-        # 0/1 vector); the edge direction is then an A5 root e_a - e_b.
-        for i in range(len(V)):
-            for j in range(i + 1, len(V)):
-                if int(np.sum(np.abs(V[i] - V[j]))) == 2:
-                    edges.append((i, j))
-        polys[name] = (V - V.mean(axis=0), np.asarray(edges, dtype=np.int32))
+    for p in POLYS:
+        _verts, V, edges = build_polytope(p["slug"])
+        polys[p["slug"]] = (V, np.asarray(edges, dtype=np.int32))
     assert len(polys["5_simplex"][0]) == 6
     assert len(polys["rectified_5_simplex"][0]) == 15
     assert len(polys["birectified_5_simplex"][0]) == 20
+    assert len(polys) == 19
     return polys
 
 
@@ -188,16 +175,14 @@ def dfs_sweep(R: int, out_dir: Path, max_seconds: float | None = None,
                 stats["ortho_hits"] += 1
                 columns6 = [ZERO] + [cands[i] for i in chosen_idx]
                 sigs = shape_sig_triple(columns6, polys)
-                key = "|".join(sigs[n2]["sig"] for n2 in
-                               ("5_simplex", "rectified_5_simplex", "birectified_5_simplex"))
+                key = "|".join(sigs[p["slug"]]["sig"] for p in POLYS)
                 if key not in hits:
                     hits[key] = {
                         "columns": columns6,
                         "shapes": sigs,
                     }
-                    print(f"  HIT {key}  "
-                          f"N=({sigs['5_simplex']['N']},{sigs['rectified_5_simplex']['N']},"
-                          f"{sigs['birectified_5_simplex']['N']})", flush=True)
+                    n_preview = ",".join(str(sigs[p["slug"]]["N"]) for p in POLYS[:5])
+                    print(f"  HIT {key[:80]}...  N(first5)=({n_preview})", flush=True)
             return
         mm = mask & ge_masks[start]
         while mm:
@@ -224,7 +209,17 @@ def dfs_sweep(R: int, out_dir: Path, max_seconds: float | None = None,
 
     payload = {
         "polytope_family": "A5",
-        "description": "A5 / 5-simplex family: t0 (6), t1 rectified (15), t2 birectified (20)",
+        "description": "A5 / 5-simplex uniform family: all 19 Wythoff ringed-node subsets modulo reversal",
+        "polytopes": [
+            {
+                "slug": p["slug"],
+                "display": p["display"],
+                "nodes": list(p["nodes"]),
+                "base": list(p["base"]),
+                "vertices": p["vertices"],
+            }
+            for p in POLYS
+        ],
         "R": R,
         "status": status,
         "elapsed_s": time.time() - t0,

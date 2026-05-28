@@ -1,16 +1,353 @@
 {
   "polytope_family": "A5",
-  "description": "A5 / 5-simplex family: t0 (6), t1 rectified (15), t2 birectified (20)",
+  "description": "A5 / 5-simplex uniform family: all 19 Wythoff ringed-node subsets modulo reversal",
+  "polytopes": [
+    {
+      "slug": "5_simplex",
+      "display": "5-simplex (hexateron)",
+      "nodes": [
+        1
+      ],
+      "base": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 6
+    },
+    {
+      "slug": "rectified_5_simplex",
+      "display": "Rectified 5-simplex",
+      "nodes": [
+        2
+      ],
+      "base": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 15
+    },
+    {
+      "slug": "birectified_5_simplex",
+      "display": "Birectified 5-simplex",
+      "nodes": [
+        3
+      ],
+      "base": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 20
+    },
+    {
+      "slug": "a5_t12",
+      "display": "A5 Wythoff t{1,2}",
+      "nodes": [
+        1,
+        2
+      ],
+      "base": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vertices": 30
+    },
+    {
+      "slug": "a5_t13",
+      "display": "A5 Wythoff t{1,3}",
+      "nodes": [
+        1,
+        3
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t14",
+      "display": "A5 Wythoff t{1,4}",
+      "nodes": [
+        1,
+        4
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t15",
+      "display": "A5 Wythoff t{1,5}",
+      "nodes": [
+        1,
+        5
+      ],
+      "base": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "vertices": 30
+    },
+    {
+      "slug": "a5_t23",
+      "display": "A5 Wythoff t{2,3}",
+      "nodes": [
+        2,
+        3
+      ],
+      "base": [
+        2,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 60
+    },
+    {
+      "slug": "a5_t24",
+      "display": "A5 Wythoff t{2,4}",
+      "nodes": [
+        2,
+        4
+      ],
+      "base": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 90
+    },
+    {
+      "slug": "a5_t123",
+      "display": "A5 Wythoff t{1,2,3}",
+      "nodes": [
+        1,
+        2,
+        3
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vertices": 120
+    },
+    {
+      "slug": "a5_t124",
+      "display": "A5 Wythoff t{1,2,4}",
+      "nodes": [
+        1,
+        2,
+        4
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t125",
+      "display": "A5 Wythoff t{1,2,5}",
+      "nodes": [
+        1,
+        2,
+        5
+      ],
+      "base": [
+        3,
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "vertices": 120
+    },
+    {
+      "slug": "a5_t134",
+      "display": "A5 Wythoff t{1,3,4}",
+      "nodes": [
+        1,
+        3,
+        4
+      ],
+      "base": [
+        3,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t135",
+      "display": "A5 Wythoff t{1,3,5}",
+      "nodes": [
+        1,
+        3,
+        5
+      ],
+      "base": [
+        3,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t234",
+      "display": "A5 Wythoff t{2,3,4}",
+      "nodes": [
+        2,
+        3,
+        4
+      ],
+      "base": [
+        3,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 180
+    },
+    {
+      "slug": "a5_t1234",
+      "display": "A5 Wythoff t{1,2,3,4}",
+      "nodes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t1235",
+      "display": "A5 Wythoff t{1,2,3,5}",
+      "nodes": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t1245",
+      "display": "A5 Wythoff t{1,2,4,5}",
+      "nodes": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "base": [
+        4,
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "vertices": 360
+    },
+    {
+      "slug": "a5_t12345",
+      "display": "A5 Wythoff t{1,2,3,4,5}",
+      "nodes": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "base": [
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "vertices": 720
+    }
+  ],
   "R": 1,
   "status": "complete",
-  "elapsed_s": 10.055466651916504,
+  "elapsed_s": 10.542999029159546,
   "candidates": 213,
   "stats": {
     "leaf": 2296377,
     "ortho_hits": 24
   },
   "hits": {
-    "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96": {
+    "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035": {
       "columns": [
         [
           [
@@ -109,6 +446,70 @@
         "birectified_5_simplex": {
           "sig": "N14_4d5740e23b96",
           "N": 14
+        },
+        "a5_t12": {
+          "sig": "N21_5f3b31f88adb",
+          "N": 21
+        },
+        "a5_t13": {
+          "sig": "N38_ed9de599891d",
+          "N": 38
+        },
+        "a5_t14": {
+          "sig": "N38_344aecee4ca2",
+          "N": 38
+        },
+        "a5_t15": {
+          "sig": "N21_65778fd07bb8",
+          "N": 21
+        },
+        "a5_t23": {
+          "sig": "N38_ffc26f3dd5e3",
+          "N": 38
+        },
+        "a5_t24": {
+          "sig": "N48_966b288cc318",
+          "N": 48
+        },
+        "a5_t123": {
+          "sig": "N72_ac7adfcedbaa",
+          "N": 72
+        },
+        "a5_t124": {
+          "sig": "N90_c380672e4183",
+          "N": 90
+        },
+        "a5_t125": {
+          "sig": "N72_7eef4e699ede",
+          "N": 72
+        },
+        "a5_t134": {
+          "sig": "N102_5ee36accd4f8",
+          "N": 102
+        },
+        "a5_t135": {
+          "sig": "N90_619e4f489743",
+          "N": 90
+        },
+        "a5_t234": {
+          "sig": "N102_6ea5d813e5c0",
+          "N": 102
+        },
+        "a5_t1234": {
+          "sig": "N168_2fa6aff08985",
+          "N": 168
+        },
+        "a5_t1235": {
+          "sig": "N168_21f7af10f994",
+          "N": 168
+        },
+        "a5_t1245": {
+          "sig": "N168_21f7af10f994",
+          "N": 168
+        },
+        "a5_t12345": {
+          "sig": "N240_788a79b2c035",
+          "N": 240
         }
       }
     }

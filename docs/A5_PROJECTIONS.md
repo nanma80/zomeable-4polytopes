@@ -7,15 +7,18 @@ the per-shape symmetry/buildability audit.
 ## The family
 
 The A5 symmetry group is the symmetric group `S6` (order 720), acting on the
-5-dimensional hyperplane `H = { x in R^6 : sum x_i = 0 }`.  We study the three
-rectifications, with vertices given (in 6D, before centering) by the coordinate
-permutations of:
+5-dimensional hyperplane `H = { x in R^6 : sum x_i = 0 }`.  The uniform Wythoff
+family has 19 members: the nonempty subsets of Coxeter nodes `{1,2,3,4,5}`,
+modulo diagram reversal.  For a node subset `S`, the seed vertex has consecutive
+coordinate differences equal to 1 exactly at the nodes in `S`; the full vertex
+set is its `S6` orbit.
 
-| Polytope | Vertex pattern | Vertices |
-|---|---|---:|
-| 5-simplex (hexateron) | `(1,0,0,0,0,0)` | 6 |
-| Rectified 5-simplex | `(1,1,0,0,0,0)` | 15 |
-| Birectified 5-simplex | `(1,1,1,0,0,0)` | 20 |
+| Example | Nodes | Seed vertex | Vertices |
+|---|---|---|---:|
+| 5-simplex (hexateron) | `{1}` | `(1,0,0,0,0,0)` | 6 |
+| Rectified 5-simplex | `{2}` | `(1,1,0,0,0,0)` | 15 |
+| Birectified 5-simplex | `{3}` | `(1,1,1,0,0,0)` | 20 |
+| Omnitruncated A5 | `{1,2,3,4,5}` | `(5,4,3,2,1,0)` | 720 |
 
 Every edge of every A5 uniform polytope is parallel to a root `e_i - e_j`, so a
 projection sends all edges to zometool axes iff every difference of projected
@@ -39,18 +42,19 @@ makes the candidate set small (zome axes, not all of `Z[phi]^3`).
 
 The sweep (`tools/a5/zphi_a5_sweep.py`) enumerates these candidate column tuples
 with exact `Z[phi]` arithmetic, keeps the isotropic ones, and dedupes hits by a
-scale-and-rotation-invariant signature triple (one signature per polytope).
+scale-and-rotation-invariant 19-signature tuple (one signature per A5 source
+polytope).
 
 ## Result: three geometries, saturated
 
-R=1, R=2, and R=3 all return the **same three projection geometries**.  Applied
-to each of the three polytopes, this gives nine models:
+R=2 and R=3 return the **same three projection geometries**; R=1 finds one of
+them.  Applied to all 19 A5 Wythoff polytopes, this gives 57 models:
 
-| Shape | 5-simplex | Rectified | Birectified | Notes |
-|---|---|---|---|---|
-| A | order 24, 5 balls | order 24, 11 balls | order 48, 14 balls | buildable (Yellow+Green), scale `phi^2/3` |
-| B | order 6, 5 balls | order 6, 11 balls | order 12, 14 balls | direction-zomeable only, scale `phi^2` |
-| C | order 48, 6 balls | order 48, 13 balls | order 48, 14 balls | buildable (Green + 2x Blue), scale `phi^2` |
+| Shape | First three ball counts | Full-family ball-count range | Notes |
+|---|---|---|---|
+| A | 5, 11, 14 | 5-240 | buildable (Yellow+Green), scale `phi^2/3` |
+| B | 5, 11, 14 | 5-300 | direction-zomeable only, scale `phi^2` |
+| C | 6, 13, 14 | 6-304 | buildable (Green + 2x Blue), scale `phi^2` |
 
 Symmetry orders are full Euclidean point-cloud symmetries; order 48 is full
 octahedral symmetry.
@@ -59,7 +63,7 @@ octahedral symmetry.
 
 A model is *fully buildable* when, at a single scale, every edge is a standard
 vZome strut length `phi^n` (or exactly double one), matched independently within
-each color orbit.  Six of the nine models are fully buildable.
+each color orbit.  38 of the 57 models are fully buildable.
 
 Shape C's 5-simplex is the cleanest example: it projects onto a **regular
 octahedron**, whose 12 edges are standard Green struts and whose 3 long

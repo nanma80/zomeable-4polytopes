@@ -1,18 +1,17 @@
 """Emit vZome files for A5-family (5-simplex) sweep hits.
 
 Consumes the polytope-independent sweep output (zphi_a5_sweep.py) and, for each
-projection P (6 columns, c_0 = 0), applies P to each of the three A5
-rectifications, classifies every edge against the exact zome direction orbits,
+projection P (6 columns, c_0 = 0), applies P to each of the 19 A5 Wythoff
+polytopes, classifies every edge against the exact zome direction orbits,
 and writes a vZome file when every edge is a genuine zome strut.
 
-Vertices are represented in 6D with integer 0/1 coordinates; the projected
-coordinate of a vertex is the GF-exact sum of the columns at its support.
+Vertices are represented in 6D with integer coordinates; the projected
+coordinate of a vertex is the GF-exact weighted sum of the columns.
 """
 from __future__ import annotations
 
 import argparse
 import importlib.util
-import itertools
 import json
 import sys
 import hashlib
@@ -35,21 +34,7 @@ col = importlib.util.module_from_spec(spec)
 assert spec.loader is not None
 spec.loader.exec_module(col)
 
-POLYS = (("5_simplex", 1), ("rectified_5_simplex", 2), ("birectified_5_simplex", 3))
-
-
-def build_polytope(k: int):
-    verts = list(itertools.combinations(range(6), k))
-    V = np.zeros((len(verts), 6))
-    for r, combo in enumerate(verts):
-        for idx in combo:
-            V[r, idx] = 1.0
-    edges = []
-    for i in range(len(V)):
-        for j in range(i + 1, len(V)):
-            if int(np.sum(np.abs(V[i] - V[j]))) == 2:
-                edges.append((i, j))
-    return verts, V, edges
+from family import POLYS, build_polytope  # noqa: E402
 
 
 def gf_from_pair(pair, scale=Fraction(1)):
@@ -60,12 +45,14 @@ def vscale(v, s: GF):
     return tuple(x * s for x in v)
 
 
-def project_vertex(combo, columns6, scale: GF):
+def project_vertex(vertex, columns6, scale: GF):
     coords = [GF(0), GF(0), GF(0)]
-    for idx in combo:
+    for idx, weight in enumerate(vertex):
+        if weight == 0:
+            continue
         c = columns6[idx]
         for r in range(3):
-            coords[r] = coords[r] + gf_from_pair(c[r])
+            coords[r] = coords[r] + gf_from_pair(c[r]) * weight
     return vscale(tuple(coords), scale)
 
 
@@ -76,8 +63,8 @@ def matrix_from_columns6(columns6):
     )
 
 
-def emit_one(name, k, columns6, out_path, scale: GF):
-    verts, V, edges = build_polytope(k)
+def emit_one(name, columns6, out_path, scale: GF):
+    verts, V, edges = build_polytope(name)
     P = matrix_from_columns6(columns6)
     V3 = V @ P.T
     Vc = V3 - V3.mean(axis=0)
@@ -162,14 +149,13 @@ def main():
     manifest = []
     for key, hit in sorted(data["hits"].items()):
         columns6 = [tuple(tuple(int(x) for x in z) for z in c) for c in hit["columns"]]
-        # short stable id: per-polytope ball counts plus a hash of the full
-        # family key (the N-triple alone is not unique across distinct shapes).
-        ncounts = "_".join(s.split("_")[0] for s in key.split("|"))
+        # short stable id from the full 19-polytope family key.
         khash = hashlib.sha1(key.encode()).hexdigest()[:6]
-        hid = f"{ncounts}_{khash}"
-        for name, k in POLYS:
+        hid = khash
+        for poly in POLYS:
+            name = poly["slug"]
             out = out_dir / f"{name}_{hid}.vZome"
-            info = emit_one(name, k, columns6, out, GF(1))
+            info = emit_one(name, columns6, out, GF(1))
             info["family_key"] = key
             manifest.append(info)
             print(name, hid, {kk: info[kk] for kk in ("ok", "balls", "visible_edges", "collapsed", "audit")})
