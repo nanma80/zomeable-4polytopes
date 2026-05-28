@@ -64,13 +64,27 @@ def figure(row: dict) -> str:
     )
 
 
+def color_priority(row: dict) -> int:
+    """Consistent A5 family ordering by edge-color scheme:
+    0 = green/blue (no yellow), 1 = yellow/green (no blue),
+    2 = yellow/green/blue (all three)."""
+    colors = row["direction_colors"]
+    has_y = "Y" in colors
+    has_b = "B" in colors
+    if has_b and not has_y:
+        return 0
+    if has_y and not has_b:
+        return 1
+    return 2
+
+
 def main():
     manifest = json.loads((GAL / "manifest.json").read_text())
     by_poly: dict[str, list[dict]] = {p: [] for p in ORDER}
     for row in manifest:
         by_poly[row["polytope"]].append(row)
     for rows in by_poly.values():
-        rows.sort(key=lambda r: (-r["symmetry_order"], r["balls"], r["file"]))
+        rows.sort(key=lambda r: (color_priority(r), -r["symmetry_order"], r["balls"]))
 
     # per-polytope viewer pages
     for poly in ORDER:

@@ -11,18 +11,18 @@ In the captions, "balls" means distinct 3D ball positions in the vZome model aft
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_4fb6eb.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    Birectified 5-simplex - octahedral symmetry (order 48), 14 balls (buildable: G+Y)
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_53a41b.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     Birectified 5-simplex - octahedral symmetry (order 48), 14 balls (buildable: B(x2)+G)
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="birectified_5_simplex/birectified_5_simplex_sym48_14balls_4fb6eb.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    Birectified 5-simplex - octahedral symmetry (order 48), 14 balls (buildable: G+Y)
  </figcaption>
 </figure>
 
