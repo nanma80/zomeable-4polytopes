@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
   <EditHistory editNumber="45" lastStickyEdit="-1">
-    <ShowPoint point="-1 -1 -1 -1 -1 -1"/>
-    <ShowPoint point="-1 -1 1 1 1 1"/>
+    <ShowPoint point="-2 -3 -2 -3 -2 -3"/>
+    <ShowPoint point="-2 -3 2 3 2 3"/>
     <ShowPoint point="0 0 0 0 0 0"/>
-    <ShowPoint point="1 1 -1 -1 1 1"/>
-    <ShowPoint point="1 1 1 1 -1 -1"/>
-    <ShowPoint point="-2 -2 0 0 0 0"/>
-    <ShowPoint point="0 0 -2 -2 0 0"/>
-    <ShowPoint point="0 0 0 0 -2 -2"/>
-    <ShowPoint point="0 0 0 0 2 2"/>
-    <ShowPoint point="0 0 2 2 0 0"/>
-    <ShowPoint point="2 2 0 0 0 0"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="-1 -1 1 1 1 1"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="0 0 0 0 0 0"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="1 1 -1 -1 1 1"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="1 1 1 1 -1 -1"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="-2 -2 0 0 0 0"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="0 0 -2 -2 0 0"/>
-    <JoinPointPair start="-1 -1 -1 -1 -1 -1" end="0 0 0 0 -2 -2"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="0 0 0 0 0 0"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="1 1 -1 -1 1 1"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="1 1 1 1 -1 -1"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="-2 -2 0 0 0 0"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="0 0 0 0 2 2"/>
-    <JoinPointPair start="-1 -1 1 1 1 1" end="0 0 2 2 0 0"/>
-    <JoinPointPair start="0 0 0 0 0 0" end="1 1 -1 -1 1 1"/>
-    <JoinPointPair start="0 0 0 0 0 0" end="1 1 1 1 -1 -1"/>
-    <JoinPointPair start="1 1 -1 -1 1 1" end="1 1 1 1 -1 -1"/>
-    <JoinPointPair start="1 1 -1 -1 1 1" end="0 0 -2 -2 0 0"/>
-    <JoinPointPair start="1 1 -1 -1 1 1" end="0 0 0 0 2 2"/>
-    <JoinPointPair start="1 1 -1 -1 1 1" end="2 2 0 0 0 0"/>
-    <JoinPointPair start="1 1 1 1 -1 -1" end="0 0 0 0 -2 -2"/>
-    <JoinPointPair start="1 1 1 1 -1 -1" end="0 0 2 2 0 0"/>
-    <JoinPointPair start="1 1 1 1 -1 -1" end="2 2 0 0 0 0"/>
-    <JoinPointPair start="-2 -2 0 0 0 0" end="0 0 -2 -2 0 0"/>
-    <JoinPointPair start="-2 -2 0 0 0 0" end="0 0 0 0 -2 -2"/>
-    <JoinPointPair start="-2 -2 0 0 0 0" end="0 0 0 0 2 2"/>
-    <JoinPointPair start="-2 -2 0 0 0 0" end="0 0 2 2 0 0"/>
-    <JoinPointPair start="0 0 -2 -2 0 0" end="0 0 0 0 -2 -2"/>
-    <JoinPointPair start="0 0 -2 -2 0 0" end="0 0 0 0 2 2"/>
-    <JoinPointPair start="0 0 -2 -2 0 0" end="2 2 0 0 0 0"/>
-    <JoinPointPair start="0 0 0 0 -2 -2" end="0 0 2 2 0 0"/>
-    <JoinPointPair start="0 0 0 0 -2 -2" end="2 2 0 0 0 0"/>
-    <JoinPointPair start="0 0 0 0 2 2" end="0 0 2 2 0 0"/>
-    <JoinPointPair start="0 0 0 0 2 2" end="2 2 0 0 0 0"/>
-    <JoinPointPair start="0 0 2 2 0 0" end="2 2 0 0 0 0"/>
+    <ShowPoint point="2 3 -2 -3 2 3"/>
+    <ShowPoint point="2 3 2 3 -2 -3"/>
+    <ShowPoint point="-4 -6 0 0 0 0"/>
+    <ShowPoint point="0 0 -4 -6 0 0"/>
+    <ShowPoint point="0 0 0 0 -4 -6"/>
+    <ShowPoint point="0 0 0 0 4 6"/>
+    <ShowPoint point="0 0 4 6 0 0"/>
+    <ShowPoint point="4 6 0 0 0 0"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="-2 -3 2 3 2 3"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="0 0 0 0 0 0"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="2 3 -2 -3 2 3"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="2 3 2 3 -2 -3"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="-4 -6 0 0 0 0"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="0 0 -4 -6 0 0"/>
+    <JoinPointPair start="-2 -3 -2 -3 -2 -3" end="0 0 0 0 -4 -6"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="0 0 0 0 0 0"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="2 3 -2 -3 2 3"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="2 3 2 3 -2 -3"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="-4 -6 0 0 0 0"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="0 0 0 0 4 6"/>
+    <JoinPointPair start="-2 -3 2 3 2 3" end="0 0 4 6 0 0"/>
+    <JoinPointPair start="0 0 0 0 0 0" end="2 3 -2 -3 2 3"/>
+    <JoinPointPair start="0 0 0 0 0 0" end="2 3 2 3 -2 -3"/>
+    <JoinPointPair start="2 3 -2 -3 2 3" end="2 3 2 3 -2 -3"/>
+    <JoinPointPair start="2 3 -2 -3 2 3" end="0 0 -4 -6 0 0"/>
+    <JoinPointPair start="2 3 -2 -3 2 3" end="0 0 0 0 4 6"/>
+    <JoinPointPair start="2 3 -2 -3 2 3" end="4 6 0 0 0 0"/>
+    <JoinPointPair start="2 3 2 3 -2 -3" end="0 0 0 0 -4 -6"/>
+    <JoinPointPair start="2 3 2 3 -2 -3" end="0 0 4 6 0 0"/>
+    <JoinPointPair start="2 3 2 3 -2 -3" end="4 6 0 0 0 0"/>
+    <JoinPointPair start="-4 -6 0 0 0 0" end="0 0 -4 -6 0 0"/>
+    <JoinPointPair start="-4 -6 0 0 0 0" end="0 0 0 0 -4 -6"/>
+    <JoinPointPair start="-4 -6 0 0 0 0" end="0 0 0 0 4 6"/>
+    <JoinPointPair start="-4 -6 0 0 0 0" end="0 0 4 6 0 0"/>
+    <JoinPointPair start="0 0 -4 -6 0 0" end="0 0 0 0 -4 -6"/>
+    <JoinPointPair start="0 0 -4 -6 0 0" end="0 0 0 0 4 6"/>
+    <JoinPointPair start="0 0 -4 -6 0 0" end="4 6 0 0 0 0"/>
+    <JoinPointPair start="0 0 0 0 -4 -6" end="0 0 4 6 0 0"/>
+    <JoinPointPair start="0 0 0 0 -4 -6" end="4 6 0 0 0 0"/>
+    <JoinPointPair start="0 0 0 0 4 6" end="0 0 4 6 0 0"/>
+    <JoinPointPair start="0 0 0 0 4 6" end="4 6 0 0 0 0"/>
+    <JoinPointPair start="0 0 4 6 0 0" end="4 6 0 0 0 0"/>
   </EditHistory>
   <notes/>
   <sceneModel ambientLight="41,41,41" background="175,200,220">
@@ -54,7 +54,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="20.944272" far="54.455107" near="7.854102" parallel="false" stereoAngle="0.0" width="13.613777">
+    <ViewModel distance="109.665631" far="438.662526" near="1.096656" parallel="false" stereoAngle="0.0" width="109.665631">
       <LookAtPoint x="0.000000" y="0.000000" z="0.000000"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>

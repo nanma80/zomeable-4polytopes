@@ -6,10 +6,10 @@
     "balls": 5,
     "edges": 10,
     "symmetry_order": 24,
-    "scale": "1/3",
+    "scale": "phi^2/3",
     "zphi_pair": [
       "1/3",
-      "0"
+      "1/3"
     ],
     "strut_colors": {
       "Y": 4,
@@ -32,10 +32,10 @@
     "balls": 11,
     "edges": 34,
     "symmetry_order": 24,
-    "scale": "1/3",
+    "scale": "phi^2/3",
     "zphi_pair": [
       "1/3",
-      "0"
+      "1/3"
     ],
     "strut_colors": {
       "G": 18,
@@ -58,10 +58,10 @@
     "balls": 14,
     "edges": 48,
     "symmetry_order": 48,
-    "scale": "1/3",
+    "scale": "phi^2/3",
     "zphi_pair": [
       "1/3",
-      "0"
+      "1/3"
     ],
     "strut_colors": {
       "Y": 24,
@@ -84,10 +84,10 @@
     "balls": 5,
     "edges": 10,
     "symmetry_order": 6,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "G": 3,
@@ -111,10 +111,10 @@
     "balls": 11,
     "edges": 34,
     "symmetry_order": 6,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "Y": 4,
@@ -138,10 +138,10 @@
     "balls": 14,
     "edges": 48,
     "symmetry_order": 12,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "Y": 6,
@@ -165,10 +165,10 @@
     "balls": 6,
     "edges": 15,
     "symmetry_order": 48,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "B(x2)": 3,
@@ -191,10 +191,10 @@
     "balls": 13,
     "edges": 48,
     "symmetry_order": 48,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "G": 36,
@@ -217,10 +217,10 @@
     "balls": 14,
     "edges": 51,
     "symmetry_order": 48,
-    "scale": "1",
+    "scale": "phi^2",
     "zphi_pair": [
       "1",
-      "0"
+      "1"
     ],
     "strut_colors": {
       "G": 36,

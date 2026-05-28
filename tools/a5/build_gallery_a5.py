@@ -197,11 +197,12 @@ def view_block(points_num):
     radius = max(
         math.sqrt(sum((p[i] - center[i]) ** 2 for i in range(3))) for p in points_num
     )
-    margin = 1.3
-    width = max(1.0, 2 * radius * margin)
-    distance = max(width, 4 * radius)
-    near = max(0.1, distance - 2.5 * radius)
-    far = max(distance + 4 * radius, 4 * width)
+    # Gosset-proportional framing: camera ~8x the bounding-sphere radius back,
+    # so the model sits comfortably small in the initial view (not cramped).
+    width = max(1.0, 8.0 * radius)
+    distance = width
+    near = max(0.1, distance / 100.0)
+    far = 4.0 * distance
     return (
         "  <Viewing>\n"
         f'    <ViewModel distance="{distance:.6f}" far="{far:.6f}" near="{near:.6f}" '
@@ -290,6 +291,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", default="ongoing_work/a5/column_sweep_a5_R3.json")
     ap.add_argument("--out_dir", default="output/a5_projections")
+    ap.add_argument(
+        "--extra_phi_power",
+        type=int,
+        default=2,
+        help="multiply every chosen scale by phi^k (default 2) to enlarge models",
+    )
     args = ap.parse_args()
 
     data = json.loads((ROOT / args.json).read_text())
@@ -305,6 +312,13 @@ def main():
             points, edge_list = collapse(verts, edges, columns6)
             best = choose_scale(points, edge_list)
             _cost, num, den, n, s, classes, n_std, n_dbl = best
+
+            # Enlarge by an extra power of phi (shifts every strut power
+            # uniformly, so standard/double classification is preserved).
+            k = args.extra_phi_power
+            if k:
+                n += k
+                s = s * phi_pow(k)
 
             centered = recenter(points)
             scaled = scale_points(centered, s)
