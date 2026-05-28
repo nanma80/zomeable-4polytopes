@@ -4,13 +4,14 @@
 - 4D vertices: **48**, edges: **96**
 - Folder: `output/polyhedral_prisms/truncated_octahedron_prism/`
 
-**1 distinct zomeable shape** found (rng = 4 agnostic kernel sweep).
+**2 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `cell_first_truncated_octahedron.vZome` | cell_first / truncated_octahedron | 24 | G:36 |
+| 2 | `cell_first_cube.vZome` | cell_first / cube | 32 | B:32  G:24 |
 
 ## Provenance
 
@@ -30,6 +31,14 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     cell_first_truncated_octahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
  </figcaption>
 </figure>
 

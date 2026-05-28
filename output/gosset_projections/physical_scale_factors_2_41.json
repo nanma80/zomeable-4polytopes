@@ -1,0 +1,32 @@
+{
+  "note": "Scale chosen so every 2_41 edge is a standard vZome phi-power strut length or exactly double one. Geometry only; no ApplyTool history commands added.",
+  "items": [
+    {
+      "file": "2_41/2_41_B3_65_balls.vZome",
+      "scale_factor": "1/4",
+      "zphi_pair": [
+        "1/4",
+        "0"
+      ],
+      "note": "all B/G/Y edges become standard phi^0 lengths"
+    },
+    {
+      "file": "2_41/2_41_B3_93_balls.vZome",
+      "scale_factor": "1/4",
+      "zphi_pair": [
+        "1/4",
+        "0"
+      ],
+      "note": "short B/G edges become phi^0; long B/Y edges become 2*phi^0"
+    },
+    {
+      "file": "2_41/2_41_H3_921_balls.vZome",
+      "scale_factor": "1/4",
+      "zphi_pair": [
+        "1/4",
+        "0"
+      ],
+      "note": "all B/Y/R edges become exactly double standard struts"
+    }
+  ]
+}

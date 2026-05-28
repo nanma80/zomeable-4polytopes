@@ -11,7 +11,7 @@
         },
         "nV": 8,
         "nE": 16,
-        "n_shapes": 1,
+        "n_shapes": 2,
         "shapes": [
           {
             "basename": "cell_first_tetrahedron",
@@ -28,6 +28,23 @@
               "G": 6
             },
             "path": "output/polyhedral_prisms/tetrahedron_prism/cell_first_tetrahedron.vZome"
+          },
+          {
+            "basename": "face_first_square",
+            "label": "face_first",
+            "subtype": "square",
+            "n_balls": 8,
+            "kernel": [
+              0,
+              0,
+              0.236068,
+              0
+            ],
+            "strut_counts": {
+              "G": 8,
+              "B": 8
+            },
+            "path": "output/polyhedral_prisms/tetrahedron_prism/face_first_square.vZome"
           }
         ]
       },
@@ -368,7 +385,7 @@
         },
         "nV": 48,
         "nE": 96,
-        "n_shapes": 1,
+        "n_shapes": 2,
         "shapes": [
           {
             "basename": "cell_first_truncated_octahedron",
@@ -385,6 +402,23 @@
               "G": 36
             },
             "path": "output/polyhedral_prisms/truncated_octahedron_prism/cell_first_truncated_octahedron.vZome"
+          },
+          {
+            "basename": "cell_first_cube",
+            "label": "cell_first",
+            "subtype": "cube",
+            "n_balls": 32,
+            "kernel": [
+              0,
+              0,
+              0.236068,
+              0
+            ],
+            "strut_counts": {
+              "G": 24,
+              "B": 32
+            },
+            "path": "output/polyhedral_prisms/truncated_octahedron_prism/cell_first_cube.vZome"
           }
         ]
       },
@@ -1370,7 +1404,7 @@
         },
         "nV": 24,
         "nE": 48,
-        "n_shapes": 3,
+        "n_shapes": 4,
         "shapes": [
           {
             "basename": "oblique_100",
@@ -1422,6 +1456,18 @@
               "Y": 24
             },
             "path": "output/duoprisms/duoprism_4_6/oblique_356.vZome"
+          },
+          {
+            "basename": "cell_first_cube",
+            "label": "cell_first",
+            "subtype": "cube",
+            "n_balls": 16,
+            "kernel": null,
+            "strut_counts": {
+              "B": 12,
+              "G": 16
+            },
+            "path": "output/duoprisms/duoprism_4_6/cell_first_cube.vZome"
           }
         ]
       },
@@ -1600,7 +1646,7 @@
         },
         "nV": 40,
         "nE": 80,
-        "n_shapes": 5,
+        "n_shapes": 6,
         "shapes": [
           {
             "basename": "oblique_07",
@@ -1686,6 +1732,18 @@
               "R": 40
             },
             "path": "output/duoprisms/duoprism_4_10/oblique_500.vZome"
+          },
+          {
+            "basename": "cell_first_cube",
+            "label": "cell_first",
+            "subtype": "cube",
+            "n_balls": 24,
+            "kernel": null,
+            "strut_counts": {
+              "B": 20,
+              "G": 24
+            },
+            "path": "output/duoprisms/duoprism_4_10/cell_first_cube.vZome"
           }
         ]
       },

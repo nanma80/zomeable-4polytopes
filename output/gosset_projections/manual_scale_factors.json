@@ -231,6 +231,24 @@
       "note": "R edges become phi^0; short B edges become phi^1; long B/Y edges become phi^2",
       "old_file_label": "1_32_N93_b7f5abfd8f2e.vZome",
       "balls": 384
+    },
+    {
+      "file": "2_41/2_41_B3_65_balls.vZome",
+      "scale_factor": "1/4",
+      "scale_factor_zphi": "1/4 + 0*phi",
+      "physical_length_result": "all B/G/Y edges become phi^0"
+    },
+    {
+      "file": "2_41/2_41_B3_93_balls.vZome",
+      "scale_factor": "1/4",
+      "scale_factor_zphi": "1/4 + 0*phi",
+      "physical_length_result": "short B/G edges become phi^0; long B/Y edges become 2*phi^0"
+    },
+    {
+      "file": "2_41/2_41_H3_921_balls.vZome",
+      "scale_factor": "1/4",
+      "scale_factor_zphi": "1/4 + 0*phi",
+      "physical_length_result": "all B/Y/R edges become exactly double standard struts"
     }
   ]
 }

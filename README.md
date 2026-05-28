@@ -19,10 +19,10 @@ rotation and uniform scale to count distinct 3D shapes.
 | -------- | --------: | -----------------: | -------------------: |
 | [Regular](docs/CATEGORY_REGULAR.md) | 6 | 6 | 15 + 1 inf family ¹ |
 | [Uniform](docs/CATEGORY_UNIFORM.md) *(nonprismatic)* | 41 | 28 | 73 |
-| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | ∞ | 6 | 14 |
-| [Polyhedral prisms](docs/CATEGORY_POLYHEDRAL_PRISMS.md) | 17 | 12 | 43 |
+| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | ∞ | 6 | 16 |
+| [Polyhedral prisms](docs/CATEGORY_POLYHEDRAL_PRISMS.md) | 17 | 12 | 45 |
 | [Antiprismatic prisms](docs/CATEGORY_ANTIPRISMATIC_PRISMS.md) | ∞ | 1 | 9 |
-| **Total** | **∞** | **53** | **154 + 1 inf family** |
+| **Total** | **∞** | **53** | **158 + 1 inf family** |
 
 Click a category to see the per-polytope list with shape counts and
 links to the **3D viewer** for every polytope.  Each viewer page lives

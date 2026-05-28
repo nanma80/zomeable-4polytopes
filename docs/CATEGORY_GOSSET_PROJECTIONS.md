@@ -16,16 +16,17 @@ Gosset-family and adjacent D/E root polytopes.
 | `2_31` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
 | `1_32` | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
 | `4_21` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
+| `2_41` | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_41.html) |
 
-All 31 labelled models are available in this folder tree:
+All 34 labelled models are available in this folder tree:
 
 - [`output/gosset_projections/`](../output/gosset_projections/)
 
 The ball counts on the viewer page count distinct 3D ball positions after
 projection, not vertices of the original higher-dimensional source polytope.
-Twenty-one models have full B3/octahedral point-cloud symmetry; three models have
+Twenty-three models have full B3/octahedral point-cloud symmetry; three models have
 full D4/tetragonal point-cloud symmetry; the two `3_21`
-N=44 models, the two `2_31` N=93 models, the two `1_32` 384-ball models, and the `4_21` N=137 model have full
+N=44 models, the two `2_31` N=93 models, the two `1_32` 384-ball models, the `4_21` N=137 model, and the `2_41` N=921 model have full
 H3/icosahedral symmetry.
 
 The R=2 raw-column `Z[phi]^3` sweep recovers all 10 previously published
@@ -37,5 +38,7 @@ finds five models and saturates through R=3.  For `1_32`, evaluating those
 same E7 projection directions gives five labelled models.  The rectified
 5-orthoplex and `2_11` have the same D5 root edge-direction constraints as
 `1_21`; direct R=1/R=2/R=3 sweeps give three labelled models each.
+For `2_41`, the direct odd-spinor E8-edge sweep has found three labelled models
+through R=2; the R=3 confirmation run is longer.
 See [`GOSSET_PROJECTIONS.md`](GOSSET_PROJECTIONS.md) for the sweep method and
 symmetry audit.

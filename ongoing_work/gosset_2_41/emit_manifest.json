@@ -1,0 +1,83 @@
+[
+  {
+    "ok": true,
+    "input_sig": "N65_1d8629f4e5b7",
+    "shape_sig": "N65_1d8629f4e5b7",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\2_41\\2_41_B3_65_balls.vZome",
+    "balls": 65,
+    "visible_edges": 382,
+    "source_edges": 69120,
+    "collapsed": 11520,
+    "audit": {
+      "Y": 184,
+      "B": 114,
+      "G": 84
+    },
+    "bad": [],
+    "cov_eigs": [
+      2.000926354793886,
+      2.000926354793886,
+      2.000926354793886
+    ],
+    "rank_singular_values": [
+      65.72670690061994,
+      65.72670690061993,
+      65.7267069006199
+    ],
+    "scale_factor": "1/4"
+  },
+  {
+    "ok": true,
+    "input_sig": "N921_cb19e4987e4f",
+    "shape_sig": "N921_cb19e4987e4f",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\2_41\\2_41_H3_921_balls.vZome",
+    "balls": 921,
+    "visible_edges": 22464,
+    "source_edges": 69120,
+    "collapsed": 1152,
+    "audit": {
+      "R": 7584,
+      "B": 7200,
+      "Y": 7680
+    },
+    "bad": [],
+    "cov_eigs": [
+      2.0009263547938856,
+      2.0009263547938856,
+      2.0009263547938865
+    ],
+    "rank_singular_values": [
+      65.72670690061992,
+      65.72670690061992,
+      65.72670690061992
+    ],
+    "scale_factor": "1/4"
+  },
+  {
+    "ok": true,
+    "input_sig": "N93_1c70aede7272",
+    "shape_sig": "N93_1c70aede7272",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\gosset_projections\\2_41\\2_41_B3_93_balls.vZome",
+    "balls": 93,
+    "visible_edges": 767,
+    "source_edges": 69120,
+    "collapsed": 7488,
+    "audit": {
+      "B": 267,
+      "G": 348,
+      "Y": 152
+    },
+    "bad": [],
+    "cov_eigs": [
+      2.0009263547938856,
+      2.0009263547938856,
+      2.0009263547938856
+    ],
+    "rank_singular_values": [
+      65.72670690061993,
+      65.72670690061993,
+      65.72670690061992
+    ],
+    "scale_factor": "1/4"
+  }
+]

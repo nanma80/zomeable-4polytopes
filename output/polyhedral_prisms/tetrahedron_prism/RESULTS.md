@@ -4,13 +4,14 @@
 - 4D vertices: **8**, edges: **16**
 - Folder: `output/polyhedral_prisms/tetrahedron_prism/`
 
-**1 distinct zomeable shape** found (rng = 4 agnostic kernel sweep).
+**2 distinct zomeable shapes** found (rng = 4 agnostic kernel sweep).
 
 ## Shapes
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
 | 1 | `cell_first_tetrahedron.vZome` | cell_first / tetrahedron | 4 | G:6 |
+| 2 | `face_first_square.vZome` | face_first / square | 8 | B:8  G:8 |
 
 ## Provenance
 
@@ -30,6 +31,14 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     cell_first_tetrahedron.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="face_first_square.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    face_first_square.vZome
  </figcaption>
 </figure>
 

@@ -1,0 +1,530 @@
+[
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "edge_first",
+    "label": "edge_first",
+    "subtype": null,
+    "n_balls": 14,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism edge_first: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.3649983406066895
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8941762447357178
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.3798837661743164
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_02",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_02: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.411273241043091
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_03",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_03: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4726779460906982
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_04",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_04: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8568956851959229
+  },
+  {
+    "slug": "cuboctahedron_prism",
+    "basename": "oblique_05",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('cuboctahedron_prism oblique_05: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.7756140232086182
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "face_first_square",
+    "label": "face_first",
+    "subtype": "square",
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism face_first_square: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4103448390960693
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8172607421875
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.449026346206665
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_02",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_02: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.406245470046997
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_03",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_03: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4424521923065186
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_04",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_04: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8466811180114746
+  },
+  {
+    "slug": "octahedron_prism",
+    "basename": "oblique_05",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 12,
+    "status": "still_fails",
+    "error": "RuntimeError('octahedron_prism oblique_05: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.822744369506836
+  },
+  {
+    "slug": "rhombicuboctahedron_prism",
+    "basename": "cell_first_cube_00",
+    "label": "cell_first",
+    "subtype": "cube",
+    "n_balls": 28,
+    "status": "still_fails",
+    "error": "RuntimeError('rhombicuboctahedron_prism cell_first_cube_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.5480570793151855
+  },
+  {
+    "slug": "rhombicuboctahedron_prism",
+    "basename": "cell_first_cube_01",
+    "label": "cell_first",
+    "subtype": "cube",
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('rhombicuboctahedron_prism cell_first_cube_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 14.417194366455078
+  },
+  {
+    "slug": "rhombicuboctahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('rhombicuboctahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.612839460372925
+  },
+  {
+    "slug": "rhombicuboctahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 40,
+    "status": "still_fails",
+    "error": "RuntimeError('rhombicuboctahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.516791343688965
+  },
+  {
+    "slug": "rhombicuboctahedron_prism",
+    "basename": "cell_first_rhombicuboctahedron",
+    "label": "cell_first",
+    "subtype": "rhombicuboctahedron",
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('rhombicuboctahedron_prism cell_first_rhombicuboctahedron: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.5462939739227295
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 6,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.265188694000244
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "face_first_square",
+    "label": "face_first",
+    "subtype": "square",
+    "n_balls": 8,
+    "status": "now_emits",
+    "counts": {
+      "G": 8,
+      "B": 8
+    },
+    "path": "ongoing_work\\snap_fix_audit\\family_A\\tetrahedron_prism\\face_first_square.vZome",
+    "elapsed_s": 3.8766355514526367
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8836419582366943
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_02",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_02: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4055898189544678
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_03",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_03: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.3655927181243896
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_04",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_04: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.5238587856292725
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "oblique_05",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism oblique_05: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.7740058898925781
+  },
+  {
+    "slug": "tetrahedron_prism",
+    "basename": "face_first_triangle",
+    "label": "face_first",
+    "subtype": "triangle",
+    "n_balls": 8,
+    "status": "still_fails",
+    "error": "RuntimeError('tetrahedron_prism face_first_triangle: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.7959492206573486
+  },
+  {
+    "slug": "truncated_cube_prism",
+    "basename": "face_first_square",
+    "label": "face_first",
+    "subtype": "square",
+    "n_balls": 28,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cube_prism face_first_square: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.576098918914795
+  },
+  {
+    "slug": "truncated_cube_prism",
+    "basename": "cell_first_octagonal_prism",
+    "label": "cell_first",
+    "subtype": "octagonal_prism",
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cube_prism cell_first_octagonal_prism: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 6.970382928848267
+  },
+  {
+    "slug": "truncated_cube_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cube_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.562685251235962
+  },
+  {
+    "slug": "truncated_cube_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 44,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cube_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.620978355407715
+  },
+  {
+    "slug": "truncated_cube_prism",
+    "basename": "cell_first_truncated_cube",
+    "label": "cell_first",
+    "subtype": "truncated_cube",
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cube_prism cell_first_truncated_cube: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.6232810020446777
+  },
+  {
+    "slug": "truncated_cuboctahedron_prism",
+    "basename": "cell_first_cube",
+    "label": "cell_first",
+    "subtype": "cube",
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cuboctahedron_prism cell_first_cube: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.5598866939544678
+  },
+  {
+    "slug": "truncated_cuboctahedron_prism",
+    "basename": "cell_first_octagonal_prism",
+    "label": "cell_first",
+    "subtype": "octagonal_prism",
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cuboctahedron_prism cell_first_octagonal_prism: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 7.256056785583496
+  },
+  {
+    "slug": "truncated_cuboctahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 96,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cuboctahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4350228309631348
+  },
+  {
+    "slug": "truncated_cuboctahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 88,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cuboctahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.613941192626953
+  },
+  {
+    "slug": "truncated_cuboctahedron_prism",
+    "basename": "cell_first_truncated_cuboctahedron",
+    "label": "cell_first",
+    "subtype": "truncated_cuboctahedron",
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_cuboctahedron_prism cell_first_truncated_cuboctahedron: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.5628104209899902
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "face_first_square",
+    "label": "face_first",
+    "subtype": "square",
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism face_first_square: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4281933307647705
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "cell_first_cube",
+    "label": "cell_first",
+    "subtype": "cube",
+    "n_balls": 32,
+    "status": "now_emits",
+    "counts": {
+      "G": 24,
+      "B": 32
+    },
+    "path": "ongoing_work\\snap_fix_audit\\family_A\\truncated_octahedron_prism\\cell_first_cube.vZome",
+    "elapsed_s": 3.8727645874023438
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.7067337036132812
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4454126358032227
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_02",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_02: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4162869453430176
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_03",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_03: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.386652708053589
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_04",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_04: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.7437472343444824
+  },
+  {
+    "slug": "truncated_octahedron_prism",
+    "basename": "oblique_05",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 48,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_octahedron_prism oblique_05: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.6904799938201904
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_00",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 14,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_00: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.2939565181732178
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_01",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_01: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.8047106266021729
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_02",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_02: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.482914447784424
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_03",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_03: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.4418838024139404
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_04",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_04: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 3.3880765438079834
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_05",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_05: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.772956132888794
+  },
+  {
+    "slug": "truncated_tetrahedron_prism",
+    "basename": "oblique_06",
+    "label": "oblique",
+    "subtype": null,
+    "n_balls": 24,
+    "status": "still_fails",
+    "error": "RuntimeError('truncated_tetrahedron_prism oblique_06: could not snap coords to ZZ[phi]^3')",
+    "elapsed_s": 1.707937240600586
+  }
+]

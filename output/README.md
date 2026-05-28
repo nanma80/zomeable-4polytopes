@@ -18,7 +18,7 @@ organised into category subfolders:
   strict orthographic zomeable projections of Gosset-family and adjacent D/E
   root polytopes including 5-orthoplex (`2_11`), 5-demicube (`1_21`),
   rectified 5-orthoplex (`t1 2_11`), `2_21`, `1_22`, `3_21`, `2_31`,
-  `1_32`, and `4_21`.
+  `1_32`, `4_21`, and `2_41`.
 
 Each polytope subfolder has its own `RESULTS.md` describing its shapes
 and kernel directions, with two historical exceptions kept under
@@ -40,7 +40,9 @@ Provenance for the 204-polytope prismatic sweep
 (Families A/B/C above) lives in
 [`prismatic_manifest.json`](prismatic_manifest.json); see
 [`../docs/PRISMATIC.md`](../docs/PRISMATIC.md) for the methodology
-and the 19 emitting polytopes.
+and the 19 emitting polytopes.  A post-sweep snap-alignment audit recovered
+four additional prismatic models whose edge directions were found originally
+but whose first valid alignment did not snap to exact ℤ[φ]³ coordinates.
 
 The Gosset projection files are intentionally kept as a parallel related
 category rather than folded into the 4-polytope taxonomy; see

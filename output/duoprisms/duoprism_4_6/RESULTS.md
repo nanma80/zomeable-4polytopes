@@ -4,7 +4,7 @@
 - 4D vertices: **24**, edges: **48**
 - Folder: `output/duoprisms/duoprism_4_6/`
 
-**3 distinct zomeable shapes** found (rng = 5 agnostic kernel sweep).
+**4 distinct zomeable shapes** found (rng = 5 agnostic kernel sweep).
 
 ## Shapes
 
@@ -13,6 +13,7 @@
 | 1 | `oblique_100.vZome` | oblique | 24 | B:24  Y:24 |
 | 2 | `oblique_133.vZome` | oblique | 24 | B:24  Y:24 |
 | 3 | `oblique_356.vZome` | oblique | 24 | B:24  Y:24 |
+| 4 | `cell_first_cube.vZome` | cell_first / cube | 16 | B:12  G:16 |
 
 ## Provenance
 
@@ -48,6 +49,14 @@
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_356.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
  </figcaption>
 </figure>
 

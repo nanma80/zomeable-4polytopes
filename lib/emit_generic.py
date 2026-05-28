@@ -18,7 +18,7 @@ import math
 import numpy as np
 from fractions import Fraction
 from emit_vzome import GF, emit_vzome_directional, classify_direction, phi_pow
-from search_engine import projection_matrix, _try_align
+from search_engine import projection_matrix, _AXES, _check_cos_pairs, _classify_dir
 
 PHI_F = (1.0 + 5.0 ** 0.5) / 2.0
 
@@ -149,6 +149,77 @@ def _dedup_balls(balls):
     return uniq, idx_map
 
 
+def _iter_alignments(P3, tol=1e-5):
+    """Yield every O(3) edge-axis alignment accepted by search_engine.
+
+    The search stage only needs one valid edge alignment.  Emission additionally
+    needs the rotated vertex coordinates to snap into Z[phi]^3, and symmetric
+    projections can have multiple valid edge alignments where only some snap.
+    """
+    K = P3.shape[1]
+    norms = np.linalg.norm(P3, axis=0)
+    nz = np.where(norms > tol)[0]
+    if len(nz) < 2:
+        return
+    U = P3[:, nz] / norms[nz]
+    if not _check_cos_pairs(U, tol=tol):
+        return
+    pa = U[:, 0]
+    b = None
+    for k in range(1, U.shape[1]):
+        if np.linalg.norm(np.cross(pa, U[:, k])) > tol:
+            b = k
+            break
+    if b is None:
+        return
+    pb = U[:, b]
+    cab = pa @ pb
+    seen = set()
+    for axa, _ in _AXES:
+        for sa in (1, -1):
+            ta = sa * axa
+            for axb, _ in _AXES:
+                for sb in (1, -1):
+                    tb = sb * axb
+                    if abs(ta @ tb - cab) > tol:
+                        continue
+                    e1s = pa
+                    v2s = pb - cab * pa
+                    n2s = np.linalg.norm(v2s)
+                    if n2s < tol:
+                        continue
+                    e2s = v2s / n2s
+                    e3s = np.cross(e1s, e2s)
+                    e1t = ta
+                    v2t = tb - cab * ta
+                    n2t = np.linalg.norm(v2t)
+                    if n2t < tol:
+                        continue
+                    e2t = v2t / n2t
+                    e3t = np.cross(e1t, e2t)
+                    R = (np.column_stack([e1t, e2t, e3t])
+                         @ np.column_stack([e1s, e2s, e3s]).T)
+                    rkey = tuple(np.round(R.flatten(), 9))
+                    if rkey in seen:
+                        continue
+                    classes = []
+                    ok = True
+                    for c_ in range(K):
+                        v = R @ P3[:, c_]
+                        L = np.linalg.norm(v)
+                        if L < tol:
+                            classes.append('_')
+                            continue
+                        cn = _classify_dir(v / L, tol)
+                        if cn is None:
+                            ok = False
+                            break
+                        classes.append(cn)
+                    if ok:
+                        seen.add(rkey)
+                        yield R, classes
+
+
 def project_and_emit(name, V4, E4, n, out_path,
                      extra_scale=GF(2, 2),
                      scales_to_try=None,
@@ -170,20 +241,6 @@ def project_and_emit(name, V4, E4, n, out_path,
     Q = projection_matrix(n)
     P3 = (Q @ V4.T).T  # Nx3 numerical
     edges_dirs = (Q @ np.array([V4[b] - V4[a] for a, b in E4]).T)
-    res = _try_align(edges_dirs)
-    if res is None:
-        raise RuntimeError(f"{name}: kernel n={n.tolist()} NOT alignable")
-    R, classes = res
-    if verbose:
-        from collections import Counter
-        print(f"  align ok, sig={dict(Counter(classes))}")
-    P3rot = (R @ P3.T).T
-
-    # search_engine and emit_vzome use icosahedral groups that are mirror-related
-    # (their Y-orbits contain (0,phi^2,1) vs (0,1,phi^2) — opposite cyclic).
-    # A coordinate swap reconciles them. Pick swap_yz as canonical.
-    SWAP_YZ = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=float)
-    P3rot = (SWAP_YZ @ P3rot.T).T
 
     if scales_to_try is None:
         # Common normalising factors that arise from orthonormal projection of
@@ -201,13 +258,36 @@ def project_and_emit(name, V4, E4, n, out_path,
                 scales_to_try.append(b * k)
                 scales_to_try.append(b / k)
 
-    s, snapped = _snap_coords(P3rot, scales_to_try)
+    # search_engine and emit_vzome use icosahedral groups that are mirror-related
+    # (their Y-orbits contain (0,phi^2,1) vs (0,1,phi^2) — opposite cyclic).
+    # A coordinate swap reconciles them. Pick swap_yz as canonical.
+    SWAP_YZ = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=float)
+
+    alignments_tried = 0
+    snap_fail_examples = []
+    snapped = None
+    for R, classes in _iter_alignments(edges_dirs):
+        alignments_tried += 1
+        P3rot = (R @ P3.T).T
+        P3rot = (SWAP_YZ @ P3rot.T).T
+        s, snapped = _snap_coords(P3rot, scales_to_try)
+        if snapped is not None:
+            if verbose:
+                from collections import Counter
+                print(f"  align ok, sig={dict(Counter(classes))}")
+            break
+        if verbose and len(snap_fail_examples) < 1:
+            snap_fail_examples.append(P3rot[:5].copy())
+    if alignments_tried == 0:
+        raise RuntimeError(f"{name}: kernel n={n.tolist()} NOT alignable")
     if snapped is None:
         # diagnostic
         if verbose:
-            print(f"  numerical 3D rotated coords (failed to snap):")
-            for p in P3rot[:5]:
-                print(f"    {p.round(6)}")
+            print(f"  tried {alignments_tried} valid edge alignments; none snapped")
+            if snap_fail_examples:
+                print(f"  numerical 3D rotated coords from first failed alignment:")
+                for p in snap_fail_examples[0]:
+                    print(f"    {p.round(6)}")
         raise RuntimeError(f"{name}: could not snap coords to ZZ[phi]^3")
     if verbose:
         print(f"  snap scale s={s:.6f}")

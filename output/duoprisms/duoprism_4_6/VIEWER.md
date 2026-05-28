@@ -1,6 +1,6 @@
 # {4}×{6} duoprism — interactive 3D viewer
 
-➡️ **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_6/VIEWER.html)** to interact with the 3 models below.
+➡️ **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_6/VIEWER.html)** to interact with the 4 models below.
 
 For methodology, kernel directions, search subtleties, and reproduction commands, see [`RESULTS.md`](RESULTS.md) in the same folder.
 
@@ -11,6 +11,14 @@ For methodology, kernel directions, search subtleties, and reproduction commands
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     oblique_100.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
  </figcaption>
 </figure>
 

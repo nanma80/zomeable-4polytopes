@@ -32,6 +32,8 @@ Useful entry points:
   standalone sweep and emission.
 - `zphi_1_32_emit.py` — evaluate and emit `1_32` models from the completed
   `2_31` projection directions.
+- `zphi_2_41_sweep.py` / `zphi_2_41_emit.py` — direct odd-spinor E8-edge
+  sweep and emission for `2_41`.
 - `zphi_column_postprocess.py` — compare sweep JSON output against curated
   `.vZome` files.
 - `zphi_full_dedup.py` — full Euclidean point-cloud dedup.

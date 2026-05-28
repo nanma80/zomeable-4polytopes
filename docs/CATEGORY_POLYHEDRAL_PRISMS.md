@@ -12,11 +12,11 @@ cube prism = tesseract is covered under regulars).  12 yielded
 | icosidodecahedron prism | 5 | cell-first + edge-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/icosidodecahedron_prism/VIEWER.html) |
 | octahedron prism | 2 | cell-first + edge-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/octahedron_prism/VIEWER.html) |
 | rhombicosidodecahedron prism | 5 | 2 cell-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/rhombicosidodecahedron_prism/VIEWER.html) |
-| tetrahedron prism | 1 | cell-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/tetrahedron_prism/VIEWER.html) |
+| tetrahedron prism | 2 | cell-first + face-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/tetrahedron_prism/VIEWER.html) |
 | truncated dodecahedron prism | 5 | cell-first + face-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_dodecahedron_prism/VIEWER.html) |
 | truncated icosahedron prism | 5 | cell-first + face-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_icosahedron_prism/VIEWER.html) |
 | truncated icosidodecahedron prism | 5 | 2 cell-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_icosidodecahedron_prism/VIEWER.html) |
-| truncated octahedron prism | 1 | cell-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_octahedron_prism/VIEWER.html) |
+| truncated octahedron prism | 2 | 2 cell-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_octahedron_prism/VIEWER.html) |
 | truncated tetrahedron prism | 2 | cell-first + face-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/polyhedral_prisms/truncated_tetrahedron_prism/VIEWER.html) |
 
 

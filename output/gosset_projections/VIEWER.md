@@ -17,5 +17,6 @@ This page used to contain all embedded viewers.  It is now an index so bookmarke
 | `2_31` | 5 | [3D viewer ->](2_31.md) |
 | `1_32` | 5 | [3D viewer ->](1_32.md) |
 | `4_21` | 3 | [3D viewer ->](4_21.md) |
+| `2_41` | 3 | [3D viewer ->](2_41.md) |
 
 See [`README.md`](README.md) for the file list and [`../../docs/GOSSET_PROJECTIONS.md`](../../docs/GOSSET_PROJECTIONS.md) for methodology.

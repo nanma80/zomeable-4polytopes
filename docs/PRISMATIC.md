@@ -18,10 +18,10 @@ Polytopes covered: **204 (in scope)**
 
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
-| **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 43 |
-| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 14 |
+| **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 45 |
+| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 16 |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
-| **Total** | | **204** | **19** | **66** |
+| **Total** | | **204** | **19** | **70** |
 
 ## Definitions
 
@@ -55,6 +55,14 @@ Identical machinery to the 47-corpus sweep:
 4. For each unique shape: snap projected vertex coords to
    ℤ[φ]³ (multi-scale search) and emit a `.vZome` file.
 
+Post-audit note: the original generic emitter stopped after the first valid
+edge-axis alignment.  Some symmetric projections have multiple valid alignments,
+where only a later alignment gives exact ℤ[φ]³ vertex coordinates.  The emitter
+now tries all valid alignments before declaring `snap_failed`.  Rechecking the
+feature-aligned snap failures recovered four additional models:
+`tetrahedron_prism/face_first_square`, `truncated_octahedron_prism/cell_first_cube`,
+`duoprism_4_6/cell_first_cube`, and `duoprism_4_10/cell_first_cube`.
+
 Driver: [`tools/run_prismatic_sweep.py`](../tools/run_prismatic_sweep.py).
 Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_log.jsonl)
 (one record per polytope).
@@ -76,13 +84,13 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 | rhombicuboctahedron (rhombicuboctahedron_prism) | 0 |
 | snub cube (snub_cube_prism) | 0 |
 | snub dodecahedron (snub_dodecahedron_prism) | 0 |
-| tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 1 |
+| tetrahedron ([`tetrahedron_prism`](../output/polyhedral_prisms/tetrahedron_prism/RESULTS.md)) | 2 |
 | truncated cube (truncated_cube_prism) | 0 |
 | truncated cuboctahedron (truncated_cuboctahedron_prism) | 0 |
 | truncated dodecahedron ([`truncated_dodecahedron_prism`](../output/polyhedral_prisms/truncated_dodecahedron_prism/RESULTS.md)) | 5 |
 | truncated icosahedron ([`truncated_icosahedron_prism`](../output/polyhedral_prisms/truncated_icosahedron_prism/RESULTS.md)) | 5 |
 | truncated icosidodecahedron ([`truncated_icosidodecahedron_prism`](../output/polyhedral_prisms/truncated_icosidodecahedron_prism/RESULTS.md)) | 5 |
-| truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 1 |
+| truncated octahedron ([`truncated_octahedron_prism`](../output/polyhedral_prisms/truncated_octahedron_prism/RESULTS.md)) | 2 |
 | truncated tetrahedron ([`truncated_tetrahedron_prism`](../output/polyhedral_prisms/truncated_tetrahedron_prism/RESULTS.md)) | 2 |
 
 
@@ -95,8 +103,8 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 | p | q | Distinct shapes |
 |---:|---:|---:|
 | 3 | 6 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
-| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 3 |
-| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 5 |
+| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 4 |
+| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 6 |
 | 5 | 10 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
 | 6 | 6 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
 | 10 | 10 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |

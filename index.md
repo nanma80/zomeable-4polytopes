@@ -20,16 +20,16 @@ Pick a category and click **View →** to jump into its interactive page.
 | -------- | --------: | -----------------: | -------------------: | --- |
 | **Regular** | 6 | 6 | 15 + 1 inf family ¹ | [**View 6 regulars →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_REGULAR.html) |
 | **Uniform** *(non-prismatic)* | 41 | 28 | 73 | [**View 41 uniforms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_UNIFORM.html) |
-| **Duoprisms** *({p}×{q})* | ∞ | 6 | 14 | [**Browse duoprisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) |
-| **Polyhedral prisms** *(P × [0,1])* | 17 | 12 | 43 | [**View 17 polyhedral prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_POLYHEDRAL_PRISMS.html) |
+| **Duoprisms** *({p}×{q})* | ∞ | 6 | 16 | [**Browse duoprisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) |
+| **Polyhedral prisms** *(P × [0,1])* | 17 | 12 | 45 | [**View 17 polyhedral prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_POLYHEDRAL_PRISMS.html) |
 | **Antiprismatic prisms** *(A_n × [0,1])* | ∞ | 1 | 9 | [**Browse antiprism prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_ANTIPRISMATIC_PRISMS.html) |
-| **Total** | **∞** | **53** | **154 + 1 inf family** | |
+| **Total** | **∞** | **53** | **158 + 1 inf family** | |
 
 Related non-4D collection:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
-| **Gosset orthographic projections** *(5-orthoplex/2_11, 5-demicube/1_21, rectified 5-orthoplex/t1 2_11, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21)* | 9 | 31 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+| **Gosset orthographic projections** *(5-orthoplex/2_11, 5-demicube/1_21, rectified 5-orthoplex/t1 2_11, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21, 2_41)* | 10 | 34 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
 
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
 
