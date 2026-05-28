@@ -7,25 +7,25 @@ category taxonomy; they are strict orthographic zomeable projections of the
 
 | Source polytope | Nodes | Vertices | Models | Viewer |
 |---|---:|---:|---:|---|
-| 5-simplex (hexateron) | `1` | 6 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/5_simplex.html) |
+| 5-simplex | `1` | 6 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/5_simplex.html) |
 | Rectified 5-simplex | `2` | 15 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/rectified_5_simplex.html) |
 | Birectified 5-simplex | `3` | 20 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/birectified_5_simplex.html) |
-| A5 Wythoff t{1,2} | `1,2` | 30 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t12.html) |
-| A5 Wythoff t{1,3} | `1,3` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t13.html) |
-| A5 Wythoff t{1,4} | `1,4` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t14.html) |
-| A5 Wythoff t{1,5} | `1,5` | 30 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t15.html) |
-| A5 Wythoff t{2,3} | `2,3` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t23.html) |
-| A5 Wythoff t{2,4} | `2,4` | 90 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t24.html) |
-| A5 Wythoff t{1,2,3} | `1,2,3` | 120 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t123.html) |
-| A5 Wythoff t{1,2,4} | `1,2,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t124.html) |
-| A5 Wythoff t{1,2,5} | `1,2,5` | 120 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t125.html) |
-| A5 Wythoff t{1,3,4} | `1,3,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t134.html) |
-| A5 Wythoff t{1,3,5} | `1,3,5` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t135.html) |
-| A5 Wythoff t{2,3,4} | `2,3,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t234.html) |
-| A5 Wythoff t{1,2,3,4} | `1,2,3,4` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1234.html) |
-| A5 Wythoff t{1,2,3,5} | `1,2,3,5` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1235.html) |
-| A5 Wythoff t{1,2,4,5} | `1,2,4,5` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1245.html) |
-| A5 Wythoff t{1,2,3,4,5} | `1,2,3,4,5` | 720 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t12345.html) |
+| Truncated 5-simplex | `1,2` | 30 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t12.html) |
+| Cantellated 5-simplex | `1,3` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t13.html) |
+| Runcinated 5-simplex | `1,4` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t14.html) |
+| Stericated 5-simplex | `1,5` | 30 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t15.html) |
+| Bitruncated 5-simplex | `2,3` | 60 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t23.html) |
+| Bicantellated 5-simplex | `2,4` | 90 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t24.html) |
+| Cantitruncated 5-simplex | `1,2,3` | 120 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t123.html) |
+| Runcitruncated 5-simplex | `1,2,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t124.html) |
+| Steritruncated 5-simplex | `1,2,5` | 120 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t125.html) |
+| Runcicantellated 5-simplex | `1,3,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t134.html) |
+| Stericantellated 5-simplex | `1,3,5` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t135.html) |
+| Bicantitruncated 5-simplex | `2,3,4` | 180 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t234.html) |
+| Runcicantitruncated 5-simplex | `1,2,3,4` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1234.html) |
+| Stericantitruncated 5-simplex | `1,2,3,5` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1235.html) |
+| Steriruncitruncated 5-simplex | `1,2,4,5` | 360 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t1245.html) |
+| Omnitruncated 5-simplex | `1,2,3,4,5` | 720 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/a5_projections/a5_t12345.html) |
 
 All 57 labelled models are available in this folder tree:
 

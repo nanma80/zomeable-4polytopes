@@ -50,14 +50,28 @@ def slug_for_nodes(nodes: tuple[int, ...]) -> str:
 
 def display_for_nodes(nodes: tuple[int, ...]) -> str:
     nodes = canonical_nodes(nodes)
-    special = {
-        (1,): "5-simplex (hexateron)",
+    names = {
+        (1,): "5-simplex",
         (2,): "Rectified 5-simplex",
         (3,): "Birectified 5-simplex",
+        (1, 2): "Truncated 5-simplex",
+        (1, 3): "Cantellated 5-simplex",
+        (1, 4): "Runcinated 5-simplex",
+        (1, 5): "Stericated 5-simplex",
+        (2, 3): "Bitruncated 5-simplex",
+        (2, 4): "Bicantellated 5-simplex",
+        (1, 2, 3): "Cantitruncated 5-simplex",
+        (1, 2, 4): "Runcitruncated 5-simplex",
+        (1, 2, 5): "Steritruncated 5-simplex",
+        (1, 3, 4): "Runcicantellated 5-simplex",
+        (1, 3, 5): "Stericantellated 5-simplex",
+        (2, 3, 4): "Bicantitruncated 5-simplex",
+        (1, 2, 3, 4): "Runcicantitruncated 5-simplex",
+        (1, 2, 3, 5): "Stericantitruncated 5-simplex",
+        (1, 2, 4, 5): "Steriruncitruncated 5-simplex",
+        (1, 2, 3, 4, 5): "Omnitruncated 5-simplex",
     }
-    if nodes in special:
-        return special[nodes]
-    return "A5 Wythoff t{" + ",".join(str(i) for i in nodes) + "}"
+    return names[nodes]
 
 
 def base_values(nodes: tuple[int, ...]) -> tuple[int, ...]:

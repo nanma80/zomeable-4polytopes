@@ -15,10 +15,10 @@ set is its `S6` orbit.
 
 | Example | Nodes | Seed vertex | Vertices |
 |---|---|---|---:|
-| 5-simplex (hexateron) | `{1}` | `(1,0,0,0,0,0)` | 6 |
+| 5-simplex | `{1}` | `(1,0,0,0,0,0)` | 6 |
 | Rectified 5-simplex | `{2}` | `(1,1,0,0,0,0)` | 15 |
 | Birectified 5-simplex | `{3}` | `(1,1,1,0,0,0)` | 20 |
-| Omnitruncated A5 | `{1,2,3,4,5}` | `(5,4,3,2,1,0)` | 720 |
+| Omnitruncated 5-simplex | `{1,2,3,4,5}` | `(5,4,3,2,1,0)` | 720 |
 
 Every edge of every A5 uniform polytope is parallel to a root `e_i - e_j`, so a
 projection sends all edges to zometool axes iff every difference of projected

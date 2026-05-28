@@ -3,7 +3,7 @@
     "file": "5_simplex/5_simplex_sym24_5balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "5_simplex",
-    "display": "5-simplex (hexateron)",
+    "display": "5-simplex",
     "nodes": [
       1
     ],
@@ -123,7 +123,7 @@
     "file": "a5_t12/a5_t12_sym24_21balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t12",
-    "display": "A5 Wythoff t{1,2}",
+    "display": "Truncated 5-simplex",
     "nodes": [
       1,
       2
@@ -164,7 +164,7 @@
     "file": "a5_t13/a5_t13_sym24_38balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t13",
-    "display": "A5 Wythoff t{1,3}",
+    "display": "Cantellated 5-simplex",
     "nodes": [
       1,
       3
@@ -205,7 +205,7 @@
     "file": "a5_t14/a5_t14_sym24_38balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t14",
-    "display": "A5 Wythoff t{1,4}",
+    "display": "Runcinated 5-simplex",
     "nodes": [
       1,
       4
@@ -246,7 +246,7 @@
     "file": "a5_t15/a5_t15_sym48_21balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t15",
-    "display": "A5 Wythoff t{1,5}",
+    "display": "Stericated 5-simplex",
     "nodes": [
       1,
       5
@@ -287,7 +287,7 @@
     "file": "a5_t23/a5_t23_sym24_38balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t23",
-    "display": "A5 Wythoff t{2,3}",
+    "display": "Bitruncated 5-simplex",
     "nodes": [
       2,
       3
@@ -328,7 +328,7 @@
     "file": "a5_t24/a5_t24_sym48_48balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t24",
-    "display": "A5 Wythoff t{2,4}",
+    "display": "Bicantellated 5-simplex",
     "nodes": [
       2,
       4
@@ -369,7 +369,7 @@
     "file": "a5_t123/a5_t123_sym24_72balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t123",
-    "display": "A5 Wythoff t{1,2,3}",
+    "display": "Cantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -411,7 +411,7 @@
     "file": "a5_t124/a5_t124_sym24_90balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t124",
-    "display": "A5 Wythoff t{1,2,4}",
+    "display": "Runcitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -453,7 +453,7 @@
     "file": "a5_t125/a5_t125_sym24_72balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t125",
-    "display": "A5 Wythoff t{1,2,5}",
+    "display": "Steritruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -495,7 +495,7 @@
     "file": "a5_t134/a5_t134_sym24_102balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t134",
-    "display": "A5 Wythoff t{1,3,4}",
+    "display": "Runcicantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -537,7 +537,7 @@
     "file": "a5_t135/a5_t135_sym48_90balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t135",
-    "display": "A5 Wythoff t{1,3,5}",
+    "display": "Stericantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -579,7 +579,7 @@
     "file": "a5_t234/a5_t234_sym48_102balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t234",
-    "display": "A5 Wythoff t{2,3,4}",
+    "display": "Bicantitruncated 5-simplex",
     "nodes": [
       2,
       3,
@@ -621,7 +621,7 @@
     "file": "a5_t1234/a5_t1234_sym24_168balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t1234",
-    "display": "A5 Wythoff t{1,2,3,4}",
+    "display": "Runcicantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -664,7 +664,7 @@
     "file": "a5_t1235/a5_t1235_sym24_168balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t1235",
-    "display": "A5 Wythoff t{1,2,3,5}",
+    "display": "Stericantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -707,7 +707,7 @@
     "file": "a5_t1245/a5_t1245_sym48_168balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t1245",
-    "display": "A5 Wythoff t{1,2,4,5}",
+    "display": "Steriruncitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -750,7 +750,7 @@
     "file": "a5_t12345/a5_t12345_sym48_240balls_30531f.vZome",
     "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96|N21_5f3b31f88adb|N38_ed9de599891d|N38_344aecee4ca2|N21_65778fd07bb8|N38_ffc26f3dd5e3|N48_966b288cc318|N72_ac7adfcedbaa|N90_c380672e4183|N72_7eef4e699ede|N102_5ee36accd4f8|N90_619e4f489743|N102_6ea5d813e5c0|N168_2fa6aff08985|N168_21f7af10f994|N168_21f7af10f994|N240_788a79b2c035",
     "polytope": "a5_t12345",
-    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "display": "Omnitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -794,7 +794,7 @@
     "file": "5_simplex/5_simplex_sym6_5balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "5_simplex",
-    "display": "5-simplex (hexateron)",
+    "display": "5-simplex",
     "nodes": [
       1
     ],
@@ -917,7 +917,7 @@
     "file": "a5_t12/a5_t12_sym6_21balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t12",
-    "display": "A5 Wythoff t{1,2}",
+    "display": "Truncated 5-simplex",
     "nodes": [
       1,
       2
@@ -959,7 +959,7 @@
     "file": "a5_t13/a5_t13_sym6_38balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t13",
-    "display": "A5 Wythoff t{1,3}",
+    "display": "Cantellated 5-simplex",
     "nodes": [
       1,
       3
@@ -1001,7 +1001,7 @@
     "file": "a5_t14/a5_t14_sym6_38balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t14",
-    "display": "A5 Wythoff t{1,4}",
+    "display": "Runcinated 5-simplex",
     "nodes": [
       1,
       4
@@ -1043,7 +1043,7 @@
     "file": "a5_t15/a5_t15_sym12_21balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t15",
-    "display": "A5 Wythoff t{1,5}",
+    "display": "Stericated 5-simplex",
     "nodes": [
       1,
       5
@@ -1085,7 +1085,7 @@
     "file": "a5_t23/a5_t23_sym6_38balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t23",
-    "display": "A5 Wythoff t{2,3}",
+    "display": "Bitruncated 5-simplex",
     "nodes": [
       2,
       3
@@ -1127,7 +1127,7 @@
     "file": "a5_t24/a5_t24_sym12_54balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t24",
-    "display": "A5 Wythoff t{2,4}",
+    "display": "Bicantellated 5-simplex",
     "nodes": [
       2,
       4
@@ -1169,7 +1169,7 @@
     "file": "a5_t123/a5_t123_sym6_72balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t123",
-    "display": "A5 Wythoff t{1,2,3}",
+    "display": "Cantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1212,7 +1212,7 @@
     "file": "a5_t124/a5_t124_sym6_102balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t124",
-    "display": "A5 Wythoff t{1,2,4}",
+    "display": "Runcitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1255,7 +1255,7 @@
     "file": "a5_t125/a5_t125_sym6_72balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t125",
-    "display": "A5 Wythoff t{1,2,5}",
+    "display": "Steritruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1298,7 +1298,7 @@
     "file": "a5_t134/a5_t134_sym6_102balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t134",
-    "display": "A5 Wythoff t{1,3,4}",
+    "display": "Runcicantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -1341,7 +1341,7 @@
     "file": "a5_t135/a5_t135_sym12_102balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t135",
-    "display": "A5 Wythoff t{1,3,5}",
+    "display": "Stericantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -1384,7 +1384,7 @@
     "file": "a5_t234/a5_t234_sym12_102balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t234",
-    "display": "A5 Wythoff t{2,3,4}",
+    "display": "Bicantitruncated 5-simplex",
     "nodes": [
       2,
       3,
@@ -1427,7 +1427,7 @@
     "file": "a5_t1234/a5_t1234_sym6_192balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t1234",
-    "display": "A5 Wythoff t{1,2,3,4}",
+    "display": "Runcicantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1471,7 +1471,7 @@
     "file": "a5_t1235/a5_t1235_sym6_192balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t1235",
-    "display": "A5 Wythoff t{1,2,3,5}",
+    "display": "Stericantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1515,7 +1515,7 @@
     "file": "a5_t1245/a5_t1245_sym12_192balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t1245",
-    "display": "A5 Wythoff t{1,2,4,5}",
+    "display": "Steriruncitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1559,7 +1559,7 @@
     "file": "a5_t12345/a5_t12345_sym12_300balls_667fed.vZome",
     "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba|N21_05a0f23df0a4|N38_01ada533c8dc|N38_b22e9e49c617|N21_7be7f51a13a7|N38_b99042965ae4|N54_448781eab625|N72_1f1e0fb697c0|N102_8783e8da6543|N72_2aa438e272cb|N102_a03c176929b7|N102_daa14be78d1c|N102_47dffdc0cdf7|N192_83c130f6a1b9|N192_8848b5f7479d|N192_c0c0138fe6c0|N300_eacf91cf0a39",
     "polytope": "a5_t12345",
-    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "display": "Omnitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -1604,7 +1604,7 @@
     "file": "5_simplex/5_simplex_sym48_6balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "5_simplex",
-    "display": "5-simplex (hexateron)",
+    "display": "5-simplex",
     "nodes": [
       1
     ],
@@ -1724,7 +1724,7 @@
     "file": "a5_t12/a5_t12_sym48_30balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t12",
-    "display": "A5 Wythoff t{1,2}",
+    "display": "Truncated 5-simplex",
     "nodes": [
       1,
       2
@@ -1765,7 +1765,7 @@
     "file": "a5_t13/a5_t13_sym48_42balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t13",
-    "display": "A5 Wythoff t{1,3}",
+    "display": "Cantellated 5-simplex",
     "nodes": [
       1,
       3
@@ -1806,7 +1806,7 @@
     "file": "a5_t14/a5_t14_sym48_38balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t14",
-    "display": "A5 Wythoff t{1,4}",
+    "display": "Runcinated 5-simplex",
     "nodes": [
       1,
       4
@@ -1847,7 +1847,7 @@
     "file": "a5_t15/a5_t15_sym48_18balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t15",
-    "display": "A5 Wythoff t{1,5}",
+    "display": "Stericated 5-simplex",
     "nodes": [
       1,
       5
@@ -1888,7 +1888,7 @@
     "file": "a5_t23/a5_t23_sym48_54balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t23",
-    "display": "A5 Wythoff t{2,3}",
+    "display": "Bitruncated 5-simplex",
     "nodes": [
       2,
       3
@@ -1929,7 +1929,7 @@
     "file": "a5_t24/a5_t24_sym48_49balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t24",
-    "display": "A5 Wythoff t{2,4}",
+    "display": "Bicantellated 5-simplex",
     "nodes": [
       2,
       4
@@ -1970,7 +1970,7 @@
     "file": "a5_t123/a5_t123_sym48_96balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t123",
-    "display": "A5 Wythoff t{1,2,3}",
+    "display": "Cantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2012,7 +2012,7 @@
     "file": "a5_t124/a5_t124_sym48_110balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t124",
-    "display": "A5 Wythoff t{1,2,4}",
+    "display": "Runcitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2054,7 +2054,7 @@
     "file": "a5_t125/a5_t125_sym48_72balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t125",
-    "display": "A5 Wythoff t{1,2,5}",
+    "display": "Steritruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2096,7 +2096,7 @@
     "file": "a5_t134/a5_t134_sym48_122balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t134",
-    "display": "A5 Wythoff t{1,3,4}",
+    "display": "Runcicantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -2138,7 +2138,7 @@
     "file": "a5_t135/a5_t135_sym48_86balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t135",
-    "display": "A5 Wythoff t{1,3,5}",
+    "display": "Stericantellated 5-simplex",
     "nodes": [
       1,
       3,
@@ -2180,7 +2180,7 @@
     "file": "a5_t234/a5_t234_sym48_102balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t234",
-    "display": "A5 Wythoff t{2,3,4}",
+    "display": "Bicantitruncated 5-simplex",
     "nodes": [
       2,
       3,
@@ -2222,7 +2222,7 @@
     "file": "a5_t1234/a5_t1234_sym48_240balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t1234",
-    "display": "A5 Wythoff t{1,2,3,4}",
+    "display": "Runcicantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2265,7 +2265,7 @@
     "file": "a5_t1235/a5_t1235_sym48_224balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t1235",
-    "display": "A5 Wythoff t{1,2,3,5}",
+    "display": "Stericantitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2308,7 +2308,7 @@
     "file": "a5_t1245/a5_t1245_sym48_152balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t1245",
-    "display": "A5 Wythoff t{1,2,4,5}",
+    "display": "Steriruncitruncated 5-simplex",
     "nodes": [
       1,
       2,
@@ -2351,7 +2351,7 @@
     "file": "a5_t12345/a5_t12345_sym48_304balls_2be46b.vZome",
     "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e|N30_a878e70fa737|N42_02b7aee64cd1|N38_bfac3ef80fd5|N18_284d1ddc4e36|N54_3e6c0112df84|N49_13fe1ede87c3|N96_73d951df925f|N110_e091a36d5e4f|N72_a9ba2add485b|N122_6ef3be2025bd|N86_ac41a66eacaf|N102_0865fe2e743b|N240_b8decb44aa97|N224_b8decb44aa97|N152_9bf8916cbeb3|N304_b8decb44aa97",
     "polytope": "a5_t12345",
-    "display": "A5 Wythoff t{1,2,3,4,5}",
+    "display": "Omnitruncated 5-simplex",
     "nodes": [
       1,
       2,
