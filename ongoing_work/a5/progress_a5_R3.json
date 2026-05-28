@@ -1,0 +1,11 @@
+{
+  "polytope_family": "A5",
+  "R": 3,
+  "status": "complete",
+  "elapsed_s": 406.2278022766113,
+  "stats": {
+    "leaf": 86412443,
+    "ortho_hits": 568
+  },
+  "hit_count": 3
+}

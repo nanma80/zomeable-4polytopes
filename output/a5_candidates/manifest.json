@@ -1,0 +1,239 @@
+[
+  {
+    "ok": true,
+    "polytope": "5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\5_simplex_N5_N11_N14_4fb6eb.vZome",
+    "balls": 5,
+    "visible_edges": 10,
+    "source_edges": 15,
+    "collapsed": 1,
+    "shape_sig": "N5_0fddf469258f",
+    "audit": {
+      "Y": 4,
+      "G": 6
+    },
+    "bad": [],
+    "cov_eigs": [
+      49.34953415699772,
+      49.34953415699773,
+      49.349534156997734
+    ],
+    "rank_singular_values": [
+      15.70820393249937,
+      15.70820393249937,
+      15.708203932499368
+    ],
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96"
+  },
+  {
+    "ok": true,
+    "polytope": "rectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\rectified_5_simplex_N5_N11_N14_4fb6eb.vZome",
+    "balls": 11,
+    "visible_edges": 34,
+    "source_edges": 60,
+    "collapsed": 4,
+    "shape_sig": "N11_040c578c40c6",
+    "audit": {
+      "G": 18,
+      "Y": 16
+    },
+    "bad": [],
+    "cov_eigs": [
+      70.49933450999676,
+      70.49933450999676,
+      70.49933450999676
+    ],
+    "rank_singular_values": [
+      31.416407864998742,
+      31.41640786499874,
+      31.41640786499874
+    ],
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96"
+  },
+  {
+    "ok": true,
+    "polytope": "birectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\birectified_5_simplex_N5_N11_N14_4fb6eb.vZome",
+    "balls": 14,
+    "visible_edges": 48,
+    "source_edges": 90,
+    "collapsed": 6,
+    "shape_sig": "N14_4d5740e23b96",
+    "audit": {
+      "Y": 24,
+      "G": 24
+    },
+    "bad": [],
+    "cov_eigs": [
+      77.9203170899964,
+      77.92031708999642,
+      77.92031708999642
+    ],
+    "rank_singular_values": [
+      38.47708441020359,
+      38.47708441020359,
+      38.47708441020358
+    ],
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96"
+  },
+  {
+    "ok": true,
+    "polytope": "5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\5_simplex_N5_N11_N14_cfe09c.vZome",
+    "balls": 5,
+    "visible_edges": 10,
+    "source_edges": 15,
+    "collapsed": 1,
+    "shape_sig": "N5_27b653bec0eb",
+    "audit": {
+      "Y": 4,
+      "B": 3,
+      "G": 3
+    },
+    "bad": [],
+    "cov_eigs": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "rank_singular_values": [
+      3.1622776601683795,
+      3.162277660168379,
+      3.162277660168379
+    ],
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba"
+  },
+  {
+    "ok": true,
+    "polytope": "rectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\rectified_5_simplex_N5_N11_N14_cfe09c.vZome",
+    "balls": 11,
+    "visible_edges": 34,
+    "source_edges": 60,
+    "collapsed": 4,
+    "shape_sig": "N11_fc27455708f8",
+    "audit": {
+      "Y": 16,
+      "B": 9,
+      "G": 9
+    },
+    "bad": [],
+    "cov_eigs": [
+      2.8571428571428577,
+      2.8571428571428577,
+      2.8571428571428577
+    ],
+    "rank_singular_values": [
+      6.324555320336759,
+      6.324555320336759,
+      6.324555320336759
+    ],
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba"
+  },
+  {
+    "ok": true,
+    "polytope": "birectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\birectified_5_simplex_N5_N11_N14_cfe09c.vZome",
+    "balls": 14,
+    "visible_edges": 48,
+    "source_edges": 90,
+    "collapsed": 6,
+    "shape_sig": "N14_6418e84ebeba",
+    "audit": {
+      "Y": 24,
+      "B": 12,
+      "G": 12
+    },
+    "bad": [],
+    "cov_eigs": [
+      3.1578947368421053,
+      3.1578947368421058,
+      3.157894736842106
+    ],
+    "rank_singular_values": [
+      7.745966692414833,
+      7.745966692414832,
+      7.74596669241483
+    ],
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba"
+  },
+  {
+    "ok": true,
+    "polytope": "5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\5_simplex_N6_N13_N14_53a41b.vZome",
+    "balls": 6,
+    "visible_edges": 15,
+    "source_edges": 15,
+    "collapsed": 0,
+    "shape_sig": "N6_9c0f3e69ec66",
+    "audit": {
+      "B": 3,
+      "G": 12
+    },
+    "bad": [],
+    "cov_eigs": [
+      4.188854381999832,
+      4.188854381999833,
+      4.188854381999833
+    ],
+    "rank_singular_values": [
+      4.576491222541475,
+      4.576491222541475,
+      4.576491222541474
+    ],
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e"
+  },
+  {
+    "ok": true,
+    "polytope": "rectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\rectified_5_simplex_N6_N13_N14_53a41b.vZome",
+    "balls": 13,
+    "visible_edges": 48,
+    "source_edges": 60,
+    "collapsed": 0,
+    "shape_sig": "N13_9e943395a13d",
+    "audit": {
+      "G": 36,
+      "B": 12
+    },
+    "bad": [],
+    "cov_eigs": [
+      5.984077688571189,
+      5.9840776885711895,
+      5.9840776885711895
+    ],
+    "rank_singular_values": [
+      9.15298244508295,
+      9.15298244508295,
+      9.152982445082948
+    ],
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e"
+  },
+  {
+    "ok": true,
+    "polytope": "birectified_5_simplex",
+    "file": "C:\\Users\\nanma\\Documents\\vZome\\zomeable-4polytopes\\output\\a5_candidates\\birectified_5_simplex_N6_N13_N14_53a41b.vZome",
+    "balls": 14,
+    "visible_edges": 51,
+    "source_edges": 90,
+    "collapsed": 0,
+    "shape_sig": "N14_ba65230b4a9e",
+    "audit": {
+      "G": 36,
+      "B": 15
+    },
+    "bad": [],
+    "cov_eigs": [
+      6.613980603157629,
+      6.613980603157631,
+      6.613980603157635
+    ],
+    "rank_singular_values": [
+      11.210068307552591,
+      11.21006830755259,
+      11.21006830755259
+    ],
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e"
+  }
+]
