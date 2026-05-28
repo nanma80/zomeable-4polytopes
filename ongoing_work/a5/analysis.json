@@ -1,0 +1,101 @@
+[
+  {
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "5_simplex",
+    "balls": 5,
+    "edges": 10,
+    "scale": "(1/3)*phi^0",
+    "colors": {
+      "Y": 4,
+      "G": 6
+    },
+    "sym_order": 24,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "rectified_5_simplex",
+    "balls": 11,
+    "edges": 34,
+    "scale": "(1/3)*phi^0",
+    "colors": {
+      "G": 18,
+      "Y": 16
+    },
+    "sym_order": 24,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 48,
+    "scale": "(1/3)*phi^0",
+    "colors": {
+      "Y": 24,
+      "G": 24
+    },
+    "sym_order": 48,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "5_simplex",
+    "balls": 5,
+    "edges": 10,
+    "scale": null,
+    "colors": {},
+    "sym_order": 6,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "rectified_5_simplex",
+    "balls": 11,
+    "edges": 34,
+    "scale": null,
+    "colors": {},
+    "sym_order": 6,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 48,
+    "scale": null,
+    "colors": {},
+    "sym_order": 12,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "5_simplex",
+    "balls": 6,
+    "edges": 15,
+    "scale": null,
+    "colors": {},
+    "sym_order": 48,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "rectified_5_simplex",
+    "balls": 13,
+    "edges": 48,
+    "scale": null,
+    "colors": {},
+    "sym_order": 48,
+    "sym_status": "ok"
+  },
+  {
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 51,
+    "scale": null,
+    "colors": {},
+    "sym_order": 48,
+    "sym_status": "ok"
+  }
+]

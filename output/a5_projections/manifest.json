@@ -1,0 +1,239 @@
+[
+  {
+    "file": "5_simplex/5_simplex_sym24_5balls_4fb6eb.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "5_simplex",
+    "balls": 5,
+    "edges": 10,
+    "symmetry_order": 24,
+    "scale": "1/3",
+    "zphi_pair": [
+      "1/3",
+      "0"
+    ],
+    "strut_colors": {
+      "Y": 4,
+      "G": 6
+    },
+    "direction_colors": {
+      "Y": 4,
+      "G": 6
+    },
+    "edges_standard": 10,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "rectified_5_simplex/rectified_5_simplex_sym24_11balls_4fb6eb.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "rectified_5_simplex",
+    "balls": 11,
+    "edges": 34,
+    "symmetry_order": 24,
+    "scale": "1/3",
+    "zphi_pair": [
+      "1/3",
+      "0"
+    ],
+    "strut_colors": {
+      "G": 18,
+      "Y": 16
+    },
+    "direction_colors": {
+      "G": 18,
+      "Y": 16
+    },
+    "edges_standard": 34,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_4fb6eb.vZome",
+    "family_key": "N5_0fddf469258f|N11_040c578c40c6|N14_4d5740e23b96",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 48,
+    "symmetry_order": 48,
+    "scale": "1/3",
+    "zphi_pair": [
+      "1/3",
+      "0"
+    ],
+    "strut_colors": {
+      "Y": 24,
+      "G": 24
+    },
+    "direction_colors": {
+      "Y": 24,
+      "G": 24
+    },
+    "edges_standard": 48,
+    "edges_double": 0,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "5_simplex/5_simplex_sym6_5balls_cfe09c.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "5_simplex",
+    "balls": 5,
+    "edges": 10,
+    "symmetry_order": 6,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "G": 3,
+      "Y": 1
+    },
+    "direction_colors": {
+      "Y": 4,
+      "B": 3,
+      "G": 3
+    },
+    "edges_standard": 4,
+    "edges_double": 0,
+    "edges_direction_only": 6,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "rectified_5_simplex/rectified_5_simplex_sym6_11balls_cfe09c.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "rectified_5_simplex",
+    "balls": 11,
+    "edges": 34,
+    "symmetry_order": 6,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "Y": 4,
+      "G": 9
+    },
+    "direction_colors": {
+      "Y": 16,
+      "B": 9,
+      "G": 9
+    },
+    "edges_standard": 13,
+    "edges_double": 0,
+    "edges_direction_only": 21,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "birectified_5_simplex/birectified_5_simplex_sym12_14balls_cfe09c.vZome",
+    "family_key": "N5_27b653bec0eb|N11_fc27455708f8|N14_6418e84ebeba",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 48,
+    "symmetry_order": 12,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "Y": 6,
+      "G": 12
+    },
+    "direction_colors": {
+      "Y": 24,
+      "B": 12,
+      "G": 12
+    },
+    "edges_standard": 18,
+    "edges_double": 0,
+    "edges_direction_only": 30,
+    "bad_directions": 0,
+    "fully_buildable": false
+  },
+  {
+    "file": "5_simplex/5_simplex_sym48_6balls_53a41b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "5_simplex",
+    "balls": 6,
+    "edges": 15,
+    "symmetry_order": 48,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "B(x2)": 3,
+      "G": 12
+    },
+    "direction_colors": {
+      "B": 3,
+      "G": 12
+    },
+    "edges_standard": 12,
+    "edges_double": 3,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "rectified_5_simplex/rectified_5_simplex_sym48_13balls_53a41b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "rectified_5_simplex",
+    "balls": 13,
+    "edges": 48,
+    "symmetry_order": 48,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "G": 36,
+      "B(x2)": 12
+    },
+    "direction_colors": {
+      "G": 36,
+      "B": 12
+    },
+    "edges_standard": 36,
+    "edges_double": 12,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  },
+  {
+    "file": "birectified_5_simplex/birectified_5_simplex_sym48_14balls_53a41b.vZome",
+    "family_key": "N6_9c0f3e69ec66|N13_9e943395a13d|N14_ba65230b4a9e",
+    "polytope": "birectified_5_simplex",
+    "balls": 14,
+    "edges": 51,
+    "symmetry_order": 48,
+    "scale": "1",
+    "zphi_pair": [
+      "1",
+      "0"
+    ],
+    "strut_colors": {
+      "G": 36,
+      "B(x2)": 15
+    },
+    "direction_colors": {
+      "G": 36,
+      "B": 15
+    },
+    "edges_standard": 36,
+    "edges_double": 15,
+    "edges_direction_only": 0,
+    "bad_directions": 0,
+    "fully_buildable": true
+  }
+]
