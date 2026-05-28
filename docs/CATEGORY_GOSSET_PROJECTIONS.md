@@ -5,7 +5,7 @@ convenience and shared tooling.  These models are not part of the 4-polytope
 category taxonomy; they are strict orthographic zomeable projections of
 Gosset-family and adjacent D/E root polytopes.
 
-| Source polytope | Natural dimension | Models | Viewer |
+| Source polytope | Natural dimension | Zomeable projections | Viewer |
 |---|---:|---:|---|
 | 5-orthoplex (`2_11`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_11.html) |
 | 5-demicube (`1_21`) | 5 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_21.html) |
