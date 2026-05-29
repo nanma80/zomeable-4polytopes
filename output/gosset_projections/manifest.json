@@ -1,7 +1,7 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, and 2_41. Kept as one output category with per-source subfolders for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
   "viewer": "VIEWER.md",
   "viewer_pages": {
     "2_11": "2_11.md",
@@ -13,7 +13,8 @@
     "2_31": "2_31.md",
     "4_21": "4_21.md",
     "1_32": "1_32.md",
-    "2_41": "2_41.md"
+    "2_41": "2_41.md",
+    "1_42": "1_42.md"
   },
   "models": [
     {
@@ -233,6 +234,24 @@
       "file": "2_41/2_41_H3_921_balls.vZome",
       "polytope": "2_41",
       "balls": 921,
+      "symmetry": "H3"
+    },
+    {
+      "file": "1_42/1_42_B3_169_balls.vZome",
+      "polytope": "1_42",
+      "balls": 169,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_42/1_42_B3_251_balls.vZome",
+      "polytope": "1_42",
+      "balls": 251,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_42/1_42_H3_5936_balls.vZome",
+      "polytope": "1_42",
+      "balls": 5936,
       "symmetry": "H3"
     }
   ]

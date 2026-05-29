@@ -4,9 +4,9 @@ This folder is a related collection in this repository, not a 4-polytope
 category.  The models are strict orthographic 3D projections of the
 Gosset-family and adjacent D/E root polytopes: 5-orthoplex (`2_11`),
 5-demicube (`1_21`), rectified 5-orthoplex (`t1 2_11`), E6 root polytope
-(`1_22`), `2_21`, `3_21`, `2_31`, `1_32`, `4_21`, and `2_41`.
+(`1_22`), `2_21`, `3_21`, `2_31`, `1_32`, `4_21`, `2_41`, and `1_42`.
 
-The thirty-four `.vZome` files are organized in per-source subfolders for
+The thirty-seven `.vZome` files are organized in per-source subfolders for
 sharing and spot checking.  "Balls" counts distinct 3D ball positions in the projected vZome
 model; some vertices of the original source polytope may coincide in 3D.
 
@@ -52,6 +52,9 @@ Open the viewer index here:
 | `2_41/2_41_B3_65_balls.vZome` | `2_41` | 65 | B3-symmetric |
 | `2_41/2_41_B3_93_balls.vZome` | `2_41` | 93 | B3-symmetric |
 | `2_41/2_41_H3_921_balls.vZome` | `2_41` | 921 | H3-symmetric |
+| `1_42/1_42_B3_169_balls.vZome` | `1_42` | 169 | B3-symmetric |
+| `1_42/1_42_B3_251_balls.vZome` | `1_42` | 251 | B3-symmetric |
+| `1_42/1_42_H3_5936_balls.vZome` | `1_42` | 5936 | H3-symmetric |
 
 The symmetry labels are full Euclidean point-cloud symmetries: B3 means full
 octahedral symmetry (order 48), D4 means full tetragonal/dihedral symmetry
@@ -70,5 +73,6 @@ give the same five models.  For `1_32`, evaluating those same E7 projection
 directions gives five labelled models.  The rectified 5-orthoplex has the same
 D5 root edge-direction constraints as `1_21`; a direct R=1/R=2/R=3 sweep gives
 three labelled models.  For `2_41`, the direct odd-spinor E8-edge sweep finds
-the same three labelled models at R=1 and R=2; R=3 confirmation is longer.
-
+the same three labelled models at R=1 and R=2; R=3 confirmation is longer.  For
+`1_42`, the direct E8-edge sweep finds the same three labelled models at R=1
+and R=2.
