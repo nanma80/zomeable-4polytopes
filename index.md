@@ -18,12 +18,12 @@ Pick a category and click **View →** to jump into its interactive page.
 
 | Category | Polytopes | Zomeable polytopes | Zomeable projections | |
 | -------- | --------: | -----------------: | -------------------: | --- |
-| **Regular** | 6 | 6 | 15 + 1 inf family ¹ | [**View 6 regulars →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_REGULAR.html) |
-| **Uniform** *(non-prismatic)* | 41 | 28 | 73 | [**View 41 uniforms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_UNIFORM.html) |
-| **Duoprisms** *({p}×{q})* | ∞ | 6 | 16 | [**Browse duoprisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) |
-| **Polyhedral prisms** *(P × [0,1])* | 17 | 12 | 45 | [**View 17 polyhedral prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_POLYHEDRAL_PRISMS.html) |
-| **Antiprismatic prisms** *(A_n × [0,1])* | ∞ | 1 | 9 | [**Browse antiprism prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_ANTIPRISMATIC_PRISMS.html) |
-| **Total** | **∞** | **53** | **158 + 1 inf family** | |
+| **Regular** | 6 | 6 | 18 + 1 inf family ¹ | [**View regulars →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_REGULAR.html) |
+| **Uniform** *(non-prismatic)* | 41 | 28 | 73 | [**View uniforms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_UNIFORM.html) |
+| **Duoprisms** *({p}×{q})* | ∞ | 6 | 8 + 2 inf families | [**View duoprisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) |
+| **Polyhedral prisms** *(P × [0,1])* | 17 | 12 | 45 | [**View polyhedral prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_POLYHEDRAL_PRISMS.html) |
+| **Antiprismatic prisms** *(A_n × [0,1])* | ∞ | 1 | 9 | [**View antiprismatic prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_ANTIPRISMATIC_PRISMS.html) |
+| **Total** | **∞** | **53** | **153 + 3 inf families** | |
 
 Related non-4D collection:
 
@@ -34,7 +34,7 @@ Related non-4D collection:
 
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
 
-¹ The tesseract (8-cell) is the only polytope whose set of zomeable projections is infinite, parametrized by ℤ[φ]-Pythagorean triples. Every other polytope saturates at a small finite count. See the [8-cell master theorem](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/CLASSIFICATION.html) for details.
+¹ Infinite families currently occur for the tesseract (8-cell) and the duoprisms `{4}×{6}` and `{4}×{10}`; other corpus entries saturate at small finite counts. See the [8-cell master theorem](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/CLASSIFICATION.html) and [duoprism category page](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) for details.
 
 ---
 
@@ -51,7 +51,7 @@ The catalogue's counts are **empirical**: we report a number once enlarging the 
 - **Tesseract.** Three sporadic shapes (cell-first cube, vertex-first rhombic dodecahedron, the *phi-oblique* sporadic) plus an infinite family of zomeable cuboids, one per ℤ[φ]-Pythagorean triple. [See all 13 emitted models →](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/VIEWER.html)
 - **120-cell, 600-cell.** Each admits a single canonical zomeable projection (cell-first and vertex-first, respectively).
 - **Snub 24-cell, grand antiprism.** Both 600-cell diminishings yield two zomeable projections each — the snub's vertex-first and the grand antiprism's vertex-first appear here as new shapes.
-- **Prismatic surprises.** Six duoprisms `{p}×{q}` produce zomeable rank-3 projections — including `{4}×{10}` (5 shapes) and `{4}×{6}` (3 shapes), both surveyed through search radius 8.
+- **Prismatic surprises.** Six duoprisms `{p}×{q}` produce zomeable rank-3 projections, including infinite families for `{4}×{6}` and `{4}×{10}`.
 
 ---
 

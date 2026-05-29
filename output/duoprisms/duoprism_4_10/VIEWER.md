@@ -7,34 +7,10 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     cell_first_cube.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_aphi_b4phi-1.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    duoprism_4_10_inf_family_aphi_b4phi-1.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome
  </figcaption>
 </figure>
 
@@ -47,10 +23,18 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome
+    duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome
  </figcaption>
 </figure>
 
@@ -67,5 +51,21 @@ For methodology, kernel directions, search subtleties, and reproduction commands
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     duoprism_4_10_inf_family_a8_b15.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_aphi_b4phi-1.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    duoprism_4_10_inf_family_aphi_b4phi-1.vZome
  </figcaption>
 </figure>

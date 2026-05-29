@@ -17,12 +17,12 @@ rotation and uniform scale to count distinct 3D shapes.
 
 | Category | Polytopes | Zomeable polytopes | Zomeable projections |
 | -------- | --------: | -----------------: | -------------------: |
-| [Regular](docs/CATEGORY_REGULAR.md) | 6 | 6 | 15 + 1 inf family ¹ |
+| [Regular](docs/CATEGORY_REGULAR.md) | 6 | 6 | 18 + 1 inf family ¹ |
 | [Uniform](docs/CATEGORY_UNIFORM.md) *(nonprismatic)* | 41 | 28 | 73 |
-| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | ∞ | 6 | 16 |
+| [Duoprisms](docs/CATEGORY_DUOPRISMS.md) | ∞ | 6 | 8 + 2 inf families |
 | [Polyhedral prisms](docs/CATEGORY_POLYHEDRAL_PRISMS.md) | 17 | 12 | 45 |
 | [Antiprismatic prisms](docs/CATEGORY_ANTIPRISMATIC_PRISMS.md) | ∞ | 1 | 9 |
-| **Total** | **∞** | **53** | **158 + 1 inf family** |
+| **Total** | **∞** | **53** | **153 + 3 inf families** |
 
 Click a category to see the per-polytope list with shape counts and
 links to the **3D viewer** for every polytope.  Each viewer page lives
@@ -30,11 +30,11 @@ next to its `.vZome` files in `output/<category>/<slug>/VIEWER.md` and
 renders the embedded vzome-viewer when served via
 [GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/).
 
-¹ Only the tesseract (8-cell) has an infinite family of zomeable
-projections (parametrized by ℤ[φ]-Pythagorean triples); every other
-polytope in the corpus saturates at a small finite count.  See
+¹ Infinite families currently occur for the tesseract (8-cell) and the
+duoprisms `{4}×{6}` and `{4}×{10}`; other corpus entries saturate at small
+finite counts.  See
 [`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md)
-for the master theorem.
+and [`docs/CATEGORY_DUOPRISMS.md`](docs/CATEGORY_DUOPRISMS.md).
 
 **These counts are not formally proven complete.** Each was obtained by
 enumerating kernel directions `n ∈ ℤ[φ]⁴` over a bounded box of

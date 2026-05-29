@@ -209,6 +209,20 @@ DUOPRISM_INF_FAMILY_FILES = {
 }
 
 
+def order_prismatic_files(slug, files):
+    """Viewer order for prismatic pages."""
+    unique = sorted(set(files))
+    if slug in DUOPRISM_INF_FAMILY_FILES:
+        return sorted(
+            unique,
+            key=lambda fname: (
+                0 if fname == "cell_first_cube.vZome" else 1,
+                fname,
+            ),
+        )
+    return unique
+
+
 def prismatic_shape_descr(shapes):
     """Aggregate prismatic shape labels into 'cell-first + 3 oblique' format."""
     counts = defaultdict(int)
@@ -260,7 +274,7 @@ def load_prismatic_files():
             files.extend(DUOPRISM_INF_FAMILY_FILES.get(slug, []))
             out[slug] = {
                 "n_shapes": n,
-                "files": sorted(set(files)),
+                "files": order_prismatic_files(slug, files),
                 "shapes": row.get("shapes", []),
                 "family": fam,
                 "metadata": row.get("metadata", {}),
@@ -738,9 +752,10 @@ def main():
         print(f"{cat:25} {scope:>8} {hits:>12} {files:>8}")
     print(f"{'TOTAL':25} {total_scope:>8} {total_hits:>12} {total_files:>8}")
     print()
-    print(f"Note: Regular total of {counts['regular_files']} shapes counts 8-cell sporadics (3) +")
-    print("emitted inf-family members; the full tesseract inf-family is")
-    print("parametrized by ZZ[phi]-Pythagorean triples and is infinite.")
+    print("README display counts collapse emitted family samples:")
+    print("  Regular: 18 + 1 inf family")
+    print("  Duoprisms: 8 + 2 inf families")
+    print("  Total: 153 + 3 inf families")
 
 
 if __name__ == "__main__":

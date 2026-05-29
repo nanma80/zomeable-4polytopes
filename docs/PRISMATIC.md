@@ -19,9 +19,9 @@ Polytopes covered: **204 (in scope)**
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
 | **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 45 |
-| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 16 finite-sweep shapes + infinite families for `{4}×{6}`, `{4}×{10}` |
+| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 8 + 2 inf families |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
-| **Total** | | **204** | **19** | **70** |
+| **Total** | | **204** | **19** | **62 + 2 inf families** |
 
 ## Definitions
 

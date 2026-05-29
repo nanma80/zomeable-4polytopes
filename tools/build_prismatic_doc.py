@@ -199,10 +199,15 @@ def build_doc(recs):
         "B": "Duoprisms `{p}×{q}`",
         "C": "Antiprismatic prisms `A_n × [0,1]`",
     }
+    family_shape_display = {
+        "B": "8 + 2 inf families",
+    }
     for f in ["A", "B", "C"]:
         d = by_family.get(f, {"swept": 0, "hits": 0, "shapes": 0})
-        L.append(f"| **{f}** | {fam_labels[f]} | {d['swept']} | {d['hits']} | {d['shapes']} |")
-    L.append(f"| **Total** | | **{swept_count}** | **{hit_polytopes}** | **{total_emits}** |")
+        shape_text = family_shape_display.get(f, str(d["shapes"]))
+        L.append(f"| **{f}** | {fam_labels[f]} | {d['swept']} | {d['hits']} | {shape_text} |")
+    finite_total = total_emits - by_family.get("B", {"shapes": 0})["shapes"] + 8
+    L.append(f"| **Total** | | **{swept_count}** | **{hit_polytopes}** | **{finite_total} + 2 inf families** |")
     L.append("")
     L.append("## Definitions")
     L.append("")

@@ -13,10 +13,10 @@ representative is emitted here.
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `duoprism_4_6_inf_family_a5-3phi_b2-phi.vZome` | inf family representative | 24 | B:24  Y:24 |
-| 2 | `duoprism_4_6_inf_family_a5-3phi_b4phi-5.vZome` | inf family representative | 24 | B:24  Y:24 |
-| 3 | `duoprism_4_6_inf_family_aphi_b5-2phi.vZome` | inf family representative | 24 | B:24  Y:24 |
-| 4 | `cell_first_cube.vZome` | cell_first / cube | 16 | B:12  G:16 |
+| 1 | `cell_first_cube.vZome` | cell_first / cube | 16 | B:12  G:16 |
+| 2 | `duoprism_4_6_inf_family_a5-3phi_b2-phi.vZome` | inf family representative | 24 | B:24  Y:24 |
+| 3 | `duoprism_4_6_inf_family_a5-3phi_b4phi-5.vZome` | inf family representative | 24 | B:24  Y:24 |
+| 4 | `duoprism_4_6_inf_family_aphi_b5-2phi.vZome` | inf family representative | 24 | B:24  Y:24 |
 | 5 | `duoprism_4_6_inf_family_a2-phi_b3phi-1.vZome` | inf family representative | 24 | B:24  Y:24 |
 
 ## Inf family
@@ -61,6 +61,14 @@ larger infinite family.
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_6_inf_family_a5-3phi_b2-phi.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -81,14 +89,6 @@ larger infinite family.
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     duoprism_4_6_inf_family_aphi_b5-2phi.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    cell_first_cube.vZome
  </figcaption>
 </figure>
 

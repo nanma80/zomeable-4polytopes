@@ -13,12 +13,12 @@ representatives are emitted here.
 
 | # | File | Label / direction | n_balls | Struts |
 |---|------|-------------------|--------:|--------|
-| 1 | `duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome` | inf family representative | 40 | B:40  R:40 |
-| 2 | `duoprism_4_10_inf_family_aphi_b4phi-1.vZome` | inf family representative | 40 | B:40  R:40 |
-| 3 | `duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome` | inf family representative | 40 | B:40  R:40 |
-| 4 | `duoprism_4_10_inf_family_a2phi-3_b1+phi.vZome` | inf family representative | 40 | B:40  R:40 |
-| 5 | `duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome` | inf family representative | 40 | B:40  R:40 |
-| 6 | `cell_first_cube.vZome` | cell_first / cube | 24 | B:20  G:24 |
+| 1 | `cell_first_cube.vZome` | cell_first / cube | 24 | B:20  G:24 |
+| 2 | `duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome` | inf family representative | 40 | B:40  R:40 |
+| 3 | `duoprism_4_10_inf_family_aphi_b4phi-1.vZome` | inf family representative | 40 | B:40  R:40 |
+| 4 | `duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome` | inf family representative | 40 | B:40  R:40 |
+| 5 | `duoprism_4_10_inf_family_a2phi-3_b1+phi.vZome` | inf family representative | 40 | B:40  R:40 |
+| 6 | `duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome` | inf family representative | 40 | B:40  R:40 |
 | 7 | `duoprism_4_10_inf_family_a5_b12.vZome` | inf family representative | 40 | B:40  R:40 |
 | 8 | `duoprism_4_10_inf_family_a8_b15.vZome` | inf family representative | 40 | B:40  R:40 |
 
@@ -62,6 +62,14 @@ so `{4}x{10}` has an infinite zomeable orthographic family.
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    cell_first_cube.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -98,14 +106,6 @@ so `{4}x{10}` has an infinite zomeable orthographic family.
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="cell_first_cube.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    cell_first_cube.vZome
  </figcaption>
 </figure>
 
