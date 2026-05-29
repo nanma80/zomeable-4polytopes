@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
+  <EditHistory editNumber="122" lastStickyEdit="-1">
+    <ShowPoint point="-1 -1 -31/65 -38/65 -202/65 -291/65"/>
+    <ShowPoint point="-2 -3 -31/65 -103/65 -137/65 -226/65"/>
+    <ShowPoint point="-2 -4 -96/65 -168/65 -72/65 -96/65"/>
+    <ShowPoint point="-2 -3 -161/65 -233/65 -7/65 34/65"/>
+    <ShowPoint point="-1 -1 -161/65 -298/65 58/65 99/65"/>
+    <ShowPoint point="1 1 -161/65 -298/65 58/65 99/65"/>
+    <ShowPoint point="2 3 -161/65 -233/65 -7/65 34/65"/>
+    <ShowPoint point="2 4 -96/65 -168/65 -72/65 -96/65"/>
+    <ShowPoint point="2 3 -31/65 -103/65 -137/65 -226/65"/>
+    <ShowPoint point="1 1 -31/65 -38/65 -202/65 -291/65"/>
+    <ShowPoint point="-1 -1 21/13 40/13 -20/13 -31/13"/>
+    <ShowPoint point="-2 -3 21/13 27/13 -7/13 -18/13"/>
+    <ShowPoint point="-2 -4 8/13 14/13 6/13 8/13"/>
+    <ShowPoint point="-2 -3 -5/13 1/13 19/13 34/13"/>
+    <ShowPoint point="-1 -1 -5/13 -12/13 32/13 47/13"/>
+    <ShowPoint point="1 1 -5/13 -12/13 32/13 47/13"/>
+    <ShowPoint point="2 3 -5/13 1/13 19/13 34/13"/>
+    <ShowPoint point="2 4 8/13 14/13 6/13 8/13"/>
+    <ShowPoint point="2 3 21/13 27/13 -7/13 -18/13"/>
+    <ShowPoint point="1 1 21/13 40/13 -20/13 -31/13"/>
+    <ShowPoint point="-1 -1 161/65 298/65 -58/65 -99/65"/>
+    <ShowPoint point="-2 -3 161/65 233/65 7/65 -34/65"/>
+    <ShowPoint point="-2 -4 96/65 168/65 72/65 96/65"/>
+    <ShowPoint point="-2 -3 31/65 103/65 137/65 226/65"/>
+    <ShowPoint point="-1 -1 31/65 38/65 202/65 291/65"/>
+    <ShowPoint point="1 1 31/65 38/65 202/65 291/65"/>
+    <ShowPoint point="2 3 31/65 103/65 137/65 226/65"/>
+    <ShowPoint point="2 4 96/65 168/65 72/65 96/65"/>
+    <ShowPoint point="2 3 161/65 233/65 7/65 -34/65"/>
+    <ShowPoint point="1 1 161/65 298/65 -58/65 -99/65"/>
+    <ShowPoint point="-1 -1 5/13 12/13 -32/13 -47/13"/>
+    <ShowPoint point="-2 -3 5/13 -1/13 -19/13 -34/13"/>
+    <ShowPoint point="-2 -4 -8/13 -14/13 -6/13 -8/13"/>
+    <ShowPoint point="-2 -3 -21/13 -27/13 7/13 18/13"/>
+    <ShowPoint point="-1 -1 -21/13 -40/13 20/13 31/13"/>
+    <ShowPoint point="1 1 -21/13 -40/13 20/13 31/13"/>
+    <ShowPoint point="2 3 -21/13 -27/13 7/13 18/13"/>
+    <ShowPoint point="2 4 -8/13 -14/13 -6/13 -8/13"/>
+    <ShowPoint point="2 3 5/13 -1/13 -19/13 -34/13"/>
+    <ShowPoint point="1 1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-1 -1 -31/65 -38/65 -202/65 -291/65" end="-2 -3 -31/65 -103/65 -137/65 -226/65"/>
+    <JoinPointPair start="-1 -1 -31/65 -38/65 -202/65 -291/65" end="1 1 -31/65 -38/65 -202/65 -291/65"/>
+    <JoinPointPair start="-1 -1 -31/65 -38/65 -202/65 -291/65" end="-1 -1 21/13 40/13 -20/13 -31/13"/>
+    <JoinPointPair start="-1 -1 -31/65 -38/65 -202/65 -291/65" end="-1 -1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-2 -3 -31/65 -103/65 -137/65 -226/65" end="-2 -4 -96/65 -168/65 -72/65 -96/65"/>
+    <JoinPointPair start="-2 -3 -31/65 -103/65 -137/65 -226/65" end="-2 -3 21/13 27/13 -7/13 -18/13"/>
+    <JoinPointPair start="-2 -3 -31/65 -103/65 -137/65 -226/65" end="-2 -3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="-2 -4 -96/65 -168/65 -72/65 -96/65" end="-2 -3 -161/65 -233/65 -7/65 34/65"/>
+    <JoinPointPair start="-2 -4 -96/65 -168/65 -72/65 -96/65" end="-2 -4 8/13 14/13 6/13 8/13"/>
+    <JoinPointPair start="-2 -4 -96/65 -168/65 -72/65 -96/65" end="-2 -4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="-2 -3 -161/65 -233/65 -7/65 34/65" end="-1 -1 -161/65 -298/65 58/65 99/65"/>
+    <JoinPointPair start="-2 -3 -161/65 -233/65 -7/65 34/65" end="-2 -3 -5/13 1/13 19/13 34/13"/>
+    <JoinPointPair start="-2 -3 -161/65 -233/65 -7/65 34/65" end="-2 -3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="-1 -1 -161/65 -298/65 58/65 99/65" end="1 1 -161/65 -298/65 58/65 99/65"/>
+    <JoinPointPair start="-1 -1 -161/65 -298/65 58/65 99/65" end="-1 -1 -5/13 -12/13 32/13 47/13"/>
+    <JoinPointPair start="-1 -1 -161/65 -298/65 58/65 99/65" end="-1 -1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="1 1 -161/65 -298/65 58/65 99/65" end="2 3 -161/65 -233/65 -7/65 34/65"/>
+    <JoinPointPair start="1 1 -161/65 -298/65 58/65 99/65" end="1 1 -5/13 -12/13 32/13 47/13"/>
+    <JoinPointPair start="1 1 -161/65 -298/65 58/65 99/65" end="1 1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="2 3 -161/65 -233/65 -7/65 34/65" end="2 4 -96/65 -168/65 -72/65 -96/65"/>
+    <JoinPointPair start="2 3 -161/65 -233/65 -7/65 34/65" end="2 3 -5/13 1/13 19/13 34/13"/>
+    <JoinPointPair start="2 3 -161/65 -233/65 -7/65 34/65" end="2 3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="2 4 -96/65 -168/65 -72/65 -96/65" end="2 3 -31/65 -103/65 -137/65 -226/65"/>
+    <JoinPointPair start="2 4 -96/65 -168/65 -72/65 -96/65" end="2 4 8/13 14/13 6/13 8/13"/>
+    <JoinPointPair start="2 4 -96/65 -168/65 -72/65 -96/65" end="2 4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="2 3 -31/65 -103/65 -137/65 -226/65" end="1 1 -31/65 -38/65 -202/65 -291/65"/>
+    <JoinPointPair start="2 3 -31/65 -103/65 -137/65 -226/65" end="2 3 21/13 27/13 -7/13 -18/13"/>
+    <JoinPointPair start="2 3 -31/65 -103/65 -137/65 -226/65" end="2 3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="1 1 -31/65 -38/65 -202/65 -291/65" end="1 1 21/13 40/13 -20/13 -31/13"/>
+    <JoinPointPair start="1 1 -31/65 -38/65 -202/65 -291/65" end="1 1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-1 -1 21/13 40/13 -20/13 -31/13" end="-2 -3 21/13 27/13 -7/13 -18/13"/>
+    <JoinPointPair start="-1 -1 21/13 40/13 -20/13 -31/13" end="1 1 21/13 40/13 -20/13 -31/13"/>
+    <JoinPointPair start="-1 -1 21/13 40/13 -20/13 -31/13" end="-1 -1 161/65 298/65 -58/65 -99/65"/>
+    <JoinPointPair start="-2 -3 21/13 27/13 -7/13 -18/13" end="-2 -4 8/13 14/13 6/13 8/13"/>
+    <JoinPointPair start="-2 -3 21/13 27/13 -7/13 -18/13" end="-2 -3 161/65 233/65 7/65 -34/65"/>
+    <JoinPointPair start="-2 -4 8/13 14/13 6/13 8/13" end="-2 -3 -5/13 1/13 19/13 34/13"/>
+    <JoinPointPair start="-2 -4 8/13 14/13 6/13 8/13" end="-2 -4 96/65 168/65 72/65 96/65"/>
+    <JoinPointPair start="-2 -3 -5/13 1/13 19/13 34/13" end="-1 -1 -5/13 -12/13 32/13 47/13"/>
+    <JoinPointPair start="-2 -3 -5/13 1/13 19/13 34/13" end="-2 -3 31/65 103/65 137/65 226/65"/>
+    <JoinPointPair start="-1 -1 -5/13 -12/13 32/13 47/13" end="1 1 -5/13 -12/13 32/13 47/13"/>
+    <JoinPointPair start="-1 -1 -5/13 -12/13 32/13 47/13" end="-1 -1 31/65 38/65 202/65 291/65"/>
+    <JoinPointPair start="1 1 -5/13 -12/13 32/13 47/13" end="2 3 -5/13 1/13 19/13 34/13"/>
+    <JoinPointPair start="1 1 -5/13 -12/13 32/13 47/13" end="1 1 31/65 38/65 202/65 291/65"/>
+    <JoinPointPair start="2 3 -5/13 1/13 19/13 34/13" end="2 4 8/13 14/13 6/13 8/13"/>
+    <JoinPointPair start="2 3 -5/13 1/13 19/13 34/13" end="2 3 31/65 103/65 137/65 226/65"/>
+    <JoinPointPair start="2 4 8/13 14/13 6/13 8/13" end="2 3 21/13 27/13 -7/13 -18/13"/>
+    <JoinPointPair start="2 4 8/13 14/13 6/13 8/13" end="2 4 96/65 168/65 72/65 96/65"/>
+    <JoinPointPair start="2 3 21/13 27/13 -7/13 -18/13" end="1 1 21/13 40/13 -20/13 -31/13"/>
+    <JoinPointPair start="2 3 21/13 27/13 -7/13 -18/13" end="2 3 161/65 233/65 7/65 -34/65"/>
+    <JoinPointPair start="1 1 21/13 40/13 -20/13 -31/13" end="1 1 161/65 298/65 -58/65 -99/65"/>
+    <JoinPointPair start="-1 -1 161/65 298/65 -58/65 -99/65" end="-2 -3 161/65 233/65 7/65 -34/65"/>
+    <JoinPointPair start="-1 -1 161/65 298/65 -58/65 -99/65" end="1 1 161/65 298/65 -58/65 -99/65"/>
+    <JoinPointPair start="-1 -1 161/65 298/65 -58/65 -99/65" end="-1 -1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-2 -3 161/65 233/65 7/65 -34/65" end="-2 -4 96/65 168/65 72/65 96/65"/>
+    <JoinPointPair start="-2 -3 161/65 233/65 7/65 -34/65" end="-2 -3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="-2 -4 96/65 168/65 72/65 96/65" end="-2 -3 31/65 103/65 137/65 226/65"/>
+    <JoinPointPair start="-2 -4 96/65 168/65 72/65 96/65" end="-2 -4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="-2 -3 31/65 103/65 137/65 226/65" end="-1 -1 31/65 38/65 202/65 291/65"/>
+    <JoinPointPair start="-2 -3 31/65 103/65 137/65 226/65" end="-2 -3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="-1 -1 31/65 38/65 202/65 291/65" end="1 1 31/65 38/65 202/65 291/65"/>
+    <JoinPointPair start="-1 -1 31/65 38/65 202/65 291/65" end="-1 -1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="1 1 31/65 38/65 202/65 291/65" end="2 3 31/65 103/65 137/65 226/65"/>
+    <JoinPointPair start="1 1 31/65 38/65 202/65 291/65" end="1 1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="2 3 31/65 103/65 137/65 226/65" end="2 4 96/65 168/65 72/65 96/65"/>
+    <JoinPointPair start="2 3 31/65 103/65 137/65 226/65" end="2 3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="2 4 96/65 168/65 72/65 96/65" end="2 3 161/65 233/65 7/65 -34/65"/>
+    <JoinPointPair start="2 4 96/65 168/65 72/65 96/65" end="2 4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="2 3 161/65 233/65 7/65 -34/65" end="1 1 161/65 298/65 -58/65 -99/65"/>
+    <JoinPointPair start="2 3 161/65 233/65 7/65 -34/65" end="2 3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="1 1 161/65 298/65 -58/65 -99/65" end="1 1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-1 -1 5/13 12/13 -32/13 -47/13" end="-2 -3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="-1 -1 5/13 12/13 -32/13 -47/13" end="1 1 5/13 12/13 -32/13 -47/13"/>
+    <JoinPointPair start="-2 -3 5/13 -1/13 -19/13 -34/13" end="-2 -4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="-2 -4 -8/13 -14/13 -6/13 -8/13" end="-2 -3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="-2 -3 -21/13 -27/13 7/13 18/13" end="-1 -1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="-1 -1 -21/13 -40/13 20/13 31/13" end="1 1 -21/13 -40/13 20/13 31/13"/>
+    <JoinPointPair start="1 1 -21/13 -40/13 20/13 31/13" end="2 3 -21/13 -27/13 7/13 18/13"/>
+    <JoinPointPair start="2 3 -21/13 -27/13 7/13 18/13" end="2 4 -8/13 -14/13 -6/13 -8/13"/>
+    <JoinPointPair start="2 4 -8/13 -14/13 -6/13 -8/13" end="2 3 5/13 -1/13 -19/13 -34/13"/>
+    <JoinPointPair start="2 3 5/13 -1/13 -19/13 -34/13" end="1 1 5/13 12/13 -32/13 -47/13"/>
+    <SelectManifestation point="0 0 0 0 0 0"/>
+    <Delete/>
+  </EditHistory>
+  <notes/>
+  <sceneModel ambientLight="41,41,41" background="175,200,220">
+    <directionalLight color="235,235,228" x="1.0" y="-1.0" z="-1.0"/>
+    <directionalLight color="228,228,235" x="-1.0" y="0.0" z="0.0"/>
+    <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
+  </sceneModel>
+  <Viewing>
+    <ViewModel distance="50.0" far="200.0" near="0.5" parallel="false" stereoAngle="0.0" width="50.0">
+      <LookAtPoint x="0.0" y="0.0" z="0.0"/>
+      <UpDirection x="0.0" y="1.0" z="0.0"/>
+      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+    </ViewModel>
+  </Viewing>
+  <SymmetrySystem name="icosahedral" renderingStyle="solid connectors">
+    <Direction color="0,142,194"  name="blue"   orbit="[[0,0,1],[0,0,1]]"/>
+    <Direction color="0,153,63"   name="green"  orbit="[[2,-1,1],[5,-3,1]]"/>
+    <Direction color="217,18,24"  name="red"    orbit="[[-1,1,1],[0,0,1]]"/>
+    <Direction color="255,179,26" name="yellow" orbit="[[0,0,1],[2,-1,1]]"/>
+  </SymmetrySystem>
+  <OtherSymmetries/>
+  <Tools/>
+</vzome:vZome>

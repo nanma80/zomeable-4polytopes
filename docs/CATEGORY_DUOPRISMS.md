@@ -4,16 +4,16 @@ Cartesian products {p}×{q} of two regular polygons, 3 ≤ p ≤ q ≤ 20
 (excluding (4, 4) = tesseract).  170 polytopes in scope; 6 yielded
 ≥1 zomeable projection.
 
-`duoprism_4_10` was the only +3 gainer at rng=4 and was investigated
-for inf-family behavior — saturated bounded at 6 shapes through rng=8 after
-the snap-alignment audit.  Similarly `duoprism_4_6` is bounded at 4 shapes
-through rng=8 after the audit.
+`duoprism_4_10` and `duoprism_4_6` were originally suspected to be bounded by
+finite snap/signature probes, but a later exact construction found inf families
+for both.  The viewer folders include representative members emitted by
+`tools/emit_duoprism_inf_family.py`.
 
 | Polytope | Zomeable projections | By type | Viewer |
 |----------|---------------------:|----------------|--------|
 | {3}×{6} duoprism | 1 | face-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_3_6/VIEWER.html) |
-| {4}×{6} duoprism | 4 | cell-first + 3 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_6/VIEWER.html) |
-| {4}×{10} duoprism | 6 | cell-first + 5 oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_10/VIEWER.html) |
+| {4}×{6} duoprism | 1 + inf family | cell-first + inf family | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_6/VIEWER.html) |
+| {4}×{10} duoprism | 1 + inf family | cell-first + inf family | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_4_10/VIEWER.html) |
 | {5}×{10} duoprism | 1 | face-first | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_5_10/VIEWER.html) |
 | {6}×{6} duoprism | 2 | face-first + oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_6_6/VIEWER.html) |
 | {10}×{10} duoprism | 2 | face-first + oblique | [3D viewer →](https://nanma80.github.io/zomeable-4polytopes/output/duoprisms/duoprism_10_10/VIEWER.html) |
@@ -27,6 +27,6 @@ The remaining 164 duoprisms produced 0 zomeable projections.  Most fail because 
 ## More detail
 
 - [`docs/PRISMATIC.md`](PRISMATIC.md) — full prismatic sweep methodology and results
-- [`ongoing_work/duoprism_4_10_inf_family_resolved.md`](../ongoing_work/duoprism_4_10_inf_family_resolved.md) — duoprism_4_10 saturation evidence
-- [`ongoing_work/duoprism_4_6_inf_family_resolved.md`](../ongoing_work/duoprism_4_6_inf_family_resolved.md) — duoprism_4_6 saturation evidence
+- [`ongoing_work/duoprism_4_10_inf_family_resolved.md`](../ongoing_work/duoprism_4_10_inf_family_resolved.md) — duoprism_4_10 infinite-family correction
+- [`ongoing_work/duoprism_4_6_inf_family_resolved.md`](../ongoing_work/duoprism_4_6_inf_family_resolved.md) — duoprism_4_6 infinite-family correction
 - [`ongoing_work/duoprism_4q_census.md`](../ongoing_work/duoprism_4q_census.md) — q ∈ {5..12} census

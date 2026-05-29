@@ -198,6 +198,16 @@ INHERITS_FROM = {
 
 CANONICAL_LABEL_ORDER = ["cell_first", "vertex_first", "face_first", "edge_first"]
 
+DUOPRISM_INF_FAMILY_FILES = {
+    "duoprism_4_6": [
+        "duoprism_4_6_inf_family_a2-phi_b3phi-1.vZome",
+    ],
+    "duoprism_4_10": [
+        "duoprism_4_10_inf_family_a5_b12.vZome",
+        "duoprism_4_10_inf_family_a8_b15.vZome",
+    ],
+}
+
 
 def prismatic_shape_descr(shapes):
     """Aggregate prismatic shape labels into 'cell-first + 3 oblique' format."""
@@ -247,6 +257,7 @@ def load_prismatic_files():
             slug = row["slug"]
             n = row.get("n_shapes", 0)
             files = [s["basename"] + ".vZome" for s in row.get("shapes", [])]
+            files.extend(DUOPRISM_INF_FAMILY_FILES.get(slug, []))
             out[slug] = {
                 "n_shapes": n,
                 "files": sorted(set(files)),
@@ -565,7 +576,11 @@ def _prismatic_rows(prismatic_data, family_key, display_fn, sort_key):
                    "C": "antiprismatic_prisms"}[family_key]
             rel = f"output/{cat}/{slug}/VIEWER.md"
             descr = prismatic_shape_descr(row["shapes"])
-            rows.append((display, str(row["n_shapes"]), descr, rel, None))
+            count = str(row["n_shapes"])
+            if family_key == "B" and slug in DUOPRISM_INF_FAMILY_FILES:
+                count = "1 + inf family"
+                descr = "cell-first + inf family"
+            rows.append((display, count, descr, rel, None))
         else:
             zero_items.append(display)
     return rows, zero_items
@@ -594,9 +609,9 @@ def page_duoprisms(prismatic_data):
             "(excluding (4, 4) = tesseract).  170 polytopes in scope; 6 yielded",
             "≥1 zomeable projection.",
             "",
-            "`duoprism_4_10` was the only +3 gainer at rng=4 and was investigated",
-            "for inf-family behavior — saturated bounded at 5 shapes through rng=8.",
-            "Similarly `duoprism_4_6` is bounded at 3 shapes through rng=8.",
+            "`duoprism_4_10` and `duoprism_4_6` were originally suspected to be",
+            "bounded by finite snap/signature probes, but exact constructions",
+            "later produced inf families for both.",
         ],
         rows,
         descr_header="By type",
@@ -605,8 +620,8 @@ def page_duoprisms(prismatic_data):
             "## More detail",
             "",
             "- [`docs/PRISMATIC.md`](PRISMATIC.md) — full prismatic sweep methodology and results",
-            "- [`ongoing_work/duoprism_4_10_inf_family_resolved.md`](../ongoing_work/duoprism_4_10_inf_family_resolved.md) — duoprism_4_10 saturation evidence",
-            "- [`ongoing_work/duoprism_4_6_inf_family_resolved.md`](../ongoing_work/duoprism_4_6_inf_family_resolved.md) — duoprism_4_6 saturation evidence",
+            "- [`ongoing_work/duoprism_4_10_inf_family_resolved.md`](../ongoing_work/duoprism_4_10_inf_family_resolved.md) — duoprism_4_10 infinite-family correction",
+            "- [`ongoing_work/duoprism_4_6_inf_family_resolved.md`](../ongoing_work/duoprism_4_6_inf_family_resolved.md) — duoprism_4_6 infinite-family correction",
             "- [`ongoing_work/duoprism_4q_census.md`](../ongoing_work/duoprism_4q_census.md) — q ∈ {5..12} census",
         ],
     )

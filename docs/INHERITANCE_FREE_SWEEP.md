@@ -189,13 +189,15 @@ appear beyond the three already known.  Output:
    maps to an existing corpus signature or belongs to an explicit
    parameterised family the corpus represents canonically with finite
    rows.  Zero genuinely new shape *types* found.
-2. **The tesseract `inf-family` is the only source of unbounded
-   shape count growth.**  Every other (group, bitmask) cell produces
+2. **Within this direct uniform-polychoron sweep, the tesseract `inf-family`
+   is the only source of unbounded shape count growth.**  Every other
+   (group, bitmask) cell produces
    the same finite shape count at rng = 4 as it does at rng = 2 (no
    new shapes ever appear when rng increases for the non-tesseract
    cells).  The inf-family is itself a closed structural object —
    each member is a ℤ[φ]²-Pythagorean instance of the
-   `split-cuboid` projection family.
+   `split-cuboid` projection family.  Later prismatic follow-up found
+   separate inf families for `{4}×{6}` and `{4}×{10}`.
 3. **Corpus freeze condition is reached.**  Two consecutive sweep
    levels (rng = 3 → rng = 4) flag the same {tesseract inf-family
    only} cells with the same provenance, and no other cell flags

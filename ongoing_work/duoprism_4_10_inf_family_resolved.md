@@ -1,11 +1,49 @@
-# duoprism_4_10 inf-family question — RESOLVED (BOUNDED at 5 shapes)
+# duoprism_4_10 inf-family question — corrected: infinite family exists
 
-## TL;DR
+## 2026-05-29 correction
 
-duoprism_4_10 is **NOT** an inf-family analog of the tesseract.  The (a,b,0,0)
-kernel plane saturates at exactly **5 distinct shapes**, verified by
-ground-truth snap+signature probe at rng=4, 5, 6, 7, and 8.  All five rngs
-return the *same* 5 SHA-256 signatures.
+The boundedness verdict below is **incorrect**.  The focused snap/signature
+probe was a false negative caused by the finite alignment/scale search; it did
+not constitute a constructive classification of the inf family.
+
+The emitted representatives are:
+
+```text
+output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_a5_b12.vZome
+output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_a8_b15.vZome
+```
+
+For `{4} x {10}`, the preserved decagon can use blue edge axes in a plane
+perpendicular to a red axis.  The decagon edge length is `1/phi` for the unit
+radius model, and the blue/red length ratio is `2/sqrt(5)`, which lies in
+`Q(phi)` because `sqrt(5)=2phi-1`.  Therefore the tesseract support-2 arithmetic
+condition transfers:
+
+```text
+c = sqrt(a^2+b^2) in Q(phi).
+```
+
+For any such `(a,b,c)`, scale the blue decagon edge frame by `c` and put the
+four square layers on the red height axis with scalar
+
+```text
+beta = phi * |blue| / |red| = 2phi/sqrt(5) = (4+2phi)/5.
+```
+
+The square edges have height differences proportional to `a+b` and `a-b`, so
+they remain `Q(phi)` multiples of that red axis.  Example: `(a,b,c)=(3,4,5)`
+gives a valid zome-axis `{4} x {10}` projection, and the usual infinite
+`Q(phi)` Pythagorean triples give infinitely many projective ratios.
+
+The old rng tables remain useful as diagnostics for that particular probe, but
+the "bounded at 5 shapes" interpretation is not valid.  The old text is
+retained below only as historical context.
+
+## Superseded TL;DR
+
+**Superseded:** `duoprism_4_10` was previously thought not to be an inf-family
+analog of the tesseract.  The finite `(a,b,0,0)` snap probe saturated at 5
+signatures, but that saturation was not a proof of boundedness.
 
 ## Background
 
@@ -60,11 +98,11 @@ all five rngs:
 9e455cd5c5a4fafd
 ```
 
-snap-count keeps growing with rng (160 → 236 → 328 → 444 → 576) because more
-directions hit a valid kernel quantum, but every new kernel hash-collides
-with an existing shape.  This is the bounded-family signature: more directions,
-same set of shapes.  At rng=8 the snap-count is 3.6× the rng=4 count yet the
-shape count is unchanged.
+The finite probe's snap-count kept growing with rng (160 → 236 → 328 → 444 →
+576) because more directions hit a valid kernel quantum, but every new kernel
+hash-collided with an existing probe signature.  This looked like a
+bounded-family signature, but it only described the subset reached by that
+probe's snap/alignment branch.
 
 For comparison, the tesseract inf-family at rng=4 already produces dozens of
 distinct shapes and keeps growing without saturation.
@@ -76,34 +114,28 @@ distinct shapes and keeps growing without saturation.
 
 Each holds the full sig list and probe metadata.
 
-## Verdict
+## Superseded verdict
 
-**duoprism_4_10 is BOUNDED at 5 shapes on the (a,b,0,0) plane.**  Together
-with the production rng=4 sweep finding 5 shapes from *all* kernel
-directions, and the ground-truth probe finding 0 new shapes at rng=5, 6, 7,
-and 8, the conclusion is:
-
-- duoprism_4_10 has 5 distinct shapes total.
-- It is **not** a second inf-family.  The tesseract remains the only known
-  inf-family in this corpus.
-- The five rng=4 kernels found by the production sweep are the *complete*
-  set; no new shapes will appear at higher rng.
+**Superseded: `duoprism_4_10` is not bounded at 5 shapes.**  The exact
+construction above gives a genuine infinite family; the finite probe only
+measured the subset reachable by its snap/alignment branch.
 
 ## Wider duoprism_4_q census (from rng=4 sweep manifest)
 
 | q  | n_shapes (rng=4) | notes |
 | -: | ---------------: | ----- |
 |  5 |                0 | pentagon zome-compatible but no joint snap |
-|  6 |                3 | bounded at rng=5 (prior probe) |
+|  6 |                3 | finite-probe signatures at rng=5; exact infinite family now known |
 |  7 |                0 | heptagon non-zomeable |
 |  8 |                0 | octagon non-zomeable |
 |  9 |                0 | nonagon non-zomeable |
-| 10 |                5 | bounded at rng=8 (this probe) |
+| 10 |                5 | finite-probe signatures at rng=8; exact infinite family now known |
 | 11 |                0 | hendecagon non-zomeable |
 | 12 |                0 | dodecagon non-zomeable in this geometry |
 | 13–20 |             0 | all non-zomeable |
 
-The pattern is:  zomeable q-gons (5,6,10) yield small bounded shape counts
-when paired with the square; the rest yield zero.  q=5 is interesting in
-that the pentagon IS zome-compatible yet the duoprism still emits zero —
-this is a joint-axis constraint, not a per-polygon limitation.
+The finite-probe pattern was: zomeable q-gons (5,6,10) yielded small apparent
+shape counts when paired with the square; the rest yielded zero.  q=5 remains
+interesting because the pentagon IS zome-compatible yet the duoprism emitted
+zero in that sweep — this is a joint-axis constraint, not a per-polygon
+limitation.

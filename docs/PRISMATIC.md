@@ -19,7 +19,7 @@ Polytopes covered: **204 (in scope)**
 | Family | Description | In scope | Hit ≥ 1 | Total shapes |
 |---|---|---:|---:|---:|
 | **A** | Polyhedral prisms `P × [0,1]` | 17 | 12 | 45 |
-| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 16 |
+| **B** | Duoprisms `{p}×{q}` | 170 | 6 | 16 finite-sweep shapes + infinite families for `{4}×{6}`, `{4}×{10}` |
 | **C** | Antiprismatic prisms `A_n × [0,1]` | 17 | 1 | 9 |
 | **Total** | | **204** | **19** | **70** |
 
@@ -54,6 +54,12 @@ Identical machinery to the 47-corpus sweep:
    directions, group hits by 3D shape signature.
 4. For each unique shape: snap projected vertex coords to
    ℤ[φ]³ (multi-scale search) and emit a `.vZome` file.
+
+Constructive follow-up (2026-05-29): the finite snap/signature probes for
+`{4}×{6}` and `{4}×{10}` missed inf families, because their fixed
+alignment/scale search was not a proof of boundedness.  The exact emitter
+`tools/emit_duoprism_inf_family.py` now emits representative members directly
+from the arithmetic conditions below.
 
 Post-audit note: the original generic emitter stopped after the first valid
 edge-axis alignment.  Some symmetric projections have multiple valid alignments,
@@ -103,13 +109,27 @@ Log: [`ongoing_work/prismatic_sweep_log.jsonl`](../ongoing_work/prismatic_sweep_
 | p | q | Distinct shapes |
 |---:|---:|---:|
 | 3 | 6 | [`duoprism_3_6`](../output/duoprisms/duoprism_3_6/RESULTS.md) → 1 |
-| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 4 |
-| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 6 |
+| 4 | 6 | [`duoprism_4_6`](../output/duoprisms/duoprism_4_6/RESULTS.md) → 1 cell-first + inf family |
+| 4 | 10 | [`duoprism_4_10`](../output/duoprisms/duoprism_4_10/RESULTS.md) → 1 cell-first + inf family |
 | 5 | 10 | [`duoprism_5_10`](../output/duoprisms/duoprism_5_10/RESULTS.md) → 1 |
 | 6 | 6 | [`duoprism_6_6`](../output/duoprisms/duoprism_6_6/RESULTS.md) → 2 |
 | 10 | 10 | [`duoprism_10_10`](../output/duoprisms/duoprism_10_10/RESULTS.md) → 2 |
 
 The remaining 164 duoprisms produced 0 zomeable projections.  Most fail because at least one of the {p}-gon or {q}-gon circles lies in ℤ[√3] (p ∈ {3, 6, 12, …}) or ℤ[√2] (p ∈ {8, …}), which don't embed in the icosahedral field ℤ[φ].  The icosahedral-compatible regular polygons in range are {4} (in ℤ), {5}, and {10} (both in ℤ[φ]).
+
+#### Infinite families
+
+For `{4}×{q}` with kernel `n=(a,b,0,0)`, the `{q}`-gon plane is preserved and
+the square factor becomes four parallel polygon layers.  The square edges are
+height differences `a+b` and `a-b`, not the individual projected square basis
+vectors; nevertheless these are still `Q(phi)` multiples of a single Zome axis.
+
+- `{4}×{6}`: use a blue hexagon plane with yellow height axis.  The arithmetic
+  condition is `q^2 = 3*(a^2+b^2)` with `q in Q(phi)`.  Example emitted:
+  `a=2-phi`, `b=-1+3phi`, `q=-3+6phi`.
+- `{4}×{10}`: use a blue decagon plane with red height axis.  The arithmetic
+  condition is the tesseract support-2 condition `c^2 = a^2+b^2` with
+  `c in Q(phi)`.  Examples emitted: `(a,b,c)=(5,12,13)` and `(8,15,17)`.
 
 
 ### Family C — antiprismatic prisms
@@ -140,4 +160,7 @@ python tools/build_prismatic_results.py
 
 # Regenerate this doc + the manifest from the sweep log
 python tools/build_prismatic_doc.py
+
+# Emit constructive infinite-family examples for {4}x{6} and {4}x{10}
+python tools/emit_duoprism_inf_family.py
 ```

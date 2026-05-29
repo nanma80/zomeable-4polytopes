@@ -1,4 +1,47 @@
-# duoprism_4_6 zomeable family size by sweep depth
+# duoprism_4_6 inf-family question — corrected: infinite family exists
+
+## 2026-05-29 correction
+
+The earlier boundedness verdict below is **incorrect**.  It was based on the
+finite snap/signature probe and its fixed alignment/scale search, not on a
+constructive classification of the inf family.  The emitted
+representative is:
+
+```text
+output/duoprisms/duoprism_4_6/duoprism_4_6_inf_family_a2-phi_b3phi-1.vZome
+```
+
+For `{4} x {6}` with kernel `n=(a,b,0,0)`, the preserved hexagon plane can use
+two blue edge axes at 60 degrees; the perpendicular square-height axis is
+yellow.  The blue/yellow length ratio contributes a `sqrt(3)` factor, so the
+right snap condition is not the tesseract condition
+
+```text
+sqrt(a^2+b^2) in Q(phi),
+```
+
+but rather
+
+```text
+sqrt(3*(a^2+b^2)) in Q(phi).
+```
+
+This conic has `Q(phi)` points, for example
+
+```text
+a = 2 - phi,  b = -1 + 3 phi,
+3*(a^2+b^2) = 45 = (3*sqrt(5))^2.
+```
+
+Using the blue hexagon edge frame scaled by `sqrt(3*(a^2+b^2))` and the yellow
+height axis scaled by `2a`/`2b` gives all duoprism edges on zome axes.  Since a
+conic over `Q(phi)` with one point has infinitely many points, `{4} x {6}` has
+an inf family, though it is a **different arithmetic branch**
+from the tesseract support-2 family.
+
+The old rng tables remain useful as diagnostics for that particular probe, but
+the "bounded at 3 shapes" interpretation is a false negative of the snap search.
+The old text is retained below only as historical context.
 
 | rng | kernel-count budget | raw hits | dir-deduped | unique shapes (snap-eligible) | **emitted** | snap-failed |
 |-----|---------------------|----------|-------------|-------------------------------|-------------|-------------|
@@ -7,14 +50,15 @@
 | 4   | 21,523,360          | -        | -           | 743                           | **3**       | 740         |
 | 5   | 107,179,440         | 14,928   | 2,604       | 1,037                         | **3**       | 1,034       |
 
-## Conclusion
+## Superseded conclusion
 
-**`duoprism_4_6` is NOT an infinite family.**
+**Superseded: `duoprism_4_6` was previously thought not to be an infinite
+family.**
 
-The directional-zomeable subset of (a, b, 0, 0) kernels grows unboundedly
-(roughly quartic in rng), but the actual snap-emittable subset is **bounded
-at 3 shapes**. The rng=5 sweep (107M candidate directions, ~84 min wall on a
-single Python loop) emitted exactly the same 3 shapes that rng=3 found.
+The old finite probe found that its directional-zomeable subset of
+`(a,b,0,0)` kernels grew quickly with `rng`, but its snap-emittable subset
+stalled at 3 shapes.  That measured a limitation of the probe's snap/alignment
+branch, not the mathematical family.
 
 All 3 emitted kernels at every rng have form `(a, b, 0, 0)` — kernel lives
 in the {4}-plane, hexagonal plane fully preserved. Geometrically these are
@@ -73,9 +117,8 @@ the three existing shapes.
 
 - `ongoing_work/probe_4q_sigs_q6_ab00_rng{4,5,6,7,8}.json`
 
-### Verdict (reconfirmed)
+### Superseded verdict
 
-**duoprism_4_6 is BOUNDED at 3 shapes on the (a,b,0,0) plane.**  Snap-count
-at rng=8 is 3.7× the rng=4 count yet the shape count is unchanged.  The
-three rng=4 kernels found by the production sweep are the complete set; no
-new shapes will appear at higher rng.
+**Superseded: the rng probe saturated at 3 probe signatures, but this was not a
+proof of boundedness.**  The exact construction above gives a genuine infinite
+family outside the probe's successful snap/alignment branch.

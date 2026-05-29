@@ -1407,8 +1407,8 @@
         "n_shapes": 4,
         "shapes": [
           {
-            "basename": "oblique_100",
-            "label": "oblique",
+            "basename": "duoprism_4_6_inf_family_a5-3phi_b2-phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 24,
             "kernel": [
@@ -1421,11 +1421,11 @@
               "B": 24,
               "Y": 24
             },
-            "path": "output/duoprisms/duoprism_4_6/oblique_100.vZome"
+            "path": "output/duoprisms/duoprism_4_6/duoprism_4_6_inf_family_a5-3phi_b2-phi.vZome"
           },
           {
-            "basename": "oblique_133",
-            "label": "oblique",
+            "basename": "duoprism_4_6_inf_family_a5-3phi_b4phi-5",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 24,
             "kernel": [
@@ -1438,11 +1438,11 @@
               "B": 24,
               "Y": 24
             },
-            "path": "output/duoprisms/duoprism_4_6/oblique_133.vZome"
+            "path": "output/duoprisms/duoprism_4_6/duoprism_4_6_inf_family_a5-3phi_b4phi-5.vZome"
           },
           {
-            "basename": "oblique_356",
-            "label": "oblique",
+            "basename": "duoprism_4_6_inf_family_aphi_b5-2phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 24,
             "kernel": [
@@ -1455,7 +1455,7 @@
               "B": 24,
               "Y": 24
             },
-            "path": "output/duoprisms/duoprism_4_6/oblique_356.vZome"
+            "path": "output/duoprisms/duoprism_4_6/duoprism_4_6_inf_family_aphi_b5-2phi.vZome"
           },
           {
             "basename": "cell_first_cube",
@@ -1649,8 +1649,8 @@
         "n_shapes": 6,
         "shapes": [
           {
-            "basename": "oblique_07",
-            "label": "oblique",
+            "basename": "duoprism_4_10_inf_family_a2phi-3_b2-phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 40,
             "kernel": [
@@ -1663,11 +1663,11 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprisms/duoprism_4_10/oblique_07.vZome"
+            "path": "output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_a2phi-3_b2-phi.vZome"
           },
           {
-            "basename": "oblique_160",
-            "label": "oblique",
+            "basename": "duoprism_4_10_inf_family_aphi_b4phi-1",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 40,
             "kernel": [
@@ -1680,11 +1680,11 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprisms/duoprism_4_10/oblique_160.vZome"
+            "path": "output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_aphi_b4phi-1.vZome"
           },
           {
-            "basename": "oblique_297",
-            "label": "oblique",
+            "basename": "duoprism_4_10_inf_family_a4phi-3_b4+3phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 40,
             "kernel": [
@@ -1697,11 +1697,11 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprisms/duoprism_4_10/oblique_297.vZome"
+            "path": "output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_a4phi-3_b4+3phi.vZome"
           },
           {
-            "basename": "oblique_309",
-            "label": "oblique",
+            "basename": "duoprism_4_10_inf_family_a2phi-3_b1+phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 40,
             "kernel": [
@@ -1714,11 +1714,11 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprisms/duoprism_4_10/oblique_309.vZome"
+            "path": "output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_a2phi-3_b1+phi.vZome"
           },
           {
-            "basename": "oblique_500",
-            "label": "oblique",
+            "basename": "duoprism_4_10_inf_family_aphi-1_b3+4phi",
+            "label": "inf_family",
             "subtype": null,
             "n_balls": 40,
             "kernel": [
@@ -1731,7 +1731,7 @@
               "B": 40,
               "R": 40
             },
-            "path": "output/duoprisms/duoprism_4_10/oblique_500.vZome"
+            "path": "output/duoprisms/duoprism_4_10/duoprism_4_10_inf_family_aphi-1_b3+4phi.vZome"
           },
           {
             "basename": "cell_first_cube",

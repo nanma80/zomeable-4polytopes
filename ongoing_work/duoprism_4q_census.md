@@ -18,7 +18,7 @@ Signature = robust 5-decimal SHA-256 (same as `tools/dedup_corpus_by_shape.py`).
 | 11 | 0 | 0 | 0 | 0 | 0 |
 | 12 | 0 | 0 | 0 | 0 | 0 |
 
-### Saturation evidence for q=6 and q=10 (rng=4..8)
+### Finite-probe saturation for q=6 and q=10 (rng=4..8)
 
 | rng | q=6 sigs | q=6 snap | q=10 sigs | q=10 snap |
 |----:|---------:|---------:|----------:|----------:|
@@ -28,10 +28,15 @@ Signature = robust 5-decimal SHA-256 (same as `tools/dedup_corpus_by_shape.py`).
 |   7 |        3 |      304 |         5 |       444 |
 |   8 |        3 |      384 |         5 |       576 |
 
-Both q=6 and q=10 saturate at small shape counts and remain there as rng
-grows.  At rng=8 the snap-count is 3.6–3.7× the rng=4 count, yet the
-distinct-shape count is unchanged.  The SHA-256 hash sets are bit-identical
-across all 5 rngs for both q values.  Neither is an inf-family.
+Both q=6 and q=10 saturate at small finite-probe signature counts and remain
+there as rng grows.  At rng=8 the snap-count is 3.6–3.7× the rng=4 count, yet
+the distinct-probe signature count is unchanged.  The SHA-256 hash sets are
+bit-identical across all 5 rngs for both q values.
+
+Superseding note: this finite-probe saturation is not a boundedness proof.
+Later exact constructions found inf families for `{4}x{6}` and `{4}x{10}`;
+see `duoprism_4_6_inf_family_resolved.md` and
+`duoprism_4_10_inf_family_resolved.md`.
 
 ## (a,b,c,d) plane — full 4D directions
 
@@ -63,7 +68,7 @@ The eight q values cleanly partition into three classes:
 
 | class | q values | (a,b,0,0) align | (a,b,c,d) align | snap | n_shapes |
 | ----- | -------- | ----------- | ----------- | ---: | -------: |
-| **zomeable**    | 6, 10            | yes | yes | yes | bounded (3, 5) |
+| **zomeable**    | 6, 10            | yes | yes | yes | finite probe saturates (3, 5); exact inf families |
 | **align-only**  | 5, 8             | yes | yes | no  | 0 |
 | **non-aligned (square-plane)** | 7, 9, 11, 12 | no | yes | no | 0 |
 
@@ -71,9 +76,10 @@ Interpretation:
 
 - **q = 6, 10**: the q-gon's symmetry (hexagon, decagon) is fully zome-
   compatible with the square's 4-fold symmetry on the (a,b,0,0) plane.
-  Shape counts saturate at small values (3 for q=6, 5 for q=10) and
-  remain there as rng grows — see `duoprism_4_10_inf_family_resolved.md`
-  and `duoprism_4_6_inf_family_resolved.md`.
+  Finite probe signatures saturate at small values (3 for q=6, 5 for q=10)
+  as rng grows, but later exact constructions show these sit inside inf
+  families — see `duoprism_4_10_inf_family_resolved.md` and
+  `duoprism_4_6_inf_family_resolved.md`.
 
 - **q = 5, 8**: the projection's *edges* align to zome axes (pentagon
   has R5 axes, octagon has 4-fold axes) but no consistent scale/quantum
@@ -126,4 +132,3 @@ and `elapsed_s`.
 python ongoing_work/probes/duoprism_4q_snap_sig.py --q 10 --plane ab00 --rngs 4,5,6
 python ongoing_work/probes/duoprism_4q_census_driver.py
 ```
-
