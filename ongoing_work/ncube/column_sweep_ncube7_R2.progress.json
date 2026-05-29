@@ -1,0 +1,15 @@
+{
+  "R": 2,
+  "candidate_count": 366,
+  "candidate_triple_quad_count_so_far": 21598,
+  "distinct_shape_count_so_far": 15,
+  "elapsed_sec": 3036.498,
+  "exact_frame_count_so_far": 362,
+  "matching_quad_count_so_far": 382137,
+  "n": 7,
+  "phase": "strict_quad_streaming",
+  "quad_count_so_far": 613732119,
+  "quad_i": 131,
+  "quad_i_total": 366,
+  "strict_quad_count_so_far": 410078837
+}

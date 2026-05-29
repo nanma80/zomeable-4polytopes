@@ -1,0 +1,494 @@
+{
+  "description": "Strict zomeable orthographic n-cube generator-family report. Records marked new have no zero generator, so they are not inherited from the previous cube by appending a zero generator.",
+  "conventions": {
+    "strict_orthographic_test": "sum_i v_i v_i^T = c I_3 over Z[phi]",
+    "inherited": "at least one generator is zero",
+    "reducible_split": "no zero generator, but at least two generators are parallel",
+    "primitive": "no zero generator and no parallel generator pair"
+  },
+  "known_new_n4_context": {
+    "inherited_from_C3": "ordinary cube / 8cell_cell_first_cube.vZome",
+    "new_vzome_strict_types": [
+      "8-cell infinite split family",
+      "phi-oblique sporadic",
+      "rhombic dodecahedron sporadic"
+    ],
+    "source": "output/regular/8cell/CLASSIFICATION.md"
+  },
+  "pythagorean_split_infinite_family_samples_n4_to_n6": [
+    {
+      "name": "C4_sqrt5_branch_1_2",
+      "dimension": 4,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 1, 1).",
+      "tight_frame": true,
+      "frame_scale": "5",
+      "generators": [
+        "1x",
+        "2x",
+        "-1+2phiy",
+        "-1+2phiz"
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 16,
+      "shape_sig": "N16_919ee757cb4e"
+    },
+    {
+      "name": "C4_integer_3_4_5",
+      "dimension": 4,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 1, 1).",
+      "tight_frame": true,
+      "frame_scale": "25",
+      "generators": [
+        "3x",
+        "4x",
+        "5y",
+        "5z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 16,
+      "shape_sig": "N16_51f9f1b3f3f1"
+    },
+    {
+      "name": "C4_integer_5_12_13",
+      "dimension": 4,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 1, 1).",
+      "tight_frame": true,
+      "frame_scale": "169",
+      "generators": [
+        "5x",
+        "12x",
+        "13y",
+        "13z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 16,
+      "shape_sig": "N16_15fef8058584"
+    },
+    {
+      "name": "C4_zphi_sqrt5_2_3",
+      "dimension": 4,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 1, 1).",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "-1+2phix",
+        "2x",
+        "3y",
+        "3z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 16,
+      "shape_sig": "N16_271d953d93f0"
+    },
+    {
+      "name": "C5_sqrt5_branch_1_2",
+      "dimension": 5,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 1).",
+      "tight_frame": true,
+      "frame_scale": "5",
+      "generators": [
+        "1x",
+        "2x",
+        "1y",
+        "2y",
+        "-1+2phiz"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "unique_projected_vertices": 32,
+      "shape_sig": "N32_b4a5fed975d0"
+    },
+    {
+      "name": "C5_integer_3_4_5",
+      "dimension": 5,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 1).",
+      "tight_frame": true,
+      "frame_scale": "25",
+      "generators": [
+        "3x",
+        "4x",
+        "3y",
+        "4y",
+        "5z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "unique_projected_vertices": 32,
+      "shape_sig": "N32_c2ffb5207ad1"
+    },
+    {
+      "name": "C5_integer_5_12_13",
+      "dimension": 5,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 1).",
+      "tight_frame": true,
+      "frame_scale": "169",
+      "generators": [
+        "5x",
+        "12x",
+        "5y",
+        "12y",
+        "13z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "unique_projected_vertices": 32,
+      "shape_sig": "N32_bc5f3ddefb8a"
+    },
+    {
+      "name": "C5_zphi_sqrt5_2_3",
+      "dimension": 5,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 1).",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "-1+2phix",
+        "2x",
+        "-1+2phiy",
+        "2y",
+        "3z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "unique_projected_vertices": 32,
+      "shape_sig": "N32_2b89399978a0"
+    },
+    {
+      "name": "C6_sqrt5_branch_1_2",
+      "dimension": 6,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 2).",
+      "tight_frame": true,
+      "frame_scale": "5",
+      "generators": [
+        "1x",
+        "2x",
+        "1y",
+        "2y",
+        "1z",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        2
+      ],
+      "unique_projected_vertices": 64,
+      "shape_sig": "N64_6ad7cca3b577"
+    },
+    {
+      "name": "C6_integer_3_4_5",
+      "dimension": 6,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 2).",
+      "tight_frame": true,
+      "frame_scale": "25",
+      "generators": [
+        "3x",
+        "4x",
+        "3y",
+        "4y",
+        "3z",
+        "4z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        2
+      ],
+      "unique_projected_vertices": 64,
+      "shape_sig": "N64_10ac18d09a47"
+    },
+    {
+      "name": "C6_integer_5_12_13",
+      "dimension": 6,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 2).",
+      "tight_frame": true,
+      "frame_scale": "169",
+      "generators": [
+        "5x",
+        "12x",
+        "5y",
+        "12y",
+        "5z",
+        "12z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        2
+      ],
+      "unique_projected_vertices": 64,
+      "shape_sig": "N64_6aaec5511280"
+    },
+    {
+      "name": "C6_zphi_sqrt5_2_3",
+      "dimension": 6,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Axis-parallel split family sample. Varying the Z[phi] Pythagorean triple (a,b,c) gives an infinite reducible family with parallel-class pattern (2, 2, 2).",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "-1+2phix",
+        "2x",
+        "-1+2phiy",
+        "2y",
+        "-1+2phiz",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        2,
+        2
+      ],
+      "unique_projected_vertices": 64,
+      "shape_sig": "N64_e0635aa650dd"
+    }
+  ],
+  "bounded_integer_split_witnesses": [
+    {
+      "name": "C3_ordinary_cube",
+      "dimension": 3,
+      "classification": "primitive",
+      "new_vs_previous_dimension": "new",
+      "note": "The strict 3-cube baseline.",
+      "tight_frame": true,
+      "frame_scale": "1",
+      "generators": [
+        "1x",
+        "1y",
+        "1z"
+      ],
+      "parallel_class_sizes": [
+        1,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 8,
+      "shape_sig": "N8_37ae7f257fa4"
+    },
+    {
+      "name": "C4_integer_split_1_1_2_c5",
+      "dimension": 4,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 1, 2); each class has squared-length sum 5^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "25",
+      "generators": [
+        "5x",
+        "5y",
+        "3z",
+        "4z"
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 16,
+      "shape_sig": "N16_51f9f1b3f3f1"
+    },
+    {
+      "name": "C5_integer_split_1_1_3_c3",
+      "dimension": 5,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 1, 3); each class has squared-length sum 3^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "3x",
+        "3y",
+        "1z",
+        "2z",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        3,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 24,
+      "shape_sig": "N24_88609623c92a"
+    },
+    {
+      "name": "C6_integer_split_1_1_4_c2",
+      "dimension": 6,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 1, 4); each class has squared-length sum 2^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "4",
+      "generators": [
+        "2x",
+        "2y",
+        "1z",
+        "1z",
+        "1z",
+        "1z"
+      ],
+      "parallel_class_sizes": [
+        4,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 20,
+      "shape_sig": "N20_b5aa132684ac"
+    },
+    {
+      "name": "C7_integer_split_1_3_3_c3",
+      "dimension": 7,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 3, 3); each class has squared-length sum 3^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "3x",
+        "1y",
+        "2y",
+        "2y",
+        "1z",
+        "2z",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        3,
+        3,
+        1
+      ],
+      "unique_projected_vertices": 72,
+      "shape_sig": "N72_838e66ed2095"
+    },
+    {
+      "name": "C8_integer_split_1_1_6_c3",
+      "dimension": 8,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 1, 6); each class has squared-length sum 3^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "3x",
+        "3y",
+        "1z",
+        "1z",
+        "1z",
+        "1z",
+        "1z",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        6,
+        1,
+        1
+      ],
+      "unique_projected_vertices": 32,
+      "shape_sig": "N32_760f7736561b"
+    },
+    {
+      "name": "C9_integer_split_1_4_4_c2",
+      "dimension": 9,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 4, 4); each class has squared-length sum 2^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "4",
+      "generators": [
+        "2x",
+        "1y",
+        "1y",
+        "1y",
+        "1y",
+        "1z",
+        "1z",
+        "1z",
+        "1z"
+      ],
+      "parallel_class_sizes": [
+        4,
+        4,
+        1
+      ],
+      "unique_projected_vertices": 50,
+      "shape_sig": "N50_d59b0b08087c"
+    },
+    {
+      "name": "C10_integer_split_1_3_6_c3",
+      "dimension": 10,
+      "classification": "reducible/split",
+      "new_vs_previous_dimension": "new",
+      "note": "Integer axis-split witness with class sizes (1, 3, 6); each class has squared-length sum 3^2. This is a constructive sample, not a completeness claim.",
+      "tight_frame": true,
+      "frame_scale": "9",
+      "generators": [
+        "3x",
+        "1y",
+        "2y",
+        "2y",
+        "1z",
+        "1z",
+        "1z",
+        "1z",
+        "1z",
+        "2z"
+      ],
+      "parallel_class_sizes": [
+        6,
+        3,
+        1
+      ],
+      "unique_projected_vertices": 96,
+      "shape_sig": "N96_f436f0408865"
+    }
+  ]
+}

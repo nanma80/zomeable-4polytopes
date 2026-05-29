@@ -1,0 +1,882 @@
+{
+  "R": 3,
+  "anisotropy_group_count": 268039,
+  "candidate_count": 733,
+  "candidate_pair_pair_count": 803,
+  "distinct_shape_count": 9,
+  "elapsed_sec": 1.693,
+  "essential_shape_count": 1,
+  "exact_frame_count": 802,
+  "expected_core_covered": [
+    "vertex_first_rhombic_dodecahedron"
+  ],
+  "expected_core_missing": [],
+  "expected_core_taxonomy": [
+    "vertex_first_rhombic_dodecahedron"
+  ],
+  "n": 4,
+  "pair_count": 269011,
+  "records": [
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 12,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 72,
+      "frame_scale": "36+36phi",
+      "frame_scale_zphi": [
+        36,
+        36
+      ],
+      "generators": [
+        "0",
+        "-3-3phix+-3y+-3phiz",
+        "-3x+-3phiy+3+3phiz",
+        "-3phix+3+3phiy+3z"
+      ],
+      "generators_zphi": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            -3
+          ]
+        ],
+        [
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "nonspanning_triples": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N8_37ae7f257fa4",
+      "taxonomy_label": "inherited_cube",
+      "unique_projected_vertices": 8
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 31,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 136,
+      "frame_scale": "54+81phi",
+      "frame_scale_zphi": [
+        54,
+        81
+      ],
+      "generators": [
+        "-3-3phix+-3-3phiy+-3-3phiz",
+        "-3-3phix+3+3phiz",
+        "-3-3phix+3+3phiy",
+        "-3-3phiy+3+3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N14_b13879560c50",
+      "taxonomy_label": "axis_aligned_edge_first_hex_prism",
+      "unique_projected_vertices": 14
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 72,
+      "essential_general_position": true,
+      "example_count_for_signature": 72,
+      "frame_scale": "72+108phi",
+      "frame_scale_zphi": [
+        72,
+        108
+      ],
+      "generators": [
+        "-3-3phix+-3-3phiy+-3-3phiz",
+        "-3-3phix+-3-3phiy+3+3phiz",
+        "-3-3phix+3+3phiy+-3-3phiz",
+        "-3-3phix+3+3phiy+3+3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            -3,
+            -3
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [],
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N15_64bc42a7c2b8",
+      "taxonomy_label": "vertex_first_rhombic_dodecahedron",
+      "unique_projected_vertices": 15
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 312,
+      "frame_scale": "36+36phi",
+      "frame_scale_zphi": [
+        36,
+        36
+      ],
+      "generators": [
+        "-3-3phix+-3y+-3phiz",
+        "-3x+3phiz",
+        "-3phix+3phiy+3phiz",
+        "-3-3phiy+3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            -3
+          ]
+        ],
+        [
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N16_47019253b1e4",
+      "taxonomy_label": "phi_oblique",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 20,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 120,
+      "frame_scale": "36+54phi",
+      "frame_scale_zphi": [
+        36,
+        54
+      ],
+      "generators": [
+        "-3-3phix+-3-3phiy",
+        "-3-3phix+3+3phiy",
+        "-3-3phiz",
+        "-3-3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N12_a2b580f78169",
+      "taxonomy_label": "degenerate_face_first_split",
+      "unique_projected_vertices": 12
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 36,
+      "frame_scale": "18+27phi",
+      "frame_scale_zphi": [
+        18,
+        27
+      ],
+      "generators": [
+        "-2-2phix",
+        "-1-3phix",
+        "-3-3phiy",
+        "-3-3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -2,
+            -2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -1,
+            -3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            -3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N16_271d953d93f0",
+      "taxonomy_label": "split_infinite_family_sample",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 36,
+      "frame_scale": "10-5phi",
+      "frame_scale_zphi": [
+        10,
+        -5
+      ],
+      "generators": [
+        "-2+2phix",
+        "-1+phix",
+        "-3+phiy",
+        "-3+phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -2,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            1
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N16_919ee757cb4e",
+      "taxonomy_label": "split_infinite_family_sample",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 12,
+      "frame_scale": "20+30phi",
+      "frame_scale_zphi": [
+        20,
+        30
+      ],
+      "generators": [
+        "-3-3phix",
+        "-1-phix",
+        "-1-3phiy+-1-3phiz",
+        "-1-3phiy+1+3phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            -3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -1,
+            -1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -3
+          ],
+          [
+            -1,
+            -3
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -3
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N16_96ba5a2f13bd",
+      "taxonomy_label": "split_infinite_family_sample",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 32,
+      "essential_example_count_for_signature": 0,
+      "essential_general_position": false,
+      "example_count_for_signature": 6,
+      "frame_scale": "18",
+      "frame_scale_zphi": [
+        18,
+        0
+      ],
+      "generators": [
+        "-3x+-3y",
+        "-3x+3y",
+        "-3+2phiz",
+        "-1-2phiz"
+      ],
+      "generators_zphi": [
+        [
+          [
+            -3,
+            0
+          ],
+          [
+            -3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            -3,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -3,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -1,
+            -2
+          ]
+        ]
+      ],
+      "new_vs_previous_dimension": "new",
+      "nonspanning_triples": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N16_9c8f80fc40c4",
+      "taxonomy_label": "split_infinite_family_sample",
+      "unique_projected_vertices": 16
+    }
+  ],
+  "sweep": "ncube4_exact_generator_pair_sweep"
+}

@@ -1,0 +1,641 @@
+{
+  "R": 2,
+  "candidate_count": 367,
+  "candidate_pair_triple_count": 969,
+  "distinct_shape_count": 23,
+  "elapsed_sec": 11.39,
+  "exact_frame_count": 968,
+  "expected_core_covered": [
+    "split_2_2_1_infinite_family_sample"
+  ],
+  "expected_core_missing": [],
+  "expected_core_taxonomy": [
+    "split_2_2_1_infinite_family_sample"
+  ],
+  "matching_triple_count": 8861,
+  "n": 5,
+  "new_shape_count": 17,
+  "pair_anisotropy_group_count": 67342,
+  "pair_count": 67528,
+  "records": [
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 12,
+      "example_count_for_signature": 36,
+      "frame_scale": "16+16phi",
+      "frame_scale_zphi": [
+        16,
+        16
+      ],
+      "generators": [
+        "0",
+        "0",
+        "-2-2phix+-2y+-2phiz",
+        "-2x+-2phiy+2+2phiz",
+        "-2phix+2+2phiy+2z"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N8_37ae7f257fa4",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 8
+    },
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 20,
+      "example_count_for_signature": 60,
+      "frame_scale": "16+24phi",
+      "frame_scale_zphi": [
+        16,
+        24
+      ],
+      "generators": [
+        "0",
+        "-2-2phix+-2-2phiy",
+        "-2-2phix+2+2phiy",
+        "-2-2phiz",
+        "-2-2phiz"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N12_a2b580f78169",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 12
+    },
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 31,
+      "example_count_for_signature": 80,
+      "frame_scale": "24+36phi",
+      "frame_scale_zphi": [
+        24,
+        36
+      ],
+      "generators": [
+        "0",
+        "-2-2phix+-2-2phiy+-2-2phiz",
+        "-2-2phix+2+2phiz",
+        "-2-2phix+2+2phiy",
+        "-2-2phiy+2+2phiz"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N14_b13879560c50",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 14
+    },
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 32,
+      "example_count_for_signature": 36,
+      "frame_scale": "32+48phi",
+      "frame_scale_zphi": [
+        32,
+        48
+      ],
+      "generators": [
+        "0",
+        "-2-2phix+-2-2phiy+-2-2phiz",
+        "-2-2phix+-2-2phiy+2+2phiz",
+        "-2-2phix+2+2phiy+-2-2phiz",
+        "-2-2phix+2+2phiy+2+2phiz"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N15_64bc42a7c2b8",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 15
+    },
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 32,
+      "example_count_for_signature": 168,
+      "frame_scale": "16+16phi",
+      "frame_scale_zphi": [
+        16,
+        16
+      ],
+      "generators": [
+        "0",
+        "-2-2phix+-2y+-2phiz",
+        "-2x+2phiz",
+        "-2phix+2phiy+2phiz",
+        "-2-2phiy+2phiz"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N16_47019253b1e4",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "inherited",
+      "collapsed_edge_count": 32,
+      "example_count_for_signature": 6,
+      "frame_scale": "5+5phi",
+      "frame_scale_zphi": [
+        5,
+        5
+      ],
+      "generators": [
+        "0",
+        "-2-phix",
+        "-2-phiy",
+        "-2phiz",
+        "-1phiz"
+      ],
+      "new_vs_previous_dimension": "inherited",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1
+      ],
+      "shape_sig": "N16_919ee757cb4e",
+      "taxonomy_label": "inherited_from_n4",
+      "unique_projected_vertices": 16
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 79,
+      "example_count_for_signature": 90,
+      "frame_scale": "12+16phi",
+      "frame_scale_zphi": [
+        12,
+        16
+      ],
+      "generators": [
+        "-2-2phix+-2phiy",
+        "-1-phix+1+2phiy+-1phiz",
+        "-1x+phiy+-1-phiz",
+        "-1phix+1+phiy+1+2phiz",
+        "-2phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N30_184ef4875d32",
+      "taxonomy_label": "primitive_candidate",
+      "unique_projected_vertices": 30
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 79,
+      "example_count_for_signature": 60,
+      "frame_scale": "12+12phi",
+      "frame_scale_zphi": [
+        12,
+        12
+      ],
+      "generators": [
+        "-2-2phix+-2z",
+        "-1x+-2-phiy+1+phiz",
+        "-1x+-1phiy+1+phiz",
+        "-1x+phiy+1+phiz",
+        "-1x+2+phiy+1+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N30_48fc4d992e00",
+      "taxonomy_label": "primitive_candidate",
+      "unique_projected_vertices": 30
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 79,
+      "example_count_for_signature": 72,
+      "frame_scale": "16+16phi",
+      "frame_scale_zphi": [
+        16,
+        16
+      ],
+      "generators": [
+        "-2-2phix+-2y+-2phiz",
+        "-2x+2+2phiy",
+        "-1-phix+1y+2+phiz",
+        "-1x+phiy+-1+phiz",
+        "-1phix+-1-phiy+1+2phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N30_702e9dec85dd",
+      "taxonomy_label": "primitive_candidate",
+      "unique_projected_vertices": 30
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 24,
+      "frame_scale": "12+12phi",
+      "frame_scale_zphi": [
+        12,
+        12
+      ],
+      "generators": [
+        "-2-phix+-2-phiy",
+        "-1-phix+1y+-2-phiz",
+        "-1x+-1z",
+        "-2phix+2phiy+2phiz",
+        "-1-phiy+1+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N32_52d52a421afc",
+      "taxonomy_label": "primitive_candidate",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "primitive",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 120,
+      "frame_scale": "12+12phi",
+      "frame_scale_zphi": [
+        12,
+        12
+      ],
+      "generators": [
+        "-2-2phix+-2z",
+        "-1x+-2-phiy+1+phiz",
+        "-1+phix+1y+-1phiz",
+        "-1phix+1+phiy+1+2phiz",
+        "-2phiy"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N32_a3c572ae65ce",
+      "taxonomy_label": "primitive_candidate",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 33,
+      "example_count_for_signature": 36,
+      "frame_scale": "16+16phi",
+      "frame_scale_zphi": [
+        16,
+        16
+      ],
+      "generators": [
+        "-2-2phix+-2y+-2phiz",
+        "-1-phix+1y+2+phiz",
+        "-1-phix+1y+2+phiz",
+        "-1+phix+-1-2phiy+phiz",
+        "-1+phix+-1-2phiy+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "shape_sig": "N18_7404c96b7dae",
+      "taxonomy_label": "split_2_2_1_infinite_family_sample",
+      "unique_projected_vertices": 18
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 50,
+      "example_count_for_signature": 48,
+      "frame_scale": "24+24phi",
+      "frame_scale_zphi": [
+        24,
+        24
+      ],
+      "generators": [
+        "-2-2phix+-2y+-2phiz",
+        "-2x+2phiy+-2-2phiz",
+        "-2phix+-2-2phiy+2z",
+        "-2phix+2phiy+2phiz",
+        "-2phix+2phiy+2phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N21_fc4d346ad08c",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 21
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 52,
+      "example_count_for_signature": 20,
+      "frame_scale": "10+10phi",
+      "frame_scale_zphi": [
+        10,
+        10
+      ],
+      "generators": [
+        "-2-phix+-1-phiy+-1z",
+        "-2-phix+1+phiy+1z",
+        "-1y+-1-phiz",
+        "-1y+-1-phiz",
+        "-2phiy+2phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N23_e0f926728221",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 23
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 52,
+      "example_count_for_signature": 12,
+      "frame_scale": "10+10phi",
+      "frame_scale_zphi": [
+        10,
+        10
+      ],
+      "generators": [
+        "-2-phix+2+phiy",
+        "-2phix+-2phiy",
+        "-1phix+-1phiy",
+        "-2-phiz",
+        "-2-phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "shape_sig": "N24_00e06892b781",
+      "taxonomy_label": "split_2_2_1_infinite_family_sample",
+      "unique_projected_vertices": 24
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 76,
+      "example_count_for_signature": 36,
+      "frame_scale": "16+16phi",
+      "frame_scale_zphi": [
+        16,
+        16
+      ],
+      "generators": [
+        "-2-2phix+-2y+-2phiz",
+        "-2x+-2phiy+2+2phiz",
+        "-1-phix+1+2phiy+phiz",
+        "-1x+phiy+-1+phiz",
+        "-1phix+1+phiy+1z"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        3,
+        1,
+        1
+      ],
+      "shape_sig": "N28_2ea22f8d3028",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 28
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 76,
+      "example_count_for_signature": 6,
+      "frame_scale": "8+8phi",
+      "frame_scale_zphi": [
+        8,
+        8
+      ],
+      "generators": [
+        "-2-phix",
+        "-1-phix",
+        "-1x",
+        "-2phiy+-2phiz",
+        "-2phiy+2phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        3,
+        1,
+        1
+      ],
+      "shape_sig": "N28_4b5deb233a2f",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 28
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 76,
+      "example_count_for_signature": 8,
+      "frame_scale": "15+15phi",
+      "frame_scale_zphi": [
+        15,
+        15
+      ],
+      "generators": [
+        "-2-phix+2+phiz",
+        "-2-phix+2+phiy",
+        "-2phix+-2phiy+-2phiz",
+        "-1phix+-1phiy+-1phiz",
+        "-2-phiy+2+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N28_a8f0f120c39c",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 28
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 6,
+      "frame_scale": "10+10phi",
+      "frame_scale_zphi": [
+        10,
+        10
+      ],
+      "generators": [
+        "-2-phix",
+        "-2phix",
+        "-1phix",
+        "-2-phiy+-2-phiz",
+        "-2-phiy+2+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        3,
+        1,
+        1
+      ],
+      "shape_sig": "N32_4d666945ec77",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 6,
+      "frame_scale": "8",
+      "frame_scale_zphi": [
+        8,
+        0
+      ],
+      "generators": [
+        "-2x+-2y",
+        "-2x+2y",
+        "-2+phiz",
+        "-1-phiz",
+        "-1z"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        3,
+        1,
+        1
+      ],
+      "shape_sig": "N32_512cd5828f1e",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 24,
+      "frame_scale": "15+15phi",
+      "frame_scale_zphi": [
+        15,
+        15
+      ],
+      "generators": [
+        "-2-phix+-2-phiz",
+        "-2-phix+2+phiy+2+phiz",
+        "-2phix+-2phiy",
+        "-1phix+-1phiy",
+        "-2-phiy+2+phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N32_abaf6bf5a8a0",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 6,
+      "frame_scale": "5+5phi",
+      "frame_scale_zphi": [
+        5,
+        5
+      ],
+      "generators": [
+        "-2phix",
+        "-1phix",
+        "-2-phiy",
+        "-2phiz",
+        "-1phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        2,
+        1
+      ],
+      "shape_sig": "N32_b4a5fed975d0",
+      "taxonomy_label": "split_2_2_1_infinite_family_sample",
+      "unique_projected_vertices": 32
+    },
+    {
+      "classification": "reducible/split",
+      "collapsed_edge_count": 80,
+      "example_count_for_signature": 8,
+      "frame_scale": "20+20phi",
+      "frame_scale_zphi": [
+        20,
+        20
+      ],
+      "generators": [
+        "-2-phix+-2-phiy+2+phiz",
+        "-2-phix+2+phiy+-2-phiz",
+        "-2-phix+2+phiy+2+phiz",
+        "-2phix+-2phiy+-2phiz",
+        "-1phix+-1phiy+-1phiz"
+      ],
+      "new_vs_previous_dimension": "new",
+      "parallel_class_sizes": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "shape_sig": "N32_e4914795963d",
+      "taxonomy_label": "other_reducible_split",
+      "unique_projected_vertices": 32
+    }
+  ],
+  "sweep": "ncube5_exact_generator_pair_triple_sweep",
+  "triple_anisotropy_group_count": 5950,
+  "triple_count": 8305944
+}

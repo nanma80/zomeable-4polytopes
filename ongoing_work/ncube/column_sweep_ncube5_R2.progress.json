@@ -1,0 +1,9 @@
+{
+  "R": 2,
+  "distinct_shape_count": 23,
+  "elapsed_sec": 11.39,
+  "exact_frame_count": 968,
+  "expected_core_missing": [],
+  "n": 5,
+  "phase": "complete"
+}

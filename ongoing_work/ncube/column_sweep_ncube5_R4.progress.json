@@ -1,0 +1,10 @@
+{
+  "R": 4,
+  "distinct_shape_count": 104,
+  "elapsed_sec": 446.872,
+  "essential_shape_count": 0,
+  "exact_frame_count": 5094,
+  "expected_core_missing": [],
+  "n": 5,
+  "phase": "complete"
+}
