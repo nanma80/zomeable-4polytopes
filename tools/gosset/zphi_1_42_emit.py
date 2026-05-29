@@ -31,6 +31,24 @@ DEFAULT_SCALE_BY_SIG = {
     "N5936_cb19e4987e4f": "phi^3/4",
 }
 
+PUBLISH_INFO = {
+    "N169_b8decb44aa97": {
+        "scale_label": "phi^3/4",
+        "scale": GF(Fraction(1, 4), Fraction(1, 2)),
+        "filename": "1_42_B3_169_balls.vZome",
+    },
+    "N251_b8decb44aa97": {
+        "scale_label": "phi^2/2",
+        "scale": GF(Fraction(1, 2), Fraction(1, 2)),
+        "filename": "1_42_B3_251_balls.vZome",
+    },
+    "N5936_cb19e4987e4f": {
+        "scale_label": "phi^3/4",
+        "scale": GF(Fraction(1, 4), Fraction(1, 2)),
+        "filename": "1_42_H3_5936_balls.vZome",
+    },
+}
+
 
 def build_vertices():
     verts: set[tuple[int, ...]] = set()
@@ -183,6 +201,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", default="ongoing_work/gosset_1_42/column_sweep_1_42_R2.json")
     ap.add_argument("--out_dir", default="output/gosset_1_42_candidates")
+    ap.add_argument("--publish", action="store_true", help="emit normalized gallery filenames")
     ap.add_argument(
         "--scale",
         default="auto",
@@ -196,9 +215,15 @@ def main():
     out_dir = ROOT / args.out_dir
     manifest = []
     for sig, hit in sorted(data["hits"].items()):
-        out = out_dir / f"1_42_from_{sig}.vZome"
-        scale_expr = DEFAULT_SCALE_BY_SIG[sig] if args.scale == "auto" else args.scale
-        scale = parse_scale(scale_expr)
+        if args.publish:
+            meta = PUBLISH_INFO[sig]
+            out = out_dir / meta["filename"]
+            scale_expr = meta["scale_label"]
+            scale = meta["scale"]
+        else:
+            out = out_dir / f"1_42_from_{sig}.vZome"
+            scale_expr = DEFAULT_SCALE_BY_SIG[sig] if args.scale == "auto" else args.scale
+            scale = parse_scale(scale_expr)
         info = emit_hit(sig, hit, V, edges, out, scale)
         info["scale_factor"] = scale_expr
         manifest.append(info)

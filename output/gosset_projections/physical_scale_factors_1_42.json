@@ -1,0 +1,32 @@
+{
+  "note": "Scale factors approved for 1_42 candidates before promotion to the Gosset gallery.",
+  "items": [
+    {
+      "file": "1_42/1_42_B3_169_balls.vZome",
+      "scale_factor": "phi^3/4",
+      "zphi_pair": [
+        "1/4",
+        "1/2"
+      ],
+      "note": "user-approved scale"
+    },
+    {
+      "file": "1_42/1_42_B3_251_balls.vZome",
+      "scale_factor": "phi^2/2",
+      "zphi_pair": [
+        "1/2",
+        "1/2"
+      ],
+      "note": "user-approved scale"
+    },
+    {
+      "file": "1_42/1_42_H3_5936_balls.vZome",
+      "scale_factor": "phi^3/4",
+      "zphi_pair": [
+        "1/4",
+        "1/2"
+      ],
+      "note": "user-approved scale"
+    }
+  ]
+}

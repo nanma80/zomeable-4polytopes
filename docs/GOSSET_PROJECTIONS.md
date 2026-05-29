@@ -18,6 +18,7 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | `1_32` | 7 | 5 |
 | `4_21` | 8 | 3 |
 | `2_41` | 8 | 3 |
+| `1_42` | 8 | 3 |
 
 ## Prior work
 
@@ -58,7 +59,9 @@ constraints and strict orthographicity:
    `(+/-1,+/-1,0,0,0)`, so it has the same D5 root edge-direction constraints
    as `1_21`.  For `2_41`, the edge directions form the E8 root system with
    the odd spinor parity, so the direct sweep uses the same type-A constraints
-   but checks odd-parity half-root sums.  For the E6 root polytope (`1_22`), we realize the polytope as
+   but checks odd-parity half-root sums.  For `1_42`, the edge directions are
+   the full E8 root system, so the direct sweep checks both spinor parities and
+   the `+/-2e_i +/-2e_j` roots.  For the E6 root polytope (`1_22`), we realize the polytope as
    the E8 roots orthogonal to an A2 subsystem and use the gauge representative
    annihilating that A2 complement.
 
@@ -86,6 +89,8 @@ constraints and strict orthographicity:
 | `2_21`/`3_21`/`4_21`, R=3 | 47.49 h | 19,816,930,273 | same 10 labelled models; no new models |
 | `2_41`, R=1 | 48.7 s | 12,101,671 | 3 models |
 | `2_41`, R=2 | 13.5 min | 190,459,868 | same 3 models |
+| `1_42`, R=1 | 68.7 s | 12,101,671 | 3 models |
+| `1_42`, R=2 | 13.8 min | 190,459,868 | same 3 models |
 
 The R=3 leaf estimator predicted `1.960e10 +/- 1.828e8` leaves, close to the
 actual `1.982e10` leaves.
@@ -170,3 +175,6 @@ direct parity-correct sweep gives three labelled models through R=2: two
 B3-symmetric projections with 65 and 93 balls, and one H3-symmetric projection
 with 921 balls.
 
+The `1_42` member uses the full E8 root directions.  The direct sweep gives
+three labelled models through R=2: two B3-symmetric projections with 169 and
+251 balls, and one H3-symmetric projection with 5936 balls.
