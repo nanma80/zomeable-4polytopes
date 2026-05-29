@@ -25,6 +25,12 @@ col = importlib.util.module_from_spec(spec_col)
 assert spec_col.loader is not None
 spec_col.loader.exec_module(col)
 
+DEFAULT_SCALE_BY_SIG = {
+    "N169_b8decb44aa97": "phi^3/4",
+    "N251_b8decb44aa97": "phi^2/2",
+    "N5936_cb19e4987e4f": "phi^3/4",
+}
+
 
 def build_vertices():
     verts: set[tuple[int, ...]] = set()
@@ -71,6 +77,14 @@ def gf_from_pair(pair, scale=Fraction(1)):
 
 def vscale(v, s: GF):
     return tuple(x * s for x in v)
+
+
+def parse_scale(expr: str) -> GF:
+    if expr == "phi^2/2":
+        return GF(Fraction(1, 2), Fraction(1, 2))
+    if expr == "phi^3/4":
+        return GF(Fraction(1, 4), Fraction(1, 2))
+    return GF(Fraction(expr), 0)
 
 
 def project_vertex(vertex, columns):
@@ -169,19 +183,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", default="ongoing_work/gosset_1_42/column_sweep_1_42_R2.json")
     ap.add_argument("--out_dir", default="output/gosset_1_42_candidates")
-    ap.add_argument("--scale", default="1", help="rational physical scale, e.g. 1/4")
+    ap.add_argument(
+        "--scale",
+        default="auto",
+        help="physical scale: auto, a rational value, phi^2/2, or phi^3/4",
+    )
     ap.add_argument("--manifest", help="optional path to write an audit manifest")
     args = ap.parse_args()
     data = json.loads((ROOT / args.json).read_text())
     V = build_vertices()
     edges = build_edges(V)
     out_dir = ROOT / args.out_dir
-    scale = GF(Fraction(args.scale), 0)
     manifest = []
     for sig, hit in sorted(data["hits"].items()):
         out = out_dir / f"1_42_from_{sig}.vZome"
+        scale_expr = DEFAULT_SCALE_BY_SIG[sig] if args.scale == "auto" else args.scale
+        scale = parse_scale(scale_expr)
         info = emit_hit(sig, hit, V, edges, out, scale)
-        info["scale_factor"] = args.scale
+        info["scale_factor"] = scale_expr
         manifest.append(info)
         print(sig, info)
     manifest_path = ROOT / args.manifest if args.manifest else out_dir / "manifest.json"
