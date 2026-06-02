@@ -8,6 +8,8 @@ classification.
 
 For context and generation notes, see
 [`docs/APPROXIMATE_ZOMES.md`](../../docs/APPROXIMATE_ZOMES.md).
+That page also includes references and acknowledgements for related earlier
+Zometool approximation constructions.
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
