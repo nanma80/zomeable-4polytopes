@@ -1,8 +1,8 @@
 """Experimental zomeable approximations to target Platonic solids.
 
-This tool is separate from the strict zomeable 4-polytope classification: the
-goal here is visually useful RGBY strut models that approximate familiar 3D
-polyhedra.
+This folder is intentionally separate from zomeable-4polytopes: the goal here
+is not exact uniform-polytope classification, but visually useful RGBY strut
+models that approximate familiar shapes.
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ from fractions import Fraction
 from itertools import combinations, permutations, product
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1] / "zomeable-4polytopes"
 sys.path.insert(0, str(ROOT / "lib"))
 
 from emit_vzome import (  # noqa: E402
@@ -52,7 +52,23 @@ ARCHIMEDEAN_TARGETS = [
     "truncated_icosidodecahedron",
     "snub_dodecahedron",
 ]
-KNOWN_TARGETS = PLATONIC_TARGETS + ARCHIMEDEAN_TARGETS
+CATALAN_DUALS = {
+    "triakis_tetrahedron": "truncated_tetrahedron",
+    "rhombic_dodecahedron": "cuboctahedron",
+    "triakis_octahedron": "truncated_cube",
+    "tetrakis_hexahedron": "truncated_octahedron",
+    "deltoidal_icositetrahedron": "rhombicuboctahedron",
+    "disdyakis_dodecahedron": "truncated_cuboctahedron",
+    "pentagonal_icositetrahedron": "snub_cube",
+    "rhombic_triacontahedron": "icosidodecahedron",
+    "triakis_icosahedron": "truncated_dodecahedron",
+    "pentakis_dodecahedron": "truncated_icosahedron",
+    "deltoidal_hexecontahedron": "rhombicosidodecahedron",
+    "disdyakis_triacontahedron": "truncated_icosidodecahedron",
+    "pentagonal_hexecontahedron": "snub_dodecahedron",
+}
+CATALAN_TARGETS = list(CATALAN_DUALS)
+KNOWN_TARGETS = PLATONIC_TARGETS + ARCHIMEDEAN_TARGETS + CATALAN_TARGETS
 
 
 def dist2(a: tuple[float, float, float], b: tuple[float, float, float]) -> float:
@@ -314,6 +330,36 @@ def archimedean_points(name: str) -> list[tuple[float, float, float]]:
     raise ValueError(f"unknown Archimedean target {name}")
 
 
+def dual_points(data: dict) -> list[tuple[float, float, float]]:
+    points = data["points"]
+    out = []
+    for face in data["faces"]:
+        face_points = [points[i] for i in face]
+        center = centroid(face_points)
+        normal = (0.0, 0.0, 0.0)
+        for i in range(len(face_points)):
+            normal = tuple(
+                normal[k] + cross(face_points[i], face_points[(i + 1) % len(face_points)])[k]
+                for k in range(3)
+            )
+        n = norm(normal)
+        if n < 1e-12:
+            raise ValueError(f"degenerate dual face in {data['name']}")
+        normal = tuple(x / n for x in normal)
+        if dot(normal, center) < 0:
+            normal = tuple(-x for x in normal)
+        offset = dot(normal, center)
+        if offset <= 1e-12:
+            raise ValueError(f"bad dual offset in {data['name']}: {offset}")
+        out.append(tuple(x / offset for x in normal))
+    return unique_float_points(out, tol=1e-7)
+
+
+def catalan_points(name: str) -> list[tuple[float, float, float]]:
+    arch_name = CATALAN_DUALS[name]
+    return dual_points(target(arch_name))
+
+
 def add_ideal_face_angles(data: dict) -> dict:
     face_angles = []
     points = data["points"]
@@ -355,6 +401,19 @@ EXPECTED_TARGET_COUNTS = {
     "rhombicosidodecahedron": (60, 120, {3: 20, 4: 30, 5: 12}),
     "truncated_icosidodecahedron": (120, 180, {4: 30, 6: 20, 10: 12}),
     "snub_dodecahedron": (60, 150, {3: 80, 5: 12}),
+    "triakis_tetrahedron": (8, 18, {3: 12}),
+    "rhombic_dodecahedron": (14, 24, {4: 12}),
+    "triakis_octahedron": (14, 36, {3: 24}),
+    "tetrakis_hexahedron": (14, 36, {3: 24}),
+    "deltoidal_icositetrahedron": (26, 48, {4: 24}),
+    "disdyakis_dodecahedron": (26, 72, {3: 48}),
+    "pentagonal_icositetrahedron": (38, 60, {5: 24}),
+    "rhombic_triacontahedron": (32, 60, {4: 30}),
+    "triakis_icosahedron": (32, 90, {3: 60}),
+    "pentakis_dodecahedron": (32, 90, {3: 60}),
+    "deltoidal_hexecontahedron": (62, 120, {4: 60}),
+    "disdyakis_triacontahedron": (62, 180, {3: 120}),
+    "pentagonal_hexecontahedron": (92, 150, {5: 60}),
 }
 
 
@@ -403,6 +462,8 @@ def expand_targets(names: list[str]) -> list[str]:
     for name in names:
         if name in {"archimedean", "all_archimedean"}:
             out.extend(ARCHIMEDEAN_TARGETS)
+        elif name in {"catalan", "all_catalan"}:
+            out.extend(CATALAN_TARGETS)
         elif name in {"platonic", "all_platonic"}:
             out.extend(PLATONIC_TARGETS)
         elif name == "all":
@@ -415,6 +476,11 @@ def expand_targets(names: list[str]) -> list[str]:
 def target(name: str) -> dict:
     if name in ARCHIMEDEAN_TARGETS:
         points = archimedean_points(name)
+        edges, faces = convex_hull_graph(points)
+        return add_ideal_face_angles({"name": name, "points": points, "edges": edges, "faces": faces})
+
+    if name in CATALAN_TARGETS:
+        points = catalan_points(name)
         edges, faces = convex_hull_graph(points)
         return add_ideal_face_angles({"name": name, "points": points, "edges": edges, "faces": faces})
 
@@ -521,7 +587,13 @@ def score_embedding(target_data: dict, points: list[tuple[float, float, float]])
     edges = target_data["edges"]
     faces = target_data["faces"]
     ideal_face_angles = target_data.get("face_angles", [])
+    ideal_points = target_data["points"]
     edge_lengths = [math.sqrt(dist2(points[i], points[j])) for i, j in edges]
+    ideal_edge_lengths = [math.sqrt(dist2(ideal_points[i], ideal_points[j])) for i, j in edges]
+    edge_ratios = [
+        actual / ideal if ideal > 1e-12 else float("inf")
+        for actual, ideal in zip(edge_lengths, ideal_edge_lengths)
+    ]
     face_side_cvs = []
     face_side_ranges = []
     face_plane = []
@@ -532,8 +604,16 @@ def score_embedding(target_data: dict, points: list[tuple[float, float, float]])
             math.sqrt(dist2(points[face[i]], points[face[(i + 1) % len(face)]]))
             for i in range(len(face))
         ]
-        face_side_cvs.append(coeff_var(sides))
-        face_side_ranges.append(rel_range(sides))
+        ideal_sides = [
+            math.sqrt(dist2(ideal_points[face[i]], ideal_points[face[(i + 1) % len(face)]]))
+            for i in range(len(face))
+        ]
+        side_ratios = [
+            actual / ideal if ideal > 1e-12 else float("inf")
+            for actual, ideal in zip(sides, ideal_sides)
+        ]
+        face_side_cvs.append(coeff_var(side_ratios))
+        face_side_ranges.append(rel_range(side_ratios))
         face_plane.append(face_planarity(points, face))
         angles = []
         for i in range(len(face)):
@@ -556,12 +636,13 @@ def score_embedding(target_data: dict, points: list[tuple[float, float, float]])
         face_angle_rms.append(math.sqrt(sum(e * e for e in errors) / len(errors)))
         face_angle_ranges.append(max(angles) - min(angles))
     mean_edge = sum(edge_lengths) / len(edge_lengths)
+    mean_edge_ratio = sum(edge_ratios) / len(edge_ratios)
     normalized_plane = [x / mean_edge for x in face_plane]
     r_cv, min_r_ratio, r_range = radial_cv(points)
     convex_bad = convexity_violation(points, faces, mean_edge)
     vertex_edge_error = [0.0 for _ in points]
     for edge_index, (i, j) in enumerate(edges):
-        err = abs(edge_lengths[edge_index] / mean_edge - 1.0)
+        err = abs(edge_ratios[edge_index] / mean_edge_ratio - 1.0)
         vertex_edge_error[i] += err
         vertex_edge_error[j] += err
     total_vertex_error = sum(vertex_edge_error)
@@ -571,8 +652,8 @@ def score_embedding(target_data: dict, points: list[tuple[float, float, float]])
         "vertices": len(points),
         "edges": len(edges),
         "faces": len(faces),
-        "edge_length_cv": coeff_var(edge_lengths),
-        "edge_length_range": rel_range(edge_lengths),
+        "edge_length_cv": coeff_var(edge_ratios),
+        "edge_length_range": rel_range(edge_ratios),
         "max_face_side_cv": max(face_side_cvs) if face_side_cvs else 0.0,
         "max_face_side_range": max(face_side_ranges) if face_side_ranges else 0.0,
         "max_face_planarity_error_over_edge": max(normalized_plane) if normalized_plane else 0.0,
@@ -831,6 +912,7 @@ class ZomeEmbeddingSearch:
         self.edge_angle_tolerance_deg = edge_angle_tolerance_deg
         self.max_edge_struts = max_edge_struts
         self.seed_edge_length = 0.0
+        self.seed_edge_scale_ratio = 0.0
         self.struts = edge_vectors(min_scale, max_scale, max_edge_struts)
         self.edge_lookup = {edge.key: edge for edge in self.struts}
         self.neighbor_cache: dict[tuple, frozenset] = {}
@@ -931,7 +1013,13 @@ class ZomeEmbeddingSearch:
             edge_length = math.sqrt(
                 gf_dist2_float(tuple(cand_point[a] - self.point(placed[j])[a] for a in range(3)))
             )
-            ratio = max(edge_length, self.seed_edge_length) / min(edge_length, self.seed_edge_length)
+            ideal_length = self.target_dists[tuple(sorted((idx, j)))]
+            if ideal_length <= 1e-12 or self.seed_edge_scale_ratio <= 1e-12:
+                return False
+            edge_scale_ratio = edge_length / ideal_length
+            ratio = max(edge_scale_ratio, self.seed_edge_scale_ratio) / min(
+                edge_scale_ratio, self.seed_edge_scale_ratio
+            )
             if ratio > self.seed_edge_ratio_limit:
                 return False
         return True
@@ -950,7 +1038,11 @@ class ZomeEmbeddingSearch:
                 p, q = self.point(placed[a]), self.point(placed[b])
             else:
                 continue
-            lengths.append(math.sqrt(gf_dist2_float(tuple(p[i] - q[i] for i in range(3)))))
+            actual = math.sqrt(gf_dist2_float(tuple(p[i] - q[i] for i in range(3))))
+            ideal = self.target_dists[tuple(sorted((a, b)))]
+            if ideal <= 1e-12:
+                return False
+            lengths.append(actual / ideal)
         if len(lengths) < 2:
             return True
         return max(lengths) / min(lengths) <= self.edge_length_ratio_limit
@@ -1246,9 +1338,10 @@ class ZomeEmbeddingSearch(ZomeEmbeddingSearch):
             self.second_level_candidate_index = 0
             self.second_level_candidate_count = 0
             self.seed_edge_length = edge.length
+            self.seed_edge_scale_ratio = edge.length / self.target_dists[(0, 1)]
             if time.time() - self.started > self.time_limit:
                 break
-            scale = edge.length / self.target_dists[(0, 1)]
+            scale = self.seed_edge_scale_ratio
             try:
                 self.backtrack({0: origin, 1: edge.key}, {origin, edge.key}, scale)
             except TimeoutError:
@@ -1742,7 +1835,7 @@ def main() -> None:
         "--targets",
         nargs="+",
         default=PLATONIC_TARGETS,
-        help="target names, or aliases: platonic, archimedean, all_platonic, all_archimedean, all",
+        help="target names, or aliases: platonic, archimedean, catalan, all_platonic, all_archimedean, all_catalan, all",
     )
     parser.add_argument("--min-scale", type=int, default=-2)
     parser.add_argument("--max-scale", type=int, default=1)

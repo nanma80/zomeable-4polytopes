@@ -1,5 +1,5 @@
 {
-  "purpose": "Curated favorite Platonic and solved Archimedean approximations, scaled to strut scales 2..3 and centroid-centered.",
+  "purpose": "Curated favorite Platonic, Archimedean, and Catalan approximations, scaled to strut scales 2..3 and centroid-centered.",
   "scale_rule": "Selected one global phi power per model so every emitted graph strut has scale 2 or 3.",
   "centering_rule": "After scaling, translated by the exact golden-field centroid; no rotation and no additional scale.",
   "models": [
@@ -49,7 +49,8 @@
         "radial_range": 0.06806938620142744,
         "max_vertex_edge_error_share": 0.2500000000000004,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "platonic"
     },
     {
       "target": "cube",
@@ -97,7 +98,8 @@
         "radial_range": 0.0,
         "max_vertex_edge_error_share": 0.125,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "platonic"
     },
     {
       "target": "octahedron",
@@ -145,7 +147,8 @@
         "radial_range": 0.0,
         "max_vertex_edge_error_share": 0.16666666666666666,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "platonic"
     },
     {
       "target": "icosahedron",
@@ -193,7 +196,8 @@
         "radial_range": 1.2291460315268854e-16,
         "max_vertex_edge_error_share": 0.0833333333333333,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "platonic"
     },
     {
       "target": "dodecahedron",
@@ -241,7 +245,8 @@
         "radial_range": 0.07566474595353087,
         "max_vertex_edge_error_share": 0.06250000000000015,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "platonic"
     },
     {
       "target": "truncated_tetrahedron",
@@ -289,7 +294,8 @@
         "radial_range": 0.054980865988310666,
         "max_vertex_edge_error_share": 0.08333333333333345,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
     },
     {
       "target": "cuboctahedron",
@@ -337,7 +343,8 @@
         "radial_range": 0.050171261873833285,
         "max_vertex_edge_error_share": 0.08333333333333333,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
     },
     {
       "target": "truncated_octahedron",
@@ -385,7 +392,8 @@
         "radial_range": 0.040127915098910935,
         "max_vertex_edge_error_share": 0.04166666666666685,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
     },
     {
       "target": "rhombicuboctahedron",
@@ -433,7 +441,8 @@
         "radial_range": 1.5849598737471757e-16,
         "max_vertex_edge_error_share": 0.04166666666666672,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
     },
     {
       "target": "icosidodecahedron",
@@ -481,7 +490,8 @@
         "radial_range": 0.05725482787383191,
         "max_vertex_edge_error_share": 0.03645833333333348,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
     },
     {
       "target": "rhombicosidodecahedron",
@@ -529,7 +539,255 @@
         "radial_range": 0.058790223195818975,
         "max_vertex_edge_error_share": 0.026041666666666824,
         "convexity_violation": 0.0
-      }
+      },
+      "family": "archimedean"
+    },
+    {
+      "target": "pentakis_dodecahedron",
+      "file": "pentakis_dodecahedron_favorite.vZome",
+      "source_manifest": "outputs\\catalan\\output_catalan_batch_20260601\\pentakis_dodecahedron\\pentakis_dodecahedron\\manifest.json",
+      "source_file": "pentakis_dodecahedron_approx_01_e2b29cc4e0f23804.vZome",
+      "source_rank": 1,
+      "source_hash": "e2b29cc4e0f23804",
+      "objective": 0.5407312088955658,
+      "applied_phi_scale_power": 1,
+      "removed_centroid_after_scaling": [
+        [
+          "7",
+          "11"
+        ],
+        [
+          "-4",
+          "-7"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "final_struts": {
+        "B3": 30,
+        "G2": 60
+      },
+      "balls": 32,
+      "edges": 90,
+      "score": {
+        "target": "pentakis_dodecahedron",
+        "vertices": 32,
+        "edges": 90,
+        "faces": 60,
+        "edge_length_cv": 0.00699074787748177,
+        "edge_length_range": 0.014829615689199136,
+        "max_face_side_cv": 0.0069907478774819355,
+        "max_face_side_range": 0.014829615689198885,
+        "max_face_planarity_error_over_edge": 0.0,
+        "max_face_angle_rms_deg": 0.8269453030558358,
+        "max_face_angle_range_deg": 14.682297291165407,
+        "radial_cv": 0.030749190864797413,
+        "min_radius_ratio": 0.9603029652904287,
+        "radial_range": 0.06351525553531408,
+        "max_vertex_edge_error_share": 0.037500000000001046,
+        "convexity_violation": 0.0
+      },
+      "family": "catalan"
+    },
+    {
+      "target": "rhombic_dodecahedron",
+      "file": "rhombic_dodecahedron_favorite.vZome",
+      "source_manifest": "outputs\\catalan\\output_catalan_batch_20260601\\rhombic_dodecahedron\\rhombic_dodecahedron\\manifest.json",
+      "source_file": "rhombic_dodecahedron_approx_01_07f884ed3d7028dd.vZome",
+      "source_rank": 1,
+      "source_hash": "07f884ed3d7028dd",
+      "objective": 1.4787217865745963,
+      "applied_phi_scale_power": 2,
+      "removed_centroid_after_scaling": [
+        [
+          "4",
+          "13/2"
+        ],
+        [
+          "-7/2",
+          "-5"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "final_struts": {
+        "G2": 18,
+        "Y3": 6
+      },
+      "balls": 14,
+      "edges": 24,
+      "score": {
+        "target": "rhombic_dodecahedron",
+        "vertices": 14,
+        "edges": 24,
+        "faces": 12,
+        "edge_length_cv": 0.003975754839261159,
+        "edge_length_range": 0.009181612506717549,
+        "max_face_side_cv": 0.004601368248423206,
+        "max_face_side_range": 0.009202736496846413,
+        "max_face_planarity_error_over_edge": 7.995339874696315e-17,
+        "max_face_angle_rms_deg": 4.993708448560758,
+        "max_face_angle_range_deg": 48.189685104221404,
+        "radial_cv": 0.0854928465344084,
+        "min_radius_ratio": 0.9024360158247082,
+        "radial_range": 0.18069459027438214,
+        "max_vertex_edge_error_share": 0.08333333333333333,
+        "convexity_violation": 0.0
+      },
+      "family": "catalan"
+    },
+    {
+      "target": "rhombic_triacontahedron",
+      "file": "rhombic_triacontahedron_favorite.vZome",
+      "source_manifest": "outputs\\catalan\\output_catalan_batch_20260601\\rhombic_triacontahedron\\rhombic_triacontahedron\\manifest.json",
+      "source_file": "rhombic_triacontahedron_approx_01_c7963170a0443a97.vZome",
+      "source_rank": 1,
+      "source_hash": "c7963170a0443a97",
+      "objective": 1.5898040659782207,
+      "applied_phi_scale_power": 1,
+      "removed_centroid_after_scaling": [
+        [
+          "-6",
+          "-10"
+        ],
+        [
+          "-3",
+          "-5"
+        ],
+        [
+          "4",
+          "7"
+        ]
+      ],
+      "final_struts": {
+        "G2": 60
+      },
+      "balls": 32,
+      "edges": 60,
+      "score": {
+        "target": "rhombic_triacontahedron",
+        "vertices": 32,
+        "edges": 60,
+        "faces": 30,
+        "edge_length_cv": 9.053224655709004e-16,
+        "edge_length_range": 3.994357655318393e-16,
+        "max_face_side_cv": 1.3314525517727987e-16,
+        "max_face_side_range": 2.662905103545598e-16,
+        "max_face_planarity_error_over_edge": 1.9080766665922272e-16,
+        "max_face_angle_rms_deg": 7.422792404400949,
+        "max_face_angle_range_deg": 67.97568716295787,
+        "radial_cv": 0.058855744455503296,
+        "min_radius_ratio": 0.9169262588535124,
+        "radial_range": 0.1735614047307541,
+        "max_vertex_edge_error_share": 0.0,
+        "convexity_violation": 0.0
+      },
+      "family": "catalan"
+    },
+    {
+      "target": "triakis_icosahedron",
+      "file": "triakis_icosahedron_favorite.vZome",
+      "source_manifest": "outputs\\catalan\\output_catalan_batch_20260601\\triakis_icosahedron\\triakis_icosahedron\\manifest.json",
+      "source_file": "triakis_icosahedron_approx_01_b6bd7be67e62bfc5.vZome",
+      "source_rank": 1,
+      "source_hash": "b6bd7be67e62bfc5",
+      "objective": 1.5331360612283955,
+      "applied_phi_scale_power": 1,
+      "removed_centroid_after_scaling": [
+        [
+          "-2",
+          "-3"
+        ],
+        [
+          "-5",
+          "-8"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "final_struts": {
+        "B3": 30,
+        "R2": 60
+      },
+      "balls": 32,
+      "edges": 90,
+      "score": {
+        "target": "triakis_icosahedron",
+        "vertices": 32,
+        "edges": 90,
+        "faces": 60,
+        "edge_length_cv": 0.0061268711941503155,
+        "edge_length_range": 0.012997056506520973,
+        "max_face_side_cv": 0.006126871194150475,
+        "max_face_side_range": 0.012997056506520962,
+        "max_face_planarity_error_over_edge": 0.0,
+        "max_face_angle_rms_deg": 1.749594091049989,
+        "max_face_angle_range_deg": 84.84757676561699,
+        "radial_cv": 0.04584581459985549,
+        "min_radius_ratio": 0.964487984712289,
+        "radial_range": 0.09469870743389537,
+        "max_vertex_edge_error_share": 0.06249999999999749,
+        "convexity_violation": 0.0
+      },
+      "family": "catalan"
+    },
+    {
+      "target": "triakis_tetrahedron",
+      "file": "triakis_tetrahedron_favorite.vZome",
+      "source_manifest": "outputs\\catalan\\output_catalan_batch_20260601\\triakis_tetrahedron\\triakis_tetrahedron\\manifest.json",
+      "source_file": "triakis_tetrahedron_approx_01_da82fe133483e246.vZome",
+      "source_rank": 1,
+      "source_hash": "da82fe133483e246",
+      "objective": 5.626895751975358,
+      "applied_phi_scale_power": 1,
+      "removed_centroid_after_scaling": [
+        [
+          "7/8",
+          "9/8"
+        ],
+        [
+          "-2",
+          "-25/8"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "final_struts": {
+        "B2": 3,
+        "B3": 3,
+        "R2": 3,
+        "Y2": 6,
+        "Y3": 3
+      },
+      "balls": 8,
+      "edges": 18,
+      "score": {
+        "target": "triakis_tetrahedron",
+        "vertices": 8,
+        "edges": 18,
+        "faces": 12,
+        "edge_length_cv": 0.06604153988469273,
+        "edge_length_range": 0.17388979298575202,
+        "max_face_side_cv": 0.05483150485526524,
+        "max_face_side_range": 0.12450130475058865,
+        "max_face_planarity_error_over_edge": 0.0,
+        "max_face_angle_rms_deg": 17.89284539571337,
+        "max_face_angle_range_deg": 117.2845276563321,
+        "radial_cv": 0.23789309557553318,
+        "min_radius_ratio": 0.7324103751019994,
+        "radial_range": 0.5358141602965973,
+        "max_vertex_edge_error_share": 0.17610308416190437,
+        "convexity_violation": 0.0
+      },
+      "family": "catalan"
     }
   ]
 }

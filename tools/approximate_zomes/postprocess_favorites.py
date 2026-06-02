@@ -21,14 +21,14 @@ from approx_platonic_zomes import (
 from emit_vzome import HEADER, pt_str
 
 
-OUT_DIR = Path("output_favorites_scaled_centered_20260601")
+OUT_DIR = Path("outputs/final/output_favorites_scaled_centered_20260601")
 
 PLATONIC_PICKS = [
-    ("tetrahedron", Path("output_final/tetrahedron/manifest.json"), 1),
-    ("cube", Path("output_cube_B1_4seeds_ratio15_angle25_24h_20260530/cube/manifest.json"), 1),
-    ("octahedron", Path("output_scratch_long_B1_4seeds_ratio16_20260529/octahedron/manifest.json"), 1),
-    ("icosahedron", Path("output_icosa_B1_4seeds_ratio15_angle25_24h_20260530/icosahedron/manifest.json"), 1),
-    ("dodecahedron", Path("output_dodeca_B1_4seeds_ratio12_angle15_faceclose_24h_20260531/dodecahedron/manifest.json"), 2),
+    ("tetrahedron", Path("outputs/platonic/output_final/tetrahedron/manifest.json"), 1),
+    ("cube", Path("outputs/platonic/output_cube_B1_4seeds_ratio15_angle25_24h_20260530/cube/manifest.json"), 1),
+    ("octahedron", Path("outputs/platonic/output_scratch_long_B1_4seeds_ratio16_20260529/octahedron/manifest.json"), 1),
+    ("icosahedron", Path("outputs/platonic/output_icosa_B1_4seeds_ratio15_angle25_24h_20260530/icosahedron/manifest.json"), 1),
+    ("dodecahedron", Path("outputs/platonic/output_dodeca_B1_4seeds_ratio12_angle15_faceclose_24h_20260531/dodecahedron/manifest.json"), 2),
 ]
 
 ARCHIMEDEAN_TARGETS = [
@@ -160,7 +160,7 @@ def emit_vzome_view(verts, edges, path: Path) -> dict[str, int]:
 
 
 def archimedean_picks():
-    root = Path("output_archimedean_batch_20260531")
+    root = Path("outputs/archimedean/output_archimedean_batch_20260531")
     for target in ARCHIMEDEAN_TARGETS:
         manifest = root / target / target / "manifest.json"
         if not manifest.exists():
