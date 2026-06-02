@@ -1,4 +1,4 @@
-# Approximate Platonic, Archimedean, and Catalan zomes — interactive gallery
+# Approximate Zome Polyhedra
 
 **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/approximate_zomes/VIEWER.html)** to interact with the 16 curated models below.
 

@@ -1,4 +1,4 @@
-# Approximate Platonic, Archimedean, and Catalan zomes
+# Approximate Zome Polyhedra
 
 This is a related non-4D collection hosted in the same repository for
 convenience and shared tooling. These models are **not** zomeable orthographic
