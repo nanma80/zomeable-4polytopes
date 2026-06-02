@@ -6,8 +6,6 @@ These are approximate RGBY zome models of 3D Platonic, Archimedean, and Catalan 
 
 For context and generation notes, see [`docs/APPROXIMATE_ZOMES.md`](../../docs/APPROXIMATE_ZOMES.md).
 
-Only one section is expanded at a time. On phones, the Platonic section opens first; tap another section header to expand it and collapse the current one.
-
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
 <style>
@@ -16,6 +14,7 @@ Only one section is expanded at a time. On phones, the Platonic section opens fi
   border-radius: 10px;
   margin: 1rem 0;
   overflow: hidden;
+  scroll-margin-top: 0.5rem;
 }
 .section-toggle {
   align-items: center;
@@ -180,13 +179,15 @@ Only one section is expanded at a time. On phones, the Platonic section opens fi
 <script>
 const sections = Array.from(document.querySelectorAll(".model-section"));
 
-function expandSection(family) {
+function expandSection(family, shouldScroll = true) {
+  let activeSection = null;
   sections.forEach((section) => {
     const isActive = section.dataset.family === family;
     const button = section.querySelector(".section-toggle");
     const panel = section.querySelector(".section-panel");
     button.setAttribute("aria-expanded", String(isActive));
     if (isActive) {
+      activeSection = section;
       const template = section.querySelector("template");
       if (!panel.childElementCount) {
         panel.appendChild(template.content.cloneNode(true));
@@ -195,6 +196,9 @@ function expandSection(family) {
       panel.replaceChildren();
     }
   });
+  if (shouldScroll && activeSection) {
+    activeSection.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
 }
 
 sections.forEach((section) => {
@@ -203,7 +207,7 @@ sections.forEach((section) => {
   });
 });
 
-expandSection("platonic");
+expandSection("platonic", false);
 </script>
 
 ## References and acknowledgements
