@@ -8,8 +8,22 @@ classification.
 
 For context and generation notes, see
 [`docs/APPROXIMATE_ZOMES.md`](../../docs/APPROXIMATE_ZOMES.md).
-That page also includes references and acknowledgements for related earlier
-Zometool approximation constructions.
+
+## References and acknowledgements
+
+Some of these approximation ideas are related to earlier Zometool constructions
+shared in the following sources:
+
+- Reza Sarhangi, "An Art and Technology Approach to Actively Engage Students in
+  the Mathematics of the Regular Polyhedra," *Mathematics Education Trends and
+  Research*, 2014, doi:10.5899/2014/metr-00060. In particular, Sarhangi shows
+  classroom Zome approximations for the tetrahedron and octahedron.
+- Tick Wang, [Facebook reel](https://www.facebook.com/reel/3394895470670317),
+  showing related Zome polyhedron approximation constructions.
+
+The models here are a curated computational gallery in the same spirit: standard
+RGBY zome strut graphs chosen to approximate the ideal Platonic and Archimedean
+targets visually and metrically.
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
