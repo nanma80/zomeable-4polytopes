@@ -1,0 +1,37 @@
+{
+  "key": "prismatic_duoprism_5_10",
+  "title": "duoprism 5 10",
+  "source_folder": "duoprisms/duoprism_5_10",
+  "out_folder": "duoprisms/duoprism_5_10_hidden_cells",
+  "vertices_4d": 50,
+  "edges_4d": 100,
+  "cells_4d": 15,
+  "models": [
+    {
+      "source_file": "duoprisms/duoprism_5_10/face_first_decagon_00.vZome",
+      "file": null,
+      "label": "face_first",
+      "label_subtype": "decagon",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.2360679774997898,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 50,
+      "source_edges": 100,
+      "front_visible_balls": 50,
+      "front_visible_edges": 100,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.758503553725828e-14,
+      "cells_total": 15,
+      "cells_visible_front_or_equator": 12,
+      "cells_hidden_back": 3,
+      "vertices_4d_visible": 50,
+      "edges_4d_visible": 100
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "key": "prismatic_cuboctahedron_prism",
+  "title": "cuboctahedron prism",
+  "source_folder": "polyhedral_prisms/cuboctahedron_prism",
+  "out_folder": "polyhedral_prisms/cuboctahedron_prism_hidden_cells",
+  "vertices_4d": 24,
+  "edges_4d": 60,
+  "cells_4d": 16,
+  "models": [
+    {
+      "source_file": "polyhedral_prisms/cuboctahedron_prism/cell_first_cube.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "cube",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.2360679774997898,
+        0.0
+      ],
+      "source_balls": 16,
+      "source_edges": 32,
+      "front_visible_balls": 16,
+      "front_visible_edges": 32,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 7.260362836602388e-15,
+      "cells_total": 16,
+      "cells_visible_front_or_equator": 11,
+      "cells_hidden_back": 5,
+      "vertices_4d_visible": 24,
+      "edges_4d_visible": 60
+    },
+    {
+      "source_file": "polyhedral_prisms/cuboctahedron_prism/cell_first_cuboctahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "cuboctahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.0,
+        0.2360679774997898
+      ],
+      "source_balls": 12,
+      "source_edges": 24,
+      "front_visible_balls": 12,
+      "front_visible_edges": 24,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 9.148886283100071e-15,
+      "cells_total": 16,
+      "cells_visible_front_or_equator": 15,
+      "cells_hidden_back": 1,
+      "vertices_4d_visible": 24,
+      "edges_4d_visible": 60
+    }
+  ]
+}

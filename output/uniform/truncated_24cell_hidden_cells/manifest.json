@@ -1,0 +1,89 @@
+{
+  "key": "wythoff_truncated_24cell",
+  "title": "truncated 24-cell",
+  "source_folder": "uniform/truncated_24cell",
+  "out_folder": "uniform/truncated_24cell_hidden_cells",
+  "vertices_4d": 192,
+  "edges_4d": 384,
+  "cells_4d": 48,
+  "models": [
+    {
+      "source_file": "uniform/truncated_24cell/truncated_24cell_cell_first_truncated_octahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "truncated_octahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.0,
+        3.23606797749979
+      ],
+      "source_balls": 120,
+      "source_edges": 216,
+      "front_visible_balls": 120,
+      "front_visible_edges": 216,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.3936983908119164e-13,
+      "cells_total": 48,
+      "cells_visible_front_or_equator": 33,
+      "cells_hidden_back": 15,
+      "vertices_4d_visible": 168,
+      "edges_4d_visible": 324
+    },
+    {
+      "source_file": "uniform/truncated_24cell/truncated_24cell_cell_first_cube.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "cube",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.3819660112501051,
+        -0.3819660112501051
+      ],
+      "source_balls": 96,
+      "source_edges": 176,
+      "front_visible_balls": 96,
+      "front_visible_edges": 176,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.006467231654514e-13,
+      "cells_total": 48,
+      "cells_visible_front_or_equator": 33,
+      "cells_hidden_back": 15,
+      "vertices_4d_visible": 176,
+      "edges_4d_visible": 340
+    },
+    {
+      "source_file": "uniform/truncated_24cell/truncated_24cell_oblique.vZome",
+      "file": "truncated_24cell_oblique_front_visible.vZome",
+      "label": "oblique",
+      "label_subtype": null,
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        0.3819660112501051,
+        0.3819660112501051,
+        -0.3819660112501051,
+        -1.618033988749895
+      ],
+      "source_balls": 192,
+      "source_edges": 384,
+      "front_visible_balls": 150,
+      "front_visible_edges": 285,
+      "removed_balls": 42,
+      "removed_edges": 99,
+      "vertex_to_showpoint_max_residual": 5.241787946226929e-13,
+      "cells_total": 48,
+      "cells_visible_front_or_equator": 27,
+      "cells_hidden_back": 21,
+      "vertices_4d_visible": 150,
+      "edges_4d_visible": 285
+    }
+  ]
+}

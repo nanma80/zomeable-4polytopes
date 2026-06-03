@@ -1,0 +1,63 @@
+{
+  "key": "prismatic_duoprism_6_6",
+  "title": "duoprism 6 6",
+  "source_folder": "duoprisms/duoprism_6_6",
+  "out_folder": "duoprisms/duoprism_6_6_hidden_cells",
+  "vertices_4d": 36,
+  "edges_4d": 72,
+  "cells_4d": 12,
+  "models": [
+    {
+      "source_file": "duoprisms/duoprism_6_6/face_first_hexagon_00.vZome",
+      "file": null,
+      "label": "face_first",
+      "label_subtype": "hexagon",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.2360679774997898,
+        0.0
+      ],
+      "source_balls": 18,
+      "source_edges": 30,
+      "front_visible_balls": 18,
+      "front_visible_edges": 30,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 6.226565091713199e-15,
+      "cells_total": 12,
+      "cells_visible_front_or_equator": 10,
+      "cells_hidden_back": 2,
+      "vertices_4d_visible": 36,
+      "edges_4d_visible": 72
+    },
+    {
+      "source_file": "duoprisms/duoprism_6_6/oblique_67.vZome",
+      "file": "oblique_67_front_visible.vZome",
+      "label": "oblique",
+      "label_subtype": null,
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        0.0,
+        0.2360679774997898,
+        0.0,
+        0.6180339887498949
+      ],
+      "source_balls": 36,
+      "source_edges": 72,
+      "front_visible_balls": 32,
+      "front_visible_edges": 60,
+      "removed_balls": 4,
+      "removed_edges": 12,
+      "vertex_to_showpoint_max_residual": 2.1093068779688048e-14,
+      "cells_total": 12,
+      "cells_visible_front_or_equator": 6,
+      "cells_hidden_back": 6,
+      "vertices_4d_visible": 32,
+      "edges_4d_visible": 60
+    }
+  ]
+}

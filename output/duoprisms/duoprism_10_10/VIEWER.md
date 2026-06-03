@@ -21,3 +21,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     oblique_56.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../duoprism_10_10_hidden_cells/oblique_56_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    oblique_56.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>

@@ -1,0 +1,63 @@
+{
+  "key": "grand_antiprism",
+  "title": "Grand antiprism",
+  "source_folder": "uniform/grand_antiprism",
+  "out_folder": "uniform/grand_antiprism_hidden_cells",
+  "vertices_4d": 100,
+  "edges_4d": 500,
+  "cells_4d": 320,
+  "models": [
+    {
+      "source_file": "uniform/grand_antiprism/grand_antiprism_vertex_first.vZome",
+      "file": "grand_antiprism_vertex_first_front_visible.vZome",
+      "label": "vertex_first",
+      "label_subtype": null,
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_balls": 71,
+      "source_edges": 342,
+      "front_visible_balls": 67,
+      "front_visible_edges": 288,
+      "removed_balls": 4,
+      "removed_edges": 54,
+      "vertex_to_showpoint_max_residual": 2.6407442894293542e-14,
+      "cells_total": 320,
+      "cells_visible_front_or_equator": 178,
+      "cells_hidden_back": 142,
+      "vertices_4d_visible": 79,
+      "edges_4d_visible": 342
+    },
+    {
+      "source_file": "uniform/grand_antiprism/grand_antiprism_ring_first.vZome",
+      "file": null,
+      "label": "ring_first",
+      "label_subtype": "pentagonal_antiprism",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 60,
+      "source_edges": 260,
+      "front_visible_balls": 60,
+      "front_visible_edges": 260,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.4567209187227738e-14,
+      "cells_total": 320,
+      "cells_visible_front_or_equator": 175,
+      "cells_hidden_back": 145,
+      "vertices_4d_visible": 80,
+      "edges_4d_visible": 350
+    }
+  ]
+}

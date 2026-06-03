@@ -15,7 +15,18 @@
 | `truncated_16cell_oblique_01.vZome` | oblique | 48 | `ccdfd208c9` |
 | `truncated_16cell_oblique_02.vZome` | oblique | 48 | `2c50f047a8` |
 
-Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under a specific kernel direction.  See [`docs/WYTHOFF_SWEEP.md`](../../docs/WYTHOFF_SWEEP.md) for the master taxonomy, the search methodology, and the per-shape strut counts (B/Y/R/G zometool axes).
+Each `.vZome` document records the projected 3D balls and struts for a specific
+kernel direction.  See [`docs/WYTHOFF_SWEEP.md`](../../docs/WYTHOFF_SWEEP.md) for
+the master taxonomy, the search methodology, and the per-shape strut counts
+(B/Y/R/G zometool axes).
+
+## Hidden-cell removal prototype
+
+A derived front-visible set is available in
+[`../truncated_16cell_hidden_cells/`](../truncated_16cell_hidden_cells/).
+Those models are filtered copies of the full projections: they keep the same
+ball/strut coordinates and remove only elements belonging solely to cells hidden
+from the positive side of the projection kernel.
 
 ## Provenance
 
@@ -79,4 +90,3 @@ Each `.vZome` document embeds the 4D polytope via a `<Polytope4d>` element under
     truncated_16cell_oblique_02.vZome
  </figcaption>
 </figure>
-

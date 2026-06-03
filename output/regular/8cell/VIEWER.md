@@ -25,10 +25,26 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../8cell_hidden_cells/8cell_vertex_first_rhombic_dodec_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    8cell_vertex_first_rhombic_dodec.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="8cell_phi_oblique.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     8cell_phi_oblique.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../8cell_hidden_cells/8cell_phi_oblique_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    8cell_phi_oblique.vZome — hidden-cell-removal view
  </figcaption>
 </figure>
 

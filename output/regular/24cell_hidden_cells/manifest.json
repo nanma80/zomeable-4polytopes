@@ -1,0 +1,89 @@
+{
+  "key": "regular_24cell",
+  "title": "24-cell",
+  "source_folder": "regular/24cell",
+  "out_folder": "regular/24cell_hidden_cells",
+  "vertices_4d": 24,
+  "edges_4d": 96,
+  "cells_4d": 24,
+  "models": [
+    {
+      "source_file": "regular/24cell/24cell_short_root_cuboctahedron.vZome",
+      "file": null,
+      "label": "short_root",
+      "label_subtype": null,
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 18,
+      "source_edges": 60,
+      "front_visible_balls": 18,
+      "front_visible_edges": 60,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 2.6752752322328168e-14,
+      "cells_total": 24,
+      "cells_visible_front_or_equator": 15,
+      "cells_hidden_back": 9,
+      "vertices_4d_visible": 24,
+      "edges_4d_visible": 84
+    },
+    {
+      "source_file": "regular/24cell/24cell_long_root_rhombic_dodecahedron.vZome",
+      "file": null,
+      "label": "long_root",
+      "label_subtype": null,
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        1.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 15,
+      "source_edges": 44,
+      "front_visible_balls": 15,
+      "front_visible_edges": 44,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 8.781024875724294e-14,
+      "cells_total": 24,
+      "cells_visible_front_or_equator": 18,
+      "cells_hidden_back": 6,
+      "vertices_4d_visible": 23,
+      "edges_4d_visible": 88
+    },
+    {
+      "source_file": "regular/24cell/24cell_triality.vZome",
+      "file": "24cell_triality_front_visible.vZome",
+      "label": "triality",
+      "label_subtype": null,
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        0.3819660112501051,
+        0.3819660112501051,
+        -0.3819660112501051,
+        -1.618033988749895
+      ],
+      "source_balls": 24,
+      "source_edges": 96,
+      "front_visible_balls": 21,
+      "front_visible_edges": 72,
+      "removed_balls": 3,
+      "removed_edges": 24,
+      "vertex_to_showpoint_max_residual": 4.1048835471327093e-14,
+      "cells_total": 24,
+      "cells_visible_front_or_equator": 12,
+      "cells_hidden_back": 12,
+      "vertices_4d_visible": 21,
+      "edges_4d_visible": 72
+    }
+  ]
+}

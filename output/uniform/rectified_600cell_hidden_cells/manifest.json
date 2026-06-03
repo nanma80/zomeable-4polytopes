@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_rectified_600cell",
+  "title": "rectified 600-cell",
+  "source_folder": "uniform/rectified_600cell",
+  "out_folder": "uniform/rectified_600cell_hidden_cells",
+  "vertices_4d": 720,
+  "edges_4d": 3600,
+  "cells_4d": 720,
+  "models": [
+    {
+      "source_file": "uniform/rectified_600cell/rectified_600cell_cell_first_icosahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "icosahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.3819660112501051,
+        1.0,
+        -0.6180339887498949
+      ],
+      "source_balls": 396,
+      "source_edges": 1800,
+      "front_visible_balls": 396,
+      "front_visible_edges": 1800,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 3.5481294969523236e-12,
+      "cells_total": 720,
+      "cells_visible_front_or_equator": 405,
+      "cells_hidden_back": 315,
+      "vertices_4d_visible": 516,
+      "edges_4d_visible": 2370
+    }
+  ]
+}

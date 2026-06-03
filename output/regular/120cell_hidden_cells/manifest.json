@@ -1,0 +1,37 @@
+{
+  "key": "regular_120cell",
+  "title": "120-cell",
+  "source_folder": "regular/120cell",
+  "out_folder": "regular/120cell_hidden_cells",
+  "vertices_4d": 600,
+  "edges_4d": 1200,
+  "cells_4d": 120,
+  "models": [
+    {
+      "source_file": "regular/120cell/120cell_H4_to_H3.vZome",
+      "file": null,
+      "label": "H4_to_H3",
+      "label_subtype": null,
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "source_balls": 330,
+      "source_edges": 620,
+      "front_visible_balls": 330,
+      "front_visible_edges": 620,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.7298687690185264e-12,
+      "cells_total": 120,
+      "cells_visible_front_or_equator": 75,
+      "cells_hidden_back": 45,
+      "vertices_4d_visible": 470,
+      "edges_4d_visible": 910
+    }
+  ]
+}

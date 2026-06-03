@@ -15,6 +15,14 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../runcitruncated_5cell_hidden_cells/runcitruncated_5cell_cell_first_cuboctahedron_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_cell_first_cuboctahedron.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique_00.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -23,10 +31,26 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../runcitruncated_5cell_hidden_cells/runcitruncated_5cell_oblique_00_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_oblique_00.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="runcitruncated_5cell_oblique_01.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     runcitruncated_5cell_oblique_01.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../runcitruncated_5cell_hidden_cells/runcitruncated_5cell_oblique_01_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    runcitruncated_5cell_oblique_01.vZome — hidden-cell-removal view
  </figcaption>
 </figure>
 

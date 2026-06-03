@@ -1,0 +1,63 @@
+{
+  "key": "prismatic_truncated_tetrahedron_prism",
+  "title": "truncated tetrahedron prism",
+  "source_folder": "polyhedral_prisms/truncated_tetrahedron_prism",
+  "out_folder": "polyhedral_prisms/truncated_tetrahedron_prism_hidden_cells",
+  "vertices_4d": 24,
+  "edges_4d": 48,
+  "cells_4d": 10,
+  "models": [
+    {
+      "source_file": "polyhedral_prisms/truncated_tetrahedron_prism/face_first_square.vZome",
+      "file": "face_first_square_front_visible.vZome",
+      "label": "face_first",
+      "label_subtype": "square",
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.2360679774997898,
+        0.0
+      ],
+      "source_balls": 24,
+      "source_edges": 48,
+      "front_visible_balls": 24,
+      "front_visible_edges": 46,
+      "removed_balls": 0,
+      "removed_edges": 2,
+      "vertex_to_showpoint_max_residual": 1.9090671497150315e-14,
+      "cells_total": 10,
+      "cells_visible_front_or_equator": 6,
+      "cells_hidden_back": 4,
+      "vertices_4d_visible": 24,
+      "edges_4d_visible": 46
+    },
+    {
+      "source_file": "polyhedral_prisms/truncated_tetrahedron_prism/cell_first_truncated_tetrahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "truncated_tetrahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.0,
+        0.2360679774997898
+      ],
+      "source_balls": 12,
+      "source_edges": 18,
+      "front_visible_balls": 12,
+      "front_visible_edges": 18,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 3.688882027804963e-15,
+      "cells_total": 10,
+      "cells_visible_front_or_equator": 9,
+      "cells_hidden_back": 1,
+      "vertices_4d_visible": 24,
+      "edges_4d_visible": 48
+    }
+  ]
+}

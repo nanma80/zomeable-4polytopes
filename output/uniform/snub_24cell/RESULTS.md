@@ -18,6 +18,10 @@ Empirical search on direction grid up to rng=4 finds **exactly 2
 distinct zomeable orthographic projections**, each verified strict-
 orthographic by the M·Mᵀ = s²·I test:
 
+For front-visible variants that remove geometry hidden from the positive side of
+each projection kernel, see
+[`../snub_24cell_hidden_cells/RESULTS.md`](../snub_24cell_hidden_cells/RESULTS.md).
+
 | File | Kernel direction | 3D balls | 4D edges → 3D struts | Strut counts |
 |------|------------------|----------|----------------------|--------------|
 | `snub_24cell_cell_first.vZome`   | (1, 0, 0, 0) | 60 | 432 → 228 | B:72  Y:84  R:72 |
@@ -230,4 +234,3 @@ in vZome may reveal nested polyhedra.
     snub_24cell_vertex_first.vZome
  </figcaption>
 </figure>
-
