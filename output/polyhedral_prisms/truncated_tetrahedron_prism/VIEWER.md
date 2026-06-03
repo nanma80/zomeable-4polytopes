@@ -21,3 +21,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     face_first_square.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../truncated_tetrahedron_prism_hidden_cells/face_first_square_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    face_first_square.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>

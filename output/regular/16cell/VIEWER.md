@@ -15,6 +15,14 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../16cell_hidden_cells/16cell_antiprism_B6R12Y6_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_B6R12Y6.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_R12B6Y6.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -23,10 +31,26 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../16cell_hidden_cells/16cell_antiprism_R12B6Y6_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_R12B6Y6.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="16cell_antiprism_Y6R12B6.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     16cell_antiprism_Y6R12B6.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../16cell_hidden_cells/16cell_antiprism_Y6R12B6_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    16cell_antiprism_Y6R12B6.vZome — hidden-cell-removal view
  </figcaption>
 </figure>
 

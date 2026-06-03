@@ -1,0 +1,63 @@
+{
+  "key": "prismatic_octahedron_prism",
+  "title": "octahedron prism",
+  "source_folder": "polyhedral_prisms/octahedron_prism",
+  "out_folder": "polyhedral_prisms/octahedron_prism_hidden_cells",
+  "vertices_4d": 12,
+  "edges_4d": 30,
+  "cells_4d": 10,
+  "models": [
+    {
+      "source_file": "polyhedral_prisms/octahedron_prism/edge_first.vZome",
+      "file": null,
+      "label": "edge_first",
+      "label_subtype": null,
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.2360679774997898,
+        0.0
+      ],
+      "source_balls": 10,
+      "source_edges": 21,
+      "front_visible_balls": 10,
+      "front_visible_edges": 21,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 7.32410687763558e-15,
+      "cells_total": 10,
+      "cells_visible_front_or_equator": 6,
+      "cells_hidden_back": 4,
+      "vertices_4d_visible": 12,
+      "edges_4d_visible": 29
+    },
+    {
+      "source_file": "polyhedral_prisms/octahedron_prism/cell_first_octahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "octahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.0,
+        0.0,
+        0.2360679774997898
+      ],
+      "source_balls": 6,
+      "source_edges": 12,
+      "front_visible_balls": 6,
+      "front_visible_edges": 12,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 5.329070518200751e-15,
+      "cells_total": 10,
+      "cells_visible_front_or_equator": 9,
+      "cells_hidden_back": 1,
+      "vertices_4d_visible": 12,
+      "edges_4d_visible": 30
+    }
+  ]
+}

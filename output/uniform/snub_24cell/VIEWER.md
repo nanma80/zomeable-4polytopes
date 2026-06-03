@@ -21,3 +21,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     snub_24cell_vertex_first.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../snub_24cell_hidden_cells/snub_24cell_vertex_first_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    snub_24cell_vertex_first.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>

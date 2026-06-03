@@ -29,6 +29,7 @@ DOCS_ROOT = os.path.join(REPO_ROOT, "docs")
 
 WYTHOFF_MANIFEST = os.path.join(OUTPUT_ROOT, "wythoff_sweep_manifest.json")
 PRISMATIC_MANIFEST = os.path.join(OUTPUT_ROOT, "prismatic_manifest.json")
+HIDDEN_CELL_MANIFEST = os.path.join(OUTPUT_ROOT, "hidden_cell_removal_manifest.json")
 
 PAGES_BASE = "https://nanma80.github.io/zomeable-4polytopes"
 
@@ -36,13 +37,15 @@ VZOME_SCRIPT = ("<script type='module' "
                 "src='https://www.vzome.com/modules/vzome-viewer.js'></script>")
 
 
-def viewer_figure(fname: str) -> str:
+def viewer_figure(fname: str, caption: str = None) -> str:
+    if caption is None:
+        caption = fname
     return (
         '<figure style="width: 800px; margin: 5%">\n'
         f' <vzome-viewer style="width: 100%; height: 500px" src="{fname}" progress="true" >\n'
         ' </vzome-viewer>\n'
         ' <figcaption style="text-align: center; font-style: italic;">\n'
-        f'    {fname}\n'
+        f'    {caption}\n'
         ' </figcaption>\n'
         '</figure>\n'
     )
@@ -284,6 +287,28 @@ def load_prismatic_files():
     return out
 
 
+def load_hidden_cell_variants():
+    """source relpath under output -> hidden variant relpath from source folder."""
+    if not os.path.exists(HIDDEN_CELL_MANIFEST):
+        return {}
+    manifest = json.load(open(HIDDEN_CELL_MANIFEST, encoding="utf-8"))
+    variants = {}
+    for target in manifest.get("targets", []):
+        out_folder = target.get("out_folder")
+        if not out_folder:
+            continue
+        for model in target.get("models", []):
+            if model.get("status") != "written" or not model.get("file"):
+                continue
+            source_file = model["source_file"].replace("\\", "/")
+            source_dir = os.path.dirname(source_file)
+            hidden_abs = os.path.join(OUTPUT_ROOT, out_folder, model["file"])
+            source_abs_dir = os.path.join(OUTPUT_ROOT, source_dir)
+            rel = os.path.relpath(hidden_abs, source_abs_dir).replace(os.sep, "/")
+            variants[source_file] = rel
+    return variants
+
+
 def glob_vzome(rel_dir):
     """Return sorted list of *.vZome basenames in output/<rel_dir>/."""
     full = os.path.join(OUTPUT_ROOT, rel_dir)
@@ -335,12 +360,24 @@ def emit_viewer(output_dir, display_name, files, deep_dive_filename,
     if groups is None:
         groups = [(None, files)]
 
+    hidden_variants = load_hidden_cell_variants()
+    rel_output_dir = output_dir.replace(os.sep, "/")
+
     for heading, fs in groups:
         if heading:
             lines.append(f"## {heading}")
             lines.append("")
         for fname in fs:
             lines.append(viewer_figure(fname))
+            source_file = f"{rel_output_dir}/{fname}"
+            hidden_fname = hidden_variants.get(source_file)
+            if hidden_fname:
+                lines.append(
+                    viewer_figure(
+                        hidden_fname,
+                        f"{fname} — hidden-cell-removal view",
+                    )
+                )
 
     content = "\n".join(lines).rstrip() + "\n"
     out_path = os.path.join(full_dir, "VIEWER.md")
@@ -623,9 +660,10 @@ def page_duoprisms(prismatic_data):
             "(excluding (4, 4) = tesseract).  170 polytopes in scope; 6 yielded",
             "≥1 zomeable projection.",
             "",
-            "`duoprism_4_10` and `duoprism_4_6` were originally suspected to be",
-            "bounded by finite snap/signature probes, but exact constructions",
-            "later produced inf families for both.",
+            "`duoprism_4_10` and `duoprism_4_6` were originally suspected to be bounded by",
+            "finite snap/signature probes, but a later exact construction found inf families",
+            "for both.  The viewer folders include representative members emitted by",
+            "`tools/emit_duoprism_inf_family.py`.",
         ],
         rows,
         descr_header="By type",

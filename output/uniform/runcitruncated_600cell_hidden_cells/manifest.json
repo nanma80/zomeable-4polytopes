@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_runcitruncated_600cell",
+  "title": "runcitruncated 600-cell",
+  "source_folder": "uniform/runcitruncated_600cell",
+  "out_folder": "uniform/runcitruncated_600cell_hidden_cells",
+  "vertices_4d": 7200,
+  "edges_4d": 18000,
+  "cells_4d": 2640,
+  "models": [
+    {
+      "source_file": "uniform/runcitruncated_600cell/runcitruncated_600cell_cell_first_rhombicosidodecahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "rhombicosidodecahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.3819660112501051,
+        1.0,
+        -0.6180339887498949
+      ],
+      "source_balls": 3660,
+      "source_edges": 8880,
+      "front_visible_balls": 3660,
+      "front_visible_edges": 8880,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.872430570555546e-11,
+      "cells_total": 2640,
+      "cells_visible_front_or_equator": 1441,
+      "cells_hidden_back": 1199,
+      "vertices_4d_visible": 4680,
+      "edges_4d_visible": 11400
+    }
+  ]
+}

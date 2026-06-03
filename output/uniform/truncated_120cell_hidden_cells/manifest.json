@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_truncated_120cell",
+  "title": "truncated 120-cell",
+  "source_folder": "uniform/truncated_120cell",
+  "out_folder": "uniform/truncated_120cell_hidden_cells",
+  "vertices_4d": 2400,
+  "edges_4d": 4800,
+  "cells_4d": 720,
+  "models": [
+    {
+      "source_file": "uniform/truncated_120cell/truncated_120cell_cell_first_truncated_dodecahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "truncated_dodecahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.3819660112501051,
+        1.0,
+        -0.6180339887498949
+      ],
+      "source_balls": 1260,
+      "source_edges": 2420,
+      "front_visible_balls": 1260,
+      "front_visible_edges": 2420,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.6144700557512457e-11,
+      "cells_total": 720,
+      "cells_visible_front_or_equator": 405,
+      "cells_hidden_back": 315,
+      "vertices_4d_visible": 1820,
+      "edges_4d_visible": 3490
+    }
+  ]
+}

@@ -23,6 +23,14 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../5cell_hidden_cells/5cell_5ball_R6Y1B3_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    5cell_5ball_R6Y1B3.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="5cell_5ball_Y4B2R4.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -35,5 +43,13 @@ For methodology, kernel directions, search subtleties, and reproduction commands
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     5cell_vertex_first_tet_plus_center.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../5cell_hidden_cells/5cell_vertex_first_tet_plus_center_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    5cell_vertex_first_tet_plus_center.vZome — hidden-cell-removal view
  </figcaption>
 </figure>

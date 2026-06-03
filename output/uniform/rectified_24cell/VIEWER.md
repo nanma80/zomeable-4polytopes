@@ -29,3 +29,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     rectified_24cell_oblique.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../rectified_24cell_hidden_cells/rectified_24cell_oblique_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    rectified_24cell_oblique.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>

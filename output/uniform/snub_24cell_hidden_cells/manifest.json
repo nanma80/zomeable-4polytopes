@@ -1,0 +1,63 @@
+{
+  "key": "snub_24cell",
+  "title": "Snub 24-cell",
+  "source_folder": "uniform/snub_24cell",
+  "out_folder": "uniform/snub_24cell_hidden_cells",
+  "vertices_4d": 96,
+  "edges_4d": 432,
+  "cells_4d": 144,
+  "models": [
+    {
+      "source_file": "uniform/snub_24cell/snub_24cell_cell_first.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "icosahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 60,
+      "source_edges": 228,
+      "front_visible_balls": 60,
+      "front_visible_edges": 228,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 2.2133292166829775e-14,
+      "cells_total": 144,
+      "cells_visible_front_or_equator": 93,
+      "cells_hidden_back": 51,
+      "vertices_4d_visible": 84,
+      "edges_4d_visible": 342
+    },
+    {
+      "source_file": "uniform/snub_24cell/snub_24cell_vertex_first.vZome",
+      "file": "snub_24cell_vertex_first_front_visible.vZome",
+      "label": "vertex_first",
+      "label_subtype": null,
+      "status": "written",
+      "unchanged": false,
+      "kernel_positive_side": [
+        2.618033988749895,
+        1.618033988749895,
+        1.0,
+        0.0
+      ],
+      "source_balls": 69,
+      "source_edges": 312,
+      "front_visible_balls": 63,
+      "front_visible_edges": 246,
+      "removed_balls": 6,
+      "removed_edges": 66,
+      "vertex_to_showpoint_max_residual": 1.2560739669470201e-14,
+      "cells_total": 144,
+      "cells_visible_front_or_equator": 78,
+      "cells_hidden_back": 66,
+      "vertices_4d_visible": 81,
+      "edges_4d_visible": 324
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "key": "prismatic_duoprism_3_6",
+  "title": "duoprism 3 6",
+  "source_folder": "duoprisms/duoprism_3_6",
+  "out_folder": "duoprisms/duoprism_3_6_hidden_cells",
+  "vertices_4d": 18,
+  "edges_4d": 36,
+  "cells_4d": 9,
+  "models": [
+    {
+      "source_file": "duoprisms/duoprism_3_6/face_first_hexagon.vZome",
+      "file": null,
+      "label": "face_first",
+      "label_subtype": "hexagon",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.2360679774997898,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_balls": 18,
+      "source_edges": 36,
+      "front_visible_balls": 18,
+      "front_visible_edges": 36,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.517719948885615e-14,
+      "cells_total": 9,
+      "cells_visible_front_or_equator": 8,
+      "cells_hidden_back": 1,
+      "vertices_4d_visible": 18,
+      "edges_4d_visible": 36
+    }
+  ]
+}

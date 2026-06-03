@@ -29,3 +29,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     truncated_24cell_oblique.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../truncated_24cell_hidden_cells/truncated_24cell_oblique_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    truncated_24cell_oblique.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>

@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_cantellated_120cell",
+  "title": "cantellated 120-cell",
+  "source_folder": "uniform/cantellated_120cell",
+  "out_folder": "uniform/cantellated_120cell_hidden_cells",
+  "vertices_4d": 3600,
+  "edges_4d": 10800,
+  "cells_4d": 1920,
+  "models": [
+    {
+      "source_file": "uniform/cantellated_120cell/cantellated_120cell_cell_first_rhombicosidodecahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "rhombicosidodecahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.3819660112501051,
+        1.0,
+        -0.6180339887498949
+      ],
+      "source_balls": 1860,
+      "source_edges": 5340,
+      "front_visible_balls": 1860,
+      "front_visible_edges": 5340,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 2.451372953258332e-11,
+      "cells_total": 1920,
+      "cells_visible_front_or_equator": 1045,
+      "cells_hidden_back": 875,
+      "vertices_4d_visible": 2580,
+      "edges_4d_visible": 7260
+    }
+  ]
+}

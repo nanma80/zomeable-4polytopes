@@ -30,6 +30,15 @@ next to its `.vZome` files in `output/<category>/<slug>/VIEWER.md` and
 renders the embedded vzome-viewer when served via
 [GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/).
 
+Some viewer pages include a second model immediately below the original labelled
+**hidden-cell-removal view**.  This is a descriptive term used here by analogy
+with hidden-line/hidden-surface removal: cells facing away from the positive side
+of the 4D projection kernel are omitted, while equatorial cells are retained.
+These variants live in sibling `_hidden_cells` folders and are indexed at
+[`output/HIDDEN_CELL_REMOVAL.md`](output/HIDDEN_CELL_REMOVAL.md). They are
+visualization options for the same projections, not additional zomeable
+projection counts.
+
 ¹ Infinite families currently occur for the tesseract (8-cell) and the
 duoprisms `{4}×{6}` and `{4}×{10}`; other corpus entries saturate at small
 finite counts.  See

@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_cantitruncated_600cell",
+  "title": "cantitruncated 600-cell",
+  "source_folder": "uniform/cantitruncated_600cell",
+  "out_folder": "uniform/cantitruncated_600cell_hidden_cells",
+  "vertices_4d": 7224,
+  "edges_4d": 14508,
+  "cells_4d": 1440,
+  "models": [
+    {
+      "source_file": "uniform/cantitruncated_600cell/cantitruncated_600cell_cell_first_truncated_icosahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "truncated_icosahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.6180339887498949,
+        -1.0,
+        0.3819660112501051,
+        0.0
+      ],
+      "source_balls": 3660,
+      "source_edges": 7140,
+      "front_visible_balls": 3660,
+      "front_visible_edges": 7140,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 1.9276005018782937e-11,
+      "cells_total": 1440,
+      "cells_visible_front_or_equator": 801,
+      "cells_hidden_back": 639,
+      "vertices_4d_visible": 4740,
+      "edges_4d_visible": 9210
+    }
+  ]
+}

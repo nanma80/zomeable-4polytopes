@@ -1,0 +1,37 @@
+{
+  "key": "wythoff_runcinated_120cell",
+  "title": "runcinated 120-cell",
+  "source_folder": "uniform/runcinated_120cell",
+  "out_folder": "uniform/runcinated_120cell_hidden_cells",
+  "vertices_4d": 2400,
+  "edges_4d": 7200,
+  "cells_4d": 2640,
+  "models": [
+    {
+      "source_file": "uniform/runcinated_120cell/runcinated_120cell_cell_first_dodecahedron.vZome",
+      "file": null,
+      "label": "cell_first",
+      "label_subtype": "dodecahedron",
+      "status": "unchanged",
+      "unchanged": true,
+      "kernel_positive_side": [
+        0.0,
+        0.3819660112501051,
+        1.0,
+        -0.6180339887498949
+      ],
+      "source_balls": 1260,
+      "source_edges": 3600,
+      "front_visible_balls": 1260,
+      "front_visible_edges": 3600,
+      "removed_balls": 0,
+      "removed_edges": 0,
+      "vertex_to_showpoint_max_residual": 9.453283272812241e-12,
+      "cells_total": 2640,
+      "cells_visible_front_or_equator": 1441,
+      "cells_hidden_back": 1199,
+      "vertices_4d_visible": 1560,
+      "edges_4d_visible": 4410
+    }
+  ]
+}

@@ -29,3 +29,11 @@ For methodology, kernel directions, search subtleties, and reproduction commands
     24cell_triality.vZome
  </figcaption>
 </figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="../24cell_hidden_cells/24cell_triality_front_visible.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    24cell_triality.vZome — hidden-cell-removal view
+ </figcaption>
+</figure>
