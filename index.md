@@ -29,8 +29,8 @@ Related non-4D collection:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
-| **Gosset orthographic projections** | 17 | 85 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
-| **A5 simplex family projections** *(all 19 A5 Wythoff polytopes)* | 19 | 57 | [**View A5 projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
+| **Gosset orthographic projections** | 17 | 85 | [**View projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+| **A5 simplex family projections** *(all 19 A5 Wythoff polytopes)* | 19 | 57 | [**View projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
 | **Approximate 3D polyhedron zomes** *(not projections; curated RGBY approximations)* | 16 | 16 | [**View approximate zomes →**](https://nanma80.github.io/zomeable-4polytopes/docs/APPROXIMATE_ZOMES.html) |
 
 Every category page lists the polytopes in scope and gives one-click access to a **vZome 3D viewer** embedded inline.
