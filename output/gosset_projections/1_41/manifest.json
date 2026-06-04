@@ -120,6 +120,8 @@
     "common_name": "7-demicube",
     "symmetry": "Th",
     "view_width": 170.0,
+    "convex_hull_faces": 30,
+    "convex_hull_description": "pyritohedral rhombic hull with slim and broad rhombuses",
     "raw_projection_matrix_zphi_7x3": [
       [[-3, -3], [0, 0], [-3, 0]],
       [[-3, -3], [0, 0], [3, 0]],
@@ -163,6 +165,8 @@
     "common_name": "7-demicube",
     "symmetry": "H3",
     "view_width": 170.0,
+    "convex_hull_faces": 30,
+    "convex_hull_description": "regular rhombic triacontahedron",
     "raw_projection_matrix_zphi_7x3": [
       [[-3, -3], [0, -3], [0, 0]],
       [[-3, -3], [0, 3], [0, 0]],

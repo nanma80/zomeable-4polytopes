@@ -240,6 +240,10 @@ R=3: three B3-symmetric projections with 8, 15, and 27 balls; one D4-symmetric
 projection with 12 balls; one Th-symmetric projection with 64 balls; and one
 H3-symmetric projection with 64 balls.
 
+Both 64-ball `1_41` projections have convex hulls with 30 rhombic faces.  The
+H3 case has the regular rhombic triacontahedron as its hull; the Th case has a
+pyritohedral 30-face rhombic hull with two rhombus shapes, slim and broad.
+
 The Th- and H3-symmetric `1_41` projection matrices are 7x3 matrices in the
 same `1/(3phi)` normalization as the `1_31` matrices.  The final row is zero,
 so these two `1_41` models are inherited from the corresponding 6-demicube
