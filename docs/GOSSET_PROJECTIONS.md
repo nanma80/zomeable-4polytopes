@@ -184,31 +184,11 @@ B3-symmetric projections with 8, 13, 14, and 15 balls; one D4-symmetric
 projection with 12 balls; two Th-symmetric projections with 32 balls; and two
 H3-symmetric projections with 32 balls.
 
-The H3- and Th-symmetric `1_31` projections use the following exact 6x3
+The Th- and H3-symmetric `1_31` projections use the following exact 6x3
 matrices, shown up to overall scale as the raw sweep matrices multiplied by
 `1/(3phi)`; the emitted `.vZome` files apply their physical post-scales.
 
 ```text
-1_31_H3_32_balls_a:
-[
-  [-phi, -1,    0   ],
-  [-phi,  1,    0   ],
-  [-1,    0,   -phi ],
-  [-1,    0,    phi ],
-  [ 0,   -phi, -1   ],
-  [ 0,    phi, -1   ],
-]
-
-1_31_H3_32_balls_b:
-[
-  [-phi, -1,    0   ],
-  [-phi,  1,    0   ],
-  [-1,    0,   -phi ],
-  [-1,    0,    phi ],
-  [ 0,   -phi, -1   ],
-  [ 0,   -phi,  1   ],
-]
-
 1_31_Th_32_balls_a:
 [
   [-phi,    0,       -1/phi ],
@@ -227,6 +207,26 @@ matrices, shown up to overall scale as the raw sweep matrices multiplied by
   [-1/phi,  phi,      0     ],
   [ 0,     -1/phi,   -phi   ],
   [ 0,     -1/phi,    phi   ],
+]
+
+1_31_H3_32_balls_a:
+[
+  [-phi, -1,    0   ],
+  [-phi,  1,    0   ],
+  [-1,    0,   -phi ],
+  [-1,    0,    phi ],
+  [ 0,   -phi, -1   ],
+  [ 0,    phi, -1   ],
+]
+
+1_31_H3_32_balls_b:
+[
+  [-phi, -1,    0   ],
+  [-phi,  1,    0   ],
+  [-1,    0,   -phi ],
+  [-1,    0,    phi ],
+  [ 0,   -phi, -1   ],
+  [ 0,   -phi,  1   ],
 ]
 ```
 
