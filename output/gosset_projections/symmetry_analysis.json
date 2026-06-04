@@ -476,6 +476,66 @@
       "reflection_count": 60,
       "classification": "H3 / full icosahedral (Ih)",
       "anchor_candidate_images": 120
+    },
+    {
+      "file": "1_41/1_41_B3_8_balls.vZome",
+      "polytope": "1_41",
+      "balls": 8,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "1_41/1_41_D4_12_balls.vZome",
+      "polytope": "1_41",
+      "balls": 12,
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "classification": "D4 / full tetragonal-dihedral",
+      "anchor_candidate_images": 16
+    },
+    {
+      "file": "1_41/1_41_B3_15_balls.vZome",
+      "polytope": "1_41",
+      "balls": 15,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "1_41/1_41_B3_27_balls.vZome",
+      "polytope": "1_41",
+      "balls": 27,
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "classification": "B3 / full octahedral (Oh)",
+      "anchor_candidate_images": 48
+    },
+    {
+      "file": "1_41/1_41_Th_64_balls.vZome",
+      "polytope": "1_41",
+      "balls": 64,
+      "full_symmetry_order": 24,
+      "rotational_order": 12,
+      "reflection_count": 12,
+      "classification": "Th / pyritohedral tetrahedral-with-inversion",
+      "anchor_candidate_images": 24
+    },
+    {
+      "file": "1_41/1_41_H3_64_balls.vZome",
+      "polytope": "1_41",
+      "balls": 64,
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "classification": "H3 / full icosahedral (Ih)",
+      "anchor_candidate_images": 120
     }
   ]
 }

@@ -11,6 +11,7 @@ This page used to contain all embedded viewers.  It is now an index so bookmarke
 | 5-orthoplex (`2_11`) | 3 | [3D viewer ->](2_11.md) |
 | 5-demicube (`1_21`) | 3 | [3D viewer ->](1_21.md) |
 | 6-demicube (`1_31`) | 9 | [3D viewer ->](1_31.md) |
+| 7-demicube (`1_41`) | 6 | [3D viewer ->](1_41.md) |
 | Rectified 5-orthoplex (`t1 2_11`) | 3 | [3D viewer ->](rectified_5_orthoplex.md) |
 | `2_21` | 2 | [3D viewer ->](2_21.md) |
 | `1_22` | 2 | [3D viewer ->](1_22.md) |

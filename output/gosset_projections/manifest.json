@@ -1,7 +1,7 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), 6-demicube (1_31), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), 6-demicube (1_31), 7-demicube (1_41), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
   "viewer": "VIEWER.md",
   "viewer_pages": {
     "2_11": "2_11.md",
@@ -15,7 +15,8 @@
     "1_32": "1_32.md",
     "2_41": "2_41.md",
     "1_42": "1_42.md",
-    "1_31": "1_31.md"
+    "1_31": "1_31.md",
+    "1_41": "1_41.md"
   },
   "models": [
     {
@@ -123,6 +124,48 @@
       "balls": 32,
       "symmetry": "H3",
       "variant": "b"
+    },
+    {
+      "file": "1_41/1_41_B3_8_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 8,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_41/1_41_D4_12_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 12,
+      "symmetry": "D4"
+    },
+    {
+      "file": "1_41/1_41_B3_15_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 15,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_41/1_41_B3_27_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 27,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_41/1_41_Th_64_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 64,
+      "symmetry": "Th"
+    },
+    {
+      "file": "1_41/1_41_H3_64_balls.vZome",
+      "polytope": "1_41",
+      "common_name": "7-demicube",
+      "balls": 64,
+      "symmetry": "H3"
     },
     {
       "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome",

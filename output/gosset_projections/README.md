@@ -3,11 +3,11 @@
 This folder is a related collection in this repository, not a 4-polytope
 category.  The models are strict orthographic 3D projections of the
 Gosset-family and adjacent D/E root polytopes: 5-orthoplex (`2_11`),
-5-demicube (`1_21`), 6-demicube (`1_31`), rectified 5-orthoplex
+5-demicube (`1_21`), 6-demicube (`1_31`), 7-demicube (`1_41`), rectified 5-orthoplex
 (`t1 2_11`), E6 root polytope (`1_22`), `2_21`, `3_21`, `2_31`,
 `1_32`, `4_21`, `2_41`, and `1_42`.
 
-The forty-six `.vZome` files are organized in per-source subfolders for
+The fifty-two `.vZome` files are organized in per-source subfolders for
 sharing and spot checking.  "Balls" counts distinct 3D ball positions in the projected vZome
 model; some vertices of the original source polytope may coincide in 3D.
 
@@ -34,6 +34,12 @@ Open the viewer index here:
 | `1_31/1_31_Th_32_balls_b.vZome` | 6-demicube (`1_31`) | 32 | Th-symmetric |
 | `1_31/1_31_H3_32_balls_a.vZome` | 6-demicube (`1_31`) | 32 | H3-symmetric |
 | `1_31/1_31_H3_32_balls_b.vZome` | 6-demicube (`1_31`) | 32 | H3-symmetric |
+| `1_41/1_41_B3_8_balls.vZome` | 7-demicube (`1_41`) | 8 | B3-symmetric |
+| `1_41/1_41_D4_12_balls.vZome` | 7-demicube (`1_41`) | 12 | D4-symmetric |
+| `1_41/1_41_B3_15_balls.vZome` | 7-demicube (`1_41`) | 15 | B3-symmetric |
+| `1_41/1_41_B3_27_balls.vZome` | 7-demicube (`1_41`) | 27 | B3-symmetric |
+| `1_41/1_41_Th_64_balls.vZome` | 7-demicube (`1_41`) | 64 | Th-symmetric |
+| `1_41/1_41_H3_64_balls.vZome` | 7-demicube (`1_41`) | 64 | H3-symmetric |
 | `rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 19 | B3-symmetric |
 | `rectified_5_orthoplex/rectified_5_orthoplex_D4_21_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 21 | D4-symmetric |
 | `rectified_5_orthoplex/rectified_5_orthoplex_B3_26_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 26 | B3-symmetric |
@@ -78,7 +84,8 @@ sweep recovers all ten `2_21`/`3_21`/`4_21` labelled models, including the H3
 family, and the R=3 sweep found no additional distinct models.  For the
 5-orthoplex (`2_11`) and 5-demicube (`1_21`), R=1, R=2, and R=3 all give the
 same three models for each source.  For the 6-demicube (`1_31`), R=1 gives
-five models, while R=2 and R=3 give the same nine models.  For the E6 root polytope (`1_22`), R=1,
+five models, while R=2 and R=3 give the same nine models.  For the
+7-demicube (`1_41`), R=1, R=2, and R=3 all give the same six models.  For the E6 root polytope (`1_22`), R=1,
 R=2, and R=3 all give the same two models.  For `2_31`, R=1, R=2, and R=3 all
 give the same five models.  For `1_32`, evaluating those same E7 projection
 directions gives five labelled models.  The rectified 5-orthoplex has the same

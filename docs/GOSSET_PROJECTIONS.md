@@ -11,6 +11,7 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | 5-orthoplex (`2_11`) | 5 | 3 |
 | 5-demicube (`1_21`) | 5 | 3 |
 | 6-demicube (`1_31`) | 6 | 9 |
+| 7-demicube (`1_41`) | 7 | 6 |
 | Rectified 5-orthoplex (`t1 2_11`) | 5 | 3 |
 | E6 root polytope (`1_22`) | 6 | 2 |
 | `2_21` | 6 | 2 |
@@ -52,12 +53,12 @@ constraints and strict orthographicity:
 4. Check the 128 half-root sums of E8.
 5. Collect strict rank-3 images for all relevant source polytopes.  For
    `2_21`/`3_21`/`4_21`, this means all vertex-figure embeddings inside the
-   E8 model.  For `2_11`, `1_21`, `1_31`, and the rectified 5-orthoplex, the
+   E8 model.  For `2_11`, `1_21`, `1_31`, `1_41`, and the rectified 5-orthoplex, the
    standalone source polytopes are checked directly; their edge directions are
    only of the `+/- e_i +/- e_j` type, so there is no E8 half-root condition.
-   The 6-demicube is `1_31` in Gosset notation and uses the same standalone
-   D-type demicube edge constraint as `1_21`, with six projection columns
-   instead of five.
+   The 6-demicube and 7-demicube are `1_31` and `1_41` in Gosset notation and
+   use the same standalone D-type demicube edge constraint as `1_21`, with six
+   and seven projection columns instead of five.
    The rectified 5-orthoplex is the D5 root polytope with vertices all
    permutations of
    `(+/-1,+/-1,0,0,0)`, so it has the same D5 root edge-direction constraints
@@ -82,6 +83,9 @@ constraints and strict orthographicity:
 | 6-demicube (`1_31`), R=1 | 4.4 s | 1,370,293 | 5 models |
 | 6-demicube (`1_31`), R=2 | 70.3 s | 14,183,831 | 9 models |
 | 6-demicube (`1_31`), R=3 | 55.3 min | 390,832,319 | same 9 models |
+| 7-demicube (`1_41`), R=1 | 12.8 s | 4,157,641 | 6 models |
+| 7-demicube (`1_41`), R=2 | 200.3 s | 53,115,083 | same 6 models |
+| 7-demicube (`1_41`), R=3 | 6.45 h | 2,914,645,635 | same 6 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=1 | 1.3 s | 433,289 | 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=2 | 32.7 s | 3,702,503 | same 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=3 | 678.4 s | 48,536,391 | same 3 models |
@@ -227,6 +231,41 @@ matrices, shown up to overall scale as the raw sweep matrices multiplied by
   [-1,    0,    phi ],
   [ 0,   -phi, -1   ],
   [ 0,   -phi,  1   ],
+]
+```
+
+The 7-demicube (`1_41`) is the next demicube after `1_31`.  Its direct D7
+demicube sweep gives six labelled models already at R=1 and saturates through
+R=3: three B3-symmetric projections with 8, 15, and 27 balls; one D4-symmetric
+projection with 12 balls; one Th-symmetric projection with 64 balls; and one
+H3-symmetric projection with 64 balls.
+
+The Th- and H3-symmetric `1_41` projection matrices are 7x3 matrices in the
+same `1/(3phi)` normalization as the `1_31` matrices.  The final row is zero,
+so these two `1_41` models are inherited from the corresponding 6-demicube
+patterns.
+
+```text
+1_41_Th_64_balls:
+[
+  [-phi,    0,       -1/phi ],
+  [-phi,    0,        1/phi ],
+  [-1/phi, -phi,      0     ],
+  [-1/phi,  phi,      0     ],
+  [ 0,     -1/phi,   -phi   ],
+  [ 0,     -1/phi,    phi   ],
+  [ 0,      0,        0     ],
+]
+
+1_41_H3_64_balls:
+[
+  [-phi, -1,    0   ],
+  [-phi,  1,    0   ],
+  [-1,    0,   -phi ],
+  [-1,    0,    phi ],
+  [ 0,   -phi, -1   ],
+  [ 0,   -phi,  1   ],
+  [ 0,    0,    0   ],
 ]
 ```
 
