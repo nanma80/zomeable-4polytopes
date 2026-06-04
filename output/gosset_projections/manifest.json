@@ -1,7 +1,7 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), 6-demicube (1_31), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
   "viewer": "VIEWER.md",
   "viewer_pages": {
     "2_11": "2_11.md",
@@ -14,7 +14,8 @@
     "4_21": "4_21.md",
     "1_32": "1_32.md",
     "2_41": "2_41.md",
-    "1_42": "1_42.md"
+    "1_42": "1_42.md",
+    "1_31": "1_31.md"
   },
   "models": [
     {
@@ -55,6 +56,73 @@
       "polytope": "1_21",
       "balls": 15,
       "symmetry": "B3"
+    },
+    {
+      "file": "1_31/1_31_B3_8_balls.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 8,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_31/1_31_D4_12_balls.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 12,
+      "symmetry": "D4"
+    },
+    {
+      "file": "1_31/1_31_B3_13_balls.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 13,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_31/1_31_B3_14_balls.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 14,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_31/1_31_B3_15_balls.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 15,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_31/1_31_Th_32_balls_a.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 32,
+      "symmetry": "Th",
+      "variant": "a"
+    },
+    {
+      "file": "1_31/1_31_Th_32_balls_b.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 32,
+      "symmetry": "Th",
+      "variant": "b"
+    },
+    {
+      "file": "1_31/1_31_H3_32_balls_a.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 32,
+      "symmetry": "H3",
+      "variant": "a"
+    },
+    {
+      "file": "1_31/1_31_H3_32_balls_b.vZome",
+      "polytope": "1_31",
+      "common_name": "6-demicube",
+      "balls": 32,
+      "symmetry": "H3",
+      "variant": "b"
     },
     {
       "file": "rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome",

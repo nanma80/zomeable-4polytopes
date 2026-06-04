@@ -10,6 +10,7 @@ projections of Gosset-family and adjacent D/E root polytopes:
 |---|---:|---:|
 | 5-orthoplex (`2_11`) | 5 | 3 |
 | 5-demicube (`1_21`) | 5 | 3 |
+| 6-demicube (`1_31`) | 6 | 9 |
 | Rectified 5-orthoplex (`t1 2_11`) | 5 | 3 |
 | E6 root polytope (`1_22`) | 6 | 2 |
 | `2_21` | 6 | 2 |
@@ -51,9 +52,12 @@ constraints and strict orthographicity:
 4. Check the 128 half-root sums of E8.
 5. Collect strict rank-3 images for all relevant source polytopes.  For
    `2_21`/`3_21`/`4_21`, this means all vertex-figure embeddings inside the
-   E8 model.  For `2_11`, `1_21`, and the rectified 5-orthoplex, the
+   E8 model.  For `2_11`, `1_21`, `1_31`, and the rectified 5-orthoplex, the
    standalone source polytopes are checked directly; their edge directions are
    only of the `+/- e_i +/- e_j` type, so there is no E8 half-root condition.
+   The 6-demicube is `1_31` in Gosset notation and uses the same standalone
+   D-type demicube edge constraint as `1_21`, with six projection columns
+   instead of five.
    The rectified 5-orthoplex is the D5 root polytope with vertices all
    permutations of
    `(+/-1,+/-1,0,0,0)`, so it has the same D5 root edge-direction constraints
@@ -75,6 +79,9 @@ constraints and strict orthographicity:
 | 5-demicube (`1_21`), R=1 | 1.2 s | 433,289 | 3 models |
 | 5-demicube (`1_21`), R=2 | 30.4 s | 3,702,503 | same 3 models |
 | 5-demicube (`1_21`), R=3 | 708.5 s | 48,536,391 | same 3 models |
+| 6-demicube (`1_31`), R=1 | 4.4 s | 1,370,293 | 5 models |
+| 6-demicube (`1_31`), R=2 | 70.3 s | 14,183,831 | 9 models |
+| 6-demicube (`1_31`), R=3 | 55.3 min | 390,832,319 | same 9 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=1 | 1.3 s | 433,289 | 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=2 | 32.7 s | 3,702,503 | same 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=3 | 678.4 s | 48,536,391 | same 3 models |
@@ -101,6 +108,7 @@ The public captions use full Euclidean point-cloud symmetry:
 
 - `B3-symmetric` means full octahedral symmetry, full order 48.
 - `D4-symmetric` means full tetragonal/dihedral symmetry, full order 16.
+- `Th-symmetric` means full tetrahedral symmetry with inversion, full order 24.
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
 
 The computed symmetry audit is in
@@ -169,6 +177,58 @@ so no separate projection-direction search is needed.  Evaluating the completed
 `2_31` projection directions on the 576-vertex `1_32` source gives five
 labelled models: three B3-symmetric models with 38, 59, and 81 balls, and two
 H3-symmetric 384-ball models.
+
+The 6-demicube (`1_31`, demihexeract) is the next demicube after `1_21`.
+Its direct D6 demicube sweep gives nine labelled models through R=3: four
+B3-symmetric projections with 8, 13, 14, and 15 balls; one D4-symmetric
+projection with 12 balls; two Th-symmetric projections with 32 balls; and two
+H3-symmetric projections with 32 balls.
+
+The H3- and Th-symmetric `1_31` projections use the following exact 6x3
+matrices, shown up to overall scale as the raw sweep matrices multiplied by
+`1/(3phi)`; the emitted `.vZome` files apply their physical post-scales.
+
+```text
+1_31_H3_32_balls_a:
+[
+  [-phi, -1,    0   ],
+  [-phi,  1,    0   ],
+  [-1,    0,   -phi ],
+  [-1,    0,    phi ],
+  [ 0,   -phi, -1   ],
+  [ 0,    phi, -1   ],
+]
+
+1_31_H3_32_balls_b:
+[
+  [-phi, -1,    0   ],
+  [-phi,  1,    0   ],
+  [-1,    0,   -phi ],
+  [-1,    0,    phi ],
+  [ 0,   -phi, -1   ],
+  [ 0,   -phi,  1   ],
+]
+
+1_31_Th_32_balls_a:
+[
+  [-phi,    0,       -1/phi ],
+  [-phi,    0,        1/phi ],
+  [-1/phi, -phi,      0     ],
+  [-1/phi,  phi,      0     ],
+  [ 0,     -1/phi,   -phi   ],
+  [ 0,      1/phi,   -phi   ],
+]
+
+1_31_Th_32_balls_b:
+[
+  [-phi,    0,       -1/phi ],
+  [-phi,    0,        1/phi ],
+  [-1/phi, -phi,      0     ],
+  [-1/phi,  phi,      0     ],
+  [ 0,     -1/phi,   -phi   ],
+  [ 0,     -1/phi,    phi   ],
+]
+```
 
 The `2_41` member uses the E8 root directions with odd spinor parity.  The
 direct parity-correct sweep gives three labelled models through R=2: two
