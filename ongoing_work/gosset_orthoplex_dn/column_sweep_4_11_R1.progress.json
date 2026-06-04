@@ -1,0 +1,15 @@
+{
+  "polytope": "4_11",
+  "orthoplex_dimension": 7,
+  "R": 1,
+  "status": "complete",
+  "elapsed_s": 9.430006742477417,
+  "depth": null,
+  "top_index": null,
+  "stats": {
+    "leaf": 4157641,
+    "gram_hits": 1588,
+    "rank_hits": 1588
+  },
+  "hit_count": 5
+}

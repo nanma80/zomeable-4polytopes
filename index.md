@@ -29,7 +29,7 @@ Related non-4D collection:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
-| **Gosset orthographic projections** *(5-orthoplex/2_11, 5-demicube/1_21, 6-demicube/1_31, 7-demicube/1_41, rectified 5-orthoplex/t1 2_11, 2_21, 1_22, 3_21, 2_31, 1_32, 4_21, 2_41, 1_42)* | 13 | 52 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+| **Gosset orthographic projections** | 17 | 85 | [**View Gosset projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
 | **A5 simplex family projections** *(all 19 A5 Wythoff polytopes)* | 19 | 57 | [**View A5 projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
 | **Approximate 3D polyhedron zomes** *(not projections; curated RGBY approximations)* | 16 | 16 | [**View approximate zomes →**](https://nanma80.github.io/zomeable-4polytopes/docs/APPROXIMATE_ZOMES.html) |
 

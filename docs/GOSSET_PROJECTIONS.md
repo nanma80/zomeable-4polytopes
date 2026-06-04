@@ -9,18 +9,22 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | Polytope | Natural dimension | Models |
 |---|---:|---:|
 | 5-orthoplex (`2_11`) | 5 | 3 |
-| 5-demicube (`1_21`) | 5 | 3 |
-| 6-demicube (`1_31`) | 6 | 9 |
-| 7-demicube (`1_41`) | 7 | 6 |
 | Rectified 5-orthoplex (`t1 2_11`) | 5 | 3 |
-| E6 root polytope (`1_22`) | 6 | 2 |
+| 5-demicube (`1_21`) | 5 | 3 |
+| 6-orthoplex (`3_11`) | 6 | 6 |
+| 6-demicube (`1_31`) | 6 | 9 |
 | `2_21` | 6 | 2 |
+| E6 root polytope (`1_22`) | 6 | 2 |
+| 7-orthoplex (`4_11`) | 7 | 5 |
+| 7-demicube (`1_41`) | 7 | 6 |
 | `3_21` | 7 | 5 |
 | `2_31` | 7 | 5 |
 | `1_32` | 7 | 5 |
 | `4_21` | 8 | 3 |
 | `2_41` | 8 | 3 |
 | `1_42` | 8 | 3 |
+| 10-orthoplex (`7_11`) | 10 | 9 |
+| 10-demicube (`1_71`) | 10 | 13 |
 
 ## Prior work
 
@@ -77,6 +81,11 @@ constraints and strict orthographicity:
 | 5-orthoplex (`2_11`), R=1 | 1.2 s | 433,289 | 3 models |
 | 5-orthoplex (`2_11`), R=2 | 29.3 s | 3,702,503 | same 3 models |
 | 5-orthoplex (`2_11`), R=3 | 673.9 s | 48,536,391 | same 3 models |
+| 6-orthoplex (`3_11`), R=1 | 3.6 s | 1,370,293 | 6 models |
+| 6-orthoplex (`3_11`), R=2 | 64.4 s | 14,183,831 | same 6 models |
+| 7-orthoplex (`4_11`), R=1 | 9.4 s | 4,157,641 | 5 models |
+| 7-orthoplex (`4_11`), R=2 | 190.1 s | 53,115,083 | same 5 models |
+| 10-orthoplex (`7_11`), R=1 | 222.3 s | 90,870,809 | 9 models |
 | 5-demicube (`1_21`), R=1 | 1.2 s | 433,289 | 3 models |
 | 5-demicube (`1_21`), R=2 | 30.4 s | 3,702,503 | same 3 models |
 | 5-demicube (`1_21`), R=3 | 708.5 s | 48,536,391 | same 3 models |
@@ -86,6 +95,8 @@ constraints and strict orthographicity:
 | 7-demicube (`1_41`), R=1 | 12.8 s | 4,157,641 | 6 models |
 | 7-demicube (`1_41`), R=2 | 200.3 s | 53,115,083 | same 6 models |
 | 7-demicube (`1_41`), R=3 | 6.45 h | 2,914,645,635 | same 6 models |
+| 10-demicube (`1_71`), R=1 | 13.1 min | 90,870,809 | 13 models |
+| 10-demicube (`1_71`), R=2 | 2.46 h | 2,092,743,206 | same 13 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=1 | 1.3 s | 433,289 | 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=2 | 32.7 s | 3,702,503 | same 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=3 | 678.4 s | 48,536,391 | same 3 models |
@@ -114,6 +125,8 @@ The public captions use full Euclidean point-cloud symmetry:
 - `D4-symmetric` means full tetragonal/dihedral symmetry, full order 16.
 - `Th-symmetric` means full tetrahedral symmetry with inversion, full order 24.
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
+- `D2h`, `C3i`, and `D3d` are lower-symmetry full Euclidean point-cloud
+  labels used by three 10-orthoplex (`7_11`) projections.
 
 The computed symmetry audit is in
 [`output/gosset_projections/symmetry_analysis.json`](../output/gosset_projections/symmetry_analysis.json).
@@ -152,7 +165,18 @@ unrelated projection direction; it is another degeneration within the same B3
 projection branch.
 
 The regular 5-orthoplex (`2_11`) adds three labelled models: two B3-symmetric
-models with 7 and 9 balls, and one D4-symmetric model with 7 balls.  The
+models with 7 and 9 balls, and one D4-symmetric model with 7 balls.
+The higher orthoplexes `3_11`, `4_11`, and `7_11` use the same D_n root
+edge-direction constraints as the matching n-demicubes: orthoplex edges join
+non-antipodal pairs among `+/-e_i`, so their directions are exactly
+`+/-e_i +/- e_j`.  A dedicated n-orthoplex sweep verifies the projection
+relation directly.  The 6-orthoplex (`3_11`) has six labelled models through
+R=2, the 7-orthoplex (`4_11`) has five labelled models through R=2, and the
+10-orthoplex (`7_11`) has nine labelled models at R=1.  Some visible point
+clouds agree with lower-dimensional orthoplex images plus collapsed vertices,
+but the source edge sets differ, so the gallery keeps them as separate labelled
+models.
+  The
 5-demicube (`1_21`) member adds three models.  Its 15-ball B3 model is the
 same visible point-cloud geometry as the 15-ball branch above; the 8-ball B3
 model and 12-ball D4 model are specific lower-dimensional degenerations of the
@@ -272,6 +296,13 @@ patterns.
   [ 0,    0,    0   ],
 ]
 ```
+
+
+The 10-demicube (`1_71`) uses the same D10 demicube constraints as the lower
+demicubes.  Its R=1 sweep already finds 13 labelled models, and the R=2 sweep
+confirms saturation at the same 13 signatures.  The projections include B3,
+D4, Th, H3, D2h, D3d, and C3i symmetry types, with ball counts from 8 through
+364.
 
 The `2_41` member uses the E8 root directions with odd spinor parity.  The
 direct parity-correct sweep gives three labelled models through R=2: two

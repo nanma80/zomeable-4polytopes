@@ -1,7 +1,7 @@
 {
   "category": "gosset_projections",
   "title": "Gosset orthographic projections",
-  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 5-demicube (1_21), 6-demicube (1_31), 7-demicube (1_41), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
+  "note": "Related non-4D collection: strict orthographic zomeable projections of 5-orthoplex (2_11), 6-orthoplex (3_11), 7-orthoplex (4_11), 10-orthoplex (7_11), 5-demicube (1_21), 6-demicube (1_31), 7-demicube (1_41), 10-demicube (1_71), rectified 5-orthoplex (t1 2_11), E6 root polytope (1_22), 2_21, 3_21, 2_31, 1_32, 4_21, 2_41, and 1_42. Kept as one output category with per-source subfolders for sharing.",
   "viewer": "VIEWER.md",
   "viewer_pages": {
     "2_11": "2_11.md",
@@ -16,7 +16,11 @@
     "2_41": "2_41.md",
     "1_42": "1_42.md",
     "1_31": "1_31.md",
-    "1_41": "1_41.md"
+    "1_41": "1_41.md",
+    "3_11": "3_11.md",
+    "4_11": "4_11.md",
+    "7_11": "7_11.md",
+    "1_71": "1_71.md"
   },
   "models": [
     {
@@ -363,6 +367,237 @@
       "file": "1_42/1_42_H3_5936_balls.vZome",
       "polytope": "1_42",
       "balls": 5936,
+      "symmetry": "H3"
+    },
+    {
+      "file": "3_11/3_11_B3_6_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 6,
+      "symmetry": "B3"
+    },
+    {
+      "file": "3_11/3_11_D4_7_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 7,
+      "symmetry": "D4"
+    },
+    {
+      "file": "3_11/3_11_B3_7_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 7,
+      "symmetry": "B3"
+    },
+    {
+      "file": "3_11/3_11_B3_9_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 9,
+      "symmetry": "B3"
+    },
+    {
+      "file": "3_11/3_11_Th_12_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 12,
+      "symmetry": "Th"
+    },
+    {
+      "file": "3_11/3_11_H3_12_balls.vZome",
+      "polytope": "3_11",
+      "common_name": "6-orthoplex",
+      "balls": 12,
+      "symmetry": "H3"
+    },
+    {
+      "file": "4_11/4_11_D4_7_balls.vZome",
+      "polytope": "4_11",
+      "common_name": "7-orthoplex",
+      "balls": 7,
+      "symmetry": "D4"
+    },
+    {
+      "file": "4_11/4_11_B3_7_balls.vZome",
+      "polytope": "4_11",
+      "common_name": "7-orthoplex",
+      "balls": 7,
+      "symmetry": "B3"
+    },
+    {
+      "file": "4_11/4_11_B3_9_balls.vZome",
+      "polytope": "4_11",
+      "common_name": "7-orthoplex",
+      "balls": 9,
+      "symmetry": "B3"
+    },
+    {
+      "file": "4_11/4_11_H3_13_balls.vZome",
+      "polytope": "4_11",
+      "common_name": "7-orthoplex",
+      "balls": 13,
+      "symmetry": "H3"
+    },
+    {
+      "file": "4_11/4_11_Th_13_balls.vZome",
+      "polytope": "4_11",
+      "common_name": "7-orthoplex",
+      "balls": 13,
+      "symmetry": "Th"
+    },
+    {
+      "file": "7_11/7_11_D4_7_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 7,
+      "symmetry": "D4"
+    },
+    {
+      "file": "7_11/7_11_B3_7_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 7,
+      "symmetry": "B3"
+    },
+    {
+      "file": "7_11/7_11_B3_9_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 9,
+      "symmetry": "B3"
+    },
+    {
+      "file": "7_11/7_11_H3_13_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 13,
+      "symmetry": "H3"
+    },
+    {
+      "file": "7_11/7_11_D2h_13_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 13,
+      "symmetry": "D2h"
+    },
+    {
+      "file": "7_11/7_11_Th_13_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 13,
+      "symmetry": "Th"
+    },
+    {
+      "file": "7_11/7_11_C3i_14_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 14,
+      "symmetry": "C3i"
+    },
+    {
+      "file": "7_11/7_11_D3d_15_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 15,
+      "symmetry": "D3d"
+    },
+    {
+      "file": "7_11/7_11_H3_20_balls.vZome",
+      "polytope": "7_11",
+      "common_name": "10-orthoplex",
+      "balls": 20,
+      "symmetry": "H3"
+    },
+    {
+      "file": "1_71/1_71_B3_8_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 8,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_71/1_71_D4_12_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 12,
+      "symmetry": "D4"
+    },
+    {
+      "file": "1_71/1_71_B3_15_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 15,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_71/1_71_B3_27_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 27,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_71/1_71_D4_45_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 45,
+      "symmetry": "D4"
+    },
+    {
+      "file": "1_71/1_71_Th_64_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 64,
+      "symmetry": "Th"
+    },
+    {
+      "file": "1_71/1_71_B3_64_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 64,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_71/1_71_H3_64_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 64,
+      "symmetry": "H3"
+    },
+    {
+      "file": "1_71/1_71_B3_65_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 65,
+      "symmetry": "B3"
+    },
+    {
+      "file": "1_71/1_71_D2h_144_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 144,
+      "symmetry": "D2h"
+    },
+    {
+      "file": "1_71/1_71_D3d_161_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 161,
+      "symmetry": "D3d"
+    },
+    {
+      "file": "1_71/1_71_C3i_184_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 184,
+      "symmetry": "C3i"
+    },
+    {
+      "file": "1_71/1_71_H3_364_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 364,
       "symmetry": "H3"
     }
   ]

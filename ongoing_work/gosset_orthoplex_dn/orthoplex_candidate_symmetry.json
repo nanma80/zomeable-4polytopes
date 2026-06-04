@@ -1,0 +1,393 @@
+{
+  "items": [
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_01_N6_8189ef2dfe63_6_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N6_8189ef2dfe63",
+      "balls": 6,
+      "visible_edges": 15,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_02_N7_6d29d5e3ef9d_7_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N7_6d29d5e3ef9d",
+      "balls": 7,
+      "visible_edges": 19,
+      "symmetry": "D4",
+      "classification": "D4 / full tetragonal-dihedral",
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "rotation_orders": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 16
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_03_N7_6e3cf5e6f391_7_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N7_6e3cf5e6f391",
+      "balls": 7,
+      "visible_edges": 18,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_04_N9_7b11b4a0657a_9_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N9_7b11b4a0657a",
+      "balls": 9,
+      "visible_edges": 32,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_05_N12_56524ec05e07_12_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N12_56524ec05e07",
+      "balls": 12,
+      "visible_edges": 60,
+      "symmetry": "Th",
+      "classification": "Th/Td-sized tetrahedral rotations",
+      "full_symmetry_order": 24,
+      "rotational_order": 12,
+      "reflection_count": 12,
+      "rotation_orders": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 24
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\3_11\\3_11_06_N12_5ea686ed075f_12_balls.vZome",
+      "symbol": "3_11",
+      "signature": "N12_5ea686ed075f",
+      "balls": 12,
+      "visible_edges": 60,
+      "symmetry": "H3",
+      "classification": "Ih / full icosahedral",
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "rotation_orders": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 120
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\4_11\\4_11_01_N7_6d29d5e3ef9d_7_balls.vZome",
+      "symbol": "4_11",
+      "signature": "N7_6d29d5e3ef9d",
+      "balls": 7,
+      "visible_edges": 19,
+      "symmetry": "D4",
+      "classification": "D4 / full tetragonal-dihedral",
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "rotation_orders": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 16
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\4_11\\4_11_02_N7_6e3cf5e6f391_7_balls.vZome",
+      "symbol": "4_11",
+      "signature": "N7_6e3cf5e6f391",
+      "balls": 7,
+      "visible_edges": 21,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\4_11\\4_11_03_N9_7b11b4a0657a_9_balls.vZome",
+      "symbol": "4_11",
+      "signature": "N9_7b11b4a0657a",
+      "balls": 9,
+      "visible_edges": 32,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\4_11\\4_11_04_N13_38bd06cecae8_13_balls.vZome",
+      "symbol": "4_11",
+      "signature": "N13_38bd06cecae8",
+      "balls": 13,
+      "visible_edges": 72,
+      "symmetry": "H3",
+      "classification": "Ih / full icosahedral",
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "rotation_orders": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 120
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\4_11\\4_11_05_N13_dbaa9fca32a0_13_balls.vZome",
+      "symbol": "4_11",
+      "signature": "N13_dbaa9fca32a0",
+      "balls": 13,
+      "visible_edges": 72,
+      "symmetry": "Th",
+      "classification": "Th/Td-sized tetrahedral rotations",
+      "full_symmetry_order": 24,
+      "rotational_order": 12,
+      "reflection_count": 12,
+      "rotation_orders": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 24
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_01_N7_6d29d5e3ef9d_7_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N7_6d29d5e3ef9d",
+      "balls": 7,
+      "visible_edges": 21,
+      "symmetry": "D4",
+      "classification": "D4 / full tetragonal-dihedral",
+      "full_symmetry_order": 16,
+      "rotational_order": 8,
+      "reflection_count": 8,
+      "rotation_orders": {
+        "1": 1,
+        "2": 5,
+        "4": 2
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 16
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_02_N7_6e3cf5e6f391_7_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N7_6e3cf5e6f391",
+      "balls": 7,
+      "visible_edges": 21,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_03_N9_7b11b4a0657a_9_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N9_7b11b4a0657a",
+      "balls": 9,
+      "visible_edges": 36,
+      "symmetry": "B3",
+      "classification": "B3 / full octahedral (Oh)",
+      "full_symmetry_order": 48,
+      "rotational_order": 24,
+      "reflection_count": 24,
+      "rotation_orders": {
+        "1": 1,
+        "2": 9,
+        "3": 8,
+        "4": 6
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 48
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_04_N13_38bd06cecae8_13_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N13_38bd06cecae8",
+      "balls": 13,
+      "visible_edges": 72,
+      "symmetry": "H3",
+      "classification": "Ih / full icosahedral",
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "rotation_orders": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 120
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_05_N13_6c038ee1cac8_13_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N13_6c038ee1cac8",
+      "balls": 13,
+      "visible_edges": 74,
+      "symmetry": "D2d",
+      "classification": "order-8 dihedral/tetragonal subgroup",
+      "full_symmetry_order": 8,
+      "rotational_order": 4,
+      "reflection_count": 4,
+      "rotation_orders": {
+        "1": 1,
+        "2": 3
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 8
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_06_N13_dbaa9fca32a0_13_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N13_dbaa9fca32a0",
+      "balls": 13,
+      "visible_edges": 72,
+      "symmetry": "Th",
+      "classification": "Th/Td-sized tetrahedral rotations",
+      "full_symmetry_order": 24,
+      "rotational_order": 12,
+      "reflection_count": 12,
+      "rotation_orders": {
+        "1": 1,
+        "2": 3,
+        "3": 8
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 24
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_07_N14_a9cae79664e2_14_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N14_a9cae79664e2",
+      "balls": 14,
+      "visible_edges": 87,
+      "symmetry": "G6",
+      "classification": "order 6 full, order 3 rotations",
+      "full_symmetry_order": 6,
+      "rotational_order": 3,
+      "reflection_count": 3,
+      "rotation_orders": {
+        "1": 1,
+        "3": 2
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 6
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_08_N15_a0a622aa9481_15_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N15_a0a622aa9481",
+      "balls": 15,
+      "visible_edges": 99,
+      "symmetry": "G12",
+      "classification": "order 12 full, order 6 rotations",
+      "full_symmetry_order": 12,
+      "rotational_order": 6,
+      "reflection_count": 6,
+      "rotation_orders": {
+        "1": 1,
+        "2": 3,
+        "3": 2
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 12
+    },
+    {
+      "source_file": "output\\gosset_orthoplex_candidates\\7_11\\7_11_09_N20_e0a5a49556f9_20_balls.vZome",
+      "symbol": "7_11",
+      "signature": "N20_e0a5a49556f9",
+      "balls": 20,
+      "visible_edges": 180,
+      "symmetry": "H3",
+      "classification": "Ih / full icosahedral",
+      "full_symmetry_order": 120,
+      "rotational_order": 60,
+      "reflection_count": 60,
+      "rotation_orders": {
+        "1": 1,
+        "2": 15,
+        "3": 20,
+        "5": 24
+      },
+      "has_inversion": true,
+      "anchor_candidate_images": 120
+    }
+  ]
+}

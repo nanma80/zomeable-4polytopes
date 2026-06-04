@@ -1,0 +1,376 @@
+[
+  {
+    "signature": "N7_6d29d5e3ef9d",
+    "file": "7_11/7_11_D4_7_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 7,
+    "visible_edges": 21,
+    "source_edges": 180,
+    "collapsed_edges": 20,
+    "physical_scale": "2*phi^2",
+    "standard_struts": {
+      "B2": 2,
+      "G2": 4
+    },
+    "doubled_standard_struts": {
+      "B2": 5,
+      "G2": 2,
+      "Y2": 8
+    },
+    "direction_counts": {
+      "B": 7,
+      "G": 6,
+      "Y": 8
+    },
+    "symmetry": "D4",
+    "symmetry_classification": "D4 / full tetragonal-dihedral",
+    "full_symmetry_order": 16,
+    "rotational_order": 8,
+    "reflection_count": 8,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N7_6e3cf5e6f391",
+    "file": "7_11/7_11_B3_7_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 7,
+    "visible_edges": 21,
+    "source_edges": 180,
+    "collapsed_edges": 18,
+    "physical_scale": "1*phi^3",
+    "standard_struts": {
+      "B2": 6,
+      "G2": 12
+    },
+    "doubled_standard_struts": {
+      "B2": 3
+    },
+    "direction_counts": {
+      "B": 9,
+      "G": 12
+    },
+    "symmetry": "B3",
+    "symmetry_classification": "B3 / full octahedral (Oh)",
+    "full_symmetry_order": 48,
+    "rotational_order": 24,
+    "reflection_count": 24,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N9_7b11b4a0657a",
+    "file": "7_11/7_11_B3_9_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 9,
+    "visible_edges": 36,
+    "source_edges": 180,
+    "collapsed_edges": 12,
+    "physical_scale": "1*phi^2",
+    "standard_struts": {
+      "B2": 12,
+      "G2": 12,
+      "Y2": 8
+    },
+    "doubled_standard_struts": {
+      "Y2": 4
+    },
+    "direction_counts": {
+      "B": 12,
+      "G": 12,
+      "Y": 12
+    },
+    "symmetry": "B3",
+    "symmetry_classification": "B3 / full octahedral (Oh)",
+    "full_symmetry_order": 48,
+    "rotational_order": 24,
+    "reflection_count": 24,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N13_38bd06cecae8",
+    "file": "7_11/7_11_H3_13_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 13,
+    "visible_edges": 72,
+    "source_edges": 180,
+    "collapsed_edges": 24,
+    "physical_scale": "1*phi^3",
+    "standard_struts": {
+      "B2": 30,
+      "B3": 30,
+      "R2": 12
+    },
+    "doubled_standard_struts": {},
+    "direction_counts": {
+      "B": 60,
+      "R": 12
+    },
+    "symmetry": "H3",
+    "symmetry_classification": "Ih / full icosahedral",
+    "full_symmetry_order": 120,
+    "rotational_order": 60,
+    "reflection_count": 60,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N13_6c038ee1cac8",
+    "file": "7_11/7_11_D2h_13_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 13,
+    "visible_edges": 74,
+    "source_edges": 180,
+    "collapsed_edges": 8,
+    "physical_scale": "2*phi^4",
+    "standard_struts": {
+      "B3": 2,
+      "B4": 2,
+      "G3": 4,
+      "G4": 4
+    },
+    "doubled_standard_struts": {
+      "B3": 13,
+      "B4": 13,
+      "R2": 4,
+      "R3": 4,
+      "R4": 4,
+      "Y3": 12,
+      "Y4": 12
+    },
+    "direction_counts": {
+      "B": 30,
+      "G": 8,
+      "R": 12,
+      "Y": 24
+    },
+    "symmetry": "D2h",
+    "symmetry_classification": "D2h / full orthorhombic-dihedral",
+    "full_symmetry_order": 8,
+    "rotational_order": 4,
+    "reflection_count": 4,
+    "view_width": 200.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 200.0
+  },
+  {
+    "signature": "N13_dbaa9fca32a0",
+    "file": "7_11/7_11_Th_13_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 13,
+    "visible_edges": 72,
+    "source_edges": 180,
+    "collapsed_edges": 24,
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 6,
+      "B3": 24,
+      "B4": 6,
+      "G3": 24,
+      "Y3": 12
+    },
+    "doubled_standard_struts": {},
+    "direction_counts": {
+      "B": 36,
+      "G": 24,
+      "Y": 12
+    },
+    "symmetry": "Th",
+    "symmetry_classification": "Th/Td-sized tetrahedral rotations",
+    "full_symmetry_order": 24,
+    "rotational_order": 12,
+    "reflection_count": 12,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N14_a9cae79664e2",
+    "file": "7_11/7_11_C3i_14_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 14,
+    "visible_edges": 87,
+    "source_edges": 180,
+    "collapsed_edges": 6,
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 12,
+      "B3": 30,
+      "B4": 12,
+      "G3": 30
+    },
+    "doubled_standard_struts": {
+      "Y3": 3
+    },
+    "direction_counts": {
+      "B": 54,
+      "G": 30,
+      "Y": 3
+    },
+    "symmetry": "C3i",
+    "symmetry_classification": "C3i / trigonal with inversion",
+    "full_symmetry_order": 6,
+    "rotational_order": 3,
+    "reflection_count": 3,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N15_a0a622aa9481",
+    "file": "7_11/7_11_D3d_15_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 15,
+    "visible_edges": 99,
+    "source_edges": 180,
+    "collapsed_edges": 6,
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 12,
+      "B3": 30,
+      "B4": 12,
+      "G3": 30,
+      "Y3": 14
+    },
+    "doubled_standard_struts": {
+      "Y3": 1
+    },
+    "direction_counts": {
+      "B": 54,
+      "G": 30,
+      "Y": 15
+    },
+    "symmetry": "D3d",
+    "symmetry_classification": "D3d / trigonal-dihedral with inversion",
+    "full_symmetry_order": 12,
+    "rotational_order": 6,
+    "reflection_count": 6,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  },
+  {
+    "signature": "N20_e0a5a49556f9",
+    "file": "7_11/7_11_H3_20_balls.vZome",
+    "polytope": "7_11",
+    "common_name": "10-orthoplex",
+    "balls": 20,
+    "visible_edges": 180,
+    "source_edges": 180,
+    "collapsed_edges": 0,
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 30,
+      "B3": 60,
+      "B4": 30,
+      "G3": 60
+    },
+    "doubled_standard_struts": {},
+    "direction_counts": {
+      "B": 120,
+      "G": 60
+    },
+    "symmetry": "H3",
+    "symmetry_classification": "Ih / full icosahedral",
+    "full_symmetry_order": 120,
+    "rotational_order": 60,
+    "reflection_count": 60,
+    "view_width": 100.0,
+    "view_look_direction": [
+      -0.45058614322726115,
+      -0.35045588917675863,
+      -0.8210680832141203
+    ],
+    "view_up_direction": [
+      -0.16860353188124916,
+      0.9365792383676501,
+      -0.3072331025391651
+    ],
+    "view_distance": 100.0
+  }
+]

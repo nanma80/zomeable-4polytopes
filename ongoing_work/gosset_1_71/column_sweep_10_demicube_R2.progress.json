@@ -1,0 +1,14 @@
+{
+  "polytope": "10-demicube",
+  "R": 2,
+  "status": "complete",
+  "elapsed_s": 8858.895181417465,
+  "depth": null,
+  "top_index": null,
+  "stats": {
+    "leaf": 2092743206,
+    "gram_hits": 88092,
+    "rank_hits": 88092
+  },
+  "hit_count": 13
+}
