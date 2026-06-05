@@ -1,8 +1,8 @@
 {
-  "signature": "N184_9ebaf03e6587_odd",
+  "signature": "N184_9ebaf03e6587_b",
   "base_signature": "N184_9ebaf03e6587",
-  "parity": "odd",
-  "file": "1_71/1_71_C3i_184_balls_odd.vZome",
+  "variant": "b",
+  "file": "1_71/1_71_C3i_184_balls_b.vZome",
   "polytope": "1_71",
   "common_name": "10-demicube",
   "balls": 184,

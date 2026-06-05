@@ -48,7 +48,7 @@ methodology finds three models and saturates already at R=1.  For the
 saturates through R=3.  For the 7-demicube (`1_41`), the direct D7 demicube
 sweep finds six models and saturates through R=3.  For the 10-demicube (`1_71`),
 the direct D10 demicube sweep finds 13 even-coset models and saturates through
-R=2; the C3i and H3 matrices also contribute distinct odd-coset companions.  For `1_22`, the
+R=2; the C3i and H3 matrices also contribute distinct variant pairs.  For `1_22`, the
 same methodology finds two models and saturates through R=3.  For `2_31`, it
 finds five models and saturates through R=3.  For `1_32`, evaluating those
 same E7 projection directions gives five labelled models.  The rectified

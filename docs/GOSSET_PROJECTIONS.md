@@ -127,7 +127,7 @@ The public captions use full Euclidean point-cloud symmetry:
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
 - `D2h`, `C3i`, and `D3d` are lower-symmetry full Euclidean point-cloud
   labels used by three 10-orthoplex (`7_11`) projections and the C3i
-  10-demicube (`1_71`) odd-coset companion.
+  10-demicube (`1_71`) variants.
 
 The computed symmetry audit is in
 [`output/gosset_projections/symmetry_analysis.json`](../output/gosset_projections/symmetry_analysis.json).
@@ -302,8 +302,8 @@ patterns.
 The 10-demicube (`1_71`) uses the same D10 demicube constraints as the lower
 demicubes.  Its R=1 sweep already finds 13 labelled even-coset models, and the
 R=2 sweep confirms saturation at the same 13 even-coset signatures.  The C3i
-and H3 matrices also contribute distinct odd-coset companions obtained by
-flipping an odd number of source-coordinate signs.  The projections include B3,
+and H3 matrices also contribute distinct variant-b models obtained from the
+opposite demicube parity coset.  The projections include B3,
 D4, Th, H3, D2h, D3d, and C3i symmetry types, with ball counts from 8 through
 364.
 
