@@ -20,9 +20,11 @@ This page used to contain all embedded viewers.  It is now an index so bookmarke
 | `3_21` | 5 | [3D viewer ->](3_21.md) |
 | `2_31` | 5 | [3D viewer ->](2_31.md) |
 | `1_32` | 5 | [3D viewer ->](1_32.md) |
+| 8-orthoplex (`5_11`) | 18 | [3D viewer ->](5_11.md) |
 | `4_21` | 3 | [3D viewer ->](4_21.md) |
 | `2_41` | 3 | [3D viewer ->](2_41.md) |
 | `1_42` | 3 | [3D viewer ->](1_42.md) |
+| 9-orthoplex (`6_11`) | 8 | [3D viewer ->](6_11.md) |
 | 10-orthoplex (`7_11`) | 9 | [3D viewer ->](7_11.md) |
 | 10-demicube (`1_71`) | 15 | [3D viewer ->](1_71.md) |
 

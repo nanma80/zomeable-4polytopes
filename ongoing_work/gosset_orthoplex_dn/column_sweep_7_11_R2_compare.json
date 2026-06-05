@@ -1,0 +1,22 @@
+﻿{
+    "status":  "compared",
+    "checked_at":  "2026-06-04T23:20:43.3013083-07:00",
+    "r1_status":  "complete",
+    "r2_status":  "complete",
+    "r1_hit_count":  9,
+    "r2_hit_count":  9,
+    "new_hit_count":  0,
+    "missing_hit_count":  0,
+    "new_hits":  [
+
+                 ],
+    "missing_hits":  [
+
+                     ],
+    "r2_elapsed_s":  7082.511399507523,
+    "r2_stats":  {
+                     "leaf":  2092743206,
+                     "gram_hits":  88092,
+                     "rank_hits":  88092
+                 }
+}

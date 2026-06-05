@@ -29,7 +29,7 @@ Related non-4D collection:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
-| **Gosset orthographic projections** | 17 | 87 | [**View projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
+| **Gosset orthographic projections** | 19 | 113 | [**View projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_GOSSET_PROJECTIONS.html) |
 | **A5 simplex family projections** *(all 19 A5 Wythoff polytopes)* | 19 | 57 | [**View projections →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_A5_PROJECTIONS.html) |
 | **Approximate 3D polyhedron zomes** *(not projections; curated RGBY approximations)* | 16 | 16 | [**View approximate zomes →**](https://nanma80.github.io/zomeable-4polytopes/docs/APPROXIMATE_ZOMES.html) |
 

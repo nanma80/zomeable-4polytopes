@@ -1,0 +1,124 @@
+﻿{
+    "checked_at":  "2026-06-04T22:57:38.8745417-07:00",
+    "items":  [
+                  {
+                      "n":  8,
+                      "R":  1,
+                      "status":  "complete",
+                      "elapsed_s":  31.478834867477417,
+                      "hit_count":  11,
+                      "signatures":  [
+                                         "N8_99aeec21b429",
+                                         "N9_7b11b4a0657a",
+                                         "N16_097e9af3e675",
+                                         "N6_a66b9103c2fb",
+                                         "N12_a61cd70e5e9e",
+                                         "N7_6d29d5e3ef9d",
+                                         "N7_6e3cf5e6f391",
+                                         "N13_38bd06cecae8",
+                                         "N14_a9cae79664e2",
+                                         "N13_dbaa9fca32a0",
+                                         "N12_14f4718877cf"
+                                     ],
+                      "stats":  {
+                                    "leaf":  12101671,
+                                    "gram_hits":  9692,
+                                    "rank_hits":  9692
+                                }
+                  },
+                  {
+                      "n":  8,
+                      "R":  2,
+                      "status":  "complete",
+                      "elapsed_s":  675.6630170345306,
+                      "hit_count":  18,
+                      "signatures":  [
+                                         "N8_99aeec21b429",
+                                         "N9_7b11b4a0657a",
+                                         "N16_097e9af3e675",
+                                         "N6_a66b9103c2fb",
+                                         "N12_a61cd70e5e9e",
+                                         "N7_6d29d5e3ef9d",
+                                         "N7_6e3cf5e6f391",
+                                         "N8_df8d08011115",
+                                         "N10_682888a1f835",
+                                         "N8_66f7d78bc22d",
+                                         "N13_38bd06cecae8",
+                                         "N14_a9cae79664e2",
+                                         "N13_dbaa9fca32a0",
+                                         "N12_14f4718877cf",
+                                         "N14_2034f9d8a550",
+                                         "N14_5626cb2a4839",
+                                         "N14_834bdf65e92e",
+                                         "N14_3d0502dd7979"
+                                     ],
+                      "stats":  {
+                                    "leaf":  190459868,
+                                    "gram_hits":  46972,
+                                    "rank_hits":  46972
+                                }
+                  },
+                  {
+                      "n":  9,
+                      "R":  1,
+                      "status":  "complete",
+                      "elapsed_s":  77.71623039245605,
+                      "hit_count":  8,
+                      "signatures":  [
+                                         "N9_7b11b4a0657a",
+                                         "N7_6d29d5e3ef9d",
+                                         "N13_6c038ee1cac8",
+                                         "N6_8189ef2dfe63",
+                                         "N7_6e3cf5e6f391",
+                                         "N13_38bd06cecae8",
+                                         "N15_a0a622aa9481",
+                                         "N13_dbaa9fca32a0"
+                                     ],
+                      "stats":  {
+                                    "leaf":  33820471,
+                                    "gram_hits":  9004,
+                                    "rank_hits":  9004
+                                }
+                  },
+                  {
+                      "n":  9,
+                      "R":  2,
+                      "status":  "complete",
+                      "elapsed_s":  2202.0474224090576,
+                      "hit_count":  8,
+                      "signatures":  [
+                                         "N9_7b11b4a0657a",
+                                         "N7_6d29d5e3ef9d",
+                                         "N13_6c038ee1cac8",
+                                         "N6_8189ef2dfe63",
+                                         "N7_6e3cf5e6f391",
+                                         "N13_38bd06cecae8",
+                                         "N15_a0a622aa9481",
+                                         "N13_dbaa9fca32a0"
+                                     ],
+                      "stats":  {
+                                    "leaf":  648460652,
+                                    "gram_hits":  30108,
+                                    "rank_hits":  30108
+                                }
+                  }
+              ],
+    "n8_R2_new_vs_R1":  [
+                            "N8_df8d08011115",
+                            "N10_682888a1f835",
+                            "N8_66f7d78bc22d",
+                            "N14_2034f9d8a550",
+                            "N14_5626cb2a4839",
+                            "N14_834bdf65e92e",
+                            "N14_3d0502dd7979"
+                        ],
+    "n8_R2_missing_vs_R1":  [
+
+                            ],
+    "n9_R2_new_vs_R1":  [
+
+                        ],
+    "n9_R2_missing_vs_R1":  [
+
+                            ]
+}

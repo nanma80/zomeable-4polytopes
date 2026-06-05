@@ -20,9 +20,11 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | `3_21` | 7 | 5 |
 | `2_31` | 7 | 5 |
 | `1_32` | 7 | 5 |
+| 8-orthoplex (`5_11`) | 8 | 18 (R=2 provisional) |
 | `4_21` | 8 | 3 |
 | `2_41` | 8 | 3 |
 | `1_42` | 8 | 3 |
+| 9-orthoplex (`6_11`) | 9 | 8 |
 | 10-orthoplex (`7_11`) | 10 | 9 |
 | 10-demicube (`1_71`) | 10 | 15 |
 
@@ -85,7 +87,12 @@ constraints and strict orthographicity:
 | 6-orthoplex (`3_11`), R=2 | 64.4 s | 14,183,831 | same 6 models |
 | 7-orthoplex (`4_11`), R=1 | 9.4 s | 4,157,641 | 5 models |
 | 7-orthoplex (`4_11`), R=2 | 190.1 s | 53,115,083 | same 5 models |
+| 8-orthoplex (`5_11`), R=1 | 31.5 s | 12,101,671 | 11 models |
+| 8-orthoplex (`5_11`), R=2 | 11.3 min | 190,459,868 | 18 models; R=3 still running |
+| 9-orthoplex (`6_11`), R=1 | 77.7 s | 33,820,471 | 8 models |
+| 9-orthoplex (`6_11`), R=2 | 36.7 min | 648,460,652 | same 8 models |
 | 10-orthoplex (`7_11`), R=1 | 222.3 s | 90,870,809 | 9 models |
+| 10-orthoplex (`7_11`), R=2 | 1.97 h | 2,092,743,206 | same 9 models |
 | 5-demicube (`1_21`), R=1 | 1.2 s | 433,289 | 3 models |
 | 5-demicube (`1_21`), R=2 | 30.4 s | 3,702,503 | same 3 models |
 | 5-demicube (`1_21`), R=3 | 708.5 s | 48,536,391 | same 3 models |
@@ -125,9 +132,11 @@ The public captions use full Euclidean point-cloud symmetry:
 - `D4-symmetric` means full tetragonal/dihedral symmetry, full order 16.
 - `Th-symmetric` means full tetrahedral symmetry with inversion, full order 24.
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
+- `D5d-symmetric` means full pentagonal antiprismatic/dihedral symmetry, full
+  order 20.
 - `D2h`, `C3i`, and `D3d` are lower-symmetry full Euclidean point-cloud
-  labels used by three 10-orthoplex (`7_11`) projections and the C3i
-  10-demicube (`1_71`) variants.
+  labels used by some D-family projections, including the 8-, 9-, and
+  10-orthoplex pages and the C3i 10-demicube (`1_71`) variants.
 
 The computed symmetry audit is in
 [`output/gosset_projections/symmetry_analysis.json`](../output/gosset_projections/symmetry_analysis.json).
@@ -167,13 +176,15 @@ projection branch.
 
 The regular 5-orthoplex (`2_11`) adds three labelled models: two B3-symmetric
 models with 7 and 9 balls, and one D4-symmetric model with 7 balls.
-The higher orthoplexes `3_11`, `4_11`, and `7_11` use the same D_n root
+The higher orthoplexes `3_11`, `4_11`, `5_11`, `6_11`, and `7_11` use the same D_n root
 edge-direction constraints as the matching n-demicubes: orthoplex edges join
 non-antipodal pairs among `+/-e_i`, so their directions are exactly
 `+/-e_i +/- e_j`.  A dedicated n-orthoplex sweep verifies the projection
 relation directly.  The 6-orthoplex (`3_11`) has six labelled models through
-R=2, the 7-orthoplex (`4_11`) has five labelled models through R=2, and the
-10-orthoplex (`7_11`) has nine labelled models at R=1.  Some visible point
+R=2, the 7-orthoplex (`4_11`) has five labelled models through R=2, the
+8-orthoplex (`5_11`) has 18 labelled models through R=2 with R=3 still running,
+the 9-orthoplex (`6_11`) has eight labelled models through R=2, and the
+10-orthoplex (`7_11`) has nine labelled models through R=2.  Some visible point
 clouds agree with lower-dimensional orthoplex images plus collapsed vertices,
 but the source edge sets differ, so the gallery keeps them as separate labelled
 models.

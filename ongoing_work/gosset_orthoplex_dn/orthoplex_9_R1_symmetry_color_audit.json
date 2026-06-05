@@ -1,0 +1,233 @@
+[
+  {
+    "signature": "N6_8189ef2dfe63",
+    "balls": 6,
+    "visible_edges": 15,
+    "collapsed_edges": 18,
+    "symmetry": "B3",
+    "full_symmetry_order": 48,
+    "rotational_order": 24,
+    "reflection_count": 24,
+    "colors": "B/G",
+    "direction_counts": {
+      "B": 3,
+      "G": 12
+    },
+    "physical_scale": "1*phi^3",
+    "standard_struts": {
+      "G2": 12
+    },
+    "doubled_standard_struts": {
+      "B2": 3
+    },
+    "sweep_direction_colors": {}
+  },
+  {
+    "signature": "N7_6d29d5e3ef9d",
+    "balls": 7,
+    "visible_edges": 21,
+    "collapsed_edges": 16,
+    "symmetry": "D4",
+    "full_symmetry_order": 16,
+    "rotational_order": 8,
+    "reflection_count": 8,
+    "colors": "B/Y/G",
+    "direction_counts": {
+      "B": 7,
+      "G": 6,
+      "Y": 8
+    },
+    "physical_scale": "2*phi^2",
+    "standard_struts": {
+      "B2": 2,
+      "G2": 4
+    },
+    "doubled_standard_struts": {
+      "B2": 5,
+      "G2": 2,
+      "Y2": 8
+    },
+    "sweep_direction_colors": {
+      "B": 7,
+      "G": 6,
+      "Y": 8
+    }
+  },
+  {
+    "signature": "N7_6e3cf5e6f391",
+    "balls": 7,
+    "visible_edges": 21,
+    "collapsed_edges": 18,
+    "symmetry": "B3",
+    "full_symmetry_order": 48,
+    "rotational_order": 24,
+    "reflection_count": 24,
+    "colors": "B/G",
+    "direction_counts": {
+      "B": 9,
+      "G": 12
+    },
+    "physical_scale": "1*phi^3",
+    "standard_struts": {
+      "B2": 6,
+      "G2": 12
+    },
+    "doubled_standard_struts": {
+      "B2": 3
+    },
+    "sweep_direction_colors": {}
+  },
+  {
+    "signature": "N9_7b11b4a0657a",
+    "balls": 9,
+    "visible_edges": 36,
+    "collapsed_edges": 8,
+    "symmetry": "B3",
+    "full_symmetry_order": 48,
+    "rotational_order": 24,
+    "reflection_count": 24,
+    "colors": "B/Y/G",
+    "direction_counts": {
+      "B": 12,
+      "G": 12,
+      "Y": 12
+    },
+    "physical_scale": "1*phi^2",
+    "standard_struts": {
+      "B2": 12,
+      "G2": 12,
+      "Y2": 8
+    },
+    "doubled_standard_struts": {
+      "Y2": 4
+    },
+    "sweep_direction_colors": {
+      "B": 12,
+      "G": 12,
+      "Y": 12
+    }
+  },
+  {
+    "signature": "N13_38bd06cecae8",
+    "balls": 13,
+    "visible_edges": 72,
+    "collapsed_edges": 12,
+    "symmetry": "H3",
+    "full_symmetry_order": 120,
+    "rotational_order": 60,
+    "reflection_count": 60,
+    "colors": "B/R",
+    "direction_counts": {
+      "B": 60,
+      "R": 12
+    },
+    "physical_scale": "1*phi^3",
+    "standard_struts": {
+      "B2": 30,
+      "B3": 30,
+      "R2": 12
+    },
+    "doubled_standard_struts": {},
+    "sweep_direction_colors": {
+      "B": 12
+    }
+  },
+  {
+    "signature": "N13_6c038ee1cac8",
+    "balls": 13,
+    "visible_edges": 74,
+    "collapsed_edges": 4,
+    "symmetry": "D2h",
+    "full_symmetry_order": 8,
+    "rotational_order": 4,
+    "reflection_count": 4,
+    "colors": "B/Y/R/G",
+    "direction_counts": {
+      "B": 30,
+      "G": 8,
+      "R": 12,
+      "Y": 24
+    },
+    "physical_scale": "2*phi^4",
+    "standard_struts": {
+      "B3": 2,
+      "B4": 2,
+      "G3": 4,
+      "G4": 4
+    },
+    "doubled_standard_struts": {
+      "B3": 13,
+      "B4": 13,
+      "R2": 4,
+      "R3": 4,
+      "R4": 4,
+      "Y3": 12,
+      "Y4": 12
+    },
+    "sweep_direction_colors": {
+      "B": 14,
+      "G": 8,
+      "Y": 16
+    }
+  },
+  {
+    "signature": "N13_dbaa9fca32a0",
+    "balls": 13,
+    "visible_edges": 72,
+    "collapsed_edges": 12,
+    "symmetry": "Th",
+    "full_symmetry_order": 24,
+    "rotational_order": 12,
+    "reflection_count": 12,
+    "colors": "B/Y/G",
+    "direction_counts": {
+      "B": 36,
+      "G": 24,
+      "Y": 12
+    },
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 6,
+      "B3": 24,
+      "B4": 6,
+      "G3": 24,
+      "Y3": 12
+    },
+    "doubled_standard_struts": {},
+    "sweep_direction_colors": {
+      "B": 12
+    }
+  },
+  {
+    "signature": "N15_a0a622aa9481",
+    "balls": 15,
+    "visible_edges": 99,
+    "collapsed_edges": 2,
+    "symmetry": "D3d",
+    "full_symmetry_order": 12,
+    "rotational_order": 6,
+    "reflection_count": 6,
+    "colors": "B/Y/G",
+    "direction_counts": {
+      "B": 54,
+      "G": 30,
+      "Y": 15
+    },
+    "physical_scale": "1*phi^4",
+    "standard_struts": {
+      "B2": 12,
+      "B3": 30,
+      "B4": 12,
+      "G3": 30,
+      "Y3": 14
+    },
+    "doubled_standard_struts": {
+      "Y3": 1
+    },
+    "sweep_direction_colors": {
+      "B": 10,
+      "G": 2,
+      "Y": 4
+    }
+  }
+]

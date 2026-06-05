@@ -1,0 +1,46 @@
+[
+  {
+    "signature": "N14_3d0502dd7979",
+    "classified_symmetry": "D5d",
+    "full_order": 20,
+    "rotational_subgroup": "D5",
+    "rotational_order": 10,
+    "determinant_positive": 10,
+    "determinant_negative": 10,
+    "element_structure": "E + 4 C5 rotations + 5 perpendicular C2 rotations + inversion + 4 S10 improper rotations + 5 sigma_d mirror planes",
+    "contains_inversion": true,
+    "horizontal_mirror": false,
+    "principal_axis": [
+      0.0,
+      0.850651,
+      -0.525731
+    ],
+    "orbit_sizes": [
+      10,
+      2,
+      2
+    ]
+  },
+  {
+    "signature": "N14_834bdf65e92e",
+    "classified_symmetry": "D5d",
+    "full_order": 20,
+    "rotational_subgroup": "D5",
+    "rotational_order": 10,
+    "determinant_positive": 10,
+    "determinant_negative": 10,
+    "element_structure": "E + 4 C5 rotations + 5 perpendicular C2 rotations + inversion + 4 S10 improper rotations + 5 sigma_d mirror planes",
+    "contains_inversion": true,
+    "horizontal_mirror": false,
+    "principal_axis": [
+      0.525731,
+      0.0,
+      0.850651
+    ],
+    "orbit_sizes": [
+      10,
+      2,
+      2
+    ]
+  }
+]
