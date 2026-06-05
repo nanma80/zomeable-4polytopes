@@ -594,7 +594,21 @@
       "symmetry": "C3i"
     },
     {
+      "file": "1_71/1_71_C3i_184_balls_odd.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 184,
+      "symmetry": "C3i"
+    },
+    {
       "file": "1_71/1_71_H3_364_balls.vZome",
+      "polytope": "1_71",
+      "common_name": "10-demicube",
+      "balls": 364,
+      "symmetry": "H3"
+    },
+    {
+      "file": "1_71/1_71_H3_364_balls_odd.vZome",
       "polytope": "1_71",
       "common_name": "10-demicube",
       "balls": 364,

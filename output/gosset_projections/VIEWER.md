@@ -24,6 +24,6 @@ This page used to contain all embedded viewers.  It is now an index so bookmarke
 | `2_41` | 3 | [3D viewer ->](2_41.md) |
 | `1_42` | 3 | [3D viewer ->](1_42.md) |
 | 10-orthoplex (`7_11`) | 9 | [3D viewer ->](7_11.md) |
-| 10-demicube (`1_71`) | 13 | [3D viewer ->](1_71.md) |
+| 10-demicube (`1_71`) | 15 | [3D viewer ->](1_71.md) |
 
 See [`README.md`](README.md) for the file list and [`../../docs/GOSSET_PROJECTIONS.md`](../../docs/GOSSET_PROJECTIONS.md) for methodology.

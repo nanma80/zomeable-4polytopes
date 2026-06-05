@@ -52,7 +52,9 @@ Open the viewer index here:
 | `1_71/1_71_D2h_144_balls.vZome` | 10-demicube (`1_71`) | 144 | D2h-symmetric |
 | `1_71/1_71_D3d_161_balls.vZome` | 10-demicube (`1_71`) | 161 | D3d-symmetric |
 | `1_71/1_71_C3i_184_balls.vZome` | 10-demicube (`1_71`) | 184 | C3i-symmetric |
+| `1_71/1_71_C3i_184_balls_odd.vZome` | 10-demicube (`1_71`) | 184 | C3i-symmetric, odd-coset companion |
 | `1_71/1_71_H3_364_balls.vZome` | 10-demicube (`1_71`) | 364 | H3-symmetric |
+| `1_71/1_71_H3_364_balls_odd.vZome` | 10-demicube (`1_71`) | 364 | H3-symmetric, odd-coset companion |
 | `rectified_5_orthoplex/rectified_5_orthoplex_B3_19_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 19 | B3-symmetric |
 | `rectified_5_orthoplex/rectified_5_orthoplex_D4_21_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 21 | D4-symmetric |
 | `rectified_5_orthoplex/rectified_5_orthoplex_B3_26_balls.vZome` | Rectified 5-orthoplex (`t1 2_11`) | 26 | B3-symmetric |
@@ -109,7 +111,8 @@ The symmetry labels are full Euclidean point-cloud symmetries: B3 means full
 octahedral symmetry (order 48), D4 means full tetragonal/dihedral symmetry
 (order 16), Th means tetrahedral symmetry with inversion (order 24), and H3
 means full icosahedral symmetry (order 120).  Lower-symmetry labels D2h, C3i,
-and D3d are used for three 10-orthoplex projections.  See
+and D3d are used for three 10-orthoplex projections and the C3i 10-demicube
+odd-coset companion.  See
 [`symmetry_analysis.json`](symmetry_analysis.json).
 
 ## Provenance
@@ -120,7 +123,7 @@ family, and the R=3 sweep found no additional distinct models.  For the
 5-orthoplex (`2_11`) and 5-demicube (`1_21`), R=1, R=2, and R=3 all give the
 same three models for each source.  For the 6-orthoplex (`3_11`) and
 7-orthoplex (`4_11`), R=1 and R=2 give the same six and five models,
-respectively.  For the 10-orthoplex (`7_11`), R=1 gives nine models.  For the 10-demicube (`1_71`), R=1 and R=2 both give the same 13 models.  For the
+respectively.  For the 10-orthoplex (`7_11`), R=1 gives nine models.  For the 10-demicube (`1_71`), R=1 and R=2 both give the same 13 even-coset models, plus distinct C3i and H3 odd-coset companions.  For the
 6-demicube (`1_31`), R=1 gives five models, while R=2 and R=3 give the same
 nine models.  For the 7-demicube (`1_41`), R=1, R=2, and R=3 all give the same
 six models.  For the E6 root polytope (`1_22`), R=1, R=2, and R=3 all give the

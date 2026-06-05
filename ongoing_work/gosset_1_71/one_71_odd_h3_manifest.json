@@ -1,0 +1,41 @@
+{
+  "signature": "N364_8b6b7008722e_odd",
+  "base_signature": "N364_8b6b7008722e",
+  "parity": "odd",
+  "file": "1_71/1_71_H3_364_balls_odd.vZome",
+  "polytope": "1_71",
+  "common_name": "10-demicube",
+  "balls": 364,
+  "visible_edges": 9270,
+  "source_edges": 11520,
+  "collapsed_edges": 0,
+  "physical_scale": "1*phi^4",
+  "standard_struts": {
+    "B2": 1740,
+    "B3": 2400,
+    "B4": 1770,
+    "G3": 3360
+  },
+  "doubled_standard_struts": {},
+  "direction_counts": {
+    "B": 5910,
+    "G": 3360
+  },
+  "symmetry": "H3",
+  "symmetry_classification": "Ih / full icosahedral",
+  "full_symmetry_order": 120,
+  "rotational_order": 60,
+  "reflection_count": 60,
+  "view_width": 234.89356881873897,
+  "view_distance": 234.89356881873897,
+  "view_look_direction": [
+    -0.45058614322726115,
+    -0.35045588917675863,
+    -0.8210680832141203
+  ],
+  "view_up_direction": [
+    -0.16860353188124916,
+    0.9365792383676501,
+    -0.3072331025391651
+  ]
+}

@@ -24,7 +24,7 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | `2_41` | 8 | 3 |
 | `1_42` | 8 | 3 |
 | 10-orthoplex (`7_11`) | 10 | 9 |
-| 10-demicube (`1_71`) | 10 | 13 |
+| 10-demicube (`1_71`) | 10 | 15 |
 
 ## Prior work
 
@@ -95,8 +95,8 @@ constraints and strict orthographicity:
 | 7-demicube (`1_41`), R=1 | 12.8 s | 4,157,641 | 6 models |
 | 7-demicube (`1_41`), R=2 | 200.3 s | 53,115,083 | same 6 models |
 | 7-demicube (`1_41`), R=3 | 6.45 h | 2,914,645,635 | same 6 models |
-| 10-demicube (`1_71`), R=1 | 13.1 min | 90,870,809 | 13 models |
-| 10-demicube (`1_71`), R=2 | 2.46 h | 2,092,743,206 | same 13 models |
+| 10-demicube (`1_71`), R=1 | 13.1 min | 90,870,809 | 13 even-coset models |
+| 10-demicube (`1_71`), R=2 | 2.46 h | 2,092,743,206 | same 13 even-coset models |
 | Rectified 5-orthoplex (`t1 2_11`), R=1 | 1.3 s | 433,289 | 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=2 | 32.7 s | 3,702,503 | same 3 models |
 | Rectified 5-orthoplex (`t1 2_11`), R=3 | 678.4 s | 48,536,391 | same 3 models |
@@ -126,7 +126,8 @@ The public captions use full Euclidean point-cloud symmetry:
 - `Th-symmetric` means full tetrahedral symmetry with inversion, full order 24.
 - `H3-symmetric` means full icosahedral symmetry, full order 120.
 - `D2h`, `C3i`, and `D3d` are lower-symmetry full Euclidean point-cloud
-  labels used by three 10-orthoplex (`7_11`) projections.
+  labels used by three 10-orthoplex (`7_11`) projections and the C3i
+  10-demicube (`1_71`) odd-coset companion.
 
 The computed symmetry audit is in
 [`output/gosset_projections/symmetry_analysis.json`](../output/gosset_projections/symmetry_analysis.json).
@@ -299,8 +300,10 @@ patterns.
 
 
 The 10-demicube (`1_71`) uses the same D10 demicube constraints as the lower
-demicubes.  Its R=1 sweep already finds 13 labelled models, and the R=2 sweep
-confirms saturation at the same 13 signatures.  The projections include B3,
+demicubes.  Its R=1 sweep already finds 13 labelled even-coset models, and the
+R=2 sweep confirms saturation at the same 13 even-coset signatures.  The C3i
+and H3 matrices also contribute distinct odd-coset companions obtained by
+flipping an odd number of source-coordinate signs.  The projections include B3,
 D4, Th, H3, D2h, D3d, and C3i symmetry types, with ball counts from 8 through
 364.
 
