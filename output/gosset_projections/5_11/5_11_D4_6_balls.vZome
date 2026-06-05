@@ -32,7 +32,7 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="38.772656" far="155.090623" near="14.539746" parallel="false" stereoAngle="0.0" width="38.772656">
+    <ViewModel distance="77.545312" far="310.181247" near="53.312402" parallel="false" stereoAngle="0.0" width="77.545312">
       <LookAtPoint x="0.000000" y="0.000000" z="0.000000"/>
       <UpDirection x="0.0" y="1.0" z="0.0"/>
       <LookDirection x="0.0" y="0.0" z="-1.0"/>

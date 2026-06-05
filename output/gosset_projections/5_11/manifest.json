@@ -25,7 +25,7 @@
     "full_symmetry_order": 48,
     "rotational_order": 24,
     "reflection_count": 24,
-    "view_width": 54.83281572999748,
+    "view_width": 109.66563145999496,
     "view_look_direction": [
       0,
       0,
@@ -36,7 +36,7 @@
       1,
       0
     ],
-    "view_distance": 54.83281572999748,
+    "view_distance": 109.66563145999496,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -72,7 +72,7 @@
     "full_symmetry_order": 48,
     "rotational_order": 24,
     "reflection_count": 24,
-    "view_width": 47.48661138320878,
+    "view_width": 94.97322276641756,
     "view_look_direction": [
       0,
       0,
@@ -83,7 +83,7 @@
       1,
       0
     ],
-    "view_distance": 47.48661138320878,
+    "view_distance": 94.97322276641756,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -118,7 +118,7 @@
     "full_symmetry_order": 48,
     "rotational_order": 24,
     "reflection_count": 24,
-    "view_width": 47.48661138320878,
+    "view_width": 94.97322276641756,
     "view_look_direction": [
       0,
       0,
@@ -129,7 +129,7 @@
       1,
       0
     ],
-    "view_distance": 47.48661138320878,
+    "view_distance": 94.97322276641756,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -166,7 +166,7 @@
     "full_symmetry_order": 8,
     "rotational_order": 4,
     "reflection_count": 4,
-    "view_width": 67.15620984927446,
+    "view_width": 134.31241969854892,
     "view_look_direction": [
       0,
       0,
@@ -177,7 +177,7 @@
       1,
       0
     ],
-    "view_distance": 67.15620984927446,
+    "view_distance": 134.31241969854892,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -216,7 +216,7 @@
     "full_symmetry_order": 8,
     "rotational_order": 4,
     "reflection_count": 4,
-    "view_width": 116.13776741499453,
+    "view_width": 232.27553482998906,
     "view_look_direction": [
       0,
       0,
@@ -227,7 +227,7 @@
       1,
       0
     ],
-    "view_distance": 116.13776741499453,
+    "view_distance": 232.27553482998906,
     "variant": "a",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -267,7 +267,7 @@
     "full_symmetry_order": 8,
     "rotational_order": 4,
     "reflection_count": 4,
-    "view_width": 101.5081308081255,
+    "view_width": 203.016261616251,
     "view_look_direction": [
       0,
       0,
@@ -278,7 +278,7 @@
       1,
       0
     ],
-    "view_distance": 101.5081308081255,
+    "view_distance": 203.016261616251,
     "variant": "b",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -314,7 +314,7 @@
     "full_symmetry_order": 12,
     "rotational_order": 6,
     "reflection_count": 6,
-    "view_width": 45.46496899377479,
+    "view_width": 90.92993798754958,
     "view_look_direction": [
       0,
       0,
@@ -325,7 +325,7 @@
       1,
       0
     ],
-    "view_distance": 45.46496899377479,
+    "view_distance": 90.92993798754958,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -364,7 +364,7 @@
     "full_symmetry_order": 12,
     "rotational_order": 6,
     "reflection_count": 6,
-    "view_width": 94.95216186395956,
+    "view_width": 189.90432372791912,
     "view_look_direction": [
       0,
       0,
@@ -375,7 +375,7 @@
       1,
       0
     ],
-    "view_distance": 94.95216186395956,
+    "view_distance": 189.90432372791912,
     "variant": "a",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -415,7 +415,7 @@
     "full_symmetry_order": 12,
     "rotational_order": 6,
     "reflection_count": 6,
-    "view_width": 99.05520250160785,
+    "view_width": 198.1104050032157,
     "view_look_direction": [
       0,
       0,
@@ -426,7 +426,7 @@
       1,
       0
     ],
-    "view_distance": 99.05520250160785,
+    "view_distance": 198.1104050032157,
     "variant": "b",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -465,7 +465,7 @@
     "full_symmetry_order": 12,
     "rotational_order": 6,
     "reflection_count": 6,
-    "view_width": 76.83495122858947,
+    "view_width": 153.66990245717895,
     "view_look_direction": [
       0,
       0,
@@ -476,7 +476,7 @@
       1,
       0
     ],
-    "view_distance": 76.83495122858947,
+    "view_distance": 153.66990245717895,
     "variant": "c",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -516,7 +516,7 @@
     "full_symmetry_order": 12,
     "rotational_order": 6,
     "reflection_count": 6,
-    "view_width": 100.57825692019387,
+    "view_width": 201.15651384038773,
     "view_look_direction": [
       0,
       0,
@@ -527,7 +527,7 @@
       1,
       0
     ],
-    "view_distance": 100.57825692019387,
+    "view_distance": 201.15651384038773,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -562,7 +562,7 @@
     "full_symmetry_order": 16,
     "rotational_order": 8,
     "reflection_count": 8,
-    "view_width": 38.7726558342336,
+    "view_width": 77.5453116684672,
     "view_look_direction": [
       0,
       0,
@@ -573,7 +573,7 @@
       1,
       0
     ],
-    "view_distance": 38.7726558342336,
+    "view_distance": 77.5453116684672,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -610,7 +610,7 @@
     "full_symmetry_order": 16,
     "rotational_order": 8,
     "reflection_count": 8,
-    "view_width": 77.5453116684672,
+    "view_width": 155.0906233369344,
     "view_look_direction": [
       0,
       0,
@@ -621,7 +621,7 @@
       1,
       0
     ],
-    "view_distance": 77.5453116684672,
+    "view_distance": 155.0906233369344,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -658,7 +658,7 @@
     "full_symmetry_order": 16,
     "rotational_order": 8,
     "reflection_count": 8,
-    "view_width": 61.30495168499706,
+    "view_width": 122.60990336999411,
     "view_look_direction": [
       0,
       0,
@@ -669,7 +669,7 @@
       1,
       0
     ],
-    "view_distance": 61.30495168499706,
+    "view_distance": 122.60990336999411,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -708,7 +708,7 @@
     "full_symmetry_order": 20,
     "rotational_order": 10,
     "reflection_count": 10,
-    "view_width": 110.45358048800149,
+    "view_width": 220.90716097600298,
     "view_look_direction": [
       0,
       0,
@@ -719,7 +719,7 @@
       1,
       0
     ],
-    "view_distance": 110.45358048800149,
+    "view_distance": 220.90716097600298,
     "variant": "a",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -759,7 +759,7 @@
     "full_symmetry_order": 20,
     "rotational_order": 10,
     "reflection_count": 10,
-    "view_width": 81.41162535323005,
+    "view_width": 162.8232507064601,
     "view_look_direction": [
       0,
       0,
@@ -770,7 +770,7 @@
       1,
       0
     ],
-    "view_distance": 81.41162535323005,
+    "view_distance": 162.8232507064601,
     "variant": "b",
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
@@ -805,7 +805,7 @@
     "full_symmetry_order": 120,
     "rotational_order": 60,
     "reflection_count": 60,
-    "view_width": 52.1491067068255,
+    "view_width": 104.298213413651,
     "view_look_direction": [
       0,
       0,
@@ -816,7 +816,7 @@
       1,
       0
     ],
-    "view_distance": 52.1491067068255,
+    "view_distance": 104.298213413651,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
@@ -853,7 +853,7 @@
     "full_symmetry_order": 24,
     "rotational_order": 12,
     "reflection_count": 12,
-    "view_width": 76.83495122858947,
+    "view_width": 153.66990245717895,
     "view_look_direction": [
       0,
       0,
@@ -864,7 +864,7 @@
       1,
       0
     ],
-    "view_distance": 76.83495122858947,
+    "view_distance": 153.66990245717895,
     "provisional": true,
     "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
     "view_center": [
