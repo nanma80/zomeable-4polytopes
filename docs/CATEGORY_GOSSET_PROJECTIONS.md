@@ -19,13 +19,13 @@ Gosset-family and adjacent D/E root polytopes.
 | `3_21` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
 | `2_31` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
 | `1_32` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
-| 8-orthoplex (`5_11`) | D8 | 8 | 18 (R=2 provisional) | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) |
+| 8-orthoplex (`5_11`) | D8 | 8 | 18 (R=2 provisional) | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11_page2.html) |
 | `4_21` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 | `2_41` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_41.html) |
 | `1_42` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_42.html) |
-| 9-orthoplex (`6_11`) | D9 | 9 | 8 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/6_11.html) |
-| 10-orthoplex (`7_11`) | D10 | 10 | 9 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/7_11.html) |
-| 10-demicube (`1_71`) | D10 | 10 | 15 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_71.html) |
+| 9-orthoplex (`6_11`) | D9 | 9 | 8 | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/6_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/6_11_page2.html) |
+| 10-orthoplex (`7_11`) | D10 | 10 | 9 | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/7_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/7_11_page2.html) |
+| 10-demicube (`1_71`) | D10 | 10 | 15 | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_71.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_71_page2.html) |
 
 All 113 labelled models are available in this folder tree:
 
