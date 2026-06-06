@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <vzome:vZome xmlns:vzome="http://xml.vzome.com/vZome/4.0.0/" buildNumber="111" coreVersion="7.0" field="golden" version="7.1">
   <EditHistory editNumber="50" lastStickyEdit="-1">
-    <ShowPoint point="-2/5 -2/5 -2 -2 -2 -2"/>
-    <ShowPoint point="14/5 14/5 -2 -2 -2 -2"/>
-    <ShowPoint point="-14/5 -14/5 -2 -2 -2 -2"/>
-    <ShowPoint point="2/5 2/5 -2 -2 -2 -2"/>
-    <ShowPoint point="-2/5 -2/5 2 2 -2 -2"/>
-    <ShowPoint point="14/5 14/5 2 2 -2 -2"/>
-    <ShowPoint point="-14/5 -14/5 2 2 -2 -2"/>
-    <ShowPoint point="2/5 2/5 2 2 -2 -2"/>
-    <ShowPoint point="-2/5 -2/5 -2 -2 2 2"/>
-    <ShowPoint point="14/5 14/5 -2 -2 2 2"/>
-    <ShowPoint point="-14/5 -14/5 -2 -2 2 2"/>
-    <ShowPoint point="2/5 2/5 -2 -2 2 2"/>
-    <ShowPoint point="-2/5 -2/5 2 2 2 2"/>
-    <ShowPoint point="14/5 14/5 2 2 2 2"/>
-    <ShowPoint point="-14/5 -14/5 2 2 2 2"/>
-    <ShowPoint point="2/5 2/5 2 2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 -2 -2" end="14/5 14/5 -2 -2 -2 -2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 -2 -2" end="-14/5 -14/5 -2 -2 -2 -2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 -2 -2" end="-2/5 -2/5 2 2 -2 -2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 -2 -2" end="-2/5 -2/5 -2 -2 2 2"/>
-    <JoinPointPair start="14/5 14/5 -2 -2 -2 -2" end="2/5 2/5 -2 -2 -2 -2"/>
-    <JoinPointPair start="14/5 14/5 -2 -2 -2 -2" end="14/5 14/5 2 2 -2 -2"/>
-    <JoinPointPair start="14/5 14/5 -2 -2 -2 -2" end="14/5 14/5 -2 -2 2 2"/>
-    <JoinPointPair start="-14/5 -14/5 -2 -2 -2 -2" end="2/5 2/5 -2 -2 -2 -2"/>
-    <JoinPointPair start="-14/5 -14/5 -2 -2 -2 -2" end="-14/5 -14/5 2 2 -2 -2"/>
-    <JoinPointPair start="-14/5 -14/5 -2 -2 -2 -2" end="-14/5 -14/5 -2 -2 2 2"/>
-    <JoinPointPair start="2/5 2/5 -2 -2 -2 -2" end="2/5 2/5 2 2 -2 -2"/>
-    <JoinPointPair start="2/5 2/5 -2 -2 -2 -2" end="2/5 2/5 -2 -2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 2 2 -2 -2" end="14/5 14/5 2 2 -2 -2"/>
-    <JoinPointPair start="-2/5 -2/5 2 2 -2 -2" end="-14/5 -14/5 2 2 -2 -2"/>
-    <JoinPointPair start="-2/5 -2/5 2 2 -2 -2" end="-2/5 -2/5 2 2 2 2"/>
-    <JoinPointPair start="14/5 14/5 2 2 -2 -2" end="2/5 2/5 2 2 -2 -2"/>
-    <JoinPointPair start="14/5 14/5 2 2 -2 -2" end="14/5 14/5 2 2 2 2"/>
-    <JoinPointPair start="-14/5 -14/5 2 2 -2 -2" end="2/5 2/5 2 2 -2 -2"/>
-    <JoinPointPair start="-14/5 -14/5 2 2 -2 -2" end="-14/5 -14/5 2 2 2 2"/>
-    <JoinPointPair start="2/5 2/5 2 2 -2 -2" end="2/5 2/5 2 2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 2 2" end="14/5 14/5 -2 -2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 2 2" end="-14/5 -14/5 -2 -2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 -2 -2 2 2" end="-2/5 -2/5 2 2 2 2"/>
-    <JoinPointPair start="14/5 14/5 -2 -2 2 2" end="2/5 2/5 -2 -2 2 2"/>
-    <JoinPointPair start="14/5 14/5 -2 -2 2 2" end="14/5 14/5 2 2 2 2"/>
-    <JoinPointPair start="-14/5 -14/5 -2 -2 2 2" end="2/5 2/5 -2 -2 2 2"/>
-    <JoinPointPair start="-14/5 -14/5 -2 -2 2 2" end="-14/5 -14/5 2 2 2 2"/>
-    <JoinPointPair start="2/5 2/5 -2 -2 2 2" end="2/5 2/5 2 2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 2 2 2 2" end="14/5 14/5 2 2 2 2"/>
-    <JoinPointPair start="-2/5 -2/5 2 2 2 2" end="-14/5 -14/5 2 2 2 2"/>
-    <JoinPointPair start="14/5 14/5 2 2 2 2" end="2/5 2/5 2 2 2 2"/>
-    <JoinPointPair start="-14/5 -14/5 2 2 2 2" end="2/5 2/5 2 2 2 2"/>
+    <ShowPoint point="-2 -2 -10 -10 -10 -10"/>
+    <ShowPoint point="14 14 -10 -10 -10 -10"/>
+    <ShowPoint point="-14 -14 -10 -10 -10 -10"/>
+    <ShowPoint point="2 2 -10 -10 -10 -10"/>
+    <ShowPoint point="-2 -2 10 10 -10 -10"/>
+    <ShowPoint point="14 14 10 10 -10 -10"/>
+    <ShowPoint point="-14 -14 10 10 -10 -10"/>
+    <ShowPoint point="2 2 10 10 -10 -10"/>
+    <ShowPoint point="-2 -2 -10 -10 10 10"/>
+    <ShowPoint point="14 14 -10 -10 10 10"/>
+    <ShowPoint point="-14 -14 -10 -10 10 10"/>
+    <ShowPoint point="2 2 -10 -10 10 10"/>
+    <ShowPoint point="-2 -2 10 10 10 10"/>
+    <ShowPoint point="14 14 10 10 10 10"/>
+    <ShowPoint point="-14 -14 10 10 10 10"/>
+    <ShowPoint point="2 2 10 10 10 10"/>
+    <JoinPointPair start="-2 -2 -10 -10 -10 -10" end="14 14 -10 -10 -10 -10"/>
+    <JoinPointPair start="-2 -2 -10 -10 -10 -10" end="-14 -14 -10 -10 -10 -10"/>
+    <JoinPointPair start="-2 -2 -10 -10 -10 -10" end="-2 -2 10 10 -10 -10"/>
+    <JoinPointPair start="-2 -2 -10 -10 -10 -10" end="-2 -2 -10 -10 10 10"/>
+    <JoinPointPair start="14 14 -10 -10 -10 -10" end="2 2 -10 -10 -10 -10"/>
+    <JoinPointPair start="14 14 -10 -10 -10 -10" end="14 14 10 10 -10 -10"/>
+    <JoinPointPair start="14 14 -10 -10 -10 -10" end="14 14 -10 -10 10 10"/>
+    <JoinPointPair start="-14 -14 -10 -10 -10 -10" end="2 2 -10 -10 -10 -10"/>
+    <JoinPointPair start="-14 -14 -10 -10 -10 -10" end="-14 -14 10 10 -10 -10"/>
+    <JoinPointPair start="-14 -14 -10 -10 -10 -10" end="-14 -14 -10 -10 10 10"/>
+    <JoinPointPair start="2 2 -10 -10 -10 -10" end="2 2 10 10 -10 -10"/>
+    <JoinPointPair start="2 2 -10 -10 -10 -10" end="2 2 -10 -10 10 10"/>
+    <JoinPointPair start="-2 -2 10 10 -10 -10" end="14 14 10 10 -10 -10"/>
+    <JoinPointPair start="-2 -2 10 10 -10 -10" end="-14 -14 10 10 -10 -10"/>
+    <JoinPointPair start="-2 -2 10 10 -10 -10" end="-2 -2 10 10 10 10"/>
+    <JoinPointPair start="14 14 10 10 -10 -10" end="2 2 10 10 -10 -10"/>
+    <JoinPointPair start="14 14 10 10 -10 -10" end="14 14 10 10 10 10"/>
+    <JoinPointPair start="-14 -14 10 10 -10 -10" end="2 2 10 10 -10 -10"/>
+    <JoinPointPair start="-14 -14 10 10 -10 -10" end="-14 -14 10 10 10 10"/>
+    <JoinPointPair start="2 2 10 10 -10 -10" end="2 2 10 10 10 10"/>
+    <JoinPointPair start="-2 -2 -10 -10 10 10" end="14 14 -10 -10 10 10"/>
+    <JoinPointPair start="-2 -2 -10 -10 10 10" end="-14 -14 -10 -10 10 10"/>
+    <JoinPointPair start="-2 -2 -10 -10 10 10" end="-2 -2 10 10 10 10"/>
+    <JoinPointPair start="14 14 -10 -10 10 10" end="2 2 -10 -10 10 10"/>
+    <JoinPointPair start="14 14 -10 -10 10 10" end="14 14 10 10 10 10"/>
+    <JoinPointPair start="-14 -14 -10 -10 10 10" end="2 2 -10 -10 10 10"/>
+    <JoinPointPair start="-14 -14 -10 -10 10 10" end="-14 -14 10 10 10 10"/>
+    <JoinPointPair start="2 2 -10 -10 10 10" end="2 2 10 10 10 10"/>
+    <JoinPointPair start="-2 -2 10 10 10 10" end="14 14 10 10 10 10"/>
+    <JoinPointPair start="-2 -2 10 10 10 10" end="-14 -14 10 10 10 10"/>
+    <JoinPointPair start="14 14 10 10 10 10" end="2 2 10 10 10 10"/>
+    <JoinPointPair start="-14 -14 10 10 10 10" end="2 2 10 10 10 10"/>
     <SelectManifestation point="0 0 0 0 0 0"/>
     <Delete/>
   </EditHistory>
@@ -59,10 +59,10 @@
     <directionalLight color="30,30,30" x="0.0" y="0.0" z="-1.0"/>
   </sceneModel>
   <Viewing>
-    <ViewModel distance="60.0" far="200.0" near="0.5" parallel="false" stereoAngle="0.0" width="60.0">
+    <ViewModel distance="350.0" far="500.0" near="0.5" parallel="false" stereoAngle="0.0" width="350.0">
       <LookAtPoint x="0.0" y="0.0" z="0.0"/>
-      <UpDirection x="0.0" y="1.0" z="0.0"/>
-      <LookDirection x="0.0" y="0.0" z="-1.0"/>
+      <UpDirection x="-0.202" y="0.923" z="-0.280"/>
+      <LookDirection x="-0.550" y="-0.350" z="-0.760"/>
     </ViewModel>
   </Viewing>
   <SymmetrySystem name="icosahedral" renderingStyle="solid connectors">

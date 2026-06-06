@@ -11,10 +11,12 @@ via the **strut-quadruple iso-frame enumerator**
 vectors (s₁, s₂, s₃, s₄) directly in ℤ[φ]³ — each as
 (natural ℤ[φ]³ generator) × (positive ℤ[φ] scalar) — and verifies the
 orthographic isotropy condition `M Mᵀ = c·I₃` numerically. At scalar
-bound = 12 the enumerator finds exactly **15 distinct shape fingerprints**:
-1 cube + 1 rhombic dodec + 1 phi-oblique + 12 inf-family members (12 distinct
-(a:b) ratios). No additional sporadic types appear, confirming the
-taxonomy below.
+bound = 12 the enumerator finds **15 non-face-first fingerprints**:
+1 cube + 1 rhombic dodec + 1 phi-oblique + 12 nondegenerate inf-family
+members (12 distinct (a:b) ratios). The collapsed face-first B/G cuboid
+`(a,b)=(1,1)` is also part of the support-2 family and is now emitted
+explicitly as a notable named sample. No additional sporadic types appear,
+confirming the taxonomy below.
 
 This document gives the complete, rigorous classification.
 
@@ -44,7 +46,7 @@ A 4D unit kernel direction n falls into one of four cases by support
 | Support of n | Zometool-aligned? | vZome-embeddable? | Family structure |
 |:---:|:---|:---|:---|
 | 1 | Yes | Yes | **Cell-first sporadic**: the cube (V=8). Also the `b → 0` degenerate limit of the support-2 inf-family (4 of the 16 balls collapse pairwise onto the other 4). |
-| 2 | Always | Iff a²+b² is a square in ℤ[φ] | **The infinite family**: split cuboids parametrized by (a:b); face-first cuboid (a,b)=(1,1) is the cubic-system V=12 case |
+| 2 | Always | Iff the required metric ratios match the available zome color/scale ratios | **The infinite family**: split cuboids parametrized by (a:b); face-first cuboid (a,b)=(1,1) is a notable V=12 blue/green golden-field case |
 | 3 | Discrete subset | **One φ-rational direction yes** + 2 cubic-only directions | **Phi-oblique sporadic** (V=16, vZome ℤ[φ]); edge-first hex prism (V=14, cubic Z[√2,√3]); face-first-like BYR shape (V=16, cubic) |
 | 4 | Discrete subset | Only n = ±(1,1,1,1) up to ±-flips | **Vertex-first sporadic**: rhombic dodecahedron (V=15) |
 
@@ -64,13 +66,13 @@ iso-frame enumerator. The original 2-sporadic count missed it.
 
 In the broader "zometool-axis-aligned" sense (any rotation of the 4
 image vectors onto default zometool directions, regardless of length
-field): add the **edge-first hex prism** (V=14) and **face-first cuboid**
-(V=12, a degenerate (a,b)=(1,1) member of the support-2 family) plus the
-**face-first-like BYR shape** (V=16, kernel ~ (0, 1/φ, −φ, −1)). These
-require lengths involving √2 or √3 — outside ℚ(φ) — and live in vZome's
-**cubic** algebraic-field system, not the icosahedral one. They are
-honest Zometool sculptures but cannot be expressed with all coordinates
-in ℤ[φ]³ at a single uniform scale.
+field), the **edge-first hex prism** (V=14) and **face-first-like BYR
+shape** (V=16, kernel ~ (0, 1/φ, −φ, −1)) still fall outside the strict
+golden-field inventory: their ratios involve √2/√3 or √(2+φ). The
+ordinary **face-first cuboid** is different: although its support-2
+parameter has `a=b=1` and `c=sqrt(2)`, that √2 ratio is exactly the
+standard blue-to-green zome strut-length ratio, so it is a golden-field
+B/G model.
 
 ## 3. The infinite family — split cuboids (support 2)
 
@@ -84,17 +86,33 @@ For n = (a, b, 0, 0) (and B₄-images thereof), with a, b ∈ ℤ[φ]:
 The 16 ball positions form a **4 × 2 × 2 cuboid lattice** with x-spacings
 (2|b|, 2|a−b|, 2|b|), y-spacing 2c, z-spacing 2c.
 
-**Parameter**: pair (a, b) ∈ ℤ[φ]²₊ modulo overall scale, modulo a ↔ b
-swap, and modulo the constraint √(a²+b²) ∈ ℤ[φ] (so c is in the same
-field as the projected coordinates).
+**Parameter**: pair (a, b) ∈ ℤ[φ]²₊ modulo overall scale and modulo
+a ↔ b swap. The old description treated the transverse axes as blue
+axes only. The correct zome-frame analysis is color-aware.
+
+For a split cuboid, the two longitudinal image vectors are antiparallel
+on one zome axis, and the two transverse image vectors must be
+perpendicular to that axis, perpendicular to each other, and equal in
+Euclidean length. Enumerating the default icosahedral zome axes gives,
+up to icosahedral symmetry, the strict golden support-2 frames:
+
+| longitudinal axis | equal transverse axes | equation for scale parameters |
+|---|---|---|
+| B | B/B | `c² = a² + b²` |
+| B | G/G | `2c² = a² + b²` |
+
+There is also a perpendicular color pattern G with B/G transverse axes,
+but the two transverse axes have an unavoidable √2 length ratio; making
+them equal would require a non-golden scalar. It is therefore not a
+strict golden split-cuboid frame in this support-2 family.
 
 **vZome-embeddability constraint**. Write a = a₁ + a₂φ, b = b₁ + b₂φ
 with aᵢ, bᵢ ∈ ℤ. Then
 
   a² + b²  =  (a₁² + a₂² + b₁² + b₂²)  +  [a₂(2a₁ + a₂) + b₂(2b₁ + b₂)] · φ
 
-The full vZome-embeddability requirement is just c = √(a²+b²) ∈ ℤ[φ].
-That splits into two regimes:
+The B/B subfamily has c = √(a²+b²) ∈ ℤ[φ]. That splits into two
+regimes:
 
 **(i) Trace-zero regime** — the φ-coefficient of a²+b² vanishes:
 
@@ -115,9 +133,17 @@ example, (a, b) = (1+3φ, 4) gives a²+b² = 26+15φ, which equals
 c² for c = −1+5φ ∈ ℤ[φ]. The 8-cell projection then has y- and z-edge
 length |c| = √(26+15φ), perfectly valid in vZome.
 
-So the inf-family is parameterized by the full set of ℤ[φ]-Pythagorean
-triples (a, b, c) — both trace-zero and genuinely-φ — modulo (a:b)
-projective equivalence and the swap a ↔ b.
+These ℤ[φ]-Pythagorean triples give the B/B emitted samples —
+both trace-zero and genuinely-φ — modulo (a:b) projective equivalence
+and the swap a ↔ b.
+
+The B/G subfamily is governed instead by `a²+b² = 2c²` in ℤ[φ].
+Its smallest integral solution is the notable face-first projection:
+
+- **Face-first cuboid**: `(a,b)=(1,1)`, so `c=√2`. In a blue-only chart
+  this looks non-ℤ[φ], but in the zome palette the √2 ratio is exactly
+  the B/G length ratio. It emits as 12 balls and 20 struts:
+  `B2:8, G2:12`.
 
 Primitive **integer** (a, b ∈ ℤ, so trivially trace-zero) solutions on
 the 5m² branch come from factoring in ℤ[i]: writing
@@ -135,9 +161,9 @@ generator points (canonicalised so a ≥ b > 0, then by ascending S) are:
 | (a, b)              | regime           | a² + b² | c            | notes                                                            |
 |:--------------------|:-----------------|:-------:|:-------------|:-----------------------------------------------------------------|
 | (√5, 2) = (−1+2φ, 2) | (i) trace-zero  |   9     | 3            | emitted as `8cell_inf_family_phi_aSqrt5_b2.vZome`                |
-| (3 + 2φ, 4φ − 4)    | (i) trace-zero   |  45     | 3√5          | 5m² branch (m=3); emitted as `8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome` |
-| (4φ, 5 − 2φ)        | (i) trace-zero   |  45     | 3√5          | Galois conjugate of the previous row; emitted as `8cell_inf_family_phi_a4phi_b5-2phi.vZome` |
-| (4, 1+3φ)           | (ii) genuinely-φ | 26+15φ  | −1+5φ ≈ 7.09 | discovered by strut-iso enumerator b≤8; not yet emitted          |
+| (3 + 2φ, 4φ − 4)    | (i) trace-zero   |  45     | 3√5          | 5m² branch (m=3)                                                 |
+| (4φ, 5 − 2φ)        | (i) trace-zero   |  45     | 3√5          | Galois conjugate of the previous row                             |
+| (4, 1+3φ)           | (ii) genuinely-φ | 26+15φ  | −1+5φ ≈ 7.09 | emitted as `8cell_inf_family_phi_a4_b1plus3phi.vZome`            |
 
 **rng=5/6 audit (2026-05-10).** A re-search at rng ∈ {4, 5, 6} with
 B₄-symmetry-deduplicated kernel directions
@@ -160,28 +186,30 @@ the bound higher adds more (a:b) points but produces no new shape *type*
 closed under all icosahedral-palette zomeable orthographic projections
 of the 8-cell.
 
-**Examples emitted** (`8cell_inf_family_*.vZome`, all normalized so
-the longest edge is roughly one ball-spacing).
+**Recommended six examples**:
+
+1. `8cell_face_first_cuboid_a1_b1.vZome` — B/G face-first, collapsed 12-ball cuboid.
+2. `8cell_inf_family_a1_b2.vZome` — smallest B/B 5m² branch sample.
+3. `8cell_inf_family_a3_b4.vZome` — familiar B/B Pythagorean sample.
+4. `8cell_inf_family_phi_aSqrt5_b2.vZome` — first non-integer ℤ[φ] B/B sample.
+5. `8cell_inf_family_phi_a4_b1plus3phi.vZome` — genuinely-φ B/B sample.
+6. `8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome` — non-collapsed B/G sample.
+
+The emitted gallery is deliberately limited to these six curated examples; older
+extra samples were removed after this family split was clarified.
 
 | (a, b)            | a² + b²    | c              | branch                | filename suffix                |
 |:------------------|:----------:|:--------------:|:----------------------|:-------------------------------|
+| (1, 1)            | 2          | √2             | B/G support-2         | `face_first_cuboid_a1_b1`      |
 | (1, 2)            | 5          | 2φ − 1 = √5    | 5m² (m=1)             | `a1_b2`                        |
 | (3, 4)            | 25         | 5              | Pythagorean           | `a3_b4`                        |
-| (5, 12)           | 169        | 13             | Pythagorean           | `a5_b12`                       |
-| (8, 15)           | 289        | 17             | Pythagorean           | `a8_b15`                       |
-| (2, 11)           | 125 = 25·5 | 5(2φ − 1)      | 5m² (m=5)             | `a2_b11`                       |
-| (19, 22)          | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)            | `a19_b22`                      |
-| (2, 29)           | 845 = 169·5| 13(2φ − 1)     | 5m² (m=13)            | `a2_b29`                       |
 | (√5, 2)           | 9          | 3              | trace-zero ℤ[φ]       | `phi_aSqrt5_b2`                |
-| (3 + 2φ, 4φ − 4)  | 45 = 9·5   | 3√5            | 5m² (m=3), ℤ[φ]       | `phi_a3plus2phi_b4phi-4`       |
-| (4φ, 5 − 2φ)      | 45 = 9·5   | 3√5            | 5m² (m=3), ℤ[φ]       | `phi_a4phi_b5-2phi`            |
+| (4, 1 + 3φ)       | 26 + 15φ   | −1 + 5φ        | genuinely-φ B/B       | `phi_a4_b1plus3phi`            |
+| (3 + 3φ, −3 + 5φ) | 2(5 + φ)²  | 5 + φ          | genuinely-φ B/G       | `BG_phi_a3plus3phi_bminus3plus5phi` |
 
-Note that (19, 22) and (2, 29) share the same c = 13√5 but are
-genuinely distinct shapes (different a:b ratios).  Similarly the last
-two rows above share c = 3√5 but are distinct directions (and Galois
-conjugates of each other).  Other valid integer (a, b) include
-(7, 24, 25), (20, 21, 29), … on the Pythagorean branch and
-(22, 31, 17), … on the 5m² branch. Trivially-related cases:
+Other valid integer (a, b) include (5, 12, 13), (7, 24, 25),
+(20, 21, 29), … on the Pythagorean branch and (2, 11, 5),
+(19, 22, 13), (22, 31, 17), … on the 5m² branch. Trivially-related cases:
 (2, 4) ≡ (1, 2) (same ratio, scaled); (1, 0) → cube; (a, a) → degenerate
 12-ball collapse.
 
@@ -236,28 +264,25 @@ cleanly in ℤ[φ]³.  Full V=16, E=32 with 4 distinct edge-length classes
 sweep — kernel `(0, 1/φ², 1, −1/φ)` — is the same shape under tesseract
 B₄ symmetry; both are absorbed into this orbit.)
 
-### Edge-first and face-first canonical projections (cubic-system zometool, NOT icosahedral)
+### Edge-first canonical and face-first-like projections outside the strict inventory
 
-These are the canonical X-first projections that traditional 4D-polytope
-literature calls out, but they fall **outside** the icosahedral ℤ[φ] field
-and so are excluded from the "1 infinite family + 3 sporadics" count
-above. They are still legitimate zometool sculptures — just in vZome's
-**cubic** system (the Z[√2, √3] field).
+These are additional canonical-looking X-first projections that traditional
+4D-polytope literature calls out. Unlike the ordinary face-first cuboid,
+they fall **outside** the icosahedral ℤ[φ] field and so are excluded from
+the "1 infinite family + 3 sporadics" count above. They are still legitimate
+zometool sculptures — just in algebraic-field extensions beyond the current
+output convention.
 
 - **Edge-first hex prism** (V=14): kernel support 3, e.g. n=(1, −1, 1, 0)
   up to symmetry. Strut sig {B:24, Y:8}. Three c_iʹ have magnitude
   √(2/3), one has magnitude 1. Length ratio √2 / √3 ∉ ℚ(φ). Built from
   hex-prism geometry: one B axis "long" + a hexagonal Y-strut hexagon.
-- **Face-first 4×2 cuboid** (V=12): kernel support 2, n=(1, 1, 0, 0). The
-  degenerate (a, b)=(1, 1) limit of the infinite family. c = √2 ∉ ℤ[φ].
-  Two ball pairs collapse, leaving 12 of 16 ball positions distinct.
 - **Face-first-like BYR shape** (V=16): kernel (0, 1/φ, −φ, −1), strut sig
   {B:8, Y:8, R:16}. Magnitudes √(2+φ)/2, √(3−φ)/2, etc. Ratios involve
   √(2+φ) ∉ ℚ(φ).
 
-All three live in different algebraic-field extensions of vZome (cubic /
-mixed √2,√3 / √(2+φ)). We do not emit them in `output/regular/8cell/` because
-this corpus is icosahedral-field strict.
+These two live in algebraic-field extensions beyond the current
+icosahedral `Q(phi)` output convention, so they are not emitted here.
 
 ## 5. Why other regular 4-polytopes are finite
 
@@ -272,19 +297,17 @@ zomeable projections (4, 6, 3, 1, 1 respectively in our enumeration).
 8cell_cell_first_cube.vZome            ← cell-first sporadic (cube, 8 balls)
 8cell_vertex_first_rhombic_dodec.vZome ← vertex-first sporadic (rhombic dodec, 15 balls)
 8cell_phi_oblique.vZome                ← phi-oblique sporadic, support-3 (16 balls, added 2026-05-08)
+8cell_face_first_cuboid_a1_b1.vZome    ← face-first support-2 cuboid, (a,b)=(1,1), 12 balls, B2/G2 struts
 8cell_inf_family_a1_b2.vZome           ← infinite family, 5m² branch (m=1)
 8cell_inf_family_a3_b4.vZome           ← infinite family, Pythagorean (3-4-5)
-8cell_inf_family_a5_b12.vZome          ← infinite family, Pythagorean (5-12-13)
-8cell_inf_family_a8_b15.vZome          ← infinite family, Pythagorean (8-15-17)
-8cell_inf_family_a2_b11.vZome          ← infinite family, 5m² branch (m=5)
-8cell_inf_family_a19_b22.vZome         ← infinite family, 5m² branch (m=13)
-8cell_inf_family_a2_b29.vZome          ← infinite family, 5m² branch (m=13)
 8cell_inf_family_phi_aSqrt5_b2.vZome   ← infinite family, Pythagorean (√5, 2, 3) — first ℤ[φ] generator (added 2026-05-08)
+8cell_inf_family_phi_a4_b1plus3phi.vZome ← infinite family, genuinely-φ B/B sample (4, 1+3φ, −1+5φ)
+8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome ← infinite family, non-collapsed B/G sample
 ```
 
-All inf-family models are normalized per-emit (each divided by its own
-longest component) so they appear at comparable scale in vZome rather
-than growing with (a, b).
+The emitted samples use webapp-safe integer golden-coordinate pairs, with
+manual physical scaling and view framing chosen so the models are readable in
+the browser.
 
 Generator: `lib/emit_8cell.py`. To add more cuboids from the infinite
 family, append to the `examples` list with any (a, b, c) satisfying
@@ -310,10 +333,10 @@ c = m·(2φ−1)).
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a19_b22.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_face_first_cuboid_a1_b1.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a19_b22.vZome
+    8cell_face_first_cuboid_a1_b1.vZome — face-first support-2 cuboid, (a,b)=(1,1), B2/G2 struts
  </figcaption>
 </figure>
 
@@ -326,22 +349,6 @@ c = m·(2φ−1)).
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a2_b11.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a2_b11.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a2_b29.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a2_b29.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a3_b4.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -350,42 +357,26 @@ c = m·(2φ−1)).
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a5_b12.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a5_b12.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a8_b15.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a8_b15.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a4phi_b5-2phi.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_phi_a4phi_b5-2phi.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_aSqrt5_b2.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
     8cell_inf_family_phi_aSqrt5_b2.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a4_b1plus3phi.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    8cell_inf_family_phi_a4_b1plus3phi.vZome
+ </figcaption>
+</figure>
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome
  </figcaption>
 </figure>
 
@@ -404,4 +395,3 @@ c = m·(2φ−1)).
     8cell_vertex_first_rhombic_dodec.vZome
  </figcaption>
 </figure>
-

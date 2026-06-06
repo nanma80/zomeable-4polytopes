@@ -14,13 +14,9 @@ strictly negative dot product with the chosen kernel direction.
 | `8cell_cell_first_cube.vZome` | unchanged (no derived file) | 8 / 8 | 12 / 12 | 0 | 0 |
 | `8cell_vertex_first_rhombic_dodec.vZome` | `8cell_vertex_first_rhombic_dodec_front_visible.vZome` | 15 / 15 | 28 / 32 | 0 | 4 |
 | `8cell_phi_oblique.vZome` | `8cell_phi_oblique_front_visible.vZome` | 16 / 16 | 31 / 32 | 0 | 1 |
+| `8cell_face_first_cuboid_a1_b1.vZome` | unchanged (no derived file) | 12 / 12 | 20 / 20 | 0 | 0 |
 | `8cell_inf_family_a1_b2.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
 | `8cell_inf_family_a3_b4.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_a5_b12.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_a8_b15.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_a2_b11.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_a19_b22.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_a2_b29.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
 | `8cell_inf_family_phi_aSqrt5_b2.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
-| `8cell_inf_family_phi_a4phi_b5-2phi.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
+| `8cell_inf_family_phi_a4_b1plus3phi.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |
+| `8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome` | unchanged (no derived file) | 16 / 16 | 32 / 32 | 0 | 0 |

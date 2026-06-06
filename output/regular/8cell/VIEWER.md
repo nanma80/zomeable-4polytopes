@@ -1,6 +1,6 @@
 # 8-cell {4,3,3} (tesseract) — interactive 3D viewer
 
-➡️ **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/VIEWER.html)** to interact with the 13 models below.
+➡️ **[Open this page on GitHub Pages](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/VIEWER.html)** to interact with the 11 models below.
 
 For methodology, kernel directions, search subtleties, and reproduction commands, see [`CLASSIFICATION.md`](CLASSIFICATION.md) in the same folder.
 
@@ -48,7 +48,15 @@ For methodology, kernel directions, search subtleties, and reproduction commands
  </figcaption>
 </figure>
 
-## Infinite family — split-cuboids (10)
+## Infinite family — split-cuboids (6)
+
+<figure style="width: 800px; margin: 5%">
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_face_first_cuboid_a1_b1.vZome" progress="true" >
+ </vzome-viewer>
+ <figcaption style="text-align: center; font-style: italic;">
+    8cell_face_first_cuboid_a1_b1.vZome — face-first B/G sample
+ </figcaption>
+</figure>
 
 <figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a1_b2.vZome" progress="true" >
@@ -67,46 +75,6 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a5_b12.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a5_b12.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a8_b15.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a8_b15.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a2_b11.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a2_b11.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a19_b22.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a19_b22.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_a2_b29.vZome" progress="true" >
- </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_a2_b29.vZome
- </figcaption>
-</figure>
-
-<figure style="width: 800px; margin: 5%">
  <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_aSqrt5_b2.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
@@ -115,17 +83,17 @@ For methodology, kernel directions, search subtleties, and reproduction commands
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a4_b1plus3phi.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_phi_a3plus2phi_b4phi-4.vZome
+    8cell_inf_family_phi_a4_b1plus3phi.vZome
  </figcaption>
 </figure>
 
 <figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_phi_a4phi_b5-2phi.vZome" progress="true" >
+ <vzome-viewer style="width: 100%; height: 500px" src="8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome" progress="true" >
  </vzome-viewer>
  <figcaption style="text-align: center; font-style: italic;">
-    8cell_inf_family_phi_a4phi_b5-2phi.vZome
+    8cell_inf_family_BG_phi_a3plus3phi_bminus3plus5phi.vZome
  </figcaption>
 </figure>
