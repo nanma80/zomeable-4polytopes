@@ -124,9 +124,10 @@ the square factor becomes four parallel polygon layers.  The square edges are
 height differences `a+b` and `a-b`, not the individual projected square basis
 vectors; nevertheless these are still `Q(phi)` multiples of a single Zome axis.
 
-- `{4}×{6}`: use a blue hexagon plane with yellow height axis.  The arithmetic
-  condition is `q^2 = 3*(a^2+b^2)` with `q in Q(phi)`.  Example emitted:
-  `a=2-phi`, `b=-1+3phi`, `q=-3+6phi`.
+- `{4}×{6}`: one infinite family with two subfamilies.  The B/Y subfamily uses
+  a blue hexagon plane with yellow height axis and condition
+  `q^2 = 3*(a^2+b^2)`.  The G/Y subfamily uses a green hexagon plane with
+  yellow height axis and condition `2*q^2 = 3*(a^2+b^2)`, with `q in Q(phi)`.
 - `{4}×{10}`: use a blue decagon plane with red height axis.  The arithmetic
   condition is the tesseract support-2 condition `c^2 = a^2+b^2` with
   `c in Q(phi)`.  Examples emitted: `(a,b,c)=(5,12,13)` and `(8,15,17)`.

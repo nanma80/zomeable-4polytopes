@@ -15,7 +15,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "lib"))
 
 from emit_vzome import (  # noqa: E402
     BLUE_DIRS,
+    GREEN_DIRS,
     RED_DIRS,
+    YELLOW_DIRS,
     GF,
     classify_direction,
     cross,
@@ -99,6 +101,25 @@ def _emit_grid(balls, edges, path):
     print(f"{os.path.relpath(path, ROOT)}: {len(uniq)} balls, {len(edges3)} struts, {counts}")
 
 
+def _set_view(path: str, distance: float, far: float, width: float):
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    old = '<ViewModel distance="50.0" far="200.0" near="0.5" parallel="false" stereoAngle="0.0" width="50.0">'
+    new = (
+        f'<ViewModel distance="{distance:.1f}" far="{far:.1f}" near="0.5" '
+        f'parallel="false" stereoAngle="0.0" width="{width:.1f}">'
+    )
+    text = text.replace(old, new)
+    text = text.replace(
+        '<UpDirection x="0.0" y="1.0" z="0.0"/>\n'
+        '      <LookDirection x="0.0" y="0.0" z="-1.0"/>',
+        '<UpDirection x="-0.202" y="0.923" z="-0.280"/>\n'
+        '      <LookDirection x="-0.550" y="-0.350" z="-0.760"/>',
+    )
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
 def _duoprism_edges(p: int, q: int):
     edges = []
     for i in range(p):
@@ -130,6 +151,48 @@ def _emit_4x6(a: GF, b: GF, q: GF, suffix: str):
     ]
     fname = f"duoprism_4_6_inf_family_{suffix}.vZome"
     _emit_grid(balls, _duoprism_edges(4, 6), os.path.join(OUT_46, fname))
+
+
+def _green_hexagon_frame():
+    """Return a regular green-axis hexagon with a perpendicular yellow axis."""
+    for p0 in GREEN_DIRS:
+        for p1 in GREEN_DIRS:
+            if p0 == p1:
+                continue
+            if abs(_dot_float(p0, p1) - 0.5 * _dot_float(p0, p0)) > 1e-8:
+                continue
+            if abs(_dot_float(p0, p0) - _dot_float(p1, p1)) > 1e-8:
+                continue
+            p2 = _sub(p1, p0)
+            p2_class = classify_direction(ZERO, p2)
+            if p2_class is None or p2_class[0] != 'G':
+                continue
+            for height_axis in YELLOW_DIRS:
+                if vkey(cross(p0, height_axis)) == vkey(ZERO):
+                    continue
+                if abs(_dot_float(p0, height_axis)) < 1e-8 and abs(_dot_float(p1, height_axis)) < 1e-8:
+                    return [p0, p1, p2, _neg(p0), _neg(p1), _neg(p2)], height_axis
+    raise RuntimeError("could not find green hexagon frame")
+
+
+def _emit_4x6_green(a: GF, b: GF, q: GF, suffix: str, integer_scale: GF = GF(1), view=(50.0, 200.0, 50.0)):
+    """Emit {4}x{6} green/yellow subfamily with 2*q^2 = 3*(a^2+b^2)."""
+    if GF(2) * q * q != GF(3) * (a * a + b * b):
+        raise ValueError("expected 2*q^2 = 3*(a^2+b^2)")
+
+    hexagon, height_axis = _green_hexagon_frame()
+    norm = _gf_inv(q)
+    polygon = [_scale(norm * q, p) for p in hexagon]
+    heights = [-b, a, b, -a]
+    balls = [
+        _scale(integer_scale, _add(poly, _scale(norm * GF(2) * h, height_axis)))
+        for h in heights
+        for poly in polygon
+    ]
+    fname = f"duoprism_4_6_inf_family_GY_{suffix}.vZome"
+    path = os.path.join(OUT_46, fname)
+    _emit_grid(balls, _duoprism_edges(4, 6), path)
+    _set_view(path, *view)
 
 
 def _decagon_blue_frame():
@@ -210,6 +273,8 @@ def main():
     os.makedirs(OUT_410, exist_ok=True)
 
     _emit_4x6(GF(2, -1), GF(-1, 3), GF(-3, 6), "a2-phi_b3phi-1")
+    _emit_4x6_green(GF(-1, 2), GF(1), GF(3), "a2phi-1_b1", GF(3), (110.0, 220.0, 110.0))
+    _emit_4x6_green(GF(2, 3), GF(4, 1), GF(6, 3), "a2+3phi_b4+phi", GF(-45, 30), (125.0, 240.0, 125.0))
     _emit_4x10(GF(5), GF(12), GF(13), "a5_b12")
     _emit_4x10(GF(8), GF(15), GF(17), "a8_b15")
 
