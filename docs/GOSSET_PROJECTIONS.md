@@ -20,7 +20,7 @@ projections of Gosset-family and adjacent D/E root polytopes:
 | `3_21` | 7 | 5 |
 | `2_31` | 7 | 5 |
 | `1_32` | 7 | 5 |
-| 8-orthoplex (`5_11`) | 8 | 18 (R=2 provisional) |
+| 8-orthoplex (`5_11`) | 8 | 18 (R=3 confirmed) |
 | `4_21` | 8 | 3 |
 | `2_41` | 8 | 3 |
 | `1_42` | 8 | 3 |

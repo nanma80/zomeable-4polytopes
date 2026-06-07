@@ -73,24 +73,24 @@ Open the viewer index here:
 | `1_32/1_32_B3_81_balls.vZome` | `1_32` | 81 | B3-symmetric |
 | `1_32/1_32_H3_384_balls_hull32.vZome` | `1_32` | 384 | H3-symmetric |
 | `1_32/1_32_H3_384_balls_hull80.vZome` | `1_32` | 384 | H3-symmetric |
-| `5_11/5_11_B3_7_balls.vZome` | 8-orthoplex (`5_11`) | 7 | B3-symmetric, R=2 provisional |
-| `5_11/5_11_B3_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | B3-symmetric, R=2 provisional |
-| `5_11/5_11_B3_9_balls.vZome` | 8-orthoplex (`5_11`) | 9 | B3-symmetric, R=2 provisional |
-| `5_11/5_11_D2h_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | D2h-symmetric, R=2 provisional |
-| `5_11/5_11_D2h_12_balls_a.vZome` | 8-orthoplex (`5_11`) | 12 | D2h-symmetric, variant a, R=2 provisional |
-| `5_11/5_11_D2h_12_balls_b.vZome` | 8-orthoplex (`5_11`) | 12 | D2h-symmetric, variant b, R=2 provisional |
-| `5_11/5_11_D3d_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | D3d-symmetric, R=2 provisional |
-| `5_11/5_11_D3d_14_balls_a.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant a, R=2 provisional |
-| `5_11/5_11_D3d_14_balls_b.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant b, R=2 provisional |
-| `5_11/5_11_D3d_14_balls_c.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant c, R=2 provisional |
-| `5_11/5_11_D3d_16_balls.vZome` | 8-orthoplex (`5_11`) | 16 | D3d-symmetric, R=2 provisional |
-| `5_11/5_11_D4_6_balls.vZome` | 8-orthoplex (`5_11`) | 6 | D4-symmetric, R=2 provisional |
-| `5_11/5_11_D4_7_balls.vZome` | 8-orthoplex (`5_11`) | 7 | D4-symmetric, R=2 provisional |
-| `5_11/5_11_D4_10_balls.vZome` | 8-orthoplex (`5_11`) | 10 | D4-symmetric, R=2 provisional |
-| `5_11/5_11_D5d_14_balls_a.vZome` | 8-orthoplex (`5_11`) | 14 | D5d-symmetric, variant a, R=2 provisional |
-| `5_11/5_11_D5d_14_balls_b.vZome` | 8-orthoplex (`5_11`) | 14 | D5d-symmetric, variant b, R=2 provisional |
-| `5_11/5_11_H3_13_balls.vZome` | 8-orthoplex (`5_11`) | 13 | H3-symmetric, R=2 provisional |
-| `5_11/5_11_Th_13_balls.vZome` | 8-orthoplex (`5_11`) | 13 | Th-symmetric, R=2 provisional |
+| `5_11/5_11_B3_7_balls.vZome` | 8-orthoplex (`5_11`) | 7 | B3-symmetric, R=3 confirmed |
+| `5_11/5_11_B3_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | B3-symmetric, R=3 confirmed |
+| `5_11/5_11_B3_9_balls.vZome` | 8-orthoplex (`5_11`) | 9 | B3-symmetric, R=3 confirmed |
+| `5_11/5_11_D2h_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | D2h-symmetric, R=3 confirmed |
+| `5_11/5_11_D2h_12_balls_a.vZome` | 8-orthoplex (`5_11`) | 12 | D2h-symmetric, variant a, R=3 confirmed |
+| `5_11/5_11_D2h_12_balls_b.vZome` | 8-orthoplex (`5_11`) | 12 | D2h-symmetric, variant b, R=3 confirmed |
+| `5_11/5_11_D3d_8_balls.vZome` | 8-orthoplex (`5_11`) | 8 | D3d-symmetric, R=3 confirmed |
+| `5_11/5_11_D3d_14_balls_a.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant a, R=3 confirmed |
+| `5_11/5_11_D3d_14_balls_b.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant b, R=3 confirmed |
+| `5_11/5_11_D3d_14_balls_c.vZome` | 8-orthoplex (`5_11`) | 14 | D3d-symmetric, variant c, R=3 confirmed |
+| `5_11/5_11_D3d_16_balls.vZome` | 8-orthoplex (`5_11`) | 16 | D3d-symmetric, R=3 confirmed |
+| `5_11/5_11_D4_6_balls.vZome` | 8-orthoplex (`5_11`) | 6 | D4-symmetric, R=3 confirmed |
+| `5_11/5_11_D4_7_balls.vZome` | 8-orthoplex (`5_11`) | 7 | D4-symmetric, R=3 confirmed |
+| `5_11/5_11_D4_10_balls.vZome` | 8-orthoplex (`5_11`) | 10 | D4-symmetric, R=3 confirmed |
+| `5_11/5_11_D5d_14_balls_a.vZome` | 8-orthoplex (`5_11`) | 14 | D5d-symmetric, variant a, R=3 confirmed |
+| `5_11/5_11_D5d_14_balls_b.vZome` | 8-orthoplex (`5_11`) | 14 | D5d-symmetric, variant b, R=3 confirmed |
+| `5_11/5_11_H3_13_balls.vZome` | 8-orthoplex (`5_11`) | 13 | H3-symmetric, R=3 confirmed |
+| `5_11/5_11_Th_13_balls.vZome` | 8-orthoplex (`5_11`) | 13 | Th-symmetric, R=3 confirmed |
 | `4_21/4_21_B3_27_balls.vZome` | `4_21` | 27 | B3-symmetric |
 | `4_21/4_21_B3_33_balls.vZome` | `4_21` | 33 | B3-symmetric |
 | `4_21/4_21_H3_137_balls.vZome` | `4_21` | 137 | H3-symmetric |
@@ -144,9 +144,8 @@ and the per-source manifests.
 ## Provenance
 
 These models were found by raw-column `Z[phi]^3` sweeps and exact
-post-processing audits.  For the 8-orthoplex (`5_11`), R=2 gives the 18
-models listed here, but the R=3 sweep is still running, so this list may be
-incomplete.  For the 9-orthoplex (`6_11`), R=2 confirmed all 8 R=1 models and
+post-processing audits.  For the 8-orthoplex (`5_11`), R=3 matched the R=2
+set exactly with the 18 models listed here.  For the 9-orthoplex (`6_11`), R=2 confirmed all 8 R=1 models and
 found no new signatures.  For the 10-orthoplex (`7_11`), R=2 also matched R=1
 with the same nine models.  The 10-demicube (`1_71`) R=2 check likewise
 matched R=1 for its 13 direct even-coset models, with C3i and H3 variant pairs

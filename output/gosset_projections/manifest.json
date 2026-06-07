@@ -479,7 +479,7 @@
       "rotational_order": 24,
       "reflection_count": 24,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 109.66563145999496,
       "view_distance": 109.66563145999496,
       "view_look_direction": [
@@ -526,7 +526,7 @@
       "rotational_order": 24,
       "reflection_count": 24,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 94.97322276641756,
       "view_distance": 94.97322276641756,
       "view_look_direction": [
@@ -572,7 +572,7 @@
       "rotational_order": 24,
       "reflection_count": 24,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 94.97322276641756,
       "view_distance": 94.97322276641756,
       "view_look_direction": [
@@ -620,7 +620,7 @@
       "rotational_order": 4,
       "reflection_count": 4,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 134.31241969854892,
       "view_distance": 134.31241969854892,
       "view_look_direction": [
@@ -671,7 +671,7 @@
       "reflection_count": 4,
       "variant": "a",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 232.27553482998906,
       "view_distance": 232.27553482998906,
       "view_look_direction": [
@@ -722,7 +722,7 @@
       "reflection_count": 4,
       "variant": "b",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 203.016261616251,
       "view_distance": 203.016261616251,
       "view_look_direction": [
@@ -768,7 +768,7 @@
       "rotational_order": 6,
       "reflection_count": 6,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 90.92993798754958,
       "view_distance": 90.92993798754958,
       "view_look_direction": [
@@ -819,7 +819,7 @@
       "reflection_count": 6,
       "variant": "a",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 189.90432372791912,
       "view_distance": 189.90432372791912,
       "view_look_direction": [
@@ -870,7 +870,7 @@
       "reflection_count": 6,
       "variant": "b",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 198.1104050032157,
       "view_distance": 198.1104050032157,
       "view_look_direction": [
@@ -920,7 +920,7 @@
       "reflection_count": 6,
       "variant": "c",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 153.66990245717895,
       "view_distance": 153.66990245717895,
       "view_look_direction": [
@@ -970,7 +970,7 @@
       "rotational_order": 6,
       "reflection_count": 6,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 201.15651384038773,
       "view_distance": 201.15651384038773,
       "view_look_direction": [
@@ -1016,7 +1016,7 @@
       "rotational_order": 8,
       "reflection_count": 8,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 77.5453116684672,
       "view_distance": 77.5453116684672,
       "view_look_direction": [
@@ -1064,7 +1064,7 @@
       "rotational_order": 8,
       "reflection_count": 8,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 155.0906233369344,
       "view_distance": 155.0906233369344,
       "view_look_direction": [
@@ -1112,7 +1112,7 @@
       "rotational_order": 8,
       "reflection_count": 8,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 122.60990336999411,
       "view_distance": 122.60990336999411,
       "view_look_direction": [
@@ -1163,7 +1163,7 @@
       "reflection_count": 10,
       "variant": "a",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 220.90716097600298,
       "view_distance": 220.90716097600298,
       "view_look_direction": [
@@ -1214,7 +1214,7 @@
       "reflection_count": 10,
       "variant": "b",
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 162.8232507064601,
       "view_distance": 162.8232507064601,
       "view_look_direction": [
@@ -1259,7 +1259,7 @@
       "rotational_order": 60,
       "reflection_count": 60,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 104.298213413651,
       "view_distance": 104.298213413651,
       "view_look_direction": [
@@ -1307,7 +1307,7 @@
       "rotational_order": 12,
       "reflection_count": 12,
       "provisional": true,
-      "provisional_note": "R=3 sweep still running; this R=2 list may be incomplete.",
+      "provisional_note": "R=3 sweep matched the R=2 set exactly; this list is complete through R=3.",
       "view_width": 153.66990245717895,
       "view_distance": 153.66990245717895,
       "view_look_direction": [

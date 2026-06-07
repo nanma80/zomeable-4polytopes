@@ -19,7 +19,7 @@ Gosset-family and adjacent D/E root polytopes.
 | `3_21` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
 | `2_31` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
 | `1_32` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
-| 8-orthoplex (`5_11`) | D8 | 8 | 18 (R=2 provisional) | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11_page2.html) |
+| 8-orthoplex (`5_11`) | D8 | 8 | 18 (R=3 confirmed) | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11_page2.html) |
 | `4_21` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 | `2_41` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_41.html) |
 | `1_42` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_42.html) |
@@ -34,8 +34,8 @@ All 113 labelled models are available in this folder tree:
 The ball counts on the viewer page count distinct 3D ball positions after
 projection, not vertices of the original higher-dimensional source polytope.
 
-The newly included 8-orthoplex (`5_11`) row is provisional: R=2 found 18
-models, but the R=3 sweep is still running and may add more.  The 9-orthoplex
+The 8-orthoplex (`5_11`) R=3 sweep is concluded: it matched the R=2 set
+exactly with 18 models, so the published two-page viewer is complete through R=3.  The 9-orthoplex
 (`6_11`) R=2 sweep matched R=1 exactly with 8 models.  The 10-orthoplex
 (`7_11`) R=2 sweep also matched R=1 exactly with 9 models.
 
