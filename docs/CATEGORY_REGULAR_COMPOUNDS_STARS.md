@@ -2,6 +2,8 @@
 
 Rows are source shapes.  Click **3D viewer →** to open a source-specific page with all models for that source.
 
+Model labels such as `C01`, `C18`, and `SH3` are internal shorthand for emitted `.vZome` model files.  They have no deeper mathematical meaning; they are used here only to show model sharing, since one source shape can have several emitted models and one model can represent several source shapes.
+
 ## Regular compound
 
 | Compound | Models | 3D viewer |
