@@ -19,6 +19,11 @@ organised into category subfolders:
   root polytopes including 5-orthoplex (`2_11`), 5-demicube (`1_21`),
   rectified 5-orthoplex (`t1 2_11`), `2_21`, `1_22`, `3_21`, `2_31`,
   `1_32`, `4_21`, and `2_41`.
+- [`regular_compounds_stars/`](regular_compounds_stars/) — source-centric
+  collection for regular compounds and star 4-polytopes.  The star sources are
+  the Schläfli-Hess regular star 4-polytopes.  Shared `.vZome` files are
+  labelled `C##` or `SH#`, with exact model identity requiring both balls and
+  edges to match.
 
 Each polytope subfolder has its own `RESULTS.md` describing its shapes
 and kernel directions, with two historical exceptions kept under
@@ -47,3 +52,6 @@ but whose first valid alignment did not snap to exact ℤ[φ]³ coordinates.
 The Gosset projection files are intentionally kept as a parallel related
 category rather than folded into the 4-polytope taxonomy; see
 [`../docs/CATEGORY_GOSSET_PROJECTIONS.md`](../docs/CATEGORY_GOSSET_PROJECTIONS.md).
+The regular compound and star-polytope files are kept as a source-centric
+collection; see
+[`../docs/CATEGORY_REGULAR_COMPOUNDS_STARS.md`](../docs/CATEGORY_REGULAR_COMPOUNDS_STARS.md).

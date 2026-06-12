@@ -1,0 +1,621 @@
+{
+  "category": "regular_compounds_stars",
+  "model_identity": "Two models are identical only when both the vZome ShowPoint set and JoinPointPair set match exactly.",
+  "sources": {
+    "regular_compounds_manifest": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\manifest.json",
+    "schlafli_hess_manifest": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\manifest.json",
+    "schlafli_hess_registry": "schlafli-hess-scratch\\ongoing_work\\schlafli_hess_registry.json"
+  },
+  "models": [
+    {
+      "model_id": "C01",
+      "file": "models/C01_8balls_24edges.vZome",
+      "balls": 8,
+      "visible_edges": 24,
+      "signature": "9a6954536b235d349c61cb9d15f1367596dce254876df7231e783d28a81fc29b",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 12,
+        "G2": 12
+      },
+      "physical_scale": "1*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_01_N8_99aeec21b429_8_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract"
+      ]
+    },
+    {
+      "model_id": "C02",
+      "file": "models/C02_12balls_26edges.vZome",
+      "balls": 12,
+      "visible_edges": 26,
+      "signature": "ee34ba83cace4bd3840003f36b5187465ff96c538900bfdcabcbdbfc9e0789a1",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 10,
+        "Y2": 16
+      },
+      "physical_scale": "1/2*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_02_N12_b8465a3cae71_12_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract"
+      ]
+    },
+    {
+      "model_id": "C03",
+      "file": "models/C03_15balls_42edges.vZome",
+      "balls": 15,
+      "visible_edges": 42,
+      "signature": "d63d0ead464ca4742b40986a494e4a05deaa58668afd9b7ab9f56eeffd7a2186",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 18,
+        "G2": 24
+      },
+      "physical_scale": "1*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_03_N15_c942daa3d3e6_15_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract",
+        "three 16-cells in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C04",
+      "file": "models/C04_16balls_48edges.vZome",
+      "balls": 16,
+      "visible_edges": 48,
+      "signature": "386478ac0217ae27dab1bc29cc370fb43f2574ae89f517a9a0d9572b6b13be75",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 12,
+        "R2": 12,
+        "R3": 12,
+        "Y3": 12
+      },
+      "physical_scale": "1/2*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_04_N16_2f4f1331c49f_16_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract"
+      ]
+    },
+    {
+      "model_id": "C05",
+      "file": "models/C05_16balls_48edges.vZome",
+      "balls": 16,
+      "visible_edges": 48,
+      "signature": "891698f77e32c9c9a014b33b1a6046d1693551325071e865b09e766842bebff5",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 12,
+        "R2": 12,
+        "R3": 12,
+        "Y3": 12
+      },
+      "physical_scale": "1/2*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_06_N16_a99da74a3b5a_16_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract"
+      ]
+    },
+    {
+      "model_id": "C06",
+      "file": "models/C06_16balls_48edges.vZome",
+      "balls": 16,
+      "visible_edges": 48,
+      "signature": "89178f35e80be9588882cea0dae304a5b894dabdf7f7561d220176fd21d146f6",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 12,
+        "R2": 12,
+        "R3": 12,
+        "Y3": 12
+      },
+      "physical_scale": "1/2*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_16_cells_in_tesseract_M2018-24-01_07_N16_b3aec0ab060e_16_balls.vZome",
+      "sources": [
+        "two 16-cells in tesseract"
+      ]
+    },
+    {
+      "model_id": "C07",
+      "file": "models/C07_15balls_44edges.vZome",
+      "balls": 15,
+      "visible_edges": 44,
+      "signature": "4e6169cb20e3944bbf2c6ed185cee4a28f9aecc3649a4d14495b34767c5003b9",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 12,
+        "Y2": 32
+      },
+      "physical_scale": "1*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_tesseracts_M2018-24-02_01_N15_c942daa3d3e6_15_balls.vZome",
+      "sources": [
+        "two tesseracts",
+        "three tesseracts in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C08",
+      "file": "models/C08_18balls_40edges.vZome",
+      "balls": 18,
+      "visible_edges": 40,
+      "signature": "82d8946dbb2cc235c3a2556e74f3f22f66cfd6d7628d180906873050b4678d03",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 16,
+        "G2": 24
+      },
+      "physical_scale": "2*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_tesseracts_M2018-24-02_02_N18_17fa31a499b0_18_balls.vZome",
+      "sources": [
+        "two tesseracts"
+      ]
+    },
+    {
+      "model_id": "C09",
+      "file": "models/C09_24balls_64edges.vZome",
+      "balls": 24,
+      "visible_edges": 64,
+      "signature": "6585af99981a77cdfe90f1a79b7a3c3ed3c542656fabc4128781a876b2a8455f",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 16,
+        "R2": 16,
+        "R3": 16,
+        "Y3": 16
+      },
+      "physical_scale": "1*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\two_tesseracts_M2018-24-02_03_N24_2ff39094fd4b_24_balls.vZome",
+      "sources": [
+        "two tesseracts"
+      ]
+    },
+    {
+      "model_id": "C10",
+      "file": "models/C10_18balls_39edges.vZome",
+      "balls": 18,
+      "visible_edges": 39,
+      "signature": "bc71de9d075d64dfccc3ec7a35544314f2f8ba0deebf90a90d61d34b815eee2b",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 15,
+        "Y2": 24
+      },
+      "physical_scale": "1*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\three_16_cells_in_24_cell_M2018-24-03_02_N18_17fa31a499b0_18_balls.vZome",
+      "sources": [
+        "three 16-cells in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C11",
+      "file": "models/C11_24balls_72edges.vZome",
+      "balls": 24,
+      "visible_edges": 72,
+      "signature": "b009a60af91861722d086ddbf666aee46046fc791397c165d15eef15113acc82",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 18,
+        "R2": 18,
+        "R3": 18,
+        "Y3": 18
+      },
+      "physical_scale": "1*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\three_16_cells_in_24_cell_M2018-24-03_03_N24_ec775799b95e_24_balls.vZome",
+      "sources": [
+        "three 16-cells in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C12",
+      "file": "models/C12_18balls_60edges.vZome",
+      "balls": 18,
+      "visible_edges": 60,
+      "signature": "04e934e1133db8cde3e8d59735858a84853c5427dab3476328d5f39fffb86316",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B2": 24,
+        "G2": 36
+      },
+      "physical_scale": "2*phi^4",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\three_tesseracts_in_24_cell_M2018-24-04_02_N18_17fa31a499b0_18_balls.vZome",
+      "sources": [
+        "three tesseracts in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C13",
+      "file": "models/C13_24balls_96edges.vZome",
+      "balls": 24,
+      "visible_edges": 96,
+      "signature": "1fbfc9dfed771f2f867d5142c694cbf3d9621ddd70b9cd70978a5df664afeff8",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B3": 24,
+        "R2": 24,
+        "R3": 24,
+        "Y3": 24
+      },
+      "physical_scale": "1*phi^5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\three_tesseracts_in_24_cell_M2018-24-04_03_N24_2ff39094fd4b_24_balls.vZome",
+      "sources": [
+        "three tesseracts in 24-cell"
+      ]
+    },
+    {
+      "model_id": "C14",
+      "file": "models/C14_75balls_620edges.vZome",
+      "balls": 75,
+      "visible_edges": 620,
+      "signature": "0c92d2cca4ca2ee41721d6492c40b07733a7cbf04d315f09802f729ebb50a0a0",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B4": 180,
+        "R3": 120,
+        "R4": 120,
+        "Y4": 200
+      },
+      "physical_scale": "2*phi^6",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\25_24_cells_in_600_cell_M2018-600-01_01_N75_013018d270ff_75_balls.vZome",
+      "sources": [
+        "25 24-cells in 600-cell",
+        "75 tesseracts in 600-cell",
+        "Small stellated 120-cell",
+        "Great grand 120-cell"
+      ]
+    },
+    {
+      "model_id": "C15",
+      "file": "models/C15_75balls_392edges.vZome",
+      "balls": 75,
+      "visible_edges": 392,
+      "signature": "f79646829f03876454357040297eab2ca9f84faea8ac4a94394d1209b6e11e1d",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B4": 108,
+        "R3": 84,
+        "R4": 84,
+        "Y4": 116
+      },
+      "physical_scale": "2*phi^6",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\5_24_cells_in_600_cell_M2018-600-02_01_N75_013018d270ff_75_balls.vZome",
+      "sources": [
+        "5 24-cells in 600-cell",
+        "15 tesseracts in 600-cell"
+      ]
+    },
+    {
+      "model_id": "C16",
+      "file": "models/C16_114balls_327edges.vZome",
+      "balls": 114,
+      "visible_edges": 327,
+      "signature": "ea3a1ac1b4662277c977c9eeb576e84133ec9cae58e5b229d89217d1b8f4c39a",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B4": 87,
+        "R3": 72,
+        "R4": 72,
+        "Y4": 96
+      },
+      "physical_scale": "1*phi^6",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\15_16_cells_in_600_cell_M2018-600-05_08_N114_e8508e1b578e_114_balls.vZome",
+      "sources": [
+        "15 16-cells in 600-cell"
+      ]
+    },
+    {
+      "model_id": "C17",
+      "file": "models/C17_330balls_915edges.vZome",
+      "balls": 330,
+      "visible_edges": 915,
+      "signature": "91a39b33ad81838281d4af604e2138e9f134d3e198da9f1aec3b752b23708f5d",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B4": 255,
+        "R3": 180,
+        "R4": 180,
+        "Y4": 300
+      },
+      "physical_scale": "1/2*phi^6",
+      "canonical_original_file": "regular-compounds-scratch\\output\\vzome_all_regular_compounds\\rng7_corrected_allproj\\75_16_cells_in_120_cell_M2018-120-X-01_02_N330_d036a219f20f_330_balls.vZome",
+      "sources": [
+        "75 16-cells in 120-cell"
+      ]
+    },
+    {
+      "model_id": "C18",
+      "file": "models/C18_330balls_620edges.vZome",
+      "balls": 330,
+      "visible_edges": 620,
+      "signature": "0cb4d50c90a2550c",
+      "source_kind": "compound",
+      "standard_struts": {
+        "B4": 180,
+        "R3": 120,
+        "R4": 120,
+        "Y4": 200
+      },
+      "physical_scale": "1*phi^6*1/sqrt5",
+      "canonical_original_file": "regular-compounds-scratch\\output\\corrected_120_5cell\\120_5_cells_in_120_cell_corrected_330_balls.vZome",
+      "sources": [
+        "120 5-cells in 120-cell"
+      ],
+      "note": "Corrected from the 120 root-line 5-cell cliques among 840 candidate 5-cell cliques; not the ambient 120-cell edge graph."
+    },
+    {
+      "model_id": "SH1",
+      "file": "models/SH1_75balls_384edges.vZome",
+      "balls": 75,
+      "visible_edges": 384,
+      "signature": "f473389e7932bf05031fd0862ebb65206d7c72fedad04894e2f3e8966cb46e96",
+      "source_kind": "star",
+      "standard_struts": {
+        "B3": 120,
+        "R2": 72,
+        "R3": 72,
+        "Y3": 120
+      },
+      "physical_scale": "2*phi^6",
+      "canonical_original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH1_A_600_rank1_75_balls.vZome",
+      "sources": [
+        "Icosahedral 120-cell",
+        "Great 120-cell",
+        "Grand 120-cell"
+      ]
+    },
+    {
+      "model_id": "SH3",
+      "file": "models/SH3_75balls_384edges.vZome",
+      "balls": 75,
+      "visible_edges": 384,
+      "signature": "51a91ad410db72a5211feb2cea07968321f00a53065fe3c3bfa8920b4f48091e",
+      "source_kind": "star",
+      "standard_struts": {
+        "B4": 120,
+        "R3": 72,
+        "R4": 72,
+        "Y4": 120
+      },
+      "physical_scale": "2*phi^5",
+      "canonical_original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH3_C_600_rank5_75_balls.vZome",
+      "sources": [
+        "Great stellated 120-cell",
+        "Grand stellated 120-cell",
+        "Great icosahedral 120-cell",
+        "Grand 600-cell"
+      ]
+    },
+    {
+      "model_id": "SH4",
+      "file": "models/SH4_330balls_620edges.vZome",
+      "balls": 330,
+      "visible_edges": 620,
+      "signature": "992aaac0f86adb993885e41d59fdeabc3a265d307c468c95c2c085cacbdc89ef",
+      "source_kind": "star",
+      "standard_struts": {
+        "B5": 180,
+        "R4": 120,
+        "R5": 120,
+        "Y5": 200
+      },
+      "physical_scale": "2*phi^3",
+      "canonical_original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH4_D_120_rank25_330_balls.vZome",
+      "sources": [
+        "Great grand stellated 120-cell"
+      ]
+    }
+  ],
+  "compound_sources": [
+    {
+      "source_name": "two 16-cells in tesseract",
+      "formula": "{4,3,3}[2{3,3,4}]",
+      "models": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "source_name": "two tesseracts",
+      "formula": "[2{4,3,3}]{3,3,4}",
+      "models": [
+        "C07",
+        "C08",
+        "C09"
+      ]
+    },
+    {
+      "source_name": "three 16-cells in 24-cell",
+      "formula": "{3,4,3}[3{3,3,4}]2{3,4,3}",
+      "models": [
+        "C03",
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "source_name": "three tesseracts in 24-cell",
+      "formula": "2{3,4,3}[3{4,3,3}]{3,4,3}",
+      "models": [
+        "C07",
+        "C12",
+        "C13"
+      ]
+    },
+    {
+      "source_name": "25 24-cells in 600-cell",
+      "formula": "5{3,3,5}[25{3,4,3}]{3,3,5}",
+      "models": [
+        "C14"
+      ]
+    },
+    {
+      "source_name": "5 24-cells in 600-cell",
+      "formula": "{3,3,5}[5{3,4,3}]{5,3,3}",
+      "models": [
+        "C15"
+      ]
+    },
+    {
+      "source_name": "75 tesseracts in 600-cell",
+      "formula": "10{3,3,5}[75{4,3,3}]5{5,3,3}",
+      "models": [
+        "C14"
+      ]
+    },
+    {
+      "source_name": "15 16-cells in 600-cell",
+      "formula": "{3,3,5}[15{3,3,4}]2{5,3,3}",
+      "models": [
+        "C16"
+      ]
+    },
+    {
+      "source_name": "15 tesseracts in 600-cell",
+      "formula": "2{3,3,5}[15{4,3,3}]{5,3,3}",
+      "models": [
+        "C15"
+      ]
+    },
+    {
+      "source_name": "75 16-cells in 120-cell",
+      "formula": "{5,3,3}[75{3,3,4}]2{3,3,5}",
+      "models": [
+        "C17"
+      ]
+    },
+    {
+      "source_name": "120 5-cells in 120-cell",
+      "formula": "{5,3,3}[120{3,3,3}]{3,3,5}",
+      "models": [
+        "C18"
+      ]
+    }
+  ],
+  "star_polytope_sources": [
+    {
+      "source_type": "star_polytope",
+      "source_name": "Icosahedral 120-cell",
+      "abbrev": "pI",
+      "schlafli": "{3,5,5/2}",
+      "model_id": "SH1",
+      "emitted_group": "SH1",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH1_A_600_rank1_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Great 120-cell",
+      "abbrev": "gpD",
+      "schlafli": "{5,5/2,5}",
+      "model_id": "SH1",
+      "emitted_group": "SH1",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH1_A_600_rank1_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Grand 120-cell",
+      "abbrev": "apD",
+      "schlafli": "{5,3,5/2}",
+      "model_id": "SH1",
+      "emitted_group": "SH1",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH1_A_600_rank1_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Small stellated 120-cell",
+      "abbrev": "spD",
+      "schlafli": "{5/2,5,3}",
+      "model_id": "C14",
+      "emitted_group": "SH2",
+      "balls": 75,
+      "visible_edges": 620,
+      "exact_shared_with_compound": true,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH2_B_600_rank2_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Great grand 120-cell",
+      "abbrev": "gapD",
+      "schlafli": "{5,5/2,3}",
+      "model_id": "C14",
+      "emitted_group": "SH2",
+      "balls": 75,
+      "visible_edges": 620,
+      "exact_shared_with_compound": true,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH2_B_600_rank2_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Great stellated 120-cell",
+      "abbrev": "gspD",
+      "schlafli": "{5/2,3,5}",
+      "model_id": "SH3",
+      "emitted_group": "SH3",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH3_C_600_rank5_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Grand stellated 120-cell",
+      "abbrev": "aspD",
+      "schlafli": "{5/2,5,5/2}",
+      "model_id": "SH3",
+      "emitted_group": "SH3",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH3_C_600_rank5_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Great icosahedral 120-cell",
+      "abbrev": "gpI",
+      "schlafli": "{3,5/2,5}",
+      "model_id": "SH3",
+      "emitted_group": "SH3",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH3_C_600_rank5_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Grand 600-cell",
+      "abbrev": "apT",
+      "schlafli": "{3,3,5/2}",
+      "model_id": "SH3",
+      "emitted_group": "SH3",
+      "balls": 75,
+      "visible_edges": 384,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH3_C_600_rank5_75_balls.vZome"
+    },
+    {
+      "source_type": "star_polytope",
+      "source_name": "Great grand stellated 120-cell",
+      "abbrev": "gaspD",
+      "schlafli": "{5/2,3,3}",
+      "model_id": "SH4",
+      "emitted_group": "SH4",
+      "balls": 330,
+      "visible_edges": 620,
+      "exact_shared_with_compound": false,
+      "original_file": "schlafli-hess-scratch\\output\\vzome_schlafli_hess\\SH4_D_120_rank25_330_balls.vZome"
+    }
+  ],
+  "excluded_sources": []
+}
