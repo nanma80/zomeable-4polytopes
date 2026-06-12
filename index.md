@@ -23,9 +23,10 @@ Pick a category and click **View →** to jump into its interactive page.
 | **Duoprisms** *({p}×{q})* | ∞ | 6 | 8 + 2 inf families | [**View duoprisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_DUOPRISMS.html) |
 | **Polyhedral prisms** *(P × [0,1])* | 17 | 12 | 45 | [**View polyhedral prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_POLYHEDRAL_PRISMS.html) |
 | **Antiprismatic prisms** *(A_n × [0,1])* | ∞ | 1 | 9 | [**View antiprismatic prisms →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_ANTIPRISMATIC_PRISMS.html) |
-| **Total** | **∞** | **53** | **153 + 3 inf families** | |
+| **Regular compounds and star polytopes** | 62 | 21 | 21 | [**View models →**](https://nanma80.github.io/zomeable-4polytopes/docs/CATEGORY_REGULAR_COMPOUNDS_STARS.html) |
+| **Total** | **∞** | **74** | **174 + 3 inf families** | |
 
-Related non-4D collection:
+Related non-4D collections:
 
 | Category | Source polytopes | Models | |
 | -------- | ---------------: | -----: | --- |
