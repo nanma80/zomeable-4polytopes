@@ -50,4 +50,4 @@ This is a 4D collection hosted alongside the main convex/uniform corpus.  The so
 
 All normalized model files are in [`output/regular_compounds_stars/`](../output/regular_compounds_stars/).  Exact model identity means both balls and edges match.
 
-This page lists the regular compound and star-polytope sources that have emitted zome models in this repository.  A full source inventory for the regular compounds is in progress.
+This page lists the regular compound and star-polytope sources that have emitted zome models in this repository.  The inventory has reached bounded numerical saturation: higher-bound searches found no additional certified model geometries after isometry and mirror-image deduplication.  As with the rest of the corpus, this is empirical search evidence rather than a formal proof.

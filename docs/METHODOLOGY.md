@@ -47,6 +47,29 @@ mathematically possible.
 
 **Status: empirical, not formally proven.**
 
+### Regular compound and Schläfli-Hess inventory checkpoint
+
+The regular compound/star-polytope category uses the same bounded-saturation
+standard, but with a broader source inventory and a post-sweep certification
+step:
+
+- **Regular compounds:** the search target registry contains 52 exact compound
+  targets from Coxeter Table VII plus McMullen amendments.  Completed bounds:
+  R=1 (69 candidates, 3.1s), R=3 (20,474 candidates, 375.1s), R=4
+  (135,750 candidates, 2,363.5s), R=5 (635,375 candidates, 10,914.8s),
+  and R=6 (2,331,889 candidates, 40,775.3s).  Raw sweep groups appeared at
+  higher bounds, but all apparent additions at R=4/R=5/R=6 certified to model
+  geometries already present after isometry/mirror-image deduplication.
+- **Schläfli-Hess regular star polytopes:** the 10 sources are represented by
+  four H4 edge-shell targets.  Completed bounds: R=3, R=4
+  (about 5,240.8s total), and R=5 (about 25,533.3s total).  R=4 added no new
+  shell shapes; R=5 added one apparent D-shell representative, but targeted
+  emission showed it is isometric to the existing SH4 model.
+
+Thus the category has **bounded numerical saturation** through these completed
+bounds.  This is stronger than a single gallery regression check, but still not
+a formal proof excluding all larger-coefficient kernel directions.
+
 ## Open questions and future work (parked 2026-05-02)
 
 These are documented for picking up later; none are blocking.
