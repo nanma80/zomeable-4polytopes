@@ -6,9 +6,35 @@ For the original full projections, see [`../duoprism_10_10/VIEWER.md`](../duopri
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="oblique_56_front_visible.vZome" progress="true" >
+
+<style>
+  .vzome-card {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    background: #fff;
+    max-width: min(100%, 72dvh);
+    margin: 2rem auto;
+    width: 100%;
+  }
+  .vzome-card vzome-viewer {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+  .vzome-card figcaption {
+    margin: 0.75rem 0 0.5rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+
+<figure class="vzome-card">
+ <vzome-viewer src="oblique_56_front_visible.vZome" progress="true" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">oblique_56_front_visible.vZome</figcaption>
+ <figcaption>oblique_56_front_visible.vZome</figcaption>
 </figure>
 

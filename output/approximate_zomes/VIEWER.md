@@ -8,6 +8,32 @@ For context and generation notes, see [`docs/APPROXIMATE_ZOMES.md`](../../docs/A
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
+
+<style>
+  .vzome-card {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    background: #fff;
+    max-width: min(100%, 72dvh);
+    margin: 2rem auto;
+    width: 100%;
+  }
+  .vzome-card vzome-viewer {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+  .vzome-card figcaption {
+    margin: 0.75rem 0 0.5rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+
 <style>
 .model-section {
   border: 1px solid #d0d7de;
@@ -50,17 +76,25 @@ For context and generation notes, see [`docs/APPROXIMATE_ZOMES.md`](../../docs/A
   display: none;
 }
 .approx-model {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background: #fff;
   margin: 1rem auto;
-  max-width: 800px;
-  padding: 0 1rem 1rem;
+  max-width: min(100%, 72dvh);
+  padding: 0.25rem;
+  width: 100%;
 }
 .approx-model vzome-viewer {
   display: block;
-  height: min(500px, 70vh);
   width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
 }
 .approx-model figcaption {
+  color: #555;
   font-style: italic;
+  margin: 0.75rem 0 0.5rem;
   text-align: center;
 }
 </style>

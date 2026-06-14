@@ -210,26 +210,52 @@ Key scripts:
 
 <script type='module' src='https://www.vzome.com/modules/vzome-viewer.js'></script>
 
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_long_root_rhombic_dodecahedron.vZome" progress="true" >
+
+<style>
+  .vzome-card {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    background: #fff;
+    max-width: min(100%, 72dvh);
+    margin: 2rem auto;
+    width: 100%;
+  }
+  .vzome-card vzome-viewer {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+  .vzome-card figcaption {
+    margin: 0.75rem 0 0.5rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+
+<figure class="vzome-card">
+ <vzome-viewer src="24cell_long_root_rhombic_dodecahedron.vZome" progress="true" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption>
     24cell_long_root_rhombic_dodecahedron.vZome
  </figcaption>
 </figure>
 
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_short_root_cuboctahedron.vZome" progress="true" >
+<figure class="vzome-card">
+ <vzome-viewer src="24cell_short_root_cuboctahedron.vZome" progress="true" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption>
     24cell_short_root_cuboctahedron.vZome
  </figcaption>
 </figure>
 
-<figure style="width: 800px; margin: 5%">
- <vzome-viewer style="width: 100%; height: 500px" src="24cell_triality.vZome" progress="true" >
+<figure class="vzome-card">
+ <vzome-viewer src="24cell_triality.vZome" progress="true" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption>
     24cell_triality.vZome
  </figcaption>
 </figure>
