@@ -36,7 +36,9 @@ projection, not vertices of the original 5-polytope.
 
 A polytope-independent raw-column `Z[phi]^3` sweep saturates at **three distinct
 projection geometries**, applied to all 19 A5 Wythoff polytopes (57 models in
-total).  R=2 and R=3 return the same three geometries; R=1 finds one of them.
+total).  Higher-bound checks return the same three geometries, so this category
+has reached bounded numerical saturation in the same empirical sense as the
+rest of the corpus.
 
 38 of the 57 models are fully buildable with standard vZome struts (a
 phi-power strut length, or exactly double one, matched per color orbit); the

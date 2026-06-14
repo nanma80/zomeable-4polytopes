@@ -19,7 +19,7 @@ Gosset-family and adjacent D/E root polytopes.
 | `3_21` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/3_21.html) |
 | `2_31` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_31.html) |
 | `1_32` | E7 | 7 | 5 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_32.html) |
-| 8-orthoplex (`5_11`) | D8 | 8 | 18 (R=3 confirmed) | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11_page2.html) |
+| 8-orthoplex (`5_11`) | D8 | 8 | 18 | [page 1 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11.html) / [page 2 ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/5_11_page2.html) |
 | `4_21` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/4_21.html) |
 | `2_41` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/2_41.html) |
 | `1_42` | E8 | 8 | 3 | [3D viewer ->](https://nanma80.github.io/zomeable-4polytopes/output/gosset_projections/1_42.html) |
@@ -34,30 +34,12 @@ All 113 labelled models are available in this folder tree:
 The ball counts on the viewer page count distinct 3D ball positions after
 projection, not vertices of the original higher-dimensional source polytope.
 
-The 8-orthoplex (`5_11`) R=3 sweep is concluded: it matched the R=2 set
-exactly with 18 models, so the published two-page viewer is complete through R=3.  The 9-orthoplex
-(`6_11`) R=2 sweep matched R=1 exactly with 8 models.  The 10-orthoplex
-(`7_11`) R=2 sweep also matched R=1 exactly with 9 models.
+The listed counts are bounded numerical search results.  Follow-up higher-bound
+checks have not produced additional distinct published models for the completed
+families, but—as elsewhere in this repository—this is empirical saturation
+rather than a formal proof.
 
-The R=2 raw-column `Z[phi]^3` sweep recovers all 10 previously published
-`2_21`/`3_21`/`4_21` labelled models, including the H3 family.  The R=3 sweep
-found no additional distinct models.  For the 5-demicube (`1_21`), the same
-methodology finds three models and saturates already at R=1.  For the
-6-demicube (`1_31`), the direct D6 demicube sweep finds nine models and
-saturates through R=3.  For the 7-demicube (`1_41`), the direct D7 demicube
-sweep finds six models and saturates through R=3.  For the 10-demicube (`1_71`),
-the direct D10 demicube sweep finds 13 even-coset models and saturates through
-R=2; the C3i and H3 matrices also contribute distinct variant pairs.  For
-`1_22`, the same methodology finds two models and saturates through R=3.  For
-`2_31`, it finds five models and saturates through R=3.  For `1_32`,
-evaluating those same E7 projection directions gives five labelled models.
-The rectified 5-orthoplex and `2_11` have the same D5 root edge-direction
-constraints as `1_21`; direct R=1/R=2/R=3 sweeps give three labelled models
-each.  The higher orthoplexes `3_11`, `4_11`, `5_11`, `6_11`, and `7_11` use
-the same D_n constraints as the corresponding orthoplex root systems; their
-current labelled model counts are 6, 5, 18, 8, and 9 respectively.  For
-`2_41`, the direct odd-spinor E8-edge sweep has found three labelled models
-through R=2; the R=3 confirmation run is longer.  For `1_42`, the direct
-E8-edge sweep found three labelled models through R=2.  See
+For implementation details, including the exact search bounds and family-by-family
+audit notes, see
 [`GOSSET_PROJECTIONS.md`](GOSSET_PROJECTIONS.md) for the sweep method and
 symmetry audit.
