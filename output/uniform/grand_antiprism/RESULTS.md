@@ -213,8 +213,8 @@ orthogonal Hopf-decagon pairs in the 4D vertex set.
 Vorthmann also explored the **vertex-first** Zometool projection in 2006.
 The last model on that page is captioned "grand antiprism, alternate
 Zometool projection". Our `grand_antiprism_vertex_first.vZome` is an
-independent reconstruction from the 4D polytope; we do not claim the
-projection as new.
+independent reconstruction from the 4D polytope, with some differences
+from Vorthmann’s model.
 
 ## Reference
 

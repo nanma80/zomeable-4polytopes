@@ -62,10 +62,11 @@ The catalogue's counts are **empirical**: we report a number once enlarging the 
 - **120-cell, 600-cell.** Each admits a single canonical zomeable projection (cell-first and vertex-first, respectively).
 - **Snub 24-cell, grand antiprism.** Both 600-cell diminishings yield two
   zomeable projections each. The snub's vertex-first appears here as a
-  new shape; our grand-antiprism vertex-first model is an independent
-  reconstruction from the 4D polytope. This Zometool projection was
+  new shape. The grand antiprism's vertex-first Zometool projection was
   already explored by
   [Scott Vorthmann (2006)](https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html).
+  Our `grand_antiprism_vertex_first.vZome` is an independent reconstruction
+  from the 4D polytope, with some differences from Vorthmann’s model.
 - **Prismatic surprises.** Six duoprisms `{p}×{q}` produce zomeable rank-3 projections, including infinite families for `{4}×{6}` and `{4}×{10}`.
 
 ---

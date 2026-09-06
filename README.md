@@ -84,8 +84,8 @@ acknowledge earlier constructions and explorations of these projections.
   "grand antiprism, alternate Zometool projection").
   Our `grand_antiprism_ring_first.vZome` is equivalent ball-by-ball.
   Our `grand_antiprism_vertex_first.vZome` is an independent
-  reconstruction from the 4D polytope; we do not claim the projection
-  as new.
+  reconstruction from the 4D polytope, with some differences from
+  Vorthmann’s model.
 - **Gosset polytopes** — Scott Vorthmann, *Gosset's Polytopes* (2005),
   https://vorth.github.io/vzome-sharing/2005/09/18/gossets-polytopes.html
   — prior vZome/zometool work on Gosset-polytope models; our
