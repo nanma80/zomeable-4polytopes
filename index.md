@@ -60,7 +60,12 @@ The catalogue's counts are **empirical**: we report a number once enlarging the 
 
 - **Tesseract.** Three sporadic shapes (cell-first cube, vertex-first rhombic dodecahedron, the *phi-oblique* sporadic) plus an infinite family of zomeable cuboids, one per ℤ[φ]-Pythagorean triple. [See all 13 emitted models →](https://nanma80.github.io/zomeable-4polytopes/output/regular/8cell/VIEWER.html)
 - **120-cell, 600-cell.** Each admits a single canonical zomeable projection (cell-first and vertex-first, respectively).
-- **Snub 24-cell, grand antiprism.** Both 600-cell diminishings yield two zomeable projections each — the snub's vertex-first and the grand antiprism's vertex-first appear here as new shapes.
+- **Snub 24-cell, grand antiprism.** Both 600-cell diminishings yield two
+  zomeable projections each. The snub's vertex-first appears here as a
+  new shape; our grand-antiprism vertex-first model is an independent
+  reconstruction from the 4D polytope. This Zometool projection was
+  already explored by
+  [Scott Vorthmann (2006)](https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html).
 - **Prismatic surprises.** Six duoprisms `{p}×{q}` produce zomeable rank-3 projections, including infinite families for `{4}×{6}` and `{4}×{10}`.
 
 ---

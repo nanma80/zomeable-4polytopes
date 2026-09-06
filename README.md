@@ -58,8 +58,8 @@ coefficient size that suffices. See
 
 Standard "vertex-first / cell-first / edge-first" zome projections of
 the six convex regular 4-polytopes are folklore — easy to construct by
-hand and well-known to the zometool community. The shapes below have
-been published or built independently; our enumeration confirms them.
+hand and well-known to the zometool community. The references below
+acknowledge earlier constructions and explorations of these projections.
 
 - **5-cell** — Scott Vorthmann & David Richter, *Five-cell family*
   (2007),
@@ -76,11 +76,16 @@ been published or built independently; our enumeration confirms them.
   https://polytopologist.github.io/zome_pages/24cellzome.htm
   — photograph of the cell-first zome model (60 balls, icosahedral
   outer hull).
-- **Grand antiprism, ring-first** — Scott Vorthmann, *Grand antiprism*
-  vZome model (2006),
+- **Grand antiprism, ring-first and vertex-first** — Scott Vorthmann,
+  *Grand antiprism* (2006),
   https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html
-  — same projection as our `grand_antiprism_ring_first.vZome`,
-  verified equivalent ball-by-ball.
+  — includes a ring-first model and an exploration of the vertex-first
+  Zometool projection (the last model, captioned
+  "grand antiprism, alternate Zometool projection").
+  Our `grand_antiprism_ring_first.vZome` is equivalent ball-by-ball.
+  Our `grand_antiprism_vertex_first.vZome` is an independent
+  reconstruction from the 4D polytope; we do not claim the projection
+  as new.
 - **Gosset polytopes** — Scott Vorthmann, *Gosset's Polytopes* (2005),
   https://vorth.github.io/vzome-sharing/2005/09/18/gossets-polytopes.html
   — prior vZome/zometool work on Gosset-polytope models; our
@@ -98,8 +103,6 @@ To our knowledge, the following results are new:
   (see [`output/regular/8cell/CLASSIFICATION.md`](output/regular/8cell/CLASSIFICATION.md)).
 - **Snub 24-cell, vertex-first** — does not appear in Richter's page or
   any source we could find.
-- **Grand antiprism, vertex-first** — not in Vorthmann (2006) or other
-  sources we could find.
 - **Completeness for each polytope** — empirical proofs that the listed
   counts saturate (caveat above).
 

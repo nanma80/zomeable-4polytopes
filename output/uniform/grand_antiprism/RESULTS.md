@@ -196,12 +196,12 @@ and the full point group are:
 
 ## External reference
 
-Scott Vorthmann (vZome's author) published a vZome model of the
+Scott Vorthmann (vZome's author) published vZome models of the
 grand antiprism in 2006:
 [https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html](https://vorth.github.io/vzome-sharing/2006/02/24/grand-antiprism.html)
 
-His model uses the **ring-first** projection (kernel along a
-pentagonal-antiprism ring axis), the same as our
+His **ring-first** model uses a kernel along a
+pentagonal-antiprism ring axis, the same as our
 `grand_antiprism_ring_first.vZome`. Verified equivalent: his 600-cell-
 shadow deletion pattern (1@origin + 2@sin36° + 2@sin72° + 10@1.0 = 15
 balls) matches ours exactly. He uses vZome's built-in `UniformH4Polytope`
@@ -209,6 +209,12 @@ operation (with `polytope.index = 1` for the 600-cell and a
 left-isoclinic quaternion to reorient), then deletes the 20 ring vertices.
 Our approach reaches the same configuration by direct enumeration of
 orthogonal Hopf-decagon pairs in the 4D vertex set.
+
+Vorthmann also explored the **vertex-first** Zometool projection in 2006.
+The last model on that page is captioned "grand antiprism, alternate
+Zometool projection". Our `grand_antiprism_vertex_first.vZome` is an
+independent reconstruction from the 4D polytope; we do not claim the
+projection as new.
 
 ## Reference
 
